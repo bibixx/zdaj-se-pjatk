@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Różnica impedancji\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2983','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "To obciążenie systemowe związane z wykonywaniem kodu SQL i próba pominięcia go lub zastąpienia w operacjach bazodanowych",
+        "correct": false
+      },
+      {
+        "answer": "To obciążenie systemowe powstające, gdy wykonany zostaje kod SQL zaszyty w kodzie napisanym w języku obiektowym",
+        "correct": false
+      },
+      {
+        "answer": "To dysonans między \"światem obiektowym\" a \"światem relacyjnym\"",
+        "correct": true
+      }
+    ]
+  }
+]

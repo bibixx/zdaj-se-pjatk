@@ -1,0 +1,20 @@
+[
+  {
+    "question": "<span style=\"font-family: verdana, arial, Helvetica; font-size: 13px; text-align: justify; background-color: #f5f5f5;\">Która z cech nie jest charakterystyczna dla typowej działalności projektowej</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=3192','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "<span style=\"font-family: verdana, arial; font-size: 13px; text-align: justify; background-color: #f5f5f5;\">zespołowość</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-family: verdana, arial; font-size: 13px; text-align: justify; background-color: #f5f5f5;\">planowanie</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-family: verdana, arial; font-size: 13px; text-align: justify; background-color: #f5f5f5;\">dążenie do przewidywalnego rezultatu</span>",
+        "correct": true
+      }
+    ]
+  }
+]

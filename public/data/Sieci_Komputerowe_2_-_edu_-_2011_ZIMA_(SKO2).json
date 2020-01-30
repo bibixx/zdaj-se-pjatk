@@ -1,0 +1,601 @@
+[
+  {
+    "question": "Przesyłanie strumieniowe wykorzystuje protokoły:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=986','komentarze','width=560,height=360')\"> - (2)      ",
+    "comments": [
+      {
+        "author": "~mateusz@89.78.*.*",
+        "comment": "Odpowiedzi: RTP i RTSP też są poprawne. Wikipedia: RTP is used extensively in communication and entertainment systems that involve streaming media, such as telephony, video teleconference applications, television services and web-based push-to-talk features.",
+        "date": "16-06-2014 08:44:55"
+      },
+      {
+        "author": "~Ja@79.185.*.*",
+        "comment": "Potwierdzam ze rtp i rtsp tez",
+        "date": "06-02-2018 00:44:37"
+      }
+    ],
+    "answers": [
+      {
+        "answer": "RTP",
+        "correct": false
+      },
+      {
+        "answer": "RTSP",
+        "correct": false
+      },
+      {
+        "answer": "UDP",
+        "correct": true
+      },
+      {
+        "answer": "TCP",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Buforowanie w odtwarzaczu audio/wideo po stronie klienta:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=987','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "nie jest używane",
+        "correct": false
+      },
+      {
+        "answer": "pozwala dźwiękowi nadążyć za obrazem",
+        "correct": false
+      },
+      {
+        "answer": "służy do łatwiejszego wyszukiwania scen filmu",
+        "correct": false
+      },
+      {
+        "answer": "służy do kompensacji zmiennego opóźnienia sieci",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Strata pakietu IP w sieci następuje zwykle\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=988','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "z powodu przegrzania rutera",
+        "correct": false
+      },
+      {
+        "answer": "przez za mały przekrój kabla",
+        "correct": false
+      },
+      {
+        "answer": "z powodu opanowania rutera przez wirus",
+        "correct": false
+      },
+      {
+        "answer": "przez przepełnienie bufora rutera",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Serwer RTSP:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=989','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "określa dla odbiorcy format, w jakim kodowane są media",
+        "correct": true
+      },
+      {
+        "answer": "wymaga stosowania UDP",
+        "correct": true
+      },
+      {
+        "answer": "wymaga stosowania RTP",
+        "correct": true
+      },
+      {
+        "answer": "przechowuje media kodowane z różną jakością",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Telefon tradycyjny różni się od telefonu Internetowego:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=990','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "telefon Internetowy jest komputerem osobistym",
+        "correct": false
+      },
+      {
+        "answer": "telefon Internetowy działa szybciej",
+        "correct": false
+      },
+      {
+        "answer": "telefon Internetowy stosuje komutację pakietów, a tradycyjny - komutację kanałów",
+        "correct": true
+      },
+      {
+        "answer": "telefon Internetowy działa wolniej",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Przy przesyłaniu strumieniowym:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=991','komentarze','width=560,height=360')\"> - (1)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "odtwarzanie jest interaktywne",
+        "correct": false
+      },
+      {
+        "answer": "może być wielu odbiorców",
+        "correct": true
+      },
+      {
+        "answer": "nadawca steruje przepływem danych do odbiorcy",
+        "correct": true
+      },
+      {
+        "answer": "odbiorca odtwarza media, podczas gdy nadawca wysyła media",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Które protokoły multipleksacji wymagają synchronizacji zegarów węzłów sieci?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=992','komentarze','width=560,height=360')\"> - (1)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "Protokół 802.11 z rezerwacjami (DFWMAC-DCF z RTS/CTS)",
+        "correct": true
+      },
+      {
+        "answer": "CSMA/CA",
+        "correct": false
+      },
+      {
+        "answer": "CSMA/CD",
+        "correct": false
+      },
+      {
+        "answer": "Slotted Aloha",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Cyfrowa komunikacja poprzez medium radiowe wymaga:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=993','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "najpierw modulacji analogowej, a potem cyfrowej",
+        "correct": false
+      },
+      {
+        "answer": "najpierw modulacji cyfrowej, a potem analogowej",
+        "correct": true
+      },
+      {
+        "answer": "tylko modulacji cyfrowej",
+        "correct": false
+      },
+      {
+        "answer": "tylko modulacji analogowej",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Które stwierdzenia są prawdziwe:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=994','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "sygnał cyfrowy jest funkcją ciągłego czasu o ciągłych wartościach",
+        "correct": false
+      },
+      {
+        "answer": "sygnał cyfrowy jest funkcją dyskretnego czasu o dyskretnych wartościach",
+        "correct": true
+      },
+      {
+        "answer": "sygnał analogowy jest funkcją ciągłego czasu o dyskretnych wartościach",
+        "correct": false
+      },
+      {
+        "answer": "sygnał analogowy jest funkcją dyskretnego czasu o ciągłych wartościach",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Komunikacja wielu odbiorców jednocześnie przy użyciu medium radiowego jest możliwa, gdy:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=995','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "odbiorcy nadają na różnych częstotliwościach i są blisko siebie",
+        "correct": true
+      },
+      {
+        "answer": "odbiorcy używają różnych kodów",
+        "correct": true
+      },
+      {
+        "answer": "odbiorcy nadają na tej samej częstotliwości i są daleko od siebie",
+        "correct": true
+      },
+      {
+        "answer": "odbiorcy nadają na tej samej częstotliwości i są blisko siebie",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Sygnał radiowy:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=996','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "może zakłócać sygnał na tej samej częstotliwości także poza zakresem potrzebnym do komunikacji",
+        "correct": true
+      },
+      {
+        "answer": "ma moc malejącą liniowo wraz z odległością od nadajnika",
+        "correct": false
+      },
+      {
+        "answer": "jest wykrywalny wszędzie, choć ma coraz mniejszą moc",
+        "correct": false
+      },
+      {
+        "answer": "jest niezauważalny powyżej pewnego zasięgu",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Przestrzenie ochronne:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=997','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "są stosowane w multipleksacji czasowej",
+        "correct": true
+      },
+      {
+        "answer": "są stosowane w multipleksacji przestrzennej",
+        "correct": true
+      },
+      {
+        "answer": "są stosowane w multipleksacji częstotliwościowej",
+        "correct": true
+      },
+      {
+        "answer": "są stosowane tylko w multipleksacji częstotliwościowej i przestrzennej, ale nie w czasowej",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Informacja jest kodowana w sygnale radiowym za pomocą:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=998','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "tylko amplitudy i fazy",
+        "correct": false
+      },
+      {
+        "answer": "częstotliwości, amplitudy i fazy",
+        "correct": true
+      },
+      {
+        "answer": "tylko częstotliwości i amplitudy",
+        "correct": false
+      },
+      {
+        "answer": "tylko częstotliwości i fazy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Multipleksacja przy użyciu protokołu ALOHA:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=999','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "przy dużym natężeniu ruchu, poprawnie komunikowane jest około 50% nadawanej informacji",
+        "correct": false
+      },
+      {
+        "answer": "wymaga nasłuchiwania, czy łącze jest zajęte przez inną komunikację",
+        "correct": false
+      },
+      {
+        "answer": "przy dużym natężeniu ruchu, poprawnie komunikowane jest około 20% nadawanej informacji",
+        "correct": true
+      },
+      {
+        "answer": "wymaga synchronizacji urządzeń w celu nadawania w tym samym czasie",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Które stwierdzenia są prawdziwe:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1000','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "sygnał może sam siebie zakłócać u odbiorcy",
+        "correct": true
+      },
+      {
+        "answer": "zakłócenia i tłumienie sygnału radiowego są niezależne od częstotliwości",
+        "correct": false
+      },
+      {
+        "answer": "sygnał może być odebrany przez odbiornik wielokrotnie w pewnym okresie czasu",
+        "correct": true
+      },
+      {
+        "answer": "małe przeszkody rozpraszają sygnał, a duże go odbijają",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "W radiowych sieciach lokalnych kolizje nie zawsze są wykrywane, gdyż:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1001','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "Kolizje są zawsze wykrywane, a ramki są retransmitowane w standardzie 802.11g",
+        "correct": true
+      },
+      {
+        "answer": "Kolizja wykryta u odbiorcy nie musi występować też u nadawcy",
+        "correct": false
+      },
+      {
+        "answer": "Stacja nie ma możliwości nadawać i nasłuchiwać jednocześnie",
+        "correct": false
+      },
+      {
+        "answer": "Stacja nadająca nie ma możliwości poprawnego stwierdzenia wystąpienia kolizji",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Sygnał jest to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1002','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "fizyczna reprezentacja informacji",
+        "correct": true
+      },
+      {
+        "answer": "funkcja czasu i przestrzeni",
+        "correct": false
+      },
+      {
+        "answer": "rodzaj komunikowanej informacji",
+        "correct": false
+      },
+      {
+        "answer": "fala radiowa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Sterowanie \\\\\\\"poza pasmem\\\\\\\"\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1003','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "oznacza stosowanie oddzielnego kanału kontrolnego",
+        "correct": true
+      },
+      {
+        "answer": "oznacza stosowanie niedozwolonych częstotliwości radiowych",
+        "correct": false
+      },
+      {
+        "answer": "jest stosowane tylko w warstwie łącza",
+        "correct": false
+      },
+      {
+        "answer": "oznacza konfigurację ruterów z wykorzystaniem PSTN",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Technologie MPLS i ATM różnią się tym, że:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1004','komentarze','width=560,height=360')\"> - (3)      ",
+    "comments": [
+      {
+        "author": "~ld@89.64.*.*",
+        "comment": "ATM jest technologia warstwy sieci?",
+        "date": "06-02-2019 06:34:59"
+      },
+      {
+        "author": "~anon@89.64.*.*",
+        "comment": "raczej łącza danych",
+        "date": "06-02-2019 21:39:57"
+      },
+      {
+        "author": "~anon@89.64.*.*",
+        "comment": "To MPLS tworzy polaczenia korzystajac z etykiet... moim zdaniem dobra odpowiedz to technologia MPLS nie posiada mechnizmów QoS",
+        "date": "07-02-2019 06:42:06"
+      }
+    ],
+    "answers": [
+      {
+        "answer": "technologia ATM nie może być wykorzystywana przez warstwę IP",
+        "correct": false
+      },
+      {
+        "answer": "technologia MPLS nie posiada mechanizmów QoS",
+        "correct": true
+      },
+      {
+        "answer": "technologia ATM tworzy połączenia, korzystające z etykiet na każdym etapie trasy",
+        "correct": true
+      },
+      {
+        "answer": "technologia ATM jest technologią warstwy sieci",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Kategoria usług ABR:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1005','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "stosuje kontrolę przeciążenia",
+        "correct": true
+      },
+      {
+        "answer": "ma określone ograniczenia dotyczące maksymalnego opóźnienia i maksymalnej zmienności opóźnień",
+        "correct": false
+      },
+      {
+        "answer": "służy głównie do komunikacji głosu",
+        "correct": false
+      },
+      {
+        "answer": "jest używana dla komunikacji, która może mieć zmienną przepustowośc, ale wymaga minimalnej przepustowości",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "<p class=\"MsoNormal\" style=\"margin-top: 6.0pt; margin-right: 0cm; margin-bottom: 6.0pt; margin-left: 0cm; line-height: normal;\"><span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">Przy przesyłaniu strumieniowym:</span></p>\n<p class=\"MsoNormal\" style=\"margin-top: 6.0pt; margin-right: 0cm; margin-bottom: 6.0pt; margin-left: 0cm; line-height: normal;\">&nbsp;</p>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=3034','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">odbiorca odtwarza media, podczas gry nadawca wysyła media</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">może być wielu odbiorców</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">odtwarzanie jest interaktywne</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">nadawca steruje przepływem danych do odbiorcy</span>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">Protokół RTCP służy do:</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=3035','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">okresowego powiadomienia nadawcy o wydajności komutacji</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">synchronizacji dźwięku z obrazem, wysyłanymi w jednej sesji RTP</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">przenoszenia informacji nadmiarowej</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">rezerwacji zasobów dla komunikacji RTP</span>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">Telefon tradycyjny różni się od telefonu Internetowego:</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=3036','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">telefon internetowy stosuje komutację pakietów, a tradycyjny – komutacje kanałów</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">telefon Internetowy jest komputerem osobistym</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">telefon Internetowy działa wolniej</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">telefon Internetowy działa szybciej</span>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">Protokół SIP:</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=3037','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">pozwala na negocjację kodowania</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">może używać adresów e-mail jako identyfikatorów</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">implementuje usługę katalogową</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">musi używać TCP w celu zapewnienia niezawodności</span>",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">Do nawiązania rozmowy telefonicznej w technologii VoIP wykorzystuje się:</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=3038','komentarze','width=560,height=360')\"> - (0)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">protokół RTCP</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">protokół H.323</span>",
+        "correct": true
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">protokół RTP</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">protokół Session Initiation Protocol</span>",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">Komunikacja głosu i obrazu jest:</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=3039','komentarze','width=560,height=360')\"> - (1)      ",
+    "comments": null,
+    "answers": [
+      {
+        "answer": "<p class=\"MsoNormal\" style=\"margin-top: 6.0pt; margin-right: 0cm; margin-bottom: 6.0pt; margin-left: 0cm; line-height: normal;\"><span style=\"font-family: 'Arial',sans-serif;\" lang=\"PL\">interaktywna</span></p>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">podatna na opóźnienia maksymalne</span>",
+        "correct": false
+      },
+      {
+        "answer": "<span style=\"font-size: 11.0pt; line-height: 107%; font-family: 'Arial',sans-serif; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: PL; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;\" lang=\"PL\">podatna na zmienność opóźnień</span>",
+        "correct": true
+      },
+      {
+        "answer": "<p class=\"MsoNormal\" style=\"margin-top: 6.0pt; margin-right: 0cm; margin-bottom: 6.0pt; margin-left: 0cm; line-height: normal;\"><span style=\"font-family: 'Arial',sans-serif;\" lang=\"PL\">podatna na straty</span></p>",
+        "correct": false
+      }
+    ]
+  }
+]
