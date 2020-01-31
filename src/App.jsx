@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,11 +8,12 @@ import {
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core';
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import SubjectAllQuestions from './SubjectAllQuestions';
 import IndexPage from './IndexPage';
+import getTheme from './theme';
 
 const useStyles = makeStyles({
   root: {
@@ -24,20 +25,8 @@ const useStyles = makeStyles({
 const App = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
-  const theme = React.useMemo(
-    () => createMuiTheme({
-      palette: {
-        type: prefersDarkMode ? 'dark' : 'light',
-        ...(!prefersDarkMode
-          ? {
-            background: {
-              default: '#f1f2f5',
-            },
-          }
-          : {}
-        ),
-      },
-    }),
+  const theme = useMemo(
+    () => getTheme(prefersDarkMode),
     [prefersDarkMode],
   );
 
@@ -46,7 +35,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container classes={{ root: classes.root }}>
+      <Container classes={{ root: classes.root }} fixed>
         <Router>
           <Switch>
             <Route path="/" exact>

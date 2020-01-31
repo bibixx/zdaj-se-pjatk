@@ -1,9 +1,9 @@
 {
-  "title": "Sieci Komputerowe 1 (SKO1/SKJ)",
   "id": "sko1-skj",
+  "title": "Sieci Komputerowe 1 (SKO1/SKJ)",
   "data": [
     {
-      "question": "Wybierz poprawne rozwinięcie skrótu SMTP.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=547','komentarze','width=560,height=360')\"> - (4)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu SMTP.",
       "comments": [
         {
           "author": "~marol kichalak@159.205.*.*",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "question": "Jakim poleceniem (system operacyjny Linux) możemy wyświetlić tablicę routingu (podaj tylko nazwę polecenia)?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=548','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Jakim poleceniem (system operacyjny Linux) możemy wyświetlić tablicę routingu (podaj tylko nazwę polecenia)?",
       "comments": null,
       "answers": [
         {
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "question": "W modelu OSI/ISO istnieje warstwa Internetowa?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=549','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "W modelu OSI/ISO istnieje warstwa Internetowa?",
       "comments": null,
       "answers": [
         {
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "question": "W warstwie łącza mówimy o: \n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=550','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "W warstwie łącza mówimy o: ",
       "comments": [
         {
           "author": "~LaureatSkjZielonka2004@159.205.*.*",
@@ -120,7 +120,7 @@
       ]
     },
     {
-      "question": "Protokół bezstanowy utrzymuje informacje o trwającym połączeniu podczas więcej niż jednej wymiany komunikatów.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=551','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Protokół bezstanowy utrzymuje informacje o trwającym połączeniu podczas więcej niż jednej wymiany komunikatów.",
       "comments": null,
       "answers": [
         {
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "question": "Jakie usługi sieć Internet oferuje dla swoich aplikacji?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=552','komentarze','width=560,height=360')\"> - (7)      ",
+      "question": "Jakie usługi sieć Internet oferuje dla swoich aplikacji?",
       "comments": [
         {
           "author": "~AndrzejDuda@31.178.*.*",
@@ -163,7 +163,7 @@
         },
         {
           "author": "~lusio @91.230.*.*",
-          "comment": "sranie w banie\n",
+          "comment": "sranie w banie",
           "date": "28-11-2019 10:28:43"
         },
         {
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "question": "Jakie są źródła opóźnienia pakietów? \n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=553','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jakie są źródła opóźnienia pakietów?",
       "comments": null,
       "answers": [
         {
@@ -214,7 +214,7 @@
       ]
     },
     {
-      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=554','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.",
       "comments": [
         {
           "author": "~mx@83.6.*.*",
@@ -252,7 +252,7 @@
       ]
     },
     {
-      "question": "Ile bitów ma adres IP w wersji 4?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=555','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Ile bitów ma adres IP w wersji 4?",
       "comments": null,
       "answers": [
         {
@@ -274,7 +274,7 @@
       ]
     },
     {
-      "question": "Mając dany adres IP 192.23.11.23/23 określ adres sieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=556','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Mając dany adres IP 192.23.11.23/23 określ adres sieci.",
       "comments": [
         {
           "author": "~theBeast@89.161.*.*",
@@ -307,7 +307,7 @@
       ]
     },
     {
-      "question": "Zaznacz adresy sieci powstałe po podzieleniu sieci 172.16.32.0/24 na 4 podsieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=557','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Zaznacz adresy sieci powstałe po podzieleniu sieci 172.16.32.0/24 na 4 podsieci.",
       "comments": null,
       "answers": [
         {
@@ -341,7 +341,7 @@
       ]
     },
     {
-      "question": "Techniki: CIDR (Classless Interdomain Routingu) oraz NAT (Network Address Translation) pozwalają na efektywniejsze wykorzystanie adresów IPv4.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=558','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Techniki: CIDR (Classless Interdomain Routingu) oraz NAT (Network Address Translation) pozwalają na efektywniejsze wykorzystanie adresów IPv4.",
       "comments": null,
       "answers": [
         {
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "question": "Ile bitów ma adres IP w wersji 6?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=559','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Ile bitów ma adres IP w wersji 6?",
       "comments": null,
       "answers": [
         {
@@ -377,7 +377,7 @@
       ]
     },
     {
-      "question": "OSPF jest protokołem typu \"wektor odległości\".\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=560','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "OSPF jest protokołem typu \"wektor odległości\".",
       "comments": [
         {
           "author": "~anon@89.67.*.*",
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "question": "Protokoły rutingu dynamicznego nie reagują na zmiany topologii sieci oraz na jej przeciążenie.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=561','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Protokoły rutingu dynamicznego nie reagują na zmiany topologii sieci oraz na jej przeciążenie.",
       "comments": [
         {
           "author": "~TenOgierLezacyObok@94.254.*.*",
@@ -432,7 +432,7 @@
       ]
     },
     {
-      "question": "Przykładem topologii sieci komputerowych jest:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=562','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Przykładem topologii sieci komputerowych jest:",
       "comments": null,
       "answers": [
         {
@@ -454,7 +454,7 @@
       ]
     },
     {
-      "question": "Zastąpienie koncentratów przełącznikami, powoduje w sieci:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=563','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Zastąpienie koncentratów przełącznikami, powoduje w sieci:",
       "comments": [
         {
           "author": "~anon@178.36.*.*",
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "question": "PPP (Point-to-Point Protocol) jest protokołem warstwy drugiej.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=564','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "PPP (Point-to-Point Protocol) jest protokołem warstwy drugiej.",
       "comments": null,
       "answers": [
         {
@@ -501,7 +501,7 @@
       ]
     },
     {
-      "question": "Klasycznymodel sieci OSI składa się z:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=565','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Klasycznymodel sieci OSI składa się z:",
       "comments": null,
       "answers": [
         {
@@ -523,7 +523,7 @@
       ]
     },
     {
-      "question": "Odpytywanie (polling) to metoda dostępu w której:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=566','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Odpytywanie (polling) to metoda dostępu w której:",
       "comments": null,
       "answers": [
         {
@@ -545,7 +545,7 @@
       ]
     },
     {
-      "question": "Teoretyczna prędkość sieci w której medium to 10BASE-T wynosi:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=567','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Teoretyczna prędkość sieci w której medium to 10BASE-T wynosi:",
       "comments": null,
       "answers": [
         {
@@ -567,7 +567,7 @@
       ]
     },
     {
-      "question": "Warstwa 2 (łącza danych) składa się z:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=568','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Warstwa 2 (łącza danych) składa się z:",
       "comments": null,
       "answers": [
         {
@@ -589,7 +589,7 @@
       ]
     },
     {
-      "question": "Jakie znasz dwa podstawowe rodzaję trybów przełączania pakietów?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=569','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jakie znasz dwa podstawowe rodzaję trybów przełączania pakietów?",
       "comments": null,
       "answers": [
         {
@@ -611,7 +611,7 @@
       ]
     },
     {
-      "question": "10base2\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=570','komentarze','width=560,height=360')\"> - (6)      ",
+      "question": "10base2",
       "comments": [
         {
           "author": "~pk@83.28.*.*",
@@ -668,7 +668,7 @@
       ]
     },
     {
-      "question": "W technologii 10BASE-T maksymalna długość kabla pomiędzy przełącznikami wynosi:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=571','komentarze','width=560,height=360')\"> - (5)      ",
+      "question": "W technologii 10BASE-T maksymalna długość kabla pomiędzy przełącznikami wynosi:",
       "comments": [
         {
           "author": "~AlphonseMacierewicz@31.178.*.*",
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "question": "Switch jest to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=572','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Switch jest to:",
       "comments": null,
       "answers": [
         {
@@ -738,7 +738,7 @@
       ]
     },
     {
-      "question": "-Jakie zjawiska wystąpią, gdy w sieci Ethernet zamienimy koncentrator (hub) na przełącznik (switch) pracujący w trybie store-and-forward ?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=573','komentarze','width=560,height=360')\"> - (9)      ",
+      "question": "-Jakie zjawiska wystąpią, gdy w sieci Ethernet zamienimy koncentrator (hub) na przełącznik (switch) pracujący w trybie store-and-forward ?",
       "comments": [
         {
           "author": "~anon@89.68.*.*",
@@ -810,7 +810,7 @@
       ]
     },
     {
-      "question": "\"MAC adres\" oznacza:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=574','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "\"MAC adres\" oznacza:",
       "comments": null,
       "answers": [
         {
@@ -832,7 +832,7 @@
       ]
     },
     {
-      "question": "Warstwa aplikacji modelu sieci OSI/ISO realizowana jest:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=575','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Warstwa aplikacji modelu sieci OSI/ISO realizowana jest:",
       "comments": null,
       "answers": [
         {
@@ -854,7 +854,7 @@
       ]
     },
     {
-      "question": "Adresacja MAC (podobnie jak IPv4) jest hierarchiczna.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=576','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Adresacja MAC (podobnie jak IPv4) jest hierarchiczna.",
       "comments": null,
       "answers": [
         {
@@ -868,7 +868,7 @@
       ]
     },
     {
-      "question": "Skrót WAN oznacza:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=577','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Skrót WAN oznacza:",
       "comments": null,
       "answers": [
         {
@@ -890,7 +890,7 @@
       ]
     },
     {
-      "question": "TokenRing to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=578','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "TokenRing to:",
       "comments": [
         {
           "author": "~an@88.156.*.*",
@@ -928,7 +928,7 @@
       ]
     },
     {
-      "question": "Wzmacniacz(repeater) jest to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=579','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wzmacniacz(repeater) jest to:",
       "comments": null,
       "answers": [
         {
@@ -954,7 +954,7 @@
       ]
     },
     {
-      "question": "Warstwa najniższa (pierwsza) modelu sieci OSI realizowana jest:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=580','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Warstwa najniższa (pierwsza) modelu sieci OSI realizowana jest:",
       "comments": null,
       "answers": [
         {
@@ -976,7 +976,7 @@
       ]
     },
     {
-      "question": "Sieci radiowe w standardzie 802.11b pracują z następującą maksymalną teoretyczną szybkością przesyłania danych na kanał:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=581','komentarze','width=560,height=360')\"> - (5)      ",
+      "question": "Sieci radiowe w standardzie 802.11b pracują z następującą maksymalną teoretyczną szybkością przesyłania danych na kanał:",
       "comments": [
         {
           "author": "~Wybawca@89.68.*.*",
@@ -1024,7 +1024,7 @@
       ]
     },
     {
-      "question": "IPSec zapewnia bezpieczeństwo w warstwie:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=582','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "IPSec zapewnia bezpieczeństwo w warstwie:",
       "comments": null,
       "answers": [
         {
@@ -1046,7 +1046,7 @@
       ]
     },
     {
-      "question": "Integralność polega na tym, że:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=583','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Integralność polega na tym, że:",
       "comments": null,
       "answers": [
         {
@@ -1068,7 +1068,7 @@
       ]
     },
     {
-      "question": "Protokół SSL zapewnia:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=584','komentarze','width=560,height=360')\"> - (9)      ",
+      "question": "Protokół SSL zapewnia:",
       "comments": [
         {
           "author": "~anon@77.252.*.*",
@@ -1136,7 +1136,7 @@
       ]
     },
     {
-      "question": "Poufność jest zachowana wtedy, kiedy:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=585','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Poufność jest zachowana wtedy, kiedy:",
       "comments": [
         {
           "author": "~zaduzoseksiku@2001:67c:23f4:2132:585f:844b:4024:ece4",
@@ -1169,7 +1169,7 @@
       ]
     },
     {
-      "question": "Konie trojańskie mogą służyć do:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=586','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Konie trojańskie mogą służyć do:",
       "comments": null,
       "answers": [
         {
@@ -1191,7 +1191,7 @@
       ]
     },
     {
-      "question": "Wybierz poprawne rozwinięcie skrótu TCP.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=587','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu TCP.",
       "comments": null,
       "answers": [
         {
@@ -1213,7 +1213,7 @@
       ]
     },
     {
-      "question": "Jakim poleceniem (system operacyjny Linux) możemy sprawdzić konfiguracje interfejsów sieciowych (podaj tylko nazwę polecenia)?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=588','komentarze','width=560,height=360')\"> - (4)      ",
+      "question": "Jakim poleceniem (system operacyjny Linux) możemy sprawdzić konfiguracje interfejsów sieciowych (podaj tylko nazwę polecenia)?",
       "comments": [
         {
           "author": "~anon@91.230.*.*",
@@ -1256,7 +1256,7 @@
       ]
     },
     {
-      "question": "Protokoły nie kontrolują wysyłania/odbierania informacji.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=589','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Protokoły nie kontrolują wysyłania/odbierania informacji.",
       "comments": null,
       "answers": [
         {
@@ -1270,7 +1270,7 @@
       ]
     },
     {
-      "question": "Jakie są źródła opóźnienia pakietów?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=590','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Jakie są źródła opóźnienia pakietów?",
       "comments": [
         {
           "author": "~billy@89.68.*.*",
@@ -1303,7 +1303,7 @@
       ]
     },
     {
-      "question": "Wybierz klasyfikację sieci, która dzieli wszystkie sieci na dwie rozłączne grupy.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=591','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Wybierz klasyfikację sieci, która dzieli wszystkie sieci na dwie rozłączne grupy.",
       "comments": null,
       "answers": [
         {
@@ -1329,7 +1329,7 @@
       ]
     },
     {
-      "question": "Jakie protokoły rutingu używane są wewnątrz systemów autonomicznych:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=592','komentarze','width=560,height=360')\"> - (5)      ",
+      "question": "Jakie protokoły rutingu używane są wewnątrz systemów autonomicznych:",
       "comments": [
         {
           "author": "~billy@89.68.*.*",
@@ -1377,7 +1377,7 @@
       ]
     },
     {
-      "question": "Protokoły rutingu dynamicznego nie reagują na zmiany topologii sieci oraz na jej przeciążenie.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=593','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Protokoły rutingu dynamicznego nie reagują na zmiany topologii sieci oraz na jej przeciążenie.",
       "comments": [
         {
           "author": "~PickleRick@91.230.*.*",
@@ -1407,7 +1407,7 @@
       ]
     },
     {
-      "question": "TTL to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=594','komentarze','width=560,height=360')\"> - (8)      ",
+      "question": "TTL to:",
       "comments": [
         {
           "author": "~Max@178.235.*.*",
@@ -1470,7 +1470,7 @@
       ]
     },
     {
-      "question": "Techniki: CIDR (Classless Interdomain Routingu) oraz NAT (Network Address Translation) pozwalają na efektywniejsze wykorzystanie adresów IPv4.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=595','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Techniki: CIDR (Classless Interdomain Routingu) oraz NAT (Network Address Translation) pozwalają na efektywniejsze wykorzystanie adresów IPv4.",
       "comments": null,
       "answers": [
         {
@@ -1484,7 +1484,7 @@
       ]
     },
     {
-      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=596','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.",
       "comments": [
         {
           "author": "~night@83.143.*.*",
@@ -1522,7 +1522,7 @@
       ]
     },
     {
-      "question": "Zaznacz adresy sieci powstałe po podzieleniu sieci 172.16.32.0/24 na 4 podsieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=597','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Zaznacz adresy sieci powstałe po podzieleniu sieci 172.16.32.0/24 na 4 podsieci.",
       "comments": null,
       "answers": [
         {
@@ -1548,7 +1548,7 @@
       ]
     },
     {
-      "question": "Standard Ethernet w strukturze ramki określa preambułę:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=598','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Standard Ethernet w strukturze ramki określa preambułę:",
       "comments": [
         {
           "author": "~billy@89.68.*.*",
@@ -1581,7 +1581,7 @@
       ]
     },
     {
-      "question": "W sieci Ethernet 100BaseT używającej tylko przełączników pracujących w trybie store-and-forward i połączeń full-duplex\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=599','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "W sieci Ethernet 100BaseT używającej tylko przełączników pracujących w trybie store-and-forward i połączeń full-duplex",
       "comments": null,
       "answers": [
         {
@@ -1603,7 +1603,7 @@
       ]
     },
     {
-      "question": "Switch musi posiadać adres IP do poprawnego działania.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=600','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Switch musi posiadać adres IP do poprawnego działania.",
       "comments": null,
       "answers": [
         {
@@ -1617,7 +1617,7 @@
       ]
     },
     {
-      "question": "Klasyczny model sieci OSI składa się z:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=601','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Klasyczny model sieci OSI składa się z:",
       "comments": null,
       "answers": [
         {
@@ -1639,7 +1639,7 @@
       ]
     },
     {
-      "question": "ARP (Address Resolution Protocol) odpowiada za:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=602','komentarze','width=560,height=360')\"> - (7)      ",
+      "question": "ARP (Address Resolution Protocol) odpowiada za:",
       "comments": [
         {
           "author": "~anon@89.74.*.*",
@@ -1697,7 +1697,7 @@
       ]
     },
     {
-      "question": "Teoretyczna prędkość sieci w której medium to 10BASE-T wynosi:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=603','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Teoretyczna prędkość sieci w której medium to 10BASE-T wynosi:",
       "comments": null,
       "answers": [
         {
@@ -1719,7 +1719,7 @@
       ]
     },
     {
-      "question": "TokenRing pracuje w topologi logicznej:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=604','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "TokenRing pracuje w topologi logicznej:",
       "comments": null,
       "answers": [
         {
@@ -1741,7 +1741,7 @@
       ]
     },
     {
-      "question": "Kabel UTP używany w technologii Ethernet 100BaseT zakończony jest wtyczką:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=605','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Kabel UTP używany w technologii Ethernet 100BaseT zakończony jest wtyczką:",
       "comments": null,
       "answers": [
         {
@@ -1763,7 +1763,7 @@
       ]
     },
     {
-      "question": "Adres IP ma:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=606','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Adres IP ma:",
       "comments": null,
       "answers": [
         {
@@ -1785,7 +1785,7 @@
       ]
     },
     {
-      "question": "Ethernet 10BaseT używa kodowania:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=607','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Ethernet 10BaseT używa kodowania:",
       "comments": null,
       "answers": [
         {
@@ -1811,7 +1811,7 @@
       ]
     },
     {
-      "question": "Kryptografia hybrydowa to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=608','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Kryptografia hybrydowa to:",
       "comments": null,
       "answers": [
         {
@@ -1833,7 +1833,7 @@
       ]
     },
     {
-      "question": "PGP używa kluczy:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=609','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "PGP używa kluczy:",
       "comments": null,
       "answers": [
         {
@@ -1855,7 +1855,7 @@
       ]
     },
     {
-      "question": "Wybierz poprawne rozwinięcie skrótu POP3.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=610','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu POP3.",
       "comments": null,
       "answers": [
         {
@@ -1877,7 +1877,7 @@
       ]
     },
     {
-      "question": "Jakim poleceniem (system operacyjny Linux) możemy wyświetlić tablicę routingu (podaj tylko nazwę polecenia)?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=611','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jakim poleceniem (system operacyjny Linux) możemy wyświetlić tablicę routingu (podaj tylko nazwę polecenia)?",
       "comments": null,
       "answers": [
         {
@@ -1899,7 +1899,7 @@
       ]
     },
     {
-      "question": "Zaznacz protokoły warstwy 7 modelu ISO/OSI: (chodzi o warstwę aplikacji)\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=612','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Zaznacz protokoły warstwy 7 modelu ISO/OSI: (chodzi o warstwę aplikacji)",
       "comments": null,
       "answers": [
         {
@@ -1933,7 +1933,7 @@
       ]
     },
     {
-      "question": "Protokół stanowy utrzymuje informacje o trwającym połączeniu podczas więcej niż jednej wymiany komunikatów.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=613','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Protokół stanowy utrzymuje informacje o trwającym połączeniu podczas więcej niż jednej wymiany komunikatów.",
       "comments": null,
       "answers": [
         {
@@ -1947,7 +1947,7 @@
       ]
     },
     {
-      "question": "Które z funkcji gniazd są używane przez serwer w niezawodnej, połączeniowej komunikacji z klientem?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=614','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Które z funkcji gniazd są używane przez serwer w niezawodnej, połączeniowej komunikacji z klientem?",
       "comments": null,
       "answers": [
         {
@@ -1969,7 +1969,7 @@
       ]
     },
     {
-      "question": "Jeżeli do transmisji otrzymujemy zakres częstoliwości, to jaki jest to rodzaj multipleksacji? Podaj skrót.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=615','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jeżeli do transmisji otrzymujemy zakres częstoliwości, to jaki jest to rodzaj multipleksacji? Podaj skrót.",
       "comments": null,
       "answers": [
         {
@@ -1983,7 +1983,7 @@
       ]
     },
     {
-      "question": "Zaznacz adresy sieci powstałe po podzieleniu sieci 172.16.32.0/24 na 4 podsieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=616','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Zaznacz adresy sieci powstałe po podzieleniu sieci 172.16.32.0/24 na 4 podsieci.",
       "comments": null,
       "answers": [
         {
@@ -2017,7 +2017,7 @@
       ]
     },
     {
-      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=618','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.",
       "comments": null,
       "answers": [
         {
@@ -2039,7 +2039,7 @@
       ]
     },
     {
-      "question": "Protokół dynamicznej konfiguracji adresów IP dla hostów nosi nazwę:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=619','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Protokół dynamicznej konfiguracji adresów IP dla hostów nosi nazwę:",
       "comments": null,
       "answers": [
         {
@@ -2061,7 +2061,7 @@
       ]
     },
     {
-      "question": "FTP jest protokołem bezstanowym.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1856','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "FTP jest protokołem bezstanowym.",
       "comments": [
         {
           "author": "~anon@91.94.*.*",
@@ -2091,7 +2091,7 @@
       ]
     },
     {
-      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=621','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Mając dany adres IP 213.23.10.34/23 określ adres rozgłoszeniowy sieci.",
       "comments": null,
       "answers": [
         {
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "question": "ARP (Address Resolution Protocol) odpowiada za:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=622','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "ARP (Address Resolution Protocol) odpowiada za:",
       "comments": null,
       "answers": [
         {
@@ -2135,7 +2135,7 @@
       ]
     },
     {
-      "question": "W sieci Ethernet 100BaseT używającej tylko przełączników pracujących w trybie store-and-forward i połączeń full-duplex\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=623','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "W sieci Ethernet 100BaseT używającej tylko przełączników pracujących w trybie store-and-forward i połączeń full-duplex",
       "comments": null,
       "answers": [
         {
@@ -2157,7 +2157,7 @@
       ]
     },
     {
-      "question": "Teoretyczna prędkość sieci, w której medium to 10BASE-T wynosi:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=624','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Teoretyczna prędkość sieci, w której medium to 10BASE-T wynosi:",
       "comments": null,
       "answers": [
         {
@@ -2179,7 +2179,7 @@
       ]
     },
     {
-      "question": "Jakie znasz dwa podstawowe rodzaję trybów przełączania pakietów?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=625','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jakie znasz dwa podstawowe rodzaję trybów przełączania pakietów?",
       "comments": null,
       "answers": [
         {
@@ -2201,7 +2201,7 @@
       ]
     },
     {
-      "question": "Adres IP ma:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=626','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Adres IP ma:",
       "comments": null,
       "answers": [
         {
@@ -2223,7 +2223,7 @@
       ]
     },
     {
-      "question": "Skrót LAN oznacza:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=627','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Skrót LAN oznacza:",
       "comments": null,
       "answers": [
         {
@@ -2245,7 +2245,7 @@
       ]
     },
     {
-      "question": "Przełączniki stosujące wyłącznie algorytm store-and-forward:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=628','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Przełączniki stosujące wyłącznie algorytm store-and-forward:",
       "comments": null,
       "answers": [
         {
@@ -2267,7 +2267,7 @@
       ]
     },
     {
-      "question": "Jakie zjawiska wystąpią, gdy w sieci Ethernet zamienimy koncentrator (hub) na przełącznik (switch) pracujący w trybie store-and-forward?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=629','komentarze','width=560,height=360')\"> - (5)      ",
+      "question": "Jakie zjawiska wystąpią, gdy w sieci Ethernet zamienimy koncentrator (hub) na przełącznik (switch) pracujący w trybie store-and-forward?",
       "comments": [
         {
           "author": "~anon@89.73.*.*",
@@ -2319,7 +2319,7 @@
       ]
     },
     {
-      "question": "Czy protokół SMTP jest protokołem stanowym?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=630','komentarze','width=560,height=360')\"> - (13)      ",
+      "question": "Czy protokół SMTP jest protokołem stanowym?",
       "comments": [
         {
           "author": "~anon@83.24.*.*",
@@ -2399,7 +2399,7 @@
       ]
     },
     {
-      "question": "Skrót ATM oznacza:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=631','komentarze','width=560,height=360')\"> - (5)      ",
+      "question": "Skrót ATM oznacza:",
       "comments": [
         {
           "author": "~ZIom@85.222.*.*",
@@ -2447,7 +2447,7 @@
       ]
     },
     {
-      "question": "Switch musi posiadać adres IP do poprawnego działania.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=632','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Switch musi posiadać adres IP do poprawnego działania.",
       "comments": null,
       "answers": [
         {
@@ -2461,7 +2461,7 @@
       ]
     },
     {
-      "question": "PVC jest tworzone dla połączeń:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=633','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "PVC jest tworzone dla połączeń:",
       "comments": null,
       "answers": [
         {
@@ -2479,7 +2479,7 @@
       ]
     },
     {
-      "question": "Standard Ethernet w strukturze ramki określa preambułę:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=634','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Standard Ethernet w strukturze ramki określa preambułę:",
       "comments": null,
       "answers": [
         {
@@ -2501,7 +2501,7 @@
       ]
     },
     {
-      "question": "Wzmacniacz (repeater):\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=635','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Wzmacniacz (repeater):",
       "comments": [
         {
           "author": "~Murek1993@78.11.*.*",
@@ -2534,7 +2534,7 @@
       ]
     },
     {
-      "question": "Sieci radiowe w standardzie 802.11a pracują z następującą maksymalną teoretyczną szybkością przesyłania danych na kanał:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=636','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Sieci radiowe w standardzie 802.11a pracują z następującą maksymalną teoretyczną szybkością przesyłania danych na kanał:",
       "comments": [
         {
           "author": "~pawel@217.96.*.*",
@@ -2572,7 +2572,7 @@
       ]
     },
     {
-      "question": "Atak zablokowania usługi (DoS) polega na:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=637','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Atak zablokowania usługi (DoS) polega na:",
       "comments": [
         {
           "author": "~billy@89.68.*.*",
@@ -2610,7 +2610,7 @@
       ]
     },
     {
-      "question": "TEMPEST jest zabezpieczeniem przed:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=638','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "TEMPEST jest zabezpieczeniem przed:",
       "comments": [
         {
           "author": "~anon@178.36.*.*",
@@ -2643,7 +2643,7 @@
       ]
     },
     {
-      "question": "Uwierzytelnienie ma na celu:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=639','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Uwierzytelnienie ma na celu:",
       "comments": null,
       "answers": [
         {
@@ -2665,7 +2665,7 @@
       ]
     },
     {
-      "question": "PGP używa kluczy:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=640','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "PGP używa kluczy:",
       "comments": null,
       "answers": [
         {
@@ -2687,7 +2687,7 @@
       ]
     },
     {
-      "question": "Który schemat obrazuje komunikację dwóch aplikacji przez router\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=985','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Który schemat obrazuje komunikację dwóch aplikacji przez router",
       "comments": [
         {
           "author": "~billy@89.68.*.*",
@@ -2720,7 +2720,7 @@
       ]
     },
     {
-      "question": "Wybierz poprawne rozwinięcie skrótu UDP.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1897','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu UDP.",
       "comments": null,
       "answers": [
         {
@@ -2742,7 +2742,7 @@
       ]
     },
     {
-      "question": "Które warunki muszą być spełnione, aby host A wysłał zapytanie ARP na temat hosta B o danym IP ?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1898','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Które warunki muszą być spełnione, aby host A wysłał zapytanie ARP na temat hosta B o danym IP ?",
       "comments": null,
       "answers": [
         {
@@ -2764,7 +2764,7 @@
       ]
     },
     {
-      "question": "Co oznacza odebrany pakiet ICMP Destination Unreachable?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1721','komentarze','width=560,height=360')\"> - (5)      ",
+      "question": "Co oznacza odebrany pakiet ICMP Destination Unreachable?",
       "comments": [
         {
           "author": "~anon@95.160.*.*",
@@ -2812,7 +2812,7 @@
       ]
     },
     {
-      "question": "Czy HTTP jest protokołem bezstanowym?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1722','komentarze','width=560,height=360')\"> - (5)      ",
+      "question": "Czy HTTP jest protokołem bezstanowym?",
       "comments": [
         {
           "author": "~Huraggan@83.6.*.*",
@@ -2852,7 +2852,7 @@
       ]
     },
     {
-      "question": "Rozważamy rekord DNS typu MX. Wartością rekordu jest\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1723','komentarze','width=560,height=360')\"> - (4)      ",
+      "question": "Rozważamy rekord DNS typu MX. Wartością rekordu jest",
       "comments": [
         {
           "author": "~theBeast@89.161.*.*",
@@ -2895,7 +2895,7 @@
       ]
     },
     {
-      "question": "Jakie są dwa podstawowe rodzaje protokołów wysyłania grupowego?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1724','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Jakie są dwa podstawowe rodzaje protokołów wysyłania grupowego?",
       "comments": [
         {
           "author": "~Pomocnik@5.184.*.*",
@@ -2933,7 +2933,7 @@
       ]
     },
     {
-      "question": "Co oznacza termin \"multipleksacja asynchroniczna\"?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1725','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Co oznacza termin \"multipleksacja asynchroniczna\"?",
       "comments": null,
       "answers": [
         {
@@ -2955,7 +2955,7 @@
       ]
     },
     {
-      "question": "Załóżmy, że niezawodny protokół komunikacyjny, podobny do TCP, ma dużo za małą estymację czasu powrotu. Jakie są tego skutki?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1730','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Załóżmy, że niezawodny protokół komunikacyjny, podobny do TCP, ma dużo za małą estymację czasu powrotu. Jakie są tego skutki?",
       "comments": null,
       "answers": [
         {
@@ -2977,7 +2977,7 @@
       ]
     },
     {
-      "question": "Mechanizm Okna (Window) jest wykorzystywany w:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1731','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Mechanizm Okna (Window) jest wykorzystywany w:",
       "comments": null,
       "answers": [
         {
@@ -2999,7 +2999,7 @@
       ]
     },
     {
-      "question": "Cechy UDP to\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1857','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Cechy UDP to",
       "comments": null,
       "answers": [
         {
@@ -3021,7 +3021,7 @@
       ]
     },
     {
-      "question": "Za pomocą jakiego polecenia (system operacyjny Linux) możemy uzyskać informacje z serwerów DNS?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1858','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Za pomocą jakiego polecenia (system operacyjny Linux) możemy uzyskać informacje z serwerów DNS?",
       "comments": [
         {
           "author": "~anon@95.160.*.*",
@@ -3054,7 +3054,7 @@
       ]
     },
     {
-      "question": "Czas potrzebny na przesłanie małego pakietu od nadawcy do odbiorcy i z powrotem to... (podaj skrót)\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1854','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Czas potrzebny na przesłanie małego pakietu od nadawcy do odbiorcy i z powrotem to... (podaj skrót)",
       "comments": null,
       "answers": [
         {
@@ -3076,7 +3076,7 @@
       ]
     },
     {
-      "question": "W pytaniu iteracyjnym, jeśli serwer DNS nie zna translacji adresu o który pyta klient, serwer po prostu odpowie, że nie zna translacji. Odpowiedzialność za pytanie innego serwera spoczywa na kliencie\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1855','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "W pytaniu iteracyjnym, jeśli serwer DNS nie zna translacji adresu o który pyta klient, serwer po prostu odpowie, że nie zna translacji. Odpowiedzialność za pytanie innego serwera spoczywa na kliencie",
       "comments": [
         {
           "author": "~ja@91.230.*.*",
@@ -3101,7 +3101,7 @@
       ]
     },
     {
-      "question": "Które z poniższych występują w nagłówku protokołu TCP.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1860','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Które z poniższych występują w nagłówku protokołu TCP.",
       "comments": null,
       "answers": [
         {
@@ -3123,7 +3123,7 @@
       ]
     },
     {
-      "question": "W pytaniu rekurencyjnym, jeśli serwer DNS nie zna translacji adresu o który pyta klient, serwer jest odpowiedzialny za znalezienie odpowiedzi dla klienta. Może to wymagać komunikacji z innymi serwerami i przekazania odpowiedzi do klienta.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1859','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "W pytaniu rekurencyjnym, jeśli serwer DNS nie zna translacji adresu o który pyta klient, serwer jest odpowiedzialny za znalezienie odpowiedzi dla klienta. Może to wymagać komunikacji z innymi serwerami i przekazania odpowiedzi do klienta.",
       "comments": null,
       "answers": [
         {
@@ -3137,7 +3137,7 @@
       ]
     },
     {
-      "question": "Zaznacz cechy kontroli przeciążeń typu \"koniec-koniec\"\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1861','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Zaznacz cechy kontroli przeciążeń typu \"koniec-koniec\"",
       "comments": null,
       "answers": [
         {
@@ -3159,7 +3159,7 @@
       ]
     },
     {
-      "question": "HTTP jest protokołem stanowym.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1862','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "HTTP jest protokołem stanowym.",
       "comments": null,
       "answers": [
         {
@@ -3173,7 +3173,7 @@
       ]
     },
     {
-      "question": "Mówi się, że protokół FTP używa komunikacji kontrolnej \"poza pasmem\". Czy to oznacza że:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1869','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Mówi się, że protokół FTP używa komunikacji kontrolnej \"poza pasmem\". Czy to oznacza że:",
       "comments": null,
       "answers": [
         {
@@ -3195,7 +3195,7 @@
       ]
     },
     {
-      "question": "Warstwy sesji, prezentacji, aplikacji modelu OSI/ISO zostały \"połączone\" w jedną warstwe aplikacji modelu internetowego.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1863','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Warstwy sesji, prezentacji, aplikacji modelu OSI/ISO zostały \"połączone\" w jedną warstwe aplikacji modelu internetowego.",
       "comments": null,
       "answers": [
         {
@@ -3209,7 +3209,7 @@
       ]
     },
     {
-      "question": "Który schemat obrazuje komunikację dwóch aplikacji poprzez router?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1868','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Który schemat obrazuje komunikację dwóch aplikacji poprzez router?",
       "comments": null,
       "answers": [
         {
@@ -3231,7 +3231,7 @@
       ]
     },
     {
-      "question": "Telnet:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1864','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Telnet:",
       "comments": null,
       "answers": [
         {
@@ -3253,7 +3253,7 @@
       ]
     },
     {
-      "question": "(...) definiuje format oraz kolejność wymiany komunikatów pomiędzy dwoma lub więcej komunikującymi się systemami.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1865','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "(...) definiuje format oraz kolejność wymiany komunikatów pomiędzy dwoma lub więcej komunikującymi się systemami.",
       "comments": null,
       "answers": [
         {
@@ -3275,7 +3275,7 @@
       ]
     },
     {
-      "question": "Ilu warstwowy jest model sieci OSI/ISO?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1870','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Ilu warstwowy jest model sieci OSI/ISO?",
       "comments": null,
       "answers": [
         {
@@ -3297,7 +3297,7 @@
       ]
     },
     {
-      "question": "Jeżeli do transmisji otrzymujemy kwant czasu, to jaki jest to rodzaj multipleksacji? Podaj skrót.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1866','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jeżeli do transmisji otrzymujemy kwant czasu, to jaki jest to rodzaj multipleksacji? Podaj skrót.",
       "comments": null,
       "answers": [
         {
@@ -3311,7 +3311,7 @@
       ]
     },
     {
-      "question": "Wybierz rodzaje połączeń HTTP\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1867','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz rodzaje połączeń HTTP",
       "comments": null,
       "answers": [
         {
@@ -3333,7 +3333,7 @@
       ]
     },
     {
-      "question": "Wybierz prawdziwe stwierdzenia, dotyczące protokołu rutingu typu Stan Łącza (Link-State)\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1871','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz prawdziwe stwierdzenia, dotyczące protokołu rutingu typu Stan Łącza (Link-State)",
       "comments": null,
       "answers": [
         {
@@ -3355,7 +3355,7 @@
       ]
     },
     {
-      "question": "Komutacja kanałów wymaga podziału przepustowości łącza na \"części\"\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1872','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Komutacja kanałów wymaga podziału przepustowości łącza na \"części\"",
       "comments": null,
       "answers": [
         {
@@ -3369,7 +3369,7 @@
       ]
     },
     {
-      "question": "Co oznacza odebrany pakiet ICMP Destination Unreachable?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1873','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Co oznacza odebrany pakiet ICMP Destination Unreachable?",
       "comments": [
         {
           "author": "~JerDe@188.146.*.*",
@@ -3407,7 +3407,7 @@
       ]
     },
     {
-      "question": "Od czego zależy czas retransmisji w protokole niezawodnej komunikacji, który używa negatywnych potwierdzeń (NAK)?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1874','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Od czego zależy czas retransmisji w protokole niezawodnej komunikacji, który używa negatywnych potwierdzeń (NAK)?",
       "comments": null,
       "answers": [
         {
@@ -3429,7 +3429,7 @@
       ]
     },
     {
-      "question": "Które z niżej podanych flag będzie miał ustawione drugi w kolejności segment TCP podczas nawiązywania połączenia?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1875','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Które z niżej podanych flag będzie miał ustawione drugi w kolejności segment TCP podczas nawiązywania połączenia?",
       "comments": null,
       "answers": [
         {
@@ -3451,7 +3451,7 @@
       ]
     },
     {
-      "question": "Jakie mamy typy zapytań DNS?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1876','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jakie mamy typy zapytań DNS?",
       "comments": null,
       "answers": [
         {
@@ -3473,7 +3473,7 @@
       ]
     },
     {
-      "question": "Jakie parametry wykorzystywane są przy demultipleksacji segmentów protokołu UDP?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1877','komentarze','width=560,height=360')\"> - (6)      ",
+      "question": "Jakie parametry wykorzystywane są przy demultipleksacji segmentów protokołu UDP?",
       "comments": [
         {
           "author": "~p@212.87.*.*",
@@ -3526,7 +3526,7 @@
       ]
     },
     {
-      "question": "Załóżmy, że estymacja czasu powrotu jest za duża. Jakie są tego skutki?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1878','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Załóżmy, że estymacja czasu powrotu jest za duża. Jakie są tego skutki?",
       "comments": null,
       "answers": [
         {
@@ -3548,7 +3548,7 @@
       ]
     },
     {
-      "question": "Jakie są główne różnice pomiędzy sieciami datagramowymi a sieciami z wirtualnymi kanałami?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1879','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Jakie są główne różnice pomiędzy sieciami datagramowymi a sieciami z wirtualnymi kanałami?",
       "comments": [
         {
           "author": "~anon@89.67.*.*",
@@ -3586,7 +3586,7 @@
       ]
     },
     {
-      "question": "W sieci pakietowej, przed wysłaniem pakietu, nadawca musi ustalić dokładną trasę połączeń, przez które pakiet zostanie wysłany.-\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1881','komentarze','width=560,height=360')\"> - (6)      ",
+      "question": "W sieci pakietowej, przed wysłaniem pakietu, nadawca musi ustalić dokładną trasę połączeń, przez które pakiet zostanie wysłany.-",
       "comments": [
         {
           "author": "~anon@78.11.*.*",
@@ -3631,7 +3631,7 @@
       ]
     },
     {
-      "question": "Jakie są dwa podstawowe rodzaje protokołów wysyłania grupowego?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1880','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jakie są dwa podstawowe rodzaje protokołów wysyłania grupowego?",
       "comments": null,
       "answers": [
         {
@@ -3653,7 +3653,7 @@
       ]
     },
     {
-      "question": "Z jakiego protokołu warstwy niższej korzysta przede wszystkim DNS\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1882','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Z jakiego protokołu warstwy niższej korzysta przede wszystkim DNS",
       "comments": null,
       "answers": [
         {
@@ -3675,7 +3675,7 @@
       ]
     },
     {
-      "question": "Wybierz protokoły warstwy aplikacji, korzystające przede wszystkim z protokołu TCP\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1883','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Wybierz protokoły warstwy aplikacji, korzystające przede wszystkim z protokołu TCP",
       "comments": [
         {
           "author": "~Dodo@178.235.*.*",
@@ -3708,7 +3708,7 @@
       ]
     },
     {
-      "question": "Wybierz protokoły warstwy aplikacji, korzystające przede wszystkim z protokołu TCP\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1884','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Wybierz protokoły warstwy aplikacji, korzystające przede wszystkim z protokołu TCP",
       "comments": [
         {
           "author": "~cool@217.12.*.*",
@@ -3741,7 +3741,7 @@
       ]
     },
     {
-      "question": "System nazewnictwa i adresowanie stosowane w Internecie, umożliwiający konwersję numerycznych adresów internetowych na nazwy to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1885','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "System nazewnictwa i adresowanie stosowane w Internecie, umożliwiający konwersję numerycznych adresów internetowych na nazwy to:",
       "comments": null,
       "answers": [
         {
@@ -3763,7 +3763,7 @@
       ]
     },
     {
-      "question": "Protokół TCP dynamicznie zmienia szybkość transmisji.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1886','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Protokół TCP dynamicznie zmienia szybkość transmisji.",
       "comments": null,
       "answers": [
         {
@@ -3777,7 +3777,7 @@
       ]
     },
     {
-      "question": "Telefonia internetowa wykorzystuje zazwyczaj protokół\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1887','komentarze','width=560,height=360')\"> - (6)      ",
+      "question": "Telefonia internetowa wykorzystuje zazwyczaj protokół",
       "comments": [
         {
           "author": "~zKolosaNr1Dzienne@91.230.*.*",
@@ -3830,7 +3830,7 @@
       ]
     },
     {
-      "question": "Wybierz poprawne rozwinięcie skrótu HTTP.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1888','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu HTTP.",
       "comments": null,
       "answers": [
         {
@@ -3852,7 +3852,7 @@
       ]
     },
     {
-      "question": "Które z wymienionych to funkcje TCP\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1889','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Które z wymienionych to funkcje TCP",
       "comments": [
         {
           "author": "~wojt@87.205.*.*",
@@ -3890,7 +3890,7 @@
       ]
     },
     {
-      "question": "Załóżmy, że estymacja czasu powrotu jest duża. Jakie są tego skutki?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1890','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Załóżmy, że estymacja czasu powrotu jest duża. Jakie są tego skutki?",
       "comments": null,
       "answers": [
         {
@@ -3912,7 +3912,7 @@
       ]
     },
     {
-      "question": "Jakie parametry wykorzystywane są przy demultipleksacji protokołu TCP?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1891','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Jakie parametry wykorzystywane są przy demultipleksacji protokołu TCP?",
       "comments": null,
       "answers": [
         {
@@ -3934,7 +3934,7 @@
       ]
     },
     {
-      "question": "Rozważamy rekord DNS typu A. Wartością rekordu jest\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1892','komentarze','width=560,height=360')\"> - (6)      ",
+      "question": "Rozważamy rekord DNS typu A. Wartością rekordu jest",
       "comments": [
         {
           "author": "~aoyama@194.15.*.*",
@@ -3987,7 +3987,7 @@
       ]
     },
     {
-      "question": "Wybierz poprawne rozwinięcie skrótu IP\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1893','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu IP",
       "comments": null,
       "answers": [
         {
@@ -4009,7 +4009,7 @@
       ]
     },
     {
-      "question": "TCP używa skumulowanych potwierdzeń (ACK) i wyśle potwierdzenie o ostatnim poprawnie otrzymanym segmencie. Jeśli nadawca otrzymuje potwierdzenia tego samego segmentu wiele razy to jest prawdopodobne, że segment, następny po potwierdzonym segmecie został zgubiony w sieci.\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1894','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "TCP używa skumulowanych potwierdzeń (ACK) i wyśle potwierdzenie o ostatnim poprawnie otrzymanym segmencie. Jeśli nadawca otrzymuje potwierdzenia tego samego segmentu wiele razy to jest prawdopodobne, że segment, następny po potwierdzonym segmecie został zgubiony w sieci.",
       "comments": null,
       "answers": [
         {
@@ -4023,7 +4023,7 @@
       ]
     },
     {
-      "question": "Który protokół wykorzystuje przepustowość sieci wydajniej?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1895','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Który protokół wykorzystuje przepustowość sieci wydajniej?",
       "comments": null,
       "answers": [
         {
@@ -4037,7 +4037,7 @@
       ]
     },
     {
-      "question": "Zaznacz ceche kontroli przeciążeń z pomocą sieci\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1896','komentarze','width=560,height=360')\"> - (8)      ",
+      "question": "Zaznacz ceche kontroli przeciążeń z pomocą sieci",
       "comments": [
         {
           "author": "~Tajemniczy@79.185.*.*",
@@ -4096,7 +4096,7 @@
       ]
     },
     {
-      "question": "Adres rozgłoszeniowy dla adresów IP posiada postać:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1900','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Adres rozgłoszeniowy dla adresów IP posiada postać:",
       "comments": null,
       "answers": [
         {
@@ -4118,7 +4118,7 @@
       ]
     },
     {
-      "question": "Które warunki muszą być spełnione, aby host A wysłał zapytanie ARP na temat hosta B o danym IP ?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1899','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Które warunki muszą być spełnione, aby host A wysłał zapytanie ARP na temat hosta B o danym IP ?",
       "comments": null,
       "answers": [
         {
@@ -4140,7 +4140,7 @@
       ]
     },
     {
-      "question": "Przekazywanie żetonu to metoda dostępu w które\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1901','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Przekazywanie żetonu to metoda dostępu w które",
       "comments": null,
       "answers": [
         {
@@ -4162,7 +4162,7 @@
       ]
     },
     {
-      "question": "Protokół pozwalający na uzyskanie przez klienta swojego adresu IP to:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1904','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Protokół pozwalający na uzyskanie przez klienta swojego adresu IP to:",
       "comments": null,
       "answers": [
         {
@@ -4184,7 +4184,7 @@
       ]
     },
     {
-      "question": "Topologa sieci komputerowej określa:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1902','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Topologa sieci komputerowej określa:",
       "comments": null,
       "answers": [
         {
@@ -4206,7 +4206,7 @@
       ]
     },
     {
-      "question": "Adres rozgłoszeniowy dla adresów IP posiada postać:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=1903','komentarze','width=560,height=360')\"> - (3)      ",
+      "question": "Adres rozgłoszeniowy dla adresów IP posiada postać:",
       "comments": [
         {
           "author": "~anon@89.79.*.*",
@@ -4244,73 +4244,73 @@
       ]
     },
     {
-      "question": "<p style=\"margin-bottom: 0cm;\"><span style=\"font-family: 'Microsoft Sans Serif', sans-serif;\"><span style=\"font-size: 11pt;\">Wybierz poprawne rozwinięcie skrótu POP3.</span></span></p>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2401','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu POP3.",
       "comments": null,
       "answers": [
         {
-          "answer": "<p style=\"margin-bottom: 0cm;\"><span style=\"font-family: 'Microsoft Sans Serif', sans-serif;\"><span style=\"font-size: 11pt;\"><span lang=\"en-US\">Post Office Program version 3</span></span></span></p>",
+          "answer": "Post Office Program version 3",
           "correct": false
         },
         {
-          "answer": "<p style=\"margin-bottom: 0cm;\"><span style=\"font-family: 'Microsoft Sans Serif', sans-serif;\"><span style=\"font-size: 11pt;\"><span lang=\"en-US\">Post Office Protocol version 3</span></span></span></p>",
+          "answer": "Post Office Protocol version 3",
           "correct": true
         },
         {
-          "answer": "<p style=\"margin-bottom: 0cm;\"><span style=\"font-family: 'Microsoft Sans Serif', sans-serif;\"><span style=\"font-size: 11pt;\"><span lang=\"en-US\">Post Open Protocol version 3</span></span></span></p>",
+          "answer": "Post Open Protocol version 3",
           "correct": false
         },
         {
-          "answer": "<p style=\"margin-bottom: 0cm;\"><span style=\"font-family: 'Microsoft Sans Serif', sans-serif;\"><span style=\"font-size: 11pt;\"><span lang=\"en-US\">Point Office Protocol version 3</span></span></span></p>",
+          "answer": "Point Office Protocol version 3",
           "correct": false
         }
       ]
     },
     {
-      "question": "<span style=\"font-family: Times; font-size: medium; background-color: #ffffdd;\">Adresem rozgłoszeniowym dla sieci w ktorej jeden z interfejsow sieciowych posiada adres 24.24.24.24/24 jest adres:</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2412','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Adresem rozgłoszeniowym dla sieci w ktorej jeden z interfejsow sieciowych posiada adres 24.24.24.24/24 jest adres:",
       "comments": null,
       "answers": [
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">24.24.24.0</span>",
+          "answer": "24.24.24.0",
           "correct": false
         },
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">24.24.24.111</span>",
+          "answer": "24.24.24.111",
           "correct": false
         },
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">24.24.24.255</span>",
+          "answer": "24.24.24.255",
           "correct": true
         },
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">24.24.24.1</span>",
+          "answer": "24.24.24.1",
           "correct": false
         }
       ]
     },
     {
-      "question": "<span style=\"font-family: Times; font-size: medium; background-color: #ffffdd;\">Wybierz poprawne rozwinięcie skrótu FTP.</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2413','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Wybierz poprawne rozwinięcie skrótu FTP",
       "comments": null,
       "answers": [
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">File Transfer Protocol</span>",
+          "answer": "File Transfer Protocol",
           "correct": true
         },
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">Flood Transfer Protocol</span>",
+          "answer": "Flood Transfer Protocol",
           "correct": false
         },
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">File Transport Protocol</span>",
+          "answer": "File Transport Protocol",
           "correct": false
         },
         {
-          "answer": "<span style=\"font-family: Times; font-size: medium; background-color: #dddddd;\">Fine Transfer Protocol</span>",
+          "answer": "Fine Transfer Protocol",
           "correct": false
         }
       ]
     },
     {
-      "question": "Serwer nazw domen realizuje usługę\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2915','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Serwer nazw domen realizuje usługę",
       "comments": null,
       "answers": [
         {
@@ -4332,7 +4332,7 @@
       ]
     },
     {
-      "question": "<span style=\"font-weight: bold; color: #6a6a6a; font-family: arial, sans-serif; font-size: small;\">802.11b</span><span style=\"color: #545454; font-family: arial, sans-serif; font-size: small;\">&nbsp;pracuje na częstotliwości</span>\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2916','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "802.11b pracuje na częstotliwości",
       "comments": null,
       "answers": [
         {
@@ -4354,7 +4354,7 @@
       ]
     },
     {
-      "question": "Ile ma warst model internetowy?\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2565','komentarze','width=560,height=360')\"> - (11)      ",
+      "question": "Ile ma warst model internetowy?",
       "comments": [
         {
           "author": "~AlphonseMacierewicz@31.178.*.*",
@@ -4432,7 +4432,7 @@
       ]
     },
     {
-      "question": "Wymien model usług warstwy sieci:\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2566','komentarze','width=560,height=360')\"> - (1)      ",
+      "question": "Wymien model usług warstwy sieci:",
       "comments": null,
       "answers": [
         {
@@ -4454,7 +4454,7 @@
       ]
     },
     {
-      "question": "Kategoria 5. kabla UTD umożliwia stosowanie technologii\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2911','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Kategoria 5. kabla UTD umożliwia stosowanie technologii",
       "comments": [
         {
           "author": "~2m@91.230.*.*",
@@ -4487,7 +4487,7 @@
       ]
     },
     {
-      "question": "Który adres IP jet niepoprawny\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2912','komentarze','width=560,height=360')\"> - (2)      ",
+      "question": "Który adres IP jet niepoprawny",
       "comments": [
         {
           "author": "~alamakota@46.227.*.*",
@@ -4520,7 +4520,7 @@
       ]
     },
     {
-      "question": "802.11 pracuje z metodą dostępu\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2913','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "802.11 pracuje z metodą dostępu",
       "comments": null,
       "answers": [
         {
@@ -4538,7 +4538,7 @@
       ]
     },
     {
-      "question": "IDS służy do\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2914','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "IDS służy do",
       "comments": null,
       "answers": [
         {
@@ -4560,7 +4560,7 @@
       ]
     },
     {
-      "question": "Światłowód to\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2917','komentarze','width=560,height=360')\"> - (11)      ",
+      "question": "Światłowód to",
       "comments": [
         {
           "author": "~niewiem@159.205.*.*",
@@ -4638,7 +4638,7 @@
       ]
     },
     {
-      "question": "coax to\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2918','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "coax to",
       "comments": null,
       "answers": [
         {
@@ -4660,7 +4660,7 @@
       ]
     },
     {
-      "question": "Zmiana nazw mnemonicznych na adres usługi to\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2919','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Zmiana nazw mnemonicznych na adres usługi to",
       "comments": null,
       "answers": [
         {
@@ -4682,7 +4682,7 @@
       ]
     },
     {
-      "question": "Switch\n    <img src=\"question.png\" height=\"16\" width=\"16\" onclick=\"window.open('?comment=2920','komentarze','width=560,height=360')\"> - (0)      ",
+      "question": "Switch",
       "comments": null,
       "answers": [
         {

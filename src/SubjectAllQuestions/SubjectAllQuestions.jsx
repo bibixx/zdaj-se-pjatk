@@ -8,7 +8,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import Paper from '@material-ui/core/Paper';
 import {
-  Typography, Divider, CircularProgress,
+  Typography, Divider, CircularProgress, Box,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -65,7 +65,13 @@ const SubjectAllQuestions = () => {
   }, [subjectId]);
 
   if (loading) {
-    return <CircularProgress />;
+    return (
+      <ContentWrapper>
+        <Box display="flex" justifyContent="center">
+          <CircularProgress />
+        </Box>
+      </ContentWrapper>
+    );
   }
 
   const { data } = subject;
@@ -94,7 +100,15 @@ const SubjectAllQuestions = () => {
                       role={undefined}
                       dense
                     >
-                      <ListItemText id={labelId} primary={<div fontWeight="fontWeightBold">{answer}</div>} />
+                      <ListItemText
+                        id={labelId}
+                        primary={(
+                          <Box fontWeight="fontWeightBold">
+                            {/* eslint-disable-next-line react/no-danger */}
+                            <span dangerouslySetInnerHTML={{ __html: answer }} />
+                          </Box>
+                      )}
+                      />
                       <ListItemIcon>
                         <Checkbox
                           tabIndex={-1}

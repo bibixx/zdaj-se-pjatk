@@ -1,8 +1,16 @@
 {
   "pages": [
     {
-      "title": "Sieci Komputerowe 1 (SKO1/SKJ)",
-      "id": "sko1-skj"
+      "id": "skj-eng",
+      "title": "Sieci Komputerowe - ang - egzamin (SKJ)"
+    },
+    {
+      "id": "sko1-skj",
+      "title": "Sieci Komputerowe 1 (SKO1/SKJ)"
+    },
+    {
+      "id": "sko2",
+      "title": "Sieci Komputerowe 2 - edu - 2011 ZIMA (SKO2)"
     }
   ]
 }
