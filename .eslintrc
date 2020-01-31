@@ -1,0 +1,9 @@
+{
+  "extends": ["airbnb", "airbnb/hooks"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "react/prop-types": 0
+  }
+}
