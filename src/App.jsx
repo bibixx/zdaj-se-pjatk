@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,6 +14,8 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import SubjectAllQuestions from './SubjectAllQuestions';
 import IndexPage from './IndexPage';
 import getTheme from './theme';
+import Footer from './Footer';
+import DarkModeButton from './DarkModeButton';
 
 const useStyles = makeStyles({
   root: {
@@ -24,10 +26,15 @@ const useStyles = makeStyles({
 
 const App = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const [darkModeEnabled, setDarkModeEnabled] = useState(prefersDarkMode);
+
+  useEffect(() => {
+    setDarkModeEnabled(prefersDarkMode);
+  }, [prefersDarkMode]);
 
   const theme = useMemo(
-    () => getTheme(prefersDarkMode),
-    [prefersDarkMode],
+    () => getTheme(darkModeEnabled),
+    [darkModeEnabled],
   );
 
   const classes = useStyles();
@@ -46,6 +53,15 @@ const App = () => {
             </Route>
           </Switch>
         </Router>
+        <Footer>
+          <DarkModeButton
+            darkModeEnabled={darkModeEnabled}
+            onClick={() => setDarkModeEnabled(!darkModeEnabled)}
+          >
+            {/* eslint-disable no-irregular-whitespace */}
+            Zmień motyw
+          </DarkModeButton>
+        </Footer>
       </Container>
     </ThemeProvider>
   );
