@@ -1,0 +1,29 @@
+{
+  "title": "Matematyka Dyskretna 2020 (MAD)",
+  "id": "mad",
+  "data": [
+    {
+      "question": "Do zdań, dla których do określenia wartości wystarczy analiza syntaksuczna należą",
+      "id": 3346,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zdania złożone",
+          "correct": false
+        },
+        {
+          "answer": "Zdania sprzeczne",
+          "correct": false
+        },
+        {
+          "answer": "Zdania proste",
+          "correct": false
+        },
+        {
+          "answer": "Zadne&nbsp;",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

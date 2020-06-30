@@ -1,0 +1,4594 @@
+{
+  "title": "Technika i Architekture Komputerów (TAK) [ENG] (TAKE)",
+  "id": "tak_ang",
+  "data": [
+    {
+      "question": "<p>Time sharing is a technique</p>",
+      "id": 3042,
+      "comments": [
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": ">> many processors on one processors \nthis makes no sense. perhaps many tasks on one processor ",
+          "date": "05-02-2018 11:45:51"
+        },
+        {
+          "author": "~lew@89.64.*.*",
+          "comment": "there should me \"many processes on one processor\", sorry",
+          "date": "05-02-2018 11:57:45"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<p>Enabling data transfer is given time slots</p>",
+          "correct": false
+        },
+        {
+          "answer": "<p>Allowing a computer to speed up the computations</p>",
+          "correct": false
+        },
+        {
+          "answer": "<p>Enabling the execution of many processors on one processors</p>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "In order to add two floating-point numbers:",
+      "id": 2897,
+      "comments": [
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "it would make more sense if it were \"one of them\", not \"none of them\", in the third option. probably a typo ",
+          "date": "05-02-2017 11:19:32"
+        },
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "taking my words back, still not sure what C means",
+          "date": "06-02-2017 23:14:51"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "The result depends on which number we denormalize",
+          "correct": false
+        },
+        {
+          "answer": "When adding two negative numbers, we will get a positive one",
+          "correct": false
+        },
+        {
+          "answer": "Obtain the same result as one of the arguments, even if none of them is 0",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "OCR is a kind of software we use for:",
+      "id": 2898,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Transfering images to text files&nbsp;",
+          "correct": true
+        },
+        {
+          "answer": "Wrong",
+          "correct": false
+        },
+        {
+          "answer": "Wrong",
+          "correct": false
+        },
+        {
+          "answer": "Wrong",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Data transfer from hard disk:",
+      "id": 2899,
+      "comments": [
+        {
+          "author": "~Yan Plieshkov@109.206.*.*",
+          "comment": "LWOW TO UKRAINA",
+          "date": "03-02-2018 14:35:40"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "POLSKI KIJOW POLSKI LWOW",
+          "date": "05-02-2018 15:28:49"
+        },
+        {
+          "author": "~бендера@83.31.*.*",
+          "comment": "ляхи проклятые",
+          "date": "13-02-2018 10:49:04"
+        },
+        {
+          "author": "~russia@91.230.*.*",
+          "comment": "poland to est Rosiya",
+          "date": "13-11-2018 13:09:27"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "крым нащ",
+          "date": "01-02-2019 14:48:00"
+        },
+        {
+          "author": "~filip rak@185.119.*.*",
+          "comment": "jan paweł 2 sami wiecie co",
+          "date": "12-11-2019 14:42:15"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "always involves buffers;",
+          "correct": true
+        },
+        {
+          "answer": "is much slower than data transfer from RAM to the central processor;",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Al Chwarizmi</span>",
+      "id": 2678,
+      "comments": [
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Hi, I'm the poor soul who decided to translate these questions and I'm gonna use this one's comments to put up some info about the answers here.",
+          "date": "27-01-2017 14:20:35"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "First and foremost, I want to say that you shouldn't trust the answers to any of these questions.\nNot only because I could have made a mistake, but also because some of them are plain wrong.",
+          "date": "27-01-2017 14:20:57"
+        },
+        {
+          "author": "~anon@83.31.*.*",
+          "comment": "All the selected answers are also the ones selected in the polish version.\nI double checked all of them but there is still a chance one or two were overlooked.",
+          "date": "27-01-2017 14:21:31"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "So, find the answers yourselves, this is just to give a general idea what they look like; some are correct, others not.",
+          "date": "27-01-2017 14:21:56"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Lastly, I tried to translate them as accurately as I could, and weren't always too successful, so be on a look out for unconventional names and shit like that. The context is all there tho.\nGood luck, I guess! :)",
+          "date": "27-01-2017 14:22:22"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Also, here it is in a .pdf file\nhttps://drive.google.com/open?id=0B4L62g7yKloBdm8tTHpIbXdob2c",
+          "date": "27-01-2017 14:40:40"
+        },
+        {
+          "author": "~jmeteor@178.42.*.*",
+          "comment": "Good bless you phil",
+          "date": "28-01-2017 12:03:26"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "Good luck tomorrow guys",
+          "date": "30-01-2017 22:56:04"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "Thank you so much, you did your best!!! good luck for you\n",
+          "date": "31-01-2018 10:02:17"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">was writing the first computer programs</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">was making a living out of studies</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">wrote the solutions of mathematical problems in an algorithmic way</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">is the creator of the Arabic numerical system</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p><span lang=\"EN-US\">Creators of mechanical calculators were</span></p>",
+      "id": 2677,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">Gottfried Wilhelm Leibniz</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">Blaise Pascal</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">Wilhelm Schickard</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "chess won a game to human",
+      "id": 3066,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 years ago",
+          "correct": false
+        },
+        {
+          "answer": "NEVER",
+          "correct": false
+        },
+        {
+          "answer": "5 Years Ago",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "chess won a game to human",
+      "id": 3067,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 years ago",
+          "correct": false
+        },
+        {
+          "answer": "NEVER",
+          "correct": false
+        },
+        {
+          "answer": "5 Years Ago",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The following equations are correct in the floating-point system",
+      "id": 2922,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "how to calculate this guys???\n",
+          "date": "01-02-2019 11:40:36"
+        },
+        {
+          "author": "~jack@37.47.*.*",
+          "comment": "see 10.0 Golka-ENG.pdf on PCH ftp",
+          "date": "01-02-2019 12:01:40"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "i saw it... still its really confusing, like i cant undestand what does he mean by result normalization?..",
+          "date": "01-02-2019 16:17:07"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "110 0101 + 111 0101 = 000 0100",
+          "correct": true
+        },
+        {
+          "answer": "010 0100 + 010 0100 = 011 0100",
+          "correct": true
+        },
+        {
+          "answer": "101 0101 + 110 0101 = 111 0100<p></p>\n<p>&nbsp;</p>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "(0011) is a &nbsp;basic period of&nbsp;a&nbsp;number :",
+      "id": 2923,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "Should it be no correct answer?? ",
+          "date": "03-02-2020 17:13:59"
+        },
+        {
+          "author": "~anon@31.0.*.*",
+          "comment": "no correct answer, answer b should be deleted",
+          "date": "03-02-2020 20:31:53"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "6/7",
+          "correct": false
+        },
+        {
+          "answer": "4/5",
+          "correct": true
+        },
+        {
+          "answer": "2/7",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To represent in 2-'s-complement system an integer with an absolute value more than 1.000.000.000, how many bytes do we need exactly?",
+      "id": 2924,
+      "comments": [
+        {
+          "author": "~anon007@146.185.*.*",
+          "comment": "Could someone explain this one to me  please?",
+          "date": "03-02-2019 15:05:53"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "Probably because 4 bytes are 32 bits which is the size of int. ",
+          "date": "03-02-2019 15:39:36"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "30",
+          "correct": false
+        },
+        {
+          "answer": "16",
+          "correct": false
+        },
+        {
+          "answer": "4",
+          "correct": true
+        },
+        {
+          "answer": "6",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To determine the average complexity of an algorithm we need to evaluate",
+      "id": 2925,
+      "comments": [
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "should it be a) only?",
+          "date": "31-01-2018 10:06:10"
+        },
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": ">> a specific layout of a random variable. what does it mean? ",
+          "date": "05-02-2018 13:23:48"
+        },
+        {
+          "author": "~anon@188.146.*.*",
+          "comment": "Why not a) only? We measure the complexity for every variable that will suit the algorithm, and then we calculate mean. Am I wrong?",
+          "date": "26-01-2019 11:11:29"
+        },
+        {
+          "author": "~anon@37.120.*.*",
+          "comment": "wtf?",
+          "date": "10-02-2019 18:31:26"
+        },
+        {
+          "author": "~anon@37.120.*.*",
+          "comment": "why not everything with words \"all possible\"?",
+          "date": "10-02-2019 18:32:11"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<div><span>all possible data</span></div>",
+          "correct": true
+        },
+        {
+          "answer": "a specific layout of a random variable",
+          "correct": true
+        },
+        {
+          "answer": "concrete data",
+          "correct": false
+        },
+        {
+          "answer": "all possible to imagine algorithms",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<div><span>To determine the pessimistic complexity of a problem we need to evaluate</span></div>",
+      "id": 2926,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "all possible data",
+          "correct": true
+        },
+        {
+          "answer": "all possible to imagine algorithms",
+          "correct": true
+        },
+        {
+          "answer": "concrete data",
+          "correct": false
+        },
+        {
+          "answer": "specific layout of a random variable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Adding 1.4 + 8.8 in a floating-point processor we are sure that</span><strong></strong><em></em>",
+      "id": 2927,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "the result will be rounded",
+          "correct": true
+        },
+        {
+          "answer": "all arguments are represented exactly",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">A serial port is</span>",
+      "id": 2679,
+      "comments": [
+        {
+          "author": "~anon@89.67.*.*",
+          "comment": "always slower than a parallel port is correct answer (According to the University of Mexico, serial ports transmit data one bit at a time, whereas parallel ports transmit 8 bits of data at a time.)",
+          "date": "28-01-2017 23:06:16"
+        },
+        {
+          "author": "~Maciek@83.28.*.*",
+          "comment": "I think they are not \"always\" slower",
+          "date": "28-01-2017 23:36:53"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "When you send in parallel you must measure all of the lines at the exact same moment, as you go faster the size of the window for that moment gets smaller and smaller, eventually it can get so small that some of the wires may still be stabilizing while others are finished before you ran out of time.\nBy sending in serial you no longer need to worry about all of the lines stabilizing, just one line. And it is more cost efficient to make one line stabilize 10 times faster than to add 10 lines at the same speed.",
+          "date": "29-01-2017 00:37:40"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "the profesor said it somtimes faster\n",
+          "date": "05-02-2018 00:22:38"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "the profesor said it somtimes faster\n",
+          "date": "05-02-2018 00:22:40"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "if the CPU clock are the same, then definitely serial one is faster, because parallel one is easy to have error about receiving 8 bits from 8 lines at the same period unless it lowers its speed, but if dont mention about CPU clock, then sure parallel one could be relatively faster, imo this is why pch said SOMETIMES faster, but we are talking about general",
+          "date": "06-02-2018 00:22:59"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "tf serial port aint used in modern notebooks",
+          "date": "31-01-2020 21:45:10"
+        },
+        {
+          "author": "~anon@31.182.*.*",
+          "comment": "@up So you don't have USB in your notebook?",
+          "date": "01-02-2020 04:30:45"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">always slower than a parallel port</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">installed in modern notebooks</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">used to connect a keyboard</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The creator of the first computer is considered to be</span>",
+      "id": 2680,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">Konrad Zuse</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">John von Neuman</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">John Backus</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Which one of these equations is true in the floating-point system</span>",
+      "id": 2681,
+      "comments": [
+        {
+          "author": "~Maciek@178.42.*.*",
+          "comment": "Yes, b.) is correct",
+          "date": "27-01-2017 17:09:36"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Could you elaborate?\nIs the significand of the first number of b) 0.111 or 0.0111?",
+          "date": "27-01-2017 17:12:39"
+        },
+        {
+          "author": "~anon@178.42.*.*",
+          "comment": "The significand of the first number equals 0100 after the approximation. After denormalization it looks like this: 000 0100.",
+          "date": "27-01-2017 17:29:50"
+        },
+        {
+          "author": "~Maciek@178.42.*.*",
+          "comment": "Then you have to add these two numbers:\n000 0111 and 000 0100. The result is 000 1011. But it is not true. We received a negative number, so we have to normalize it. After normalization it equals 001 0101. We moved the mantissa to the right side (adding one \"zero\" and vanishing last \"one\"). So we divided everything by two. To normalize we add \"1\" to the exponent which is now 001",
+          "date": "27-01-2017 17:39:19"
+        },
+        {
+          "author": "~anon@83.31.*.*",
+          "comment": "Can you explain how was 0111 approximated to 0100?",
+          "date": "27-01-2017 18:23:19"
+        },
+        {
+          "author": "~Maciek@178.42.*.*",
+          "comment": "Generally speaking we tinker with a smaller number, which is here 111 0111. The difference between exponents of these two numbers is \"1\", so we have to move he comma,dot,point to the left by 1. In the upshot we get one more 0. Our significand (of the smaller number still) is now 0.0111 or 00111. We have 5 digits and our significand should have 4. It is called \"overflow\". We must do sth with that. What we do is approximating. Our significand 0011|1. We add this \"1\" to the digits on the left.\nTo encapsulate it looks like this:\n0 0 1 1+1\n0 0 1+1 0\n0 1 0 0\nThat's what we wanted to get.",
+          "date": "27-01-2017 19:12:53"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Thanks for the explanation, really helpful.\nSo this means that the solution for the first equation would be 000 1100?\nAnd do you happen to know, in the third equation, the number 001 0101 as we make the exponent 000, the significand becomes 1010, making it negative. This shouldn't be, right?",
+          "date": "27-01-2017 22:12:22"
+        },
+        {
+          "author": "~Maciek@178.42.*.*",
+          "comment": "The first equation should be like this. When it comes to the third, you should start with the number which possess smaller exponent. And then you should denormalize this smaller number to the greater.",
+          "date": "27-01-2017 23:15:17"
+        },
+        {
+          "author": "~anon@83.31.*.*",
+          "comment": "Thank you so much, that would be 001 0110 then?",
+          "date": "28-01-2017 01:08:46"
+        },
+        {
+          "author": "~anon@212.106.*.*",
+          "comment": "Can somebody explain how to add them after aproximation. In case of the 2 expression we have 0111 and 0100\n",
+          "date": "29-01-2017 22:52:42"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "When the exponent is the same you add them as you would any other binary numbers:\n 0111\n+0100\n 1011\nand the exponent stays the same.\n\nThe important thing to note here is that we added two positive values and got a negative one (because of two's complement), so we got some more stuff to deal with.\n\nWe have to move the result to the right by dividing the significand by 2 -> 0101|1.\nAnd since we divided the significand by 2 we need to add 1 to the exponent for it to be the same value, resulting in 001 0101.",
+          "date": "30-01-2017 00:18:40"
+        },
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "thank all of you for the detailed explanation, but i still have one question. in the second example, why don't we round the answer when we're normalizing it? shouldn't 0101|1 result in 0110? ",
+          "date": "30-01-2017 12:30:27"
+        },
+        {
+          "author": "~anon@104.238.*.*",
+          "comment": "^ I think same as you. I round everything just like that. From Polish wikipedia I read that it should be:\n1) normalized\n2) cutted (exceeding bits)\n3) rounded\n\nWe will see on exams, whether we have to round or not :D",
+          "date": "30-01-2017 12:41:53"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "I've analysed the results and other examples .At the very end both results will be equally good, regardless of approximating or not. For instance in the answer b.) after denormalization we have \n 000 0111  =7/8\n+000 0100  = 4/8   7/8+4/8=11/8\nIt equals: 000 1011\nAfter normalization: 001 0101|1\nIf we won't round up the result will equal: 10/8; if we will round up: 12/8\nSo in each of these situations we have an error = 1/8. That's why I think both solutions are correct",
+          "date": "30-01-2017 14:43:25"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "I wish to correct myself. The result of b) will indeed be 001 0101 but we should come to it differently. The key here (as it is in one of the presentations) is to round the final value ONLY, I rounded the value after denormalization which you shouldn't do. The full solution to b) would then be:\n\nNormalize smaller to larger:\n111 0111 -> 000 0011|1 (keep the one for the remainder of calculations)\n\nAdd them:\n 000 0011|1\n+000 0111\n-----------\n 000 1010|1\n\nDenormalize it:\n000 1010|1 -> 001 0101|01\n\nAt last, round it:\n001 0101|01 -> 001 0101",
+          "date": "30-01-2017 19:55:33"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "Yes, that's the best way to solve it",
+          "date": "30-01-2017 20:10:11"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "I tried it like 15 minutes ago. It seem to be correct, but the lecture says the opposite. Take a look at slide 11 of 10.0 lecture. He denormalized, added, rounded and then normalized.",
+          "date": "30-01-2017 20:19:42"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "That's true, it's being rounded first, then normalized, which would make the result be 001 0110. The difference between them is little, but the answer would be for only a single one nonetheless. I guess the only solution to this question is to pray we won't get any equations where shit like that is happens.",
+          "date": "30-01-2017 20:52:54"
+        },
+        {
+          "author": "~phil@178.42.*.*",
+          "comment": "btw it's confirmed that you should normalize it first and then approximate it. So what it says in the presentation is incorrect.",
+          "date": "01-02-2017 02:58:51"
+        },
+        {
+          "author": "~anon@89.65.*.*",
+          "comment": "Normalize then round , Polish presentation on FTP has it done correctly but ours doesn't for whatever reason",
+          "date": "05-02-2019 08:38:53"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">111 0111 + 000 1000 = 111 0100</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">111 0111 + 000 0111 = 001 0101</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">001 0101 + 110 0101 = 111 0101</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">(001) is the expansion period of the number</span>",
+      "id": 2682,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "Why not d also?\n",
+          "date": "26-01-2017 23:04:41"
+        },
+        {
+          "author": "~anon@95.49.*.*",
+          "comment": "I think d.) is correct as well",
+          "date": "26-01-2017 23:49:20"
+        },
+        {
+          "author": "~anon@87.239.*.*",
+          "comment": "2/7 would be 0.010010010... so it's not correct",
+          "date": "27-01-2017 00:25:46"
+        },
+        {
+          "author": "~phil@83.6.*.*",
+          "comment": "but 2/7 could also be written as 0.01(001)",
+          "date": "27-01-2017 09:39:00"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "agree. (expansion PERIOD ) ",
+          "date": "27-01-2017 11:11:07"
+        },
+        {
+          "author": "mykhi",
+          "comment": "changed 2/7 to correct",
+          "date": "27-01-2017 11:19:08"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "1/7 001(0000000000000000)\n2/7 001(1111111111111111) almost= 010(000000000000000)",
+          "date": "25-01-2018 17:38:22"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "1/7",
+          "correct": true
+        },
+        {
+          "answer": "1/5",
+          "correct": false
+        },
+        {
+          "answer": "6/7",
+          "correct": false
+        },
+        {
+          "answer": "2/7",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Which of the following binary strings rounds best the given values in the floating-point system (3bit exponent + 4 of significand)?</span>",
+      "id": 2683,
+      "comments": [
+        {
+          "author": "~dick@89.78.*.*",
+          "comment": "How many ppl failed today?",
+          "date": "31-01-2017 18:06:54"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "100 0111 = 7/128 and 110 0111 = 7/32. So I think the answer may be a) only cuz it asks about the best?",
+          "date": "31-01-2018 09:52:50"
+        },
+        {
+          "author": "~anon@217.153.*.*",
+          "comment": "excuse me, but does anyone knows how to do such a task?...",
+          "date": "01-02-2019 21:50:14"
+        },
+        {
+          "author": "~jack@5.184.*.*",
+          "comment": "10.0 Golka-ENG.pdf on PCH ftp, the best presentation showing how to \"read\" these type of numbers",
+          "date": "02-02-2019 11:03:34"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "http://smurf.mimuw.edu.pl/node/475\neven better one but in polish",
+          "date": "01-02-2020 21:43:28"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">100 0111 best rounds up 7/129</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">110 0111 best rounds up 7/33</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">101 0111 best rounds up 1/11</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">CD-R are written once, because</span>",
+      "id": 2684,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">the lasers cause an irreversible fixation of magnetic domains</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the surface of the disc is subjected to irreversible thermal damage</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>bits are so densly encapsulated that changing one of them would have caused a cascade of further changes</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the interference of newly-written bits with the old ones would have caused too mcuh noise (hum?)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The cylinder count on a disc is</span>",
+      "id": 2685,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">dependable of the formatting options</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">twice as large as the count of the plates</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">as same as the count of the tracks of the surface of a plate</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">To connect a computer to a network you need a</span>",
+      "id": 2686,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "don't we need a cable?",
+          "date": "28-01-2017 16:06:09"
+        },
+        {
+          "author": "~anon@89.67.*.*",
+          "comment": "^ it could be wireless internet(wi-fi), dont u think so?",
+          "date": "28-01-2017 22:50:45"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">stable connection</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">modem</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">cable</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">network card</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The packet’s route is decided by</span>",
+      "id": 2687,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">the operator</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the router</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the packet itself</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The Turning test is</span>",
+      "id": 2688,
+      "comments": [
+        {
+          "author": "~dick@89.78.*.*",
+          "comment": "there was an answer \"an instruction in turing machine\" sth like that, idk if its correct",
+          "date": "31-01-2017 18:12:35"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "no, check the lecture AI, the answer us b)\n",
+          "date": "06-02-2018 06:37:40"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">one of the instructions of the Turning machine</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">verification of a computer’s intelligence</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a type of a logical condition</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">verification of a person’s intelligence</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Artificial intelligence achieved significant successes in the field of</span>",
+      "id": 2689,
+      "comments": [
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "Shouldnt the answers be inverted?",
+          "date": "07-02-2018 19:48:22"
+        },
+        {
+          "author": "~anon@216.158.*.*",
+          "comment": "facial recognition might be correct too",
+          "date": "12-02-2018 21:36:39"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">automatic translation</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">facial recognition</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">help in decision making</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">game programming</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Polish diacritic symbols are coded in Windows as</span>",
+      "id": 2690,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">ASCII codes</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">bytes with their first bit being 1</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">two bytes</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">1 MB is exactly</span>",
+      "id": 2691,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "!MB is exactly 10^6 B according to Wiki",
+          "date": "29-01-2017 13:28:45"
+        },
+        {
+          "author": "~anon@83.24.*.*",
+          "comment": "It is not. 1KB=2^10 bits, 1MB=2^10 KB\n1MB=2^20 bits; 1M=10^6 something in Physics",
+          "date": "29-01-2017 13:33:42"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "1MegaByte = 1 000 000 bytes\n10^6 bytes = 1 000 000 bytes",
+          "date": "29-01-2017 13:58:07"
+        },
+        {
+          "author": "~anon@83.24.*.*",
+          "comment": "\"exactly\", in approximation you are right, but 1MB is EXACTLY 2^20 bytes, 2^23 bits",
+          "date": "29-01-2017 14:05:13"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "Yes, it is, but I`m talking about 10^6 ",
+          "date": "29-01-2017 15:31:35"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "We are talking about MB in an eye of an IT. We calculate on 2's instead of 10, so 10^6 will be correct if we look at Si rules, but not IT ones. ",
+          "date": "29-01-2017 19:23:45"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "There are Megabytes, Mibibytes and so but it's so messed up that it's better to remember that you need to calculate it on 2s.",
+          "date": "29-01-2017 19:24:32"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">10^6 bytes</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">2^30 bytes</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">2^33 bits</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Critical path method is used to</span>",
+      "id": 2692,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">find the shortest path in a graph</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">define the minimal time needed to end the work of a concurrent system</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">detect errors in logical circuits by tracking down the area of signal disruption</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">What happens during a linking of a program (program linking?) is</span>",
+      "id": 2693,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">determining the actual address based on the relative addresses calculated for complicated modules&nbsp;</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">merging procedures found in the modules in one library</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">specification of the meaning of identificators found in different modules&nbsp;</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">During the module compilation</span>",
+      "id": 2694,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">the meaning of every identificators found in the module is specified</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">relative addresses of allocation of every variable declared in the module are determined&nbsp;</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">object code is created</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Pressing a key on a keyboard always sends</span>",
+      "id": 2695,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "No right answer? Here's what Wikipedia says: \"Scancodes on IBM PC compatible computer keyboards are sets of 1 to 3 bytes which are sent by the keyboard\"\n\nhttps://en.wikipedia.org/wiki/Scancode",
+          "date": "31-01-2018 16:41:26"
+        },
+        {
+          "author": "~anon@176.221.*.*",
+          "comment": "The point here is \"ALWAYS SENDS\". Buttons like \"A\" send 1 byte, while \"F1\" sends 2 bytes. So no correct answer.",
+          "date": "02-02-2018 00:09:02"
+        },
+        {
+          "author": "~pizdec@89.64.*.*",
+          "comment": "pch told that it sends different number of bits depending on a button ",
+          "date": "05-02-2018 00:19:17"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">8 bits</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">16 bits</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">different sequences of bites relative to the chosen font</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">For NP-completeness problems</span>",
+      "id": 2696,
+      "comments": [
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "Why?",
+          "date": "27-01-2017 15:10:30"
+        },
+        {
+          "author": "~anon@83.31.*.*",
+          "comment": "From https://en.wikipedia.org/wiki/NP-completeness\na) \"the time required to solve the problem using any currently known algorithm increases very quickly as the size of the problem grows,\" so it's not a polynomial algorithm.\nb) \"While a method for computing the solutions to NP-complete problems using a reasonable amount of time remains undiscovered,\" there are no discovered polynomial algorithms\nc) \"whose solutions can be verified in polynomial time\" - not sure about this one because of its context but best I could find",
+          "date": "27-01-2017 16:06:27"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">there are no known polynomial algorithms</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">is known, that there are no polynomial algorithms</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">it is possible in polynomial time to check if the object is a solution for the given problem&nbsp;</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Every algorithmic problem</span>",
+      "id": 2697,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">can be solved, if we have large enough memory and enough time</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">for which there is a solution, the solution exists for every practical data</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">which complexity is (2^n) is practically impossible to solve for modern computers for data n&gt;100</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The fundamental problem of Charles Babbage was</span>",
+      "id": 2698,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">lack of money</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">lack of technology and engineering advancement</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a woman</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">lack of inventions</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The idea of using punch cards was first realized by</span>",
+      "id": 2699,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">Jacques de Vaucanson</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">Herman Hollerith</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">Charles Babbage</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The floating-point number 110 1000 has</span>",
+      "id": 2700,
+      "comments": [
+        {
+          "author": "~Maciek@37.47.*.*",
+          "comment": "c is also true",
+          "date": "27-01-2017 15:11:09"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "why negative value?",
+          "date": "28-01-2017 12:29:13"
+        },
+        {
+          "author": "~Maciek @37.47.*.*",
+          "comment": "Because our mantissa, significand equals -1",
+          "date": "28-01-2017 12:32:24"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "Wait, an absolute value cannot be negative, so c.) is false",
+          "date": "28-01-2017 12:35:03"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "I think the \"because it's\" refers to the nonabsoulte value, which indeed is -1/4, making the absolute one still less than 1.",
+          "date": "28-01-2017 12:52:35"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "If so, then c.) is ok",
+          "date": "28-01-2017 13:26:14"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "we can't know from mantissa if the floating-point number is negative or not, right? ",
+          "date": "28-01-2017 13:26:16"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "We know that exactly from the mantissa=significand ",
+          "date": "28-01-2017 13:27:00"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "In every system, the last bit being 1 means that the number is negative",
+          "date": "28-01-2017 14:45:35"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "No, in excess notation system it is awry. ",
+          "date": "28-01-2017 15:12:49"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "At least from the ones we've learned",
+          "date": "28-01-2017 15:37:44"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "Yes. But this excess notation is in Brookshear book, so it is better to remember",
+          "date": "28-01-2017 15:50:14"
+        },
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "but in these task we work with two's complement everywhere (both exponent and mantissa are in two's complement). it's contrary to brooksheare, but corresponds with his 10th presentation",
+          "date": "30-01-2017 23:14:19"
+        },
+        {
+          "author": "~anon@89.79.*.*",
+          "comment": "so all 3 is possible?\n",
+          "date": "31-01-2017 00:35:27"
+        },
+        {
+          "author": "~Phil@94.254.*.*",
+          "comment": "I say yes",
+          "date": "31-01-2017 08:10:18"
+        },
+        {
+          "author": "~Phil@94.254.*.*",
+          "comment": "I say yes",
+          "date": "31-01-2017 08:10:28"
+        },
+        {
+          "author": "~anon@193.0.*.*",
+          "comment": "guys how to know , which one is mantissa and exponent?",
+          "date": "31-01-2020 20:35:00"
+        },
+        {
+          "author": "~BógCałek@77.253.*.*",
+          "comment": "The exponent is the (110) part, which is 2^(-4 + 2 ) and the mantissa - (1000) which is the value -8 so a and b are correct, c is not",
+          "date": "01-02-2020 20:22:56"
+        },
+        {
+          "author": "~LosPapajos@77.253.*.*",
+          "comment": "All answers are correct, The mantissa are the 4 digits, and the exponent is the 3 digit part",
+          "date": "02-02-2020 22:45:13"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">a negative value</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">an absolute value less than 1/2</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">an absolute value less than 1 (because it's -1/4)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"Standard\"><span lang=\"EN-US\">Are the following equations true in the floating-point system?</span></p>",
+      "id": 2701,
+      "comments": [
+        {
+          "author": "~sasha@204.8.*.*",
+          "comment": "Can someone teach me how to do this holu shit?",
+          "date": "30-01-2017 15:28:17"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "I guess second one it also correct",
+          "date": "31-01-2017 18:43:57"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "I`m sorry, I`ve calculate it again and it was wrong. So, answers re correct ",
+          "date": "31-01-2017 18:52:57"
+        },
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "No, second one is correct",
+          "date": "31-01-2017 18:56:17"
+        },
+        {
+          "author": "~anon@216.158.*.*",
+          "comment": "which ones are correct? a and b?",
+          "date": "06-02-2018 08:39:51"
+        },
+        {
+          "author": "~anon@89.65.*.*",
+          "comment": "Agree, second is correct. normalize then round and you get the same answer",
+          "date": "04-02-2019 19:27:45"
+        },
+        {
+          "author": "~anon@212.180.*.*",
+          "comment": "c is correct",
+          "date": "04-02-2019 23:26:24"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "I do not think c is correct",
+          "date": "11-02-2019 16:04:17"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "can someone provide link to a website or any other material on how to do these calculations?",
+          "date": "03-02-2020 21:51:37"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">111 0111 + 000 0111 = 001 0101</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">110 0111 + 110 0100 = 111 0110</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">101 0101 + 110 0100 = 111 0100</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">(101) is the expansion period of the number</span>",
+      "id": 2702,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "Is there any correct answer?",
+          "date": "26-01-2017 23:36:34"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "I think all answers are correct",
+          "date": "26-01-2017 23:56:51"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "1/5 -> 0.001100110011...\n1/10 -> 0.0001100110011...\n4/5 -> 0.110011001100...\nNone of them is corect.",
+          "date": "27-01-2017 16:05:04"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Agreed, yet another weird question, and the expansion periods are given in solutions themselves. Polish comments are also upset about this one.",
+          "date": "27-01-2017 16:12:11"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "You're right, I don't know why I have written \"all answers are correct\"",
+          "date": "27-01-2017 16:20:25"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">1/5 0.(0011)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">1/10 0.0(0011)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">4/5 0.(1100)</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">In 8-bit code the signed number representation</span>",
+      "id": 2703,
+      "comments": [
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "how, shouldnt the value of -16 be 11110000",
+          "date": "31-01-2020 22:20:39"
+        },
+        {
+          "author": "~anon@23.227.*.*",
+          "comment": "these answers are the exact opposite of what it should be, a) is the only correct one\n11111111\nis -128+64+32+16+8+4+2+1 which is -1\n10010000\nis -128+16 which is -112\n11110000\nis -128+64+32+16 which is -16",
+          "date": "02-02-2020 19:53:12"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "^thats what i was thinking, thank you!",
+          "date": "02-02-2020 22:17:56"
+        },
+        {
+          "author": "~anon@77.253.*.*",
+          "comment": "^ that's wrong, the system you are using is two's complement, signed value means assigning the first bit with a value either -1 or 1, so the answers are correct",
+          "date": "02-02-2020 22:51:47"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "^so in signed value -1 would be 10000001 and in two's complement 11111111?",
+          "date": "02-02-2020 23:18:00"
+        },
+        {
+          "author": "~anon@77.253.*.*",
+          "comment": "Yes",
+          "date": "02-02-2020 23:22:30"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">11111111 represents value -1</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">10010000 represents value -16</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">11110000 represents value -112</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Cylinders on a hard drive are</span>",
+      "id": 2704,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "correct according to pch answers ",
+          "date": "07-02-2017 12:02:03"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "it seems like answers should be inverted there",
+          "date": "05-02-2018 14:59:09"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">sets of routes created by the producer on which bits are written</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">equally distributed from the middle surface fragments on different plates which were created during formatting</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">spirally distributed surface fragments above which heads are moving</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The protocol thanks to which the whole Internet works is called</span>",
+      "id": 2705,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">http</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">ftp</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">telnet</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">TCP/IP</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The protocol allowing for a safe file transfer is called</span>",
+      "id": 2706,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">ftp</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">http</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">ssh</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">scp</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The speed of reading data from a hard drive may depend upon</span>",
+      "id": 2707,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">the speed of the disc’s rotation</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the alignment of data on the surface of the disc</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the location the hard drive is connected to on the motherboard</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">matching the frequency of refreshing the memory with the speed of data transmission forced by the controller</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The Turing machine is</span>",
+      "id": 2708,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">an abstraction, never made a reality</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a prototype of modern computers, partly made mechanically</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">able to solve any problem a modern computer is able to solve</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The only peripheral attached to a computer sometimes is</span>",
+      "id": 2709,
+      "comments": [
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "notice its asking the ONLY, its only \"a bar code scanner\" which we only usually see when paying money, and keyboard attached to our PC almost all the time!",
+          "date": "01-02-2018 00:43:29"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "@89.64.*.* is correct i believe. keyboard and mouse is a must. altought if the person is loving playing hard and using the screen keyboard. ",
+          "date": "05-02-2018 19:55:23"
+        },
+        {
+          "author": "~anon@193.0.*.*",
+          "comment": "Checking them all should be also correct... It's way more common to have only keyboard and mouse than keyboard and barcode scanner. There are more people than stores",
+          "date": "03-02-2019 16:25:54"
+        },
+        {
+          "author": "~anon@188.147.*.*",
+          "comment": "PCH approves only bar code scanner and a keyboard",
+          "date": "03-02-2019 21:18:48"
+        },
+        {
+          "author": "~anon@199.21.*.*",
+          "comment": "PCH bite my ass.",
+          "date": "04-02-2019 18:08:47"
+        },
+        {
+          "author": "~anon@93.171.*.*",
+          "comment": "я ебал меня сосали",
+          "date": "04-02-2019 18:13:45"
+        },
+        {
+          "author": "~anon@199.21.*.*",
+          "comment": "he doesn't know any shit, https://study.com/academy/lesson/what-are-peripheral-devices-of-a-computer-definition-examples-types.html\nall of them are correct. who the fuck are you anyway?",
+          "date": "04-02-2019 18:13:55"
+        },
+        {
+          "author": "~uncleboobs@185.232.*.*",
+          "comment": "I agree. all correct",
+          "date": "04-02-2019 20:56:46"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "PCH approves only bar code scanner and a keyboard during lecture\n",
+          "date": "04-02-2019 21:04:29"
+        },
+        {
+          "author": "~anon@199.21.*.*",
+          "comment": "it depends how you ask him i guess? even in his slights mouse, joysticks, optical mark readers, magnetic-ink character readers, pen scanners and so on, are counting as peripheral devices.. if you were asked him like; hey, are keyboard and barcode readers are peripheral? \nthe answer is obvious: \"yes, I approve.\" - PCH ",
+          "date": "04-02-2019 21:23:02"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">a bar code scanner</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a keyboard</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a mouse</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The number 3/2004 in binary system has</span>",
+      "id": 2710,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">an infinite expansion</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a periodic expansion of the length less than 1111</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a periodic expansion of the length equal 1111</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Floating-point addition is</span>",
+      "id": 2711,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "none of them ",
+          "date": "26-01-2017 17:17:41"
+        },
+        {
+          "author": "~anon@95.49.*.*",
+          "comment": "Yes, I think so as well\n",
+          "date": "26-01-2017 22:51:19"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "true. all of them are incorrect",
+          "date": "28-01-2017 14:19:42"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "yep, I agree. cuz (3+5/32)+5/32 is different from 3+(5/32+5/32)\n",
+          "date": "31-01-2018 10:10:18"
+        },
+        {
+          "author": "~superanon@91.230.*.*",
+          "comment": "is commutative\nhttps://en.wikipedia.org/wiki/Floating-point_arithmetic#Accuracy_problems",
+          "date": "04-02-2019 14:54:16"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">exact</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">commutative</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">distributive</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">(001) is the periodic expansion of the number</span>",
+      "id": 2712,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">1/7</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">1/5</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">1/10</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">6/7</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The standard RAM memory is realized in</span>",
+      "id": 2713,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">magnetic technology</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">electromagnetic technology</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">electrodynamic technology</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">optical technology</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">In 8-bit code the signed number representation</span>",
+      "id": 2714,
+      "comments": [
+        {
+          "author": "~anon@95.49.*.*",
+          "comment": "Why answer a.)? I think none of these answers is true.",
+          "date": "26-01-2017 22:54:07"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "Yep, I think as well ",
+          "date": "26-01-2017 22:59:41"
+        },
+        {
+          "author": "~anon@89.67.*.*",
+          "comment": "11111111 represents value = -0, so a) is false",
+          "date": "27-01-2017 13:48:43"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "I'd argue that numbers -0 and 0 are different, but their values are the same.",
+          "date": "27-01-2017 14:16:25"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "It depends on system, is it?\n",
+          "date": "27-01-2017 14:34:05"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Yes, \"signed number representation.\" Thank god it's specified in this question, good luck with others :p",
+          "date": "27-01-2017 14:39:16"
+        },
+        {
+          "author": "~Maciek @37.47.*.*",
+          "comment": "Wait. If it is a one's complement system, then also c.) should be correct\nIf a.) is correct then it seems that also c.) is correct. Because I one's complement system 00000000 and 11111111 are equal 0",
+          "date": "27-01-2017 15:30:59"
+        },
+        {
+          "author": "~Maciek@37.47.*.*",
+          "comment": "The four best-known methods of extending the binary numeral system to represent signed numbers are: sign-and-magnitude, ones' complement, two's complement, and excess-K. ",
+          "date": "27-01-2017 15:47:24"
+        },
+        {
+          "author": "~Maciek@37.47.*.*",
+          "comment": "I think this question is inaccurate",
+          "date": "27-01-2017 15:48:07"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Here it is in polish \"W 8-bitowym kodzie znak-modul prosty\", \"prosty\" must specify a system then, but I can't find which one, so I'm guessing it's the most \"basic\" one?",
+          "date": "27-01-2017 15:58:15"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "1111 1111 represents -123 in signed number representation. In inverted signed number representation it would be 0 (actually -0). ",
+          "date": "27-01-2017 16:35:45"
+        },
+        {
+          "author": "~anon@178.42.*.*",
+          "comment": "According to Polish version it seems that \"0\" is represented only by \"00000000\" and \"10000000\". And that's because 1st digit from the left is \"sign digit\". If so, then none of these answers above is true. (According to Polish wikipedia)",
+          "date": "27-01-2017 16:52:12"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "yep, none",
+          "date": "31-01-2018 10:41:35"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">11111111 represents value 0</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">11110000 represents value -16</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">11110000 represents value -15</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">(0011) is the (basic?) periodic expansion of the number</span>",
+      "id": 2715,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">1/5</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">1/10, because 0.0(0011)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">2/7</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">To avoid the interception of the credit card number in online transactions</span>",
+      "id": 2716,
+      "comments": [
+        {
+          "author": "~Maciek@178.42.*.*",
+          "comment": "Is that the only possible answer?\n",
+          "date": "27-01-2017 17:20:32"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Polish comments say that ppp connections are also used and I think there's a question similar to this one which has that answer selected",
+          "date": "27-01-2017 17:28:31"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "yea 122 and 40 are the same questions but answers are different? which one i correct then?",
+          "date": "30-01-2017 16:37:43"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "I'd go for both encryption and ppp",
+          "date": "30-01-2017 19:47:30"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "wtf??!!",
+          "date": "13-11-2017 12:58:21"
+        },
+        {
+          "author": "~dead@109.206.*.*",
+          "comment": "why yesterday it was ppp but now its an encryption?",
+          "date": "04-02-2018 11:06:14"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "why ppp are used? Tried to google it but found nothing",
+          "date": "05-02-2018 15:37:41"
+        },
+        {
+          "author": "~anon@216.158.*.*",
+          "comment": "mykhi has 2 same question with different answer 1 is ppp and 2nd is encryption, and i also think it's ppp and encryption as final answer but would be great someone if could approved ",
+          "date": "06-02-2018 04:57:25"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "The interception of transactions, and in particular credit card details, during transmission\nover the Internet has often been cited as a major obstacle to public confidence\nin E-commerce.\nThe principle means of countering the threats to transactions in the Internet environment\nis the use of cryptography. Encryption and decryption allow secure transfer of information between an Internet\nbrowser and server.\n\nThe Point to Point Protocol [RFC1661] is a layer 2 protocol. It is widely used to connect\ntwo sets of nodes. The encryption functionality in PPP is called ECP (Encryption\nControl Protocol) [RFC1968]. This protocol allows the use of the encryption in PPP\nframe but limits the key exchange.\n\nIf, for example, an Internet user submits his credit card data to an online store, a hacker may be able to intercept the physically transmitted data. But with the appropriate encryption, the hacker won't be able to decipher the data, which makes the entire interception useless.\n\nI feel like PPP is for something else, not interception. Well, not sure :<\n",
+          "date": "06-02-2018 06:55:20"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "in polish generator people was agreed on ppp and encryption but one said on the lecture they have been just chose the ppp and pointed as correct. :/",
+          "date": "06-02-2018 11:18:47"
+        },
+        {
+          "author": "~lew@89.64.*.*",
+          "comment": "today proved by pch that encryption and ppp both true",
+          "date": "06-02-2018 15:23:03"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">passwords are used</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">encryption is used</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">ppp connections are used</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">biometric parameters of the sender are used</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The oldest known and used to this day common algorithms originate from</span>",
+      "id": 2717,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">Ancient history (antiquity)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">Middle Ages</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>XVIII century</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Buffers are used in transmitting data from the hard drive</span>",
+      "id": 2718,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">only when the user clearly requests it</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">only when it can speed up the transmission</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">always</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Of different the ways of connecting to a network the least secure connection is</span>",
+      "id": 2719,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">via modem</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">via cable TV</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">ISDN</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">DSL</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Which of the following binary strings rounds best the given values in the floating-point system (3bit exponent + 4 of significand)?</span>",
+      "id": 2720,
+      "comments": [
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "C.) is incorrect",
+          "date": "06-02-2017 13:18:57"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "Remark. C.) Correct",
+          "date": "06-02-2017 13:19:49"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "pl\n",
+          "date": "01-02-2019 15:09:53"
+        },
+        {
+          "author": "~anon@212.103.*.*",
+          "comment": " o kurwa",
+          "date": "03-02-2019 19:23:48"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "c) correct, just checked\n\n\n",
+          "date": "02-02-2020 22:26:42"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "c) is correct(100 0110)\n",
+          "date": "03-02-2020 16:34:48"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "pizda blyat\n",
+          "date": "04-02-2020 11:39:59"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "Что за утюг придумал эти вопросы ?",
+          "date": "04-02-2020 12:37:31"
+        },
+        {
+          "author": "~anon@5.173.*.*",
+          "comment": "Где тут кнопка выход?",
+          "date": "11-02-2020 01:27:16"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">100 0111 best rounds 7/129</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">110 0111 best rounds 7/33</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">100 0110 best rounds 1/23</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">1 TB is exactly</span>",
+      "id": 2721,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "1 TB is exactly is 10^12 bytes. So the right one is answer a)",
+          "date": "28-01-2017 18:39:47"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "B) and C) is correct according to last lecture",
+          "date": "28-01-2017 19:05:18"
+        },
+        {
+          "author": "~anon@89.67.*.*",
+          "comment": "1 TB = 1000000000000bytes = 1012bytes = 1000gigabytes. << a line from Wikipedia",
+          "date": "31-01-2017 03:55:18"
+        },
+        {
+          "author": "~anon@89.67.*.*",
+          "comment": "10 to the 12th power\n",
+          "date": "31-01-2017 03:56:04"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "I think that the main idea in word \"exactly\" and in case with 10^n it`s not exactly.",
+          "date": "31-01-2017 08:36:42"
+        },
+        {
+          "author": "~Jac@37.47.*.*",
+          "comment": "1 TB = 10^12 bytes. But 1TiB = 2^40 bytes.\nhttps://en.wikipedia.org/wiki/Tebibyte\nSo maybe luck of \"i\" in question.",
+          "date": "12-12-2018 13:13:02"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">10^12 bytes</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">2^40 bytes</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">2^43 bits</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Packets have the size of</span>",
+      "id": 2722,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">dozens of bytes</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">hundreds of bytes</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">hundreds of kilobytes</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">What is the least amount of bits needed to represent all integers with absolute value less than a billion in two’s complement?</span>",
+      "id": 2723,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">30</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">31</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">16</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">14</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The usage of floating-point system compared to fixed-point system</span>",
+      "id": 2724,
+      "comments": [
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "\"increases the range of representability\" should be correct!",
+          "date": "05-02-2018 22:33:00"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "^ i agree",
+          "date": "02-02-2020 23:03:59"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">increases the number of possible representable values</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">increases the accuracy in the whole interval of representability</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">increases the range of representability</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The Eucliedian algorithm is used for</span>",
+      "id": 2725,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">finding prime numbers</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">finding the greatest common divisor</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">finding the smallest common divisor</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Operations on bits</span>",
+      "id": 2726,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">are executed by the processor in order, never simultaneously</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">are only four: NOT, OR, XOR and AND</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">can be assembled creating more complex logical schemes</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">In the floating-point system</span>",
+      "id": 2727,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">every value ranging -8 to 7 can be represented, though some with an error</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the number of the values which are represented without an error is finite</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">every integer of the interval of representability are represent without error</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">In the floating-point system in which the exponent is represented by a single byte and the significand by 5 bytes</span>",
+      "id": 2728,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">every value ranging -8 to 7 can be represented, though some with an error</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the number of the values which are represented without an error is finite</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">every integer of the interval of representability are represent without error</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The basic job of a network card is</span>",
+      "id": 2729,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">providing a firewall</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">amplifying the signal</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">conversion of data formats between the computer and the network</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">virus protection</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Registers are</span>",
+      "id": 2730,
+      "comments": [
+        {
+          "author": "~lew@89.64.*.*",
+          "comment": "why d is right? Windows Registry (not register) contains settings",
+          "date": "05-02-2018 16:07:37"
+        },
+        {
+          "author": "~slava ukraine, GORDOST' NACII@91.230.*.*",
+          "comment": "according to pch only the carry-on memory was approved :)",
+          "date": "04-02-2020 13:38:48"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">very fast carry-on memory of a processor</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">sets of indexes in databases</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">mediate memory used in data transmission to the hard drive</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">areas of the disc on which Windows’ parameters are kept</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">On the cover of the polish edition of Brookshear’s workbook there is</span>",
+      "id": 2731,
+      "comments": [
+        {
+          "author": "~anon@216.158.*.*",
+          "comment": "can someone please teach me how to solve this?",
+          "date": "05-02-2018 19:58:16"
+        },
+        {
+          "author": "~anon@176.221.*.*",
+          "comment": "Internet\nn\nt\ne\nr\nn\ne\nt\n(or actually you can't as you are studing in English language so you wouldn't know)",
+          "date": "05-02-2018 20:35:55"
+        },
+        {
+          "author": "~anon@188.146.*.*",
+          "comment": "i hope he is joking about this otherwise don't study here please",
+          "date": "05-02-2018 20:39:01"
+        },
+        {
+          "author": "~anon@176.221.*.*",
+          "comment": "I'm fully serious, you can't know this unless you read this book, but I suppose you dont know polish. On the other hand, questions here are translated from polish one, so polish people can know the answer. It is possible (but I'm not sure) that instead of this question, there will be question about cover of this book In english (which is different one)",
+          "date": "05-02-2018 20:52:52"
+        },
+        {
+          "author": "~anon@216.158.*.*",
+          "comment": "it was ironic, i mean what kind of question it is to ask? ",
+          "date": "05-02-2018 21:11:21"
+        },
+        {
+          "author": "~anon@188.146.*.*",
+          "comment": "i hope he is joking about this otherwise don't study here please",
+          "date": "06-02-2018 18:27:24"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">a computer</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a key</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">an image of a CPU</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">a schema of computer network</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Open network is a network</span>",
+      "id": 2732,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">which is defenseless to attacks</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">which is not password protected&nbsp;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">which connects computers within an establishment</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">to which users can connect on a public use basis</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Drivers are</span>",
+      "id": 2733,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">devices thanks to which we assume a control over programs</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">programs thanks to which we communicate to devices connected to the bus</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">logical systems forwarding signals</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Adding 1.4 + 8.8 in a floating-point processor we are sure that</span>",
+      "id": 2734,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">the arguments are represented exactly</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">the result will be exact</span>",
+          "correct": false
+        },
+        {
+          "answer": "Odpowi<span>the result wouldn’t have to be rounded</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Sending a password in a remote login process</span>",
+      "id": 2735,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">can be safe if we use some of the network services</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">is not used in serious practices, such as bank account logins</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">is always preceded by an encryption</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">The speed of reading data from the hard drive is mostly dependent on</span>",
+      "id": 2736,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">the speed of the bus</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">processor’s clock frequency</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">its contents and their mean of having been distributed</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">Data on CD discs is written</span>",
+      "id": 2737,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span lang=\"EN-US\">concentrically</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">spirally</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span lang=\"EN-US\">physically in the same order it was sent</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;To connect a computer to an analogous telephone line you need a",
+      "id": 2740,
+      "comments": [
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "network card too",
+          "date": "30-01-2017 14:49:26"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "Yep, it won't work without network card.  ",
+          "date": "31-01-2018 16:17:24"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "when it comes to be a Integrated Lan, then you dont need to buy a network card\n",
+          "date": "31-01-2018 22:27:26"
+        },
+        {
+          "author": "~anon@83.28.*.*",
+          "comment": "Yeah, you don't need to buy a network card when it's integrated, but still you have to have it to connect to an analogous telephone line.",
+          "date": "02-02-2018 15:32:38"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "network card",
+          "correct": false
+        },
+        {
+          "answer": "stable connections",
+          "correct": false
+        },
+        {
+          "answer": "USB port",
+          "correct": false
+        },
+        {
+          "answer": "modem",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "High level programming languages allow for writing code&nbsp;",
+      "id": 2741,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "straightaway in the processor’s language, which after compilation is ready for execution",
+          "correct": false
+        },
+        {
+          "answer": "which after compilation is ready for execution",
+          "correct": false
+        },
+        {
+          "answer": "which after compilation and consolidation is ready for execution",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Multiprocessing",
+      "id": 2742,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "is as same as having multiple processors",
+          "correct": false
+        },
+        {
+          "answer": "is not supported by some operating systems",
+          "correct": true
+        },
+        {
+          "answer": "is supported by Windows 95",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Assemblers&nbsp;",
+      "id": 2743,
+      "comments": [
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "aren't assemblers still used to this day? why is it incorrect?",
+          "date": "28-01-2017 13:21:03"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "^ agree",
+          "date": "30-01-2017 12:23:59"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "yep, Pch said all were correct\n",
+          "date": "31-01-2018 10:11:03"
+        },
+        {
+          "author": "~Annen@91.230.*.*",
+          "comment": "still all correct be careful,probably u'll see this on exam",
+          "date": "11-02-2020 13:03:06"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "allowed for creating symbolic addresses",
+          "correct": true
+        },
+        {
+          "answer": "were created in 1950s",
+          "correct": true
+        },
+        {
+          "answer": "are used to this day",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The speed of the hard drive is dependent on",
+      "id": 2744,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "the angular velocity of the plates",
+          "correct": true
+        },
+        {
+          "answer": "the number of the plates",
+          "correct": false
+        },
+        {
+          "answer": "the number of the cylinders",
+          "correct": false
+        },
+        {
+          "answer": "the speed of the heads",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Undecidable problems",
+      "id": 2745,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "cannot be algorithmically solved",
+          "correct": true
+        },
+        {
+          "answer": "do not exist",
+          "correct": false
+        },
+        {
+          "answer": "are problems for which there are no solutions but it is possible that there will be",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When adding two floating-point numbers, what could happen is that",
+      "id": 2746,
+      "comments": [
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "What do you think about this one?",
+          "date": "30-01-2017 21:00:49"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "I'd say a) and c)",
+          "date": "30-01-2017 21:05:25"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "And why not b.)?",
+          "date": "30-01-2017 21:07:34"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "For me a). It's hard to say for me whether c) is correct, because we normalize it. I would not opt for b) because there's a rule that we denormalize number with smaller exponent. ",
+          "date": "30-01-2017 21:12:21"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "I agree, c) would be incorrect here, because even if we get the overflow we can fix it up by subtracting one from the exponent, just tested it.\n\nAnd b) could be true, assuming that we won't take under consideration that denormalizing the larger number isn't a correct way to add.",
+          "date": "30-01-2017 21:34:54"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "a) is correct imo, bc if you for example add (1/32) to (3) the (1/32) number is too small to impact the bigger one, its in the Golka file",
+          "date": "02-02-2020 22:28:53"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "the result will be equal to one of them, regardless that the second one isn’t 0",
+          "correct": false
+        },
+        {
+          "answer": "the result depends on which number we denormalize",
+          "correct": false
+        },
+        {
+          "answer": "when adding two negative numbers, we will get a positive one",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Division of time is a technique",
+      "id": 2747,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "c is wrong according to his answers",
+          "date": "31-01-2017 17:52:36"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "yep, c) is wrong but how about a)?\n",
+          "date": "31-01-2018 10:13:01"
+        },
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": ">> allowing for execution of multiple processes simultaneously by a single processor\nis wrong because it's time sharing. It must be something related to multiplexing which is about sending data ",
+          "date": "05-02-2018 12:19:46"
+        },
+        {
+          "author": "~lew@89.64.*.*",
+          "comment": "pch told that only \"enabling the execution of many processes on one processor\" is right ",
+          "date": "05-02-2018 12:44:32"
+        },
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": "if it is right, then time division and time sharing is the same. I doubt that ",
+          "date": "05-02-2018 12:55:29"
+        },
+        {
+          "author": "~slava ukraine, GORDOST' NACII@91.230.*.*",
+          "comment": "according the whole internet the only correct answer is a), this question is not about processors at all.\nAnd time division and time sharing are completely different thinks!\n\nhttps://en.wikipedia.org/wiki/Time-division_multiplexing",
+          "date": "04-02-2020 13:47:20"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "allowing for data transfer in the selected time spans in the network",
+          "correct": false
+        },
+        {
+          "answer": "allowing for execution of multiple processes simultaneously by a single processor",
+          "correct": true
+        },
+        {
+          "answer": "allowing the computer to speed up the calculations",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Each byte of ASCII text",
+      "id": 2748,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "is interpreted identically by every computer system, as long as its first bit is 0 and its value is over 31",
+          "correct": true
+        },
+        {
+          "answer": "encodes some letter",
+          "correct": false
+        },
+        {
+          "answer": "has 1 at the beginning",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Abraham Stern&nbsp;",
+      "id": 2749,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "built a calculator, which automatically calculated roots",
+          "correct": true
+        },
+        {
+          "answer": "was a member of Society of Friends of Learning",
+          "correct": true
+        },
+        {
+          "answer": "was a watchmaker",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "OCR is software with which",
+      "id": 2750,
+      "comments": [
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "OCR is generally an \"offline\" process, which analyses a static document. Handwriting movement analysis can be used as input to handwriting recognition.",
+          "date": "26-01-2017 23:50:25"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "I think the correct answers are a.) and b.) here. Because I think it is possible to recognize a signature. It is not used on a regular basis, maybe it is inaccurate, but possible",
+          "date": "26-01-2017 23:55:14"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "OCR can recognize both handwritten and printed text. so is it means only handwritting is correct?",
+          "date": "06-02-2018 11:00:47"
+        },
+        {
+          "author": "~lew@89.64.*.*",
+          "comment": "yes, it means only handwriting is correct. Also, pch proved this",
+          "date": "06-02-2018 15:22:21"
+        },
+        {
+          "author": "~anon@188.146.*.*",
+          "comment": "What about signatures? \n",
+          "date": "26-01-2019 11:24:24"
+        },
+        {
+          "author": "~jack@37.47.*.*",
+          "comment": "I think signatures no, because OCR isn't checking signature with some \"base\" of another signatures. ",
+          "date": "01-02-2019 11:08:54"
+        },
+        {
+          "author": "~anon007@146.185.*.*",
+          "comment": "“Ability to recognize signatures is very expensive and requires a database of pre-existing signatures. But ability to find a signature and confirm it’s presence is not difficult at all” \n\nSo is it yes or no?",
+          "date": "02-02-2019 21:45:57"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "we can recognize handwriting",
+          "correct": false
+        },
+        {
+          "answer": "we can recognize signatures",
+          "correct": false
+        },
+        {
+          "answer": "we prepare text documents for printing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Memory on a hard drive is realized in",
+      "id": 2751,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "magnetic technology",
+          "correct": true
+        },
+        {
+          "answer": "laser technology",
+          "correct": false
+        },
+        {
+          "answer": "optical technology",
+          "correct": false
+        },
+        {
+          "answer": "electrodynamic technology",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In reversed signed number representation",
+      "id": 2752,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "every number has a non-ambiguous representation",
+          "correct": false
+        },
+        {
+          "answer": "to create a reverse value we reverse only the first bit",
+          "correct": false
+        },
+        {
+          "answer": "there are more negative values than positive",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Are the following equations true in the floating-point system?",
+      "id": 2753,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "100 0100 + 100 0101 = 101 0101",
+          "correct": true
+        },
+        {
+          "answer": "111 0111 + 000 0111 = 001 0101",
+          "correct": true
+        },
+        {
+          "answer": "110 0111 + 110 0100 = 110 0111",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The idea of using punch cards was first realized by",
+      "id": 2754,
+      "comments": [
+        {
+          "author": "~anon@89.79.*.*",
+          "comment": "Can I ask you why we have answer a) instead of b?",
+          "date": "29-01-2017 00:49:51"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "This indeed is wrong, Jacques de Vaucanson proposed the idea, but it was ignored.",
+          "date": "29-01-2017 00:56:28"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "The original question: \"Punched cards were first invented by\" (answers are same)",
+          "date": "30-01-2017 15:06:21"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "if invented then it is Vaucanson, if realized Hollerith",
+          "date": "30-01-2017 15:24:30"
+        },
+        {
+          "author": "~anon@216.158.*.*",
+          "comment": "the answer is Herman Hollerith according to wiki?",
+          "date": "05-02-2018 20:55:20"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Jacques de Vaucanson",
+          "correct": true
+        },
+        {
+          "answer": "Herman Hollerith",
+          "correct": false
+        },
+        {
+          "answer": "Charles Babbage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Hiding the 1/2 bit in floating-point system is",
+      "id": 2755,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "a result of certain problems with representing 0 – it’s difficult to differentiate it from 1/2",
+          "correct": true
+        },
+        {
+          "answer": "used to double the size of the range of representability",
+          "correct": false
+        },
+        {
+          "answer": "common practice in most commercial realizations of floating-point arithmetic",
+          "correct": true
+        },
+        {
+          "answer": "caused by the need of obtaining an additional bit of precision",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "The minimax strategy is",
+      "id": 2756,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "an algorithm used to optimize data flow in networks",
+          "correct": false
+        },
+        {
+          "answer": "a method of rating positions in two player games",
+          "correct": true
+        },
+        {
+          "answer": "a variant of the alpha-beta strategy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Protection from viewing the credit card number by third parties during online transmission is achieved by",
+      "id": 2757,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "encrypting with a public key",
+          "correct": true
+        },
+        {
+          "answer": "using single-use passwords",
+          "correct": false
+        },
+        {
+          "answer": "biomedical parameters of the receiver",
+          "correct": false
+        },
+        {
+          "answer": "using multi-use passwords",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "C. A. R. Hoare is the author of",
+      "id": 2758,
+      "comments": [
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": "pointer concept is wrong for sure. proof https://en.wikipedia.org/wiki/Pointer_(computer_programming). see history ",
+          "date": "05-02-2018 12:28:34"
+        },
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": "logic of programs and instructions of choice sound too ambiguous. quickstart must be the only correct answer ",
+          "date": "05-02-2018 12:30:26"
+        },
+        {
+          "author": "~lew@89.64.*.*",
+          "comment": "definitely quicksort and could be \"logic of programs\", he has so called \"Hoare Logic\"",
+          "date": "05-02-2018 12:48:40"
+        },
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": "\"Hoare Logic\" a certain set of rules that identify correctness of programs. \"Logic of programs\" as a term has no distinct definition ",
+          "date": "05-02-2018 13:04:37"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "pointer concept",
+          "correct": true
+        },
+        {
+          "answer": "logic of programs",
+          "correct": true
+        },
+        {
+          "answer": "instructions of choice",
+          "correct": true
+        },
+        {
+          "answer": "quicksort algorithm",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Following sectors on a single track of a typical hard drive contain",
+      "id": 2759,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "data in the order it was written",
+          "correct": false
+        },
+        {
+          "answer": "data from a single file, which must be located next to each other",
+          "correct": false
+        },
+        {
+          "answer": "data usually from different files located in such a way that reading it would be most fluid",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Having only a single unit sized line segment and using only compass and ruler we can",
+      "id": 2760,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "calculate the cubic root of two",
+          "correct": false
+        },
+        {
+          "answer": "multiply any two numbers",
+          "correct": true
+        },
+        {
+          "answer": "calculate pi",
+          "correct": false
+        },
+        {
+          "answer": "calculate a root of a number",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Increasing the frequency of a clock in a processor is",
+      "id": 2761,
+      "comments": [
+        {
+          "author": "~lew@89.64.*.*",
+          "comment": "b should be wrong I guess ",
+          "date": "02-02-2018 17:25:24"
+        },
+        {
+          "author": "~anon@83.31.*.*",
+          "comment": "Not really, because overheating will cause throttling which slows a CPU down. ",
+          "date": "03-02-2018 00:36:19"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "possible, but can cause it to overheat",
+          "correct": true
+        },
+        {
+          "answer": "possible, but can result in slowing down the computer",
+          "correct": true
+        },
+        {
+          "answer": "impossible, the clock is set once in the production",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When we use a faster algorithm, doing less calculations on integers",
+      "id": 2762,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "we get a faster an more precise solution",
+          "correct": false
+        },
+        {
+          "answer": "we get a faster solution at the cost of loss of the calculations’ quality",
+          "correct": false
+        },
+        {
+          "answer": "we get the exact same solution, but faster",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Summing up n positive numbers in a floating-point system we would get the best solution",
+      "id": 2763,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "in pch's presentation 10 it says that we should add from smallest to the largest",
+          "date": "28-01-2017 12:10:12"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "^ i think same",
+          "date": "30-01-2017 00:19:15"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "\"EXPONENT\", not a number",
+          "date": "30-01-2017 13:30:02"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "I think it doesn't matter, because we will denormalize the number which possess smaller exponent. It doesn't matter if I am adding smallest to largest or vice versa",
+          "date": "30-01-2017 13:48:51"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "look at the last slide of presentation 10.0",
+          "date": "30-01-2017 15:29:52"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "Unifying exponents: smaller to the greater one.",
+          "date": "30-01-2017 15:34:13"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "Sorry, you are right. Because we are adding more than two numbers. We are adding here \"n\" numbers.",
+          "date": "30-01-2017 15:36:43"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "it doesnt make sense, regardless of the order is incorrect so it means that either from smallest to largest or largest to smallest but they are also incorrect? smh",
+          "date": "01-02-2020 21:49:42"
+        },
+        {
+          "author": "~anon@89.72.*.*",
+          "comment": "when summing up more than 2 numbers, we should start from smallest to largest, bc the sum of small numbers gives us a larger number, which can impact the largest one and therefore give us more exact result. also, a NUMBER consists both of exponent+significand, so smaller exponent means smaller number.",
+          "date": "02-02-2020 22:33:50"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "regardless of the order of the additions",
+          "correct": false
+        },
+        {
+          "answer": "adding them from the smallest to the largest",
+          "correct": false
+        },
+        {
+          "answer": "adding them from the largest to the smallest",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The chess machine constructed by Farkas von Kempelen was created",
+      "id": 2764,
+      "comments": [
+        {
+          "author": "~DonKarlo@83.9.*.*",
+          "comment": "Wiedeń is polish city ? Since when ? ",
+          "date": "26-01-2017 23:05:14"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "Since one idiot translator decided to make it so :p",
+          "date": "28-01-2017 12:56:42"
+        },
+        {
+          "author": "~anon@94.254.*.*",
+          "comment": "haha :D ",
+          "date": "03-02-2018 18:19:51"
+        },
+        {
+          "author": "~young nigga@89.77.*.*",
+          "comment": "http://www.active-undelete.com/hdd_basic.htm",
+          "date": "11-02-2019 21:49:38"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "at the turn of XVII and XIX century",
+          "correct": true
+        },
+        {
+          "answer": "in the XX century",
+          "correct": false
+        },
+        {
+          "answer": "in Wiedeń (Polish city)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Cathode monitors",
+      "id": 2765,
+      "comments": [
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": ">> in some cases cannot be replaced with liquid crystal monitors. proof? ",
+          "date": "05-02-2018 13:47:16"
+        },
+        {
+          "author": "~anon007@146.185.*.*",
+          "comment": "https://www.ncbi.nlm.nih.gov/pubmed/19139368\n\nI’m not sure if it is the right example but at least something",
+          "date": "02-02-2019 22:30:33"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "can be used everywhere there, where liquid crystal monitors can be used",
+          "correct": false
+        },
+        {
+          "answer": "in some cases cannot be replaced with liquid crystal monitors",
+          "correct": true
+        },
+        {
+          "answer": "are healthier to use than liquid crystal monitors",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To connect a computer to a network via a digital telephone line you need",
+      "id": 2766,
+      "comments": [
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "I guess we need a network card. ",
+          "date": "28-01-2017 02:04:13"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "Polish comments say you need a modem.",
+          "date": "28-01-2017 02:17:05"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "Still, I would need a modem and a network card.",
+          "date": "28-01-2017 02:28:05"
+        },
+        {
+          "author": "mykhi",
+          "comment": "no, just modem. why would you need a network card for that.",
+          "date": "28-01-2017 10:08:36"
+        },
+        {
+          "author": "~anon@83.24.*.*",
+          "comment": "Probably because otherwise you won't be able to connect your PC to the modem ¯\\_(ツ)_/¯",
+          "date": "03-02-2018 13:50:17"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "****  ",
+          "date": "03-02-2020 13:44:55"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "a USB port",
+          "correct": false
+        },
+        {
+          "answer": "a network card",
+          "correct": false
+        },
+        {
+          "answer": "a stable connection",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A CD-RW disc allows for",
+      "id": 2767,
+      "comments": [
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "deletion of all data and writing from scratch should be wrong, because yes, we can deletion all data, but writing in CD-RW is doing by laser, not from scratch",
+          "date": "10-02-2019 21:25:45"
+        },
+        {
+          "author": "~anon@159.205.*.*",
+          "comment": "I think from scratch isn't literal here, it just means writing from an empty base",
+          "date": "17-01-2020 16:01:58"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "deletion of all data and writing from scratch",
+          "correct": true
+        },
+        {
+          "answer": "writing new data in an empty space left by a removed file",
+          "correct": false
+        },
+        {
+          "answer": "writing the data at the end, if it is not too full yet",
+          "correct": true
+        },
+        {
+          "answer": "physical removal of some of the written data",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When using a faster algorithm, doing less floating-point calculations",
+      "id": 2768,
+      "comments": [
+        {
+          "author": "~blabla@gun.com@93.105.*.*",
+          "comment": "but in the previous tests correct answer was \"we get the exact same solution, but a bit faster\". what is wrong with this test? damn it\n",
+          "date": "05-02-2019 08:09:34"
+        },
+        {
+          "author": "~anon@212.180.*.*",
+          "comment": "man, read the whole questions not just remember answers. The question u r talking about is different",
+          "date": "11-02-2019 00:19:48"
+        },
+        {
+          "author": "~dasd@95.160.*.*",
+          "comment": "so what is the correct answer?\n",
+          "date": "12-02-2019 04:52:17"
+        },
+        {
+          "author": "~jack@37.47.*.*",
+          "comment": "we get the solution faster and we usually get more precision thats correct, because in evry floating-point calculaction we CAN get rounded or similar to real result, so if we will do less calculations, our result will be better",
+          "date": "12-02-2019 09:29:51"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "we get the solution faster, but we loose some precision",
+          "correct": false
+        },
+        {
+          "answer": "we get the solution faster and we usually get more precision",
+          "correct": true
+        },
+        {
+          "answer": "we get the exact same solution, but a bit faster",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The number of tracks on a disc is",
+      "id": 2769,
+      "comments": [
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "how can formatting change the physical amount of tracks on a disc? It can make them usable or not usable by user, but the number remains the same.",
+          "date": "05-02-2018 15:20:50"
+        },
+        {
+          "author": "~anon@178.235.*.*",
+          "comment": "according to wiki https://en.wikipedia.org/wiki/Disk_formatting see \"Low-level formatting of floppy disks\" the number of tracks can be changed (at lease in old hard drives) ",
+          "date": "05-02-2018 17:03:35"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "its not physical man.....its about magnetization, you could has infinite tracks if you want, but due to physical problem, biggest number will be restricted",
+          "date": "05-02-2018 20:12:15"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "the same as the number of the cylinders",
+          "correct": true
+        },
+        {
+          "answer": "set by the manufacturer",
+          "correct": true
+        },
+        {
+          "answer": "relative to the formatting options",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Using the fixed-point system compared to the floating-point one",
+      "id": 2770,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "increases the number of representable values",
+          "correct": false
+        },
+        {
+          "answer": "increases the range of representable values",
+          "correct": false
+        },
+        {
+          "answer": "increases the precision in the whole range of representability",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A parallel port is",
+      "id": 2771,
+      "comments": [
+        {
+          "author": "~@makusu@37.47.*.*",
+          "comment": "parallel port is much faster than serial, isn't it?",
+          "date": "28-01-2017 22:34:28"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "This says otherwise\nhttp://www.howtogeek.com/171947/why-is-serial-data-transmission-faster-than-parallel-data-transmission/",
+          "date": "28-01-2017 22:57:18"
+        },
+        {
+          "author": "~leo@91.230.*.*",
+          "comment": "This for sure is wrong! Parallel is faster!",
+          "date": "01-07-2017 13:26:01"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "yes, Pch said sometimes parallel is faster",
+          "date": "31-01-2018 09:51:00"
+        },
+        {
+          "author": "~anon@216.158.*.*",
+          "comment": "what is the correct answer?\n",
+          "date": "06-02-2018 03:58:18"
+        },
+        {
+          "author": "~anonymus@91.230.*.*",
+          "comment": "hey this is wrong! just firewire (serial) is faster than parallel, but is an exception...",
+          "date": "18-02-2018 11:14:13"
+        },
+        {
+          "author": "~anonymus@91.230.*.*",
+          "comment": "hey guys, I just recall...USB is faster than parallel...",
+          "date": "18-02-2018 11:17:19"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "used to connect a keyboard",
+          "correct": false
+        },
+        {
+          "answer": "inadequate to work with a printer",
+          "correct": false
+        },
+        {
+          "answer": "installed in modern notebooks",
+          "correct": false
+        },
+        {
+          "answer": "always slower than a serial port",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;To determine the pessimistic complexity of an algorithm we relate it to&nbsp;",
+      "id": 2772,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "all possible to imagine algorithms",
+          "correct": false
+        },
+        {
+          "answer": "all possible data",
+          "correct": true
+        },
+        {
+          "answer": "specific data",
+          "correct": false
+        },
+        {
+          "answer": "specific layout of some random variable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To a bus you connect",
+      "id": 2773,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "a ventilator",
+          "correct": false
+        },
+        {
+          "answer": "a hard drive",
+          "correct": true
+        },
+        {
+          "answer": "the power cable",
+          "correct": false
+        },
+        {
+          "answer": "memory",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Dominating operations in an algorithm are such that",
+      "id": 2774,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "b is very likely to be true",
+          "date": "07-02-2017 12:25:31"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "maybe\n",
+          "date": "03-02-2020 19:17:43"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "for any data no operation is executed more times if we consider only one order of magnitude",
+          "correct": false
+        },
+        {
+          "answer": "executing one of them takes longer than all other operations",
+          "correct": false
+        },
+        {
+          "answer": "they execute the fastest for any given data",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In the floating-point system in which the exponent is represented by a single byte and the significand by 5 bytes",
+      "id": 2775,
+      "comments": [
+        {
+          "author": "~anon@185.244.*.*",
+          "comment": "Why between -1000 and 1000? ",
+          "date": "19-01-2019 08:49:39"
+        },
+        {
+          "author": "~anon@77.253.*.*",
+          "comment": "should be b and c ",
+          "date": "03-02-2020 22:23:10"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "every value ranging -1000 to 1000 can be represented, though some with an error",
+          "correct": true
+        },
+        {
+          "answer": "every integer of the range of representability is represented without error",
+          "correct": false
+        },
+        {
+          "answer": "the number of the values which are represented without an error is finite",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A flip-flop (latch) is used for",
+      "id": 2776,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "storing data",
+          "correct": true
+        },
+        {
+          "answer": "data conversion",
+          "correct": false
+        },
+        {
+          "answer": "forwarding the traffic on a bus",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The alpha-beta strategy is",
+      "id": 2777,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "used in OCR programs",
+          "correct": false
+        },
+        {
+          "answer": "a popular method to determine the strength of a turn in 2-player games",
+          "correct": true
+        },
+        {
+          "answer": "a heuristic used to solve NP-completeness problems",
+          "correct": false
+        },
+        {
+          "answer": "a variant of minimax strategy",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Multithreading is a notion, which",
+      "id": 2778,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "appears only in multiprocessor architectures",
+          "correct": false
+        },
+        {
+          "answer": "appears in concepts of concurrent computing",
+          "correct": true
+        },
+        {
+          "answer": "appears in object-oriented programming",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Pessimistic complexity may concern",
+      "id": 2779,
+      "comments": [
+        {
+          "author": "~anon@188.146.*.*",
+          "comment": "Degree of comlexity is wrong? ",
+          "date": "26-01-2019 12:05:17"
+        },
+        {
+          "author": "~jack@37.47.*.*",
+          "comment": "Think should be only true the degree of complexity of the algorithm. \nPch said that time and amount of memory are not right due to that every computer can have diffrent power and memory, so complexity will be diffrent.",
+          "date": "01-02-2019 12:20:07"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "the amount of memory required to solve an algorithmic problem",
+          "correct": true
+        },
+        {
+          "answer": "time measured in amount of steps of the algorithm’s execution",
+          "correct": true
+        },
+        {
+          "answer": "the degree of complexity of the algorithm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Fixed-point addition is",
+      "id": 2780,
+      "comments": [
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "Isn't commutative as pch proved on a lecture.\nAlso isn't exact - we often need to round something up and sometimes we lose some bits. So none of these is correct.",
+          "date": "28-01-2017 01:38:54"
+        },
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "it can be exact if we avoid overflow and commutativity is not the same as associativity that pch has is his 10th presentation (correct me if i'm wrong)",
+          "date": "06-02-2017 23:20:02"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "you are wrong\n",
+          "date": "03-02-2020 19:28:05"
+        },
+        {
+          "author": "~украинец@188.165.*.*",
+          "comment": "ответ убил",
+          "date": "04-02-2020 01:34:38"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "ну а хули , он сказал что бы я ему сказал ели он ошибается , так вот , он ошибся ))))",
+          "date": "10-02-2020 15:09:55"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "distributive",
+          "correct": false
+        },
+        {
+          "answer": "commutative",
+          "correct": true
+        },
+        {
+          "answer": "exact",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "CD-RW discs are written to multiple times",
+      "id": 2781,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "but only in order, you cannot put data in the middle",
+          "correct": true
+        },
+        {
+          "answer": "in such a way that the surface of the disc is subjected to reversible thermal damage",
+          "correct": false
+        },
+        {
+          "answer": "thanks to the lasers causing reversible consolidation of magnetic domains",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "CD-R discs are written a single time because",
+      "id": 2782,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "a should be correct ",
+          "date": "30-01-2017 15:18:36"
+        },
+        {
+          "author": "~Maciek@95.49.*.*",
+          "comment": "Agree.",
+          "date": "30-01-2017 15:26:03"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "none are correct, proven by pch ",
+          "date": "07-02-2017 12:23:43"
+        },
+        {
+          "author": "~anon@89.77.*.*",
+          "comment": "???????",
+          "date": "11-02-2019 23:36:04"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "each parameter change of the surface of the disc is irreversible",
+          "correct": false
+        },
+        {
+          "answer": "the interference of newly-written bits with the old ones would have caused too much noise (hum?)",
+          "correct": false
+        },
+        {
+          "answer": "bits are so densely encapsulated that changing one of them would have caused a cascade of further changes",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "John Backus is famous as the creator of",
+      "id": 2783,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "a transistor",
+          "correct": false
+        },
+        {
+          "answer": "the computer mouse",
+          "correct": false
+        },
+        {
+          "answer": "the IBM 404 computer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "NP-completeness problems include",
+      "id": 2784,
+      "comments": [
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "https://en.wikipedia.org/wiki/Co-NP-complete  C might also be correct ",
+          "date": "07-02-2017 00:43:13"
+        },
+        {
+          "author": "~ktp@185.102.*.*",
+          "comment": "i'm referencing the Example section in the article",
+          "date": "07-02-2017 00:43:38"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "boolean satisfiability problems",
+          "correct": true
+        },
+        {
+          "answer": "division of sets into two subsets of the same sum",
+          "correct": true
+        },
+        {
+          "answer": "tautologicality of a boolean problem",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To determine the pessimistic complexity of an algorithm we relate it to",
+      "id": 2785,
+      "comments": [
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "none of that",
+          "date": "30-01-2017 17:58:16"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "why?",
+          "date": "30-01-2017 18:25:58"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "we should relate it to every possible data to see how our algorithm behaves",
+          "date": "30-01-2017 20:22:11"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "All possible to imagine algorithms makes no sense. For what would you need to analyse ALL  POSSIBLE TO IMAGINE algorithms to compare it with yours? ",
+          "date": "30-01-2017 20:23:23"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "none are correct, pch approved ",
+          "date": "07-02-2017 12:13:43"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "specific data",
+          "correct": false
+        },
+        {
+          "answer": "all possible to imagine algorithms",
+          "correct": true
+        },
+        {
+          "answer": "specific layout of some random variable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Relation “Problem A is reducible to problem B” is a",
+      "id": 2786,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "transitive relation",
+          "correct": true
+        },
+        {
+          "answer": "partial order relation",
+          "correct": false
+        },
+        {
+          "answer": "equivalence relation",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Who shares the public key?",
+      "id": 2787,
+      "comments": [
+        {
+          "author": "~anon@2a02:a319:c042:9600:10d6:a828:4843:99c",
+          "comment": "shouldn't it be the receiver?",
+          "date": "01-02-2020 00:54:42"
+        },
+        {
+          "author": "~anon@77.253.*.*",
+          "comment": "It's the receiver",
+          "date": "03-02-2020 22:37:52"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "The sender",
+          "correct": true
+        },
+        {
+          "answer": "The sender and the receiver",
+          "correct": false
+        },
+        {
+          "answer": "The receiver",
+          "correct": false
+        },
+        {
+          "answer": "The router",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which image is the most common in the polish edition of Brookshear’s workbook?",
+      "id": 2788,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "A key",
+          "correct": true
+        },
+        {
+          "answer": "A house",
+          "correct": false
+        },
+        {
+          "answer": "A computer",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Computer programs",
+      "id": 2789,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "why not c?",
+          "date": "06-02-2018 10:36:10"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "code can be edited in text editor, but program is edited in compiler",
+          "date": "06-02-2018 10:38:52"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "but it's being correct, computer programs can be edited in any text edit, it doesn't give any information about compiling it, can it be a tricky question? ",
+          "date": "06-02-2018 10:41:51"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "must contain step after step respectively executed instructions",
+          "correct": true
+        },
+        {
+          "answer": "can be written in a natural language",
+          "correct": false
+        },
+        {
+          "answer": "can be edited in any text editor",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "(010) is a periodic expansion of the number",
+      "id": 2790,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1/5",
+          "correct": false
+        },
+        {
+          "answer": "2/7",
+          "correct": true
+        },
+        {
+          "answer": "1/10",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The ENIAC computer created in 1945",
+      "id": 2791,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "was made in Princestone",
+          "correct": false
+        },
+        {
+          "answer": "had a method of recursion",
+          "correct": false
+        },
+        {
+          "answer": "weighted over 27 tons",
+          "correct": true
+        },
+        {
+          "answer": "was based on FORTRAN",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Charles Babbage created the difference engine to",
+      "id": 2792,
+      "comments": [
+        {
+          "author": "~dick@89.78.*.*",
+          "comment": "from todays test, there can be an answer:\n \"designed to tabulate polynomial functions\", its not here but it was a possible answer today.",
+          "date": "31-01-2017 18:10:56"
+        },
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "thanks ",
+          "date": "06-02-2018 09:54:44"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "impress lady Lovelace",
+          "correct": false
+        },
+        {
+          "answer": "ably add and subtract mechanically",
+          "correct": false
+        },
+        {
+          "answer": "be able to find the solution to any function, not only polynomial",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Check the correctness of the following equations in 8-bit complement code",
+      "id": 2793,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "I`m pretty sure that there too much zeroes in a) (answer) and b) (second number)",
+          "date": "27-01-2017 21:15:22"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "You mean the second number of c) ?\nAnd yes, my bad, all numbers here should have 8 bits.",
+          "date": "27-01-2017 21:45:22"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "yep, of c. my bad",
+          "date": "27-01-2017 21:58:13"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "1000 0000 + 0000 0001 = 10000 0001",
+          "correct": true
+        },
+        {
+          "answer": "1111 0000 + 1000 1111 = 1111 1111",
+          "correct": false
+        },
+        {
+          "answer": "0111 1111 + 10000 0000 = 1111 1111",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "In the floating-point system in which the exponent is represented by a single byte and the significand by 16 bytes",
+      "id": 2794,
+      "comments": [
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "B should be incorrect",
+          "date": "28-01-2017 19:02:45"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "Why incorrect, aren't integers represented with expansion period (0)?",
+          "date": "28-01-2017 22:55:43"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "every value ranging -8 to 7 can be represented, though some with an error",
+          "correct": true
+        },
+        {
+          "answer": "every integer of the range of representability is represented without error",
+          "correct": true
+        },
+        {
+          "answer": "the number of the values which are represented without an error is finite",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "The creators of mechanical calculators were",
+      "id": 2795,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wilhelm Schickard",
+          "correct": true
+        },
+        {
+          "answer": "Blaise Pascal",
+          "correct": true
+        },
+        {
+          "answer": "Heron",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The following equations in complement code are correct for 8-bit integers",
+      "id": 2796,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "the second one is also correct ",
+          "date": "27-01-2017 14:32:01"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "logically",
+          "date": "27-01-2017 21:09:00"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "There's overflow so I wouldn't say it's correct. Negative + Negative can't give positive.",
+          "date": "27-01-2017 23:03:49"
+        },
+        {
+          "author": "~Maciek@178.42.*.*",
+          "comment": "Yes, but we have here two zeros. Negative representation, yet zeros. And zero regardless positive, negative is always the same. That's my interpretation. I might be wrong, but that's how I understand it.\n",
+          "date": "27-01-2017 23:44:26"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "if you add any negative number to any negative number you will still not be able to get zero :P ",
+          "date": "28-01-2017 00:59:28"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "Ah, I know what you mean. But isn't it about two's complement representation? There's one zero.",
+          "date": "28-01-2017 01:01:18"
+        },
+        {
+          "author": "~anon@89.79.*.*",
+          "comment": "shouldn't the first one also be wrong????",
+          "date": "29-01-2017 13:15:22"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "But isn`t overflow incorrect only for us, not for computers?",
+          "date": "29-01-2017 13:20:24"
+        },
+        {
+          "author": "~Maciek@83.24.*.*",
+          "comment": "It isn't. There isn't any \"two's complement\" phrase. First is not wrong, because we are considering 8-bit integers. The result should be 1 0000 0000, but we are considering here only 8 bits.",
+          "date": "29-01-2017 13:40:09"
+        },
+        {
+          "author": "~anon@83.24.*.*",
+          "comment": "I undo what I have just written. There isn't the crucial phrase (8-bit complement code), so it is not restricted to only 8 bits. Due to that, a.) is incorrect. The result should be something like 1 0000 0000",
+          "date": "29-01-2017 14:01:44"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "Can anyone send a link what exactly is this \"complement code\"?",
+          "date": "29-01-2017 19:26:20"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "there's an overflow in b and it's 100% incorrect",
+          "date": "07-02-2017 12:12:53"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "a,1111 1111 + 0000 0001 = 0000 0000\t(-1+1=0)\nb,1000 0000 + 1000 0000 = 0000 0000       (-0+-0=-0, it should be 1000 0000, because in computer,negative+negative=negative)\t\nc,1010 1010 + 1010 1010 = 1101 0100      (the sum will be out of this 8 bits range, simply just try to count it:-86+(-86)=-44, definitely wrong)",
+          "date": "25-01-2018 17:57:15"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "b is only correct in a local way, but in computers language, its wrong",
+          "date": "25-01-2018 17:57:57"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "1111 1111 + 0000 0001 = 0000 0000",
+          "correct": true
+        },
+        {
+          "answer": "1000 0000 + 1000 0000 = 0000 0000",
+          "correct": false
+        },
+        {
+          "answer": "1010 1010 + 1010 1010 = 1101 0100",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To determine the pessimistic complexity of an algorithm we relate it to",
+      "id": 2797,
+      "comments": [
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "Shouldn't be only first answer correct?",
+          "date": "27-01-2017 18:51:29"
+        },
+        {
+          "author": "~Maciek@178.42.*.*",
+          "comment": "Why only the 1st one?",
+          "date": "27-01-2017 19:14:58"
+        },
+        {
+          "author": "~anon@89.78.*.*",
+          "comment": "U don't have to relate on all possible to imagine algorithms to determine complexity of another algorithm. That's redundant.",
+          "date": "27-01-2017 20:12:10"
+        },
+        {
+          "author": "~anon@178.42.*.*",
+          "comment": "makes sense",
+          "date": "27-01-2017 21:03:56"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "b and c is 100% incorrect",
+          "date": "07-02-2017 12:11:35"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "all possible data",
+          "correct": true
+        },
+        {
+          "answer": "specific layout of some random variable",
+          "correct": true
+        },
+        {
+          "answer": "all possible to imagine algorithms",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "(010) is the periodic expansion of the number",
+      "id": 2798,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1/5",
+          "correct": false
+        },
+        {
+          "answer": "2/7",
+          "correct": true
+        },
+        {
+          "answer": "1/10",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "(0110) is the basic period of",
+      "id": 2799,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "Should be c) also correct? ",
+          "date": "27-01-2017 14:49:39"
+        },
+        {
+          "author": "~phil@83.31.*.*",
+          "comment": "All of these have periods of (0110). I'm guessing the key here is \"basic\", but whatever it means I've no idea",
+          "date": "27-01-2017 15:50:00"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "does anyone knows why is it b.)?",
+          "date": "28-01-2017 14:51:50"
+        },
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "I think it should be a.). \"Basic period\"",
+          "date": "28-01-2017 15:15:08"
+        },
+        {
+          "author": "~anon@185.102.*.*",
+          "comment": "What does it mean \"Basic\"? ",
+          "date": "28-01-2017 16:10:06"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "Judging from other examples I think basic period means that it's the first one we can find.\n\nSo periods for 1/7 = 0.001001... could be (001), (010) or (100), but the basic period would only be (001).\n\nThat's my interpretation based on different questions, don't know if it's 100% true.",
+          "date": "29-01-2017 02:12:13"
+        },
+        {
+          "author": "~phil@83.28.*.*",
+          "comment": "This would also mean that a) is correct and b) is wrong.",
+          "date": "29-01-2017 02:14:12"
+        },
+        {
+          "author": "~anon@83.24.*.*",
+          "comment": "Yea, it's a. Basic means \"right after the dot\"",
+          "date": "13-02-2018 01:57:08"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "2/5",
+          "correct": false
+        },
+        {
+          "answer": "1/10",
+          "correct": true
+        },
+        {
+          "answer": "4/5",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To avoid the interception of the credit card number in online transactions",
+      "id": 2800,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ppp connections are used",
+          "correct": true
+        },
+        {
+          "answer": "single-use passwords are used",
+          "correct": false
+        },
+        {
+          "answer": "multi-use passwords are used",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Compilation of source code is",
+      "id": 2801,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "as same as its interpretation",
+          "correct": false
+        },
+        {
+          "answer": "for example translating a program written in assembly to a program expressed in machine language",
+          "correct": true
+        },
+        {
+          "answer": "a process which guarantees the possibility to execute a program compiled on the computer A, on a given computer B, regardless of the program compliance of both computers",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The undecidability of halting problem for Turing machines implies that",
+      "id": 2803,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "you must use your brain to solve the problem if the program halts for given data",
+          "correct": false
+        },
+        {
+          "answer": "each problem to which the halting problem is reduced is undecidable",
+          "correct": true
+        },
+        {
+          "answer": "each problem that is reduced to the halting problem is undecidable",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "AI is known to have solved successfully the problem of",
+      "id": 2804,
+      "comments": [
+        {
+          "author": "~anon@80.49.*.*",
+          "comment": "nowaday probably all are corect'\n",
+          "date": "31-01-2018 10:35:01"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "this question was in TAK lecture yesterday, did teacher said \"automatic translations\" correct?",
+          "date": "31-01-2018 11:39:48"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "Yeah, he said all options should be correct.",
+          "date": "31-01-2018 16:14:39"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Decision support",
+          "correct": true
+        },
+        {
+          "answer": "Automatic translations",
+          "correct": false
+        },
+        {
+          "answer": "Natural language recognition<p></p>\n<p>&nbsp;</p>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "John Backus is known as the inventor of",
+      "id": 2805,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "IBM 404 computer",
+          "correct": false
+        },
+        {
+          "answer": "Transitor",
+          "correct": false
+        },
+        {
+          "answer": "FORTRAN",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Eratostenes sieve",
+      "id": 2806,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "requires additional memory",
+          "correct": true
+        },
+        {
+          "answer": "determines a set of initial prime numbers<p></p>\n<p>&nbsp;</p>",
+          "correct": true
+        },
+        {
+          "answer": "was used to determine the radius of Earth",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Cylinders on hard disk are:",
+      "id": 2900,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "Equaidistant from the center fragments of disk surface on all the plates;",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p>interrupts</p>",
+      "id": 3050,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<p>can happen when some physical events like mouse move, takes place</p>",
+          "correct": true
+        },
+        {
+          "answer": "<p>are managed by OS with the help of priority queue</p>",
+          "correct": true
+        },
+        {
+          "answer": "<p>always happened when you plug in or out a device</p>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "AI is better than human in",
+      "id": 3053,
+      "comments": [
+        {
+          "author": "~anon@89.71.*.*",
+          "comment": "there was also a questiion about  chess won a game to human or something, the answers was (10 years ago, never 5 years ago) has anyone knows the answers of this question?\n",
+          "date": "10-02-2018 20:49:03"
+        },
+        {
+          "author": "mykhi",
+          "comment": "correct answer is over >10 years ago",
+          "date": "10-02-2018 22:01:51"
+        },
+        {
+          "author": "~anon@89.71.*.*",
+          "comment": "thanks!",
+          "date": "11-02-2018 11:07:33"
+        },
+        {
+          "author": "~anon@199.21.*.*",
+          "comment": "how about cs-go?",
+          "date": "04-02-2019 21:59:40"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "checkers",
+          "correct": true
+        },
+        {
+          "answer": "chess",
+          "correct": true
+        },
+        {
+          "answer": "go",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

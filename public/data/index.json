@@ -1,16 +1,156 @@
 {
   "pages": [
     {
-      "id": "skj-eng",
-      "title": "Sieci Komputerowe - ang - egzamin (SKJ)"
+      "title": "Administrowanie bazami danych (ABD)",
+      "id": "abd"
     },
     {
-      "id": "sko1-skj",
-      "title": "Sieci Komputerowe 1 (SKO1/SKJ)"
+      "title": "Algorytmy i Struktury Danych - edux (ASD)",
+      "id": "asd"
     },
     {
-      "id": "sko2",
-      "title": "Sieci Komputerowe 2 - edu - 2011 ZIMA (SKO2)"
+      "title": "Aplikacje Baz Danych (APBD)",
+      "id": "apbd"
+    },
+    {
+      "title": "Automaty i Gramatyki (AUG)",
+      "id": "aug"
+    },
+    {
+      "title": "Bezpieczeństwo Systemów Informatycznych (BSI)",
+      "id": "bsi"
+    },
+    {
+      "title": "Bezpieczeństwo Systemów Informatycznych (ANG) - 2012 (BSI)",
+      "id": "bsi_ang_2012"
+    },
+    {
+      "title": "Bezpieczeństwo Systemów Informatycznych 2018 (BSI_ANG)",
+      "id": "bsi_ang_2018"
+    },
+    {
+      "title": "BYT_P (BYT)",
+      "id": "byt"
+    },
+    {
+      "title": "Edukacja dla bezpieczeństwa (EDB)",
+      "id": "edb"
+    },
+    {
+      "title": "Fizyka k1 (FIZK1)",
+      "id": "fizk1"
+    },
+    {
+      "title": "Fizyka k2 (FIZK2)",
+      "id": "fizk2"
+    },
+    {
+      "title": "Fizyka Kolos1 (angielska) (FIZ)",
+      "id": "fiz"
+    },
+    {
+      "title": "Grafika Komputerowa (GRK)",
+      "id": "grk"
+    },
+    {
+      "title": "Hurtownie danych i aplikacje OLAP (HUR)",
+      "id": "hur"
+    },
+    {
+      "title": "Legal foundations of business (PPB)",
+      "id": "ppb_ang"
+    },
+    {
+      "title": "Matematyka Dyskretna - edux - 2012 ZIMA (MAD2012A)",
+      "id": "mad2012a"
+    },
+    {
+      "title": "Matematyka Dyskretna 2020 (MAD)",
+      "id": "mad"
+    },
+    {
+      "title": "Modelowanie i Analiza Systemów informacyjnych (MAS)",
+      "id": "mas"
+    },
+    {
+      "title": "Narzędzia Sztucznej Inteligencji (NAI)",
+      "id": "nai"
+    },
+    {
+      "title": "Prawne Podstawy Działalności Gospodarczej (PPB)",
+      "id": "ppb"
+    },
+    {
+      "title": "Rachunkowość Podmiotow Gospodarczych (RPG)",
+      "id": "rpg"
+    },
+    {
+      "title": "RBD egz 2016 zaoczne (RBDz)",
+      "id": "rbdz"
+    },
+    {
+      "title": "Relacyjne Bazy Danych (RBD)",
+      "id": "rbd"
+    },
+    {
+      "title": "Sieci Komputerowe - ang - egzamin  (SKJ)",
+      "id": "skj"
+    },
+    {
+      "title": "Sieci Komputerowe 1 (SKO1/SKJ)",
+      "id": "sko1-skj"
+    },
+    {
+      "title": "Sieci Komputerowe 2 - edu - 2011 ZIMA (SKO2)",
+      "id": "sko2"
+    },
+    {
+      "title": "SYSTEM DOSKONALENIA KOMPETENCJI PROGRAMISTYCZNYCH (SDKP)",
+      "id": "sdkp"
+    },
+    {
+      "title": "Systemy Baz Danych (SBD)",
+      "id": "sbd"
+    },
+    {
+      "title": "Systemy Baz Danych zima 2015 (SBD2015)",
+      "id": "sbd2015"
+    },
+    {
+      "title": "Systemy operacyjne (SOP)",
+      "id": "sop"
+    },
+    {
+      "title": "Technika i Architektura Komputerów (TAK)",
+      "id": "tak"
+    },
+    {
+      "title": "Technika i Architekture Komputerów (TAK) [ENG] (TAKE)",
+      "id": "tak_ang"
+    },
+    {
+      "title": "Technologie i Platformy Chmury  Obliczeniowej (TPC)",
+      "id": "tpc"
+    },
+    {
+      "title": "Technologie Internetu (TIN)",
+      "id": "tin"
+    },
+    {
+      "title": "Technologie Internetu - 2017 (TIN)",
+      "id": "tin2017"
+    },
+    {
+      "title": "Wstęp do systemów informacyjnych (WSI)",
+      "id": "wsi"
+    },
+    {
+      "title": "Zarządzanie projektem informatycznym (ZPR) (ZPR)",
+      "id": "zpr"
+    },
+    {
+      "title": "ZBD - pytania od studentów (ZBD)",
+      "id": "zbd"
     }
   ]
 }

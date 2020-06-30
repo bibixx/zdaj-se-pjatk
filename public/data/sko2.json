@@ -1,9 +1,10 @@
 {
-  "id": "sko2",
   "title": "Sieci Komputerowe 2 - edu - 2011 ZIMA (SKO2)",
+  "id": "sko2",
   "data": [
     {
       "question": "Przesyłanie strumieniowe wykorzystuje protokoły:",
+      "id": 986,
       "comments": [
         {
           "author": "~mateusz@89.78.*.*",
@@ -37,6 +38,7 @@
     },
     {
       "question": "Buforowanie w odtwarzaczu audio/wideo po stronie klienta:",
+      "id": 987,
       "comments": null,
       "answers": [
         {
@@ -59,6 +61,7 @@
     },
     {
       "question": "Strata pakietu IP w sieci następuje zwykle",
+      "id": 988,
       "comments": null,
       "answers": [
         {
@@ -81,6 +84,7 @@
     },
     {
       "question": "Serwer RTSP:",
+      "id": 989,
       "comments": null,
       "answers": [
         {
@@ -103,6 +107,7 @@
     },
     {
       "question": "Telefon tradycyjny różni się od telefonu Internetowego:",
+      "id": 990,
       "comments": null,
       "answers": [
         {
@@ -125,6 +130,7 @@
     },
     {
       "question": "Przy przesyłaniu strumieniowym:",
+      "id": 991,
       "comments": null,
       "answers": [
         {
@@ -147,6 +153,7 @@
     },
     {
       "question": "Które protokoły multipleksacji wymagają synchronizacji zegarów węzłów sieci?",
+      "id": 992,
       "comments": null,
       "answers": [
         {
@@ -169,6 +176,7 @@
     },
     {
       "question": "Cyfrowa komunikacja poprzez medium radiowe wymaga:",
+      "id": 993,
       "comments": null,
       "answers": [
         {
@@ -191,6 +199,7 @@
     },
     {
       "question": "Które stwierdzenia są prawdziwe:",
+      "id": 994,
       "comments": null,
       "answers": [
         {
@@ -213,6 +222,7 @@
     },
     {
       "question": "Komunikacja wielu odbiorców jednocześnie przy użyciu medium radiowego jest możliwa, gdy:",
+      "id": 995,
       "comments": null,
       "answers": [
         {
@@ -235,6 +245,7 @@
     },
     {
       "question": "Sygnał radiowy:",
+      "id": 996,
       "comments": null,
       "answers": [
         {
@@ -257,6 +268,7 @@
     },
     {
       "question": "Przestrzenie ochronne:",
+      "id": 997,
       "comments": null,
       "answers": [
         {
@@ -279,6 +291,7 @@
     },
     {
       "question": "Informacja jest kodowana w sygnale radiowym za pomocą:",
+      "id": 998,
       "comments": null,
       "answers": [
         {
@@ -301,6 +314,7 @@
     },
     {
       "question": "Multipleksacja przy użyciu protokołu ALOHA:",
+      "id": 999,
       "comments": null,
       "answers": [
         {
@@ -323,6 +337,7 @@
     },
     {
       "question": "Które stwierdzenia są prawdziwe:",
+      "id": 1000,
       "comments": null,
       "answers": [
         {
@@ -345,6 +360,7 @@
     },
     {
       "question": "W radiowych sieciach lokalnych kolizje nie zawsze są wykrywane, gdyż:",
+      "id": 1001,
       "comments": null,
       "answers": [
         {
@@ -367,6 +383,7 @@
     },
     {
       "question": "Sygnał jest to:",
+      "id": 1002,
       "comments": null,
       "answers": [
         {
@@ -389,6 +406,7 @@
     },
     {
       "question": "Sterowanie \\\\\\\"poza pasmem\\\\\\\"",
+      "id": 1003,
       "comments": null,
       "answers": [
         {
@@ -411,6 +429,7 @@
     },
     {
       "question": "Technologie MPLS i ATM różnią się tym, że:",
+      "id": 1004,
       "comments": [
         {
           "author": "~ld@89.64.*.*",
@@ -449,6 +468,7 @@
     },
     {
       "question": "Kategoria usług ABR:",
+      "id": 1005,
       "comments": null,
       "answers": [
         {
@@ -470,133 +490,139 @@
       ]
     },
     {
-      "question": "Przy przesyłaniu strumieniowym:",
+      "question": "<p class=\"MsoNormal\"><span lang=\"PL\">Przy przesyłaniu strumieniowym:</span></p>\n<p class=\"MsoNormal\">&nbsp;</p>",
+      "id": 3034,
       "comments": null,
       "answers": [
         {
-          "answer": "odbiorca odtwarza media, podczas gry nadawca wysyła media",
+          "answer": "<span lang=\"PL\">odbiorca odtwarza media, podczas gry nadawca wysyła media</span>",
           "correct": true
         },
         {
-          "answer": "może być wielu odbiorców",
+          "answer": "<span lang=\"PL\">może być wielu odbiorców</span>",
           "correct": true
         },
         {
-          "answer": "odtwarzanie jest interaktywne",
+          "answer": "<span lang=\"PL\">odtwarzanie jest interaktywne</span>",
           "correct": true
         },
         {
-          "answer": "nadawca steruje przepływem danych do odbiorcy",
+          "answer": "<span lang=\"PL\">nadawca steruje przepływem danych do odbiorcy</span>",
           "correct": false
         }
       ]
     },
     {
-      "question": "Protokół RTCP służy do:",
+      "question": "<span lang=\"PL\">Protokół RTCP służy do:</span>",
+      "id": 3035,
       "comments": null,
       "answers": [
         {
-          "answer": "okresowego powiadomienia nadawcy o wydajności komutacji",
+          "answer": "<span lang=\"PL\">okresowego powiadomienia nadawcy o wydajności komutacji</span>",
           "correct": true
         },
         {
-          "answer": "synchronizacji dźwięku z obrazem, wysyłanymi w jednej sesji RTP",
+          "answer": "<span lang=\"PL\">synchronizacji dźwięku z obrazem, wysyłanymi w jednej sesji RTP</span>",
           "correct": true
         },
         {
-          "answer": "przenoszenia informacji nadmiarowej",
+          "answer": "<span lang=\"PL\">przenoszenia informacji nadmiarowej</span>",
           "correct": false
         },
         {
-          "answer": "rezerwacji zasobów dla komunikacji RTP",
+          "answer": "<span lang=\"PL\">rezerwacji zasobów dla komunikacji RTP</span>",
           "correct": false
         }
       ]
     },
     {
-      "question": "Telefon tradycyjny różni się od telefonu Internetowego:",
+      "question": "<span lang=\"PL\">Telefon tradycyjny różni się od telefonu Internetowego:</span>",
+      "id": 3036,
       "comments": null,
       "answers": [
         {
-          "answer": "telefon internetowy stosuje komutację pakietów, a tradycyjny – komutacje kanałów",
+          "answer": "<span lang=\"PL\">telefon internetowy stosuje komutację pakietów, a tradycyjny – komutacje kanałów</span>",
           "correct": true
         },
         {
-          "answer": "telefon Internetowy jest komputerem osobistym",
+          "answer": "<span lang=\"PL\">telefon Internetowy jest komputerem osobistym</span>",
           "correct": false
         },
         {
-          "answer": "telefon Internetowy działa wolniej",
+          "answer": "<span lang=\"PL\">telefon Internetowy działa wolniej</span>",
           "correct": false
         },
         {
-          "answer": "telefon Internetowy działa szybciej",
+          "answer": "<span lang=\"PL\">telefon Internetowy działa szybciej</span>",
           "correct": false
         }
       ]
     },
     {
-      "question": "Protokół SIP:",
+      "question": "<span lang=\"PL\">Protokół SIP:</span>",
+      "id": 3037,
       "comments": null,
       "answers": [
         {
-          "answer": "pozwala na negocjację kodowania",
+          "answer": "<span lang=\"PL\">pozwala na negocjację kodowania</span>",
           "correct": true
         },
         {
-          "answer": "może używać adresów e-mail jako identyfikatorów",
+          "answer": "<span lang=\"PL\">może używać adresów e-mail jako identyfikatorów</span>",
           "correct": true
         },
         {
-          "answer": "implementuje usługę katalogową",
+          "answer": "<span lang=\"PL\">implementuje usługę katalogową</span>",
           "correct": true
         },
         {
-          "answer": "musi używać TCP w celu zapewnienia niezawodności",
+          "answer": "<span lang=\"PL\">musi używać TCP w celu zapewnienia niezawodności</span>",
           "correct": false
         }
       ]
     },
     {
-      "question": "Do nawiązania rozmowy telefonicznej w technologii VoIP wykorzystuje się:",
+      "question": "<span lang=\"PL\">Do nawiązania rozmowy telefonicznej w technologii VoIP wykorzystuje się:</span>",
+      "id": 3038,
       "comments": null,
       "answers": [
         {
-          "answer": "protokół RTCP",
+          "answer": "<span lang=\"PL\">protokół RTCP</span>",
           "correct": false
         },
         {
-          "answer": "protokół H.323",
+          "answer": "<span lang=\"PL\">protokół H.323</span>",
           "correct": true
         },
         {
-          "answer": "protokół RTP",
+          "answer": "<span lang=\"PL\">protokół RTP</span>",
           "correct": false
         },
         {
-          "answer": "protokół Session Initiation Protocol",
+          "answer": "<span lang=\"PL\">protokół Session Initiation Protocol</span>",
           "correct": true
         }
       ]
     },
     {
-      "question": "Komunikacja głosu i obrazu jest:",
+      "question": "<span lang=\"PL\">Komunikacja głosu i obrazu jest:</span>",
+      "id": 3039,
       "comments": null,
       "answers": [
         {
-          "answer": "interaktywna",
+          "answer": "<p class=\"MsoNormal\"><span lang=\"PL\">interaktywna</span></p>",
           "correct": false
         },
         {
-          "answer": "podatna na opóźnienia maksymalne",
+          "answer": "<span lang=\"PL\">podatna na opóźnienia maksymalne</span>",
           "correct": false
         },
         {
-          "answer": "podatna na zmienność opóźnień",
+          "answer": "<span lang=\"PL\">podatna na zmienność opóźnień</span>",
           "correct": true
         },
         {
-          "answer": "podatna na straty",
+          "answer": "<p class=\"MsoNormal\"><span lang=\"PL\">podatna na straty</span></p>",
           "correct": false
         }
       ]

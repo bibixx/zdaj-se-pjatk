@@ -1,0 +1,366 @@
+{
+  "title": "Sieci Komputerowe - ang - egzamin  (SKJ)",
+  "id": "skj",
+  "data": [
+    {
+      "question": "<span>TEMPEST protects against:</span>",
+      "id": 2628,
+      "comments": [
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "sniffing at physical layer",
+          "date": "02-12-2018 22:57:51"
+        },
+        {
+          "author": "~xui@91.230.*.*",
+          "comment": "xui",
+          "date": "04-02-2019 14:45:39"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "sniffing at physical layer ziomeczki https://en.wikipedia.org/wiki/Tempest_(codename)",
+          "date": "09-02-2019 00:46:39"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span>sniffing at link layer&nbsp;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>sniffing at physical layer</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>spoofing at physical layer</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>TEMPEST is not a protection technology</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>Processing a recursive DNS query, a contacted DNS server is responsible for providing the answer for the client. It may be necessary that the server communicates with other servers to get the asnwer.</span>",
+      "id": 2629,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>No</span>",
+          "correct": false
+        },
+        {
+          "answer": "Yes",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span>&nbsp;A protocol used to automatically configure IP networking for a host is called:</span>",
+      "id": 2630,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>DNS&nbsp;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>DHCP</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>SNMP</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>DHCM&nbsp;</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>If on one link, at the same time, in the same place and on the same frequency, multiple devices communicate, than what is the type of multiplexing used? Choose the acronym.</span>",
+      "id": 2631,
+      "comments": [
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "to nie będzie FDM?",
+          "date": "23-11-2016 11:44:50"
+        },
+        {
+          "author": "~anon@95.160.*.*",
+          "comment": "+ chyba winien być Frequency-division multiplexing",
+          "date": "01-02-2017 16:14:01"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "CDMA - Code Division Multiple Access - ponieważ każdy nadawca ma własny kod, nawet jeżeli nadają jednocześnie, można rozkodować złączoną informację.",
+          "date": "05-02-2017 14:45:24"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "FDM to dosłownie podzial spektrum miedzy klientow czyli kazdy ma inna częstotliwość. CDM określa którą częstotliwość używasz w danym momencie. IMHO \"at the same time\" nie oznacza tu punktu w czasie tylko okres czasu, więc dałbym TDM. Poza tym SKJ internetowe and rozróżnia głównie TDM i FDM w wykładzie circuit switching, więc wydaje mi się że pod to jest to pytanie.",
+          "date": "08-02-2019 22:48:19"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "w jednym z wykladow SKJ internetowe jest napisane dokładnie że to CDMA",
+          "date": "09-02-2019 00:33:46"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span>FDM</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>TDM&nbsp;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>CDM</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>WDM</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "IPSec provides security in layer",
+      "id": 2632,
+      "comments": [
+        {
+          "author": "~PW@91.230.*.*",
+          "comment": "IPSec zabezpiecza protokół IP, więdz działa na warstwie sieci (network)",
+          "date": "05-02-2017 13:58:17"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "podbijam co PW napisał",
+          "date": "08-02-2019 22:50:01"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zaznaczam b)",
+          "date": "08-02-2019 22:58:16"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "transport",
+          "correct": false
+        },
+        {
+          "answer": "network",
+          "correct": true
+        },
+        {
+          "answer": "application",
+          "correct": false
+        },
+        {
+          "answer": "link",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>&nbsp;How many bits are used in an IPv6 address</span>",
+      "id": 2633,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>1024</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>128&nbsp;</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>64</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>256&nbsp;</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>&nbsp;Window mechanism is used in</span>",
+      "id": 2634,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>TCP</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>OSPF</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>IP&nbsp;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>UDP</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>Internet telephony usually uses</span>",
+      "id": 2635,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>HTTP</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>UDP</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>TCP</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>IPvoice</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>What services does an IP network offer for applications?&nbsp;</span>",
+      "id": 2636,
+      "comments": [
+        {
+          "author": "~anon@37.47.*.*",
+          "comment": "Co tu będzie?",
+          "date": "14-02-2018 08:03:25"
+        },
+        {
+          "author": "~Simi@95.49.*.*",
+          "comment": "Ja bym zaznaczył tutaj też TCP, pierwsza odpowiedź to UDP.",
+          "date": "04-02-2020 00:48:53"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span>an unreliable \"best-effort\" service</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>a communication service with guaranteed minimal throughput</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>a reliable TCP service</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>a communication service with guaranteed upper bounds on delay</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>In the physical layer we are talking about (…)</span>",
+      "id": 2637,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>frames&nbsp;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>bits</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>segments&nbsp;</span><br><br>",
+          "correct": false
+        },
+        {
+          "answer": "packets",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "PGP używa kluczy:",
+      "id": 2642,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "kluczy Geanta",
+          "correct": false
+        },
+        {
+          "answer": "żadna z pozostałych odpowiedzi nie jest poprawna",
+          "correct": true
+        },
+        {
+          "answer": "symetrycznych",
+          "correct": false
+        },
+        {
+          "answer": "jednokrotnych",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co opisuje uzycie gniazd przez serwer w niezawodnej, połączeniowej komunikacji z klientem?",
+      "id": 2643,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "gniazdo serwera rozpoczyna połączenie",
+          "correct": false
+        },
+        {
+          "answer": "serwer oczekuje połączeń od klientów",
+          "correct": true
+        },
+        {
+          "answer": "gniazdo klienta musi istnieć przed gniazdem serwera",
+          "correct": false
+        },
+        {
+          "answer": "port jednoznacznie determinuje gniazdo serwera",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Uwierzytelnianie ma na celu:",
+      "id": 2644,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "potwierdzenie wiarygodności uzytkownika",
+          "correct": false
+        },
+        {
+          "answer": "sprawdzenie integralności przesyłanego komunikatu",
+          "correct": false
+        },
+        {
+          "answer": "sprawdzenie uprawnień użytkownika",
+          "correct": false
+        },
+        {
+          "answer": "sprawdzenie tożsamości użytkownika",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

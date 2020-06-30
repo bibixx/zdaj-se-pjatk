@@ -1,0 +1,120 @@
+{
+  "title": "Legal foundations of business (PPB)",
+  "id": "ppb_ang",
+  "data": [
+    {
+      "question": "<span id=\"docs-internal-guid-8ca4b00f-4cd4-3829-b960-3409447a70e3\">According to the Civil Code, a statement by the other party willing to conclude an agreement that defines the essential provisions of this contract is</span><p></p>\n<p>&nbsp;\n          </p>",
+      "id": 3082,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<p id=\"docs-internal-guid-cc7a22f2-4cdc-f585-aa13-524f498d3ef2\" dir=\"ltr\"><span>invitation to prognosis</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "<p id=\"docs-internal-guid-3ba8f0cf-4cdd-170d-e5da-92110544eb03\" dir=\"ltr\"><span>invitation to negotiate</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "<span id=\"docs-internal-guid-06afe752-4cdd-302f-d668-81a4bdaba049\">offer</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p dir=\"ltr\"><span>According to the Civil Code, the contract for impossible provision</span></p>",
+      "id": 3083,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<p dir=\"ltr\"><span>Is important but does not produce legal effects until the service becomes possible</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "<p dir=\"ltr\"><span>Is not valid</span></p>",
+          "correct": true
+        },
+        {
+          "answer": "<p dir=\"ltr\"><span>Is valid, but the provision for the impossible provision is considered non-reserved</span></p>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p dir=\"ltr\"><span>Word markings, which refers directly or indirectly to the name of a place, town, region, or country that identifies a product as originating from this site is</span></p>",
+      "id": 3084,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<p dir=\"ltr\"><span>Trademark</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "<p dir=\"ltr\"><span>Geographical indication</span></p>",
+          "correct": true
+        },
+        {
+          "answer": "<p dir=\"ltr\"><span>Topography of integrated circuit systems</span></p>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<ol id=\"docs-internal-guid-6c216dd6-4cdf-666e-8431-34adc88d9ba2\">\n<li dir=\"ltr\">\n<p dir=\"ltr\"><span>According to the Civil Code, the installment sale is made in the scope of the company’s activity of selling a moving item to an individual for a price paid in specified installments, if the contract is to be issued to buyer according to the contract.</span></p>\n</li>\n</ol>",
+      "id": 3085,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<p id=\"docs-internal-guid-218584b2-4cdf-747b-4e07-95e5d010ebd7\" dir=\"ltr\"><span>after full payment</span></p>",
+          "correct": true
+        },
+        {
+          "answer": "<p id=\"docs-internal-guid-93775569-4cdf-a00f-a01c-d518e1a9cda5\" dir=\"ltr\"><span>after paying half of the price</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "<p id=\"docs-internal-guid-5f61968a-4cdf-8f44-9c44-fa917391ad3b\" dir=\"ltr\"><span>before full payment</span></p>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p dir=\"ltr\"><span>Kajetan B. does not want to buy a horse, but he wants to own one, he will pay for the blacksmith, fodder, veterinarians and other things necessary for the animal. What agreement do we have to use in this situation?</span></p>",
+      "id": 3086,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<p id=\"docs-internal-guid-57935077-4ce0-5f8b-4ed6-318ad04c7e2c\" dir=\"ltr\"><span>lease</span></p>",
+          "correct": true
+        },
+        {
+          "answer": "<p id=\"docs-internal-guid-fe934787-4ce0-6bb5-857a-c978d8ef689b\" dir=\"ltr\"><span>sale</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "<p id=\"docs-internal-guid-75897332-4ce0-778e-a676-e5f4749048ad\" dir=\"ltr\"><span>rent</span></p>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span id=\"docs-internal-guid-c7e107b5-4cd3-177e-fba8-4eb2c17fc59e\">Antonina has just graduated from a reputable university. She has a great idea for a business. She has sufficient knowledge and would like to expand her business. Unfortunately, her idea requires a big startup capital. Antonina managed to persuade her uncle to declare that he could provide the capital but because of his work he did not want to get involved in the company’s current business. For the above situation match the appropriate organisational and legal form</span>",
+      "id": 3081,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span id=\"docs-internal-guid-6fe6b1f1-4cd3-47f7-c4fa-dc153fbad44d\">Ltd company</span><span><br class=\"kix-line-break\"></span>",
+          "correct": true
+        },
+        {
+          "answer": "<span id=\"docs-internal-guid-dc13e31a-4cd3-3840-d313-4728d6efd1f4\">limited partnership </span><span><br class=\"kix-line-break\"></span>",
+          "correct": false
+        },
+        {
+          "answer": "partnership company<p></p>\n<p>&nbsp;</p>",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

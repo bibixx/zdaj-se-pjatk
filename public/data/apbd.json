@@ -1,0 +1,273 @@
+{
+  "title": "Aplikacje Baz Danych (APBD)",
+  "id": "apbd",
+  "data": [
+    {
+      "question": "CLR:",
+      "id": 2981,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Potrafi uruchomić kod napisany w MSIL",
+          "correct": false
+        },
+        {
+          "answer": "Potrafi uruchomić kod napisany w IL",
+          "correct": false
+        },
+        {
+          "answer": "Jest częścią platformy .NET",
+          "correct": true
+        },
+        {
+          "answer": "Potrafi uruchomić kod napisany w języku maszynowym",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "W poniższym fragmencie kodu:<p></p>\n<p>&nbsp;</p>\n<p>public void DatabaseOperation() {</p>\n<p>var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings[\"Default\"])//reszta kodu&nbsp;</p>\n<p>var sqlCommand = new sqlCommand(\"SELECT * FROM EMP\");</p>\n<p>sqlConnection.open();</p>\n<p>&nbsp;</p>\n<p>//...operacje bazodanowe</p>\n<p>&nbsp;</p>\n<p>sqlCommand.Dispose();</p>\n<p>sqlConnection.Dispose();</p>\n<p>}\n          </p>",
+      "id": 2982,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Można by zastosować klauzulę \"try-catch-finally\" w celu bezpiecznego zwolnienia zasobów związanych z połączeniem z bazą danych",
+          "correct": true
+        },
+        {
+          "answer": "<p>ConfigurationManager pobiera ConnectionString z relacyjnej bazy danych</p>",
+          "correct": false
+        },
+        {
+          "answer": "Można by zastosować klauzulę \"using\" w celu bezpiecznego zwolnienia zasobów związanych z z połączeniem z bazą danych",
+          "correct": true
+        },
+        {
+          "answer": "Zaprezentowany jest bezpieczny sposób zwalniania zasobów związanych z połączeniem do bazy danych",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Różnica impedancji",
+      "id": 2984,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "To obciążenie systemowe związane z wykonywaniem kodu SQL i próba pominięcia go lub zastąpienia w operacjach bazodanowych",
+          "correct": false
+        },
+        {
+          "answer": "To dysonans między \"światem obiektowym\" a \"światem relacyjnym\"",
+          "correct": true
+        },
+        {
+          "answer": "To obciążenie systemowe powstające, gdy wykonany zostaje kod SQL zaszyty w kodzie napisanym w języku obiektowym",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "TRADYCYJNE technologie webowe/klienckie to:",
+      "id": 2985,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Visual Basic",
+          "correct": true
+        },
+        {
+          "answer": "C#",
+          "correct": true
+        },
+        {
+          "answer": "Java",
+          "correct": true
+        },
+        {
+          "answer": "HTML5, JavaScript",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "LINQ",
+      "id": 2986,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "pozwala pominąć język SQL w operacjach bazodanowych",
+          "correct": true
+        },
+        {
+          "answer": "dzięki uniknięciu SQL pozwala na szybsze wykonywanie operacji bazodanowych w aplikacji",
+          "correct": false
+        },
+        {
+          "answer": "jego składnia w niczym nie przypomina SQL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z poniższych zdań na temat LINQ jest prawdziwe?",
+      "id": 2987,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Jest to część framework'u .NET. Technologia ta umożliwia realizowanie zapytań na kolekcjach obiektów. Składnia LINQ przypomina nieco SQL.&nbsp; LINQ może działać na dowolnej kolekcji, która implementuje interfejs IEnumerable.",
+          "correct": false
+        },
+        {
+          "answer": "Jest to część framework'u .NET. Technologia ta umożliwia bezpośrednią komunikację z relacyjną bazą danych z pominięciem języka SQL. Zapytanie jest wysyłane do bazy danych w zupełnie innej postaci (protokół 2PC).",
+          "correct": false
+        },
+        {
+          "answer": "Jest to część framework'u .NET. Technologia ta umożliwia realizowanie zapytań na obiektach. Składnia LINQ przypomina nieco SQL. Technologia ta służy wyłącznie do działania na plikach XML.",
+          "correct": false
+        },
+        {
+          "answer": "Jest to część framework'u .NET. Technologia ta umożliwia realizowanie znacznie bardziej wydajnych zapytań SQL na bazie danych. Wzrost wydajności wynosi ok. 10-20%.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zaznacz zalety EF",
+      "id": 2988,
+      "comments": [
+        {
+          "author": "~Petenshi@5.184.*.*",
+          "comment": "Napewno 3 i 4 odp. Poprawna, nie jestem pewny co do 2, ale też raczej dobra.",
+          "date": "03-07-2018 14:35:06"
+        },
+        {
+          "author": "~anon@91.226.*.*",
+          "comment": "wszystkie poprawne",
+          "date": "28-06-2020 14:41:34"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "EF pozwala nam na częściowe poradzenie sobie z problemem opisywanym poprzez termin \"rożnica impedancji\"",
+          "correct": false
+        },
+        {
+          "answer": "EF pozwala nam zapisywać historię zmian w strukturze bazy danych za pomocąmechanizmu migracji (podejście CodeFirst)",
+          "correct": false
+        },
+        {
+          "answer": "Wykorzystanie EF pozwala nam na uniezależnienie się od konkretnej bazy danych (np. Oracle, MS SQL Server). Dzieki temu możemy znacznie łatwiej zmienić bazę danych , jeśli zajdzie taka potrzeba.",
+          "correct": false
+        },
+        {
+          "answer": "Przyspieszenie procesu wytwarzania oprogramowania. Możemy skupić się wyłącznie na pisaniu kodu aplikacji (nie martwiąc się o kod SQL).",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W których językach możemy stworzyć podstawowy kod Code Behind w aplikacji ASP.NET?",
+      "id": 2989,
+      "comments": [
+        {
+          "author": "~PDmochowski@89.77.*.*",
+          "comment": "ASP.NET wspiera języki C#, J# oraz Visual Basic",
+          "date": "01-09-2018 20:39:33"
+        },
+        {
+          "author": "~sidletsky@162.158.*.*",
+          "comment": "What about F#? It is a .NET language ",
+          "date": "25-06-2019 20:14:34"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Visual Basic",
+          "correct": false
+        },
+        {
+          "answer": "JavaScript",
+          "correct": false
+        },
+        {
+          "answer": "C#",
+          "correct": false
+        },
+        {
+          "answer": "HTML",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Kiedy warto korzystać z podejścia Database First w EF?",
+      "id": 2990,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zmiany w strukturze bazy danych wykonywane są z poziomu języka SQL (np. poprzez Sql Managment Studio) przez administratora bazy danych",
+          "correct": false
+        },
+        {
+          "answer": "Nie mamy potrzeby modyfikacji struktury bazy danych (np. tabel, indeksów) z poziomu języka C#",
+          "correct": false
+        },
+        {
+          "answer": "Chcemy korzystać głównie ze skomplikowanych procedur składowych",
+          "correct": false
+        },
+        {
+          "answer": "Chcemy wersjonować zmiany w strukturze bazy danych. innymi słowy chcemy mieć pełną historię zmiany jakie zachodziły w naszej bazie danych (np. dodanie tabeli, kolumny w tabeli itp.). Taka historia pozwoli nam szybko wycofać zmiany, które np. okazały się problematyczne i spowodowały błąd.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "ASP.NET MVC oparty jest na wzorcu projektowym MVC. Wzorzec ten składa się z trzech części . Litera \"M\" oznacza model. Które z poniższych twierdzeń poprawnie opisują model?",
+      "id": 2991,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Klasy modelowe mogą być opisane przez dodatkowe metadane, któe służą określeniu np. reguł walidacyjnych związanych z danym modelem. Np. dane pole jest wymagane lub jego długość nie może przekroczyć 30 znaków.",
+          "correct": false
+        },
+        {
+          "answer": "Model w aplikacji ASP.NET MVC reprezentują zazwyczaj proste klasy C# mapujące tabele z relacyjnej bazy danych. Klasy te często noszą miano \"POCO\" (Plain Old C# Objects).",
+          "correct": false
+        },
+        {
+          "answer": "Klasy modelowe odpowiadają za obsługe żądania HTTP. Zaleznie od rodzaju żądania pobierają, aktualizują, usuwają lub wyświetlają dane.",
+          "correct": false
+        },
+        {
+          "answer": "Klasy modelowe odpowiadają za odpowiednie przekierowanie żądania użytkownika do danego kontrolera i metody.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "ASP.NET MVC oparty jest na wzorcu projektowym MVC. Wzorzec ten składa się z trzech części. \"V\" oznacza widok. Które z poniższych twierdzeń poprawnie opisują widok?",
+      "id": 2992,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Widok jest odpowiedzialny za prezentację rezultatu żądania HTTP GET. nie powinien jednak zmieniać formatu&nbsp; wyświetlanych danych. Format danych (np. format daty) powinien byc określony wyłąćznie w kontrolerze.",
+          "correct": false
+        },
+        {
+          "answer": "Widok odpowiada za obsługę żądania HTTP danego użytkownika (np. GET lub POST).",
+          "correct": false
+        },
+        {
+          "answer": "Widok odpowiada za bezpośrednią komunikację z bazą danych i zapisywanie w niej wszelkich zmian zachodzących w modelu.",
+          "correct": false
+        },
+        {
+          "answer": "Widok może odpowiadać za odpowiednie formatowanie wyniku żądania HTTP GET i jego wyświetlenie. Inny przykład to wyświetlenie daty w różny sposób w zależności od ustawień języka przeglądarki. Pozwala to na internacjonalizowanie naszej aplikalcji.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

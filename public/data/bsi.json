@@ -1,0 +1,3658 @@
+{
+  "title": "Bezpieczeństwo Systemów Informatycznych (BSI)",
+  "id": "bsi",
+  "data": [
+    {
+      "question": "Aby zaszyfrować przesyłkę przy pomocy PGP/GPG, używamy:",
+      "id": 192,
+      "comments": [
+        {
+          "author": "~qwe@89.76.*.*",
+          "comment": "pomocne było w poprzedniej wersji testów ukrywanie odpowiedzi...",
+          "date": "16-02-2012 17:57:22"
+        },
+        {
+          "author": "~qwe@89.76.*.*",
+          "comment": "oczywiście ukrywanie kolumny z poprawnymi odpowiedziami :)",
+          "date": "16-02-2012 17:58:37"
+        },
+        {
+          "author": "mykhi",
+          "comment": "huh?",
+          "date": "17-02-2012 05:18:39"
+        },
+        {
+          "author": "~qwe@89.76.*.*",
+          "comment": "w poprzedniej wersji testów na stronie ze wszystkimi testami po kliknięciu na treść pytania można było ukryć kolumnę z odpowiedziami tzn. tam gdzie pokazują się plusiki \\\"+\\\", a po kliknięciu na czerwone pole z napisem \\\"Opcja\\\" ukrywane zostawały wszystkie \\\"plusiki\\\"",
+          "date": "17-02-2012 09:20:27"
+        },
+        {
+          "author": "~kelu@89.74.*.*",
+          "comment": "napisałem prościutki skrypt do greasemonkey/tampermonkey z guziczkiem do ukrywania/pojawiania pytań. Nic wybitnego, ale może się komuś przyda :P\nhttp://pastebin.com/f0kMdAFe",
+          "date": "06-02-2015 21:41:45"
+        },
+        {
+          "author": "~kelu@89.74.*.*",
+          "comment": "<a href=\"http://pastebin.com/f0kMdAFe\">link</a>",
+          "date": "06-02-2015 21:45:57"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "klucza prywatnego nadawcy",
+          "correct": false
+        },
+        {
+          "answer": "klucza publicznego nadawcy",
+          "correct": false
+        },
+        {
+          "answer": "klucza publicznego odbiorcy",
+          "correct": true
+        },
+        {
+          "answer": "klucza prywatnego odbiorcy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Atak polegajacy na wysyłaniu fałszywych wiadomości mający najczęsciej na celu wyłudzenie danych osobowych i/lub pieniędzy, to:",
+      "id": 193,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Sniffing",
+          "correct": false
+        },
+        {
+          "answer": "Spoofing",
+          "correct": false
+        },
+        {
+          "answer": "Phishing",
+          "correct": true
+        },
+        {
+          "answer": "Flooding",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Atak rozproszony (gdzie jest wielu atakujących) to np.:",
+      "id": 194,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "DoS",
+          "correct": false
+        },
+        {
+          "answer": "Phishing",
+          "correct": false
+        },
+        {
+          "answer": "Smurf Atack",
+          "correct": false
+        },
+        {
+          "answer": "DDoS",
+          "correct": true
+        },
+        {
+          "answer": "Spoofing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Atak typu Ping of Death polega na:",
+      "id": 195,
+      "comments": [
+        {
+          "author": "~anon@83.6.*.*",
+          "comment": "coś w tych generatorach 2.0 więcej błędów jest, ale chociaż pytań więcej ;P\ndla formalności - tutaj tylko b - może ktoś poprawi :P",
+          "date": "03-02-2012 09:57:42"
+        },
+        {
+          "author": "mykhi",
+          "comment": "@~anon@83.6.*.*\npytania i odpowiedzi są dokładnie te same co w tamtych generatoarch. natomiast faktycznie w komentarzach wyświetlały się inne prawidłowe odpowiedzi. fixed.",
+          "date": "03-02-2012 12:11:27"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "wysyłaniu wielu małych pakietów",
+          "correct": false
+        },
+        {
+          "answer": "wysłanie pakietu o wielkości przekraczającej 65536b",
+          "correct": true
+        },
+        {
+          "answer": "spreparowaniu nagłówku tak, że adres nadawcy = adresowi odbiorcy",
+          "correct": false
+        },
+        {
+          "answer": "wysłaniu pakietu TCP z flagą SYN",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co jest głównym celem uwierzytelniania?",
+      "id": 196,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Potwierdzenie tożsamości",
+          "correct": true
+        },
+        {
+          "answer": "Podanie loginu i hasła",
+          "correct": false
+        },
+        {
+          "answer": "Dostęp do zasobów",
+          "correct": false
+        },
+        {
+          "answer": "Logowanie do komputera",
+          "correct": false
+        },
+        {
+          "answer": "Przekazanie danych osobowych",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co oznacza skrót CRL?",
+      "id": 197,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Certificate Removal List",
+          "correct": false
+        },
+        {
+          "answer": "Certificate Release Log",
+          "correct": false
+        },
+        {
+          "answer": "Certificate Revocation List",
+          "correct": true
+        },
+        {
+          "answer": "Certificate Redundancy List",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co oznacza skrót DNS?",
+      "id": 198,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Domain Name System",
+          "correct": true
+        },
+        {
+          "answer": "Dobre Nazwy Sieciowe",
+          "correct": false
+        },
+        {
+          "answer": "Domain Naming Solution",
+          "correct": false
+        },
+        {
+          "answer": "Does Not Suck",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co oznacza skrót ICMP?",
+      "id": 199,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "I Can Make Pie",
+          "correct": false
+        },
+        {
+          "answer": "Internet Control Message Protocol",
+          "correct": true
+        },
+        {
+          "answer": "Information Control Measuring Protocol",
+          "correct": false
+        },
+        {
+          "answer": "Internet Configuration Message Protocol",
+          "correct": false
+        },
+        {
+          "answer": "Information Control Message Protocol",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czas łamania hasła dostępu do zasobu udostepnionego w WIN98",
+      "id": 200,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "W przybliżeniu liniowo zależny od długości hasła",
+          "correct": true
+        },
+        {
+          "answer": "Staly",
+          "correct": false
+        },
+        {
+          "answer": "Wykladniczo zalezny od dlugosci hasla",
+          "correct": false
+        },
+        {
+          "answer": "Wykladniczo zalezny od trudnosci hasla",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Deszyfracje sesji POP3 lub FTP można uzyskać stosując program:",
+      "id": 201,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "IRIS",
+          "correct": true
+        },
+        {
+          "answer": "USERINFO",
+          "correct": false
+        },
+        {
+          "answer": "TRACERT",
+          "correct": false
+        },
+        {
+          "answer": "SRVINFO",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Do podpisania przesyłki wysłaniej przy pomocy PGP/GPG, używamy:",
+      "id": 202,
+      "comments": [
+        {
+          "author": "~sylwia@89.76.*.*",
+          "comment": "a nie klucza publicznego nadawcy?",
+          "date": "08-02-2013 23:31:54"
+        },
+        {
+          "author": "~anon@89.76.*.*",
+          "comment": "jednak nie",
+          "date": "09-02-2013 01:19:37"
+        },
+        {
+          "author": "~pawlacz21x37@2a02:a310:c122:f680:19e1:423f:d67c:5a9b",
+          "comment": "czyli jak bedzie poprawnie?",
+          "date": "09-02-2020 19:27:09"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "klucza prywatnego nadawcy",
+          "correct": true
+        },
+        {
+          "answer": "klucza prywatnego odbiorcy",
+          "correct": false
+        },
+        {
+          "answer": "klucza publicznego odbiorcy",
+          "correct": false
+        },
+        {
+          "answer": "klucza publicznego nadawcy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Do scentralizowanego zarzadzania adresami IP w sieci TCP/IP jest wykorzystany",
+      "id": 203,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "WINS",
+          "correct": false
+        },
+        {
+          "answer": "IIS",
+          "correct": false
+        },
+        {
+          "answer": "DNS",
+          "correct": false
+        },
+        {
+          "answer": "DHCP",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Do zarzadzania Urzedem Certyfikacyjnym (CA) wykorzystuje sie:",
+      "id": 204,
+      "comments": [
+        {
+          "author": "~Sylwia@89.76.*.*",
+          "comment": "Poprawna odpowiedz: Konsole MMC z zainstalowana przystawka CERTIFICATES",
+          "date": "08-02-2013 23:16:51"
+        },
+        {
+          "author": "~anon@87.206.*.*",
+          "comment": "Poprawna odpowiedź: MMC z zainstalowana przystawka CERTIFICATES ",
+          "date": "15-02-2013 03:13:57"
+        },
+        {
+          "author": "~GoodGuy@89.67.*.*",
+          "comment": "Urzędem Certyfikacyjnym zarządza się w \"Standardowej konsoli CERTIFICATION AUTHORITY\".\nAktualna odpowiedź jest poprawna.",
+          "date": "31-01-2014 15:36:14"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Standardowa konsola CERTIFICATION AUTHORITY",
+          "correct": true
+        },
+        {
+          "answer": "Konsole MMC z zainstalowana przystawka CERTIFICATES",
+          "correct": false
+        },
+        {
+          "answer": "Standartowa konsola COMPUTER MANAGMENT",
+          "correct": false
+        },
+        {
+          "answer": "Konsole MMC z zainstalowana przystawka PUBLIC KEY INFRASTRUCTURE MENAGMENT",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Enumeracja sieci w systemie Windows 2000 (za pomoca NET VIEW) wykorzystuje:",
+      "id": 205,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Protokol SNMP",
+          "correct": false
+        },
+        {
+          "answer": "Uslugi nazw NetBIOS",
+          "correct": true
+        },
+        {
+          "answer": "Skanowanie portow",
+          "correct": false
+        },
+        {
+          "answer": "Konto administracyjne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Filtrowanie z badaniem stanow (statefull) w zaporach sieciowych polega na:",
+      "id": 206,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "przepuszczaniu lub odrzucaniu calych pakietow jedynie w oparciu o zawrtosc pojedynczego (rozpatrywanego) pakietu",
+          "correct": false
+        },
+        {
+          "answer": "przepuszczaniu lub odrzucaniu calych pakietow w oparciu o analize pakietow i stan wewnetrzny filtra (firewall'a) - nie zwiazany z obserwowanym ruchem",
+          "correct": false
+        },
+        {
+          "answer": "przepuszczaniu lub odrzucaniu calych pakietow nie tylko w oparciu o zawartosc pojedynczego (rozpatrywanego) pakietu, lecz w oparciu o analize calego obserwowanego ruchu",
+          "correct": true
+        },
+        {
+          "answer": "przepuszczaniu lub odrzucaniu jedynie wybranych elementow analizowanych pakietow",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Gdy otwarty port UDP:",
+      "id": 207,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "brak odpowiedzi ze strony hosta",
+          "correct": true
+        },
+        {
+          "answer": "host odpowiada ICMP Destination Unreachable",
+          "correct": false
+        },
+        {
+          "answer": "host odpowiada ICMP Echo Response",
+          "correct": false
+        },
+        {
+          "answer": "host odpowiada UDP Handshake",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Główna funkcja Firewall-a jest:",
+      "id": 208,
+      "comments": [
+        {
+          "author": "~radek@89.78.*.*",
+          "comment": "Dlaczego \"Kontrola przepływu ruchu sieciowego\" nie jest zaznaczona jako prawidłowa ?",
+          "date": "05-02-2015 19:45:39"
+        },
+        {
+          "author": "~kelu@89.74.*.*",
+          "comment": "przypuszczam, że chodzi o fakt, że pytanie jest o \"główną\" funkcję",
+          "date": "06-02-2015 23:09:22"
+        },
+        {
+          "author": "~anon@83.6.*.*",
+          "comment": "z wykładów Z.Suski:\n\n1. Co to jest firewall?\n\nZapora sieciowa jest umieszczana między siecią wewnętrzną organizacji i siecią zewnętrzną. Dostarcza ona prostego mechanizmu kontroli ilości i rodzaju ruchu sieciowego między obydwoma sieciami. Podstawowym jej zadaniem jest ograniczenie przepływu danych między tymi sieciami.",
+          "date": "13-02-2017 11:14:08"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Ochrona sieci przed nieodpowiedzialnymi użytkownikami",
+          "correct": false
+        },
+        {
+          "answer": "Kontrola przepływu ruchu sieciowego",
+          "correct": false
+        },
+        {
+          "answer": "Ochrona przed zagrożeniami z sieci",
+          "correct": true
+        },
+        {
+          "answer": "Odzyskiwanie danych",
+          "correct": false
+        },
+        {
+          "answer": "Firewall-e sa zbędne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Hasło podawane przez użytkownika programu PGP/GPG podczas generowania kluczy jest:",
+      "id": 209,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "kluczem publicznym tego użytkownika",
+          "correct": false
+        },
+        {
+          "answer": "kluczem wykorzystywanym w funkcji mieszającej (hash function)",
+          "correct": false
+        },
+        {
+          "answer": "wykorzystywane przez program do zabezpieczenia dostępu do kluczy kryptograficznych tego użytkownika",
+          "correct": true
+        },
+        {
+          "answer": "kluczem prywatnym tego użytkownika",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Instalowanie podrzędnego Urzędu Certyfikacyjnego w korporacji:",
+      "id": 210,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "nie wymaga uzyskania żadnego certyfikatu",
+          "correct": false
+        },
+        {
+          "answer": "wymaga uzyskania stosowanego certyfikatu od urzędu nadrzędnego tej korporacji",
+          "correct": true
+        },
+        {
+          "answer": "wymaga wygenerowania stosownego certyfikatu przez instalowany urząd",
+          "correct": false
+        },
+        {
+          "answer": "wymaga uzyskania stosowanego certyfikatu od uznawanego powszechnie Urzędu Certyfikacyjnego (np. VERISIGN)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jak można utrudnic przeprowadzenie ataku slownikowego?",
+      "id": 211,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Stosujac wszedzie to samo haslo zgodnie z zasada Single Sign-On (SSO)",
+          "correct": false
+        },
+        {
+          "answer": "Zapisujac hasla na kartkach",
+          "correct": false
+        },
+        {
+          "answer": "Przekazujac hasla innym osobom",
+          "correct": false
+        },
+        {
+          "answer": "Stosujac dlugie hasla o wysokiej zlożonosci",
+          "correct": true
+        },
+        {
+          "answer": "Nigdy nie zmieniajac hasel",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jak nazywa sie ostatnia czesc identyfikatora zabezpieczen? (SID)?",
+      "id": 212,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "PID",
+          "correct": false
+        },
+        {
+          "answer": "SSID",
+          "correct": false
+        },
+        {
+          "answer": "RID",
+          "correct": true
+        },
+        {
+          "answer": "GUID",
+          "correct": false
+        },
+        {
+          "answer": "MSFU",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jaka czesc IPSec zapewnia autentycznosc, integralnosc i poufnosc przesyłanych danych?",
+      "id": 213,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ISAKMP",
+          "correct": false
+        },
+        {
+          "answer": "GRE",
+          "correct": false
+        },
+        {
+          "answer": "AS",
+          "correct": false
+        },
+        {
+          "answer": "ESP",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Jaka jest funkcja znaku \"$\" w nazwach udzialów sieciowych?",
+      "id": 214,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Kosmetyczna",
+          "correct": false
+        },
+        {
+          "answer": "żadna",
+          "correct": false
+        },
+        {
+          "answer": "Ukrywa udzial",
+          "correct": true
+        },
+        {
+          "answer": "Sprawia, że dany udzial jest widoczny dla wszystkich komputerów w sieci",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jaki mechanizm wykorzystuje narzędzie tracert?",
+      "id": 215,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "UDP",
+          "correct": false
+        },
+        {
+          "answer": "TCP",
+          "correct": false
+        },
+        {
+          "answer": "TTL",
+          "correct": true
+        },
+        {
+          "answer": "ITIL",
+          "correct": false
+        },
+        {
+          "answer": "PGP",
+          "correct": false
+        },
+        {
+          "answer": "ESP",
+          "correct": false
+        },
+        {
+          "answer": "GRE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie polecenie nslookup wyswietla plik strefowy?",
+      "id": 216,
+      "comments": [
+        {
+          "author": "~tomarmo@85.222.*.*",
+          "comment": "jak na moje to ls -t. -a wyświetla aliasy CNAME, -t to transfer strefy",
+          "date": "03-02-2015 18:57:34"
+        },
+        {
+          "author": "~kogut@109.206.*.*",
+          "comment": "wiec jak ? ",
+          "date": "05-02-2019 19:58:11"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "server",
+          "correct": false
+        },
+        {
+          "answer": "SET TYPE=MX",
+          "correct": false
+        },
+        {
+          "answer": "ls -a",
+          "correct": true
+        },
+        {
+          "answer": "ls -t",
+          "correct": false
+        },
+        {
+          "answer": "SET DOMAIN",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie polecenie wyswietla wszystkie domeny i grupy robocze?",
+      "id": 217,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "NET VIEW",
+          "correct": false
+        },
+        {
+          "answer": "NET VIEW /DOMAIN",
+          "correct": true
+        },
+        {
+          "answer": "NET USE",
+          "correct": false
+        },
+        {
+          "answer": "NET DOMAIN",
+          "correct": false
+        },
+        {
+          "answer": "NET GROUP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie sa tryby działania IPSec (zaznacz dwa)?",
+      "id": 218,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Tunelowy (Site to site)",
+          "correct": true
+        },
+        {
+          "answer": "Tajny (Secret)",
+          "correct": false
+        },
+        {
+          "answer": "Uproszczony (Simple)",
+          "correct": false
+        },
+        {
+          "answer": "Szybki (Quick)",
+          "correct": false
+        },
+        {
+          "answer": "Dedykowany (Point to point)",
+          "correct": true
+        },
+        {
+          "answer": "Kerberos",
+          "correct": false
+        },
+        {
+          "answer": "L2TP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Komputer o adresie 192.168.1.1 pracuje jako serwer VPN (adres wirtualny 10.1.1.1). Aby obejrzeć niezabezpieczony ruch pomiędzy tym serwerem a jego klientem (192.168.1.2, adres wirualny 10.1.1.2) należy:",
+      "id": 219,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 197.168.1.1 and host 192.168.1.2” i na komputerze klienta wydać polecenie ping 10.1.1.1",
+          "correct": false
+        },
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 10.1.1.1 and host 10.1.1.2” i na komputerze klienta wydać polecenie ping 10.1.1.1",
+          "correct": false
+        },
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 197.168.1.1 and host 192.168.1.2” i na komputerze klienta wydać polecenie ping 197.168.1.2",
+          "correct": false
+        },
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 197.168.1.1 and host 192.168.1.2” i na komputerze klienta wydać polecenie ping 197.168.1.1",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Komputer o adresie 192.168.1.1 pracuje jako serwer VPN (adres wirtualny 10.1.1.1). Aby obejrzeć zabezpieczony ruch pomiędzy tym serwerem a jego klientem (192.168.1.2, adres wirualny 10.1.1.2) należy:",
+      "id": 220,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 197.168.1.1 and host 192.168.1.2” i nakomputerze klienta wydać polecenie ping 10.1.1.1",
+          "correct": true
+        },
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 10.1.1.1 and host 10.1.1.2” i nakomputerze klienta wydać polecenie ping 10.1.1.1",
+          "correct": false
+        },
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 197.168.1.1 and host 192.168.1.2” i nakomputerze klienta wydać polecenie ping 197.168.1.2",
+          "correct": false
+        },
+        {
+          "answer": "w programie ETHEREAL ustawić filtr „host 197.168.1.1 and host 192.168.1.2” i nakomputerze klienta wydać polecenie ping 197.168.1.1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Komputer o adresie 192.168.1.1 pracuje jako serwer VPN (adres wirtualny 10.1.1.1).Na komputerze klienta o adresie 192.168.1.2(adres wirtualny 10.1.1.2), wydano poleceniePING 192.168.1.1. Analizując przy pomocy snifera ruch sieciowy, wykryto:",
+      "id": 221,
+      "comments": [
+        {
+          "author": "~marun@148.81.*.*",
+          "comment": "Pytanie analogiczne do 28. Poprawna odpowiedź to pakiety ICMP",
+          "date": "03-02-2012 09:08:14"
+        },
+        {
+          "author": "~s@83.6.*.*",
+          "comment": "exactly ;p",
+          "date": "03-02-2012 09:52:07"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawione",
+          "date": "03-02-2012 12:23:07"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "sekwencje niezabezpieczonych pakietów ICMP",
+          "correct": true
+        },
+        {
+          "answer": "sekwencje protokołów PPP i GRE",
+          "correct": false
+        },
+        {
+          "answer": "sekwencje pakietów protokołu ESP",
+          "correct": false
+        },
+        {
+          "answer": "sekwencje pakietów protokołu ISAKMP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Konfigurowanie serwera VPN realizuje się poprzez:",
+      "id": 222,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "okno Network and Dial-Up Connections",
+          "correct": false
+        },
+        {
+          "answer": "program Services",
+          "correct": false
+        },
+        {
+          "answer": "konsole Routing and Remote Acces",
+          "correct": true
+        },
+        {
+          "answer": "konsole VPN Management",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Która informacje można znalezc w bazie WhoIs?",
+      "id": 223,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Adres domowy prezesa firmy, do której należy domena",
+          "correct": false
+        },
+        {
+          "answer": "Dane kontaktowe do przedstawicieli handlowych",
+          "correct": false
+        },
+        {
+          "answer": "Dane adresowe siedziby firmy",
+          "correct": true
+        },
+        {
+          "answer": "NIP firmy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które protokoły zostały stworzone  do tunelowania?",
+      "id": 224,
+      "comments": [
+        {
+          "author": "~anon@82.139.*.*",
+          "comment": "SSH to chyba nie...",
+          "date": "29-06-2014 22:19:34"
+        },
+        {
+          "author": "~kelu@89.74.*.*",
+          "comment": "chyba jednak tak ;)",
+          "date": "06-02-2015 23:17:35"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "SSL",
+          "correct": true
+        },
+        {
+          "answer": "IPSec",
+          "correct": true
+        },
+        {
+          "answer": "ATM",
+          "correct": false
+        },
+        {
+          "answer": "PPTP",
+          "correct": true
+        },
+        {
+          "answer": "Frame Relay",
+          "correct": false
+        },
+        {
+          "answer": "PPP",
+          "correct": true
+        },
+        {
+          "answer": "HTTP",
+          "correct": false
+        },
+        {
+          "answer": "SMTP",
+          "correct": false
+        },
+        {
+          "answer": "SSH",
+          "correct": true
+        },
+        {
+          "answer": "POP",
+          "correct": false
+        },
+        {
+          "answer": "Telnet",
+          "correct": false
+        },
+        {
+          "answer": "FTP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z poniższych metod skanowania wykorzystuja protokół TCP (wybierz 3)?",
+      "id": 225,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Połaczeniowa",
+          "correct": true
+        },
+        {
+          "answer": "Agresywna",
+          "correct": false
+        },
+        {
+          "answer": "UDP",
+          "correct": false
+        },
+        {
+          "answer": "Półotwarta",
+          "correct": true
+        },
+        {
+          "answer": "SYN Flood",
+          "correct": false
+        },
+        {
+          "answer": "FIN Scan",
+          "correct": true
+        },
+        {
+          "answer": "Enumeracja",
+          "correct": false
+        },
+        {
+          "answer": "UDP Flood",
+          "correct": false
+        },
+        {
+          "answer": "NetScan",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z poniższych NIE jest sposobem uwierzytelniania?",
+      "id": 226,
+      "comments": [
+        {
+          "author": "~qwe@89.76.*.*",
+          "comment": "Kerberos jest sposobem uwierzytelniania wg mnie i wykładów z BSI rozdział VIII pkt.5...tyle że w takim wypadku nie za bardzo wiem co mogło by tu nie być takim sposobem...",
+          "date": "17-02-2012 09:29:08"
+        },
+        {
+          "author": "~~skatman@89.73.*.*",
+          "comment": "Sobieraj powiedział że i tak zda",
+          "date": "16-01-2013 18:41:35"
+        },
+        {
+          "author": "~sng@82.139.*.*",
+          "comment": "Kerberos to SYSTEM a nie sposób - odp jest OK. Ja się zastanawiam nad \"Klucze RSA\".",
+          "date": "05-02-2013 20:34:30"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Biometryka",
+          "correct": false
+        },
+        {
+          "answer": "SmartCard",
+          "correct": false
+        },
+        {
+          "answer": "Klucze RSA",
+          "correct": false
+        },
+        {
+          "answer": "Kerberos",
+          "correct": true
+        },
+        {
+          "answer": "Login i haslo",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z wymienionych niżej działań nie jest realizowane w ramach procedury zatwierdzania certfikatu?",
+      "id": 227,
+      "comments": [
+        {
+          "author": "~yahretzkee@178.36.*.*",
+          "comment": "sprawdzenie, czy certyfikat został podpisany przez urząd certyfikacyjny, którego nazwa znajduje się na liście zaufanych urzędów, którym ufa odbiorca certyfikatu",
+          "date": "08-02-2014 17:10:07"
+        },
+        {
+          "author": "~olejnik@87.206.*.*",
+          "comment": "po sprawdzeniu wykładu Pana ZS stwierdzam, że \"sprawdzenie, czy certyfikat został podpisany przez urząd certyfikacyjny, którego nazwa znajduje się na liście zaufanych urzędów, którym ufa odbiorca certyfikatu\" jest odpowiedzią poprawną. ",
+          "date": "07-06-2014 19:57:57"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zmieniam z ostatniej na drugą.",
+          "date": "08-06-2014 07:46:11"
+        },
+        {
+          "author": "~olejnik@87.206.*.*",
+          "comment": "Nie druga, a TRZECIA odpowiedź jest poprawna :) zgodnie z tym co napisaliśmy w komentarzach...",
+          "date": "08-06-2014 12:35:58"
+        },
+        {
+          "author": "mykhi",
+          "comment": "przecież wiem. sprawdzałem czy uważacie :D",
+          "date": "08-06-2014 16:18:45"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "sprawdzenie, czy podpis cyfrowy w certyfikacie jest poprawny",
+          "correct": false
+        },
+        {
+          "answer": "sprawdzenie, czy certyfikat został unieważniony",
+          "correct": false
+        },
+        {
+          "answer": "sprawdzenie, czy certyfikat został podpisany przez urząd certyfikacyjny, którego nazwa znajduje się na liście zaufanych urzędów, którym ufa odbiorca certyfikatu",
+          "correct": true
+        },
+        {
+          "answer": "sprawdzenie, czy certyfikat został wystawiony przez uznany punkt zaufania",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Który z algorytmów NIE służy do sprawdzenia czy dane nie zostały zmienione/zmodyfikowane?",
+      "id": 228,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "CRC",
+          "correct": false
+        },
+        {
+          "answer": "MD5",
+          "correct": false
+        },
+        {
+          "answer": "3DES",
+          "correct": true
+        },
+        {
+          "answer": "SHA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Który z poniższych algorytmów szyfrowania jest algorytmem symetrycznym?",
+      "id": 229,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "RSA",
+          "correct": false
+        },
+        {
+          "answer": "DSA",
+          "correct": false
+        },
+        {
+          "answer": "PKI",
+          "correct": false
+        },
+        {
+          "answer": "DES",
+          "correct": true
+        },
+        {
+          "answer": "MD5",
+          "correct": false
+        },
+        {
+          "answer": "CRC",
+          "correct": false
+        },
+        {
+          "answer": "Haval",
+          "correct": false
+        },
+        {
+          "answer": "ElGamal",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Który z poniższych NIE jest protokołem uwierzytelniania w PPTP?",
+      "id": 230,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "EAP",
+          "correct": false
+        },
+        {
+          "answer": "PAP",
+          "correct": false
+        },
+        {
+          "answer": "CHAP",
+          "correct": false
+        },
+        {
+          "answer": "MSCHAP",
+          "correct": false
+        },
+        {
+          "answer": "GRE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Ktory z programow nie moze byc wykozystany do skanowania portow",
+      "id": 231,
+      "comments": [
+        {
+          "author": "~m_r_k@83.6.*.*",
+          "comment": "http://www.softpedia.com/get/\nNetwork-Tools/Network-IP-Scanner/Net-Scan.shtml z tego linku wynika, że poprawną odpowiedzią jest netscan",
+          "date": "11-01-2014 18:57:05"
+        },
+        {
+          "author": "~anon@78.133.*.*",
+          "comment": "No na pewno nie tracert, bo Tracert to polecenie, które zwraca listę routerów na ścieżce do adresu Adres IP.",
+          "date": "31-01-2014 14:06:13"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Netscan",
+          "correct": false
+        },
+        {
+          "answer": "Superscan",
+          "correct": false
+        },
+        {
+          "answer": "Tracert",
+          "correct": true
+        },
+        {
+          "answer": "Fscan",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Którym kluczem odszyfrowuje sie poczta elektroniczna (wybierz dwa)?",
+      "id": 232,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Prywatnym",
+          "correct": true
+        },
+        {
+          "answer": "Publicznym",
+          "correct": false
+        },
+        {
+          "answer": "Nadawcy",
+          "correct": false
+        },
+        {
+          "answer": "Odbiorcy",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Którym kluczem podpisuje sie poczta elektroniczna (wybierz dwa)?",
+      "id": 233,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Prywatnym",
+          "correct": true
+        },
+        {
+          "answer": "Publicznym",
+          "correct": false
+        },
+        {
+          "answer": "Nadawcy",
+          "correct": true
+        },
+        {
+          "answer": "Odbiorcy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Którym kluczem szyfruje sie poczta elektroniczna (wybierz dwa)?",
+      "id": 234,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Prywatnym",
+          "correct": false
+        },
+        {
+          "answer": "Publicznym",
+          "correct": true
+        },
+        {
+          "answer": "Nadawcy",
+          "correct": false
+        },
+        {
+          "answer": "Odbiorcy",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Którym kluczem weryfikuje sie podpis w poczcie elektronicznej (wybierz dwa)?",
+      "id": 235,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Prywatnym",
+          "correct": false
+        },
+        {
+          "answer": "Publicznym",
+          "correct": true
+        },
+        {
+          "answer": "Nadawcy",
+          "correct": true
+        },
+        {
+          "answer": "Odbiorcy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Którym kluczem sa podpisywane wszystkie certyfikaty wydane prze Urzad Certyfikacji (wybierz dwa)?",
+      "id": 236,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Prywatnym",
+          "correct": true
+        },
+        {
+          "answer": "Publicznym",
+          "correct": false
+        },
+        {
+          "answer": "Urzedu Certyfikacji (CA)",
+          "correct": true
+        },
+        {
+          "answer": "Odbiorcy certyfikatu",
+          "correct": false
+        },
+        {
+          "answer": "Notariusza",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Liczba luk wykrywana w czasie ćwiczeń przez program Internet Security Scanner mieściła się w przedziale:",
+      "id": 237,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "poniżej 50",
+          "correct": true
+        },
+        {
+          "answer": "od 100 do 200",
+          "correct": false
+        },
+        {
+          "answer": "powyżej 200",
+          "correct": false
+        },
+        {
+          "answer": "od 50 do 100",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Listę sesji użytkowników podłączonych do naszego komputera można zobaczyć uruchamiając konsolę:",
+      "id": 238,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Computer Managment",
+          "correct": true
+        },
+        {
+          "answer": "Folder Options",
+          "correct": false
+        },
+        {
+          "answer": "Network COnnections",
+          "correct": false
+        },
+        {
+          "answer": "System",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Metoda detekcji anomalii to:",
+      "id": 239,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Metoda wykrywania i przeciwdziałania atakom polegajaca na wykrywaniu przepelnienia dziennika zdarzen",
+          "correct": false
+        },
+        {
+          "answer": "Metoda wykrywania wlaman polegajaca na wykrywaniu ruchu sieciowego odbiegajacego od tego, ktory zostal uznany za normalny",
+          "correct": true
+        },
+        {
+          "answer": "Metoda wykrywania wlaman polegajaca na identyfikowaniu wzorcow aktywnosci typowych dla znanych atakow",
+          "correct": false
+        },
+        {
+          "answer": "Metoda wykrywania i przeciwdzialania atakom DoS polegajaca na generowaniu duzej ilosci zdarzen rejestrowanych w dzienniku systemu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Nieskonczony okres waznosci hasla ISS traktuje jako",
+      "id": 240,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Sytuacje dozwolona",
+          "correct": false
+        },
+        {
+          "answer": "Blad niskiego poziomu ryzyka",
+          "correct": false
+        },
+        {
+          "answer": "Blad sredniego poziomu ryzyka",
+          "correct": true
+        },
+        {
+          "answer": "Blad wysokiego poziomu ryzyka",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pakiety FIN/XMAS/NULL wymuszają odpowiedz z flaga:",
+      "id": 241,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "RST",
+          "correct": true
+        },
+        {
+          "answer": "SYN",
+          "correct": false
+        },
+        {
+          "answer": "ACK",
+          "correct": false
+        },
+        {
+          "answer": "FIN",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pewnosc, że dane nie zostały zmienione w trakcie przesyłania, to inaczej:",
+      "id": 242,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Integralnosc",
+          "correct": true
+        },
+        {
+          "answer": "Bezpieczeństwo",
+          "correct": false
+        },
+        {
+          "answer": "Autentycznosc",
+          "correct": false
+        },
+        {
+          "answer": "Tunelowanie",
+          "correct": false
+        },
+        {
+          "answer": "Poufnosc",
+          "correct": false
+        },
+        {
+          "answer": "Paranoja",
+          "correct": false
+        },
+        {
+          "answer": "Certyfikat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pewnosć, że dane nie zostana odczytane przez osoby nieupowożnione, to inaczej:",
+      "id": 243,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Integralnosc",
+          "correct": false
+        },
+        {
+          "answer": "Bezpieczeństwo",
+          "correct": false
+        },
+        {
+          "answer": "Autentycznosc",
+          "correct": false
+        },
+        {
+          "answer": "Tunelowanie",
+          "correct": false
+        },
+        {
+          "answer": "Poufnosc",
+          "correct": true
+        },
+        {
+          "answer": "Paranoja",
+          "correct": false
+        },
+        {
+          "answer": "Certyfikat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Po skonfigurowaniu na dwóch komputerach protokółu IPSec w sposób umożliwiajacy bezpieczna komunikacji pomiedzy nimi, pierwsze uruchomienie programu ping, majace na celu sprawdzenie poprawnosci komunikacji powoduje:",
+      "id": 244,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wysyłanie pakietów ESP enkapsulujacych zaszyfrowane pakiety ICMP",
+          "correct": false
+        },
+        {
+          "answer": "Wysyłanie pakietów ISAKMP majace na celu negocjacje parametrów połaczenia",
+          "correct": true
+        },
+        {
+          "answer": "Wysyłanie niezaszyfrowanych pakietów ICMP",
+          "correct": false
+        },
+        {
+          "answer": "Wysyłanie pakietów ESP majace na celu negocjacje parametrów połaczenia",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Podczas ataku SYN FLOOD realizowanego przy pomocy programu SYN (bez opcji określającej adres źródłowy), do komputera atakowanego wysyłane są pakiety, w których:",
+      "id": 245,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "źródłowe adresy IP zawsze odpowiadają adresowi rozgłoszeniowemu",
+          "correct": false
+        },
+        {
+          "answer": "źródłowe adresy IP i źródłowe numery portów są losowane",
+          "correct": true
+        },
+        {
+          "answer": "źródłowe adresy IP wskazują na host atakujący a źródłowe numery portów są losowane",
+          "correct": false
+        },
+        {
+          "answer": "docelowe adresy IP są losowane",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Podczas ataku SYN FLOOD realizowanego przy pomocy programu SYN:",
+      "id": 246,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "poziom obciążenia interfejsu sieciowego odbiorcy jest zależny od warunków zewnętrznych",
+          "correct": false
+        },
+        {
+          "answer": "poziom obciążenia interfejsu sieciowego odbiorcy wyczerpuje jego przepustowość",
+          "correct": true
+        },
+        {
+          "answer": "poziom obciążenia interfejsu sieciowego odbiorcy jest na poziomie 50% przepustowości tego interfejsu",
+          "correct": false
+        },
+        {
+          "answer": "poziom obciążenia interfejsu sieciowego odbiorcy jest na poziomie 25-30% przepustowości tego interfejsu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Podszywanie sie pod inny komputer to:",
+      "id": 247,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Spoofing",
+          "correct": true
+        },
+        {
+          "answer": "Sniffing",
+          "correct": false
+        },
+        {
+          "answer": "Flooding",
+          "correct": false
+        },
+        {
+          "answer": "Overflowing",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Port o numerze 21 związany jest z:",
+      "id": 248,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "SSH",
+          "correct": false
+        },
+        {
+          "answer": "telnetem",
+          "correct": false
+        },
+        {
+          "answer": "NetBIOS",
+          "correct": false
+        },
+        {
+          "answer": "FTP",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Poswiadczenie tożsamosci nadawcy danych, to inaczej:",
+      "id": 249,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Integralnosc",
+          "correct": false
+        },
+        {
+          "answer": "Bezpieczeństwo",
+          "correct": false
+        },
+        {
+          "answer": "Autentycznosc",
+          "correct": true
+        },
+        {
+          "answer": "Tunelowanie",
+          "correct": false
+        },
+        {
+          "answer": "Poufnosc",
+          "correct": false
+        },
+        {
+          "answer": "Paranoja",
+          "correct": false
+        },
+        {
+          "answer": "Certyfikat",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Program NSLOOKUP umozliwia:",
+      "id": 250,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Pobieranie informacji z serwerow DNS",
+          "correct": true
+        },
+        {
+          "answer": "Pobieranie informacji z serwerow DHCP",
+          "correct": false
+        },
+        {
+          "answer": "Pobieranie informacji z serwerow WINS",
+          "correct": false
+        },
+        {
+          "answer": "Konfigurowanie usługi lookup na serwerze Windows 2000",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Program PING wysyła pakiet protokołu:",
+      "id": 251,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TCP",
+          "correct": false
+        },
+        {
+          "answer": "UDP",
+          "correct": false
+        },
+        {
+          "answer": "ICMP",
+          "correct": true
+        },
+        {
+          "answer": "ARP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Program TELNET wykorzystywany jest najczęściej wykorzystywany podczas enumeracji do:",
+      "id": 252,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "nawiązania zdalnej sesji z serwerem usługi TELNET",
+          "correct": false
+        },
+        {
+          "answer": "sprawdzenia funkcjonowania portu 23",
+          "correct": false
+        },
+        {
+          "answer": "sprawdzenia funkcjonowania portu 459",
+          "correct": false
+        },
+        {
+          "answer": "uzyskaniu informacji o rodzaju i wersji oprogramowania funkcjonującego jako serwerokreślonej usługi (www, SMTP, FTP, itp)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Program tracert umozliwia:",
+      "id": 253,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Badanie spojnosci pakietów ICMP",
+          "correct": false
+        },
+        {
+          "answer": "Badanie poprawnosci fragmentacji pakietów",
+          "correct": false
+        },
+        {
+          "answer": "Badanie spojnosci pakietów ARP",
+          "correct": false
+        },
+        {
+          "answer": "Sledzenie drogi pakietow w sieci",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Przechwytanie etykiet może być zrealizowane za pomoca programów:",
+      "id": 254,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Nbtstat",
+          "correct": false
+        },
+        {
+          "answer": "NetCat(nc) i telnet",
+          "correct": true
+        },
+        {
+          "answer": "Tylko NetCat",
+          "correct": false
+        },
+        {
+          "answer": "netView",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przechwytywanie etykiet to działanie polegające na:",
+      "id": 255,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "łączeniu się z okreśłoną usługą i pobieraniu informacji charakteryzującej daną usługę",
+          "correct": true
+        },
+        {
+          "answer": "przechwytywaniu paietów ICMP i dekodowaniu typu komunikatu",
+          "correct": false
+        },
+        {
+          "answer": "przechwytywaniu datagramów IP i dekodowaniu nagłówka IP",
+          "correct": false
+        },
+        {
+          "answer": "skanowaniu portów",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przy wysylaniu poczty elektronicznej do okreslonego adresata dla zapewniania bezpieczenstwa przeslanych danych za pomoca programu PGN nalezy:",
+      "id": 256,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zaszyfrowac wiadomosc kluczem publicznym adresata i podpisac wlasnym prywatnym",
+          "correct": true
+        },
+        {
+          "answer": "Zaszyfrowac wiadomosc kluczem publicznym adresata i podpisac kluczem publicznym adresata",
+          "correct": false
+        },
+        {
+          "answer": "Zaszyfrowac wiadomosc kluczem publicznym adresata i podpisac kluczem prywatnym adresata",
+          "correct": false
+        },
+        {
+          "answer": "Zaszyfrowac wiadomosc kluczem wlasnym prywatnym i podpisac wlasnym prywatnym",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Rozproszona baza danych dostarczajaca hierarchicznego systemu nazw dla identyfikacji hostów w Internecie to:",
+      "id": 257,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "DHCP",
+          "correct": false
+        },
+        {
+          "answer": "IIS",
+          "correct": false
+        },
+        {
+          "answer": "DNS",
+          "correct": true
+        },
+        {
+          "answer": "WINS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Rozstawianie pułapek internetowych metoda \"zoo\" polega na:",
+      "id": 258,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "tworzenia falszywych serwisow WWW",
+          "correct": false
+        },
+        {
+          "answer": "rozmieszczaniu komputerow pulapek pomiedzy serwerami produkcyjnymi",
+          "correct": false
+        },
+        {
+          "answer": "emulowaniu niewykorzystanych serwisow sieciowych na serwerach produkcyjnych",
+          "correct": false
+        },
+        {
+          "answer": "tworzeniu calych sieci wirtualnych",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Rozstawianie pulapek internetowych metoda pola minowego (minefield) polega na:",
+      "id": 259,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "rozmieszczaniu komputerow pulapek pomiedzy serwerami produkcyjnymi",
+          "correct": true
+        },
+        {
+          "answer": "tworzeniu falszywych serwisow WWW",
+          "correct": false
+        },
+        {
+          "answer": "tworzeniu calych sieci wirtualnych",
+          "correct": false
+        },
+        {
+          "answer": "emulowaniu niewykorzystanych serwisow sieciowych na serwerach produkcyjnych",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Rozwin skrot SNMP:",
+      "id": 260,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Simple Network Management Protocol",
+          "correct": true
+        },
+        {
+          "answer": "Security is Not My Problem",
+          "correct": false
+        },
+        {
+          "answer": "Shell Network Mapping Protocol",
+          "correct": false
+        },
+        {
+          "answer": "Secure Network Management Protocol",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "SID o wartosci S-1-5-21-1757982066-362288127-1801674531-500 może byc zwiazany z:",
+      "id": 261,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Kontem ADMINISTRATOR",
+          "correct": true
+        },
+        {
+          "answer": "Kontem GUEST",
+          "correct": false
+        },
+        {
+          "answer": "Kontem USR",
+          "correct": false
+        },
+        {
+          "answer": "Grupa USERS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "SID o wartości: S-1-5-21-1757992066-362208127-1801674531-1001 może być związany:",
+      "id": 262,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "z grupą USERS",
+          "correct": true
+        },
+        {
+          "answer": "wbudowanym kontem użytkownika, którego nazwa pierwotna(przed ewentualną zmianą) brzmi ADMINISTRATOR",
+          "correct": false
+        },
+        {
+          "answer": "wbudowanym kontem użytkownika, którego nazwa pierwotna(przed ewentualną zmianą) brzmi GUEST",
+          "correct": false
+        },
+        {
+          "answer": "założonym przez administratora kontem USR",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "SID o wartości: S-1-5-21-1757992066-362208127-1801674531-500 może być związany:",
+      "id": 263,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "z grupą USERS",
+          "correct": false
+        },
+        {
+          "answer": "wbudowanym kontem użytkownika, którego nazwa pierwotna(przed ewentualną zmianą) brzmi ADMINISTRATOR",
+          "correct": true
+        },
+        {
+          "answer": "wbudowanym kontem użytkownika, którego nazwa pierwotna(przed ewentualną zmianą) brzmi GUEST",
+          "correct": false
+        },
+        {
+          "answer": "założonym przez administratora kontem USR",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Skanowanie portow ma na celu:",
+      "id": 264,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wykrycie rodzaju uslug oferowanych na danym hoscie",
+          "correct": true
+        },
+        {
+          "answer": "wykrycie wersji oprogramowania okreslonej uslugi funkcjonujacej na danym hosci",
+          "correct": false
+        },
+        {
+          "answer": "zbadanie przepustowosci kanalu transmisyjnego do okreslonego hosta",
+          "correct": false
+        },
+        {
+          "answer": "wykrycie zabezpieczen ustanowionych na danym porcie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Skrot wiadomosci jest wykorzystywany do:",
+      "id": 265,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "kompresowania informacji",
+          "correct": false
+        },
+        {
+          "answer": "zidentyfikowania nadawcy",
+          "correct": false
+        },
+        {
+          "answer": "zidentyfikowania odbiorcy",
+          "correct": false
+        },
+        {
+          "answer": "stwierdzenia autentycznosci (integralnosci) wiadomosci",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "SYN Flood polega na:",
+      "id": 266,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wysylaniu wielu pakietow SYN na adres ofiary",
+          "correct": true
+        },
+        {
+          "answer": "wyslaniu pakietu SYN wiekszego niz 65536b",
+          "correct": false
+        },
+        {
+          "answer": "nawiazaniu polaczenia UDP",
+          "correct": false
+        },
+        {
+          "answer": "ciaglym pingowaniu ofiary",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "System limitowania wykorzystania pamięci dyskowej (quota) umożliwia zdefiniowanie limitów:",
+      "id": 267,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "na poziomie dowolnego foldera",
+          "correct": false
+        },
+        {
+          "answer": "na dowolnym poziomie (dysku fizycznego lub dowolnego foldera, łącznie z folderem głównym dowolnego napędu)",
+          "correct": false
+        },
+        {
+          "answer": "tylko na poziomie pojedyńczych dyskowych napędów logicznych (dla każdego napędu osobno)",
+          "correct": true
+        },
+        {
+          "answer": "tylko na poziomie całego dysku fizycznego",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Uruchomienie uslugi MESSENGER , ISS traktuje jako",
+      "id": 268,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Sytuacje dozwolona",
+          "correct": false
+        },
+        {
+          "answer": "Blad niskiego poziomu ryzyka",
+          "correct": true
+        },
+        {
+          "answer": "Blad sredniego poziomu ryzyka",
+          "correct": false
+        },
+        {
+          "answer": "Blad wysokiego poziomu ryzyka",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Usługa WHOIS umożliwia:",
+      "id": 269,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Uzyskanie róznych ionformacji o zadanym użytkowniku",
+          "correct": false
+        },
+        {
+          "answer": "Uzyskanie informacji o użytkownikach majacych konta w danej domenie",
+          "correct": false
+        },
+        {
+          "answer": "Uzyskanie informacji o odwzorowaniu nazwy domeny na adres jej serwera WWW",
+          "correct": false
+        },
+        {
+          "answer": "Uzyskanie różnych informacji o zadanej domenie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "W ataku typu LAND nagłowek spreparowany jest tak, że:",
+      "id": 270,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "IP nadawcy ustawione na adres DNS",
+          "correct": false
+        },
+        {
+          "answer": "nadawca i odbiorca ma to samo IP",
+          "correct": true
+        },
+        {
+          "answer": "wielkosc pakietu &gt; 65536b",
+          "correct": false
+        },
+        {
+          "answer": "wielkosc pakietu = 0",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W czasie rekonesansu bedacego faza wstepna testu penetracyjnego nie wykonuje sie:",
+      "id": 271,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Badania osiagalnosciwybranych pojedynczych hostow",
+          "correct": false
+        },
+        {
+          "answer": "Uzyskania adresow serwerow pocztowych",
+          "correct": false
+        },
+        {
+          "answer": "Skanowania portow",
+          "correct": true
+        },
+        {
+          "answer": "Uzyskania adresow serwerow DNS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W programie PGP/GPG, operacja pobrania klucza obcego użytkownika z serwera-magazynu, z pliku lub przesyłki przez niego przesłanej powoduje umieszczenie w zbiorze kluczy użytkownika importującego:",
+      "id": 272,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "klucza publicznego obcego użytkownika",
+          "correct": true
+        },
+        {
+          "answer": "klucza prywatnego obcego użytkownika",
+          "correct": false
+        },
+        {
+          "answer": "klucza sesyjnego wygenerowanego przez obcego użytkownika",
+          "correct": false
+        },
+        {
+          "answer": "certyfikatu X.509 programu POP nadawcy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W skanowaniu UDP jaka będzie odpowiedz z portu zamkniętego?",
+      "id": 273,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Brak odpowiedzi",
+          "correct": false
+        },
+        {
+          "answer": "ICMP Destination Unreachable",
+          "correct": true
+        },
+        {
+          "answer": "ICMP Echo Response",
+          "correct": false
+        },
+        {
+          "answer": "Pojedynczy datagram z flaga ACK",
+          "correct": false
+        },
+        {
+          "answer": "UDP Handshake",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W systemie Windows 2000 polecenie -NET USE  \\\\10.1.1.1\\IPC$ \"\" /u:\"\"  - pozwala na:",
+      "id": 274,
+      "comments": [
+        {
+          "author": "~miszcz@89.68.*.*",
+          "comment": "warto by poprawić polskie znaki :)",
+          "date": "03-02-2012 13:01:19"
+        },
+        {
+          "author": "mykhi",
+          "comment": "tylko tu, czy gdzieś jeszcze?",
+          "date": "03-02-2012 13:04:47"
+        },
+        {
+          "author": "~masło@87.207.*.*",
+          "comment": "W prawie każdym punkcie ;P",
+          "date": "03-02-2015 09:59:12"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "nawiązanie nie uwierzytelnionego połączenia z komputerem o IP=10.1.1.1",
+          "correct": false
+        },
+        {
+          "answer": "nawiązanie uwierzytelnionego połączenia z komputerem o IP=10.1.1.1",
+          "correct": false
+        },
+        {
+          "answer": "nawiązanie nie uwierzytelnionego połączenia z komputerem o IP=10.1.1.1, tylko w sytuacji, gdy na zdalnym komputerze konto Gościa jest uaktywnione",
+          "correct": true
+        },
+        {
+          "answer": "nawiązanie uwierzytelnionego połączenia z komputerem o IP=10.1.1.1 po dalszym podaniu konta i hasła użytkownika",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W Windows 2000 do wyswietlania aktualnej konfiguracji TCP/IP sluzy polecenie:",
+      "id": 275,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ROUTE",
+          "correct": false
+        },
+        {
+          "answer": "IPCONFIG",
+          "correct": true
+        },
+        {
+          "answer": "DHCP",
+          "correct": false
+        },
+        {
+          "answer": "PING",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W Windows 2000 zezwolenia (permissions) można przyzanwać przy pomocy programu:",
+      "id": 276,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Disk administrator",
+          "correct": false
+        },
+        {
+          "answer": "Computer Management\\Locala Users",
+          "correct": false
+        },
+        {
+          "answer": "Explorer Windows",
+          "correct": true
+        },
+        {
+          "answer": "Policy Manager",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W Windows 2000, przy kopiowaniu pliku pomiedzy woluminami NTFS zezwolenia(permissions)",
+      "id": 277,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Sa zachowane",
+          "correct": false
+        },
+        {
+          "answer": "Sa pobierane z katalogu docelowego",
+          "correct": true
+        },
+        {
+          "answer": "Sa ustawiane wg. Zawartosci zmiennej PERM)",
+          "correct": false
+        },
+        {
+          "answer": "Sa ustawione na wartosci FULL CONTROL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W Windows 2000, zezwolenia (permissions):",
+      "id": 278,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "umozliwiaja uzytkownikom dostep do zasobow takich jak np. katalogi, pliki, drukarki",
+          "correct": true
+        },
+        {
+          "answer": "okreslaja dzialania jakie uzytkownik moze wykonac w systemie (np. zmiana czasu systemowego)",
+          "correct": false
+        },
+        {
+          "answer": "umozliwiaja uzytkownikowi zalogowanie sie",
+          "correct": false
+        },
+        {
+          "answer": "okreslaja przywileje uzytkownika w zakresie komunikacji miedzykomputerowej",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W Windows po przesunięciu pliku nieskompresowanego pomiędzy folderami znajdującymi się w tym samym wolumenie NTFS:",
+      "id": 279,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "plik pozostaje w postaci skompresowanej o ile folder docelowy jest skompresowany (ma ustawiony atrybut kompresji),w przeciwnym przypadku zostaje zapisany bez kompresji",
+          "correct": false
+        },
+        {
+          "answer": "plik zawsze zostanie zapisany w postaci skompresowanej",
+          "correct": false
+        },
+        {
+          "answer": "sposób zapisu pliku zawsze zależy od ustawienia atrybutu kompresji na poziomie katalogu głownego wolumenu NTFS,w którym realizowana jest operacja",
+          "correct": false
+        },
+        {
+          "answer": "plik zawsze zostanie zapisany bez kompresji",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "W Windows po przesunięciu pliku wewnątrz wolumenu NTFS uprawnienia dostępu (permissions):",
+      "id": 280,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "są zachowywane",
+          "correct": true
+        },
+        {
+          "answer": "są pobierane z katalogu docelowego",
+          "correct": false
+        },
+        {
+          "answer": "są ustawiane według zawartości zmiennej PERM",
+          "correct": false
+        },
+        {
+          "answer": "są ustawiane na wartość FULL CONTROL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W Windows po skopiowaniu pliku skompresowanego pomiędzy folderami znajdującymi się w różnychvolumenach NTFS:",
+      "id": 281,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "plik pozostaje w postaci skompresowanej o ile folder docelowy jest skompresowany (ma ustawionyatrybut kompresji) w przeciwnym przypadku zostaje zapisany bez kompresji",
+          "correct": true
+        },
+        {
+          "answer": "plik zawsze zostanie zapisany w postaci skompresowanej",
+          "correct": false
+        },
+        {
+          "answer": "sposób zapisu pliku zawsze zależy od ustawienia atrybutu kompresji na poziomie katalogu głównegowolumenu NTFS, w którym realizowana jest operacja",
+          "correct": false
+        },
+        {
+          "answer": "plik zawsze zostanie zapisany bez kompresji",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W Windows, przy kopiowaniu pliku pomiedzy woluminami NTFS zezwolenia(permissions)",
+      "id": 282,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Sa zachowane",
+          "correct": false
+        },
+        {
+          "answer": "Sa pobierane z katalogu docelowego",
+          "correct": true
+        },
+        {
+          "answer": "Sa ustawiane wg zawartosci zmiennej PERM",
+          "correct": false
+        },
+        {
+          "answer": "Sa ustawione na wartosci FULL CONTROL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wlamanie poprzez uzycie pliku LOGON.SCR uruchamia sesje uzytkownika:",
+      "id": 283,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Ostatnio zalogowanego",
+          "correct": false
+        },
+        {
+          "answer": "System",
+          "correct": true
+        },
+        {
+          "answer": "Administrator",
+          "correct": false
+        },
+        {
+          "answer": "Gosc",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wskaż dzialanie ktore nie zapobiegnie enumeracji w Windows 2000",
+      "id": 284,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wylaczenie uslug SMB(File and Print Services)",
+          "correct": false
+        },
+        {
+          "answer": "Zablokowanie dostepu do portu 135-139 I 445 TCP/UDP na poziomie komputera (konfiguracja TCP/IP)",
+          "correct": false
+        },
+        {
+          "answer": "Zablokowanie dostepu do portu 135-139 I 445 TCP/UDP na poziomie Komputera(filtr IPSec)",
+          "correct": true
+        },
+        {
+          "answer": "Zablokowanie dostepu do portu 135-139 I 445 TCP/UDP na poziomie sieci (konfiguracja zapory)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Z komputera A (IP-10.200.3.1, maska podsieci=255.255.255.0) wydano polecenie ping 10.200.3.5. Z komputera B (IP-10.200.3.5, maska podsieci=255.255.0.0), umieszczonego w tym samym segmencie fizycznym wydano polcenie ping 10.200.3.1",
+      "id": 285,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Oba komputery uzyskaly odpowiedz negatywna",
+          "correct": false
+        },
+        {
+          "answer": "Komputer A odpowiedz pozytywna, B - negatywna",
+          "correct": false
+        },
+        {
+          "answer": "Komputer B odpowiedz pozytywna, A - negatywna",
+          "correct": false
+        },
+        {
+          "answer": "Oba komputery uzyskaly odpowiedz pozytywna",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Z komputera A (IP-192.168.1.1, maska podsieci=255.255.0.0) wydano polecenie ping 192.168.2.2. Z komputera B (IP-192.168.2.2, maska podsieci=255.255.2.2), umieszczonego w tym samym segmencie fizycznym wydano polcenie ping 192.168.1.1",
+      "id": 286,
+      "comments": [
+        {
+          "author": "~ŁukaszC@89.68.*.*",
+          "comment": "MUSI BYĆ BŁĄD!\nco to za maska podsieci=255.255.2.2?\nnie znam..",
+          "date": "02-02-2012 18:12:26"
+        },
+        {
+          "author": "~Siemo@178.36.*.*",
+          "comment": "wiaderko nie pierdol tylko wkuwaj na pamięć ",
+          "date": "02-02-2012 18:48:15"
+        },
+        {
+          "author": "~anon@83.6.*.*",
+          "comment": "em... maska jest zwykłym 32bitowym czymś - \\\"słowem\\\" to zowią w informatyce chyba xP ? możesz tam wpisać co chcesz wiec i końcówka .2.2 będzie ok ;) a, że w praktyce się nie używa to inna sprawa :P",
+          "date": "03-02-2012 02:20:08"
+        },
+        {
+          "author": "~Łukasz@89.68.*.*",
+          "comment": "Ten co napisał.. weź sobie ustaw taką maskę na swojej karcie..",
+          "date": "03-02-2012 10:32:22"
+        },
+        {
+          "author": "~anon@95.49.*.*",
+          "comment": "Dlaczego w poprzednim pytaniu pingując komputer B (255.255.0.0) dostaliśmy odpowiedź pozytywną, a w tym pytaniu pingując A (255.255.0.0) dostaliśmy odpowiedź negatywną, maska drugiego komputera wpływa na powodzenie ping'a?",
+          "date": "14-02-2013 08:52:04"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Komputer B odpowiedz pozytywna, A - negatywna",
+          "correct": false
+        },
+        {
+          "answer": "Oba komputery uzyskaly odpowiedz negatywna",
+          "correct": true
+        },
+        {
+          "answer": "Oba komputery uzyskaly odpowiedz pozytywna",
+          "correct": false
+        },
+        {
+          "answer": "Komputer A odpowiedz pozytywna, B - negatywna",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Za pomoca którego protokołu NIE można przesyłać pakietów L2TP?",
+      "id": 287,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "X.25",
+          "correct": false
+        },
+        {
+          "answer": "Frame Relay",
+          "correct": false
+        },
+        {
+          "answer": "IP",
+          "correct": false
+        },
+        {
+          "answer": "TCP",
+          "correct": true
+        },
+        {
+          "answer": "ATM",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zamknięty port UDP na skanowanym komputerze sygnalizowany jest przez skanery po:",
+      "id": 288,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "odebraniu pakietu FIN",
+          "correct": false
+        },
+        {
+          "answer": "braku odpowiedzi na wysłany pakiet UDP",
+          "correct": false
+        },
+        {
+          "answer": "odebraniu dowolnego pakietu UDP",
+          "correct": false
+        },
+        {
+          "answer": "odebraniu pakietu IMCP (nieosiągalność miejsca docelowego)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Zapobieganie dostępowi do zasobów sieciowych (udostępnianych folderów) realizuje się poprzez definiowanie reguły programu typu firewall:",
+      "id": 289,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ustawiając prawa dostępu (DACL) zabraniające dostępu do tych folderów",
+          "correct": false
+        },
+        {
+          "answer": "blokując porty TFTP",
+          "correct": false
+        },
+        {
+          "answer": "blokując porty FTP",
+          "correct": false
+        },
+        {
+          "answer": "blokując porty NetBIOS",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Zaznacz 3 prawidłowe flagi TCP:",
+      "id": 290,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "SYN",
+          "correct": true
+        },
+        {
+          "answer": "GRE",
+          "correct": false
+        },
+        {
+          "answer": "RST",
+          "correct": true
+        },
+        {
+          "answer": "TCP",
+          "correct": false
+        },
+        {
+          "answer": "PUSH",
+          "correct": true
+        },
+        {
+          "answer": "ICMP",
+          "correct": false
+        },
+        {
+          "answer": "PGP",
+          "correct": false
+        },
+        {
+          "answer": "ESP",
+          "correct": false
+        },
+        {
+          "answer": "ISAKMP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z wymienionych odpowiedzi zawieraja tylko algorytmy z kluczem tajnym:",
+      "id": 291,
+      "comments": [
+        {
+          "author": "~Hmm@159.205.*.*",
+          "comment": "DES,RC4,MD5,Haval - MD5 z kluczem tajnym?",
+          "date": "04-02-2014 21:45:29"
+        },
+        {
+          "author": "~Nick@79.185.*.*",
+          "comment": "MD5 jest algorytmem haszujacym wiec uzywa jest to rowniez alggorytm z kluczem tajnym",
+          "date": "04-02-2014 23:28:10"
+        },
+        {
+          "author": "~Nick@79.185.*.*",
+          "comment": "MD5 jest algorytmem haszujacym wiec jest to rowniez algorytm z kluczem tajnym *",
+          "date": "04-02-2014 23:28:51"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "DES,RC4,MD5,Haval",
+          "correct": true
+        },
+        {
+          "answer": "RSA,DES,AES,SHA",
+          "correct": false
+        },
+        {
+          "answer": "ElGamal,RSA,DSA,MD5",
+          "correct": false
+        },
+        {
+          "answer": "DES,TDES,RC5,RC6",
+          "correct": true
+        },
+        {
+          "answer": "Haval,Snefru,RSA,SHA",
+          "correct": false
+        },
+        {
+          "answer": "DSA,RSA,ElGamal",
+          "correct": false
+        },
+        {
+          "answer": "RC5,RC4,RC6,TDES",
+          "correct": true
+        },
+        {
+          "answer": "RC5,RC4,MD5,DSA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z wymienionych odpowiedzi zawieraja tylko algorytmy z kluczem publicznym:",
+      "id": 292,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "DSA,RSA,ElGamal",
+          "correct": true
+        },
+        {
+          "answer": "DSA,MD2,RSA",
+          "correct": false
+        },
+        {
+          "answer": "RC5,RC4,IDEA,TDES",
+          "correct": false
+        },
+        {
+          "answer": "Snefru,Haval,DES",
+          "correct": false
+        },
+        {
+          "answer": "MD5,MD2,MD4,SHA",
+          "correct": false
+        },
+        {
+          "answer": "SHA,RSA,DSA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z wymienionych odpowiedzi zawieraja tylko algorytmy symetryczne:",
+      "id": 293,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "MD5,SHA,Haval,DSA",
+          "correct": false
+        },
+        {
+          "answer": "IDEA,DES,TDES,RC5",
+          "correct": true
+        },
+        {
+          "answer": "RC5,MD5,SHA,Skipjack",
+          "correct": false
+        },
+        {
+          "answer": "DSA,RSA,DES,AES",
+          "correct": false
+        },
+        {
+          "answer": "ElGamal,RC5,MD5",
+          "correct": false
+        },
+        {
+          "answer": "DES,TDES,RC5,RC4",
+          "correct": true
+        },
+        {
+          "answer": "IDEA,DES,TDES,AES",
+          "correct": true
+        },
+        {
+          "answer": "RSA,IDEA,Skipjack,AES",
+          "correct": false
+        },
+        {
+          "answer": "RC5,MD5,DSA,RSA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z wymienionych odpowiedzi zawieraja tylko algorytmy asymetryczne:",
+      "id": 294,
+      "comments": [
+        {
+          "author": "~Snap@178.42.*.*",
+          "comment": "MD5 jest funkcja hashujaca",
+          "date": "03-02-2012 13:45:21"
+        },
+        {
+          "author": "~sng@83.4.*.*",
+          "comment": "Podobnie jak MD5, SHA i Haval są funkcjami haszującymi. Czyli nie ma takiego \"drugiego\" klucza który pozwoli odczytać zahashowaną wiadomość - więc nie są to algorytmy asymetryczne. Czy ja się mylę ?",
+          "date": "05-02-2013 15:37:46"
+        },
+        {
+          "author": "~jacek@84.10.*.*",
+          "comment": "Panowie. Czy. To jest woekszosc pytan egzaminacyjnych czy sa gdzies jeszcze?\n",
+          "date": "13-02-2013 21:00:36"
+        },
+        {
+          "author": "~anon@217.67.*.*",
+          "comment": "Wg. wykładów, metody hashujące są zaliczanie do grupy algorytmów asymetrycznych ",
+          "date": "30-01-2014 13:08:46"
+        },
+        {
+          "author": "~anon@159.205.*.*",
+          "comment": "Wydaje mi się, że 'asymetryczne' znaczy, że dane są inaczej odszyfrowywane, niż szyfrowane (np. w RSA). Funkcje hashujące szyfrują dane, ale nie da się ich już odszyfrować i dlatego jest asymetryczny. Chyba..",
+          "date": "04-02-2014 23:40:22"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "ElGamal, DES, DSA",
+          "correct": false
+        },
+        {
+          "answer": "MD5,SHA,IDEA,RC5",
+          "correct": false
+        },
+        {
+          "answer": "TDES,DES,IDEA,AES",
+          "correct": false
+        },
+        {
+          "answer": "SHA,RSA,DSA,MD5",
+          "correct": true
+        },
+        {
+          "answer": "MD5,RC5,RSA,DSA",
+          "correct": false
+        },
+        {
+          "answer": "DSA,RSA,MD5,Snefru",
+          "correct": true
+        },
+        {
+          "answer": "Haval,DSA,RSA,ElGamal",
+          "correct": true
+        },
+        {
+          "answer": "MD5,RC5,RC4,RC6",
+          "correct": false
+        },
+        {
+          "answer": "IDEA,DSA,RSA,DES",
+          "correct": false
+        },
+        {
+          "answer": "TDES,DES,MD5,SHA",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Która z odpowiedzi jest poprawna klasyfikacja ochrony w kolejnosci malejącej z Pomarańczowej Księgi(Orange Book):",
+      "id": 295,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "A1 B3 B2 B1 C2 C1 D",
+          "correct": true
+        },
+        {
+          "answer": "A1 B1 B2 C1 C2 D",
+          "correct": false
+        },
+        {
+          "answer": "D C2 C1 B2 B1 A1",
+          "correct": false
+        },
+        {
+          "answer": "D C1 C2 B1 B2 B3 A1",
+          "correct": false
+        },
+        {
+          "answer": "A B1 C1 C2 D",
+          "correct": false
+        },
+        {
+          "answer": "A1 B1 B2 B3 C1 C2 D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Która z odpowiedzi jest poprawna klasyfikacja ochrony w kolejnosci rosnącej z Pomarańczowej Księgi(Orange Book):",
+      "id": 296,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "D C1 C2 B1 B2 B3 A1",
+          "correct": true
+        },
+        {
+          "answer": "A1 B1 B2 C1 C2 D",
+          "correct": false
+        },
+        {
+          "answer": "D C2 C1 B2 B1 A1",
+          "correct": false
+        },
+        {
+          "answer": "D C2 C1 B3 B2 B1 A1",
+          "correct": false
+        },
+        {
+          "answer": "A B1 C1 C2 D",
+          "correct": false
+        },
+        {
+          "answer": "A1 B1 B2 B3 C1 C2 D",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co zawiera się w Czerwonej Księdze?",
+      "id": 297,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wytyczne dotyczace stosowania i wykorzystywania haseł",
+          "correct": false
+        },
+        {
+          "answer": "kryteria oceny bezpieczeństwa sieci komputerowych",
+          "correct": true
+        },
+        {
+          "answer": "porady i wskazówki Systemu Zarzadzania Bezpieczenstwem Informacji",
+          "correct": false
+        },
+        {
+          "answer": "slownik terminow Systmeu Zarzadzania Bezpieczenstwem Informacji",
+          "correct": false
+        },
+        {
+          "answer": "norme dotyczaca implementacji zasad bezpieczenstwa",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co zawiera się w Zielonej Księdze?",
+      "id": 298,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wytyczne dotyczace stosowania i wykorzystywania haseł",
+          "correct": true
+        },
+        {
+          "answer": "kryteria oceny bezpieczeństwa sieci komputerowych",
+          "correct": false
+        },
+        {
+          "answer": "porady i wskazówki Systemu Zarzadzania Bezpieczenstwem Informacji",
+          "correct": false
+        },
+        {
+          "answer": "slownik terminow Systmeu Zarzadzania Bezpieczenstwem Informacji",
+          "correct": false
+        },
+        {
+          "answer": "norme dotyczaca implementacji zasad bezpieczenstwa",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym jest Kryptologia?",
+      "id": 299,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "nauka o zabezpieczaniu informacji i analizowaniu szyfrów",
+          "correct": true
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc jawna jest przekształcana na wiadomosc tajna",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc tajna jest przekształcana na wiadomosc jawna",
+          "correct": false
+        },
+        {
+          "answer": "nauka o zabezpieczaniu informacji",
+          "correct": false
+        },
+        {
+          "answer": "nauka łamania szyfrów",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym jest Szyfrowanie?",
+      "id": 300,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "nauka o zabezpieczaniu informacji i analizowaniu szyfrów",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc jawna jest przekształcana na wiadomosc tajna",
+          "correct": true
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc tajna jest przekształcana na wiadomosc jawna",
+          "correct": false
+        },
+        {
+          "answer": "nauka o zabezpieczaniu informacji",
+          "correct": false
+        },
+        {
+          "answer": "nauka łamania szyfrów",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym jest Deszyfrowanie?",
+      "id": 301,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "nauka o zabezpieczaniu informacji i analizowaniu szyfrów",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc jawna jest przekształcana na wiadomosc tajna",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc tajna jest przekształcana na wiadomosc jawna",
+          "correct": true
+        },
+        {
+          "answer": "nauka o zabezpieczaniu informacji",
+          "correct": false
+        },
+        {
+          "answer": "nauka łamania szyfrów",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym jest Kryptografia?",
+      "id": 302,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "nauka o zabezpieczaniu informacji i analizowaniu szyfrów",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc jawna jest przekształcana na wiadomosc tajna",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc tajna jest przekształcana na wiadomosc jawna",
+          "correct": false
+        },
+        {
+          "answer": "nauka o zabezpieczaniu informacji",
+          "correct": true
+        },
+        {
+          "answer": "nauka łamania szyfrów",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym jest Kryptoanaliza?",
+      "id": 303,
+      "comments": [
+        {
+          "author": "~SzMatek@89.78.*.*",
+          "comment": "Tu chyba jest błąd. Kryptoanaliza - procedura w ktorej wiadomosc tajna jest przekształcana na wiadomosc jawna. Innymi słowy łamanie szyfrów",
+          "date": "04-02-2013 18:15:18"
+        },
+        {
+          "author": "~kelu@89.74.*.*",
+          "comment": "przekształcanie wiadomości tajnej na jawną to po prostu deszyfrowanie a nie kryptoanaliza :P",
+          "date": "06-02-2015 21:21:52"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "nauka o zabezpieczaniu informacji i analizowaniu szyfrów",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc jawna jest przekształcana na wiadomosc tajna",
+          "correct": false
+        },
+        {
+          "answer": "procedura w ktorej wiadomosc tajna jest przekształcana na wiadomosc jawna",
+          "correct": false
+        },
+        {
+          "answer": "nauka o zabezpieczaniu informacji",
+          "correct": false
+        },
+        {
+          "answer": "nauka łamania szyfrów",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Protokol Shamira",
+      "id": 304,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "potrzebuje zaufanego dystrybutora kluczy, szyfrowanie symetrycznie",
+          "correct": false
+        },
+        {
+          "answer": "potrzebuje zaufanego dystrybutora kluczy, szyfrowanie asymetryczne",
+          "correct": false
+        },
+        {
+          "answer": "nie potrzebuje zaufanego dystrybutora kluczy, szyfrowanie symetryczne",
+          "correct": true
+        },
+        {
+          "answer": "nie potrzebuje zaufanego dystrybutora kluczy, szyfrowanie asymetryczne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W ktorej warstwie znajduje sie protokol IPSec",
+      "id": 305,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "warstwie lacza",
+          "correct": false
+        },
+        {
+          "answer": "warstwie 3",
+          "correct": true
+        },
+        {
+          "answer": "warstwie 4",
+          "correct": false
+        },
+        {
+          "answer": "warstwie prezentacji",
+          "correct": false
+        },
+        {
+          "answer": "warstwie aplikacji",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W ktorej warstwie znajduje sie protokol SSL",
+      "id": 306,
+      "comments": [
+        {
+          "author": "~sng@91.189.*.*",
+          "comment": "Wydaje mi się, że SSL jest w warstwie prezentacji czyli wg. modelu OSI jest to warstwa 6.\nhttp://pl.wikipedia.org/wiki/SSL",
+          "date": "06-02-2013 23:07:24"
+        },
+        {
+          "author": "~sng@91.189.*.*",
+          "comment": "mój błąd. SLL wg RFC jest zaprojektowany do modelu IP a nie OSI więc jest w warstwie 4.",
+          "date": "06-02-2013 23:22:11"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "warstwie 1",
+          "correct": false
+        },
+        {
+          "answer": "warstwie 3",
+          "correct": false
+        },
+        {
+          "answer": "warstwie 4",
+          "correct": true
+        },
+        {
+          "answer": "warstwie 2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym jest kerberosowanie?",
+      "id": 307,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Uwierzytelnianie urzytkownika w systemie Kerberos",
+          "correct": false
+        },
+        {
+          "answer": "Integracja systemu Kerberos z innymi czesciami systemu",
+          "correct": true
+        },
+        {
+          "answer": "Uzyskiwanie certyfikatu od zaufanej strony trzeciej",
+          "correct": false
+        },
+        {
+          "answer": "Ochrona systemu Kerberos przed złamaniem hasla",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co zapewnie bezpieczenstwo na poziomie C2?",
+      "id": 308,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Kontrole dostepu",
+          "correct": true
+        },
+        {
+          "answer": "Ochrone minimalna",
+          "correct": false
+        },
+        {
+          "answer": "Opis matematyczny bezpieczenstwa systemu",
+          "correct": false
+        },
+        {
+          "answer": "Ochrone uznaniowa",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co zapewnie bezpieczenstwo na poziomie B3?",
+      "id": 309,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Kontrole dostepu",
+          "correct": false
+        },
+        {
+          "answer": "Ochrone minimalna",
+          "correct": false
+        },
+        {
+          "answer": "Opis matematyczny bezpieczenstwa systemu",
+          "correct": false
+        },
+        {
+          "answer": "Ochrone strukturalna",
+          "correct": false
+        },
+        {
+          "answer": "Ochrone przez podzial",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Co zapewnie bezpieczenstwo na poziomie A1?",
+      "id": 310,
+      "comments": [
+        {
+          "author": "~m.Iron@83.28.*.*",
+          "comment": "Według wykładów wymagania \"wyższego poziomu, spełniać muszą również wymagania poziomu niższego.\" A1 jest najwyższym poziomem, więc oprócz matematycznego modelu zapewnia też ochronę minimalną, strukturalną i przez podział:\n\nhttp://edu.pjwstk.edu.pl/wyklady/bsi/scb/index07.html",
+          "date": "17-01-2014 22:40:21"
+        },
+        {
+          "author": "~kogut@109.206.*.*",
+          "comment": "wiec jak ? ",
+          "date": "05-02-2019 19:42:23"
+        },
+        {
+          "author": "~magda@2a02:a317:223f:f780:c9f5:eb9b:1b20:56ee",
+          "comment": "powinny być wszystkie zaznaczone, m.Iron ma rację",
+          "date": "07-02-2020 07:37:36"
+        },
+        {
+          "author": "~magda@2a02:a317:223f:f780:c9f5:eb9b:1b20:56ee",
+          "comment": "powinny być wszystkie zaznaczone, m.Iron ma rację",
+          "date": "07-02-2020 07:37:51"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zaznaczam wszystkie",
+          "date": "07-02-2020 09:48:06"
+        },
+        {
+          "author": "~ekhm@212.2.*.*",
+          "comment": "Czemu nie zaznaczamy kontroli dostepu?",
+          "date": "07-02-2020 13:29:34"
+        },
+        {
+          "author": "~anon@2a02:a310:c122:f680:19e1:423f:d67c:5a9b",
+          "comment": "up",
+          "date": "09-02-2020 19:59:49"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Kontrole dostepu",
+          "correct": true
+        },
+        {
+          "answer": "Ochrone minimalna",
+          "correct": true
+        },
+        {
+          "answer": "Opis matematyczny bezpieczenstwa systemu",
+          "correct": true
+        },
+        {
+          "answer": "Ochrone strukturalna",
+          "correct": true
+        },
+        {
+          "answer": "Ochrone przez podzial",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Rowin skrot IDS:",
+      "id": 311,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Intrusion Detection System",
+          "correct": true
+        },
+        {
+          "answer": "Identification Diagnostic System",
+          "correct": false
+        },
+        {
+          "answer": "Intrusion Dialog Software",
+          "correct": false
+        },
+        {
+          "answer": "Integer Decode Software",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Protokol cerbera:",
+      "id": 312,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "potrzebuje zaufanego punktu dystrybucji kluczy sesyjnych",
+          "correct": true
+        },
+        {
+          "answer": "zapewnia przezroczystosc",
+          "correct": false
+        },
+        {
+          "answer": "sluzy do testowania zabezpieczen Systemow Informatycznych",
+          "correct": false
+        },
+        {
+          "answer": "jest oparty na protokole PPP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ktore z nizej wymienionych systemow rezyduja na hoscie:",
+      "id": 313,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "HIDS",
+          "correct": true
+        },
+        {
+          "answer": "NIDS",
+          "correct": false
+        },
+        {
+          "answer": "NNIDS",
+          "correct": true
+        },
+        {
+          "answer": "CC",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym jest protokol X.509",
+      "id": 314,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "protokolem uwierzytelniania poprzez zaufana strone trzecia",
+          "correct": false
+        },
+        {
+          "answer": "standardem definijującym schemat dla certyfikatow kluczy publicznych, uniewaznien certyfikatow oraz certyfikatow atrybutu",
+          "correct": true
+        },
+        {
+          "answer": "protokolem najbardziej podatnym na atakim typu LAND",
+          "correct": false
+        },
+        {
+          "answer": "protokolem autoryzacji w systemach obronnych typu IPS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zasady szacowania ryzyka w Systemach Zarzadzania Bezpieczenstwem Informacji opisuje norma:",
+      "id": 315,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ISO/IEC 15408",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27005",
+          "correct": true
+        },
+        {
+          "answer": "ISO/IEC 27007",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27001",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27000",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wytyczne dotyczace Systemow Zarzadzania Bezpieczenstwem Informacji opisuje norma:",
+      "id": 316,
+      "comments": [
+        {
+          "author": "~kamniel@79.184.*.*",
+          "comment": "To jest źle, powinno być 27001.\nZe strony https://wiedza.pkn.pl/web/wiedza-normalizacyjna/zarzadzanie-bezpieczenstwem-informacji\n\n\n\"Polska Norma PN-ISO/IEC 27001:2014-12 Technika informatyczna – Techniki bezpieczeństwa – Systemy zarządzania bezpieczeństwem informacji – Wymagania jest wprowadzeniem normy  ISO/IEC 27001:2013\nPolska norma PN-ISO/IEC 27002:2014-12 Technika informatyczna – Techniki bezpieczeństwa – Praktyczne zasady zabezpieczania informacji jest wprowadzeniem normy ISO/IEC 27002:2013 \"",
+          "date": "24-02-2018 21:17:57"
+        },
+        {
+          "author": "~karol@188.146.*.*",
+          "comment": "PN-ISO/IEC27005:2014-01-wersja polska,Technika informatyczna--Techniki bezpieczeństwa--Zarządzanie ryzykiem w bezpieczeństwie informacji(w normie podano *WYTYCZNE* dotyczące zarządzania ryzykiem w bezpieczeństwie informacji, rozwinięto ogólne koncepcje określone w ISO/IEC27001,opracowano ją w celu wsparcia wdrożenia podejścia do bezpieczeństwa opartego na zarządzaniu ryzykiem;\n\nhttps://techinfo.uodo.gov.pl/wp-content/uploads/2018/03/status-i-zakres-norm-technicznych-ver3.pdf",
+          "date": "01-07-2019 16:09:12"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "ISO/IEC 15408",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27005",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27007",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27001",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27002",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Zasady specyfikacji,implementacji i oceny bezpieczenstwa opisuje norma:",
+      "id": 317,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ISO/IEC 15408",
+          "correct": true
+        },
+        {
+          "answer": "ISO/IEC 13335",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27005",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27007",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27001",
+          "correct": false
+        },
+        {
+          "answer": "ISO/IEC 27002",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przy dowolnie długim czasie łamanie hasła metodą słownikową:",
+      "id": 982,
+      "comments": [
+        {
+          "author": "~dafase@89.70.*.*",
+          "comment": "Czemu akurat 25%? A nie odpowiedz \"Nie daje gwarancji\"",
+          "date": "16-01-2013 20:13:04"
+        },
+        {
+          "author": "mykhi",
+          "comment": "oczywiście, że nie daje gwarancji (hasło nie musi być w słowniku). pytanie dodał ktoś inny, pewnie źle zaznaczył odpowiedź - zaraz poprawię.",
+          "date": "16-01-2013 20:21:58"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Daje 25% szans na złamanie hasła.",
+          "correct": false
+        },
+        {
+          "answer": "Nie daje gwarancji złamania hasła.",
+          "correct": true
+        },
+        {
+          "answer": "Daje 100% szans na złamanie hasła.",
+          "correct": false
+        },
+        {
+          "answer": "Daje 50% szans na złamanie hasła.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przy dowolnie długim czasie łamanie hasła metodą siłową:",
+      "id": 983,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Nie daje gwarancji&nbsp;złamania hasła.",
+          "correct": false
+        },
+        {
+          "answer": "Daje 25% szans na złamanie hasła.",
+          "correct": false
+        },
+        {
+          "answer": "Daje 100% szans na złamanie hasła.",
+          "correct": true
+        },
+        {
+          "answer": "Daje 50% szans na złamanie hasła.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jednym z celów skanowania w teście penetracyjnym jest:",
+      "id": 984,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "rozpoznanie numeru telefonu ofiary",
+          "correct": false
+        },
+        {
+          "answer": "rozpoznanie systemu operacyjnego",
+          "correct": true
+        },
+        {
+          "answer": "wykrycie liczy routerów w sieci",
+          "correct": false
+        },
+        {
+          "answer": "detekcja marki switcha",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

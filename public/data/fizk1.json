@@ -1,0 +1,1933 @@
+{
+  "title": "Fizyka k1 (FIZK1)",
+  "id": "fizk1",
+  "data": [
+    {
+      "question": "Pewną cząstkę umieszczamy kolejno na zewnątrz czterech ciał, z których każde ma<br>masę m: a) dużej jednorodniej kuli, b) dużej jednorodnej powłoki kulistej, c)<br>małej jednorodnej kuli, d) małej jednorodnej powłoki kulistej. W każdym z tych<br>przypadków odległość cząstki od środka ciała jest taka sama i wynosi d.<br>Uszereguj te ciała w zależności od wartości siły grawitacyjnej jaką wywierają ne<br>na cząstkę od najwiekszej do najmniejszej:",
+      "id": 2228,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "a, c, b, d",
+          "correct": false
+        },
+        {
+          "answer": "siła grawitacyjna jest taka sama we wszystkich przypadkach",
+          "correct": true
+        },
+        {
+          "answer": "b, d, a, c",
+          "correct": false
+        },
+        {
+          "answer": "a, b, c, d",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wytwarzamy falę biegnącą wzdłuż liny, wprawiając jeden jej koniec w drgania.<br>Jeżeli zwiększymy naprężenie liny, to długość fali:",
+      "id": 2229,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "zmaleje",
+          "correct": true
+        },
+        {
+          "answer": "pozostanie taka sama",
+          "correct": false
+        },
+        {
+          "answer": "wzrośnie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Samolot leciał najpierw 400 km na wschód, a następnie na północ. Przemieszczenie<br>samolotu na całej trasie wyniosło 500 km. Droga przebyta przez ten samolot jest<br>równa:",
+      "id": 2230,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "500 km",
+          "correct": false
+        },
+        {
+          "answer": "800 km",
+          "correct": false
+        },
+        {
+          "answer": "700 km",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Po równi pochyłej stacza się bez poślizgu kula armatnia. Wyobraź sobie, że kula<br>ta stacza się nastepnie po równi o mniejszym kącie nachylenia, lecz o takiej<br>samej wysokości jak pierwsza. Czy w tym przypadku, czas potrzebny kuli na<br>dotarcie do podstawy równi:",
+      "id": 2231,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "pozostaje bez zmian",
+          "correct": false
+        },
+        {
+          "answer": "jest większy",
+          "correct": true
+        },
+        {
+          "answer": "jest mniejszy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na pewnej planecie, w pobliżu jej powierzchni, każdy kamien spada z<br>przyspieszeniem okolo 5m/s^2 (na powierzchni Ziemi z przyspieszeniem około 10<br>m/s^2). Może to oznaczać, że:",
+      "id": 2232,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "planeta ta ma masę 2 razy mniejszą od masy Ziemi, a jej promień jest taki sam<br>jak Ziemi",
+          "correct": true
+        },
+        {
+          "answer": "planeta ta ma masę 2 razy większą od masy Ziemi, a jej promień jest taki sam<br>jak Ziemi",
+          "correct": false
+        },
+        {
+          "answer": "planeta ta ma taką samą masę jak Ziemia, ale dwukrotnie większy promień",
+          "correct": false
+        },
+        {
+          "answer": "planeta ta ma taką samą masę jak Ziemia, ale dwukrotnie mniejszy promień",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Orbity planet to:",
+      "id": 2233,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "elipsy",
+          "correct": true
+        },
+        {
+          "answer": "parabole",
+          "correct": false
+        },
+        {
+          "answer": "epicykle",
+          "correct": false
+        },
+        {
+          "answer": "hiperbole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wyskakując z łódki (na brzeg) stojącej przy brzegu rzeki, uzyskujemy pęd<br>skierowany:",
+      "id": 2234,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "w stronę lądu",
+          "correct": true
+        },
+        {
+          "answer": "w kierunku zgodnym z biegiem rzeki",
+          "correct": false
+        },
+        {
+          "answer": "w kierunku przeciwnym do biegu rzeki",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na skraju niewielkiego krążka, obracającego się swobodnie, siedzi żuczek. W<br>pewnej chwili żuczek zaczyna iść ku środkowi krążka. Czy prędkość kątowa żuczka<br>i krążka:",
+      "id": 2235,
+      "comments": [
+        {
+          "author": "~anon@89.73.*.*",
+          "comment": "powinno byc pozostanie taka sama",
+          "date": "17-11-2014 22:29:05"
+        },
+        {
+          "author": "~anon@89.74.*.*",
+          "comment": "prędkość kątowa jest odwrotnie proporcjonalna do promienia, więc w tym przypadku wzrośnie",
+          "date": "13-01-2015 12:55:30"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "wzrośnie",
+          "correct": true
+        },
+        {
+          "answer": "zmaleje",
+          "correct": false
+        },
+        {
+          "answer": "pozostanie bez zmian",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na skraju niewielkiego krążka, obracającego się jak karuzela, siedzi żuczek. W<br>pewnej chwili żuczek zaczyna iść ku środkowi krążka. Czy moment pędu układu<br>żuczek-krążek:",
+      "id": 2236,
+      "comments": [
+        {
+          "author": "~anon@89.73.*.*",
+          "comment": "wydaje mi sie ze zmaleje, ze wzoru 1/2mR^2",
+          "date": "17-11-2014 22:30:51"
+        },
+        {
+          "author": "~anon@89.74.*.*",
+          "comment": "zmaleje, ale z innego wzoru -> L=R*m*v, Twój wzór jest na moment bezwładności, a nie pędu",
+          "date": "13-01-2015 14:08:13"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "wzrośnie",
+          "correct": true
+        },
+        {
+          "answer": "zmaleje",
+          "correct": false
+        },
+        {
+          "answer": "pozostanie bez zmian",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na skraju niewielkiego obracającego się krążka, siedzi żuczek. W pewnej chwili<br>żuczek zaczyna iść ku środkowi krążka. Czy moment bezwładności układu żuczekkrążek:",
+      "id": 2237,
+      "comments": [
+        {
+          "author": "~anon@89.74.*.*",
+          "comment": "chyba się zmniejszy, bo moment bezwładności jest proporcjonalny do promienia, I=1/2*mr^2",
+          "date": "13-01-2015 14:03:00"
+        },
+        {
+          "author": "~anon@87.206.*.*",
+          "comment": "Tak zmalejej, prosimy o poprawkę :) ",
+          "date": "05-02-2015 13:23:39"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "wzrośnie",
+          "correct": true
+        },
+        {
+          "answer": "zmaleje",
+          "correct": false
+        },
+        {
+          "answer": "pozostanie bez zmian",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Elektryczny ładunek elementarny 'e' ma wartość:",
+      "id": 2238,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1.6021892 * 10^-19 C",
+          "correct": true
+        },
+        {
+          "answer": "1.6021892 * 10^19 C",
+          "correct": false
+        },
+        {
+          "answer": "1.6021892 * 10^-17 C",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pocisk o masie m = 10 g wystrzelono z prędkością v = 1000 m/s z karabinu o masie<br>M = 10 kg. Powiedzmy, że niewprawny strzelec trzyma słabo karabin. Prędkość<br>odrzutu karabinu wynosi:",
+      "id": 2239,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "33.3 m/s",
+          "correct": false
+        },
+        {
+          "answer": "1 m/s",
+          "correct": true
+        },
+        {
+          "answer": "0 m/s",
+          "correct": false
+        },
+        {
+          "answer": "10 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało poruszające się po prostej pod działaniem siły o wartości F = 10 N w<br>czasie t = 1 s zmienia swą prędkość z v1 = 10m/s na v2 = 20m/s. Masa ciała<br>wynosi:",
+      "id": 2240,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "5 kg",
+          "correct": false
+        },
+        {
+          "answer": "0.1 kg",
+          "correct": false
+        },
+        {
+          "answer": "1 kg",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Gdy dwie fale sinusoidalne o takich samych amplitudach i długościach fali biegną w przeciwnych kierunkach wzdłuż napiętej liny, to w wyniku ich interferencji",
+      "id": 2241,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1. następuje całkowite wygaszenie fali na całej długości struny",
+          "correct": true
+        },
+        {
+          "answer": "2. powstaje fala stojąca",
+          "correct": false
+        },
+        {
+          "answer": "3. wystąpi dudnienie",
+          "correct": false
+        },
+        {
+          "answer": "",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przyspieszenie grawitacyjne na Ziemii wynosi 10m/s^2. Janek ma masę 70 kg. Ile<br>waży Janek na Ziemii?",
+      "id": 2242,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "700 ((kg * m) / s^2)",
+          "correct": true
+        },
+        {
+          "answer": "0.7 Watt",
+          "correct": false
+        },
+        {
+          "answer": "70 kg",
+          "correct": true
+        },
+        {
+          "answer": "700 N",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "W fizyce, energia kinetyczna to:",
+      "id": 2243,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wielkość zależna od położenia ciała względem drugiego ciała",
+          "correct": false
+        },
+        {
+          "answer": "jest to energia jaką posiaa element umieszczony w polu grawitacyjnym",
+          "correct": false
+        },
+        {
+          "answer": "energia ciała, związana z jego ruchem",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Na wózku mogącym poruszać się bez tarcia po poziomej płaszczyźnie umieszczono<br>akwarium przedzielone pionową przegrodą z zatkanym otworem. Lewą część akwarium<br>wypełniono wodą. Co stanie się z wózkiem zaraz po usunięciu korka zatykającego<br>otwór w przegrodzie?",
+      "id": 2244,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wózek będzie poruszał się w lewo",
+          "correct": true
+        },
+        {
+          "answer": "wózek będzie poruszał się w prawo",
+          "correct": false
+        },
+        {
+          "answer": "wózek pozostanie w spoczynku",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na poszczególnych planetach Układu Słonecznego przyspieszenie grawitacyjne<br>wynosi Merkury - 3.71 m/s2, Ziemia - 9.78 m/s2, Jowisz 22.65 m/s2, Neptun -<br>10,91 m/s2. Długość wahadła matematycznego, o okresie drgań równym 1 s, będzie<br>największa na:",
+      "id": 2245,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Ziemi",
+          "correct": false
+        },
+        {
+          "answer": "Neptunie",
+          "correct": false
+        },
+        {
+          "answer": "Jowiszu",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Fala biegnąca wzdłuż liny opisana jest wzorem: y(x,t) = 0.00327 * sin(72.1x-<br>2.72t), w którym wszystkie stałe numeryczne wyrażone są w jednostkach uładu SI<br>(0.00327 m, 72.1 rad/m oraz 2.72 rad/s). Amplituda fali wynosi:",
+      "id": 2246,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0.00327 mm",
+          "correct": false
+        },
+        {
+          "answer": "7210 rad/cm",
+          "correct": false
+        },
+        {
+          "answer": "3.27 mm",
+          "correct": true
+        },
+        {
+          "answer": "72.1 rad/m",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Fala biegnąca wzdłuż liny opisana jest wzorem: y(x,t) = 0.00327 * sin(72.1x-<br>2.72t), w którym wszystkie stałe numeryczne wyrażone są w jednostkach uładu SI<br>(0.00327 m, 72.1 rad/m oraz 2.72 rad/s). Prędkość fali wynosi:",
+      "id": 2247,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "2.31 cm/s",
+          "correct": false
+        },
+        {
+          "answer": "2.31 m/s",
+          "correct": false
+        },
+        {
+          "answer": "3.77 m/s",
+          "correct": false
+        },
+        {
+          "answer": "3.77 cm/s",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Moment pędu ciała o masie M w ruchu postępowym, to:",
+      "id": 2248,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "iloczyn wektorowy wektora pędu i wektora prędkości",
+          "correct": false
+        },
+        {
+          "answer": "iloczyn wektorowy wektora położenia i wektora prędkości",
+          "correct": false
+        },
+        {
+          "answer": "iloczyn wketorowy wektora położenia i wektora pędu",
+          "correct": true
+        },
+        {
+          "answer": "iloczyn wektorowy wektora siły i wektora prędkości",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Tylne koło roweru clowna ma promień dwukrotnie większy niż przednie. W czasie<br>jazdy prędkość LINIOWA górnego punktu tylnego koła jest w stosunku do prędkości<br>LINIOWEJ koła przedniego:",
+      "id": 2249,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "mniejsza",
+          "correct": false
+        },
+        {
+          "answer": "większa",
+          "correct": false
+        },
+        {
+          "answer": "taka sama",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Tylne koło roweru clowna ma promień dwukrotnie większy niż przednie. W czasie<br>jazdy prędkość KĄTOWA górnego punktu tylnego koła jest w stosunku do prędkości<br>KĄTOWEJ koła przedniego:",
+      "id": 2250,
+      "comments": [
+        {
+          "author": "~anon@89.73.*.*",
+          "comment": "wg mnie taka sama, promien nie ma znaczenia",
+          "date": "17-11-2014 22:34:48"
+        },
+        {
+          "author": "~anon@89.74.*.*",
+          "comment": "dla prędkości kątowej promień ma znaczenie, więc mniejsza",
+          "date": "13-01-2015 14:57:12"
+        },
+        {
+          "author": "~Prof. K@87.206.*.*",
+          "comment": "w tym przypadku prędkość KĄTOWA! zmaleje, do poprawki a niedowiarków odsyłam do wyszukiwarki\n ",
+          "date": "05-02-2015 20:44:22"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "mniejsza",
+          "correct": true
+        },
+        {
+          "answer": "większa",
+          "correct": false
+        },
+        {
+          "answer": "taka sama",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Nasza Galaktyka:",
+      "id": 2251,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "jest galaktyką spiralną i kształtem przypomina spłaszczony dysk",
+          "correct": true
+        },
+        {
+          "answer": "jest jedyną galaktyką na naszym Niebie, widoczną jako pojedyńczy obiekt",
+          "correct": false
+        },
+        {
+          "answer": "jest nazywana Drogą Mleczną, a Słońce znajduje się w jej środku",
+          "correct": false
+        },
+        {
+          "answer": "jest największą galaktyką kołową w Układzie Lokalnym",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jeżeli długość struny o częstotliwości podstawowej 'w' zwiększymy dwukrotnie<br>(nie zmieniając prędkości rozchodzenia się fali), to częstotliwość podstawowa<br>tak otrzymanej struny wyniesie:",
+      "id": 2252,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "'w'^2",
+          "correct": false
+        },
+        {
+          "answer": "'w' / 2",
+          "correct": true
+        },
+        {
+          "answer": "2 * 'w'",
+          "correct": false
+        },
+        {
+          "answer": "'w'",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pierwsze prawo Keplera mówi, że:",
+      "id": 2253,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "planety poruszają się po krzywej opisanej równaniem (x^3 / a^3) + (y^3 / b^3)<br>= 1",
+          "correct": false
+        },
+        {
+          "answer": "planety poruszają się po krzywych opisanych równaniem x^2 + y^2 + z^2 = 1",
+          "correct": false
+        },
+        {
+          "answer": "planety poruszają się po krzywej opisanej równaniem (x^2 / a^2) + (y^2 / b^2)<br>= 1",
+          "correct": true
+        },
+        {
+          "answer": "planety poruszają się po krzywej opisanej równaniem (x^2 / a^2) - (y^2 / b^2)<br>= 1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pierwsze prawo Keplera mówi, że:",
+      "id": 2254,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "planety poruszają się po elipsoidach",
+          "correct": false
+        },
+        {
+          "answer": "planety poruszają się po elipsach, a w jednym ognisku elipsy znajduje się<br>Słońce",
+          "correct": true
+        },
+        {
+          "answer": "planety poruszają się po takich elipsach, że w jednym ognisku znajduje się<br>Słońce, a w drugim planeta",
+          "correct": false
+        },
+        {
+          "answer": "planety poruszają się po okręgach",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Aby ruszyć z miejsca ciężką szafę, należy ją pchnąć, działając poziomą siłą o<br>wartości 200 N. Gdy próbujemy przesunąć tę szafę, działając poziomą siłą o<br>wartości 150 N, to siła tarcia ma wtedy wartość równą:",
+      "id": 2255,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "150 N",
+          "correct": true
+        },
+        {
+          "answer": "50 N",
+          "correct": false
+        },
+        {
+          "answer": "200 N",
+          "correct": false
+        },
+        {
+          "answer": "350 N",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Długość podstawowa fali stojącej rozchodzącej się w strunie obustronnie<br>zaczepionej zależy od:",
+      "id": 2256,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "prędkości rozchodzenia się fali (prędkości fazowej) w strunie",
+          "correct": false
+        },
+        {
+          "answer": "siły napinającej struny",
+          "correct": true
+        },
+        {
+          "answer": "długość struny",
+          "correct": true
+        },
+        {
+          "answer": "liniowej gęstości masy struny",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Częstotliwość podstawowa drgań struny obustronnie zaczepionej zależy od:",
+      "id": 2257,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "prędkości rozchodzenia się fali (prędkości fazowej) w strunie",
+          "correct": false
+        },
+        {
+          "answer": "siły napinającej struny",
+          "correct": true
+        },
+        {
+          "answer": "długość struny",
+          "correct": true
+        },
+        {
+          "answer": "liniowej gęstości masy struny",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Energia kinetyczna ciała toczącego się po równi (suma energii kinetycznej ruchu<br>postępowego oraz obrotowego) zależy od:",
+      "id": 2258,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "długość równi",
+          "correct": false
+        },
+        {
+          "answer": "kąta nachylenia równi",
+          "correct": true
+        },
+        {
+          "answer": "różnicy wysokości między pozycją początkową (spoczynkową), a bieżącą",
+          "correct": true
+        },
+        {
+          "answer": "wysokości równi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na ciało A położone w punkcie o współrzędnych (0,0,0), działa ciało B, położone<br>w punkcie o współrzędnych (1,1,0), siłą F1 = 1N, oraz ciało C położone w punkcie<br>o współrzędnych (-1,0,1), siłą F2 = 1N, Jaka jest składowa Fx siły działającej<br>na ciało A? (tu nie wiem jaka odpowiedz jest poprawna ale musi byc przynajmniej 1)",
+      "id": 2259,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "2^0.5 N",
+          "correct": false
+        },
+        {
+          "answer": "3^0.5 N",
+          "correct": false
+        },
+        {
+          "answer": "1 N",
+          "correct": false
+        },
+        {
+          "answer": "0 N",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Energia struny jest równa:",
+      "id": 2260,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "jej energii falowej",
+          "correct": false
+        },
+        {
+          "answer": "sumie jej energii potencjalnej i kinetycznej",
+          "correct": true
+        },
+        {
+          "answer": "jej energii potencjalnej",
+          "correct": false
+        },
+        {
+          "answer": "jej energii kinetycznej",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na poziomo poruszający się bez tarcia z prędkością v1 = 10m/s wózek o masie m1 =<br>10kg spadła pionowo cegła o masie m2 = 10kg. Ile wynosi prędkość wózka i cegły<br>po tym wydarzeniu?",
+      "id": 2261,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 m/s",
+          "correct": false
+        },
+        {
+          "answer": "5 m/s",
+          "correct": true
+        },
+        {
+          "answer": "1 m/s",
+          "correct": false
+        },
+        {
+          "answer": "3 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Spadochroniarz o masie 75 kg opada na spadochronie pionowo w dół na Ziemię ze<br>stałą prędkością v = 5 m/s. Siła oporów ruchu działająca na spadochroniarza wraz<br>ze spadochronem wynosi około:",
+      "id": 2262,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "25 N",
+          "correct": false
+        },
+        {
+          "answer": "250 N",
+          "correct": false
+        },
+        {
+          "answer": "750 N",
+          "correct": true
+        },
+        {
+          "answer": "75 N",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na orbicie Ziemi wystrzelono pocisk Z PIERWSZĄ prędkością kosmiczną dla tej<br>orbity i prostopadłą do natężenia pola grawitacyjnego. Pocisk będzie poruszał<br>się po:",
+      "id": 2263,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "hiperboli",
+          "correct": false
+        },
+        {
+          "answer": "paraboli",
+          "correct": false
+        },
+        {
+          "answer": "okręgu",
+          "correct": false
+        },
+        {
+          "answer": "elipsie (różnej od okręgu)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Ciało A, położone w punkcie o współrzędnych (1,2,3) oraz ciało B, położone w<br>punkcie o współrzędnych (2,3,4) działają na siebie siłą F = 1N, Jaka jest<br>składowa Fx siły działającej na ciało A?",
+      "id": 2264,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0 N",
+          "correct": false
+        },
+        {
+          "answer": "1 N",
+          "correct": true
+        },
+        {
+          "answer": "2^0.5 N",
+          "correct": false
+        },
+        {
+          "answer": "1 / 3^0.5 N",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na wysokości 1000 km nad Ziemią wystrzelono pocisk z prędkością V = 1000 m/s<br>prostopadłą do natężenia pola grawitacyjnego. Proszę przyjąć brak tarcia oraz<br>potraktować ziemię i pocisk jako punkty materialne. Torem pocisku będzie:",
+      "id": 2265,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "linia prosta",
+          "correct": false
+        },
+        {
+          "answer": "elipsa",
+          "correct": false
+        },
+        {
+          "answer": "parabola",
+          "correct": true
+        },
+        {
+          "answer": "hiperbola",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 2 kg porusza się ruchem obrotowym z prędkością kątową 'w' = 1<br>[1/s] i promieniem r = 1 [m]. Jaka jest prędkość liniowa ciała?",
+      "id": 2266,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0 m/s",
+          "correct": false
+        },
+        {
+          "answer": "1 m/s",
+          "correct": true
+        },
+        {
+          "answer": "2 m/s",
+          "correct": false
+        },
+        {
+          "answer": "4 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jeżeli ciało posuszające się z przyspieszeniem a = 3 [m/s^2], a chwili czasowej<br>t(0) = 0 [s] miało predkość v(0) = 0 [m/s], to jaką prędkość będzie miało w<br>chwili t(1) = 2 [s]:",
+      "id": 2267,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "12 m/s",
+          "correct": false
+        },
+        {
+          "answer": "6 m/s",
+          "correct": true
+        },
+        {
+          "answer": "3 m/s",
+          "correct": false
+        },
+        {
+          "answer": "9 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 1 kg porusza się ruchem jednostajnym z prędkością 1 m/s. Na ciało<br>w chwili t(0) = 0 [s] zaczęła działać siła F = 1N w kierunku PRZECIWNYM do<br>kierunku prędkości. Jaką prędkość będzie miało ciało w chwili t(1) = 1 [s]?",
+      "id": 2268,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0 m/s",
+          "correct": true
+        },
+        {
+          "answer": "-2 m/s",
+          "correct": false
+        },
+        {
+          "answer": "2 m/s",
+          "correct": false
+        },
+        {
+          "answer": "-1 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 1 kg porusza się ruchem jednostajnym z prędkością 1 m/s. Na ciało<br>w chwili t(0) = 0 [s] zaczęłą działać siła F = 1N w kierunku ZGODNYM do kierunku<br>prędkości. Jaką prędkość będzie miało ciało w chwili t(1) = 1 [s]?",
+      "id": 2269,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "4 m/s",
+          "correct": false
+        },
+        {
+          "answer": "-1 m/s",
+          "correct": false
+        },
+        {
+          "answer": "0 m/s",
+          "correct": false
+        },
+        {
+          "answer": "2 m/s",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "W ruchu jednostajnym prostoliniowym, przyspieszenie jest skierowane:",
+      "id": 2270,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "równolegle do prędkości",
+          "correct": false
+        },
+        {
+          "answer": "nie ma przyspieszenia",
+          "correct": true
+        },
+        {
+          "answer": "prostopadle do prędkości",
+          "correct": false
+        },
+        {
+          "answer": "dowolnie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Prędkość to:",
+      "id": 2271,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wektor",
+          "correct": true
+        },
+        {
+          "answer": "szybkość zmiany położenia w czasie",
+          "correct": true
+        },
+        {
+          "answer": "skalar",
+          "correct": false
+        },
+        {
+          "answer": "szybkość zmiany przyspieszenia w czasie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 2 kg porusza się ruchem obrotowym z prędkością kątową 'w' = 1<br>[1/s] i promieniem r = 1 [m]. Jaka jest energia kinetyczna ciała?",
+      "id": 2272,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0 J",
+          "correct": false
+        },
+        {
+          "answer": "2 J",
+          "correct": false
+        },
+        {
+          "answer": "1 J",
+          "correct": true
+        },
+        {
+          "answer": "4 J",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przemieszczenie jest to:",
+      "id": 2273,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "rzeczywista droga przebyta przez punkt materialny",
+          "correct": false
+        },
+        {
+          "answer": "wektor łączący położenie początkowe z końcowym",
+          "correct": true
+        },
+        {
+          "answer": "wektor podający informację o drodze",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na orbicie Ziemi wystrzelono pocisk Z PRĘDKOŚCIĄ MNIEJSZĄ od pierwszej prędkości<br>kosmicznej dla tej orbity i prostopadłą do natężenia pola grawitacyjnego. Proszę<br>przyjąć brak tarcia oraz potraktować Ziemię i pocisk jako punkty materialne.<br>Torem pocisku będzie:",
+      "id": 2274,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "parabola",
+          "correct": true
+        },
+        {
+          "answer": "elipsa (różna od okręgu)",
+          "correct": false
+        },
+        {
+          "answer": "hiperbola",
+          "correct": false
+        },
+        {
+          "answer": "okrąg",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Orbity planet to:",
+      "id": 2275,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "epicykle",
+          "correct": false
+        },
+        {
+          "answer": "elipsy",
+          "correct": true
+        },
+        {
+          "answer": "parabole",
+          "correct": false
+        },
+        {
+          "answer": "hiperbole",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Mamy dwa wektory niewspółliniowe: A i B. Wynikiem iloczynu wektorowego tych<br>dwóch wektorów jest:",
+      "id": 2276,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wektor równoległy do wektora A",
+          "correct": false
+        },
+        {
+          "answer": "wektor równoległy do wektora B",
+          "correct": false
+        },
+        {
+          "answer": "wektor prostopadły do płaszczyzny rozpiętej przez te wektory",
+          "correct": true
+        },
+        {
+          "answer": "wektor ortogonalny do płaszczyzny rozpiętej przez te wektory",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Drugie prawo Keplera mówi, że w ruchu planety po orbicie, jej:",
+      "id": 2277,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "prędkość liniowa po orbicie jest wielkością stałą",
+          "correct": false
+        },
+        {
+          "answer": "prędkość polowa jest wielkością stałą",
+          "correct": true
+        },
+        {
+          "answer": "pole powierzchni zakreślane przez wektor wodzący planet na jednostkę czasu<br>jest stałe",
+          "correct": true
+        },
+        {
+          "answer": "prędkość polowa zależy od odległości od ogniska trajektorii",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Drugie prawo Keplera mówi, że w ruchu planety po orbicie, jej:",
+      "id": 2278,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "pole powierzchni zakreślane przez wektor wodzący planet na jednostkę czasu<br>jest stałe",
+          "correct": true
+        },
+        {
+          "answer": "prędkość polowa zależy od odległości od ogniska trajektorii",
+          "correct": false
+        },
+        {
+          "answer": "czas obiegu po trajektorii jest zsynchronizowany z ruchem obrotowym planety",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało poruszające się po prostej pod działaniem siły o wartości F = 10N w czasie<br>t = 1s zmienia swą prędkość z v(1) = 10 m/s na v(2) = 20 m/s. Masa ciała wynosi:",
+      "id": 2279,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 kg",
+          "correct": false
+        },
+        {
+          "answer": "0.1 kg",
+          "correct": false
+        },
+        {
+          "answer": "5 kg",
+          "correct": false
+        },
+        {
+          "answer": "1 kg",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "W wężu gumowym, którego jeden koniec jest sztywno uwiązany, a drugi pobudzamy do<br>drgań, powstała fala stojąca. Odległość między dwoma najbliższymi węzłami wynosi<br>1.5m, aby węzły przypadały co 1m, należy częstotliwość:",
+      "id": 2280,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "zmniejszyć 1.5 raza",
+          "correct": false
+        },
+        {
+          "answer": "zmniejszyć 3 razy",
+          "correct": false
+        },
+        {
+          "answer": "zwiększyć 1.5 raza",
+          "correct": true
+        },
+        {
+          "answer": "zwiększyć 3 razy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Koła samochodu jadącego z prędkościa 80km/h mają ŚREDNICĘ 75 cm. Ile wynosi<br>prędkość kątowa kół względem ich osi?",
+      "id": 2281,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "120 rad/s",
+          "correct": false
+        },
+        {
+          "answer": "60 rad/s",
+          "correct": false
+        },
+        {
+          "answer": "59.3 rad/s",
+          "correct": true
+        },
+        {
+          "answer": "118 rad/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Trzecie prawo Keplera mówi, że:",
+      "id": 2282,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "kwadraty czasów obiegu planet wokół Słońca mają się tak do siebie, jak<br>sześciany dużych półosi trajektorii",
+          "correct": false
+        },
+        {
+          "answer": "sześciany czasów obiegu planet wokół Słońca mają się tak do siebie, jak<br>kwadraty dużych półosi trajektorii",
+          "correct": true
+        },
+        {
+          "answer": "T(1)^2 * R(2)^3 = T(2)^2 * R(1)^3, gdzie T(i) - czas obiegu planety i, R(i) -<br>duża półoś trajektorii orbity planety i",
+          "correct": false
+        },
+        {
+          "answer": "(R(2)^3) / (R(1)^3) = (T(2)^2) / (T(1)^2), gdzie T(i) - czas obiegu planety<br>i, R(i) - duża półoś trajektorii orbity planety i",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Zmiana pędu ciała może być wywołana:",
+      "id": 2283,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "przez tarcie",
+          "correct": true
+        },
+        {
+          "answer": "działającą na to ciało siłą",
+          "correct": true
+        },
+        {
+          "answer": "tylko działającą na to ciało siłą",
+          "correct": false
+        },
+        {
+          "answer": "uderzeniem przez inne ciało",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Kinematyka, to dział fizyki o:",
+      "id": 2284,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "to nie dział fizyki, tylko matematyki",
+          "correct": false
+        },
+        {
+          "answer": "badaniu możliwości osiągnięcia przez ciało stanu spoczynku",
+          "correct": false
+        },
+        {
+          "answer": "samym ruchu ciał, bez badania przyczyn powstania tego ruchu",
+          "correct": false
+        },
+        {
+          "answer": "wyznaczania energii kinetycznej ciał",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Moment siły działający na ciało o masie m, to:",
+      "id": 2285,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wielkość fizyczna powodująca ruch obrotowy",
+          "correct": true
+        },
+        {
+          "answer": "moment, kiedy siła ma największą wartość",
+          "correct": false
+        },
+        {
+          "answer": "moment, kiedy siła ma najmniejszą wartość",
+          "correct": false
+        },
+        {
+          "answer": "iloczyn wektorowy wektora położenia i wektora siły",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Moment siły działający na ciało o masie m, to:",
+      "id": 2286,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "iloczyn wektorowy wektora położenia i wektora siły",
+          "correct": true
+        },
+        {
+          "answer": "iloczyn wektorowy wektora położenia i wektora siły, w danej chwili",
+          "correct": false
+        },
+        {
+          "answer": "iloczyn wektorowy wektora położenia i wektora siły, w chwili gdy siłą jest<br>największa",
+          "correct": false
+        },
+        {
+          "answer": "iloczyn skalarny wektora siły i wektora położenia",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przyspieszenie, to:",
+      "id": 2287,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "tensor",
+          "correct": false
+        },
+        {
+          "answer": "skalar",
+          "correct": false
+        },
+        {
+          "answer": "szybkość zmiany prędkości w czasie",
+          "correct": true
+        },
+        {
+          "answer": "szybkość zmiany drogi w czasie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przyspieszenie, to:",
+      "id": 2288,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "szybkość zmiany prędkości w czasie",
+          "correct": true
+        },
+        {
+          "answer": "szybkość zmiany drogi w czasie",
+          "correct": false
+        },
+        {
+          "answer": "wektor",
+          "correct": true
+        },
+        {
+          "answer": "a = ('d'^2 * r) / ('d' * (t^2)), gdzie r - wektor położenia, t - czas // to<br>'d' to litera 'e' obrócona o 180 stopni - pochodna",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Długość fali to:",
+      "id": 2289,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "odległość pomiędzy źródłem fali, a odbiornikiem fali",
+          "correct": false
+        },
+        {
+          "answer": "wielkość dana wzorem 'lambda' = (c / T), gdzie c - prędkość fali, T - okres<br>fali",
+          "correct": true
+        },
+        {
+          "answer": "odległość pomiędzy kolejnymi dolinami fali",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 5 kg spada w polu grawitacyjnym, g=10 [m/s^2]. Na ciało działa<br>siła oporu 2N. Jaka jest wielkość przyspieszenia 'a', z jakim porusza się ciało?",
+      "id": 2290,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "9.6 m/s^2",
+          "correct": true
+        },
+        {
+          "answer": "9.9 m/s^2",
+          "correct": false
+        },
+        {
+          "answer": "0 m/s^2",
+          "correct": false
+        },
+        {
+          "answer": "10 m/s^2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 1 kg spada w polu grawitacyjnym, g=10 [m/s^2]. Na ciało działa<br>siła oporu 2N. Jaka jest wielkość przyspieszenia 'a', z jakim porusza się ciało?",
+      "id": 2291,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "8 m/s^2",
+          "correct": true
+        },
+        {
+          "answer": "9 m/s^2",
+          "correct": false
+        },
+        {
+          "answer": "10 m/s^2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 1 kg spada w polu grawitacyjnym, g=10 [m/s^2]. Na ciało działa<br>siła oporu 2N. Jaka jest wielkość przyspieszenia 'a', z jakim porusza się ciało?",
+      "id": 2292,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "8 m/s^2",
+          "correct": true
+        },
+        {
+          "answer": "9 m/s^2",
+          "correct": false
+        },
+        {
+          "answer": "10 m/s^2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jednostką ładunku elektrycznego w systemie SI jest:",
+      "id": 2293,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1 Amper [A]",
+          "correct": false
+        },
+        {
+          "answer": "1 Volt [V]",
+          "correct": false
+        },
+        {
+          "answer": "1 Coulomb [C]",
+          "correct": true
+        },
+        {
+          "answer": "[A 'x' s] // 'x' to znak jak 2 plusy jeden pod drugim",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ciało o masie 1 [kg] spada w polu grawitacyjnym, g=10 [m/s]. Na ciało działa<br>siła oporu 2 [N]. Jaka jest wielkość przyśpieszenia , z jakim porusza się ciało?",
+      "id": 2294,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "9 [m/s]",
+          "correct": false
+        },
+        {
+          "answer": "8 [m/s]",
+          "correct": true
+        },
+        {
+          "answer": "0 [m/s]",
+          "correct": false
+        },
+        {
+          "answer": "10 [m/s]",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W jednorodnym polu grawitacyjnym na wysokości 100m nad Ziemią wystrzelono pocisk<br>z prędkością V = 1000m/s prostopadłą do natężenia pola grawitacyjnego. Proszę<br>przyjąć brak tarcia oraz stałe natężenie pola grawitacyjnego. Torem pocisku<br>będzie:",
+      "id": 2295,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "parabola",
+          "correct": true
+        },
+        {
+          "answer": "elipsa",
+          "correct": false
+        },
+        {
+          "answer": "hiperbola",
+          "correct": false
+        },
+        {
+          "answer": "linia prosta",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Po równi pochyłej stacza się jednorodna kula. Ile musi wynosić kąt nachylenia<br>równi do poziomu, aby przyspieszenie liniowe środka kuli miało wartość równą 0.1<br>g?",
+      "id": 2296,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "5 stopni",
+          "correct": false
+        },
+        {
+          "answer": "16 stopni",
+          "correct": false
+        },
+        {
+          "answer": "8 stopni",
+          "correct": false
+        },
+        {
+          "answer": "10 stopni",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Kula toczy się po równi bez poślizgu. Przyspieszenie z jakim porusza się ciało,<br>zależy od:",
+      "id": 2297,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "masy kuli",
+          "correct": false
+        },
+        {
+          "answer": "wysokości równi",
+          "correct": false
+        },
+        {
+          "answer": "kąta nachylenia równi",
+          "correct": true
+        },
+        {
+          "answer": "długości równi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Częstotliwość podstawowa drgań struny wynosi 32 Hz. Które z częstotliwości są<br>częstotliwościami harmonicznymi dla danej struny:",
+      "id": 2298,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "96 Hz",
+          "correct": true
+        },
+        {
+          "answer": "64 Hz",
+          "correct": true
+        },
+        {
+          "answer": "8 Hz",
+          "correct": false
+        },
+        {
+          "answer": "16 Hz",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W czasie 0.1 s ręka koszykarza trzymającego nieruchomo piłkę nadała jej pęd o<br>wartości 3 [kg m/s^2]. Średnia wartość siły, z jaką ręka zadziałałą w tym czasie<br>na tę piłkę wynosi:",
+      "id": 2299,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1.5 N",
+          "correct": false
+        },
+        {
+          "answer": "30 N",
+          "correct": true
+        },
+        {
+          "answer": "15 N",
+          "correct": false
+        },
+        {
+          "answer": "0.3 N",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "TrePrzyspieszenie kątowe:",
+      "id": 2300,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "występuje w ruchu obrotowym",
+          "correct": true
+        },
+        {
+          "answer": "występuje w ruchu liniowym",
+          "correct": false
+        },
+        {
+          "answer": "jest zawsze stałe",
+          "correct": true
+        },
+        {
+          "answer": "jest wyktorem leżącym na osi obrotu i skierowanym zgodnie z regułą śruby<br>prawoskrętnej",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Przyspieszenie kątowe:",
+      "id": 2301,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "występuje w ruchu obrotowym",
+          "correct": true
+        },
+        {
+          "answer": "jest to wielkość skalarna",
+          "correct": false
+        },
+        {
+          "answer": "jest wyktorem leżącym na osi obrotu i skierowanym zgodnie z regułą śruby<br>prawoskrętnej",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Fala stojąca, opisana funkcją y = y(x,t), charakteryzuje się następującymi<br>cechami:",
+      "id": 2302,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "funkcja y(x,t)= y(x), czyli jest niezależna od czasu",
+          "correct": false
+        },
+        {
+          "answer": "ma nieskończoną liczbę punktów nie drgających",
+          "correct": false
+        },
+        {
+          "answer": "posiada punkty A nie drgające, czyli takie, że y(A,t) = 0",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p>TOkres drgań wahadła matematycznego:</p>",
+      "id": 2303,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "jest zależny od przyspieszenia grawitacyjnego",
+          "correct": true
+        },
+        {
+          "answer": "jest niezależny od przyspieszenia grawitacyjnego",
+          "correct": false
+        },
+        {
+          "answer": "jest niezależny od długości wahadła",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Fala biegnąca wzdłuż liny opisana jest wzorem: y(x,t) = 0.00327 sin(72.1x-<br>2.72t), w którym wszystkie stałe numeryczne wyrażone są w jednostkach układu SI<br>(0.00327 m, 72.1 rad/m oraz 2.72rad/s). Długość fali, jej okres i częstość<br>wynoszą:",
+      "id": 2304,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "7.81 cm, T = 2.31 ms, f = 4.33 Hz",
+          "correct": false
+        },
+        {
+          "answer": "8.71 cm, T = 2.31 s, f = 0.433 Hz",
+          "correct": false
+        },
+        {
+          "answer": "7.81 cm, T = 2.31 s, f = 0.433 Hz",
+          "correct": true
+        },
+        {
+          "answer": "8.71 m, T = 2.31 ms, f = 4.33 Hz",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "O momencie bezwładności można powiedzieć:",
+      "id": 2305,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "posługując się pojęciem momentu bezwładności można wyrazić energię kinetyczną<br>obracającego się ciała sztywnego",
+          "correct": true
+        },
+        {
+          "answer": "posługując się pojęciem momentu bezwładności nie można wyrazić energię<br>kinetyczną obracającego się ciała sztywnego",
+          "correct": false
+        },
+        {
+          "answer": "moment bezwładności ciała zależy od wyboru osi obrotu",
+          "correct": true
+        },
+        {
+          "answer": "moment bezwładności ciała nie zależy od wyboru osi obrotu",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "TreO momencie bezwładności można powiedzieć:",
+      "id": 2306,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "posługując się pojęciem momentu bezwładności można wyrazić energię kinetyczną<br>obracającego się ciała sztywnego",
+          "correct": true
+        },
+        {
+          "answer": "moment bezwładności ciała zależy od wyboru osi obrotu",
+          "correct": true
+        },
+        {
+          "answer": "moment bezwładności ciała zależy od kształtu ciała i od rozmieszczenia masy w<br>ciele",
+          "correct": true
+        },
+        {
+          "answer": "to miara bezwładności ciała w ruchu obrotowym",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Koła samochodu jadącego z prędkością 80 km/h mają średnicę 75 cm. Samochód ten<br>hamuje jednostajnie, bez poślizgu aż do zatrzymania się, przy czym koła wykonują<br>30 pełnych obrotów. Jaką drogę przebywa samochód w czasie hamowania?",
+      "id": 2307,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "70.7 m",
+          "correct": true
+        },
+        {
+          "answer": "56.4 m",
+          "correct": false
+        },
+        {
+          "answer": "70.7 cm",
+          "correct": false
+        },
+        {
+          "answer": "56.4 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Siła napędowa samochodu wynosi 3000 N, a siły oporów ruchu 1000 N. Od pewnego<br>momentu jazdy na samochód ten zaczęła działać dodatkowa siłą oporu o wartości<br>3000 N. Od tego momentu samochód zaczął poruszać się:",
+      "id": 2308,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "w tę samą stronę, co przedtem, ale ruchem jednostajnym",
+          "correct": false
+        },
+        {
+          "answer": "w tę samą stronę, co przedtem, ale ruchem opóźnionym",
+          "correct": true
+        },
+        {
+          "answer": "w przeciwną stronę, niż przedtem, ruchem opóźnionym",
+          "correct": false
+        },
+        {
+          "answer": "w tę samą stronę, co przedtem, ale z większym przyspieszeniem",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Fala biegnąca wzdłuż liny opisana jest wzorem: y(x,t) = 0.00327 sin(72.1x-<br>2.72t), w którym wszystkie stałe numeryczne wyrażone są w jednostkach układy SI<br>(0.00327 m, 71.1 rad/m oraz 2.72 rad/s). Przemieszcznie 'y' punktu x = 22.5 cm<br>wynosi:",
+      "id": 2309,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "-1.92 mm",
+          "correct": false
+        },
+        {
+          "answer": "-3.01 mm",
+          "correct": false
+        },
+        {
+          "answer": "3.01 mm",
+          "correct": true
+        },
+        {
+          "answer": "1.92 mm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Piłka tenisowa spada swobodnie z wysokości H. Podczas zderzenia piłki z podłogą<br>50% jej energii kinetycznej ulega rozproszeniu. Na jaką wysokość wzniesie się ta<br>piłka po drugim odbiciu:",
+      "id": 2310,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "H / 2^0.5",
+          "correct": false
+        },
+        {
+          "answer": "H / 4",
+          "correct": true
+        },
+        {
+          "answer": "H / 2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Gdy dwie fale sinusoidalne o takich samych amplitudach i długościach fali biegną<br>w przeciwnych kierunkach wzdłuż napiętej liny, to w wyniku ich interferencji:",
+      "id": 2311,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "następuje całkowite wygaszenie fali na całej długości struny",
+          "correct": true
+        },
+        {
+          "answer": "powstaje fala stojąca",
+          "correct": false
+        },
+        {
+          "answer": "wystąpi dudnienie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Prędkość ucieczki z Ziemi wynosi:",
+      "id": 2312,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "16.7 km/s",
+          "correct": false
+        },
+        {
+          "answer": "7.0789 km/s",
+          "correct": false
+        },
+        {
+          "answer": "11.186 km/s",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Twórcą teorii pola elektromagnetycznego jest:",
+      "id": 2368,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Andre Marie Ampere",
+          "correct": false
+        },
+        {
+          "answer": "Hans Christian Oersted",
+          "correct": false
+        },
+        {
+          "answer": "Charles Coulomb",
+          "correct": false
+        },
+        {
+          "answer": "James Clerk Maxwell",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

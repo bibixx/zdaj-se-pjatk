@@ -1,0 +1,2029 @@
+{
+  "title": "Technologie Internetu (TIN)",
+  "id": "tin",
+  "data": [
+    {
+      "question": "Rejestr złożony z „zielonych”, „białych” i żółtych stron jest opisany specyfikacja:",
+      "id": 2116,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "SOAP",
+          "correct": false
+        },
+        {
+          "answer": "ebXML",
+          "correct": false
+        },
+        {
+          "answer": "UDDI",
+          "correct": true
+        },
+        {
+          "answer": "XLST",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W strukturze kopert (envelope) SOAP, nagłówki są przeznaczone dla:",
+      "id": 2117,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zawsze dla ostatecznego odbiorcy komunikatu",
+          "correct": false
+        },
+        {
+          "answer": "Dla węzłów pośredniczących lub dla docelowego odbiorcy- to zależy",
+          "correct": true
+        },
+        {
+          "answer": "Zawsze dla węzłów pośredniczących",
+          "correct": false
+        },
+        {
+          "answer": "Dla protokołów niższej warstwy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zastosowanie XML do zapisu komunikatów SOAP nie jest motywowane:",
+      "id": 2118,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Umożliwieniem odczytu komunikatu na dowolnej platformie",
+          "correct": false
+        },
+        {
+          "answer": "Umożliwieniem bezpośredniego pisania komunikatów przez użytkownika",
+          "correct": true
+        },
+        {
+          "answer": "Umożliwieniem forsowania zapór ogniowych (firewall)",
+          "correct": false
+        },
+        {
+          "answer": "Dążeniem do wykorzystania infrastruktury protokołu http",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "DOM (Document Object Model) jest :",
+      "id": 2119,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Deklaratywnym językiem przekształceń XML opratym na szablonach",
+          "correct": false
+        },
+        {
+          "answer": "Strumieniowym i zdarzeniowym interfejsem obróbki XML",
+          "correct": false
+        },
+        {
+          "answer": "Interfejsem do XML pozwalającym nawigować w drzewie dokumentu",
+          "correct": true
+        },
+        {
+          "answer": "Interfejsem zaliczanym do klasy tzw. Wiązań XML (XML Binding)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wyrażenie ścieżkowe w XPath:",
+      "id": 2120,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Selekcjonuje zawsze pojedynczy element lub atrybut",
+          "correct": false
+        },
+        {
+          "answer": "Rozpoczyna się do bieżącego katalogu na dysku",
+          "correct": false
+        },
+        {
+          "answer": "Może zawierać predykaty precyzujące zakres poszukiwań",
+          "correct": true
+        },
+        {
+          "answer": "Może zawierać zagnieżdżony kod Java Script",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W DTD typ atrybutu możemy m.in. określić jako",
+      "id": 2121,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Date",
+          "correct": false
+        },
+        {
+          "answer": "INT",
+          "correct": false
+        },
+        {
+          "answer": "String",
+          "correct": false
+        },
+        {
+          "answer": "ID",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Pokazany niżej element XML „tresc” posiada:<br>\n<br>\n&lt;tresc&gt;<br>\nSzanowny Panie<br>\n&lt;nazwisko klienta&gt;Kowalski&lt;/nazwisko klienta&gt;<br>\nPotwierdzamy przyjęcie Pana zamówienia.<br>\n&lt;/tresc&gt;<br>",
+      "id": 2122,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zawartość tekstową",
+          "correct": false
+        },
+        {
+          "answer": "Zawartość elementową",
+          "correct": false
+        },
+        {
+          "answer": "Zawartość mieszaną",
+          "correct": true
+        },
+        {
+          "answer": "Trzy encje wewnętrzne",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "We wzorcu PRG( POST-REDIRECT-GET) celem jest:",
+      "id": 2182,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zmniejszenie liczby przesyłanych komunikatów przy komunikacji ze stroną",
+          "correct": false
+        },
+        {
+          "answer": "Zapewnienie spójnej nawigacji użytkowniki po stronach",
+          "correct": true
+        },
+        {
+          "answer": "Zapobieganie atakowi polegającemu na przekierowaniu do wrogiej strony",
+          "correct": false
+        },
+        {
+          "answer": "Wyelminownie konieczności stosowania żadań POST",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p><!--[if gte mso 9]><xml>\n <w:WordDocument>\n  <w:View>Normal</w:View>\n  <w:Zoom>0</w:Zoom>\n  <w:TrackMoves/>\n  <w:TrackFormatting/>\n  <w:HyphenationZone>21</w:HyphenationZone>\n  <w:PunctuationKerning/>\n  <w:ValidateAgainstSchemas/>\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\n  <w:DoNotPromoteQF/>\n  <w:LidThemeOther>PL</w:LidThemeOther>\n  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>\n  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>\n  <w:Compatibility>\n   <w:BreakWrappedTables/>\n   <w:SnapToGridInCell/>\n   <w:WrapTextWithPunct/>\n   <w:UseAsianBreakRules/>\n   <w:DontGrowAutofit/>\n   <w:SplitPgBreakAndParaMark/>\n   <w:DontVertAlignCellWithSp/>\n   <w:DontBreakConstrainedForcedTables/>\n   <w:DontVertAlignInTxbx/>\n   <w:Word11KerningPairs/>\n   <w:CachedColBalance/>\n  </w:Compatibility>\n  <m:mathPr>\n   <m:mathFont m:val=\"Cambria Math\"/>\n   <m:brkBin m:val=\"before\"/>\n   <m:brkBinSub m:val=\"&#45;-\"/>\n   <m:smallFrac m:val=\"off\"/>\n   <m:dispDef/>\n   <m:lMargin m:val=\"0\"/>\n   <m:rMargin m:val=\"0\"/>\n   <m:defJc m:val=\"centerGroup\"/>\n   <m:wrapIndent m:val=\"1440\"/>\n   <m:intLim m:val=\"subSup\"/>\n   <m:naryLim m:val=\"undOvr\"/>\n  </m:mathPr></w:WordDocument>\n</xml><![endif]--><!--[if gte mso 9]><xml>\n <w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"true\"\n  DefSemiHidden=\"true\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"267\">\n  <w:LsdException Locked=\"false\" Priority=\"0\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Normal\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"heading 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 7\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 8\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 9\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 7\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 8\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"toc 9\"/>\n  <w:LsdException Locked=\"false\" Priority=\"35\" QFormat=\"true\" Name=\"caption\"/>\n  <w:LsdException Locked=\"false\" Priority=\"10\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Title\"/>\n  <w:LsdException Locked=\"false\" Priority=\"1\" Name=\"Default Paragraph Font\"/>\n  <w:LsdException Locked=\"false\" Priority=\"11\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtitle\"/>\n  <w:LsdException Locked=\"false\" Priority=\"22\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Strong\"/>\n  <w:LsdException Locked=\"false\" Priority=\"20\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"59\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Table Grid\"/>\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Placeholder Text\"/>\n  <w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"No Spacing\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" UnhideWhenUsed=\"false\" Name=\"Revision\"/>\n  <w:LsdException Locked=\"false\" Priority=\"34\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"List Paragraph\"/>\n  <w:LsdException Locked=\"false\" Priority=\"29\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Quote\"/>\n  <w:LsdException Locked=\"false\" Priority=\"30\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Quote\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Shading Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Light Grid Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Shading 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium List 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Medium Grid 3 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Dark List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Shading Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" Name=\"Colorful Grid Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"19\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"21\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"31\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Subtle Reference\"/>\n  <w:LsdException Locked=\"false\" Priority=\"32\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Intense Reference\"/>\n  <w:LsdException Locked=\"false\" Priority=\"33\" SemiHidden=\"false\"\n   UnhideWhenUsed=\"false\" QFormat=\"true\" Name=\"Book Title\"/>\n  <w:LsdException Locked=\"false\" Priority=\"37\" Name=\"Bibliography\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" QFormat=\"true\" Name=\"TOC Heading\"/>\n </w:LatentStyles>\n</xml><![endif]--><!--[if gte mso 10]>\n<style>\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:Standardowy;\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:10.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:11.0pt;\n\tfont-family:\"Calibri\",\"sans-serif\";\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-fareast-language:EN-US;}\n</style>\n<![endif]--><strong><span>Poniższy dokument XML jest:</span></strong></p>\n<p><br><!--[if gte mso 9]><xml>\n <o:OfficeDocumentSettings>\n  <o:RelyOnVML/>\n  <o:AllowPNG/>\n </o:OfficeDocumentSettings>\n</xml><![endif]--></p>\n<p class=\"MsoListParagraphCxSpFirst\"><span>&nbsp;</span>&lt;?xml version=”1.0” encoding =”UTF-8”&gt;</p>\n<p class=\"MsoListParagraphCxSpMiddle\">&lt;dokument autor = „Nowak”&gt;</p>\n<p class=\"MsoListParagraphCxSpMiddle\">To jest treść dokumentu</p>\n<p class=\"MsoListParagraphCxSpLast\">&lt;dokument&gt;\n          </p>",
+      "id": 2123,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Poprawny, ale tylko składniowo (well fordem)",
+          "correct": false
+        },
+        {
+          "answer": "Poprawny, ale tylko strukturalnie (valid)",
+          "correct": false
+        },
+        {
+          "answer": "Poprawny składniowo i strukturalnie",
+          "correct": false
+        },
+        {
+          "answer": "Niepoprawny",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Z punktu widzenia bezpieczeństwa, plik Cookiem powinny być:",
+      "id": 2124,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wyłączone z użycia poprzez odpowiednie ustawienia konfiguracyjne przeglądarki",
+          "correct": false
+        },
+        {
+          "answer": "Używane tylko w czas pojedynczych sesji (session Cookiem)",
+          "correct": false
+        },
+        {
+          "answer": "Pozbawione newralgicznych danych (autentykacja, karta płatnicza)",
+          "correct": true
+        },
+        {
+          "answer": "Zawsze zaszyfrowane - w transmisji na dysku",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Które z zaleceń jest niewłaściwe dla bezpiecznego identyfikatora sesji w aplikacji WWW?</strong>\n          </p>",
+      "id": 2125,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Powinien być w pełni losowy",
+          "correct": false
+        },
+        {
+          "answer": "Powinien mieć ograniczony okres ważności",
+          "correct": false
+        },
+        {
+          "answer": "Powinien mieć znaczną długość",
+          "correct": false
+        },
+        {
+          "answer": "Jego wartość powinna zależeć od parametrów użytkownika",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Dla aplikacji WWW służących sprzedaży towarów poprzez Internet, najbardziej wskazany jest model:</strong>\n          </p>",
+      "id": 2126,
+      "comments": null,
+      "answers": [
+        {
+          "answer": ",,grubego klienta''",
+          "correct": false
+        },
+        {
+          "answer": ",,dostawy WWW''",
+          "correct": false
+        },
+        {
+          "answer": ",,cienkiego klienta\"",
+          "correct": true
+        },
+        {
+          "answer": ",,klienta-broker-serwer\"",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Komunikacja z serwerem aplikacyjnym za pomocą RMI jest cechą:",
+      "id": 2127,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "aplikacji WWW w modelu „grubego klienta”",
+          "correct": false
+        },
+        {
+          "answer": "aplikacji WWW w modelu „dostawy WWW”",
+          "correct": true
+        },
+        {
+          "answer": "aplikacji WWW w modelu „cienkiego klienta”",
+          "correct": false
+        },
+        {
+          "answer": "aplikacji opartych na Web Services",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<strong>Dla którego z poniższych zadań środki wyrazu języka DTD nie wystarczą?</strong>",
+      "id": 2177,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Deklaracja wartości domyślnej dla atrybutu",
+          "correct": false
+        },
+        {
+          "answer": "Deklaracja wartości domyślnej dla elemetnu",
+          "correct": true
+        },
+        {
+          "answer": "Zdefiniowanie encji znakowej",
+          "correct": false
+        },
+        {
+          "answer": "Deklaracja elemtnu o zawartości mieszanej",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<strong>Usługą, która nie wykazuje zjawiska ,,lokalności odwołan\" jest</strong>",
+      "id": 2178,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "NFS",
+          "correct": false
+        },
+        {
+          "answer": "Telnet",
+          "correct": false
+        },
+        {
+          "answer": "e-mail",
+          "correct": false
+        },
+        {
+          "answer": "WWW",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Tzw. Dynamiczny HTML opiera się na specyfikacjach: </strong>\n          </p>",
+      "id": 2128,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "HTML, JSP i Serverletach",
+          "correct": false
+        },
+        {
+          "answer": "HTML, PHP i MySql",
+          "correct": false
+        },
+        {
+          "answer": "HTML, DOM, CSS, JavaScript",
+          "correct": true
+        },
+        {
+          "answer": "XML, SOAP, WSDL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Ciasteczka (Cookies) umożliwiają skryptom: </strong>\n          </p>",
+      "id": 2129,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "prześledzenie aktywności użytkownika w innych serwisach",
+          "correct": false
+        },
+        {
+          "answer": "odczytanie bez ingerencji użytkownika jego adresu e-mail i loginu w systemie operacyjnym",
+          "correct": false
+        },
+        {
+          "answer": "uproszczenie autentykacji klienta przy kolejnej wizycie",
+          "correct": true
+        },
+        {
+          "answer": "instalację kodu uruchamianego przy starcie przeglądarki",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Podejście REST (Representational State Transfer) nie zaleca:",
+      "id": 2130,
+      "comments": [
+        {
+          "author": "~GoodGirl@89.67.*.*",
+          "comment": "Poprawna: \"Podtrzymania stanu sesji na serwerze\"\nNa podstawie wykładu 12, slajd 4",
+          "date": "27-01-2014 19:23:58"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawiam.",
+          "date": "27-01-2014 19:29:28"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Udostępnienia zasobów wyodrębnionych jako encje",
+          "correct": false
+        },
+        {
+          "answer": "Podtrzymania stanu sesji na serwerze",
+          "correct": true
+        },
+        {
+          "answer": "Przesłania w reprezentacjach zasobów dalszych odsyłaczy URL",
+          "correct": false
+        },
+        {
+          "answer": "Ograniczenia dostępnych akcji do metod Web API",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Który z komunikatów występuje w protokole http?</strong>\n          </p>",
+      "id": 2131,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "PING",
+          "correct": false
+        },
+        {
+          "answer": "HEAD",
+          "correct": true
+        },
+        {
+          "answer": "BODY",
+          "correct": false
+        },
+        {
+          "answer": "ENCRYPT",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Centralizacja niektórych aspektów w technologii P2P nie jest podyktowana problemem:",
+      "id": 2132,
+      "comments": [
+        {
+          "author": "~GoodGirl@89.67.*.*",
+          "comment": "Poprawna: \"Zapewnienia prywatności uczestników\"",
+          "date": "27-01-2014 23:13:36"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawiam.",
+          "date": "27-01-2014 23:14:42"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "sprawności wyszukiwania innych węzłów",
+          "correct": false
+        },
+        {
+          "answer": "Sprawności wyszukiwania zasobów",
+          "correct": false
+        },
+        {
+          "answer": "Wprowadzenia systemu uprawnień",
+          "correct": false
+        },
+        {
+          "answer": "Zapewnienia prywatności uczestników",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Wskaż zalecenie niewłaściwe dla bezpiecznego identyfikatora sesji w aplikacji:",
+      "id": 2133,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Powinien być w pełni losowy",
+          "correct": false
+        },
+        {
+          "answer": "Powinien mieć ograniczony okres ważności",
+          "correct": false
+        },
+        {
+          "answer": "Powinien mieć zaznaczoną długość",
+          "correct": false
+        },
+        {
+          "answer": "Jego wartość powinna zależeć od parametrów użytkownika",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Protokół TCP jest protokołem :</strong>\n          </p>",
+      "id": 2134,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Połączeniowym , niezawodnego przesyłania",
+          "correct": true
+        },
+        {
+          "answer": "Bezpołączeniowym, niezawodnego przesyłania",
+          "correct": false
+        },
+        {
+          "answer": "Połączeniowym, bez potwierdzenia odbioru",
+          "correct": false
+        },
+        {
+          "answer": "Bezpołączeniowym, bez potwierdzenia odbioru",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>W modelu warstw protokołów internetowych, protokół http przynależy do warstwy:</strong>\n          </p>",
+      "id": 2135,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Połączeniowej",
+          "correct": false
+        },
+        {
+          "answer": "Sieciowej",
+          "correct": false
+        },
+        {
+          "answer": "Transportowej",
+          "correct": false
+        },
+        {
+          "answer": "Aplikacji",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Rejestr UDDI jest dostępny jako<span>&nbsp; </span>(wskaż kompletną odpowiedź):</strong>\n          </p>",
+      "id": 2136,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Tradycyjny serwis WWW",
+          "correct": false
+        },
+        {
+          "answer": "Tradycyjny serwis WWW oraz jako usługa Web Service",
+          "correct": true
+        },
+        {
+          "answer": "Usługa Web Service",
+          "correct": false
+        },
+        {
+          "answer": "Usługa standardu Corba lub usługa Web Service",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Selektor CSS sformułowany jako h5.n1 selekcjonuje element[y]:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2137,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>&lt;h5 id=”n1”&gt;....&lt;/h5&gt;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;&nbsp;&nbsp;</span></strong><span lang=\"\\&quot;\\\\&quot;EN-US\\\\&quot;\\&quot;\">&lt;h5&gt;n1&lt;/h5&gt;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;</span></strong><span>&lt;h5 n1=”true”&gt;.... &lt;/h5&gt;</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;&lt;h5 class=”n1”&gt;... &lt;/h5&gt;",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraph\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Transport bez gwarancji niezawodnego dostarczenia oferuje protokół:</strong></p>",
+      "id": 2138,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "FTP",
+          "correct": false
+        },
+        {
+          "answer": "UDP",
+          "correct": true
+        },
+        {
+          "answer": "<span>TCP</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>IMCP</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Która z poniższych cech jest nieodłączną właściwością Web Services:</strong>\n          </p>",
+      "id": 2139,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Sprzedaż usługi poprzez serwis internetowy",
+          "correct": false
+        },
+        {
+          "answer": "Wykorzystanie usługi przez oprogramowanie mobilnych agentów",
+          "correct": false
+        },
+        {
+          "answer": "Czytelny maszynowo opis semantyki usługi",
+          "correct": false
+        },
+        {
+          "answer": "Hermetyzacja",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<strong>Wadą języków znaczników jest</strong>",
+      "id": 2176,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Niemożność automatycznego skontrolowania poprawności",
+          "correct": false
+        },
+        {
+          "answer": "Problem przenośności ich pomiędzy różnymi platformami systemowymi",
+          "correct": false
+        },
+        {
+          "answer": "Niemożność wzbogacenia zawartości informacyjnej bez zmiany programów przetwarzających dokument",
+          "correct": false
+        },
+        {
+          "answer": "Znaczna objętość zapisanej tak informacji",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<strong><span>W języku Xforms walidacja formularzy jest osiągalna za pomocą:</span></strong>",
+      "id": 2140,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<p class=\"\\&quot;\\\\&quot;MsoListParagraph\\\\&quot;\\&quot;\"><span>Definicja danych oparta na XML Schema</span></p>",
+          "correct": true
+        },
+        {
+          "answer": "<p class=\"\\&quot;\\\\&quot;MsoListParagraph\\\\&quot;\\&quot;\">Definicji nanych opartych na DTD<strong></strong></p>",
+          "correct": false
+        },
+        {
+          "answer": "<span>Skryptów w języku JavaScript</span>",
+          "correct": false
+        },
+        {
+          "answer": "<p class=\"\\&quot;\\\\&quot;MsoListParagraph\\\\&quot;\\&quot;\">Wyrażeń Xpath<strong></strong></p>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Język WSDL służy wyspecyfikowaniu (wskaż kompletną odpowiedź):</strong>\n          </p>",
+      "id": 2141,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zapotrzebowanie klienta na usługę WWW",
+          "correct": false
+        },
+        {
+          "answer": "Technicznych aspektów współpracy z usługą",
+          "correct": true
+        },
+        {
+          "answer": "Technicznych aspetków wywołania oraz semantyki usługi",
+          "correct": false
+        },
+        {
+          "answer": "Semantyki usługi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Projekt Seti@Home to:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2142,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "System rozproszonych obliczeń oparty na P2P",
+          "correct": true
+        },
+        {
+          "answer": "<span>Eksperymentalny system dzielenia plików mający gwarantować totalną</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;</span></strong><span>Komunikator internetowy oparty na platformie Java</span>",
+          "correct": false
+        },
+        {
+          "answer": "<p class=\"\\&quot;MsoListParagraph\\&quot;\">Generyczna platforma do tworzenia systemów opartych o architekturę P2P<strong></strong></p>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Definicja w Języku WSDL nie obejmuje",
+      "id": 2143,
+      "comments": [
+        {
+          "author": "~GoodGuy@31.11.*.*",
+          "comment": "Tutaj \"Wskazania usług, które trzeba wywołać przed użyciem specyfikowanej usługi\"\n\nŹródło: Prezentacja 11, slajdy: od 14-18",
+          "date": "27-01-2014 19:01:54"
+        },
+        {
+          "author": "mykhi",
+          "comment": "fixed.",
+          "date": "27-01-2014 19:04:39"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Specyfikacji typów XML użytych w komunikatach",
+          "correct": false
+        },
+        {
+          "answer": "Specyfikacji komunikatów użytych w operacjach",
+          "correct": false
+        },
+        {
+          "answer": "Specyfikacji sposobu wiązania usługi z protokołem niższej warstwy",
+          "correct": false
+        },
+        {
+          "answer": "Wskazania usług, które trzeba wywołać przed użyciem specyfikowanej usługi",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span lang=\"EN-US\"><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong><span lang=\"EN-US\">SAX ( Simple Api for XML) jest:</span></strong>\n          </p>",
+      "id": 2144,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Deklaratywnym językiem przekształceń XML opartym na szablonach",
+          "correct": false
+        },
+        {
+          "answer": "Strumieniowym i zdarzeniowym interfejsem obróbki XML",
+          "correct": true
+        },
+        {
+          "answer": "Intefejsem do XML pozwalającym nawigować po drzewie dokumentu",
+          "correct": false
+        },
+        {
+          "answer": "Językiem zgodnym ze składnia XML, przewidzianym do zagnieżdżenia w dokumentach",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong><em><span lang=\"EN-US\">1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></em></strong><!--[endif]-->&nbsp;<strong><span lang=\"EN-US\">Poniższy dokument XML:<em></em></span></strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong><span lang=\"EN-US\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>&lt;?xml &nbsp;version=”1.0” encoding=”UTF-8” ?&gt;</em></span></strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong><em><span lang=\"EN-US\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!DOCTYPE dok [ &lt;!ELEMENT dok EMPTY &gt; ] &gt;</span></em></strong></p>\n<p>&nbsp;</p>\n<p class=\"MsoListParagraphCxSpLast\"><strong><em><span lang=\"EN-US\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;dok id=”a1” /&gt;</span></em></strong></p>",
+      "id": 2145,
+      "comments": [
+        {
+          "author": "~morda@89.64.*.*",
+          "comment": "Poprawny ale tylko składniowo (well formed)",
+          "date": "04-02-2018 00:29:24"
+        },
+        {
+          "author": "~anon@2a01:110f:150c:8e00:7d39:d29:ed8c:ef69",
+          "comment": "jeśli niepoprawny to niech ktoś wskaże błąd, wg mnie:\n\tPoprawny składniowo i strukturalnie",
+          "date": "04-02-2020 19:56:14"
+        },
+        {
+          "author": "~albatros@5.173.*.*",
+          "comment": "Czy atrybuty mogą być zapisane w tagu zamykającym? Wydaje mi się, że to przez to niepoprawny. ",
+          "date": "05-02-2020 11:44:16"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<p class=\"\\&quot;\\\\&quot;\\\\\\\\&quot;MsoListParagraphCxSpFirst\\\\\\\\&quot;\\\\&quot;\\&quot;\">Poprawny ale tylko składniowo (well formed)</p>",
+          "correct": false
+        },
+        {
+          "answer": "<span>Poprawny ale tylko strukturalnie (valid)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>Poprawny składniowo i strukturalnie</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;&nbsp;Niepoprawny",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Język XSLT:</strong>\n          </p>",
+      "id": 2146,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "W dokumentach XML zastępuje stosowane w HTML arkusze CSS",
+          "correct": false
+        },
+        {
+          "answer": "Jest obiektowym językiem manipulacji w dokumentach XML",
+          "correct": false
+        },
+        {
+          "answer": "Posiada instrukcje warunkowe i twory podobne do procedur",
+          "correct": true
+        },
+        {
+          "answer": "Jest strumieniowym interfejsem programistycznym do obróbki XML",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraph\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Wyrażenie XPath w postaci //student/imie[2] zwróci:</strong></p>",
+      "id": 2147,
+      "comments": [
+        {
+          "author": "~domino@89.67.*.*",
+          "comment": "Tu jest chyba błąd powinno być: drugie imie pierwszego studenta...",
+          "date": "28-06-2016 08:54:48"
+        },
+        {
+          "author": "~JanPawełTrzeci@91.230.*.*",
+          "comment": "wyżej jest zadanie z /lista/student/imie[2], i tam jest napisane \"drugie imie pierwszego studenta\"",
+          "date": "28-06-2016 09:33:34"
+        },
+        {
+          "author": "~domino@188.146.*.*",
+          "comment": "Aaa faktycznie na pierwszy rzut oka nie zauwazylem roznicy ;)",
+          "date": "28-06-2016 09:43:46"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<p class=\"\\&quot;MsoListParagraphCxSpFirst\\&quot;\"><span>elementy student, które posiadają dokładnie po 2 pod elementy imię</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;wszystkie drugie imiona studentów w dokumencie",
+          "correct": true
+        },
+        {
+          "answer": "<span>imię lub imiona drugiego studenta w dokumencie</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;</span></strong><span>drugie imie pierwszego studenta zapisanego w dokumencie</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Z punktu widzenia zaleceń bezpieczeństwa, komentarze dot. kodu PHP:</strong></p>",
+      "id": 2148,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>należy bezwzględnie usunąć z umieszczonych na serwerze stron</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;mogą występować jedynie jako komentarze kodu PHP (tj. /*..*/ lub //)",
+          "correct": true
+        },
+        {
+          "answer": "<span>&nbsp;</span><span>mogą występować jedynie jako komentarze kodu HTML &lt;!--.....--&gt;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>można pozostawić w dowolnej postaci w kodzie strony</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Aby zapisać w DTD, że osoba może mieć 1 lub 2 imiona, należy</strong>\n          </p>",
+      "id": 2149,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "&lt;!ELEMENT osoba (imię,imię?)&gt;",
+          "correct": true
+        },
+        {
+          "answer": "&lt;!ELEMENT osoba(imię)[1..2]&gt;",
+          "correct": false
+        },
+        {
+          "answer": "&lt;!ELEMENT imię[imię](osoba)&gt;",
+          "correct": false
+        },
+        {
+          "answer": "Nie można sformułować takiego warunku",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>W aplikacji WWW realizującej w Javie wzorzec „model-widok-kontroler” funkcje kontrolera realizuje:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2150,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "&nbsp;&nbsp;<span lang=\"\\&quot;EN-US\\&quot;\">Servlet??</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;</span><span lang=\"\\&quot;EN-US\\&quot;\">Strona JSP</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>Komponent Entity Bean</span><span>&nbsp;</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;</span><span>Adapter JDBC</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Pokazany niżej element XML \"zamowienie\" posiada<br><br>\n&lt;zamowienie&gt;<br>\n&lt;klient&gt;Janko Chanowski&lt;/klient&gt;<br>\n&lt;towar&gt;MS Word PL&lt;/towar&gt;<br>\n&lt;/zamówienie&gt;<br>",
+      "id": 2151,
+      "comments": [
+        {
+          "author": "~Baza@95.160.*.*",
+          "comment": "To pytanie nie ma sensu. Pytanie jest o czymś innym a wiadomość o czym innym.Chodzi raczej o coś w stylu:\n<lista>\n<imie1></imie1>\n<imie2></imie2>\n</lista>",
+          "date": "27-01-2014 09:48:50"
+        },
+        {
+          "author": "~anon@95.160.*.*",
+          "comment": "powinno byc pytanie Pokazany niżej element XML \"zamowienie\" posiada\n<zamowienie>\n\n<klient>Janko Chanowski</klient>\n\n<towar>MS Word PL</towar>\n\n</zamówienie>\n\nale sie walnolem przy wpisywaniu xd\n",
+          "date": "27-01-2014 10:58:26"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawiłem.",
+          "date": "27-01-2014 13:08:58"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Zawartość tekstową",
+          "correct": false
+        },
+        {
+          "answer": "Zawartość elementową",
+          "correct": true
+        },
+        {
+          "answer": "Zawartość mieszaną",
+          "correct": false
+        },
+        {
+          "answer": "Dwa atrybuty",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Adres 127.1.1.1&nbsp; należy do puli adresów pętli:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2152,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>&nbsp;</span><span>multicast (rozgłaszania grupowego)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;</span><span>prywatnych (nierutowalnych)</span>",
+          "correct": false
+        },
+        {
+          "answer": "pętli zwrotnej",
+          "correct": true
+        },
+        {
+          "answer": "<span>&nbsp; &nbsp;&nbsp;&nbsp;</span><span>broadcast</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Termin „Aplikacja XML” oznacza:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2153,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>&nbsp;</span><span>Oprogramowanie wczytujące i modyfikujące dokument XML</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;</span><span>Biblioteki kodu służące parsowaniu dokumentów XML</span>",
+          "correct": false
+        },
+        {
+          "answer": "Język dziedzinowy oparty na składni XML",
+          "correct": true
+        },
+        {
+          "answer": "<span>Element fizycznego podziału kodu XML</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraphCxSpFirst\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Poniższy dokument XML jest:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&lt;?xml version=”1.0” encoding=”utf-8” ?&gt;</p>\n<p class=\"MsoListParagraphCxSpMiddle\">&lt;dokument autor=”Nowak” autor=”Kowalski”&gt;</p>\n<p class=\"MsoListParagraphCxSpMiddle\">To jest treść dokumentu</p>\n<p class=\"MsoListParagraphCxSpLast\">&lt;/dokument&gt;\n          </p>",
+      "id": 2154,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Poprawny, ale tylko składniowo (well fordem)",
+          "correct": false
+        },
+        {
+          "answer": "Poprawny, ale tylko strukturalnie (valid)",
+          "correct": false
+        },
+        {
+          "answer": "Poprawny składniowo i strukturalnie",
+          "correct": false
+        },
+        {
+          "answer": "Niepoprawny",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Wyrażenie &lt;!-- &nbsp;--&gt; w dokumencie XML sklasyfikujemy jako:",
+      "id": 2155,
+      "comments": [
+        {
+          "author": "~GoodGuy@31.11.*.*",
+          "comment": "Poprawna: Deklarację XML\nŹródło: np. Prezentacja 02, slajd 21",
+          "date": "27-01-2014 18:14:41"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawiam",
+          "date": "27-01-2014 18:15:33"
+        },
+        {
+          "author": "~anon@94.254.*.*",
+          "comment": "Komentarz",
+          "date": "07-02-2018 12:51:55"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "A masz tu kurwa komentarz w odpowiedzi?",
+          "date": "06-02-2019 23:16:43"
+        },
+        {
+          "author": "~stary anona@159.205.*.*",
+          "comment": "maciek juz po 11, marsz do łóżka wyłączaj ten kompiuter",
+          "date": "06-02-2019 23:30:13"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Deklarację XML",
+          "correct": true
+        },
+        {
+          "answer": "Instrukcję przetwarzania",
+          "correct": false
+        },
+        {
+          "answer": "Encję parametryczną",
+          "correct": false
+        },
+        {
+          "answer": "Element tekstowy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zawartość tzw. Koperty (envelope) w protokole SOAP tworzą:",
+      "id": 2156,
+      "comments": [
+        {
+          "author": "~GoodGuy@31.11.*.*",
+          "comment": "Tutaj odpowiedź prawidłowa to: Elementy Header i Body.\nŹródło: Prezentacja 10, slajd 19 i 20",
+          "date": "27-01-2014 17:45:38"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawiam.",
+          "date": "27-01-2014 17:46:50"
+        },
+        {
+          "author": "~GoodGuy@31.11.*.*",
+          "comment": "Źle poprawiłeś.\nElementy Header i Body",
+          "date": "27-01-2014 18:02:48"
+        },
+        {
+          "author": "mykhi",
+          "comment": "ano!",
+          "date": "27-01-2014 18:03:53"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Nagłówki http i dokument XML?",
+          "correct": false
+        },
+        {
+          "answer": "Element Winding i port",
+          "correct": false
+        },
+        {
+          "answer": "Jeden lub więcej elementów template",
+          "correct": false
+        },
+        {
+          "answer": "Elementy Header i Body",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Z punktu widzenia bezpieczeństwa, komentarze dotyczące kodu strony PHP:</strong>\n          </p>",
+      "id": 2157,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Należy bezwzględnie usunąć ze stosowanych na serwerze stron",
+          "correct": false
+        },
+        {
+          "answer": "Mogą występować jedynie jako komentarze w stylu PHP",
+          "correct": true
+        },
+        {
+          "answer": "Mogą występowac jedynie jako komentarze HTML &lt;!-..-&gt;",
+          "correct": false
+        },
+        {
+          "answer": "Można pozostawić w dowolnej postaci w kodzie strony",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Zaznacz prawdziwe stwierdzenie na temat specyfikacji HTML 5:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2158,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>Ma zakres identyczny z XHTML 2, ale nie stosuje składni XML</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;Może być zapisywany zarówno w składni XML, jak i tradycyjnego HTML",
+          "correct": true
+        },
+        {
+          "answer": "<span>Rezygnuje w wykorzystania CSS</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>Wprowadza własne elementy reprezentujące obiekty grafiki wektorowej</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Wyrażenie XPath w postaci /lista/student/imie[2] zwróci:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><span><strong>&nbsp;</strong></span></p>",
+      "id": 2159,
+      "comments": [
+        {
+          "author": "~hacker@89.64.*.*",
+          "comment": "wszystkie drugie imiona studentów w dokumencie - poprawna",
+          "date": "03-02-2018 23:36:19"
+        },
+        {
+          "author": "~pch@79.191.*.*",
+          "comment": "potwierdzam, pokazywal wykladowca przykladowe",
+          "date": "04-02-2018 20:00:33"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "drugie imię pierwszego studenta zapisanego w dokumencie",
+          "correct": true
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>wszystkie drugie imiona studentów w dokumencie</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>imię lub imiona drugiego studenta w dokumencie</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>elementy student, które posiadają dokładnie po 2 podelementy imię</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Ataki typu „SQL injection” polegają na:</strong>\n          </p>",
+      "id": 2160,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Spreprawoaniu wartości używanej przez skrypt jako część polecenia SQL",
+          "correct": true
+        },
+        {
+          "answer": "Skłoenieniu skryptu do korzystania z bazy danych SQL podstawionej przez intruza",
+          "correct": false
+        },
+        {
+          "answer": "Przepełnieniu bufora zapytań SQL",
+          "correct": false
+        },
+        {
+          "answer": "Przechwyceniu z kodu strony hasła dostępu do bazy SQL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Poniższy element XML jest:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong>&lt;?xml version=”1.0” encoding=”utf-8” ?&gt;</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong>&lt;!DOCTYPE dok [ &lt;!ELEMENT dok (x) &gt;&nbsp; &lt; !ELEMENT x (#PCDATA) &gt; ] &gt;</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong>&lt;dok&gt; &lt;x&gt; nagłówek &lt;/x&gt;</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong>&lt;/dok&gt;</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2161,
+      "comments": [
+        {
+          "author": "~anon@89.67.*.*",
+          "comment": "Dlaczego waszym zdaniem ten kod jest niepoprawny? ",
+          "date": "27-01-2014 12:45:20"
+        },
+        {
+          "author": "~GoodGuy@31.11.*.*",
+          "comment": "Wydaje mi się, że jest \"Poprawny składniowo i strukturalnie\".\n\nNie mogę się dopatrzeć błędów.",
+          "date": "27-01-2014 23:45:20"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "Niepoprawny - spacja przed drugim !ELEMENT",
+          "date": "06-02-2019 18:28:29"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span>Poprawny, ale tylko składniowo</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>Poprawny, ale tylko strukturalnie</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;</span><span>Poprawny składniowo i strukturalnie</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;&nbsp;&nbsp;Niepoprawny",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Ciasteczka Cookies mogą być odczytywane i zapisywane:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2162,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>Tylko przez kod działający po stronie serwera</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>Tylko przez skrypt po stronie przeglądarki</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;&nbsp;Zarówno po stronie serwera jak i przeglądarki",
+          "correct": true
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;</span><span>Tworzenie i zapis tylko na serwerze, odczyt po stronie klienta</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Selektor CSS sformułowany jako ul ol selekcjonuje element[y]</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2163,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>&nbsp;</span><span>Wszystkie elementy &lt;ol&gt;..&lt;/ol&gt; oraz elementy&lt;ul&gt;…&lt;/ul&gt;????</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;</span><span>&lt;ul class=”ol”&gt;…&lt;/ul&gt;</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;&nbsp;&lt;ol&gt;…&lt;/ol&gt; zawarte wewnątrz elementu &lt;ul&gt;…&lt;/ul&gt;",
+          "correct": true
+        },
+        {
+          "answer": "<span>&lt;ul&gt;ol&lt;/ul&gt;</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Sprawdzenie zgodności loginu i hasła to rodzaj:</strong>\n          </p>",
+      "id": 2164,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Enkapsulacji",
+          "correct": false
+        },
+        {
+          "answer": "Autoryzacja",
+          "correct": false
+        },
+        {
+          "answer": "Walidacji",
+          "correct": false
+        },
+        {
+          "answer": "Autentykacji",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Wyrażenie &lt;?xml-stylesheet…?&gt; reprezentuje w dokumencie XML</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2165,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>&nbsp;&nbsp;</span><span>Deklarację XML</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;Instrukcję przetwarzania",
+          "correct": true
+        },
+        {
+          "answer": "<span>&nbsp;</span><span>Encję parametryczną</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;</span><span>Element tekstowy</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Do technologii dynamicznych stron WWW nie zaliczamy:</strong>\n          </p>",
+      "id": 2166,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "PHP",
+          "correct": false
+        },
+        {
+          "answer": "JSP",
+          "correct": false
+        },
+        {
+          "answer": "ActiveX",
+          "correct": true
+        },
+        {
+          "answer": "ASP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Finalne postacie specyfikacji World Wide Web Consortium noszą nazwę:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\">&nbsp;</p>",
+      "id": 2167,
+      "comments": [
+        {
+          "author": "~bre@83.6.*.*",
+          "comment": "Wykład 7, \"Specyfikacje W3C noszą nazwę rekomendacji (recommendations) i są publicznie dostępne.\"",
+          "date": "02-02-2014 19:02:44"
+        },
+        {
+          "author": "~anon@213.186.*.*",
+          "comment": "rekomendacje - wykład 2",
+          "date": "29-06-2014 18:31:26"
+        },
+        {
+          "author": "~rand@178.183.*.*",
+          "comment": "Z wiki: https://en.wikipedia.org/wiki/World_Wide_Web_Consortium\nW3C recommendation (REC)\nThis is the most mature stage of development.",
+          "date": "01-02-2016 10:54:32"
+        },
+        {
+          "author": "~whatislove@194.152.*.*",
+          "comment": "FINALNE, więc standardów ",
+          "date": "05-02-2018 00:18:36"
+        },
+        {
+          "author": "~whoamitojudge@89.64.*.*",
+          "comment": "habela/wykład 10 - slajd 39\nW3C Recommendation: Postać finalna.\nwięc raczej rekomendacje. ",
+          "date": "07-02-2019 00:48:24"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span>Rekomendacji</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;standardów",
+          "correct": true
+        },
+        {
+          "answer": "<span>&nbsp; &nbsp;&nbsp;&nbsp;</span><span>wzorców</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>&nbsp;&nbsp;&nbsp;</span><span>propozycji</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Która z metod żądania nie występuje w protokole http?</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><span><strong>&nbsp;</strong></span></p>",
+      "id": 2168,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Ping",
+          "correct": true
+        },
+        {
+          "answer": "<strong><span>&nbsp;&nbsp;&nbsp;</span></strong><span>Head</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;&nbsp;&nbsp;</span></strong><span>Delete</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;&nbsp;</span></strong><span>Post</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Środowisko wykonania skryptów JavaScript w przeglądarce klienta:</strong>\n          </p>",
+      "id": 2169,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Pozwala na wykonywanie wydruków na standardowej drukarce",
+          "correct": false
+        },
+        {
+          "answer": "Pozwala na dostęp do dysku w trybie read - only",
+          "correct": false
+        },
+        {
+          "answer": "Pozwala na odczyt wszystkich Cookies",
+          "correct": false
+        },
+        {
+          "answer": "Pozwala na zapis i odczyt Cookies, ale nie wszystkich",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Model warstwy OSI zawiera m.in. warstwę:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong>&nbsp;</strong></p>",
+      "id": 2170,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>Interfejsu użytkownika</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;</span></strong><span>Meta modelu</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;&nbsp;</span></strong><span>Bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "Transportu",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<p class=\"MsoListParagraphCxSpFirst\"><!--[if !supportLists]--><strong>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong><!--[endif]--><strong>Technologii dynamicznych stron WWW nie charakteryzuje:</strong></p>\n<p class=\"MsoListParagraphCxSpMiddle\"><strong>&nbsp;</strong></p>",
+      "id": 2171,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<strong><span>&nbsp;&nbsp;</span></strong><span>Możliwość generowania dokumentów na żądanie</span>",
+          "correct": false
+        },
+        {
+          "answer": "<strong><span>&nbsp;&nbsp;</span></strong><span>Możliwość budowy aplikacji opartych na bazach danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;&nbsp;&nbsp;Możliwość przeniesienia większości obliczeń na stronę klienta",
+          "correct": true
+        },
+        {
+          "answer": "<strong><span>&nbsp; &nbsp;&nbsp;</span></strong><span>Możliwość ograniczania dostępu klientom w oparciu o ich adres IP</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Zaznacz fałszywe zdanie na temat protokołu http:</strong>\n          </p>",
+      "id": 2172,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Pracuje w modelu bezpołączeniowym",
+          "correct": false
+        },
+        {
+          "answer": "Jest bezstanowy",
+          "correct": false
+        },
+        {
+          "answer": "Korzysta ze zjawiska lokalności odwołań WWW",
+          "correct": true
+        },
+        {
+          "answer": "Nie specyfikuje sposobu szyfrowania komunikatów",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;<p></p>\n<p class=\"MsoListParagraph\"><strong><span><span>1.<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></strong><strong>Numery IP są określane jako adresy:</strong>\n          </p>",
+      "id": 2173,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Domenowe",
+          "correct": false
+        },
+        {
+          "answer": "Sprzętowe",
+          "correct": false
+        },
+        {
+          "answer": "Logiczne",
+          "correct": true
+        },
+        {
+          "answer": "Znakowe",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<strong>Model warstwowy OSI (Open Sowftware Interconnection) zawiera m. in. warstwę:</strong>",
+      "id": 2174,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "cookies",
+          "correct": false
+        },
+        {
+          "answer": "klientów",
+          "correct": false
+        },
+        {
+          "answer": "sesji",
+          "correct": true
+        },
+        {
+          "answer": "filtrów",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<strong>Która z metod żądania nie występuje w prokole HTTP?</strong>",
+      "id": 2175,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "POST",
+          "correct": false
+        },
+        {
+          "answer": "HEAD",
+          "correct": false
+        },
+        {
+          "answer": "GET",
+          "correct": false
+        },
+        {
+          "answer": "PING",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Wyrażenie XPath w postaci //student/imie[2]/parent::* zwróci",
+      "id": 2179,
+      "comments": [
+        {
+          "author": "~kozak@89.64.*.*",
+          "comment": "wszystkie drugie imiona studentów zapisane w dokumencie",
+          "date": "04-02-2018 22:30:36"
+        },
+        {
+          "author": "~anon@79.184.*.*",
+          "comment": "czyli \"//student/imie[2]/parent::*\" == \"//student/imie[2]/\" ??",
+          "date": "06-02-2018 19:15:41"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "nie, \"//student/imie[2]/\" wszystkie elemnty potomne imie[2] jak coś to tak : \"//student/imie[2]\"",
+          "date": "06-02-2018 19:54:10"
+        },
+        {
+          "author": "~wiktor siurdyk@159.205.*.*",
+          "comment": "*zaciaga sie elektrykiem* mmm tu bedzie odpowiedz 4 na pewno",
+          "date": "06-02-2019 15:10:11"
+        },
+        {
+          "author": "~Rafał balama@89.64.*.*",
+          "comment": "*opierdalając kilo suchego ryżu*\nłohoho zgadzam sie z przedmufca",
+          "date": "06-02-2019 15:34:57"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "Ta baza pytań w jakimkolwiek stopniu jest aktualna z egzaminem ?",
+          "date": "06-02-2019 19:03:37"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "Potwierdzone info - nie jest aktualna od 2-3 lat",
+          "date": "06-02-2019 19:44:12"
+        },
+        {
+          "author": "~anon@213.216.*.*",
+          "comment": "troll nie słuchać\n",
+          "date": "06-02-2019 20:07:18"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "Się zdziwisz, jak jutro pójdziesz i Ci się trafi 1 czy 2 pytania. Akurat w tym przypadku baza była 2-3 lata temu aktualizowana, więc sięga kilkaset pytań. Więc to tak naprawdę zależy od szczęścia.",
+          "date": "06-02-2019 20:57:38"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "drugie imię pierwszego studenta zapisanego w dokumencie",
+          "correct": false
+        },
+        {
+          "answer": "wszystkie drugie imiona studentów zapisane w dokumencie",
+          "correct": false
+        },
+        {
+          "answer": "pierwsze imię każdego studenta, który posiada dwa imiona",
+          "correct": false
+        },
+        {
+          "answer": "te elementy student, które posiadają 2 lub więcej podelementów imie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<strong>Pokazany niżej element XML \"zamowienie\" posiada:</strong><p></p>\n<p>&lt;zamowienie&gt;</p>\n<p>&lt;klient&gt; Jan Nowak&lt;/klient&gt;</p>\n<p>&lt;towar&gt; MS word Pl&lt;/towar&gt;</p>\n<p>&lt;/zamowienie&gt;\n          </p>",
+      "id": 2180,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zawartość tekstową",
+          "correct": false
+        },
+        {
+          "answer": "Zawartość elementową",
+          "correct": true
+        },
+        {
+          "answer": "Zawartość mieszaną",
+          "correct": false
+        },
+        {
+          "answer": "Referencje do encji",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<strong>Tzw. URL-encoding jest stosowany dla:</strong>",
+      "id": 2181,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Przesyłania załącznikow binarnych w email protokołem SMTP",
+          "correct": false
+        },
+        {
+          "answer": "Przekazywania parametrów w żadaniu typu GET w protokole HTTP",
+          "correct": true
+        },
+        {
+          "answer": "Szyfrowania zawartości przekazywanej do serwisów WWW",
+          "correct": false
+        },
+        {
+          "answer": "Kodowaniu haseł zapisywanych w bazie danych",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<strong>Sprawdzenie zgodnosci loginu i hasła to rodzaj:</strong><p></p>\n<p>&nbsp;</p>\n<p>&nbsp;\n          </p>",
+      "id": 2563,
+      "comments": [
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "To samo pytanie co 53, różne odpowiedzi",
+          "date": "06-02-2019 22:16:53"
+        },
+        {
+          "author": "~twoj stary@159.205.*.*",
+          "comment": "uwierzytelnienie to to samo co autentykacja baranie",
+          "date": "06-02-2019 22:29:17"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Enkapsulacji",
+          "correct": false
+        },
+        {
+          "answer": "Autoryzacja",
+          "correct": false
+        },
+        {
+          "answer": "Walidacja",
+          "correct": false
+        },
+        {
+          "answer": "uwierzytelnienie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Która metoda http ma ciało",
+      "id": 3175,
+      "comments": [
+        {
+          "author": "~albatros@93.105.*.*",
+          "comment": "Czy Post nie jest poprawną odpowiedzią?",
+          "date": "01-02-2020 17:54:41"
+        },
+        {
+          "author": "~xd@37.47.*.*",
+          "comment": "Jest",
+          "date": "02-02-2020 14:06:14"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Head",
+          "correct": false
+        },
+        {
+          "answer": "Delete",
+          "correct": false
+        },
+        {
+          "answer": "Get",
+          "correct": false
+        },
+        {
+          "answer": "Post",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Aby wpisane przez użytkownika na stronie hasło nie pojawiło się w adresie URL żądania, powinniśmy przsłać je komunikatem HTTP metodą:",
+      "id": 3043,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "HEAD",
+          "correct": false
+        },
+        {
+          "answer": "POST",
+          "correct": true
+        },
+        {
+          "answer": "AUTHENTICATE",
+          "correct": false
+        },
+        {
+          "answer": "GET",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Aby wyselekcjonować w dokumencie elementy towar, których atrybut cena nie przekracza 1000 użyjemy wyrażenia XPath:",
+      "id": 3044,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "//towar[@cena&lt;=1000]",
+          "correct": true
+        },
+        {
+          "answer": "[//towar/cena&lt;=1000]",
+          "correct": false
+        },
+        {
+          "answer": "towar where {cena}&lt;=1000",
+          "correct": false
+        },
+        {
+          "answer": "XPath nie obsługuje operacji na typach liczbowych",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Aby wyselekcjonować w dokumencie XML wszystkie elementy \"pracownik\" należy użyć następującego wyrażenia XPath:",
+      "id": 3045,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "//pracownik",
+          "correct": true
+        },
+        {
+          "answer": "//pracownik/*",
+          "correct": false
+        },
+        {
+          "answer": "/root::pracownik",
+          "correct": false
+        },
+        {
+          "answer": "/*::pracownik",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W DTD typ atrybutu możemy m.in. określić jako:",
+      "id": 3046,
+      "comments": [
+        {
+          "author": "~anon@79.184.*.*",
+          "comment": "IMO powinno być ID.",
+          "date": "04-02-2018 19:29:18"
+        },
+        {
+          "author": "~79@185.15.*.*",
+          "comment": "IMO też - na w3schools są podane atrybuty i tam znajduje się miedzy innymi ID, ale nie ma DATE, INT i String",
+          "date": "06-02-2018 10:29:47"
+        },
+        {
+          "author": "~anon@79.184.*.*",
+          "comment": "Ja patrzyłem tutaj http://cyberpunk.e-spin.pl/86,40,5/KOD/KURSY-PROGRAMOWANIA/Kurs-XML/DTD---atrybuty,67.html i tylko ID jest właśnie tam podane, także zaznaczona odpowiedź jest raczej błędna.\n",
+          "date": "06-02-2018 17:26:14"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "poprawna odpowiedz to ID",
+          "date": "06-02-2018 19:57:34"
+        },
+        {
+          "author": "~anon@83.28.*.*",
+          "comment": "tak",
+          "date": "06-02-2018 20:22:13"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "DATE",
+          "correct": true
+        },
+        {
+          "answer": "INT",
+          "correct": false
+        },
+        {
+          "answer": "String",
+          "correct": false
+        },
+        {
+          "answer": "ID",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "UDP jest protokołem:",
+      "id": 3047,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "połączeniowym, niezawodnego przesyłania",
+          "correct": false
+        },
+        {
+          "answer": "bezpołączeniowym, niezawodnego przesyłania",
+          "correct": false
+        },
+        {
+          "answer": "połączeniowym, bez potwierdzeń odbioru",
+          "correct": false
+        },
+        {
+          "answer": "bezpołączeniowym, bez potwierdzeń odbioru",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Język+XSLT:",
+      "id": 3048,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zaimplementowano+wyłącznie+po+stronie+przeglądarki+klienta",
+          "correct": false
+        },
+        {
+          "answer": "Wspiera+rekurencyjne+wywoływanie+wzorców",
+          "correct": true
+        },
+        {
+          "answer": "Umożliwia+przetwarzanie+dowolnych+dokumentów+HTML",
+          "correct": false
+        },
+        {
+          "answer": "Działa+wyłącznie+po+stronie+serwera",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ataki typu \"OS command injection\" polegają na:",
+      "id": 3049,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "dołączeniu swego loginu do pliku haseł systemu operacyjnego serwera",
+          "correct": false
+        },
+        {
+          "answer": "uruchomieniu kodu binarnego podstawionego przez intruza",
+          "correct": false
+        },
+        {
+          "answer": "przepełnieniu bufora poleceń powłoki systemu operacyjnego",
+          "correct": false
+        },
+        {
+          "answer": "spreparowaniu wartości używanej przez skrypt jako część polecenia systemu operacyjnego",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

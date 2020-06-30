@@ -16,6 +16,8 @@ import ContentWrapper from '../ContentWrapper';
 import Header from '../Header';
 import Comments from '../Comments';
 
+import styles from './SubjectAllQuestions.module.scss';
+
 const useStyles = makeStyles({
   root: {
     padding: '1.5rem',
@@ -66,7 +68,7 @@ const SubjectAllQuestions = () => {
 
   if (loading) {
     return (
-      <ContentWrapper>
+      <ContentWrapper loading>
         <Box display="flex" justifyContent="center">
           <CircularProgress />
         </Box>
@@ -81,20 +83,28 @@ const SubjectAllQuestions = () => {
     <>
       <Header backButton>{header}</Header>
       <ContentWrapper>
-        {data.map(({ question, answers, comments }) => (
-          <Paper variant="outlined" key={question}>
+        {data.length === 0 && (
+          <Typography variant="h5" component="h2" align="center">
+            Brak pytań
+          </Typography>
+        )}
+        {data.map(({
+          question, answers, comments, id,
+        }) => (
+          <Paper variant="outlined" key={`${id}`}>
             <header className={classes.questionHeader}>
-              <Typography variant="h5" component="h2">
+              <Typography variant="h5" component="h2" className={styles.question}>
                 {/* eslint-disable-next-line react/no-danger */}
                 <span dangerouslySetInnerHTML={{ __html: question.trim().replace(/ - \(\d+\)/, '') }} />
               </Typography>
             </header>
             <List disablePadding>
-              {answers.map(({ answer, correct }) => {
+              {answers.map(({ answer, correct }, i) => {
                 const labelId = `checkbox-list-label-${answer}`;
 
                 return (
-                  <React.Fragment key={answer}>
+                // eslint-disable-next-line react/no-array-index-key
+                  <React.Fragment key={`${answer}-${i}`}>
                     <Divider />
                     <ListItem
                       role={undefined}
@@ -107,7 +117,7 @@ const SubjectAllQuestions = () => {
                             {/* eslint-disable-next-line react/no-danger */}
                             <span dangerouslySetInnerHTML={{ __html: answer }} />
                           </Box>
-                      )}
+                        )}
                       />
                       <ListItemIcon>
                         <Checkbox

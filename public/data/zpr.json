@@ -1,0 +1,166 @@
+{
+  "title": "Zarządzanie projektem informatycznym (ZPR) (ZPR)",
+  "id": "zpr",
+  "data": [
+    {
+      "question": "<span>Która z cech nie jest charakterystyczna dla typowej działalności projektowej</span>",
+      "id": 3192,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>zespołowość</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>planowanie</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>dążenie do przewidywalnego rezultatu</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span>Które z określeń nie jest charakterystyczne dla działalności projektowe. Projekt jest</span>",
+      "id": 3288,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>ukierunkowany na wytworzenie unikalnego produktu</span>",
+          "correct": false
+        },
+        {
+          "answer": "zawsze działalnością krytyczną dla przedsiębiorstwa",
+          "correct": true
+        },
+        {
+          "answer": "<span>działalnością czasową</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>Wskaż zdania prawdziwe</span>",
+      "id": 3289,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Na grafie precedensji nie można przedstawić zależności typu FS i FF między zadaniami",
+          "correct": false
+        },
+        {
+          "answer": "Graf precedensji przedstawia strukturę zadaniowo-czasową projektu",
+          "correct": true
+        },
+        {
+          "answer": "Zawsze dla diagramu Gantta można wykonać odpowiadający mu graf precedensji",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Twórcą map myśli jest",
+      "id": 3290,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Covey",
+          "correct": false
+        },
+        {
+          "answer": "Eisenhauer",
+          "correct": false
+        },
+        {
+          "answer": "Buzan",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span>Jesteś kierownikiem projektu informatycznego. Twój kierownik ds. jakości poinformował Cię, że należy zakończyć planowanie testów oprogramowania tuż przed ich rozpoczęciem. Jednocześnie powinieneś rozpocząć testowanie produktów możliwie jak najpóźniej, aby uwzględnić wszystkie zmiany w nich zachodzące. Jaka wobec tego powinna by zależność między aktywnością polegającą na planowaniu testów a aktywnością polegającą na ich wykonaniu</span><em><span><br></span></em>",
+      "id": 3291,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "FS",
+          "correct": true
+        },
+        {
+          "answer": "SF",
+          "correct": false
+        },
+        {
+          "answer": "SS",
+          "correct": false
+        },
+        {
+          "answer": "FF",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które ze stwierdzeń dotyczących struktury podziału prac jest prawdziwe",
+      "id": 3292,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "WBS przedstawia wszystkie zadania, które muszą by wykonane w projekcie",
+          "correct": true
+        },
+        {
+          "answer": "każdy element WBS reprezentuje cechę produktu projektu",
+          "correct": false
+        },
+        {
+          "answer": "WBS przedstawia pakiety prac uporządkowane w postaci liniowej, niestrukturalizowanej listy",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Który z obszarów klasyfikacyjnych ryzyka jest obszarem stosowanym w taksonomiach ryzyka projektów informatycznych",
+      "id": 3293,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "założeń opłacalności",
+          "correct": true
+        },
+        {
+          "answer": "zewnętrznych zależności",
+          "correct": true
+        },
+        {
+          "answer": "techniczny",
+          "correct": true
+        },
+        {
+          "answer": "organizacyjny, planowania",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Procesy zarządzania projektem zdefiniowanie niezgodnie z PMBOK, to",
+      "id": 3294,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "inicjacji, planowania, kontrolne, wykonawcze, testowania, końcowe",
+          "correct": true
+        },
+        {
+          "answer": "inicjacji, planowania, kontrolne, wykonawcze, końcowe",
+          "correct": true
+        },
+        {
+          "answer": "planowania, kontrolne, wykonawcze, końcowe",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

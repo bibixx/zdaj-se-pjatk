@@ -32,7 +32,7 @@ const IndexPage = () => {
 
   if (loading) {
     return (
-      <ContentWrapper>
+      <ContentWrapper loading>
         <Box display="flex" justifyContent="center">
           <CircularProgress />
         </Box>

@@ -1,0 +1,1550 @@
+{
+  "title": "Bezpieczeństwo Systemów Informatycznych (ANG) - 2012 (BSI)",
+  "id": "bsi_ang_2012",
+  "data": [
+    {
+      "question": "The purpose of message signing is to:",
+      "id": 1732,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "assure the name of the recipient.",
+          "correct": false
+        },
+        {
+          "answer": "assure message integrity.",
+          "correct": true
+        },
+        {
+          "answer": "hide message contents.",
+          "correct": false
+        },
+        {
+          "answer": "verify the sender by the recipient.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Is the following sentence true or false?\n\nThe ESP (Encapsulation Security Payload) protocol is a member of IPSec suite. Its purpose is to guarantee payload",
+      "id": 1733,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "True",
+          "correct": false
+        },
+        {
+          "answer": "False",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A network sniffer can:",
+      "id": 1762,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "intercept network traffic.",
+          "correct": true
+        },
+        {
+          "answer": "analyse network protocol.",
+          "correct": true
+        },
+        {
+          "answer": "record network traffic.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "The following SID value:<br>\n<br>\nS-1-5-21-1757982066-362288127-1801674531-501<br>\n<br>\nis probably associated with:",
+      "id": 1764,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ADMINISTRATOR  account.",
+          "correct": false
+        },
+        {
+          "answer": "GUEST account.",
+          "correct": true
+        },
+        {
+          "answer": "USER account.",
+          "correct": false
+        },
+        {
+          "answer": "USERS group.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Indicate the true sentence:",
+      "id": 1763,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Private key can by send by e-mail to the recipient.",
+          "correct": false
+        },
+        {
+          "answer": "Private and public keys are made using symmetric cryptography.",
+          "correct": false
+        },
+        {
+          "answer": "Public key is used to digitally sign a message.",
+          "correct": false
+        },
+        {
+          "answer": "Public key of the recipient is held by the message sender.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "The purpose of message signing is to:",
+      "id": 1765,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "assure the name of the recipient.",
+          "correct": true
+        },
+        {
+          "answer": "assure message integrity.",
+          "correct": false
+        },
+        {
+          "answer": "encipher the message.",
+          "correct": false
+        },
+        {
+          "answer": "verify the sender by the recipient.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "It is a very bad habbit of administrators that they change their passwords frequently.",
+      "id": 1767,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "False",
+          "correct": true
+        },
+        {
+          "answer": "True",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What type of encryption is considered more secure: symmetric or asymmetric?",
+      "id": 1769,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "asymmetric.",
+          "correct": true
+        },
+        {
+          "answer": "symmetric.",
+          "correct": false
+        },
+        {
+          "answer": "the mixture of the two is the most secure.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "During this attack the victim is bombarded with datagrams that are directed to random ports. Victim's machine checks the state of the port, and reply with ICMP Destination Unreachable packet if the port is closed. This action can consume enough resources to make the system unresponsive to legitimate users and services.<br>\n<br>\nThis kind of attack is particularly dangerous in combination with the malformed datagram where the source IP address is spoofed and point, for example, to the network broadcast address – this could lead to network bandwidth exhaustion.",
+      "id": 1766,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ICMP flood.",
+          "correct": false
+        },
+        {
+          "answer": "LAND attack.",
+          "correct": false
+        },
+        {
+          "answer": "XMAS attack.",
+          "correct": false
+        },
+        {
+          "answer": "UDP flood.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Indicate the true senteces.",
+      "id": 1768,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Public key is given to the recipient. The recipient uses the key to verify the signature of the sender and to validate the integrity of the message as well as to encrypt (lock) messages sent to the sender. This key doesn't need to be password protected, neither needs to stay in secret.",
+          "correct": true
+        },
+        {
+          "answer": "Private key is given to the recipient. The recipient uses the key to verify the signature of the sender and to validate the integrity of the message as well as to encrypt (lock) messages sent to the sender. This key doesn't need to be password protected, neither needs to stay in secret.",
+          "correct": false
+        },
+        {
+          "answer": "Public key is stored on the sender's computer. The sender uses the key to digitally sign messages as well as decrypting (unlocking) messages from the recipients. This key should be password protected and should stay in secret.",
+          "correct": false
+        },
+        {
+          "answer": "Private key is stored on the sender's computer. The sender uses the key to digitally sign messages as well as decrypting (unlocking) messages from the recipients. This key should be password protected and should stay in secret.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "How does Stealth FIN scanning method work?",
+      "id": 1771,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Opened ports reply with the appropriate ACK packet, whereas closed ports ignore the packet.",
+          "correct": false
+        },
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Closed ports reply with the appropriate ACK packet, whereas opened ports ignore the packet.",
+          "correct": false
+        },
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Opened ports reply with the appropriate RST packet, whereas closed ports ignore the packet.",
+          "correct": false
+        },
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Closed ports reply with the appropriate RST packet, whereas opened ports ignore the packet.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Your personal firewall has the following active rule defined:<br>\ndirection:&nbsp;<em>outgoing</em>,<br>\nprotocol:&nbsp;<em>tcp</em>,<br>\nremote_address:<em>&nbsp;www.army.net</em>,<br>\naction: block.<br>\nYou can normally ping&nbsp;<em>www.army.net</em>. Is that true?",
+      "id": 1770,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Select proper types of firewall.<br>\n<em>(Two answers are correct)</em>",
+      "id": 1779,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "proxy.",
+          "correct": true
+        },
+        {
+          "answer": "Statefull packet invigilation.",
+          "correct": false
+        },
+        {
+          "answer": "Application layer filter.",
+          "correct": true
+        },
+        {
+          "answer": "Heuristic.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Match the true sentence regarding IDS and IPS.",
+      "id": 1774,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "IPS only logs and reports events.",
+          "correct": false
+        },
+        {
+          "answer": "Both applications monitor network and/or system activities for malicious activities.",
+          "correct": true
+        },
+        {
+          "answer": "IDS is a kind of firewall.",
+          "correct": false
+        },
+        {
+          "answer": "Both applications actively react to intrusion.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "During this attack the victim is bombarded with SYN requests which consume enough resources to make the system unresponsive to legitimate users and services. This attack is called:",
+      "id": 1772,
+      "comments": [
+        {
+          "author": "~mk@83.6.*.*",
+          "comment": "Syn Flood a nie Mood ;)",
+          "date": "06-02-2013 11:14:33"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawiam.",
+          "date": "06-02-2013 21:58:09"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "UDP flood.",
+          "correct": false
+        },
+        {
+          "answer": "SYN flood.",
+          "correct": true
+        },
+        {
+          "answer": "XMAS",
+          "correct": false
+        },
+        {
+          "answer": "FIN flood.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "To use remote resources in a safety way, you would suggest using:",
+      "id": 1775,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wired connection.",
+          "correct": false
+        },
+        {
+          "answer": "NAT",
+          "correct": false
+        },
+        {
+          "answer": "VPN",
+          "correct": true
+        },
+        {
+          "answer": "Firewall",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following are symmetric cryptographic algorithms:<br>\n<em>(Three answers are correct)</em>",
+      "id": 1773,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ElGamal",
+          "correct": false
+        },
+        {
+          "answer": "AES",
+          "correct": true
+        },
+        {
+          "answer": "DES",
+          "correct": true
+        },
+        {
+          "answer": "3DES",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What does IPSec provide?",
+      "id": 1776,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "data origin authentication.",
+          "correct": true
+        },
+        {
+          "answer": "confidentiality.",
+          "correct": true
+        },
+        {
+          "answer": "secure e-mails.",
+          "correct": false
+        },
+        {
+          "answer": "message integrity.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "This list holds information about revoked certificates (certificates that were called off).<br>\nThe list is called:",
+      "id": 1780,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "COFF",
+          "correct": false
+        },
+        {
+          "answer": "CRL",
+          "correct": true
+        },
+        {
+          "answer": "REST",
+          "correct": false
+        },
+        {
+          "answer": "LCP",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A public key can be simply generated from a private key.",
+      "id": 1781,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": true
+        },
+        {
+          "answer": "true",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The purpose of IPSec tunnel mode is to assure safe communication over network, isn't it?",
+      "id": 1777,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "false",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Virtualization in Virtual Private Networks means that you obtain access to remote resources by virtual network interface.",
+      "id": 1786,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "false",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How can you check the routing table contents in MS Windows systems?<br><em>(Two answers are correct)</em>",
+      "id": 1778,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "nbtstat",
+          "correct": false
+        },
+        {
+          "answer": "netstat –r",
+          "correct": true
+        },
+        {
+          "answer": "route print",
+          "correct": true
+        },
+        {
+          "answer": "arp -a",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Explain the purpose of penetration tests",
+      "id": 1783,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "The purpose of penetration tests is to define empirically the resistance (tolerance) of a computer system to attacks.",
+          "correct": true
+        },
+        {
+          "answer": "The purpose of penetration tests is to verify if a computer system is fault-tolerant.",
+          "correct": false
+        },
+        {
+          "answer": "More or less all the answers are correct.",
+          "correct": false
+        },
+        {
+          "answer": "The purpose of penetration tests is to examine all gates to access a computer system.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What tool is used for measuring transit delays of packets across Internet?",
+      "id": 1784,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "WHOIS",
+          "correct": false
+        },
+        {
+          "answer": "TRACEROUTE",
+          "correct": true
+        },
+        {
+          "answer": "PING",
+          "correct": false
+        },
+        {
+          "answer": "NETSH",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the name of the second phase of a penetration test?",
+      "id": 1787,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Enumeration.",
+          "correct": false
+        },
+        {
+          "answer": "Scanning.",
+          "correct": true
+        },
+        {
+          "answer": "Man in the middle.",
+          "correct": false
+        },
+        {
+          "answer": "Flooding.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "During this attack the victim is bombarded with SYN requests which consume enough resources to make the system unresponsive to legitimate users and services. This attack is called:",
+      "id": 1809,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "SYN flood.",
+          "correct": true
+        },
+        {
+          "answer": "UDP flood.",
+          "correct": false
+        },
+        {
+          "answer": "FIN flood.",
+          "correct": false
+        },
+        {
+          "answer": "XMAS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Resolve the abbreviation GPG.",
+      "id": 1789,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Good Privacy Guard.",
+          "correct": false
+        },
+        {
+          "answer": "General Purpose Guard.",
+          "correct": false
+        },
+        {
+          "answer": "GNU Privacy Guard.",
+          "correct": true
+        },
+        {
+          "answer": "Great Powerfull Guard.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What will be the answer from a closed port (on most operating systems) while scanning using UDP scan method?",
+      "id": 1785,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ICMP Destination Unreachable",
+          "correct": true
+        },
+        {
+          "answer": "Sorry port's closed.",
+          "correct": false
+        },
+        {
+          "answer": "No response.",
+          "correct": false
+        },
+        {
+          "answer": "ICMP Echo Response.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Your personal firewall has the following active rule defined:<br>\n<br>\ndirection:&nbsp;<em>outgoing</em>,<br>\nprotocol:&nbsp;<em>tcp</em>,<br>\nremote_address:<em>&nbsp;www.army.net</em>,<br>\naction: block.<br>\n<br>\nYou can normally ping&nbsp;<em>www.army.net</em>. Is that true?",
+      "id": 1806,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which phase of penetration tests engage the following methods of penetration?\n\nGathering general information from WWW, press, blogs, mailing lists, the usage of Web search engines, querying WHOIS databases, querying DNS, host reachability.",
+      "id": 1793,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "DoS attack.",
+          "correct": false
+        },
+        {
+          "answer": "Enumeration.",
+          "correct": false
+        },
+        {
+          "answer": "DNS scanning.",
+          "correct": false
+        },
+        {
+          "answer": "Reconaissance.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Select proper types of firewall.<br>\n<em>(Two answers are correct)</em>",
+      "id": 1796,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "NAT",
+          "correct": true
+        },
+        {
+          "answer": "IPsec",
+          "correct": false
+        },
+        {
+          "answer": "Statefull packet invigilation.",
+          "correct": false
+        },
+        {
+          "answer": "Network layer filter.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "The purpose of message encrypting is to assure confidentially of the message sender, isn't it?",
+      "id": 1788,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": true
+        },
+        {
+          "answer": "true",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Is the following sentence true or false?<br>\n<br>\nThe ESP (Encapsulation Security Payload) protocol is a member of IPSec suite. Its purpose is to guarantee payload's (message) integrity, data origin authentication of IP packets and confidentially of the payload.<br>\n<br>\nIt does provide protection for the entire packet, not only to the payload.",
+      "id": 1797,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": false
+        },
+        {
+          "answer": "false",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Usually a public key should be PIN-protected.",
+      "id": 1790,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": true
+        },
+        {
+          "answer": "true",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which phase of penetration tests engage the following methods of penetration?\n\nGathering general information from WWW, press, blogs, mailing lists, the usage of Web search engines, querying WHOIS databases, querying DNS, host reachability.",
+      "id": 1827,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Enumeration.",
+          "correct": false
+        },
+        {
+          "answer": "Reconaissance.",
+          "correct": true
+        },
+        {
+          "answer": "DNS scanning.",
+          "correct": false
+        },
+        {
+          "answer": "DoS attack.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Tunnels implemented using IPSec are unidirectional.",
+      "id": 1791,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "false",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Can Wireshark intercept and record network traffic?",
+      "id": 1792,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "false",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "How does Stealth FIN scanning method work?",
+      "id": 1808,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Closed ports reply with the appropriate RST packet, whereas opened ports ignore the packet.",
+          "correct": true
+        },
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Opened ports reply with the appropriate RST packet, whereas closed ports ignore the packet.",
+          "correct": false
+        },
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Closed ports reply with the appropriate ACK packet, whereas opened ports ignore the packet.",
+          "correct": false
+        },
+        {
+          "answer": "A scanner sends crafted packet with FIN flag enabled. Opened ports reply with the appropriate ACK packet, whereas closed ports ignore the packet.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In which layer of TCP/IP suite you can find the Domain Name System?",
+      "id": 1794,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Domain layer.",
+          "correct": false
+        },
+        {
+          "answer": "Network layer.",
+          "correct": false
+        },
+        {
+          "answer": "Application layer.",
+          "correct": true
+        },
+        {
+          "answer": "TCP/IP does not specify the layer for DNS.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following are symmetric cryptographic algorithms:<br>\n<em>(Three answers are correct)</em>",
+      "id": 1810,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "RSA",
+          "correct": false
+        },
+        {
+          "answer": "AES",
+          "correct": true
+        },
+        {
+          "answer": "3DES",
+          "correct": true
+        },
+        {
+          "answer": "DES",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following are asymmetric cryptographic algorithms:<br>\n<em>(Three answers are correct)</em>",
+      "id": 1795,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "3DES",
+          "correct": false
+        },
+        {
+          "answer": "RSA",
+          "correct": true
+        },
+        {
+          "answer": "ElGamal",
+          "correct": true
+        },
+        {
+          "answer": "SHA",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Match the true sentence regarding IDS and IPS.",
+      "id": 1811,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Both applications actively react to intrusion.",
+          "correct": false
+        },
+        {
+          "answer": "Both are used in IPSec.",
+          "correct": false
+        },
+        {
+          "answer": "IDS is a kind of firewall.",
+          "correct": false
+        },
+        {
+          "answer": "Both applications monitor network and/or system activities for malicious activities",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "The goal of DoS attacks is to make resources or services of a computer system available to legitimate users, isn't it?",
+      "id": 1798,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": false
+        },
+        {
+          "answer": "false",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "To use remote resources in a safety way, you would suggest using:",
+      "id": 1812,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "NAT",
+          "correct": false
+        },
+        {
+          "answer": "VPN",
+          "correct": true
+        },
+        {
+          "answer": "Encapsulation.",
+          "correct": false
+        },
+        {
+          "answer": "PKI",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A network sniffer can:",
+      "id": 1799,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "intercept network traffic.",
+          "correct": true
+        },
+        {
+          "answer": "record network traffic.",
+          "correct": true
+        },
+        {
+          "answer": "analyse network protocol.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Indicate the true sentence:",
+      "id": 1800,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Public key should be password protected.",
+          "correct": false
+        },
+        {
+          "answer": "Private key is used to encipher the message send to the sender.",
+          "correct": false
+        },
+        {
+          "answer": "Public key of the recipient is held by the message sender.",
+          "correct": true
+        },
+        {
+          "answer": "Private key can by send by e-mail to the recipient.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What does IPSec provide?",
+      "id": 1813,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "authentication.",
+          "correct": true
+        },
+        {
+          "answer": "message integrity.",
+          "correct": true
+        },
+        {
+          "answer": "confidentiality.",
+          "correct": true
+        },
+        {
+          "answer": "secure e-mails.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The purpose of message signing is to:",
+      "id": 1801,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "assure the name of the recipient.",
+          "correct": true
+        },
+        {
+          "answer": "verify the sender by the recipient.",
+          "correct": true
+        },
+        {
+          "answer": "encipher the message.",
+          "correct": false
+        },
+        {
+          "answer": "hide message contents.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The purpose of IPSec tunnel mode is to assure safe communication over network, isn't it?",
+      "id": 1814,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "During this attack the victim is bombarded with datagrams that are directed to random ports. Victim's machine checks the state of the port, and reply with ICMP Destination Unreachable packet if the port is closed. This action can consume enough resources to make the system unresponsive to legitimate users and services.\n\nThis kind of attack is particularly dangerous in combination with the malformed datagram where the source IP address is spoofed and point, for example, to the network broadcast address – this could lead to network bandwidth exhaustion.",
+      "id": 1802,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "LAND attack.",
+          "correct": false
+        },
+        {
+          "answer": "XMAS attack.",
+          "correct": false
+        },
+        {
+          "answer": "PING flood.",
+          "correct": false
+        },
+        {
+          "answer": "UDP flood.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Select proper types of firewall.<br>\n<em>(Two answers are correct)</em>",
+      "id": 1815,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Application layer filter.",
+          "correct": true
+        },
+        {
+          "answer": "proxy.",
+          "correct": true
+        },
+        {
+          "answer": "IPsec",
+          "correct": false
+        },
+        {
+          "answer": "Statefull packet invigilation.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "It is a very bad habbit of administrators that they change their passwords frequently.",
+      "id": 1803,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": false
+        },
+        {
+          "answer": "false",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Indicate the true senteces.",
+      "id": 1804,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Private key is given to the recipient. The recipient uses the key to verify the signature of the sender and to validate the integrity of the message as well as to encrypt (lock) messages sent to the sender. This key doesn't need to be password protected, neither needs to stay in secret.",
+          "correct": false
+        },
+        {
+          "answer": "Public key is given to the recipient. The recipient uses the key to verify the signature of the sender and to validate the integrity of the message as well as to encrypt (lock) messages sent to the sender. This key doesn't need to be password protected, neither needs to stay in secret.",
+          "correct": true
+        },
+        {
+          "answer": "Public key is stored on the sender's computer. The sender uses the key to digitally sign messages as well as decrypting (unlocking) messages from the recipients. This key should be password protected and should stay in secret.",
+          "correct": false
+        },
+        {
+          "answer": "Private key is stored on the sender's computer. The sender uses the key to digitally sign messages as well as decrypting (unlocking) messages from the recipients. This key should be password protected and should stay in secret.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What will be the answer from a closed port (on most operating systems) while scanning using UDP scan method?",
+      "id": 1821,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Sorry port's closed.",
+          "correct": false
+        },
+        {
+          "answer": "UDP Handshake.",
+          "correct": false
+        },
+        {
+          "answer": "ICMP Destination Unreachable.",
+          "correct": true
+        },
+        {
+          "answer": "Single ACK datagram.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What type of encryption is considered more secure: symmetric or asymmetric?",
+      "id": 1805,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "asymmetric.",
+          "correct": true
+        },
+        {
+          "answer": "symmetric.",
+          "correct": false
+        },
+        {
+          "answer": "the mixture of the two is the most secure.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The purpose of message encrypting is to assure confidentially of the message sender, isn't it?",
+      "id": 1823,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": true
+        },
+        {
+          "answer": "true",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Tunnels implemented using IPSec are unidirectional.",
+      "id": 1825,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "false",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Resolve the abbreviation VPN.",
+      "id": 1807,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Virtual Public Network.",
+          "correct": false
+        },
+        {
+          "answer": "Vital Privacy and Network security.",
+          "correct": false
+        },
+        {
+          "answer": "ViP Networking.",
+          "correct": false
+        },
+        {
+          "answer": "Virtual Private Network.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Can Wireshark intercept and record network traffic?",
+      "id": 1826,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": true
+        },
+        {
+          "answer": "false",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "In which layer of TCP/IP suite you can find the Domain Name System?",
+      "id": 1828,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Application layer.",
+          "correct": true
+        },
+        {
+          "answer": "Presentation layer.",
+          "correct": false
+        },
+        {
+          "answer": "Network layer.",
+          "correct": false
+        },
+        {
+          "answer": "Domain layer.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following are asymmetric cryptographic algorithms:<br>\n<em>(Three answers are correct)</em>",
+      "id": 1829,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "ElGamal",
+          "correct": true
+        },
+        {
+          "answer": "SHA",
+          "correct": true
+        },
+        {
+          "answer": "RC4",
+          "correct": false
+        },
+        {
+          "answer": "RSA",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Select proper types of firewall.<br>\n<em>(Two answers are correct)</em>",
+      "id": 1830,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "NAT",
+          "correct": true
+        },
+        {
+          "answer": "Statefull packet invigilation.",
+          "correct": false
+        },
+        {
+          "answer": "IPsec",
+          "correct": false
+        },
+        {
+          "answer": "Network layer filter.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "This list holds information about revoked certificates (certificates that were called off).<br>\nThe list is called:",
+      "id": 1817,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "REST",
+          "correct": false
+        },
+        {
+          "answer": "CRL",
+          "correct": true
+        },
+        {
+          "answer": "COA",
+          "correct": false
+        },
+        {
+          "answer": "RID",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "During a DoS attack one is gathering information about:",
+      "id": 1818,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Administrator password",
+          "correct": false
+        },
+        {
+          "answer": "Opened ports",
+          "correct": false
+        },
+        {
+          "answer": "Versions of applications installed",
+          "correct": false
+        },
+        {
+          "answer": "None of the answers is correct",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Explain the purpose of penetration tests",
+      "id": 1819,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "More or less all the answers are correct.",
+          "correct": false
+        },
+        {
+          "answer": "The purpose of penetration tests is to examine all gates to access a computer system.",
+          "correct": false
+        },
+        {
+          "answer": "The purpose of penetration tests is to define empirically the resistance (tolerance) of a computer system to attacks.",
+          "correct": true
+        },
+        {
+          "answer": "The purpose of penetration tests is to verify if a computer system is fault-tolerant.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What tool is used for measuring transit delays of packets across Internet?",
+      "id": 1820,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TRACEROUTE",
+          "correct": true
+        },
+        {
+          "answer": "NETSTAT",
+          "correct": false
+        },
+        {
+          "answer": "NET USE",
+          "correct": false
+        },
+        {
+          "answer": "WHOIS",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Your personal firewall has the following active rule defined:<br>\n<br>\ndirection:&nbsp;<em>incomming</em>,<br>\nprotocol:&nbsp;<em>tcp</em>,<br>\nport:&nbsp;<em>80.<br>\naction:&nbsp;<em>block</em>.\n          </em>",
+      "id": 1831,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": true
+        },
+        {
+          "answer": "true",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Is the following sentence true or false? Symmetric cryptographic algorithms use one key for coding and decoding, while asymmetric algorithms use a pair of keys - one for coding and second for decoding.",
+      "id": 1833,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Virtualization in Virtual Private Networks means that you obtain access to remote resources by virtual network interface.",
+      "id": 1822,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "false",
+          "correct": false
+        },
+        {
+          "answer": "true",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "In which layer of TCP/IP suite you can find the Domain Name System?",
+      "id": 1832,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Presentation layer.",
+          "correct": false
+        },
+        {
+          "answer": "Application layer.",
+          "correct": true
+        },
+        {
+          "answer": "Network layer.",
+          "correct": false
+        },
+        {
+          "answer": "None of the above.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Usually a public key should be PIN-protected.",
+      "id": 1824,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "true",
+          "correct": false
+        },
+        {
+          "answer": "false",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What information is held by CA?",
+      "id": 1950,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Public keys of communicating sides",
+          "correct": true
+        },
+        {
+          "answer": "User stories",
+          "correct": false
+        },
+        {
+          "answer": "Working hours",
+          "correct": false
+        },
+        {
+          "answer": "Well-known private keys",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The purpose of Security Parameter Index is to:",
+      "id": 1948,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "order IP packets inside IPSec tunnel.",
+          "correct": false
+        },
+        {
+          "answer": "secure IPSec traffic - the higher the value the better communication security.",
+          "correct": false
+        },
+        {
+          "answer": "count IPSec packets.",
+          "correct": false
+        },
+        {
+          "answer": "tag traffic streams inside IPSec tunnel.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "How to resist DoS attacks?",
+      "id": 1949,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Switch off all unnecessary services and protocols.",
+          "correct": true
+        },
+        {
+          "answer": "Configure disk space quotas, network bandwidth quotas, as well as limiting the number of service users, etc.",
+          "correct": true
+        },
+        {
+          "answer": "Use monitors with alerting mechanisms to trace services availability, and resources usage.",
+          "correct": true
+        },
+        {
+          "answer": "Design and implement the network topology so that servers do not interfere one another.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

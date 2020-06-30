@@ -1,0 +1,2545 @@
+{
+  "title": "RBD egz 2016 zaoczne (RBDz)",
+  "id": "rbdz",
+  "data": [
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja SELECT su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja SELECT służy do:</span>",
+      "id": 2808,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wstawiania rekordu00f3w do bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wstawiania rekordów do bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;sprowadzania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">sprowadzania rekordów z bazy danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji rekordów w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja INSERT su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja INSERT służy do:</span>",
+      "id": 2809,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;sprowadzania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">sprowadzania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wstawiania rekordu00f3w do bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wstawiania rekordów do bazy danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji rekordów w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja DELETE su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja DELETE służy do:</span>",
+      "id": 2810,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;sprowadzania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">sprowadzania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wstawiania rekordu00f3w do bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wstawiania rekordów do bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwania rekordów z bazy danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji rekordów w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja UPDATE su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja UPDATE służy do:</span>",
+      "id": 2811,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;sprowadzania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">sprowadzania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wstawiania rekordu00f3w do bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wstawiania rekordów do bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji rekordów w bazie danych</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;INDEKS w bazie danych przyu015bpiesza:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">INDEKS w bazie danych przyśpiesza:</span>",
+      "id": 2812,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wyszukiwania rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wyszukiwania rekordów w bazie danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wstawiania rekordu00f3w do bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wstawiania rekordów do bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;autoryzacju0119 uu017cytkowniku00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">autoryzację użytkowników w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja COMMIT su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja COMMIT służy do:</span>",
+      "id": 2813,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wycofywania zmian w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wycofywania zmian w bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wstawiania rekordu00f3w do bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wstawiania rekordów do bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zatwierdzania zmian w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zatwierdzania zmian w bazie danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji rekordów w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja ROLLBACK su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja ROLLBACK służy do:</span>",
+      "id": 2814,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wycofywania zmian w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wycofywania zmian w bazie danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zatwierdzania zmian w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zatwierdzania zmian w bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwania rekordu00f3w z bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwania rekordów z bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji rekordów w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja GRANT su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja GRANT służy do:</span>",
+      "id": 2815,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;przyznawania uprawnieu0144 w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">przyznawania uprawnień w bazie danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zatwierdzania zmian w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zatwierdzania zmian w bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;odbierania uprawnieu0144 w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">odbierania uprawnień w bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji rekordu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji rekordów w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja REVOKE su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja REVOKE służy do:</span>",
+      "id": 2816,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;przyznawania uprawnieu0144 w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">przyznawania uprawnień w bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zatwierdzania zmian w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zatwierdzania zmian w bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;odbierania uprawnieu0144 w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">odbierania uprawnień w bazie danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wycofywania zmian w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wycofywania zmian w bazie danych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instrukcja ALTER TABLE su0142uu017cy do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instrukcja ALTER TABLE służy do:</span>",
+      "id": 2817,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;tworzenia tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">tworzenia tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwania tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwania tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zmiany schematu tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zmiany schematu tabeli</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizacji indeksu00f3w zau0142ou017conych na tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizacji indeksów założonych na tabeli</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jaka jest wartou015bu0107 wyrau017cenia Null=Null:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jaka jest wartość wyrażenia Null=Null:</span>",
+      "id": 2818,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest nieokreu015blone&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest nieokreślone</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">PRAWDA</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">FAŁSZ</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Null&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Null</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jaka jest wartou015bu0107 wyrau017cenia True OR Null:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jaka jest wartość wyrażenia True OR Null:</span>",
+      "id": 2819,
+      "comments": [
+        {
+          "author": "~samph@31.179.*.*",
+          "comment": "Moim zdaniem NULL to odpowiedź prawidłowa",
+          "date": "11-02-2017 21:56:12"
+        },
+        {
+          "author": "~samph@31.179.*.*",
+          "comment": "Dobra cofam to.",
+          "date": "11-02-2017 21:57:38"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest nieokreu015blone&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest nieokreślone</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">PRAWDA</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">FAŁSZ</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Null&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Null</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jaka jest wartou015bu0107 wyrau017cenia False OR Null:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jaka jest wartość wyrażenia False OR Null:</span>",
+      "id": 2820,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest nieokreu015blone&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest nieokreślone</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">PRAWDA</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">FAŁSZ</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Null&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">Null</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jaka jest wartou015bu0107 wyrau017cenia False AND Null:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jaka jest wartość wyrażenia False AND Null:</span>",
+      "id": 2821,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest nieokreu015blone&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest nieokreślone</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">PRAWDA</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">FAŁSZ</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Null&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">Null</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jaka jest wartou015bu0107 wyrau017cenia True AND Null:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jaka jest wartość wyrażenia True AND Null:</span>",
+      "id": 2822,
+      "comments": [
+        {
+          "author": "~Rolf@162.158.*.*",
+          "comment": "to juz jutro :)",
+          "date": "23-06-2019 13:13:12"
+        },
+        {
+          "author": "~danon@162.158.*.*",
+          "comment": ":(",
+          "date": "23-06-2019 18:50:34"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest nieokreu015blone&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest nieokreślone</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">PRAWDA</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">FAŁSZ</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Null&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">Null</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jaka jest wartou015bu0107 wyrau017cenia NOT Null:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jaka jest wartość wyrażenia NOT Null:</span>",
+      "id": 2823,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest nieokreu015blone&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest nieokreślone</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">PRAWDA</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:4,&quot;4&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">FAŁSZ</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Null&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">Null</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Co bu0119dzie wynikiem realizacji instrukcji nSELECT * FROM EmployeesnWHERE EmployeeID=EmployeeID OR EmployeeID=NULL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Co będzie wynikiem realizacji instrukcji <br>SELECT * FROM Employees<br>WHERE EmployeeID=EmployeeID OR EmployeeID=NULL</span>",
+      "id": 2824,
+      "comments": [
+        {
+          "author": "~s13810@178.235.*.*",
+          "comment": "wynik porównania NULL=NULL jest NULL",
+          "date": "02-09-2017 21:00:05"
+        },
+        {
+          "author": "~anon@89.66.*.*",
+          "comment": "a czy to przypadkiem nie jest po prostu porównanie TRUE OR NULL co w wyniku daje TRUE :)?",
+          "date": "05-02-2019 23:26:12"
+        },
+        {
+          "author": "~anon@89.66.*.*",
+          "comment": "a więc właśnie relacje Emp? ale oczywiście to tylko moje gdybanie ",
+          "date": "05-02-2019 23:26:48"
+        },
+        {
+          "author": "~.@89.64.*.*",
+          "comment": "jesli wszystkie wartosci EmployeeID byłyby nullami, to zwróciłoby relację pustą, bo EmployeeID=null nie zwraca nullowych wierszy, \"EmployeeID is null\" to robi. Więc odp relacja pusta też jej poprawna. Sprawdziłam na bazie",
+          "date": "17-02-2019 10:08:41"
+        },
+        {
+          "author": "~anon@162.158.*.*",
+          "comment": "jeśli założymy, że EmployeeID jest kluczem głównym to rzeczywiście zwróci nam całą relację, ale jeśli może być null to zwróci nam tylko te w których ID nie jest null (ID=NULL zawsze zwróci NULL)",
+          "date": "24-06-2019 08:08:44"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;relacja Emp&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">relacja Emp</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;relacja pusta&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">relacja pusta</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;instrukcja jest niepoprawna&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">instrukcja jest niepoprawna</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;NULL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">NULL</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Co bu0119dzie wynikiem realizacji instrukcji nSELECT * FROM Emp nWHERE EmployeeID=EmployeeID AND NULL=EmployeeID&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Co będzie wynikiem realizacji instrukcji <br>SELECT * FROM Emp <br>WHERE EmployeeID=EmployeeID AND NULL=EmployeeID</span>",
+      "id": 2825,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;relacja Emp&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">relacja Emp</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;relacja pusta&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">relacja pusta</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;instrukcja jest niepoprawna&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">instrukcja jest niepoprawna</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;NULL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">NULL</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Relacja R ma atrybut a. <br>\nJaka liczba może być wynikiem wykonania instrukcji <br>\nSELECT Count(*) FROM R WHERE a=a;",
+      "id": 2826,
+      "comments": [
+        {
+          "author": "~anon@148.81.*.*",
+          "comment": "a jesli a bedzie NULL to nie bedzie 0?",
+          "date": "04-02-2017 15:16:07"
+        },
+        {
+          "author": "~anon@87.206.*.*",
+          "comment": "Nie, sprawdzałem na bazie.",
+          "date": "04-02-2017 17:45:10"
+        },
+        {
+          "author": "~blk@78.11.*.*",
+          "comment": "w generatorach RBD jest odpowiedź 0 i 1  i była sprawdzana na bazie.",
+          "date": "12-02-2017 09:23:38"
+        },
+        {
+          "author": "~anon@89.74.*.*",
+          "comment": "Dostałem takie pytanie na egz. 2017 roku, odpowiedź jest 0 i 1, ponieważ ilość wierszy jest niewiadoma(może być jeden), a w przypadku NULL'a polecenie zwróci 0",
+          "date": "06-09-2017 07:59:11"
+        },
+        {
+          "author": "~anon@188.147.*.*",
+          "comment": "Proszę o zmianę poprawnych odpowiedzi.",
+          "date": "10-02-2019 11:24:45"
+        },
+        {
+          "author": "mykhi",
+          "comment": "odznaczam d) zaznaczam a) i b)",
+          "date": "10-02-2019 11:59:22"
+        },
+        {
+          "author": "~anon@195.167.*.*",
+          "comment": "przypuszczam, że poprawne odpowiedzi to b) i c). b - 1 otrzymamy jeśli w kolumnie a będą tylko wartości null(sprawdzone w postgreSQL). jesli w kolumnie a są wszystkie wartości różne od null, to zwróci taką liczbę, ile jest rekordów w tabeli, czyli odpowiedź c) - tez sprawdzono w postgreSQL. skoro już udało się uzyskać wynik 1 i n, to odpowiedzi ze słowem 'zawsze' odpadają",
+          "date": "11-02-2019 16:50:08"
+        },
+        {
+          "author": "~anon@195.167.*.*",
+          "comment": "poprawka - jeśli wszystkie wartości w danej kolumnie mają wartość null, to takie zapytanie zwróci wartość 0. Czyli podsumowując - takie zapytanie, nie może nam ZAWSZE zwracać 0, 1 może zwrócić, dowolną liczbę całkowitą mogłoby zwrócić, jeśli by tutaj było doprecyzowane, że są to liczby nieujemne, i nie może ZAWSZE być równa liczebności relacji R. zgodnie z tą logiką, jedyna poprawna odpowiedź(według mnie) to b) - 1.",
+          "date": "11-02-2019 17:05:00"
+        },
+        {
+          "author": "~anon@195.167.*.*",
+          "comment": "dobra, przy a) nie ma słowa 'zawsze', patrzyłem na inne pytanie... czyli rzeczywiście i a) i b)",
+          "date": "11-02-2019 17:06:10"
+        },
+        {
+          "author": "~anon@2a02:a317:2244:2b00:30e6:f1fc:a1e8:44b",
+          "comment": "Honzik dzisiaj powiedziała, że a) b) d)",
+          "date": "24-06-2020 18:40:26"
+        },
+        {
+          "author": "~anon@79.184.*.*",
+          "comment": "przy okazji powiedziala, zeby uwazac na slowa kluczowe typu \"zawsze\" i to w tym przypadku definiuje ze d) nie jest poprawna odpowiedzia ;)\n",
+          "date": "28-06-2020 23:40:06"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true
+        },
+        {
+          "answer": "1",
+          "correct": true
+        },
+        {
+          "answer": "dowolna liczba całkowita",
+          "correct": false
+        },
+        {
+          "answer": "zawsze tyle jaka jest liczebność relacji R",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Encje LEK i RECEPTA (z zależnością \"wypisany na\") połączone są związkiem:",
+      "id": 3268,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "c) wiele - wiele",
+          "correct": false
+        },
+        {
+          "answer": "d) wymagającą dodatkowej tabeli łączącej",
+          "correct": false
+        },
+        {
+          "answer": "a) jeden - wiele",
+          "correct": false
+        },
+        {
+          "answer": "b) wiele-jeden",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Relacja R ma atrybut a. nJaka liczba mou017ce byu0107 wynikiem wykonania instrukcjinSELECT Count(*) FROM R WHERE a;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Relacja R ma atrybut a. <br>Jaka liczba może być wynikiem wykonania instrukcji<br>SELECT Count(*) FROM R WHERE a;</span>",
+      "id": 2827,
+      "comments": [
+        {
+          "author": "~2m@82.214.*.*",
+          "comment": "Czy nie odpowiedź D?",
+          "date": "01-02-2017 14:25:14"
+        },
+        {
+          "author": "~maziar@87.206.*.*",
+          "comment": "To zapytanie na TSQl się nie wykona więc raczej odpowiedź C",
+          "date": "01-02-2017 22:11:13"
+        },
+        {
+          "author": "~osama@83.9.*.*",
+          "comment": "a raczej żadna z nich, nie jest to tsql tylko powinno być błędne polecenie",
+          "date": "04-02-2017 23:47:05"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "na postgresqlu gdyby a było booleanem to zwróciłoby te rokordy w których a == true :P",
+          "date": "05-02-2017 11:39:56"
+        },
+        {
+          "author": "~blk@78.11.*.*",
+          "comment": "w generatorach RBD jest odpowiedź zawsze 0 i była sprawdzana na bazie.",
+          "date": "12-02-2017 09:24:30"
+        },
+        {
+          "author": "~anon@185.225.*.*",
+          "comment": "SELECT Count(*) FROM emp WHERE empno;\nORA-00920: invalid relational operator\n00920. 00000 -  \"invalid relational operator\"\njakie 0?",
+          "date": "18-02-2018 13:29:33"
+        },
+        {
+          "author": "~anon@195.167.*.*",
+          "comment": "[42804] BŁĄD: argument WHERE musi być typu logicznego, nie typu character varying",
+          "date": "11-02-2019 16:40:40"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zawsze 0&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zawsze 0</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:3,&quot;3&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">1</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;dowolna liczba cau0142kowita&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">dowolna liczba całkowita</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zawsze tyle jaka jest liczebnou015bu0107 relacji R&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zawsze tyle jaka jest liczebność relacji R</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Encji odpowiada w relacyjnej bazie danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Encji odpowiada w relacyjnej bazie danych:</span>",
+      "id": 2828,
+      "comments": [
+        {
+          "author": "~PCHfanklubPL@193.0.*.*",
+          "comment": "W przypadku relacyjnych baz danych, encja jest zazwyczaj utożsamiana z wierszem w bazie danych.",
+          "date": "26-06-2017 15:11:17"
+        },
+        {
+          "author": "~-.-@37.47.*.*",
+          "comment": "nie klam, tabela jest poprawnie\n",
+          "date": "27-06-2017 15:15:53"
+        },
+        {
+          "author": "~PCHfanklubPL@193.0.*.*",
+          "comment": "sorki juz wiem ze to był błąd(z wikipedii)",
+          "date": "27-06-2017 17:52:23"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiersz w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiersz w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumna w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumna w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;tabela&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">tabela</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Zwiu0105zkowi jednoznacznemu odpowiada nw relacyjnej bazie danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Związkowi jednoznacznemu odpowiada &nbsp;w relacyjnej bazie danych:</span>",
+      "id": 2829,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumna w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumna w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;indeks w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">indeks w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bu0107 NULL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartość NULL</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Zwiu0105zkowi wieloznacznemu odpowiada nw relacyjnej bazie danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Związkowi wieloznacznemu odpowiada &nbsp;w relacyjnej bazie danych:</span>",
+      "id": 2830,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;tabela&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">tabela</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumna w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumna w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiersz w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiersz w tabeli</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Atrybutowi w relacyjnej bazie danych odpowiada:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Atrybutowi w relacyjnej bazie danych odpowiada:</span>",
+      "id": 2831,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumna w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumna w tabeli</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiersz w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiersz w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;tabela&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">tabela</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;indeks w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">indeks w tabeli</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jednoznacznemu identyfikatorowi odpowiada nw relacyjnej bazie danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jednoznacznemu identyfikatorowi odpowiada &nbsp;w relacyjnej bazie danych:</span>",
+      "id": 2832,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumna w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumna w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;indeks w tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">indeks w tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz gu0142u00f3wny&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz główny</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Spu00f3jnou015bu0107 referencyjna dotyczy faktu:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Spójność referencyjna dotyczy faktu:</span>",
+      "id": 2833,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bciu0105 klucza obcego mou017ce byu0107 null nlub wartou015bu0107 odpowiadaju0105cego mu klucza gu0142u00f3wnego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartością klucza obcego może być null lub wartość odpowiadającego mu klucza głównego</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci w kolumnie nie powtarzaju0105 siu0119&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości w kolumnie nie powtarzają się</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci w kolumnie nie mogu0105 zaleu017ceu0107 nani od czu0119u015bci klucza ani nawet przechodnio od klucza&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości w kolumnie nie mogą zależeć <br>ani od części klucza ani nawet przechodnio od klucza</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;w kau017cdej tabeli powinien istnieu0107 doku0142adnie jeden klucz&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">w każdej tabeli powinien istnieć dokładnie jeden klucz</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;III postau0107 normalna dotyczy faktu:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">III postać normalna dotyczy faktu:</span>",
+      "id": 2834,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bciu0105 klucza obcego mou017ce byu0107 null nlub wartou015bu0107 odpowiadaju0105cego mu klucza gu0142u00f3wnego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartością klucza obcego może być null <br>lub wartość odpowiadającego mu klucza głównego</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci w kolumnie nie powtarzaju0105 siu0119&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości w kolumnie nie powtarzają się</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci w kolumnie niekluczowej nie mogu0105 zaleu017ceu0107 nani od czu0119u015bci klucza ani nawet przechodnio od klucza&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości w kolumnie niekluczowej nie mogą zależeć <br>ani od części klucza ani nawet przechodnio od klucza</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;w kau017cdej tabeli powinien istnieu0107 doku0142adnie jeden klucz&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">w każdej tabeli powinien istnieć dokładnie jeden klucz</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re ze sformuu0142owau0144 su0105 prawdziwe w modelu relacyjnym:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które ze sformułowań są prawdziwe w modelu relacyjnym:</span>",
+      "id": 2835,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci w kolumnie su0105 przechowywane w kolejnou015bci posortowanej&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości w kolumnie są przechowywane w kolejności posortowanej</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiersze nie powtarzaju0105 siu0119&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiersze nie powtarzają się</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolejnou015bu0107 kolumn jest nieistotna&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolejność kolumn jest nieistotna</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci w kolumnie nie powtarzaju0105 siu0119&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości w kolumnie nie powtarzają się</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re ze sformuu0142owau0144 su0105 prawdziwe w modelu relacyjnym:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które ze sformułowań są prawdziwe w modelu relacyjnym:</span>",
+      "id": 2836,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiersze nie maju0105 tou017csamou015bci obiektowej&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiersze nie mają tożsamości obiektowej</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zwiu0105zek jednoznaczny reprezentuje siu0119 przy pomocy klucza obcego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">związek jednoznaczny reprezentuje się przy pomocy klucza obcego</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zwiu0105zek wieloznaczny reprezentuje siu0119 przy pomocy klucza obcego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">związek wieloznaczny reprezentuje się przy pomocy klucza obcego</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucze obce muszu0105 byu0107 typu cau0142kowitego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucze obce muszą być typu całkowitego</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re ze sformuu0142owau0144 su0105 prawdziwe w modelu relacyjnym:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które ze sformułowań są prawdziwe w modelu relacyjnym:</span>",
+      "id": 2837,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;tabela jest konkretnu0105 reprezentacju0105 relacji&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">tabela jest konkretną reprezentacją relacji</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;dla klucza jednoznacznego jest automatycznie zaku0142adany indeks&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">dla klucza jednoznacznego jest automatycznie zakładany indeks</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;dla klucza obcego jest automatycznie zaku0142adany indeks&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">dla klucza obcego jest automatycznie zakładany indeks</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;dla klucza gu0142u00f3wnego jest automatycznie zaku0142adany indeks jednoznaczny&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">dla klucza głównego jest automatycznie zakładany indeks jednoznaczny</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re ze sformuu0142owau0144 su0105 prawdziwe w modelu relacyjnym:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które ze sformułowań są prawdziwe w modelu relacyjnym:</span>",
+      "id": 2838,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy nie mou017ce byu0107 czu0119u015bciu0105 klucza gu0142u00f3wego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy nie może być częścią klucza główego</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>klucz główny nie może być częścią właściwą klucza obcego</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci klucza gu0142u00f3wnego nie mogu0105 siu0119 powtarzau0107&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości klucza głównego nie mogą się powtarzać</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci klucza obcego nie mogu0105 siu0119 powtarzau0107&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości klucza obcego nie mogą się powtarzać</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re ze sformuu0142owau0144 su0105 prawdziwe w modelu relacyjnym:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które ze sformułowań są prawdziwe w modelu relacyjnym:</span>",
+      "id": 2839,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mou017ce byu0107 wiele kluczy gu0142u00f3wnych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">może być wiele kluczy głównych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mou017ce byu0107 wiele kluczy jednoznacznych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">może być wiele kluczy jednoznacznych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mou017ce byu0107 wiele kluczy obcych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">może być wiele kluczy obcych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mou017ce byu0107 wiele indeksu00f3w&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">może być wiele indeksów</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Postau0107 normalna Boyce'a-Codda dotyczy faktu:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Postać normalna Boyce'a-Codda dotyczy faktu:</span>",
+      "id": 2840,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bciu0105 klucza obcego mou017ce byu0107 null nlub wartou015bu0107 odpowiadaju0105cego mu klucza gu0142u00f3wnego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartością klucza obcego może być null <br>lub wartość odpowiadającego mu klucza głównego</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kau017cda nietrywialna zaleu017cnou015bu0107 funkcyjna jest zaleu017cnou015bciu0105 od nadklucza&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">każda nietrywialna zależność funkcyjna jest zależnością od nadklucza</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bci w kolumnie niekluczowej nie mogu0105 zaleu017ceu0107 nani od czu0119u015bci klucza ani nawet przechodnio od klucza&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartości w kolumnie niekluczowej nie mogą zależeć <br>ani od części klucza ani nawet przechodnio od klucza</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;w kau017cdej tabeli powinien istnieu0107 doku0142adnie jeden klucz&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">w każdej tabeli powinien istnieć dokładnie jeden klucz</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Które z poniższych stwierdzeń są prawdziwe:",
+      "id": 2841,
+      "comments": [
+        {
+          "author": "~anon@83.31.*.*",
+          "comment": "powinno się używać możliwie jak najmniejszej ilości tabel ",
+          "date": "25-06-2018 19:18:26"
+        },
+        {
+          "author": "~anon@77.253.*.*",
+          "comment": "według mnie również to powinno być prawdą",
+          "date": "25-06-2018 19:52:29"
+        },
+        {
+          "author": "mykhi",
+          "comment": "no, a według mnie nie :)",
+          "date": "25-06-2018 20:11:00"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "jedyną poprawną,&nbsp;nietrywialną zależnością funkcyjną jest zależność do klucza",
+          "correct": true
+        },
+        {
+          "answer": "należy starać się użyć najmniejszej możliwej liczby tabel",
+          "correct": false
+        },
+        {
+          "answer": "w tabeli nie powinno być żadnych niekontrolowanych redundancji",
+          "correct": true
+        },
+        {
+          "answer": "należy wszystkie związki jednoznaczne zastąpić związkami jednojednoznacznymi",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re z poniu017cszych stwierdzeu0144 su0105 prawdziwe:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które z poniższych stwierdzeń są prawdziwe:</span>",
+      "id": 2842,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kau017cdy fakt przechowywany w bazie danych npowinien byu0107 w niej wyrau017cany tylko na jeden sposu00f3b&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">każdy fakt przechowywany w bazie danych &nbsp;powinien być w niej wyrażany tylko na jeden sposób</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;naleu017cy skonsultowau0107 z uu017cytkownikiem npoprawnou015bu0107 skonstruowanego modelu danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">należy skonsultować z użytkownikiem &nbsp;poprawność skonstruowanego modelu danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;naleu017cy spytau0107 siu0119 uu017cytkownikanczy schemat tabel jest w III postaci normalnej&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">należy spytać się użytkownika&nbsp;czy schemat tabel jest w III postaci normalnej</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;naleu017cy wszystkie zwiu0105zki jednoznaczne nzastu0105piu0107 zwiu0105zkami jednojednoznacznymi&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">należy wszystkie związki jednoznaczne&nbsp;zastąpić związkami jednojednoznacznymi</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Na jakich poziomach projektuje siu0119 relacyjnu0105 bazu0119 danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Na jakich poziomach projektuje się relacyjną bazę danych:</span>",
+      "id": 2843,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;obiektowym&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">obiektowym</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;uu017cytkowym&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">użytkowym</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;logicznym&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">logicznym</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;fizycznym&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">fizycznym</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Kto jest twu00f3rcu0105 relacyjnego modelu baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Kto jest twórcą relacyjnego modelu baz danych:</span>",
+      "id": 2844,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Bill Gates&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Bill Gates</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Charles Bachman&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Charles Bachman</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;John von Neuman&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">John von Neuman</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Edgar Codd&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Edgar Codd</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W ktu00f3rej firmie zaimplementowano po raz pierwszy nsystem zarzu0105dzania relacyjnu0105 bazu0105 danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W której firmie zaimplementowano po raz pierwszy &nbsp;system zarządzania relacyjną bazą danych:</span>",
+      "id": 2845,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Microsoft&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Microsoft</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Oracle&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Oracle</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;IBM&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">IBM</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Sun&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Sun</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Gdy schemat tabel nie jest w trzeciej postaci normalnej mamy do czenienia z:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Gdy schemat tabel nie jest w trzeciej postaci normalnej mamy do czenienia z:</span>",
+      "id": 2846,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;redundancju0105&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">redundancją</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;anomaliami przy wstawianiu&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">anomaliami przy wstawianiu</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;anomaliami przy usuwaniu&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">anomaliami przy usuwaniu</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;anomaliami przy modyfikacji&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">anomaliami przy modyfikacji</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Zaleu017cnou015bu0107 funkcyjna dotyczy zaleu017cnou015bci miu0119dzy:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Zależność funkcyjna dotyczy zależności między:</span>",
+      "id": 2847,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;atrybutami&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">atrybutami</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;encjami&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">encjami</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zwiu0105zkami&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">związkami</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kluczem obcym a kluczem gu0142u00f3wnym&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kluczem obcym a kluczem głównym</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Eliminacja zaleu017cnou015bci czu0119u015bciowych i przechodnich prowadzi do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Eliminacja zależności częściowych i przechodnich prowadzi do:</span>",
+      "id": 2848,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;III postaci normalnej&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">III postaci normalnej</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zwiu0119kszenia liczby tabel&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zwiększenia liczby tabel</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zwiu0119kszenia liczby kolumn w istnieju0105cych tabelach&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zwiększenia liczby kolumn w istniejących tabelach</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;nie ma wpu0142ywau na liczbu0119 tabel&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">nie ma wpływu na liczbę tabel</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Jakiego typu mou017ce byu0107 wartou015bu0107 atrybutu w modelu obiektowo-relacyjnym:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Jakiego typu może być wartość atrybutu w modelu obiektowo-relacyjnym:</span>",
+      "id": 2849,
+      "comments": [
+        {
+          "author": "~anon@148.81.*.*",
+          "comment": "http://edu.pjwstk.edu.pl/wyklady/rbd/scb/wyklad4/obrelb.htm\n\nwedług tego odpowiedź D jest złą odpowiedzią",
+          "date": "04-02-2017 19:28:17"
+        },
+        {
+          "author": "~anon@176.221.*.*",
+          "comment": "\"Wartością atrybutu może być wartość nie-atomowa (złożona) jak np. lista wartości, zbiór wartości, rekord, referencja do innego obiektu\"  Wg tego nie musi byc wartoscią atomową, ale może, więc ABCD poprawne",
+          "date": "05-02-2017 00:37:55"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;listu0105 wartou015bci&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">listą wartości</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;referencju0105 do obiektu&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">referencją do obiektu</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zbiorem wartou015bci&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zbiorem wartości</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wartou015bciu0105 atomowu0105&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wartością atomową</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re ze sformuu0142owau0144 su0105 prawdziwe dla zwiu0105zku nieidentyfikuju0105cego w Visio:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które ze sformułowań są prawdziwe dla związku nieidentyfikującego w Visio:</span>",
+      "id": 2850,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest oznaczany strzau0142ku0105 zwru00f3conu0105 w stronu0119 &quot;jeden&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest oznaczany strzałką zwróconą w stronę \"jeden\"</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy wchodzi w sku0142ad klucza gu0142u00f3wnego encji po stronie wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy wchodzi w skład klucza głównego encji po stronie wiele</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy nie wchodzi w sku0142ad klucza gu0142u00f3wnego encji po stronie wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy nie wchodzi w skład klucza głównego encji po stronie wiele</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest oznaczany strzau0142ku0105 zwru00f3conu0105 w stronu0119 &quot;wiele&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest oznaczany strzałką zwróconą w stronę \"wiele\"</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re sformuu0142owania su0105 prawdziwe dla zwiu0105zku identyfikuju0105cego w Visio:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13689059},&quot;12&quot;:0,&quot;17&quot;:1}\">Które sformułowania są prawdziwe dla związku identyfikującego w Visio:</span>",
+      "id": 2851,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest oznaczany strzau0142ku0105 zwru00f3conu0105 w stronu0119 &quot;jeden&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest oznaczany strzałką zwróconą w stronę \"jeden\"</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy wchodzi w sku0142ad klucza gu0142u00f3wnego encji po stronie wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy wchodzi w skład klucza głównego encji po stronie wiele</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klucz obcy nie wchodzi w sku0142ad klucza gu0142u00f3wnego encji po stronie wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klucz obcy nie wchodzi w skład klucza głównego encji po stronie wiele</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest oznaczany strzau0142ku0105 zwru00f3conu0105 w stronu0119 &quot;wiele&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest oznaczany strzałką zwróconą w stronę \"wiele\"</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Akcje referencyjne dotyczu0105 w Visio:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Akcje referencyjne dotyczą w Visio:</span>",
+      "id": 2852,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;zaleu017cnou015bci wartou015bci atrybutu od klucza&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">zależności wartości atrybutu od klucza</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wykonywania operacji INSERT, DELETE i UPDATE na powiu0105zanych rekordach&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wykonywania operacji INSERT, DELETE i UPDATE na powiązanych rekordach</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiu0105zania wartou015bci zmiennej w czasie kompilacji&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiązania wartości zmiennej w czasie kompilacji</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;uu017cywania odnou015bniku00f3w dla kolumn kluczy obcych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">używania odnośników dla kolumn kluczy obcych</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W Visio wu0142au015bciwou015bu0107 liczebnou015bci (Cardinality) okreu015bla:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W Visio właściwość liczebności (Cardinality) określa:</span>",
+      "id": 2853,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;czy zwiu0105zek jest identyfikuju0105cy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">czy związek jest identyfikujący</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;czy zwiu0105zek jest opcjonalny&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">czy związek jest opcjonalny</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ile egzemplarzy encji po stronie jeden mou017ce byu0107 powiu0105zane nz egzemplarzem encji po stronie wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ile egzemplarzy encji po stronie jeden może być powiązane &nbsp;z egzemplarzem encji po stronie wiele</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ile egzemplarzy encji po stronie wiele mou017ce byu0107 powiu0105zane nz egzemplarzem encji po stronie jeden&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ile egzemplarzy encji po stronie wiele może być powiązane &nbsp;z egzemplarzem encji po stronie jeden</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W Visio wu0142au015bciwou015bu0107 opcjonalnou015bci (Optional) okreu015bla:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W Visio właściwość opcjonalności (Optional) określa:</span>",
+      "id": 2854,
+      "comments": [
+        {
+          "author": "~anon@88.156.*.*",
+          "comment": "Czy tutaj 3 nie powinno też być poprawne? Przecież jeśli związek jest opcjonalny, to wtedy każdy egzemplarz encji po stronie wiele może być powiązany z 0 albo 1 egzemplarzem encji po stronie jeden, jeśli związek jest wymagany, to wtedy musi być powiązany z 1 egzemplarzem encji po stronie jeden, więc pośrednio uważam że określa.",
+          "date": "03-07-2018 18:09:39"
+        },
+        {
+          "author": "~anon@91.207.*.*",
+          "comment": "Z prezentacji: opcję Optional – czy wartość klucza obcego jest opcjonalna tzn. czy dopuszcza wartość NULL. Związek jest opcjonalny gdy wartość klucza obcego dopuszcza wartość NULL. Związek jest wymagany gdy wartość klucza obcego musi być określona tzn. nie może być NULL (inaczej mówiąc, dla każdego egzemplarza encji po stronie wiele istnieje odpowiadający mu egzemplarz encji po stronie jeden).\n\nAle nie wiem czy to kwestia określenia \"ile\"",
+          "date": "02-02-2020 14:21:31"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;czy zwiu0105zek jest identyfikuju0105cy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">czy związek jest identyfikujący</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;czy zwiu0105zek jest opcjonalny&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">czy związek jest opcjonalny</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ile egzemplarzy encji po stronie jeden mou017ce byu0107 powiu0105zane nz egzemplarzem encji po stronie wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ile egzemplarzy encji po stronie jeden może być powiązane z egzemplarzem encji po stronie wiele</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ile egzemplarzy encji po stronie wiele mou017ce byu0107 powiu0105zane nz egzemplarzem encji po stronie jeden&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ile egzemplarzy encji po stronie wiele może być powiązane z egzemplarzem encji po stronie jeden</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W Visio wu0142au015bciwou015bu0107 typu zwiu0105zku (Relationship Type) okreu015bla:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W Visio właściwość typu związku (Relationship Type) określa:</span>",
+      "id": 2855,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;czy zwiu0105zek jest identyfikuju0105cy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">czy związek jest identyfikujący</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;czy zwiu0105zek jest opcjonalny&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">czy związek jest opcjonalny</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ile egzemplarzy encji po stronie jeden mou017ce byu0107 powiu0105zane nz egzemplarzem encji po stronie wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ile egzemplarzy encji po stronie jeden może być powiązane &nbsp;z egzemplarzem encji po stronie wiele</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ile egzemplarzy encji po stronie wiele mou017ce byu0107 powiu0105zane nz egzemplarzem encji po stronie jeden&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ile egzemplarzy encji po stronie wiele może być powiązane z egzemplarzem encji po stronie jeden</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W wyniku transformacji binarnego zwiu0105zku wieloznacznego nliczba tworzonych encji wynosi:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W wyniku transformacji binarnego związku wieloznacznego &nbsp;liczba tworzonych encji wynosi:</span>",
+      "id": 2856,
+      "comments": [
+        {
+          "author": "~maziar@160.83.*.*",
+          "comment": "dla każdego wieloznacznego związku binarnego Z(E1,E2) wprowadzamy nową encję E0 \n  czyli wynik to 3\nCzyli poprawne odp to C i D",
+          "date": "02-02-2017 14:24:11"
+        },
+        {
+          "author": "~anon@91.239.*.*",
+          "comment": "w wyniku transformacji binarnego związku wieloznacznego.\nPytanie jest o to ile encji trzeba dodać,a nie ile ich będzie w sumie ",
+          "date": "05-09-2017 21:15:58"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:3,&quot;3&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">0</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:3,&quot;3&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">1</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:3,&quot;3&quot;:2}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">2</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mogu0105 powstau0107 wiu0119cej niu017c dwie&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:705,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;10&quot;:2,&quot;12&quot;:0}\">mogą powstać więcej niż dwie</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W wyniku transformacji binarnego zwiu0105zku wieloznacznego nliczba tworzonych zwiu0105zku00f3w wynosi:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W wyniku transformacji binarnego związku wieloznacznego &nbsp;liczba tworzonych związków wynosi:</span>",
+      "id": 2857,
+      "comments": [
+        {
+          "author": "~maziar@160.83.*.*",
+          "comment": "Tutaj poprawna odpowiedź powinna być B",
+          "date": "02-02-2017 10:42:00"
+        },
+        {
+          "author": "~maziar@160.83.*.*",
+          "comment": "dla każdego wieloznacznego związku binarnego Z(E1,E2) wprowadzamy nową encję E0 \n  czyli wynik to 3\nCzyli poprawne odp to C i D",
+          "date": "02-02-2017 14:24:20"
+        },
+        {
+          "author": "~maziar@87.206.*.*",
+          "comment": "Sorry odpowiedź C jest poprawna",
+          "date": "02-02-2017 22:35:40"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:3,&quot;3&quot;:0}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">0</span>",
+          "correct": false
+        },
+        {
+          "answer": "1",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mogu0105 powstau0107 wiu0119cej niu017c dwa&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">mogą powstać więcej niż dwa</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W wyniku transformacji tru00f3jargumentowego zwiu0105zku wieloznacznego nliczba tworzonych zwiu0105zku00f3w wynosi:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W wyniku transformacji trójargumentowego związku wieloznacznego liczba tworzonych związków wynosi:</span>",
+      "id": 2858,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:3,&quot;3&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">1</span>",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": false
+        },
+        {
+          "answer": "3",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mogu0105 powstau0107 wiu0119cej niu017c dwa&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">mogą powstać więcej niż dwa</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Cykl na diagramie zwiu0105zku00f3w encji oznacza, u017ce:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Cykl na diagramie związków encji oznacza, że:</span>",
+      "id": 2859,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mamy do czynienia ze zwiu0105zkiem rekurencyjnym&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">mamy do czynienia ze związkiem rekurencyjnym</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wymagania uu017cytkownika zostau0142y niepoprawnie okreu015blone&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wymagania użytkownika zostały niepoprawnie określone</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;nie da siu0119 utworzyu0107 relacyjnej bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">nie da się utworzyć relacyjnej bazy danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;mou017ce istnieu0107 zwiu0105zek rekurencyjny&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">może istnieć związek rekurencyjny</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instancju0105 zwiu0105zku jednojednoznacznego jest zawsze funkcja:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instancją związku jednojednoznacznego jest zawsze funkcja:</span>",
+      "id": 2860,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ru00f3u017cnowartou015bciowa&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">różnowartościowa</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;&quot;na&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">\"na\"</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jednoargumentowa&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jednoargumentowa</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;stau0142a&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">stała</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W notacji modelowania Chena związek jest reprezentowany przez:",
+      "id": 2861,
+      "comments": [
+        {
+          "author": "~anon@81.219.*.*",
+          "comment": "romb",
+          "date": "30-01-2017 11:50:08"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zaznaczam (nie było nic)",
+          "date": "30-01-2017 12:51:43"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "linię",
+          "correct": false
+        },
+        {
+          "answer": "prostokąt",
+          "correct": false
+        },
+        {
+          "answer": "koło",
+          "correct": false
+        },
+        {
+          "answer": "romb",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Instancju0105 zwiu0105zku jednojednoznacznego jest zawsze funkcja:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Instancją związku jednojednoznacznego jest zawsze funkcja:</span>",
+      "id": 2862,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ru00f3u017cnowartou015bciowa&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">różnowartościowa</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;&quot;na&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">\"na\"</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jednoargumentowa&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jednoargumentowa</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;stau0142a&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">stała</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W notacji modelowania Chena zwiu0105zek jest reprezentowany przez:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W notacji modelowania Chena związek jest reprezentowany przez:</span>",
+      "id": 2863,
+      "comments": [
+        {
+          "author": "~rogalddl@159.205.*.*",
+          "comment": "prostakat*",
+          "date": "18-06-2017 17:47:14"
+        },
+        {
+          "author": "~rogalddl@159.205.*.*",
+          "comment": "koło* sry\n",
+          "date": "18-06-2017 17:48:14"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "56 pytanie i 54 sa jednakowe",
+          "date": "04-07-2018 09:33:39"
+        },
+        {
+          "author": "~ktoś@195.238.*.*",
+          "comment": "tutaj powinna być linia\nhttps://edux.pjwstk.edu.pl/mat/119/lec/w6.html",
+          "date": "05-02-2020 13:55:31"
+        },
+        {
+          "author": "~sakurako@2a02:a311:64:bc00:831:a7fb:10a9:e150",
+          "comment": "nie, romb.\nw notacji IDEF1X to byłaby linia",
+          "date": "05-02-2020 19:13:11"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;liniu0119&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">linię</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;prostoku0105t&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">prostokąt</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kou0142o&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">koło</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;romb&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">romb</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span>W notacji modelowania Chena encja jest reprezentowana przez:&nbsp;</span>",
+      "id": 2864,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "trójkąt",
+          "correct": false
+        },
+        {
+          "answer": "prostokąt",
+          "correct": true
+        },
+        {
+          "answer": "koło",
+          "correct": false
+        },
+        {
+          "answer": "romb",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span>W notacji modelowania Chena&nbsp;</span><span>atrybut&nbsp;</span><span>jest reprezentowana przez:&nbsp;</span>",
+      "id": 2865,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "trójkąt",
+          "correct": false
+        },
+        {
+          "answer": "prostokąt",
+          "correct": false
+        },
+        {
+          "answer": "koło",
+          "correct": true
+        },
+        {
+          "answer": "romb",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci maju0105 pomysu0142y. Kau017cdy pomysu0142 dotyczy pewnej rzeczy. nKau017cdy pomysu0142 przychodzi do gu0142owy doku0142adnie jednemu studentowi. nStudent mou017ce siu0119 podzieliu0107 pomysu0142em z kolegami-studentami. nKtu00f3ry ze schematu00f3w jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Studenci mają pomysły. Każdy pomysł dotyczy pewnej rzeczy. <br>Każdy pomysł przychodzi do głowy dokładnie jednemu studentowi. <br>Student może się podzielić pomysłem z kolegami-studentami. <br>Który ze schematów jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:</span>",
+      "id": 2866,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Studenci(id_studenta, imię, nazwisko, adres, id_pomysłu)<br>Pomysły(id_pomysłu, rzecz, opis)<br>Koledzy(id_kolegi, imię, nazwisko, id_studenta, id_pomysłu)",
+          "correct": false
+        },
+        {
+          "answer": "Studenci(id_studenta, imię, nazwisko, adres, id_kolegi)<br>Pomysły(id_pomysłu, rzecz, opis, id_studenta)<br>Koledzy(id_kolegi, imię, nazwisko, id_studenta, id_pomysłu)",
+          "correct": false
+        },
+        {
+          "answer": "Studenci(id_studenta, imię, nazwisko, adres)<br>Pomysły(id_pomysłu, rzecz, opis, id_studenta)<br>Koledzy(id_pomysłu, id_kolegi)",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko, adres)nPomysu0142y(id_pomysu0142u, rzecz, opis, id_studenta, id_kolegi)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko, adres)<br>Pomysły(id_pomysłu, rzecz, opis, id_studenta, id_kolegi)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci lubiu0105 siu0119, su0105 sobie oboju0119tni lub nie znoszu0105 siu0119 (nie ma innej mou017cliwou015bci).nKtu00f3ry ze schematu00f3w jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych :&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Studenci lubią się, są sobie obojętni lub nie znoszą się (nie ma innej możliwości).<br>Który ze schematów jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych :</span>",
+      "id": 2867,
+      "comments": [
+        {
+          "author": "~pepe@162.158.*.*",
+          "comment": "Jest tu błąd ponieważ, nie wiemy kto jest dla kogo obojętny",
+          "date": "23-06-2019 16:08:59"
+        },
+        {
+          "author": "~anon@162.158.*.*",
+          "comment": "Chyba nie, ponieważ na logikę jeśli dana para nie występuje ani w lubi ani w nie_znosi, wtedy są dla siebie obojętni ",
+          "date": "24-06-2019 10:18:28"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko)nKoledzy(id_kolegi, imiu0119, nazwisko, id_studenta, id_stosunku_do)nStosunek(id_stosunku_do, stosunek_do)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko)<br>Koledzy(id_kolegi, imię, nazwisko, id_studenta, id_stosunku_do)<br>Stosunek(id_stosunku_do, stosunek_do)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko)nKoledzy(id_kolegi, imiu0119, nazwisko, id_studenta, stosunek_do)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko)<br>Koledzy(id_kolegi, imię, nazwisko, id_studenta, stosunek_do)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko)nLubi(id_studenta, id_kolegi)nNie_znosi(id_studenta, id_kolegi)nOboju0119tny(id_studenta, id_kolegi)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko)<br>Lubi(id_studenta, id_kolegi)<br>Nie_znosi(id_studenta, id_kolegi)<br>Obojętny(id_studenta, id_kolegi)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko)nLubi(id_studenta, id_kolegi)nNie_znosi(id_studenta, id_kolegi)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko)<br>Lubi(id_studenta, id_kolegi)<br>Nie_znosi(id_studenta, id_kolegi)</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W domach mieszkaju0105 zwierzu0119ta domowe. Niektu00f3re zwierzu0119ta zjadaju0105 siu0119 wzajemnie. nDomy mogu0105 byu0107 pou0142ou017cone obok siebie. nJaki schemat zgodny z zasadami projektowania schematu00f3w baz danych jest nnajodpowiedniejszy dla organizacji zajmuju0105cej siu0119 ochronu0105 zwierzu0105t:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W domach mieszkają zwierzęta domowe. Niektóre zwierzęta zjadają się wzajemnie. <br>Domy mogą być położone obok siebie. <br>Jaki schemat zgodny z zasadami projektowania schematów baz danych jest <br>najodpowiedniejszy dla organizacji zajmującej się ochroną zwierząt:</span>",
+      "id": 2868,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Domy(id_domu, adres, id_zwierzu0119)nZwierzu0119ta(id_zwierzu0119, rodzaj, id_zw_zjadane)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Domy(id_domu, adres, id_zwierzę)<br>Zwierzęta(id_zwierzę, rodzaj, id_zw_zjadane)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Domy(id_domu, adres)nZwierzu0119ta(id_zwierzu0119, id_rodzaju, id_domu)nRodzaje(id_rodzaju, rodzaj)nObok_siebie(id_domu1, id_domu2)nZjada(id_rodz_je, id_rodz_zjadane)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Domy(id_domu, adres)<br>Zwierzęta(id_zwierzę, id_rodzaju, id_domu)<br>Rodzaje(id_rodzaju, rodzaj)<br>Obok_siebie(id_domu1, id_domu2)<br>Zjada(id_rodz_je, id_rodz_zjadane)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Domy(id_domu, adres)nZwierzu0119ta(id_zwierzu0119, id_rodzaju, id_domu)nRodzaje(id_rodzaju, rodzaj)nSu0105siedzi(id_zwierzu01191, id_zwierzu01192)nZjada(id_rodz_je, id_rodz_zjadane)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Domy(id_domu, adres)<br>Zwierzęta(id_zwierzę, id_rodzaju, id_domu)<br>Rodzaje(id_rodzaju, rodzaj)<br>Sąsiedzi(id_zwierzę1, id_zwierzę2)<br>Zjada(id_rodz_je, id_rodz_zjadane)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Domy(id_domu, adres, id_zwierzu0119, rodzaj)nObok_siebie(id_domu1, id_domu2)nZjada(id_zw_je, id_zw_zjadane)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Domy(id_domu, adres, id_zwierzę, rodzaj)<br>Obok_siebie(id_domu1, id_domu2)<br>Zjada(id_zw_je, id_zw_zjadane)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W filmach graju0105 aktorzy. Kau017cdy film ma doku0142adnie jednego reu017cysera i jednego lub wiu0119cej scenarzystu0119. nKtu00f3ry z poniu017cszych schematu00f3w jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W filmach grają aktorzy. Każdy film ma dokładnie jednego reżysera i jednego lub więcej scenarzystę. <br>Który z poniższych schematów jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:</span>",
+      "id": 2869,
+      "comments": [
+        {
+          "author": "~T@94.254.*.*",
+          "comment": "Hmmm, troche bez sensu. Skad nam sie wzielo id_rezysera? ",
+          "date": "13-02-2018 07:48:04"
+        },
+        {
+          "author": "~sITN@193.0.*.*",
+          "comment": "Po co tabela Osoby? Nie powinno być Filmy, Aktorzy i Scenarzyści?",
+          "date": "14-02-2018 16:59:50"
+        },
+        {
+          "author": "~T@94.254.*.*",
+          "comment": "Zastanawiam sie czy przypadkiem tutaj nie chodzi o dziedziczenie...",
+          "date": "15-02-2018 07:15:03"
+        },
+        {
+          "author": "~anon@162.158.*.*",
+          "comment": "id_reżysera wskazuje na id_osoby powiązane z rekordem w zespole z rolą reżyser, wydaje mi się że ta odpowiedź nie jest prawidłowa",
+          "date": "24-06-2019 08:11:04"
+        },
+        {
+          "author": "~1234@46.186.*.*",
+          "comment": "Aktorzy i Scenarzyści nawet nie są połączeni z Osoby. To na pewno nie jest dobra odpowiedź",
+          "date": "06-02-2020 18:37:02"
+        },
+        {
+          "author": "~ta@89.72.*.*",
+          "comment": "id_aktora i id_scenarzysty są zarówno kluczem głównym jak i kluczem obcym w relacji z tabelą Osoby",
+          "date": "06-02-2020 23:08:24"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Filmy(id_filmu, tytuu0142, reu017cyser, gau017ca_reu017cysera)nAktorzy(id_aktora, nazwisko,rola, id_filmu, gau017ca)nScenarzyu015bci(id_scenarzysty, nazwisko, id_filmu, gau017ca)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Filmy(id_filmu, tytuł, reżyser, gaża_reżysera)<br>Aktorzy(id_aktora, nazwisko,rola, id_filmu, gaża)<br>Scenarzyści(id_scenarzysty, nazwisko, id_filmu, gaża)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Filmy(id_filmu, tytuu0142, id_reu017cysera, gau017ca_reu017cysera)nOsoby(id_osoby, nazwisko)nAktorzy(id_aktora, id_filmu, rola, gau017ca)nScenarzyu015bci(id_scenarzysty, id_filmu, gau017ca)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Filmy(id_filmu, tytuł, id_reżysera, gaża_reżysera)<br>Osoby(id_osoby, nazwisko)<br>Aktorzy(id_aktora, id_filmu, rola, gaża)<br>Scenarzyści(id_scenarzysty, id_filmu, gaża)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Filmy(id_filmu, tytuu0142, id_reu017cysera)nOsoby(id_osoby, nazwisko)nZespu00f3u0142(id_osoby, id_filmu, rola, gau017ca)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Filmy(id_filmu, tytuł, id_reżysera)<br>Osoby(id_osoby, nazwisko)<br>Zespół(id_osoby, id_filmu, rola, gaża)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Zespu00f3u0142(tytuu0142_filmu, nazwisko_osoby, rola, gau017ca)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Zespół(tytuł_filmu, nazwisko_osoby, rola, gaża)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Politycy naleu017cu0105 do partii politycznych (czasami je zmieniaju0105, czasami dokonuju0105 ich podziau0142u).nPartie polityczne, przed wyborami, tworzu0105 koalicje wyborcze. nKtu00f3ry z poniu017cszych schematu00f3w jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Politycy należą do partii politycznych (czasami je zmieniają, czasami dokonują ich podziału).<br>Partie polityczne, przed wyborami, tworzą koalicje wyborcze. <br>Który z poniższych schematów jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:</span>",
+      "id": 2870,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Politycy(id_polityka, imiu0119, nazwisko)nPartie(id_partii, nazwa, od, do)nKoalicje(id_koalicji, data_wyboru00f3w)nCzu0142onkowie(id_partii, id_osoby, od, do)nW_koalicji(id_partii, id_koalicji, od, do)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Politycy(id_polityka, imię, nazwisko)<br>Partie(id_partii, nazwa, od, do)<br>Koalicje(id_koalicji, data_wyborów)<br>Członkowie(id_partii, id_osoby, od, do)<br>W_koalicji(id_partii, id_koalicji, od, do)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Osoby(id_osoby, imiu0119, nazwisko, id_partii)nPartie(id_partii, nazwa, id_koalicji)nPolitycy(id_osoby, id_partii, od, do)nKoalicje(id_koalicji, data_wyboru00f3w)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Osoby(id_osoby, imię, nazwisko, id_partii)<br>Partie(id_partii, nazwa, id_koalicji)<br>Politycy(id_osoby, id_partii, od, do)<br>Koalicje(id_koalicji, data_wyborów)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Partie(id_partii, nazwa, koalicja, polityk, od, do)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Partie(id_partii, nazwa, koalicja, polityk, od, do)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Politycy(id_polityka, imiu0119, nazwisko, id_partii, od, do)nPartie(id_partii, nazwa, od, do)nKoalicje(id_koalicji, data_wyboru00f3w)nW_koalicji(id_partii, id_koalicji, od, do)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Politycy(id_polityka, imię, nazwisko, id_partii, od, do)<br>Partie(id_partii, nazwa, od, do)<br>Koalicje(id_koalicji, data_wyborów)<br>W_koalicji(id_partii, id_koalicji, od, do)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci planuju0105, czym chcieliby siu0119 zajmowau0107 w swojej przyszu0142ej pracy zawodowej i jakie stanowiska chcieliby peu0142niu0107. nKtu00f3ry z poniu017cszych schematu00f3w jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Studenci planują, czym chcieliby się zajmować w swojej przyszłej pracy zawodowej i jakie stanowiska chcieliby pełnić. <br>Który z poniższych schematów jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:</span>",
+      "id": 2871,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko)nZaju0119cia(id_zaju0119cia, nazwa)nStanowiska(id_stanowiska, nazwa)nKto_co(id_studenta, id_stanowiska, id_zaju0119cia)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko)<br>Zajęcia(id_zajęcia, nazwa)<br>Stanowiska(id_stanowiska, nazwa)<br>Kto_co(id_studenta, id_stanowiska, id_zajęcia)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko, rok)nZaju0119cia(id_zaju0119cia, nazwa)nStanowiska(id_stanowiska, nazwa)nJakie_zaju0119cie(id_studenta, id_zaju0119cia)nJakie_stanowisko(id_studenta, id_stanowiska)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko, rok)<br>Zajęcia(id_zajęcia, nazwa)<br>Stanowiska(id_stanowiska, nazwa)<br>Jakie_zajęcie(id_studenta, id_zajęcia)<br>Jakie_stanowisko(id_studenta, id_stanowiska)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(imiu0119, nazwisko, rok, zaju0119cie, stanowisko)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(imię, nazwisko, rok, zajęcie, stanowisko)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Studenci(id_studenta, imiu0119, nazwisko,rok)nKto_co(id_studenta, stanowisko, zaju0119cie)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Studenci(id_studenta, imię, nazwisko,rok)<br>Kto_co(id_studenta, stanowisko, zajęcie)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W PJWSTK ma powstau0107 baza danych zbieraju0105ca informacje o umieju0119tnou015bciach przydatnych w pracy zawodowej,no przedmiotach, ktu00f3re uczu0105 tych umieju0119tnou015bci oraz o ksiu0105u017ckach, w ktu00f3rych umieju0119tnou015bci su0105 opisane. nKtu00f3ry z poniu017cszych schematu00f3w jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W PJWSTK ma powstać baza danych zbierająca informacje o umiejętnościach przydatnych w pracy zawodowej,<br>o przedmiotach, które uczą tych umiejętności oraz o książkach, w których umiejętności są opisane. <br>Który z poniższych schematów jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:</span>",
+      "id": 2872,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Umieju0119tnou015bci(umieju0119tnou015bu0107, przedmiot, ksiu0105u017cka)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Umiejętności(umiejętność, przedmiot, książka)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Przedmioty(id_przedmiotu, nazwa, semestr)nKsiu0105u017cki(ISBN, tytuu0142, autorzy)nUmieju0119tnou015bci(id_umieju0119tnou015bci, id_przedmiotu, nazwa, opis, ISBN, od_strony, do_strony)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Przedmioty(id_przedmiotu, nazwa, semestr)<br>Książki(ISBN, tytuł, autorzy)<br>Umiejętności(id_umiejętności, id_przedmiotu, nazwa, opis, ISBN, od_strony, do_strony)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Przedmioty(id_przedmiotu, nazwa, semestr)nKsiu0105u017cki(ISBN, tytuu0142, sygnatura)nUmieju0119tnou015bci(id_umieju0119tnou015bci, nazwa, opis)nGdzie(id_umieju0119tnou015bci, ISBN, od_strony, do_strony)nNa(id_umieju0119tnou015bci, id_przedmiotu)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Przedmioty(id_przedmiotu, nazwa, semestr)<br>Książki(ISBN, tytuł, sygnatura)<br>Umiejętności(id_umiejętności, nazwa, opis)<br>Gdzie(id_umiejętności, ISBN, od_strony, do_strony)<br>Na(id_umiejętności, id_przedmiotu)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Przedmioty(id_przedmiotu, nazwa, semestr)nEgzemplarze_ksiu0105u017cek(sygnatura, tytuu0142, autorzy, nr_pu00f3u0142ki)nUmieju0119tnou015bci(id_umieju0119tnou015bci, nazwa, opis)nGdzie(id_umieju0119tnou015bci, sygnatura, od_strony, do_strony)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Przedmioty(id_przedmiotu, nazwa, semestr)<br>Egzemplarze_książek(sygnatura, tytuł, autorzy, nr_półki)<br>Umiejętności(id_umiejętności, nazwa, opis)<br>Gdzie(id_umiejętności, sygnatura, od_strony, do_strony)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;W PJWSTK powstaje baza danych z informacjami, jakie oprogramowanie jest zainstalowane w poszczegu00f3lnych salach -nz myu015blu0105 o prowadzeniu w nich u0107wiczeu0144 z odpowiednich przedmiotu00f3w. nKtu00f3ry z poniu017cszych schematu00f3w jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">W PJWSTK powstaje baza danych z informacjami, jakie oprogramowanie jest zainstalowane w poszczególnych salach -<br>z myślą o prowadzeniu w nich ćwiczeń z odpowiednich przedmiotów. <br>Który z poniższych schematów jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:</span>",
+      "id": 2873,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Sale(numer_sali, nazwa_programu, wersja, ile_instalacji)nProgramy(nazwa_programu, wersja, nazwa_przedmiotu)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Sale(numer_sali, nazwa_programu, wersja, ile_instalacji)<br>Programy(nazwa_programu, wersja, nazwa_przedmiotu)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Programy(id_programu, firma, nazwa, wersja)nPrzedmioty(id_przedmiotu, nazwa)nSale_programy(nr_sali, id_programu, ile_instalacji)nPrzedmioty_programy(id_przedmiotu, id_programu)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Programy(id_programu, firma, nazwa, wersja)<br>Przedmioty(id_przedmiotu, nazwa)<br>Sale_programy(nr_sali, id_programu, ile_instalacji)<br>Przedmioty_programy(id_przedmiotu, id_programu)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Programy(id_programu, firma, nazwa, wersja, nazwa_przedmiotu)nSale_programy(nr_sali, id_programu, wersja, ile_instalacji)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Programy(id_programu, firma, nazwa, wersja, nazwa_przedmiotu)<br>Sale_programy(nr_sali, id_programu, wersja, ile_instalacji)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Sale(id_sali, numer, ile_komputeru00f3w)nProgramy(id_programu, firma, nazwa, wersja)nPrzedmioty(id_przedmiotu, nazwa)nSale_programy(id_sali, id_programu, wersja, ile_instalacji)nPrzedmioty_programy(id_przedmiotu, id_programu, wersja)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Sale(id_sali, numer, ile_komputerów)<br>Programy(id_programu, firma, nazwa, wersja)<br>Przedmioty(id_przedmiotu, nazwa)<br>Sale_programy(id_sali, id_programu, wersja, ile_instalacji)<br>Przedmioty_programy(id_przedmiotu, id_programu, wersja)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Który ze schematów bazy danych dla biblioteki jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych. <br>\nBaza powinna przechowywać informacje o klientach, książkach i wypożyczeniach (wielkie litery oznaczają klucz główny):",
+      "id": 2874,
+      "comments": [
+        {
+          "author": "~anon@81.219.*.*",
+          "comment": "Klient(ID_KLIENTA, imię, nazwisko, adres)\nKsiążka(ID_KSIĄŻKI, tytuł, autor)\nWypożyczenie(ID_KLIENTA, ID_c, DATA_WYPOŻYCZENIA, data_zwrotu)\njest dobre",
+          "date": "30-01-2017 11:50:49"
+        },
+        {
+          "author": "~anon@160.83.*.*",
+          "comment": "Dokladnie odpowiedz C poprawna",
+          "date": "03-02-2017 12:17:17"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zmieniam z A na C",
+          "date": "03-02-2017 12:19:08"
+        },
+        {
+          "author": "~anon@213.111.*.*",
+          "comment": "id_c to co w ogole? skad baza moze dostac info jaku ksiazku wziala ta ocoba w tym przypadku?",
+          "date": "24-08-2017 14:32:56"
+        },
+        {
+          "author": "~anon@178.36.*.*",
+          "comment": "jak ta odpowiedź może być poprawna, skoro w tabeli Wypożyczenie mamy więcej niż jeden klucz główny? W dodatku jeden z nich na datę wypożyczenia...",
+          "date": "09-02-2019 19:36:04"
+        },
+        {
+          "author": "~kotia@162.158.*.*",
+          "comment": "Tutaj poprawna odpowiedź powinna być B",
+          "date": "23-06-2019 15:25:24"
+        },
+        {
+          "author": "~pepe@162.158.*.*",
+          "comment": "Zgadzam się z przedmówcą powinna być zaznaczona odpowiedź B",
+          "date": "23-06-2019 15:53:26"
+        },
+        {
+          "author": "~anon@162.158.*.*",
+          "comment": "powinna być A, bo to jedyna gdzie nie występują 2 klucze główne w tabeli",
+          "date": "23-06-2019 18:37:52"
+        },
+        {
+          "author": "~kotia@162.158.*.*",
+          "comment": "jedna osoba może wypożyczyć tę samą książkę wielokrotnie, stąd potrzeba dodatkowego klucza głównego, stąd odpowiedź C(lub D) poprawna",
+          "date": "23-06-2019 19:48:35"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{\" 1\":2,\"2\":\"klient(id_klienta,=\"\" imiu0119,=\"\" nazwisko,=\"\" adres)nksiu0105u017cka(id_ksiu0104u017bki,=\"\" tytuu0142,=\"\" autor)nwypou017cyczenie(id_klienta,=\"\" id_ksiu0105u017cki,=\"\" data_wypou017cyczenia,=\"\" data_zwrotu)\"}\"=\"\" data-sheets-userformat=\"{\" 2\":513,\"3\":{\"1\":0},\"12\":0}\"=\"\">Klient(ID_KLIENTA, imię, nazwisko, adres)<br>Książka(ID_KSIĄŻKI, tytuł, autor)<br>Wypożyczenie(ID_KLIENTA, id_książki, data_wypożyczenia, data_zwrotu)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Klient(ID_KLIENTA, imiu0119, nazwisko, adres)nKsiu0105u017cka(ID_KSIu0104u017bKI, tytuu0142, autor)nWypou017cyczenie(ID_KLIENTA, ID_KSIu0104u017bKI, data_wypou017cyczenia, data_zwrotu)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Klient(ID_KLIENTA, imię, nazwisko, adres)<br>Książka(ID_KSIĄŻKI, tytuł, autor)<br>Wypożyczenie(ID_KLIENTA, ID_KSIĄŻKI, data_wypożyczenia, data_zwrotu)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{\" 1\":2,\"2\":\"klient(id_klienta,=\"\" imiu0119,=\"\" nazwisko,=\"\" adres)nksiu0105u017cka(id_ksiu0104u017bki,=\"\" tytuu0142,=\"\" autor)nwypou017cyczenie(id_klienta,=\"\" id_c,=\"\" data_wypou017byczenia,=\"\" data_zwrotu)\"}\"=\"\" data-sheets-userformat=\"{\" 2\":513,\"3\":{\"1\":0},\"12\":0}\"=\"\">Klient(ID_KLIENTA, imię, nazwisko, adres)<br>Książka(ID_KSIĄŻKI, tytuł, autor)<br>Wypożyczenie(ID_KLIENTA, ID_c, DATA_WYPOŻYCZENIA, data_zwrotu)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Klient(ID_KLIENTA, imiu0119, nazwisko, adres)nKsiu0105u017cka(ID_KSIu0104u017bKI, tytuu0142, autor)nWypou017cyczenie(ID_KLIENTA, ID_KSIu0104u017bKI, DATA_WYPOu017bYCZENIA, DATA_ZWROTU)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Klient(ID_KLIENTA, imię, nazwisko, adres)<br>Książka(ID_KSIĄŻKI, tytuł, autor)<br>Wypożyczenie(ID_KLIENTA, ID_KSIĄŻKI, DATA_WYPOŻYCZENIA, DATA_ZWROTU)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Potrzebna jest baza danych do ewidencji studentu00f3w i ich ocen. nKtu00f3ry ze schematu00f3w bazy danych jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Potrzebna jest baza danych do ewidencji studentów i ich ocen. <br>Który ze schematów bazy danych jest najodpowiedniejszy z punktu widzenia zasad projektowania baz danych:</span>",
+      "id": 2875,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Student(id_studenta, imiu0119, nazwisko)nOcena(id_oceny, ocena, data_wystawienia, nazwa_przedmiotu)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Student(id_studenta, imię, nazwisko)<br>Ocena(id_oceny, ocena, data_wystawienia, nazwa_przedmiotu)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Student(id_studenta, imiu0119, nazwisko)nOcena(id_oceny, ocena, data_wystawienia, id_przedmiotu, id_studenta)nPrzedmiot(id_przedmiotu, nazwa)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Student(id_studenta, imię, nazwisko)<br>Ocena(id_oceny, ocena, data_wystawienia, id_przedmiotu, id_studenta)<br>Przedmiot(id_przedmiotu, nazwa)</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Student(id_studenta, imiu0119, nazwisko, id_oceny)nOcena(id_oceny, ocena, data_wystawienia, id_przedmiotu)nPrzedmiot(id_przedmiotu, nazwa)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Student(id_studenta, imię, nazwisko, id_oceny)<br>Ocena(id_oceny, ocena, data_wystawienia, id_przedmiotu)<br>Przedmiot(id_przedmiotu, nazwa)</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Student(id_studenta, imiu0119, nazwisko, ocena)nPrzedmiot(id_przedmiotu, nazwa, id_studenta)&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Student(id_studenta, imię, nazwisko, ocena)<br>Przedmiot(id_przedmiotu, nazwa, id_studenta)</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re metody dotyczu0105 zachowania spu00f3jnou015bci danych przy wspu00f3u0142bieu017cnym dostu0119pie:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które metody dotyczą zachowania spójności danych przy współbieżnym dostępie:</span>",
+      "id": 2876,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;blokowanie pesymistyczne&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">blokowanie pesymistyczne</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;przyznawanie uprawnieu0144 do obiektu00f3w w bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">przyznawanie uprawnień do obiektów w bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;autoryzowanie dostu0119pu&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">autoryzowanie dostępu</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;blokowanie optymistyczne&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">blokowanie optymistyczne</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Architektura klient-serwer oznacza:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Architektura klient-serwer oznacza:</span>",
+      "id": 2877,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;podziau0142 zadau0144 realizowanych przez aplikacju0119 na dwa aspekty: usu0142ugodawcy i usu0142ugobiorcy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">podział zadań realizowanych przez aplikację na dwa aspekty: usługodawcy i usługobiorcy</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;u017ce kau017cdy uu017cytkownik mou017ce na swoim komputerze wywou0142au0107 program serwera&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">że każdy użytkownik może na swoim komputerze wywołać program serwera</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;u017ce kau017cdy klient mou017ce w kau017cdej chwili stau0107 siu0119 serwerem&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">że każdy klient może w każdej chwili stać się serwerem</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ustawienie wszystkich programu00f3w w pary: klient, serwer&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ustawienie wszystkich programów w pary: klient, serwer</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Architektura klient-serwer oznacza:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Architektura klient-serwer oznacza:</span>",
+      "id": 2878,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;strukturu0119 sklepu internetowego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">strukturę sklepu internetowego</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;u017ce kau017cdy proces mou017ce peu0142niu0107 zaru00f3wno rolu0119 klienta jak i serwera&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">że każdy proces może pełnić zarówno rolę klienta jak i serwera</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;u017ce jeden program u015bwiadczy usu0142ugi dla grupy innych programu00f3w&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">że jeden program świadczy usługi dla grupy innych programów</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;u017ce kau017cdy klient mou017ce w kau017cdej chwili stau0107 siu0119 serwerem&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">że każdy klient może w każdej chwili stać się serwerem</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re z poniu017cszych sformuu0142owau0144 su0105 prawdziwe:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które z poniższych sformułowań są prawdziwe:</span>",
+      "id": 2879,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;na jednym komputerze mou017ce byu0107 doku0142adnie jeden serwer i jeden klient&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">na jednym komputerze może być dokładnie jeden serwer i jeden klient</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;na jednym komputerze mou017ce byu0107 tylko jeden serwer ale za to duu017co klientu00f3w&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">na jednym komputerze może być tylko jeden serwer ale za to dużo klientów</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;na jednym komputerze mou017ce byu0107 wiele serweru00f3w i co najmniej jeden klient&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">na jednym komputerze może być wiele serwerów i co najmniej jeden klient</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;na jednym komputerze mou017ce byu0107 wiele serweru00f3w i wiele klientu00f3w&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">na jednym komputerze może być wiele serwerów i wiele klientów</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re z poniu017cszych sformuu0142owau0144 su0105 prawdziwe:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które z poniższych sformułowań są prawdziwe:</span>",
+      "id": 2880,
+      "comments": [
+        {
+          "author": "~Err0r@89.77.*.*",
+          "comment": "są 2 takie same pytania z roznymi odp.",
+          "date": "02-02-2017 01:43:55"
+        },
+        {
+          "author": "~maziar@87.206.*.*",
+          "comment": "w tym pytaniu wydaje mi się, że odp A też jest prawdziwa. Drugie pytanie ma trochę inaczej sformułowane odpowiedzi.",
+          "date": "02-02-2017 20:42:01"
+        },
+        {
+          "author": "~xenon2@109.241.*.*",
+          "comment": "Chyba A,B i D są poprawne",
+          "date": "04-02-2017 02:26:05"
+        },
+        {
+          "author": "~maziar@87.206.*.*",
+          "comment": "A jest poprawne. Ale odp B było by poprawne gdyby dodane było słowo \"może\".",
+          "date": "04-02-2017 14:08:18"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "A jest poprawne na 100% :P",
+          "date": "05-02-2017 11:51:19"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zaznaczam A",
+          "date": "05-02-2017 17:00:10"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{\" 1\":2,\"2\":\"program=\"\" peu0142niu0105cy=\"\" rolu0119=\"\" serwera=\"\" mou017ce=\"\" stau0107=\"\" siu0119=\"\" klientem=\"\" innego=\"\" serwera\"}\"=\"\" data-sheets-userformat=\"{\" 2\":513,\"3\":{\"1\":0},\"12\":0}\"=\"\">program pełniący rolę serwera może stać się klientem innego serwera</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;interfejs uu017cytkownika wchodzi w sku0142ad programu klienta&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">interfejs użytkownika wchodzi w skład programu klienta</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;serwer po realizacji usu0142ugi staje siu0119 klientem innego serwera&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">serwer po realizacji usługi staje się klientem innego serwera</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klient i serwer mogu0105 siu0119 znajdowau0107 na ru00f3u017cnych komputerach&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klient i serwer mogą się znajdować na różnych komputerach</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re z poniu017cszych sformuu0142owau0144 su0105 prawdziwe:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które z poniższych sformułowań są prawdziwe:</span>",
+      "id": 2881,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;program peu0142niu0105cy rolu0119 serwera mou017ce stau0107 siu0119 klientem innego serwera&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">program pełniący rolę serwera może stać się klientem innego serwera</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;interfejs uu017cytkownika mou017ce byu0107 generowany przez program klienta&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">interfejs użytkownika może być generowany przez program klienta</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;interfejs uu017cytkownika mou017ce byu0107 generowany przez program serwera&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">interfejs użytkownika może być generowany przez program serwera</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;klient i serwer muszu0105 siu0119 znajdowau0107 na ru00f3u017cnych komputerach&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">klient i serwer muszą się znajdować na różnych komputerach</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Kwerenda przekazuju0105ca polega na:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Kwerenda przekazująca polega na:</span>",
+      "id": 2882,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wyu015bwietleniu uu017cytkownikowi wyniku00f3w instrukcji SQL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wyświetleniu użytkownikowi wyników instrukcji SQL</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;umieszczeniu na formularzu wyniku00f3w instrukcji SQL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">umieszczeniu na formularzu wyników instrukcji SQL</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;przesu0142aniu do serwera bazy danych przez ODBC instrukcji SQL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">przesłaniu do serwera bazy danych przez ODBC instrukcji SQL</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;przesu0142aniu do serwera pocztowego rezultatu wykonania instrukcji SQL&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">przesłaniu do serwera pocztowego rezultatu wykonania instrukcji SQL</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Kwerenda przekazuju0105ca mou017ce byu0107 uu017cyta do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Kwerenda przekazująca może być użyta do:</span>",
+      "id": 2883,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia tabeli w bazie danych SQLServer&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia tabeli w bazie danych SQLServer</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia perspektywy w bazie danych SQLServer&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia perspektywy w bazie danych SQLServer</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia formularza w bazie danych SQLServer&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia formularza w bazie danych SQLServer</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia obiektu Application w bazie danych SQLServer&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia obiektu Application w bazie danych SQLServer</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Kwerenda przekazuju0105ca mou017ce byu0107 uu017cyta do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Kwerenda przekazująca może być użyta do:</span>",
+      "id": 2884,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia tabeli w bazie danych Oracle&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia tabeli w bazie danych Oracle</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia perspektywy w bazie danych Oracle&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia perspektywy w bazie danych Oracle</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia formularza w bazie danych Oracle&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia formularza w bazie danych Oracle</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;utworzenia obiektu Application w bazie danych Oracle&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">utworzenia obiektu Application w bazie danych Oracle</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Kwerenda przekazuju0105ca mou017ce byu0107 uu017cyta do:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Kwerenda przekazująca może być użyta do:</span>",
+      "id": 2885,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;sprowadzenia danych z odlegu0142ej bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">sprowadzenia danych z odległej bazy danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wykonania instrukcji SQL w odlegu0142ej bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wykonania instrukcji SQL w odległej bazie danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wykonania programu Visual Basic w odlegu0142ej bazie danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wykonania programu Visual Basic w odległej bazie danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;skorzystania z usu0142ug serwera automatyzacji&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">skorzystania z usług serwera automatyzacji</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Odnou015bnik okreu015bla siu0119 dla:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Odnośnik określa się dla:</span>",
+      "id": 2886,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumny kluczy gu0142u00f3wnego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumny kluczy głównego</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumny klucza obcego&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumny klucza obcego</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;kolumny na ktu00f3rej zostau0142 zau0142ou017cony indeks&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">kolumny na której został założony indeks</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;formularza&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">formularza</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Opcja &quot;Kaskadowe usuwanie powiu0105zanych rekordu00f3w&quot;:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Opcja \"Kaskadowe usuwanie powiązanych rekordów\":</span>",
+      "id": 2887,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;umou017cliwia zachowianie wiezu00f3w spu00f3jnou015bci referencyjnej&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">umożliwia zachowianie wiezów spójności referencyjnej</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest ustawiania w widoku projekt tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest ustawiania w widoku projekt tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest ustawiania w widoku arkusz danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest ustawiania w widoku arkusz danych</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest ustawiana w oknie edycji wu0142au015bciwou015bci zwiu0105zku miu0119dzy dwiema tabelami&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest ustawiana w oknie edycji właściwości związku między dwiema tabelami</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Typ zu0142u0105czania wierszy:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Typ złączania wierszy:</span>",
+      "id": 2888,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest ustawiany w widoku projekt tabeli&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest ustawiany w widoku projekt tabeli</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest ustawiany w okienku wu0142au015bciwou015bci zwiu0105zku miu0119dzy dwiema tabelami&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest ustawiany w okienku właściwości związku między dwiema tabelami</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ma dwie opcje&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ma dwie opcje</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;ma trzy opcje&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">ma trzy opcje</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re z poniu017cszych su0105 nazwami rodzaju00f3w kwerend:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które z poniższych są nazwami rodzajów kwerend:</span>",
+      "id": 2889,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;usuwaju0105ca&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">usuwająca</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;rozdzielaju0105ca&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">rozdzielająca</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;aktualizuju0105ca&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">aktualizująca</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;administruju0105ca&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">administrująca</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Diagram zwiu0105zku00f3w encji:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Diagram związków encji:</span>",
+      "id": 2890,
+      "comments": [
+        {
+          "author": "~maziar@160.83.*.*",
+          "comment": "Czy odpowiedź D nie jest również poprawna ?",
+          "date": "01-02-2017 12:39:38"
+        },
+        {
+          "author": "~anon@148.81.*.*",
+          "comment": "uwazam, ze jest\n",
+          "date": "04-02-2017 18:15:06"
+        },
+        {
+          "author": "~T@94.254.*.*",
+          "comment": "W mojej opinii wszystkie sa poprawne. Programisci tez korzystaja z diagramow...",
+          "date": "15-02-2018 07:22:46"
+        },
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "Tutaj D powinno być również poprawne",
+          "date": "17-02-2019 11:00:04"
+        },
+        {
+          "author": "~csgo@162.158.*.*",
+          "comment": "wydaje mi się, że D nie - diagram związków tworzy się NA PODSTAWIE wymagań określonych przez użytkownika w języku naturalnym",
+          "date": "23-06-2019 18:50:10"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest uu017cywany przez programistu00f3w aplikacji&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest używany przez programistów aplikacji</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jest uu017cywany przez analityku00f3w&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jest używany przez analityków</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;abstrahuje od szczegu00f3u0142u00f3w implementacyjnych bazy danych&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">abstrahuje od szczegółów implementacyjnych bazy danych</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;su0142uu017cy do okreu015blenia wymagau0144 uu017cytkowniku00f3w&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">służy do określenia wymagań użytkowników</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Dla jakich obiektu00f3w mou017cna zdefiniowau0107 zestaw rekordu00f3w:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Dla jakich obiektów można zdefiniować zestaw rekordów:</span>",
+      "id": 2891,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;formularz&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">formularz</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;raport&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">raport</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;tabela&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">tabela</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;lista&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">lista</span>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Ktu00f3re z poniu017cszych wyrau017ceu0144 naleu017cu0105 do ju0119zyka SQL:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Które z poniższych wyrażeń należą do języka SQL:</span>",
+      "id": 2892,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Select Distinct Osoby.Nazwisko From Osoby&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Select Distinct Osoby.Nazwisko From Osoby</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;DoCmd.OpenQuery &quot;Nazwiska&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">DoCmd.OpenQuery \"Nazwiska\"</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Rst.Update&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Rst.Update</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Update Osoby Set Data = null&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Update Osoby Set Data = null</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Aby zamodelowau0107 zwiu0105zek niejednoznaczny (wiele-do-wiele) w MS Visio naleu017cy&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Aby zamodelować związek niejednoznaczny (wiele-do-wiele) w MS Visio należy</span>",
+      "id": 2893,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Utworzyu0107 encju0119 asocjacyjnu0105 i powiu0105zau0107 ju0105 z encjami wyju015bciowymi dwoma zwiu0105zkami jednoznacznymi (jeden-do-wiele),n w ktu00f3rych encja asocjacyjna pozostanie po stronie &quot;jeden&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Utworzyć encję asocjacyjną i powiązać ją z encjami wyjściowymi dwoma związkami jednoznacznymi (jeden-do-wiele),<br> w których encja asocjacyjna pozostanie po stronie \"jeden\"</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Pou0142u0105czyu0107 te encje konektorem posiadaju0105cym strzau0142ki z obu stron&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Połączyć te encje konektorem posiadającym strzałki z obu stron</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Pou0142u0105czyu0107 te encje dwoma konektorami, przeciwnie skierowanymi&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Połączyć te encje dwoma konektorami, przeciwnie skierowanymi</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Utworzyu0107 encju0119 asocjacyjnu0105 i powiu0105zau0107 ju0105 z encjami wyju015bciowymi dwoma zwiu0105zkami jednoznacznymi (jeden-do-wiele), nw ktu00f3rych encja asocjacyjna pozostanie po stronie &quot;wiele&quot;&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Utworzyć encję asocjacyjną i powiązać ją z encjami wyjściowymi dwoma związkami jednoznacznymi (jeden-do-wiele), <br>w których encja asocjacyjna pozostanie po stronie \"wiele\"</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Relacja PAu0143STWO - RZEKA (&quot;przepu0142ywa przez&quot;) jest relacju0105?&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Relacja PAŃSTWO - RZEKA (\"przepływa przez\") jest relacją?</span>",
+      "id": 2894,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jeden - wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jeden - wiele</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiele - jeden&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiele - jeden</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiele - wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiele - wiele</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wymaga dodania encji asocjacyjnej&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wymaga dodania encji asocjacyjnej</span>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Z ilu tabel powinna siu0119 sku0142adau0107 prosta znormalizowana baza zawieraju0105ca informacje o piu0119trach, npokojach i przynaleu017cnou015bci &quot;jeden do wielu&quot; miu0119dzy nimi:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Z ilu tabel powinna się składać prosta znormalizowana baza zawierająca informacje o piętrach, <br>pokojach i przynależności \"jeden do wielu\" między nimi:</span>",
+      "id": 2895,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:3,&quot;3&quot;:1}\" data-sheets-userformat=\"{&quot;2&quot;:577,&quot;3&quot;:{&quot;1&quot;:0},&quot;9&quot;:0,&quot;12&quot;:0}\">1</span>",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": true
+        },
+        {
+          "answer": "3",
+          "correct": false
+        },
+        {
+          "answer": "4",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Encje PREZYDENT i PAu0143STWO (z zaleu017cnou015bciu0105 u201ckierujeu201d) pou0142u0105czone su0105 zwiu0105zkiem:&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:16899,&quot;3&quot;:{&quot;1&quot;:0},&quot;4&quot;:{&quot;1&quot;:2,&quot;2&quot;:13228792},&quot;12&quot;:0,&quot;17&quot;:1}\">Encje PREZYDENT i PAŃSTWO (z zależnością “kieruje”) połączone są związkiem:</span>",
+      "id": 2896,
+      "comments": [
+        {
+          "author": "~maziar@160.83.*.*",
+          "comment": "Jeśli jest wiele do wiele do powinna być jeszcze poprawna odpowiedź A",
+          "date": "01-02-2017 12:20:25"
+        },
+        {
+          "author": "~maziar@160.83.*.*",
+          "comment": "jednak uważam, że powinno być wiele - jeden. Co myślicie ?",
+          "date": "01-02-2017 12:22:28"
+        },
+        {
+          "author": "~FX95@94.254.*.*",
+          "comment": "Zalezy czy chodzi o prezydentow, ktorzy obecnie kieruja danym panstwem czy tez o wszytskich prezydentow, ktorzy danym panstwem kierowali w przeszlosci. W pierwszym przypadku powinno byc chyba jeden - jeden, a w drugim tez mi sie zdaje wiele - jeden. ",
+          "date": "02-02-2017 21:19:24"
+        },
+        {
+          "author": "~maziar@87.206.*.*",
+          "comment": "Żeby to było zgodne jak najbardziej z rzeczywistością wybrał bym 1:w",
+          "date": "02-02-2017 22:44:26"
+        },
+        {
+          "author": "~adrian@88.156.*.*",
+          "comment": "A nie chodzi o to, że wiele-wiele pozwala na wprowadzenie dodatkowych kolumn od-do i trzymanie historii prezydentów?",
+          "date": "04-02-2017 21:51:36"
+        },
+        {
+          "author": "~maziar@87.206.*.*",
+          "comment": "To prawda dzięki temu była by przechowywana historia. Natomiast w zadaniu nie jest powiedziane, że ma być przechowywana. ",
+          "date": "04-02-2017 22:11:37"
+        },
+        {
+          "author": "~anon@88.156.*.*",
+          "comment": "yep, dużo tu takich zadań niejednoznacznych.. w tej wersji powinna być jeszcze odpowiedz A jak ktoś wyzej zauważył",
+          "date": "04-02-2017 22:24:49"
+        },
+        {
+          "author": "~anon@91.230.*.*",
+          "comment": "Semantycznie rzecz biorac \"kieruje\" jest w poleceniu w czasie terazniejszym. Jak dla mnie 1-w.",
+          "date": "18-02-2018 10:28:17"
+        },
+        {
+          "author": "mykhi",
+          "comment": "pamiętam jak 10 lat temu omawialiśmy ten przykład na zajęciach. wiele-wiele jest poprawną odpowiedzią. tłumaczone to było tym, że prezydent może być teoretycznie prezydentem raz jednego kraju a za jakiś czas drugiego. ",
+          "date": "18-02-2018 11:10:48"
+        },
+        {
+          "author": "~anon@89.66.*.*",
+          "comment": "to czy w takim razie nie powinna być zaznaczona również odpowiedź A (wymaga dodatkowej encji asocjacyjnej)?",
+          "date": "05-02-2019 00:52:01"
+        },
+        {
+          "author": "~anon@188.147.*.*",
+          "comment": "A powinno być również prawdziwe.",
+          "date": "10-02-2019 11:28:39"
+        },
+        {
+          "author": "~anon@2a02:a31a:4044:af80:14b:a6ad:3b37:cc0d",
+          "comment": "Dodatkowa encja jest konieczna do zrobienia wiele-wiele",
+          "date": "07-02-2020 22:28:18"
+        },
+        {
+          "author": "~anon@2a02:a31a:4044:af80:14b:a6ad:3b37:cc0d",
+          "comment": "Dodatkowa encja jest konieczna do zrobienia wiele-wiele",
+          "date": "07-02-2020 22:28:31"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wymagaju0105cym dodatkowej encji asocjacyjnej&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wymagającym dodatkowej encji asocjacyjnej</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;jeden - wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">jeden - wiele</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiele - wiele&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiele - wiele</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;wiele - jeden&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">wiele - jeden</span>",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

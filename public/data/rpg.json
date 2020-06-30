@@ -1,0 +1,995 @@
+{
+  "title": "Rachunkowość Podmiotow Gospodarczych (RPG)",
+  "id": "rpg",
+  "data": [
+    {
+      "question": "Co rozumiemy pod pojęciem księgowości?",
+      "id": 504,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Księgowość jest pojęciem szerokim, ujmującym w formie ilościowej wszystkie zdarzenia gospodarcze.",
+          "correct": false
+        },
+        {
+          "answer": "Jest nauką, ujmującą w formie ilościowej wszystkie zdarzenia gospodarcze w przedsiębiorstwie.",
+          "correct": false
+        },
+        {
+          "answer": "Jest to zespół prowadzonych zapisów, dotyczących stanu jak i zmiany w stanie aktywów i zobowiązań oraz ewidencji przebiegu procesu produkcji i obliczenia wyniku finansowego.",
+          "correct": true
+        },
+        {
+          "answer": "Księgowość zajmuje się ujednoliceniem zasad ewidencji zdarzeń gospodarczych występujących w przedsiębiorstwie.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie składniki cząstkowe uwzględniamy przy obliczaniu wyników na działalności gospodarczej?",
+      "id": 505,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wynik na działalności operacyjnej oraz wynik na zdarzeniach losowych.",
+          "correct": false
+        },
+        {
+          "answer": "Jest sumą wyników działalności operacyjnej i finansowej.",
+          "correct": true
+        },
+        {
+          "answer": "Jest sumą zysku netto oraz wyniku na działalności finansowej.",
+          "correct": false
+        },
+        {
+          "answer": "Obliczamy go dodając do wyniku na działalności finansowej marżę brutto.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie wyniki cząstkowe uwzględniamy przy obliczaniu wyników na działalności gospodarczej?",
+      "id": 506,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wynik na działalności operacyjnej oraz wynik na zdarzeniach losowych.",
+          "correct": false
+        },
+        {
+          "answer": "Jest sumą wyników działalności operacyjnej i finansowej.",
+          "correct": true
+        },
+        {
+          "answer": "Jest sumą zysku netto oraz wyniku na działalności finansowej.",
+          "correct": false
+        },
+        {
+          "answer": "Obliczamy go dodając do wyniku na działalności finansowej marżę brutto.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jaka jest definicja dokumentu księgowego?",
+      "id": 507,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Jest to dokument służący za podstawę naliczenia amortyzacji.",
+          "correct": false
+        },
+        {
+          "answer": "Jest to dowód stwierdzający zaistnienie zdarzenia gospodarczego.",
+          "correct": true
+        },
+        {
+          "answer": "Jest to umowa dotycząca remontu biura.",
+          "correct": false
+        },
+        {
+          "answer": "Jest to dowód stwierdzający naliczanie amortyzacji od aktywów obrotowych.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym charakteryzuje się polityka trzeciej fali?",
+      "id": 508,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wykorzystaniem wiedzy, informacji, komunikacji, Internetu.",
+          "correct": true
+        },
+        {
+          "answer": "Tempem dokonywanych zmian oraz poziomem bezrobocia.",
+          "correct": false
+        },
+        {
+          "answer": "Szybkim rozwojem Internetu i liczbą kształconych obywateli danego kraju.",
+          "correct": false
+        },
+        {
+          "answer": "Wzrastającą liczbą posiadanych komputerów i Internetu.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wymień zasoby przedsiębiorstwa niezbędne do jego właściwego funkcjonowania?",
+      "id": 509,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Aktywa trwałe, obrotowe oraz środki finansowe.",
+          "correct": true
+        },
+        {
+          "answer": "Zasoby finansowe, rzeczowe oraz kapitał ludzki",
+          "correct": false
+        },
+        {
+          "answer": "Zasoby własne i obce a szczególnie aktywa obrotowe z zakupu.",
+          "correct": false
+        },
+        {
+          "answer": "Odpowiednio wykształcony kapitał intelektualny dysponujący właściwą technologią.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przydatność kalkulacji do podejmowania decyzji w przedsiębiorstwie.",
+      "id": 510,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Kalkulacje wykorzystujemy do naliczania pensji pracowników przedsiębiorstwa.",
+          "correct": false
+        },
+        {
+          "answer": "Kalkulacje przydatne do wyceny składników majątku przedsiębiorstwa.",
+          "correct": false
+        },
+        {
+          "answer": "Kalkulacje umożliwiające wybór rozwiązania najlepszego ze znanych lub optymalnego.",
+          "correct": true
+        },
+        {
+          "answer": "Kalkulacje przydatne do obliczania zużycia materiałów remontowych",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem inwentarza?",
+      "id": 511,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Inwentarz są to aktywa trwałe przedsiębiorstwa.",
+          "correct": false
+        },
+        {
+          "answer": "Inwentarz jest to dokumenty sporządzane w wyniku inwentaryzacji.",
+          "correct": true
+        },
+        {
+          "answer": "Inwentarz jest to ogół zwierzą Inwentarz są to t hodowlanych znajdujący się w przedsiębiorstwie.",
+          "correct": false
+        },
+        {
+          "answer": "Inwentarz jest to dokument stwierdzający posiadanie zapasów w magazynie.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zadania inwentaryzacji.",
+      "id": 512,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Uchwycenie stanu aktywów i zobowiązań przedsiębiorstwa oraz uchwycenie nadwyżek lub niedoborów magazynowych.",
+          "correct": true
+        },
+        {
+          "answer": "Uchwycenie zbędnych aktywów posiadanych w przedsiębiorstwie.",
+          "correct": false
+        },
+        {
+          "answer": "Uchwycenie zbędnych wartości niematerialnych i prawnych.",
+          "correct": false
+        },
+        {
+          "answer": "Uchwycenie zysku lub straty przedsiębiorstwa.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie składniki zaliczamy do aktywów obrotowych przedsiębiorstwa?",
+      "id": 513,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zapasy posiadanych środków produkcji, należności długoterminowe, oraz wartość gotówki w banku.",
+          "correct": false
+        },
+        {
+          "answer": "Inwentarz małocenny posiadany w przedsiębiorstwie.",
+          "correct": false
+        },
+        {
+          "answer": "Zapasy, należności i inwestycje krótkoterminowe oraz krótkoterminowe rozliczenia międzyokresowe.",
+          "correct": true
+        },
+        {
+          "answer": "Wszystkie środki o wartości nie przekraczające  3,5 tys. zł.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie składniki zaliczamy do aktywów trwałych przedsiębiorstwa?",
+      "id": 514,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wartości niematerialne i prawne, rzeczowe aktywa trwałe, należności długoterminowe, inwestycje długoterminowe, długoterminowe rozliczenia międzyokresowe.",
+          "correct": true
+        },
+        {
+          "answer": "Grunty własne i obce, stado obrotowe inwentarza żywego oraz budynki i maszyny.",
+          "correct": false
+        },
+        {
+          "answer": "środki transportowe, budynki, budowle oraz inwestycje.",
+          "correct": false
+        },
+        {
+          "answer": "Stado podstawowe inwentarza żywego, inwestycje rozpoczęte, budynki i budowle.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Wymień podstawowe sprawozdania finansowe.",
+      "id": 515,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Rachunek zysków i strat, sprawozdania składane do urzędu skarbowego i banku.",
+          "correct": false
+        },
+        {
+          "answer": "Bilans majątkowy, rachunek zysków i strat, sprawozdanie z przepływów pieniężnych oraz sprawozdania dodatkowe.",
+          "correct": true
+        },
+        {
+          "answer": "Koszty działań, bilans majątkowy, rachunek zysków i strat, sprawozdanie z przepływów pieniężnych oraz sprawozdania dodatkowe.",
+          "correct": false
+        },
+        {
+          "answer": "Sprawozdania finansowe dotyczące naliczania marż brutto.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Od jakich środków trwałych nie naliczamy amortyzacji?",
+      "id": 516,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Stada obrotowego, maszyn i urządzeń oraz budowli w likwidacji.",
+          "correct": false
+        },
+        {
+          "answer": "Dzieł sztuki, melioracji i inwentarza żywego.",
+          "correct": false
+        },
+        {
+          "answer": "Programów komputerowych, wartości niematerialnych i prawnych oraz dzieł sztuki.",
+          "correct": false
+        },
+        {
+          "answer": "Dzieł sztuki, gruntów oraz stada podstawowego inwentarza żywego.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem umorzenia?",
+      "id": 517,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zmniejszenie wartości środka trwałego o naliczoną amortyzację w pierwszym kwartale danego roku.",
+          "correct": false
+        },
+        {
+          "answer": "Wyksięgowanie środka trwałego w wyniku jego moralnego zużycia.",
+          "correct": false
+        },
+        {
+          "answer": "Wyksięgowanie środka trwałego w wyniku jego zużycia fizycznego.",
+          "correct": false
+        },
+        {
+          "answer": "Zmniejszenie wartości środka trwałego o dotychczasowe jego zużycie.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Rodzaje kont księgowych.",
+      "id": 518,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Konta przychodowe i rozchodowe.",
+          "correct": false
+        },
+        {
+          "answer": "Konta bilansowe oraz wynikowe.",
+          "correct": true
+        },
+        {
+          "answer": "Konta aktywów, pasywów, strat i zysków oraz magazynowe.",
+          "correct": false
+        },
+        {
+          "answer": "Konta aktywów trwałych, obrotowych oraz przychodów i kosztów.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Metoda pojedynczego zapisu księgowego.",
+      "id": 519,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wykorzystywana jest w księgowości skomputeryzowanej.",
+          "correct": false
+        },
+        {
+          "answer": "Polega na księgowaniu zdarzeń gospodarczych tylko po jednej stronie konta teowego.",
+          "correct": false
+        },
+        {
+          "answer": "Służy do księgowania zdarzeń gospodarczych tylko w mierniku naturalnym.",
+          "correct": false
+        },
+        {
+          "answer": "Jest jednorazowym zaksięgowaniem zdarzenia gospodarczego bez planu kont.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Jakie wyniki cząstkowe uwzględniamy przy obliczaniu zysku brutto przedsiębiorstwa?",
+      "id": 520,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Przy obliczeniu zysku brutto przedsiębiorstwa konieczne jest obliczenie marży brutto.",
+          "correct": false
+        },
+        {
+          "answer": "Wynik na działalności gospodarczej pomniejszony o obowiązkowe obciążenia podatkowe.",
+          "correct": false
+        },
+        {
+          "answer": "Wynik na sprzedaży +/ -  wynik na działalności finansowej.",
+          "correct": true
+        },
+        {
+          "answer": "Wynik na działalności gospodarczej +/ - wynik na działalności losowej.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem leasing operacyjny?",
+      "id": 521,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Rodzaj inwestycji dotyczących pozyskiwania środków trwałych.",
+          "correct": false
+        },
+        {
+          "answer": "Sposób pozyskiwania nowych środków finansowych na inwestycje.",
+          "correct": false
+        },
+        {
+          "answer": "Charakteryzuje się krótkookresowym korzystaniem ze środków trwałych.",
+          "correct": true
+        },
+        {
+          "answer": "Korzystanie z obcej siły roboczej bez konieczności jej zatrudniania.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem WARSET i w jakim celu jest wykorzystywany ?",
+      "id": 522,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Nowy, uruchomiony, elektroniczny system obrotu instrumentami finansowymi.",
+          "correct": true
+        },
+        {
+          "answer": "Nowy, uruchomiony system rozliczeń międzybankowych",
+          "correct": false
+        },
+        {
+          "answer": "Międzynarodowy system współpracy giełd papierów wartościowych w Europie.",
+          "correct": false
+        },
+        {
+          "answer": "System notowań na towarowej giełdzie paryskiej.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jak rozumiemy Międzynarodowe Standardy Rachunkowości (MSR).",
+      "id": 523,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Obowiązujące normy prawa, w państwach, które przyjęły MSR- y.",
+          "correct": false
+        },
+        {
+          "answer": "Doprowadzenie do sytuacji, w której krajowe i międzynarodowe standardy rachunkowości będą zgodne.",
+          "correct": true
+        },
+        {
+          "answer": "Rozumiemy podstawę prawną prowadzenia rachunkowości finansowej  w Polsce.",
+          "correct": false
+        },
+        {
+          "answer": "Rozumiemy akty prawne firm zagranicznych funkcjonujących w Polsce.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem akcji?",
+      "id": 524,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Dłużne papiery wartościowe inwestora.",
+          "correct": false
+        },
+        {
+          "answer": "Papiery wartościowe potwierdzające wysokość przysługującej inwestorowi dywidendy.",
+          "correct": false
+        },
+        {
+          "answer": "Podstawowe papiery wartościowe pozwalające regulować zobowiązania między inwestorami.",
+          "correct": false
+        },
+        {
+          "answer": "Podstawowy papiery wartościowe potwierdzające współwłasność inwestora w konkretnej spółce.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojeciem Warsaw Interbank Bit Rate (WIBID)?",
+      "id": 525,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wysokości oprocentowania kredytów długoterminowych.",
+          "correct": false
+        },
+        {
+          "answer": "Roczna stopa procentowa jaką banki są skłonne zapłacić na rynku międzybankowym.",
+          "correct": true
+        },
+        {
+          "answer": "Oprocentowanie kredytów w ramach rynku kapitałowego.",
+          "correct": false
+        },
+        {
+          "answer": "Na rynku pieniężnym WIBID dokonujemy sprzedaży bonów skarbowych długoterminowych.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojeciem Warsaw Interbank Bit Rate (WIBID)?",
+      "id": 526,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wysokości oprocentowania kredytów długoterminowych.",
+          "correct": false
+        },
+        {
+          "answer": "Roczna stopa procentowa jaką banki zapłacąza środki przyjęte w depozyt.",
+          "correct": true
+        },
+        {
+          "answer": "Oprocentowanie kredytów w ramach rynku kapitałowego.",
+          "correct": false
+        },
+        {
+          "answer": "Na rynku pieniężnym WIBID dokonujemy sprzedaży bonów skarbowych długoterminowych.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jak obliczamy wynik na działalności operacyjnej przedsiębiorstwa?",
+      "id": 527,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Przychody z podstawowej działalności operacyjnej pomniejszamy o koszty finansowe.",
+          "correct": false
+        },
+        {
+          "answer": "Naliczona amortyzacja pomniejszona o koszty stałe.",
+          "correct": false
+        },
+        {
+          "answer": "Przychody z podstawowej i pomocniczej działalności operacyjnej pomniejszone o koszty wymienionych działalności.",
+          "correct": true
+        },
+        {
+          "answer": "Zysk netto pomniejszony o koszty działalności gospodarczej.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem rachunkowości?",
+      "id": 528,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Całościowy, systematyczny spis z natury posiadanych środków.",
+          "correct": false
+        },
+        {
+          "answer": "Całościowy i zwarty system ciągłego i systematycznego gromadzenia i przetwarzania oraz prezentacji informacji ekonomicznych.",
+          "correct": true
+        },
+        {
+          "answer": "Nauka zajmująca się ewidencją procesu produkcji w przedsiębiorstwie.",
+          "correct": false
+        },
+        {
+          "answer": "Pod pojęciem rachunkowości rozumiemy ewidencję zdarzeń gospodarczych w przedsiębiorstwie.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie są możliwości racjonalizacji działalności gospodarczej przedsiębiorstwa?",
+      "id": 529,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Uzyskanie określonego celu przy najniższych kosztach lub maksymalizacja dochodów przy określonym poziomie kosztów.",
+          "correct": true
+        },
+        {
+          "answer": "Racjonalizacja produkcji poprzez ograniczenie kosztów.",
+          "correct": false
+        },
+        {
+          "answer": "Uzyskiwanie m. in. najwyższego poziomu produkcji przy najniższych kosztach",
+          "correct": false
+        },
+        {
+          "answer": "Racjonalizacja działalności człowieka polega na zmianie struktury produkcji.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem zasobów ludzkich?",
+      "id": 530,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Zaangażowanie pracowników zarządu przedsiębiorstwa z wyższym wykształceniem.",
+          "correct": false
+        },
+        {
+          "answer": "Ogół osób zatrudnionych w przedsiębiorstwie.",
+          "correct": false
+        },
+        {
+          "answer": "Liczba pracowników zatrudnionych i doświadczonych, ze stażem ponad 5 letnim   w przedsiębiorstwie.",
+          "correct": false
+        },
+        {
+          "answer": "Jest to ogół kompetencji, którymi dysponować powinni wszyscy pracownicy przedsiębiorstwa.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Rodzaje kalkulacji wykorzystywanych  w przedsiębiorstwie?",
+      "id": 531,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Kalkulacje o charakterze ekonomicznym i finansowym.",
+          "correct": false
+        },
+        {
+          "answer": "Kalkulacje pełne w celu obliczania przychodów i kosztów konkretnego produktu.",
+          "correct": false
+        },
+        {
+          "answer": "Kalkulacje pełne i niepełne.",
+          "correct": true
+        },
+        {
+          "answer": "Kalkulacje dotyczące wytwarzanych produktów.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Na czym polega degresywna metoda naliczania amortyzacji?",
+      "id": 532,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Raty amortyzacji naliczane w początkowym okresie są wyższe, w następnych okresach stopniowo maleją.",
+          "correct": true
+        },
+        {
+          "answer": "W pierwszym okresie naliczamy 50% amortyzacji, w następnych okresach jest ona obniżana.",
+          "correct": false
+        },
+        {
+          "answer": "Wartość amortyzacji obliczamy dla każdego okresu od wartości o 10% niższej.",
+          "correct": false
+        },
+        {
+          "answer": "Naliczana amortyzacja jest w pierwszym okresie bardzo wysoka, a póniej stopniowo zanika.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Rodzaje, grupy, kont księgowych.",
+      "id": 533,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Konta przychodowe i rozchodowe.",
+          "correct": false
+        },
+        {
+          "answer": "Konta bilansowe oraz wynikowe.",
+          "correct": true
+        },
+        {
+          "answer": "Konta aktywów, pasywów, strat i zysków oraz magazynowe.",
+          "correct": false
+        },
+        {
+          "answer": "Konta aktywów trwałych, obrotowych oraz przychodów i kosztów.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Konto księgowe i jego cechy.",
+      "id": 534,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Podstawowe urządzenie księgowe, wykorzystywane w księdze przychodów i rozchodów.",
+          "correct": false
+        },
+        {
+          "answer": "Wykorzystywane jest przy metodzie pojedynczego zapisu.",
+          "correct": false
+        },
+        {
+          "answer": "Podstawowe urządzenie księgowe, służące do klasyfikacji, grupowania i ewidencji zdarzeń gospodarczych.",
+          "correct": true
+        },
+        {
+          "answer": "Podstawowe urządzenia wykorzystywane w naliczaniu podatku dochodowego firmy.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Warunki, metoda podwójnego (bilansowego) zapisu księgowego.",
+      "id": 535,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Polega na zaksięgowaniu zdarzenia gospodarczego o tej samej wartości na dwóch kontach korespondujących po przeciwstawnych stronach tych kont.",
+          "correct": true
+        },
+        {
+          "answer": "Jest wykorzystywana na kontach podwójnych.",
+          "correct": false
+        },
+        {
+          "answer": "Charakteryzuje się zapisem podwójnym.",
+          "correct": false
+        },
+        {
+          "answer": "Polega na ewidencjonowaniu zdarzeń na nośniku papierowym i elektronicznym.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Podaj charakterystykę Komitet Międzynarodowych Standardów Rachunkowości.",
+      "id": 536,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Organizacja, która zrzesza stare i nowe kraje Unii Europejskiej.",
+          "correct": false
+        },
+        {
+          "answer": "Organizacja powoływana przez Parlament Europejski w Brukseli.",
+          "correct": false
+        },
+        {
+          "answer": "Organizacja niezależna, prywatna, powołana w celu ujednolicenia zasad prowadzenia rachunkowości wśród zrzeszonych państw.",
+          "correct": true
+        },
+        {
+          "answer": "Organizacja niezależna, prywatna, powołana w celu ujednolicenia zasad jednolitych wykorzystywanych przez przedsiębiorstwo w sprawozdaniach finansowych.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie są warunki uznania elektronicznych dowodów księgowych?",
+      "id": 537,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Muszą być zgodne z ogólnie przyjętym formatem danych.",
+          "correct": false
+        },
+        {
+          "answer": "Muszą być trwałe, odpowiednio chronione, sprawdzalne, umożliwiające ustalenie osoby dokonującej wpisu.",
+          "correct": true
+        },
+        {
+          "answer": "Muszą posiadać kopię w formie papierowej.",
+          "correct": false
+        },
+        {
+          "answer": "Dotyczą jedynie dokumentów finansowych powyżej 3,5 tys. Zł wartosci.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy przez elektroniczne dowody księgowe?",
+      "id": 538,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Elektroniczne dowody księgowe są podstawą sporządzania dowodów papierowych.",
+          "correct": false
+        },
+        {
+          "answer": "Elektroniczne dowody księgowe muszą posiadać podpisy elektroniczne.",
+          "correct": false
+        },
+        {
+          "answer": "Elektroniczne dowody księgowe  wykorzystywane w handlu elektronicznym.",
+          "correct": false
+        },
+        {
+          "answer": "Elektroniczne dowody księgowe tworzone przy użyciu urządzeń elektronicznych lub nośników danych.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Jakie składniki cząstkowe uwzględniamy przy obliczaniu wyników na działalności gospodarczej?",
+      "id": 539,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wynik na działalności operacyjnej oraz wynik na zdarzeniach losowych.",
+          "correct": false
+        },
+        {
+          "answer": "Jest sumą wyników działalności operacyjnej i finansowej.",
+          "correct": true
+        },
+        {
+          "answer": "Jest sumą zysku netto oraz wyniku na działalności finansowej.",
+          "correct": false
+        },
+        {
+          "answer": "Obliczamy go dodając do wyniku na działalności finansowej marżę brutto.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Czym charakteryzuje się kapitał intelektualny?",
+      "id": 540,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Kapitał intelektualny w miarę jego rozwoju charakteryzuje się zmniejszającym się przyrostem wiedzy.",
+          "correct": false
+        },
+        {
+          "answer": "Kapitał intelektualny podobnie jak naturalne czynniki produkcji charakteryzuje się umiarkowanym przyrostem.",
+          "correct": false
+        },
+        {
+          "answer": "Kapitał intelektualny to rozwój aktywności międzyludzkiej społeczeństwa.",
+          "correct": false
+        },
+        {
+          "answer": "Kapitał intelektualny charakteryzuje się w miarę jego racjonalnego wykorzystania, nieograniczonymi możliwościami rozwoju, oraz symultanicznością.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Na czym polega racjonalizacja działań, przy wykorzystaniu zasady minimalizacji kosztów?",
+      "id": 541,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Polega ona na obniżaniu wykorzystywania środków.",
+          "correct": false
+        },
+        {
+          "answer": "Polega na maksymalizacji produkcji przy ograniczeniu kosztów.",
+          "correct": false
+        },
+        {
+          "answer": "Polega na minimalizacji kosztów i maksymalizacji dochodu.",
+          "correct": false
+        },
+        {
+          "answer": "Polega na uzyskiwaniu określonej ilości produkcji przy najniższym zaangażowaniu środków.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Na czym polega naturalna metoda naliczania amortyzacji?",
+      "id": 542,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Na równomiernej, stałej stopie amortyzacji.",
+          "correct": false
+        },
+        {
+          "answer": "Naliczana jest tylko od wartości niematerialnych i prawnych.",
+          "correct": false
+        },
+        {
+          "answer": "Wysokość amortyzacji jest proporcjonalna do intensywności użytkowania aktywów trwałych.",
+          "correct": true
+        },
+        {
+          "answer": "Naturalna metoda naliczania amortyzacji wykorzystywana jest przy naliczaniu amortyzacji kapitału intelektualnego.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem amortyzacji?",
+      "id": 543,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Wyrażony w pieniądzu koszt zużycia aktywów trwałych w wyniku ich eksploatacji.",
+          "correct": true
+        },
+        {
+          "answer": "Ponoszone koszty eksploatacji środków trwałych.",
+          "correct": false
+        },
+        {
+          "answer": "Koszty eksploatacji parku samochodowego.",
+          "correct": false
+        },
+        {
+          "answer": "Wieloletni koszt eksploatacji środków trwałych.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jak obliczamy wynik na działalności finansowej przedsiębiorstwa?",
+      "id": 544,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Obliczamy  płynność finansową i koszty działalności finansowej.",
+          "correct": false
+        },
+        {
+          "answer": "Obliczamy przychody z działalności finansowej pomniejszone o koszty tej działalności.",
+          "correct": true
+        },
+        {
+          "answer": "Obliczamy wynik na działalności gospodarczej i operacyjnej.",
+          "correct": false
+        },
+        {
+          "answer": "Obliczamy wynik na działalności operacyjnej, od którego odejmujemy wynik  na działalności nadzwyczajnej.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Jakie dokumenty są wykorzystywane do ewidencji środków trwałych?",
+      "id": 545,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Dowód przesunięcia środka trwałego, protokół zdawczo - odbiorczy, protokół przyjęcia technicznego, protokół przyjęcia do użytkowania, dowód zmiany użytkowania oraz dowód likwidacji środka trwałego.",
+          "correct": false
+        },
+        {
+          "answer": "Dowód przyjęcia środka trwałego, protokół przyjęcia technicznego, dowód zmiany miejsca użytkowania oraz dowód likwidacji środka trwałego.",
+          "correct": false
+        },
+        {
+          "answer": "Dowód przyjęcia, protokół zdawczo - odbiorczy, protokół przyjęcia technicznego, protokół przyjęcia do użytkowania, dowód zmiany użytkowania oraz dowód likwidacji środka trwałego.",
+          "correct": true
+        },
+        {
+          "answer": "Dowód przyjęcia, protokół zdawczo - odbiorczy, dowód sprzedaży środka trwałego, faktura zakupu środka trwałego, protokół przyjęcia do użytkowania, dowód zmiany użytkowania",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co rozumiemy pod pojęciem obligacji?",
+      "id": 546,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Rodzaj opcji sprzedawanych inwestorowi.",
+          "correct": false
+        },
+        {
+          "answer": "Papiery wartościowe potwierdzające posiadanie części majątku przedsiębiorstwa.",
+          "correct": false
+        },
+        {
+          "answer": "Papiery dłużne inwestora.",
+          "correct": false
+        },
+        {
+          "answer": "Papiery rynku kapitałowego stwierdzające zobowiązanie emitenta wobec inwestora.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

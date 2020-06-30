@@ -1,0 +1,52 @@
+{
+  "title": "ZBD - pytania od studentów (ZBD)",
+  "id": "zbd",
+  "data": [
+    {
+      "question": "Jak w ogóle wygląda test z TAK'u, jest to test wielokrotnego wyboru czy raczej otwarty?",
+      "id": 3241,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "otwart",
+          "correct": false
+        },
+        {
+          "answer": "zamknięty",
+          "correct": false
+        },
+        {
+          "answer": "zależy",
+          "correct": false
+        },
+        {
+          "answer": "to i to",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Co oznacza A w akronimie ACID?",
+      "id": 2802,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Atomowe (Atomic) – transakcje w bazach danych są atomowe",
+          "correct": true
+        },
+        {
+          "answer": "Anonimowe (anonymous) – transakcje w bazach danych są anonimowe",
+          "correct": false
+        },
+        {
+          "answer": "Anomalia (anomaly) – anomalia zachodzące w transakcjach.",
+          "correct": false
+        },
+        {
+          "answer": "Aksjomat (axiom) – aksjomaty współbieżnego wykonywania transakcji.",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

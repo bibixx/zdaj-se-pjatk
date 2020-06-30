@@ -1,0 +1,2812 @@
+{
+  "title": "Fizyka Kolos1 (angielska) (FIZ)",
+  "id": "fiz",
+  "data": [
+    {
+      "question": "<span lang=\"EN-US\">If an object has an acceleration of 0 m/s<sup>2</sup>, then one can be sure that the object is not&nbsp;<span>____</span>.</span>",
+      "id": 1992,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>moving</span>",
+          "correct": false
+        },
+        {
+          "answer": "<span>changing velocity</span>",
+          "correct": true
+        },
+        {
+          "answer": "<span>changing position</span>",
+          "correct": false
+        },
+        {
+          "answer": "--",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">If car A passes car B, then car A must be ____.</span>",
+      "id": 1993,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<span>accelerating</span>",
+          "correct": false
+        },
+        {
+          "answer": "<p class=\"MsoNormal\"><span lang=\"EN-US\">accelerating at a greater rate than car B.</span></p>",
+          "correct": false
+        },
+        {
+          "answer": "<span lang=\"EN-US\">moving faster than car B and accelerating more than car B</span>",
+          "correct": false
+        },
+        {
+          "answer": "<p class=\"MsoNormal\"><span lang=\"EN-US\">moving faster than car B, but not necessarily accelerating.</span></p>",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<span lang=\"EN-US\">A fullback is running down the football field in a straight line. He starts at the 0-yard line at 0 seconds. At 1 second, he is on the 10-yard line; at 2 seconds, he is on the 20-yard line; at 3 seconds, he is on the 30-yard line; and at 4 seconds, he is on the 40-yard line. </span><span>This is evidence that</span><p></p>\n<p class=\"MsoNormal\">&nbsp;\n          </p>",
+      "id": 1994,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "he is accelerating",
+          "correct": false
+        },
+        {
+          "answer": "he is covering a greater distance in each consecutive second.",
+          "correct": false
+        },
+        {
+          "answer": "he is moving with a constant speed (on average).",
+          "correct": true
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If an object is moving eastward and slowing down, then the direction of its velocity vector is ____.",
+      "id": 1995,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "eastward",
+          "correct": true
+        },
+        {
+          "answer": "westward",
+          "correct": false
+        },
+        {
+          "answer": "neither",
+          "correct": false
+        },
+        {
+          "answer": "not enough info to tell",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Treść pytaniaIf an object is moving eastward and slowing down, then the direction of its acceleration vector is ____.",
+      "id": 1996,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "eastward",
+          "correct": false
+        },
+        {
+          "answer": "westward",
+          "correct": false
+        },
+        {
+          "answer": "neither",
+          "correct": false
+        },
+        {
+          "answer": "not enough info to tell",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;Which one of the following quantities is NOT a vector?",
+      "id": 1997,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 mi/hr, east",
+          "correct": false
+        },
+        {
+          "answer": "10 mi/hr/sec, wes",
+          "correct": false
+        },
+        {
+          "answer": "35 m/s, north",
+          "correct": false
+        },
+        {
+          "answer": "20 m/s",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which one of the following quantities is NOT a speed?",
+      "id": 1998,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 mi/hr",
+          "correct": false
+        },
+        {
+          "answer": "10 mi/hr/sec",
+          "correct": true
+        },
+        {
+          "answer": "20 m/s",
+          "correct": false
+        },
+        {
+          "answer": "35 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Treść pytaniaWhich one of the following statements is NOT true of a free-falling object? An object in a state of free fall ____.",
+      "id": 1999,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "falls with a constant speed of -10 m/s.",
+          "correct": true
+        },
+        {
+          "answer": "falls with a acceleration of -10 m/s/s.",
+          "correct": false
+        },
+        {
+          "answer": "falls under the sole influence of gravity.",
+          "correct": false
+        },
+        {
+          "answer": "falls with downward acceleration which has a constant magnitude.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The average speed of an object which moves 10 kilometers (km) in 30 minutes is ____.",
+      "id": 2000,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 km/hr",
+          "correct": false
+        },
+        {
+          "answer": "20 km/hr",
+          "correct": true
+        },
+        {
+          "answer": "30 km/hr",
+          "correct": false
+        },
+        {
+          "answer": "more than 30 km/hr",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the acceleration of a car that maintains a constant velocity of 55 mi/hr for 10.0 seconds?",
+      "id": 2001,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0",
+          "correct": true
+        },
+        {
+          "answer": "5.5 mi /hr/s",
+          "correct": false
+        },
+        {
+          "answer": "&nbsp;5.5 mi /s/s",
+          "correct": false
+        },
+        {
+          "answer": "550 mi/hr/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "As an object freely falls, its ____.",
+      "id": 2002,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "speed increases",
+          "correct": true
+        },
+        {
+          "answer": "acceleration increases",
+          "correct": false
+        },
+        {
+          "answer": "both of these",
+          "correct": false
+        },
+        {
+          "answer": "none of these",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A speedometer is placed upon a free-falling object in order to measure its instantaneous speed during the course of its fall. Its speed reading (neglecting air resistance) would increase each second by &nbsp;____.",
+      "id": 2003,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "about 5 m/s",
+          "correct": false
+        },
+        {
+          "answer": "about 10 m/s",
+          "correct": true
+        },
+        {
+          "answer": "about 15 m/s",
+          "correct": false
+        },
+        {
+          "answer": "a variable amount",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ten seconds after being dropped from rest, a free-falling object will be moving with a speed of &nbsp;____.",
+      "id": 2004,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "about 10 m/s",
+          "correct": false
+        },
+        {
+          "answer": "about 50 m/s",
+          "correct": false
+        },
+        {
+          "answer": "about 100 m/s.",
+          "correct": true
+        },
+        {
+          "answer": "more than 100 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A baseball pitcher delivers a fast ball. During the throw, the speed of the ball increases from 0 to 30.0 m/s over a time of 0.100 seconds. The average acceleration of the baseball is ____ m/s2.",
+      "id": 2005,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "3.00",
+          "correct": false
+        },
+        {
+          "answer": "30.0",
+          "correct": false
+        },
+        {
+          "answer": "300",
+          "correct": true
+        },
+        {
+          "answer": "3000",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Treść pytaniaOn takeoff, a rocket accelerates from rest at a rate of 50.0 m/s2 for exactly 1 minute. The rocket's speed after this minute of steady acceleration will be ____ m/s.",
+      "id": 2006,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "50.0",
+          "correct": false
+        },
+        {
+          "answer": "500",
+          "correct": false
+        },
+        {
+          "answer": "3.00 x 103",
+          "correct": true
+        },
+        {
+          "answer": "3.60 x 103",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When a rock is dropped, it will accelerate downward at a rate of 9.8 m/s2. If the same rock is thrown downward (instead of being dropped from rest), it acceleration will be ____. (Ignore air resistance effects.)",
+      "id": 2007,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "less than 9.8 m/s2",
+          "correct": false
+        },
+        {
+          "answer": "9.8 m/s2",
+          "correct": true
+        },
+        {
+          "answer": "more than 9.8 m/s2",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Consider drops of water that leak from a dripping faucet at a constant rate. As the drops fall they ____.",
+      "id": 2008,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "get closer together",
+          "correct": false
+        },
+        {
+          "answer": "get farther apart",
+          "correct": true
+        },
+        {
+          "answer": "remain at a relatively fixed distance from one another",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Renatta Oyle is again found driving her '86 Yugo down Lake Avenue, leaving the following trail of oil drops on the pavement.&nbsp;If her car is moving from right to left, then ...",
+      "id": 2009,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "her velocity has a rightward direction and her acceleration has a rightward direction.",
+          "correct": false
+        },
+        {
+          "answer": "her velocity has a rightward direction and her acceleration has a leftward direction.",
+          "correct": false
+        },
+        {
+          "answer": "her velocity has a leftward direction and her acceleration has a rightward direction.",
+          "correct": false
+        },
+        {
+          "answer": "her velocity has a leftward direction and her acceleration has a leftward direction.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If two displacement vectors of 6 meters and 8 meters (with varying directions) are added together, then the resultant could range anywhere between ___ meters and ___ meters.",
+      "id": 2010,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0, 48",
+          "correct": false
+        },
+        {
+          "answer": "1.33, 48",
+          "correct": false
+        },
+        {
+          "answer": "0, 14",
+          "correct": false
+        },
+        {
+          "answer": "2, 14",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Three vectors are added following the rules of vector addition. A fourth vector is drawn from the tail of the first vector to the head of the last vector. This fourth vector is referred to as ____.",
+      "id": 2011,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "the equilibrant",
+          "correct": false
+        },
+        {
+          "answer": "the hypotenuse",
+          "correct": false
+        },
+        {
+          "answer": "the resultant",
+          "correct": true
+        },
+        {
+          "answer": "a mistake",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When adding vector B to vector A geometrically (or graphically) using the head to tail method, the resultant is drawn from ____ to the ____.",
+      "id": 2012,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "head of A, tail of B",
+          "correct": false
+        },
+        {
+          "answer": "tail of A, head of B",
+          "correct": true
+        },
+        {
+          "answer": "head of B, tail of A",
+          "correct": false
+        },
+        {
+          "answer": "tail of B, head of A",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "An object is undergoing free fall motion. As it falls, the object's ____.",
+      "id": 2013,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "speed increases",
+          "correct": true
+        },
+        {
+          "answer": "acceleration increases",
+          "correct": false
+        },
+        {
+          "answer": "both of these",
+          "correct": false
+        },
+        {
+          "answer": "none of these",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Treść pytaniaA football is kicked into the air at an angle of 45 degrees with the horizontal. At the very top of the ball's path, its velocity is _______.",
+      "id": 2014,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "entirely vertical",
+          "correct": false
+        },
+        {
+          "answer": "entirely horizontal",
+          "correct": true
+        },
+        {
+          "answer": "both vertical and horizontal",
+          "correct": false
+        },
+        {
+          "answer": "not enough information given to know",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A football is kicked into the air at an angle of 45 degrees with the horizontal. At the very top of the ball's path, its acceleration is _______. (Neglect the effects of air resistance.)",
+      "id": 2015,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "entirely vertical",
+          "correct": true
+        },
+        {
+          "answer": "entirely horizontal",
+          "correct": false
+        },
+        {
+          "answer": "both vertical and horizontal",
+          "correct": false
+        },
+        {
+          "answer": "not enough information given to know.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Treść pytaniaA football is kicked into the air at an angle of 45 degrees with the horizontal. At the very top of the ball's path, the net force acting upon it is _______. (Neglect the effects of air resistance.)",
+      "id": 2016,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "entirely vertical",
+          "correct": true
+        },
+        {
+          "answer": "entirely horizontal",
+          "correct": false
+        },
+        {
+          "answer": "both vertical and horizontal",
+          "correct": false
+        },
+        {
+          "answer": "not enough information given to know.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "At what point in its path is the horizontal component of the velocity (vx) of a projectile the smallest?",
+      "id": 2017,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "The instant it is thrown",
+          "correct": false
+        },
+        {
+          "answer": "Halfway to the top",
+          "correct": false
+        },
+        {
+          "answer": "At the top",
+          "correct": false
+        },
+        {
+          "answer": "It is the same throughout the path",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "At what point in its path is the vertical component of the velocity (vy) of a projectile the smallest?",
+      "id": 2018,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "The instant it is thrown",
+          "correct": false
+        },
+        {
+          "answer": "Halfway to the top",
+          "correct": false
+        },
+        {
+          "answer": "At the top",
+          "correct": true
+        },
+        {
+          "answer": "As it nears the top.e. It is the same throughout the path",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "An airplane that flies at 100 km/h in a 100 km/h hurricane crosswind has a speed (relative to the ground) of ____.",
+      "id": 2019,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0 km/h",
+          "correct": false
+        },
+        {
+          "answer": "100 km/h",
+          "correct": false
+        },
+        {
+          "answer": "141 km/h",
+          "correct": true
+        },
+        {
+          "answer": "200 km/h",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "An airplane moves at 141 km/h toward the northeast (45 degrees). What is its component velocity in the northward direction?",
+      "id": 2020,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "41 km/h",
+          "correct": false
+        },
+        {
+          "answer": "100 km/h",
+          "correct": true
+        },
+        {
+          "answer": "110 km/h",
+          "correct": false
+        },
+        {
+          "answer": "141 km/h",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Roll a bowling ball off the edge of a table. As it falls, its horizontal component of velocity ___.",
+      "id": 2021,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "decreases",
+          "correct": false
+        },
+        {
+          "answer": "remains constant",
+          "correct": true
+        },
+        {
+          "answer": "increases",
+          "correct": false
+        },
+        {
+          "answer": "--",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A bullet is fired horizontally and hits the ground in 0.5 seconds. If it had been fired with twice the speed in the same direction, it would have hit the ground in ____. (Assume no air resistance.)",
+      "id": 2022,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "less than 0.5 s",
+          "correct": false
+        },
+        {
+          "answer": "more than 0.5 s",
+          "correct": false
+        },
+        {
+          "answer": "0.5 s",
+          "correct": true
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A projectile is launched at an angle of 15 degrees above the horizontal and lands down range. For the same speed, what other projection angle would produce the same downrange distance?",
+      "id": 2023,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "30 degrees",
+          "correct": false
+        },
+        {
+          "answer": "45 degrees",
+          "correct": false
+        },
+        {
+          "answer": "50 degrees",
+          "correct": false
+        },
+        {
+          "answer": "75 degrees",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Two projectiles are fired at equal speeds but different angles. One is fired at angle of 30 degrees and the other at 60 degrees. The projectile to hit the ground first will be the one fired at (neglect air resistance) ____.",
+      "id": 2024,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "30 degrees",
+          "correct": true
+        },
+        {
+          "answer": "60 degrees",
+          "correct": false
+        },
+        {
+          "answer": "both hit at the same time",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A 1200 kg car and a 2400 kg car are lifted to the same height at a constant speed in a auto service station. Lifting the more massive car requires ____ work.",
+      "id": 2025,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "lessb. the same",
+          "correct": false
+        },
+        {
+          "answer": "twice as much",
+          "correct": true
+        },
+        {
+          "answer": "four times as much",
+          "correct": false
+        },
+        {
+          "answer": "more than 4 times as much",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "An arrow is drawn back so that 50 Joules of potential energy is stored in the stretched bow and string. Whenreleased, the arrow will have a kinetic energy of ____ Joules.",
+      "id": 2026,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "50",
+          "correct": true
+        },
+        {
+          "answer": "more than 50",
+          "correct": false
+        },
+        {
+          "answer": "less than 50",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A child lifts a box up from the floor. The child then carries the box with constant speed to the other side of the room and puts the box down. How much work does he do on the box while walking across the floor at constant speed?",
+      "id": 2027,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "zero J",
+          "correct": true
+        },
+        {
+          "answer": "more than zero J",
+          "correct": false
+        },
+        {
+          "answer": "more information needed to determine",
+          "correct": false
+        },
+        {
+          "answer": "----",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A 1000-kg car is moving at 40.0 km/hr when the driver slams on the brakes and skids to a stop (with locked brakes) over a distance of 20.0 meters. How far will the car skid with locked brakes if it is traveling at 120. km/hr?",
+      "id": 2028,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "20.0 m",
+          "correct": false
+        },
+        {
+          "answer": "60.0 m",
+          "correct": false
+        },
+        {
+          "answer": "90.0 m",
+          "correct": false
+        },
+        {
+          "answer": "180. m",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A platform diver weighs 500 N. She steps off a diving board that is elevated to a height of 10 meters above the water. The diver will possess ___ Joules of kinetic energy when she hits the water.",
+      "id": 2029,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10",
+          "correct": false
+        },
+        {
+          "answer": "500",
+          "correct": false
+        },
+        {
+          "answer": "510",
+          "correct": false
+        },
+        {
+          "answer": "5000",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A ball is projected into the air with 100 J of kinetic energy. The kinetic energy is transformed into gravitational potential energy on the path towards the peak of its trajectory. When the ball returns to its original height, its kinetic energy is ____ Joules. Do consider the effects of air resistance",
+      "id": 2030,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "less than 100",
+          "correct": true
+        },
+        {
+          "answer": "100",
+          "correct": false
+        },
+        {
+          "answer": "more than 100",
+          "correct": false
+        },
+        {
+          "answer": "not enough information given",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "During a construction project, a 2500 N object is lifted high above the ground. It is released and falls 10.0 meters and drives a post 0.100 m into the ground. The average impact force on the object is ____ Newtons.",
+      "id": 2031,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "2500",
+          "correct": false
+        },
+        {
+          "answer": "25000",
+          "correct": false
+        },
+        {
+          "answer": "250,000",
+          "correct": true
+        },
+        {
+          "answer": "2,500,000",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A 10-Newton object moves to the left at 1 m/s. Its kinetic energy is approximately ____ Joules.",
+      "id": 2032,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0.5",
+          "correct": true
+        },
+        {
+          "answer": "1",
+          "correct": false
+        },
+        {
+          "answer": "10",
+          "correct": false
+        },
+        {
+          "answer": "more than 10",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Luke Autbeloe stands on the edge of a roof throws a ball downward. It strikes the ground with 100 J of kinetic energy. Luke now throws another identical ball upward with the same initial speed, and this too falls to the ground. Neglecting air resistance, the second ball hits the ground with a kinetic energy of ____ J.",
+      "id": 2033,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "less than 100",
+          "correct": false
+        },
+        {
+          "answer": "100",
+          "correct": true
+        },
+        {
+          "answer": "200",
+          "correct": false
+        },
+        {
+          "answer": "more than 200",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "An object at rest may have __________.",
+      "id": 2034,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "speed",
+          "correct": false
+        },
+        {
+          "answer": "velocity",
+          "correct": false
+        },
+        {
+          "answer": "acceleration",
+          "correct": false
+        },
+        {
+          "answer": "energy",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A 50-kg platform diver hits the water below with a kinetic energy of 5000 Joules. The height (relative to the water) from which the diver dove was approximately ____ meters.",
+      "id": 2035,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "5",
+          "correct": false
+        },
+        {
+          "answer": "10",
+          "correct": true
+        },
+        {
+          "answer": "50",
+          "correct": false
+        },
+        {
+          "answer": "100",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A job is done slowly, and an identical job is done quickly. Both jobs require the same amount of ____, but different amounts of ____. Pick the two words which fill in the blanks in their respective order.",
+      "id": 2036,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "energy, work",
+          "correct": false
+        },
+        {
+          "answer": "power, work",
+          "correct": false
+        },
+        {
+          "answer": "work, energy",
+          "correct": false
+        },
+        {
+          "answer": "work, power",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which requires more work: lifting a 50.0 kg crate a vertical distance of 2.0 meters or lifting a 25.0 kg crate a vertical distance of 4.0 meters?",
+      "id": 2037,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "lifting the 50 kg sack",
+          "correct": false
+        },
+        {
+          "answer": "lifting the 25 kg sack",
+          "correct": false
+        },
+        {
+          "answer": "both require the same amount of work",
+          "correct": true
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A 50.0 kg crate is lifted to a height of 2.0 meters in the same time as a 25.0 kg crate is lifted to a height of 4 meters. The rate at which energy is used (i.e., power) in raising the 50.0 kg crate is ____ as the rate at which energy is used to lift the 25.0 kg crate.",
+      "id": 2038,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "twice as much",
+          "correct": false
+        },
+        {
+          "answer": "half as much",
+          "correct": false
+        },
+        {
+          "answer": "the same",
+          "correct": true
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;Using 1000. J of work, a small object is lifted from the ground floor to the third floor of a tall building in 20.0 seconds. What power was required in this task?",
+      "id": 2039,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "20 W",
+          "correct": false
+        },
+        {
+          "answer": "50 W",
+          "correct": true
+        },
+        {
+          "answer": "100 W",
+          "correct": false
+        },
+        {
+          "answer": "1000 W",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If an electric circuit was analogous to a water park, then the battery would be analogous to the ____.",
+      "id": 2040,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "pipes which carry the water through the water circuit",
+          "correct": true
+        },
+        {
+          "answer": "pump which supplies energy to move the water from the ground to a high elevation",
+          "correct": false
+        },
+        {
+          "answer": "the people which flow from the top of the water ride to the bottom of the water ride",
+          "correct": false
+        },
+        {
+          "answer": "the rate at which water is pumped onto the slide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If an electric circuit was analogous to a water park, then the positive terminal of the battery would be analogous to the ____.",
+      "id": 2041,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "the top of the water slide",
+          "correct": true
+        },
+        {
+          "answer": "the bottom of the water slide",
+          "correct": false
+        },
+        {
+          "answer": "the rate at which water is pumped onto the slide",
+          "correct": false
+        },
+        {
+          "answer": "the speed at which riders move as they slide from the top to the bottom of the ride",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If an electric circuit was analogous to a water park, then the electric current would be analogous to the ____",
+      "id": 2042,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "pipes which carry the water through the water circuit",
+          "correct": false
+        },
+        {
+          "answer": "the rate at which water is pumped onto the slide",
+          "correct": true
+        },
+        {
+          "answer": "the change in potential energy of the riders",
+          "correct": false
+        },
+        {
+          "answer": "the top of the water slide",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The potential energy possessed per unit of charge at any given location is referred to as the electric ___.",
+      "id": 2043,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "current",
+          "correct": false
+        },
+        {
+          "answer": "resistance",
+          "correct": false
+        },
+        {
+          "answer": "potential",
+          "correct": true
+        },
+        {
+          "answer": "power",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "One ampere is the amount of current that exists when ____ flows by a certain point in a conductor in ____.",
+      "id": 2044,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "one watt",
+          "correct": false
+        },
+        {
+          "answer": "one second",
+          "correct": false
+        },
+        {
+          "answer": "one joule",
+          "correct": false
+        },
+        {
+          "answer": "one coulomb; one second",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If 6 coulombs of charge flow past point 'A' in a circuit in 4 seconds, then ____ coulombs of charge will flow past point 'A' in 8 seconds.",
+      "id": 2045,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0.67",
+          "correct": false
+        },
+        {
+          "answer": "1.5",
+          "correct": false
+        },
+        {
+          "answer": "2",
+          "correct": false
+        },
+        {
+          "answer": "12",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A single disturbance that moves from point to point through a medium is called a ___.",
+      "id": 2046,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "period",
+          "correct": false
+        },
+        {
+          "answer": "periodic wave",
+          "correct": false
+        },
+        {
+          "answer": "wavelength",
+          "correct": false
+        },
+        {
+          "answer": "pulse",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If the particles of the medium are vibrating to and fro in the same direction of energy transport, then the wave is a ____ wave.",
+      "id": 2047,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "longitudinal",
+          "correct": true
+        },
+        {
+          "answer": "sound",
+          "correct": false
+        },
+        {
+          "answer": "standing",
+          "correct": false
+        },
+        {
+          "answer": "transverse",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When the particles of a medium are vibrating at right angles to the direction of energy transport, then the wave is a ____ wave",
+      "id": 2048,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "longitudinal",
+          "correct": false
+        },
+        {
+          "answer": "sound",
+          "correct": false
+        },
+        {
+          "answer": "standing",
+          "correct": false
+        },
+        {
+          "answer": "transverse",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A transverse wave is traveling through a medium. See diagram below. The particles of the medium are vibrating _____.",
+      "id": 2049,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "parallel to the line joining AD",
+          "correct": true
+        },
+        {
+          "answer": "along the line joining CI",
+          "correct": false
+        },
+        {
+          "answer": "perpendicular to the line joining AD",
+          "correct": false
+        },
+        {
+          "answer": "at various angles to the line CI",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If the energy in a longitudinal wave travels from south to north, the particles of the medium would be vibrating _____.",
+      "id": 2050,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "from north to south, only",
+          "correct": false
+        },
+        {
+          "answer": "both north and south",
+          "correct": true
+        },
+        {
+          "answer": "from east to west, only",
+          "correct": false
+        },
+        {
+          "answer": "both east and west",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "As a pulse travels though a uniform medium, the speed of the pulse ____.",
+      "id": 2051,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "decreases",
+          "correct": false
+        },
+        {
+          "answer": "increases",
+          "correct": false
+        },
+        {
+          "answer": "remains the same",
+          "correct": true
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The main factor which effects the speed of a sound wave is the ____.",
+      "id": 2052,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "properties of the medium",
+          "correct": true
+        },
+        {
+          "answer": "loudness of the sound",
+          "correct": false
+        },
+        {
+          "answer": "amplitude of the sound wave",
+          "correct": false
+        },
+        {
+          "answer": "intensity of the sound",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "<strong>As a wave passes across a boundary into a new medium, which characteristic of the wave would NOT change?</strong>",
+      "id": 2053,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "speed",
+          "correct": false
+        },
+        {
+          "answer": "frequency",
+          "correct": true
+        },
+        {
+          "answer": "wavelength",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The wavelength of the wave in the diagram above (Question #10) is ____ m.",
+      "id": 2054,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0.030",
+          "correct": false
+        },
+        {
+          "answer": "0.040",
+          "correct": false
+        },
+        {
+          "answer": "0.060",
+          "correct": false
+        },
+        {
+          "answer": "0.080",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A wave d meters long passes through a medium with a speed of v meters per second. The frequency of the wave could be expressed as ____ Hz.",
+      "id": 2055,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "v / d",
+          "correct": true
+        },
+        {
+          "answer": "d / v",
+          "correct": false
+        },
+        {
+          "answer": "d•v",
+          "correct": false
+        },
+        {
+          "answer": "(d + v)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The number of cycles of a periodic wave occurring per unit time is defined as a wave's ____.",
+      "id": 2056,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wavelength",
+          "correct": false
+        },
+        {
+          "answer": "period",
+          "correct": false
+        },
+        {
+          "answer": "amplitude.",
+          "correct": false
+        },
+        {
+          "answer": "frequency.",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A periodic and repeating disturbance in a lake creates waves which emanate outward from its source to produce circular wave patterns. If the frequency of the source is 2.00 Hz and the wave speed is 5.00m/s then the distance between adjacent wave crests is ___ meter.",
+      "id": 2057,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0.200",
+          "correct": false
+        },
+        {
+          "answer": "0.400",
+          "correct": false
+        },
+        {
+          "answer": "1.25",
+          "correct": false
+        },
+        {
+          "answer": "2.50",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "What is the frequency of a wave that has a speed of 0.4 m/s and a wavelength of 0.020 meter?",
+      "id": 2058,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "10 hertz",
+          "correct": false
+        },
+        {
+          "answer": "20 hertz",
+          "correct": true
+        },
+        {
+          "answer": "0.008 hertz",
+          "correct": false
+        },
+        {
+          "answer": "0.5 hertz",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Many wave properties are dependent upon other wave properties. Yet, one wave property is independent of all other wave properties. Which one of the following properties of a wave is independent of all the others?",
+      "id": 2059,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wavelength",
+          "correct": false
+        },
+        {
+          "answer": "frequency",
+          "correct": false
+        },
+        {
+          "answer": "period",
+          "correct": false
+        },
+        {
+          "answer": "velocity",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "A pendulum makes exactly 40 vibrations in 20.0 s. Its period is ____. (Be cautious of the units.)",
+      "id": 2060,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "0.500 Hz",
+          "correct": false
+        },
+        {
+          "answer": "0.500 s",
+          "correct": true
+        },
+        {
+          "answer": "2.00 Hz",
+          "correct": false
+        },
+        {
+          "answer": "2.00 s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;A period of 0.005 seconds would be equivalent to a frequency of ____ Hz.",
+      "id": 2061,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "20",
+          "correct": false
+        },
+        {
+          "answer": "50",
+          "correct": false
+        },
+        {
+          "answer": "200",
+          "correct": true
+        },
+        {
+          "answer": "500",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;A period of 0.005 seconds would be equivalent to a frequency of ____ Hz.",
+      "id": 2062,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "20",
+          "correct": false
+        },
+        {
+          "answer": "50",
+          "correct": false
+        },
+        {
+          "answer": "200",
+          "correct": true
+        },
+        {
+          "answer": "500",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What type of wave is produced when the particles of the medium are vibrating to and fro in the same direction of wave propagation?",
+      "id": 2063,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "longitudinal wave",
+          "correct": true
+        },
+        {
+          "answer": "sound wave",
+          "correct": false
+        },
+        {
+          "answer": "standing wave",
+          "correct": false
+        },
+        {
+          "answer": "transverse wave",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When the particles of a medium are vibrating at right angles to the direction of energy transport, the type of wave is described as a _____ wave.",
+      "id": 2064,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "longitudinal",
+          "correct": false
+        },
+        {
+          "answer": "sound",
+          "correct": false
+        },
+        {
+          "answer": "standing",
+          "correct": false
+        },
+        {
+          "answer": "transverse",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If the energy in a longitudinal wave travels from south to north, the particles of the medium ____.",
+      "id": 2065,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "move from north to south, only",
+          "correct": false
+        },
+        {
+          "answer": "vibrate both north and south.",
+          "correct": true
+        },
+        {
+          "answer": "move from east to west, only.",
+          "correct": false
+        },
+        {
+          "answer": "vibrate both east and west.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The main factor which effects the speed of a sound wave is the ____.",
+      "id": 2066,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "amplitude of the sound wave",
+          "correct": false
+        },
+        {
+          "answer": "intensity of the sound wave",
+          "correct": false
+        },
+        {
+          "answer": "loudness of the sound wave",
+          "correct": false
+        },
+        {
+          "answer": "properties of the medium",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "As a wave travels into a medium in which its speed increases, its wavelength ____.",
+      "id": 2067,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "decreases",
+          "correct": false
+        },
+        {
+          "answer": "increases",
+          "correct": true
+        },
+        {
+          "answer": "remains the same",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "As a wave passes across a boundary into a new medium, which characteristic of the wave would NOT change?",
+      "id": 2068,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "speed",
+          "correct": false
+        },
+        {
+          "answer": "frequency",
+          "correct": true
+        },
+        {
+          "answer": "wavelength",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The ____ is defined as the number of cycles of a periodic wave occurring per unit time",
+      "id": 2069,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wavelength",
+          "correct": false
+        },
+        {
+          "answer": "period",
+          "correct": false
+        },
+        {
+          "answer": "amplitude",
+          "correct": false
+        },
+        {
+          "answer": "frequency",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Many wave properties are dependent upon other wave properties. Yet, one wave property is independent of all other wave properties. Which one of the following properties of a wave is independent of all the others?",
+      "id": 2070,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "wavelength",
+          "correct": false
+        },
+        {
+          "answer": "frequency",
+          "correct": false
+        },
+        {
+          "answer": "period",
+          "correct": false
+        },
+        {
+          "answer": "velocity",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Consider the motion of waves in a wire. Waves will travel fastest in a ____ wire.",
+      "id": 2071,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "tight and heavy",
+          "correct": false
+        },
+        {
+          "answer": "tight and light",
+          "correct": true
+        },
+        {
+          "answer": "loose and heavy",
+          "correct": false
+        },
+        {
+          "answer": "loose and light",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Light which is vibrating in a variety of planes is referred to as _____ light",
+      "id": 2072,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "electromagnetic",
+          "correct": false
+        },
+        {
+          "answer": "transverse",
+          "correct": false
+        },
+        {
+          "answer": "unpolarized",
+          "correct": true
+        },
+        {
+          "answer": "polarized",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Light usually vibrates in multiple vibrational planes. It can be transformed into light vibrating in a single plane of vibration. The process of doing this is known as ____.",
+      "id": 2073,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "translation",
+          "correct": false
+        },
+        {
+          "answer": "interference",
+          "correct": false
+        },
+        {
+          "answer": "polarization",
+          "correct": true
+        },
+        {
+          "answer": "refraction",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Light which is vibrating in a single plane is referred to as _____ light",
+      "id": 2074,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "electromagnetic",
+          "correct": false
+        },
+        {
+          "answer": "transverse",
+          "correct": false
+        },
+        {
+          "answer": "unpolarized",
+          "correct": false
+        },
+        {
+          "answer": "polarized",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Light is passed through a Polaroid filter whose transmission axis is aligned horizontally. This will have the effect of ____.",
+      "id": 2075,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "making the light one-half as intense and aligning the vibrations into a single plane.",
+          "correct": true
+        },
+        {
+          "answer": "aligning the vibrations into a single plane without any effect on its intensity.",
+          "correct": false
+        },
+        {
+          "answer": "merely making the light one-half as intense; the vibrations would be in every direction.",
+          "correct": false
+        },
+        {
+          "answer": "... nonsense! This will have no effect on the light itself; only the filter would be effected.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Light is passed through a Polaroid filter whose transmission axis is aligned horizontally. It then passes through a second filter whose transmission axis is aligned vertically. After passing through both filters, the light will be ______.",
+      "id": 2076,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "polarized",
+          "correct": false
+        },
+        {
+          "answer": "unpolarized",
+          "correct": false
+        },
+        {
+          "answer": "entirely blocked",
+          "correct": true
+        },
+        {
+          "answer": "returned to its original state",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;Which of the following are effective methods of polarization? Include all that apply.",
+      "id": 2077,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Passing light through a Polaroid filter.",
+          "correct": true
+        },
+        {
+          "answer": "Reflection of light off a nonmetallic surface.",
+          "correct": true
+        },
+        {
+          "answer": "Passing light from water to air.",
+          "correct": false
+        },
+        {
+          "answer": "Passing light through a birefringent material such as Calcite.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "As the angle of incidence is increased for a ray incident on a reflecting surface, the angle between the incident and reflected rays ultimately approaches what value?",
+      "id": 2078,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "zero",
+          "correct": false
+        },
+        {
+          "answer": "45 degrees",
+          "correct": false
+        },
+        {
+          "answer": "90 degrees",
+          "correct": false
+        },
+        {
+          "answer": "180 degrees",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If you stand three feet in front of a plane mirror, how far away would you see yourself in the mirror?",
+      "id": 2079,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1.5 ft",
+          "correct": false
+        },
+        {
+          "answer": "3.0 ft",
+          "correct": false
+        },
+        {
+          "answer": "6.0 ft",
+          "correct": true
+        },
+        {
+          "answer": "12.0 ft",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A concave mirror with a focal length of 10.0 cm creates a real image 30.0 cm away on its principal axis; the corresponding object is located how far from the mirror?",
+      "id": 2080,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "20.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "15.0 cm",
+          "correct": true
+        },
+        {
+          "answer": "7.5 cm",
+          "correct": false
+        },
+        {
+          "answer": "5.0 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A concave mirror forms a real image at 25.0 cm from the mirror surface along the principal axis. If the corresponding object is at a 10.0 cm distance, what is the mirror's focal length?",
+      "id": 2081,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "1.4 cm",
+          "correct": false
+        },
+        {
+          "answer": "16.7 cm",
+          "correct": false
+        },
+        {
+          "answer": "12.4 cm",
+          "correct": false
+        },
+        {
+          "answer": "7.1 cm",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Treść pytaniaIf a virtual image is formed along the principal axis 10.0 cm from a concave mirror with the focal length 15.0 cm, what is the object distance from the mirror?",
+      "id": 2082,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "30.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "10.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "12.4 cm",
+          "correct": false
+        },
+        {
+          "answer": "6.0 cm",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If a virtual image is formed 10.0 cm along the principal axis from a convex mirror of focal length -15.0 cm, what is the object distance from the mirror?",
+      "id": 2083,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "30.0 cm",
+          "correct": true
+        },
+        {
+          "answer": "10.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "6.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "3.0 cm",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;If a man's face is 30.0 cm in front of a concave shaving mirror creating an upright image 1.50 times as large as the object, what is the mirror's focal length?",
+      "id": 2084,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "12.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "20.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "70.0 cm",
+          "correct": false
+        },
+        {
+          "answer": "90.0 cm",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following best describes the image formed by a plane mirror?",
+      "id": 2085,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "virtual, inverted and enlarged",
+          "correct": false
+        },
+        {
+          "answer": "real, inverted and reduced",
+          "correct": false
+        },
+        {
+          "answer": "virtual, upright and the same size as object",
+          "correct": true
+        },
+        {
+          "answer": "real, upright and the same size as object",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following best describes the image formed by a concave mirror when the object is located somewhere between the focal point (F) and the center of curvature (C) of the mirror?",
+      "id": 2086,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "virtual, upright and enlarged",
+          "correct": false
+        },
+        {
+          "answer": "real, inverted and reduced",
+          "correct": false
+        },
+        {
+          "answer": "virtual, upright and reduced",
+          "correct": false
+        },
+        {
+          "answer": "real, inverted and enlarged",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following best describes the image formed by a concave mirror when the object is at a distance further than the center of curvature (C) of the mirror?",
+      "id": 2087,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "virtual, erect and enlarged",
+          "correct": false
+        },
+        {
+          "answer": "real, inverted and reduced",
+          "correct": true
+        },
+        {
+          "answer": "virtual, upright and reduced",
+          "correct": false
+        },
+        {
+          "answer": "real, inverted and enlarged",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following best describes the image formed by a concave mirror when the object distance from the mirror is less than the focal length (f)?",
+      "id": 2088,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "virtual, upright and enlarged",
+          "correct": true
+        },
+        {
+          "answer": "real, inverted and reduced",
+          "correct": false
+        },
+        {
+          "answer": "virtual, upright and reduced",
+          "correct": false
+        },
+        {
+          "answer": "--",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following best describes the image formed by a convex mirror when the object distance from the mirror is less than the absolute value of the focal length (f)?",
+      "id": 2089,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "virtual, upright and enlarged",
+          "correct": false
+        },
+        {
+          "answer": "real, inverted and reduced",
+          "correct": false
+        },
+        {
+          "answer": "virtual, upright and reduced",
+          "correct": true
+        },
+        {
+          "answer": "real, inverted and enlarged",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;Use of a parabolic mirror, instead of one made of a circular arc surface, can be used to reduce the occurrence of which of the following effects?",
+      "id": 2090,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "spherical aberration",
+          "correct": true
+        },
+        {
+          "answer": "mirages",
+          "correct": false
+        },
+        {
+          "answer": "chromatic aberration",
+          "correct": false
+        },
+        {
+          "answer": "light scattering",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When the image of an object is seen in a plane mirror, the image is ____.",
+      "id": 2091,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "real and upright.",
+          "correct": false
+        },
+        {
+          "answer": "real and inverted.",
+          "correct": false
+        },
+        {
+          "answer": "virtual and upright",
+          "correct": true
+        },
+        {
+          "answer": "virtual and inverted",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;When the image of an object is seen in a plane mirror, the distance from the mirror to the image depends on ____.",
+      "id": 2092,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "the wavelength of light used for viewing.",
+          "correct": false
+        },
+        {
+          "answer": "the distance from the object to the mirror.",
+          "correct": true
+        },
+        {
+          "answer": "the distance of both the observer and the object to the mirror.",
+          "correct": false
+        },
+        {
+          "answer": "----",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If a man wishes to use a plane mirror on a wall to view both his head and his feet as he stands in front of the mirror, the required length of the mirror ____.",
+      "id": 2093,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "is equal to the height of the man",
+          "correct": false
+        },
+        {
+          "answer": "is equal to one half the height of the man.",
+          "correct": true
+        },
+        {
+          "answer": "depends on the distance the man stands from the mirror.",
+          "correct": false
+        },
+        {
+          "answer": "depends on both the height of the man and the distance from the man to the mirror.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;When the image of an object is seen in a concave mirror the image will ____.",
+      "id": 2094,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "always be real",
+          "correct": false
+        },
+        {
+          "answer": "always be virtual",
+          "correct": false
+        },
+        {
+          "answer": "be either real or virtual",
+          "correct": true
+        },
+        {
+          "answer": "will always be magnified.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When the image of an object is seen in a convex mirror the image will ____.",
+      "id": 2095,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "always be real",
+          "correct": false
+        },
+        {
+          "answer": "always be virtual",
+          "correct": true
+        },
+        {
+          "answer": "may be either real or virtual.",
+          "correct": false
+        },
+        {
+          "answer": "will always be magnified.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Rays of light traveling parallel to the principal axis of a concave mirror will come together ____.",
+      "id": 2096,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "at the center of curvature",
+          "correct": false
+        },
+        {
+          "answer": "at the focal point",
+          "correct": true
+        },
+        {
+          "answer": "at infinity",
+          "correct": false
+        },
+        {
+          "answer": "at a point half way to the focal point.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Two plane mirrors are attached to form a dual mirror system with an adjustable angle. As the angle between the mirrors increases, the number of images _____.",
+      "id": 2097,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "increase",
+          "correct": false
+        },
+        {
+          "answer": "decreases",
+          "correct": true
+        },
+        {
+          "answer": "&nbsp;remains the same",
+          "correct": false
+        },
+        {
+          "answer": "---",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "The best definition of refraction is ____.",
+      "id": 2098,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "passing through a boundary",
+          "correct": false
+        },
+        {
+          "answer": "bouncing off a boundary",
+          "correct": true
+        },
+        {
+          "answer": "changing speed at a boundary",
+          "correct": false
+        },
+        {
+          "answer": "changing direction when crossing a boundary",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If carbon tetrachloride has an index of refraction of 1.461, what is the speed of light through this liquid? (c = 3 x 108m/s)",
+      "id": 2099,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "&nbsp;4.38 x 108 m/s",
+          "correct": false
+        },
+        {
+          "answer": "2.05 x 108 m/s",
+          "correct": true
+        },
+        {
+          "answer": "4.461 x 108 m/s",
+          "correct": false
+        },
+        {
+          "answer": "1.461 x 108 m/s",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A ray of light in air is incident on an air-to-glass boundary at an angle of 30. degrees with the normal. If the index of refraction of the glass is 1.65, what is the angle of the refracted ray within the glass with respect to the normal?",
+      "id": 2100,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "56 degrees",
+          "correct": false
+        },
+        {
+          "answer": "46 degrees",
+          "correct": false
+        },
+        {
+          "answer": "30. degrees",
+          "correct": false
+        },
+        {
+          "answer": "18 degrees",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "If the critical angle for internal reflection inside a certain transparent material is found to be 48.0 degrees, what is the index of refraction of the material? (Air is outside the material).",
+      "id": 2101,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "<strong>1.35</strong>",
+          "correct": true
+        },
+        {
+          "answer": "1.48",
+          "correct": false
+        },
+        {
+          "answer": "1.49",
+          "correct": false
+        },
+        {
+          "answer": "0.743",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Carbon disulfide (n = 1.63) is poured into a container made of crown glass (n = 1.52). What is the critical angle for internal reflection of a ray in the liquid when it is incident on the liquid-to-glass surface?",
+      "id": 2102,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "89.0 degrees",
+          "correct": false
+        },
+        {
+          "answer": "68.8 degrees",
+          "correct": true
+        },
+        {
+          "answer": "21.2 degrees",
+          "correct": false
+        },
+        {
+          "answer": "4.0 degrees",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Carbon tetrachloride (n = 1.46) is poured into a container made of crown glass (n = 1.52). If the light ray in glass incident on the glass-to-liquid boundary makes an angle of 30 degrees with the normal, what is the angle of the corresponding refracted ray with respect to the normal?",
+      "id": 2103,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "2.13",
+          "correct": false
+        },
+        {
+          "answer": "1.74",
+          "correct": false
+        },
+        {
+          "answer": "1.23",
+          "correct": false
+        },
+        {
+          "answer": "1.41",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;A beam of light in air is incident at an angle of 35 degrees to the surface of a rectangular block of clear plastic (n = 1.5). The light beam first passes through the block and reemerges from the opposite side into air at what angle to the normal to that surface?",
+      "id": 2104,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "42 degrees",
+          "correct": false
+        },
+        {
+          "answer": "23 degrees",
+          "correct": false
+        },
+        {
+          "answer": "35 degrees",
+          "correct": true
+        },
+        {
+          "answer": "59 degrees",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A light ray in air enters and passes through a block of glass. What can be stated with regard to its speed after it emerges from the block?",
+      "id": 2105,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "speed is less than when in glass",
+          "correct": false
+        },
+        {
+          "answer": "speed is less than before it entered glass",
+          "correct": false
+        },
+        {
+          "answer": "speed is same as that in glass",
+          "correct": false
+        },
+        {
+          "answer": "speed is same as that before it entered glass",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following describes what will happen to a light ray incident on an air-to-glass boundary?",
+      "id": 2106,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "total reflection",
+          "correct": false
+        },
+        {
+          "answer": "total transmission",
+          "correct": false
+        },
+        {
+          "answer": "partial reflection, partial transmission",
+          "correct": true
+        },
+        {
+          "answer": "partial reflection, total transmission",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following describes what will happen to a light ray incident on an air-to-glass boundary at an angle of incidence less than the critical angle?",
+      "id": 2107,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "total reflection",
+          "correct": false
+        },
+        {
+          "answer": "total transmission",
+          "correct": false
+        },
+        {
+          "answer": "partial reflection, partial transmission",
+          "correct": true
+        },
+        {
+          "answer": "partial reflection, total transmission",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following describes what will happen to a light ray incident on an glass-to-air boundary at an angle of incidence greater than the critical angle?",
+      "id": 2108,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "total reflection",
+          "correct": true
+        },
+        {
+          "answer": "total transmission",
+          "correct": false
+        },
+        {
+          "answer": "partial reflection, partial transmission",
+          "correct": false
+        },
+        {
+          "answer": "partial reflection, total transmission",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the angle of incidence on an air-to-glass boundary if the angle of refraction in the glass (n = 1.52) is 25 degrees?",
+      "id": 2109,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "16 degrees",
+          "correct": false
+        },
+        {
+          "answer": "25 degrees",
+          "correct": false
+        },
+        {
+          "answer": "40 degrees",
+          "correct": true
+        },
+        {
+          "answer": "43 degrees",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "&nbsp;A ray of white light, incident upon a glass prism, is dispersed into its various color components. Which one of the following colors experiences the greatest amount of refraction?",
+      "id": 2110,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "orange",
+          "correct": false
+        },
+        {
+          "answer": "violet",
+          "correct": true
+        },
+        {
+          "answer": "red",
+          "correct": false
+        },
+        {
+          "answer": "green",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When light from air hits a smooth piece of glass (n = 1.5) with the ray perpendicular to the glass surface, which of the following will occur?",
+      "id": 2111,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "reflection and transmission at an angle of 0 degreesb. dispersion",
+          "correct": true
+        },
+        {
+          "answer": "refraction at an angle of 41.8 degrees",
+          "correct": false
+        },
+        {
+          "answer": "all of the above will occur",
+          "correct": false
+        },
+        {
+          "answer": "dispersion",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "If total internal reflection occurs at a glass-air surface, then _____.",
+      "id": 2112,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "no light is refracted",
+          "correct": true
+        },
+        {
+          "answer": "no light is reflected",
+          "correct": false
+        },
+        {
+          "answer": "light is leaving the air and hitting the glass with an incident angle greater than the critical angle",
+          "correct": false
+        },
+        {
+          "answer": "light is leaving the air and hitting the glass with an incident angle less than the critical angle",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "When light from air hits a smooth piece of glass with the ray perpendicular to the glass surface, the part of the light passing into the glass _____.",
+      "id": 2113,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "will not change its speed",
+          "correct": false
+        },
+        {
+          "answer": "will not change its direction",
+          "correct": true
+        },
+        {
+          "answer": "will not change its wavelength",
+          "correct": false
+        },
+        {
+          "answer": "will not change its intensity",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

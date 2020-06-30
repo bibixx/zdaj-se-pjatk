@@ -1,0 +1,25 @@
+{
+  "title": "Hurtownie danych i aplikacje OLAP (HUR)",
+  "id": "hur",
+  "data": [
+    {
+      "question": "Różnica impedancji",
+      "id": 2983,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "To obciążenie systemowe związane z wykonywaniem kodu SQL i próba pominięcia go lub zastąpienia w operacjach bazodanowych",
+          "correct": false
+        },
+        {
+          "answer": "To obciążenie systemowe powstające, gdy wykonany zostaje kod SQL zaszyty w kodzie napisanym w języku obiektowym",
+          "correct": false
+        },
+        {
+          "answer": "To dysonans między \"światem obiektowym\" a \"światem relacyjnym\"",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

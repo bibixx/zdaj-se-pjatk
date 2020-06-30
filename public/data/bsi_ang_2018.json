@@ -1,0 +1,420 @@
+{
+  "title": "Bezpieczeństwo Systemów Informatycznych 2018 (BSI_ANG)",
+  "id": "bsi_ang_2018",
+  "data": [
+    {
+      "question": "Who first invented wheel cipher?",
+      "id": 3095,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "The Greeks",
+          "correct": false
+        },
+        {
+          "answer": "Julius Caesar",
+          "correct": false
+        },
+        {
+          "answer": "Thomas Jefferson",
+          "correct": true
+        },
+        {
+          "answer": "Charles Babbage",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "An act to convert plaintext into ciphertext in order to preserve confidentiality of data is called?",
+      "id": 3096,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Encryption",
+          "correct": true
+        },
+        {
+          "answer": "Decryption",
+          "correct": false
+        },
+        {
+          "answer": "Hash",
+          "correct": false
+        },
+        {
+          "answer": "Message authentication",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A cipher that scrambles letters into different positions is referred to as what?",
+      "id": 3097,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Running key",
+          "correct": false
+        },
+        {
+          "answer": "Transposition",
+          "correct": true
+        },
+        {
+          "answer": "Substitution",
+          "correct": false
+        },
+        {
+          "answer": "Stream",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is not a block cipher mode of operation in stream mode?",
+      "id": 3098,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Electronic Code Book (ECB)",
+          "correct": true
+        },
+        {
+          "answer": "Cipher Feed Back (CFB)",
+          "correct": false
+        },
+        {
+          "answer": "Output Feed Back (OFB)",
+          "correct": false
+        },
+        {
+          "answer": "Counter (CTR)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is a mathematical encryption operation that cannot be reversed called?",
+      "id": 3099,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "DES",
+          "correct": false
+        },
+        {
+          "answer": "Transposition",
+          "correct": false
+        },
+        {
+          "answer": "Substitution",
+          "correct": false
+        },
+        {
+          "answer": "One-way hash",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "In block cipher, what creates the element of diffusion?",
+      "id": 3100,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Permutation using a lookup table",
+          "correct": false
+        },
+        {
+          "answer": "Bit substituting using a S-box",
+          "correct": false
+        },
+        {
+          "answer": "Use of a Feistel network",
+          "correct": true
+        },
+        {
+          "answer": "Use of a key scheduler",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the effective key length for Data Encryption Standard (DES)?",
+      "id": 3101,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "56-bit",
+          "correct": true
+        },
+        {
+          "answer": "64-bit",
+          "correct": false
+        },
+        {
+          "answer": "32-bit",
+          "correct": false
+        },
+        {
+          "answer": "16-bit",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Data Encryption Standard (DES) performs how many rounds of permutation and substitution?",
+      "id": 3102,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "16",
+          "correct": true
+        },
+        {
+          "answer": "32",
+          "correct": false
+        },
+        {
+          "answer": "64",
+          "correct": false
+        },
+        {
+          "answer": "56",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following statements is not true?",
+      "id": 3103,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TDES has a mode that uses 2 keys",
+          "correct": false
+        },
+        {
+          "answer": "TDES has a mode that uses 3 keys",
+          "correct": false
+        },
+        {
+          "answer": "TDES offers a greater protection over DES",
+          "correct": false
+        },
+        {
+          "answer": "TDES has a mode that uses 1 key",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following identifies the encryption algorithm selected by NIST for the new Advanced Encryption Standard (AES)?",
+      "id": 3104,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "RC6",
+          "correct": false
+        },
+        {
+          "answer": "Serpent",
+          "correct": false
+        },
+        {
+          "answer": "Rijndael",
+          "correct": true
+        },
+        {
+          "answer": "Twofish",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Who vouches for the binding between the data items in a digital certificate?",
+      "id": 3105,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Issuing authority",
+          "correct": false
+        },
+        {
+          "answer": "Vouching authority",
+          "correct": false
+        },
+        {
+          "answer": "Certificate authority (CA)",
+          "correct": true
+        },
+        {
+          "answer": "Registration authority",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "What is the primary role of smartcards in a PKI?",
+      "id": 3106,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Transparent renewal of user keys",
+          "correct": false
+        },
+        {
+          "answer": "Fast hardware encryption of the raw data",
+          "correct": false
+        },
+        {
+          "answer": "Tamperproof, mobile storage and application of private keys of the users",
+          "correct": true
+        },
+        {
+          "answer": "Easy distribution of the certificates between the users",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which protocol makes use of an electronic wallet on a customer's PC and sends encrypted credit card information to merchant's Web server, which digitally signs it and sends it on to its processing bank?",
+      "id": 3107,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "SSH",
+          "correct": false
+        },
+        {
+          "answer": "SSL",
+          "correct": false
+        },
+        {
+          "answer": "S/MIME",
+          "correct": false
+        },
+        {
+          "answer": "SET",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following keys has the shortest lifespan?",
+      "id": 3108,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Private key",
+          "correct": false
+        },
+        {
+          "answer": "Session key",
+          "correct": true
+        },
+        {
+          "answer": "Public key",
+          "correct": false
+        },
+        {
+          "answer": "Secret key",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following statements is most accurate of digital signature?",
+      "id": 3109,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "It allows the recipient of data to prove the source and integrity of data.",
+          "correct": true
+        },
+        {
+          "answer": "It can be used as a signature system and a cryptosystem.",
+          "correct": false
+        },
+        {
+          "answer": "It is a method used to encrypt confidential data.",
+          "correct": false
+        },
+        {
+          "answer": "It is the art of transferring handwritten signature to electronic media.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Which of the following mail standards relies on a \"Web of Trust\"?",
+      "id": 3110,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Pretty Good Privacy (PGP)",
+          "correct": true
+        },
+        {
+          "answer": "Privacy Enhanced Mail (PEM)",
+          "correct": false
+        },
+        {
+          "answer": "MIME Object Security Services (MOSS)",
+          "correct": false
+        },
+        {
+          "answer": "Secure Multipurpose Internet Mail Extensions (S/MIME)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Electronic signatures can prevent messages from being:",
+      "id": 3111,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Erased",
+          "correct": false
+        },
+        {
+          "answer": "Forwarded",
+          "correct": false
+        },
+        {
+          "answer": "Disclosed",
+          "correct": false
+        },
+        {
+          "answer": "Repudiated",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Which of the following is not an objective of cryptography?",
+      "id": 3094,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Confidentiality",
+          "correct": false
+        },
+        {
+          "answer": "Integrity",
+          "correct": false
+        },
+        {
+          "answer": "<p>Availability</p>",
+          "correct": true
+        },
+        {
+          "answer": "Non-repudiation",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

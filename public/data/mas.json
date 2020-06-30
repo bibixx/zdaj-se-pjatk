@@ -1,0 +1,663 @@
+{
+  "title": "Modelowanie i Analiza Systemów informacyjnych (MAS)",
+  "id": "mas",
+  "data": [
+    {
+      "question": "Asocjacje występują bezpośrednio w języku Java.",
+      "id": 1959,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Asocjacje z modelu obiektowego są implementowane w modelu relacyjnym jako tabele.",
+      "id": 1961,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Asocjacje skierowane są zawsze bardziej użyteczne od dwukierunkowych.",
+      "id": 1962,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Asocjacjia to grupa powiązań o tej samej semantyce i strukturze.",
+      "id": 1963,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Architektura kilient-serwer sprzyja redukcji ruchu sieciowego.&nbsp;",
+      "id": 1964,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Architektury warstwowe ułatwiają tworzenie współczesnego oprogramowania.",
+      "id": 1965,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Architektura klient-serwer wymaga mocnego komputera centralnego.&nbsp;",
+      "id": 1966,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Architektura systemu nie musi uwzględniać celów biznesowych.",
+      "id": 1967,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Atrybut klasowy ma zawsze stałą wartość.",
+      "id": 1968,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Atrybut opcjonalny zawsze musi mieć jakąś wartość.&nbsp;",
+      "id": 1969,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Atrybut wyliczalny może być usunięty bez szkody dla informacji zapamiętanych w systemie.&nbsp;",
+      "id": 1970,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W modelu relacyjnym, w przypadku kolumny typu INT, wartość null oznacza 0",
+      "id": 2217,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "W klasie ObjectPlus, kontener służący do przechowywania wszystkich ekstensji, może być łatwo zaimplementowany przy użyciu klasy Vector.",
+      "id": 3070,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "NIE",
+          "correct": true
+        },
+        {
+          "answer": "TAK",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Asocjację n-arną implementujemy wykorzystując klasę pośredniczącą",
+      "id": 2567,
+      "comments": [
+        {
+          "author": "~anon@89.64.*.*",
+          "comment": "prawidłowa odp nie",
+          "date": "01-07-2018 15:40:33"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "dowód? Bo ja z wykładów pamiętam, że implementując asocjację n-arną wykorzystuje się klasę.",
+          "date": "01-07-2018 15:45:08"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "https://pja.mykhi.org/6sem/MAS/referaty/mas622-3.ppt tutaj masz to opisane.",
+          "date": "01-07-2018 15:46:21"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zmieniam",
+          "date": "01-07-2018 21:05:26"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "Mykhi nie zmieniaj, gościu rzucił, że odpowiedź to nie, a jest na odwrót. Wyżej podałem dowód xD",
+          "date": "02-07-2018 07:31:49"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "prawidłowa to: TAK",
+          "date": "02-07-2018 07:32:09"
+        },
+        {
+          "author": "mykhi",
+          "comment": "cofam xD",
+          "date": "02-07-2018 10:55:13"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "NIE",
+          "correct": false
+        },
+        {
+          "answer": "TAK",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Jednym ze sposobów kształtowania dobrej użyteczności jest obserwacja sposobu pracy użytkowników",
+      "id": 2568,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Tak",
+          "correct": true
+        },
+        {
+          "answer": "Nie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Agregacja z modelu obiektowego jest implementowana w modelu relacyjnym jako dwie tabele pośredniczące i 4 klucze obce",
+      "id": 2569,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Tak",
+          "correct": false
+        },
+        {
+          "answer": "Nie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Klasa to taki większy obiekt.",
+      "id": 2609,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Tak",
+          "correct": false
+        },
+        {
+          "answer": "Nie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Asocjacji to grupa powiązań o tej samej semantyce i strukturze",
+      "id": 2649,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "tak",
+          "correct": true
+        },
+        {
+          "answer": "nie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Przy implementacji ograniczenia {XOR} warto użyć jednej z wersji metody contains(…) znajdującej się w klasie pojemnikowej.",
+      "id": 3071,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Metoda implementująca ograniczenie {subset} powinna uwzględniać nazwę roli asocjacji.",
+      "id": 3072,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Ograniczenie {bag} dla asocjacji oznacza, że powiązania pomiędzy tymi samymi obiektami są uporządkowane.",
+      "id": 3073,
+      "comments": [
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "NIE, źródło - plik poprawne_odpowiedzi...",
+          "date": "01-07-2018 14:25:43"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "Przyjmuje się, że tylko jeden raz dany obiekt może pojawić się w zbiorze obiektów opisującym rolę. Jeżeli potencjalnie takich obiektów może być więcej, należy wykorzystać ograniczenie {bag}; - dowód (nie ma nic powiedziane o uporządkowaniu) - prawidłowa odpowiedź to NIE",
+          "date": "01-07-2018 14:51:14"
+        },
+        {
+          "author": "~anon@89.71.*.*",
+          "comment": "Pytanie konsultowałem osobiście z Panem Trzaską, prawidłowa odpowiedź to NIE. Uporządkowanie powiązań narzuca inne ograniczenie o nazwie \"{History}\".",
+          "date": "06-09-2019 13:22:15"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zmieniam",
+          "date": "06-09-2019 13:24:57"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Implementacja atrybutu złożonego może polegać na zdefiniowaniu nowego typu.",
+      "id": 3074,
+      "comments": [
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "Prawidłowa odpowiedź - TAK, dowód:\nWykład MAS - lekcja 01\n\"Atrybut złożony jest opisywany za pomocą dedykowanej klasy (np. data). Klasa ta może być dostarczana przez twórców danego języka programowania, bibliotekę zewnętrzną lub stworzona przez użytkownika (programistę).\"",
+          "date": "01-07-2018 15:16:46"
+        },
+        {
+          "author": "mykhi",
+          "comment": "zmieniam",
+          "date": "01-07-2018 21:04:40"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Zjawisko określane jako niezgodność impedancji jest związane ze słabą wydajnością relacyjnych baz danych.",
+      "id": 3075,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Implementacja agregacji w modelu relacyjnym jest dokładnie taka sama jak asocjacji.",
+      "id": 3076,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Głównym powodem implementacji asocjacji za pomocą identyfikatorów (zamiast referencji) jest chęć uniezależnienia obiektów od siebie (z punktu widzenia JVM).",
+      "id": 3077,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W przypadku implementacji ekstensji klasy w ramach klasy zewnętrznej, odpowiedni kontener musi być oznaczony słowem static.",
+      "id": 3078,
+      "comments": [
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "Tutaj jest ok, prawidłowa odpowiedź NIE - może, ale nie musi jakby ktoś miał wątpliwości - wykład MAS - lekcja 01",
+          "date": "01-07-2018 15:19:45"
+        },
+        {
+          "author": "~anon@2a01:110f:150c:8e00:ac4c:b000:5d1a:43a4",
+          "comment": "odpowiednia odpowiedź to \"TAK\". Omawiane na wykładzie przed egzaminem",
+          "date": "30-06-2020 15:44:30"
+        },
+        {
+          "author": "~Ziomus@95.49.*.*",
+          "comment": "oj nie nie byczq - \"Sposób realizacji zależy od podejścia do ekstensji: Ekstensja w ramach tej samej klasy. Stosujemy atrybuty klasowe w tej samej klasie ze słowem kluczowym static, lub Ekstensja jako klasa dodatkowa. Implementujemy atrybuty klasowe w klasie dodatkowej (bez słowa kluczowego static).",
+          "date": "30-06-2020 17:05:15"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": false
+        },
+        {
+          "answer": "NIE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Dobre GUI, w celu pokazania wykluczających się opcji wykorzystuje \"radio buttons\".",
+      "id": 3079,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Niektóre nowe wersje aplikacji nie koncentrują się na dodawaniu nowych funkcji, ale na ułatwieniu dostępu do już istniejących.",
+      "id": 3080,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Korzystanie z deklaratywnego podejścia do tworzenia GUI wymaga dużego zaangażowania ze strony programisty",
+      "id": 3087,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "Tak",
+          "correct": false
+        },
+        {
+          "answer": "Nie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Technologia zwana refleksją (ang. Reflection) może posłużyć do odczytania budowy/struktury klasy",
+      "id": 2969,
+      "comments": [
+        {
+          "author": "~anon@188.146.*.*",
+          "comment": "Błąd - odpowiedz prawidłowa to Tak",
+          "date": "26-02-2018 18:40:32"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "Potwierdzam - dowód:\n // bez refleksji\n Foo foo = new Foo();\n foo.hello();\n\n // z refleksją\n Class cl = Class.forName(\"Foo\");\n Method method = cl.getMethod(\"hello\");\n method.invoke(cl.newInstance());",
+          "date": "01-07-2018 14:41:45"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawiam",
+          "date": "01-07-2018 14:44:54"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "Tak",
+          "correct": true
+        },
+        {
+          "answer": "Nie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Mechanizm serializacji języka Java, ułatwia uzyskanie trwałości ekstensji",
+      "id": 2970,
+      "comments": [
+        {
+          "author": "~anon@89.69.*.*",
+          "comment": "obie odpowiedzi ustawione sa jako tak",
+          "date": "25-02-2018 21:13:57"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "a prawidłowa to? :p",
+          "date": "01-07-2018 11:05:45"
+        },
+        {
+          "author": "mykhi",
+          "comment": "prawidłowa to \"tak\"",
+          "date": "01-07-2018 11:36:12"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "tak",
+          "correct": true
+        },
+        {
+          "answer": "nie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "W popularnych językach programowania (np. Java) ograniczenia nie występują bezpośrednio.",
+      "id": 2971,
+      "comments": [
+        {
+          "author": "~anon@79.185.*.*",
+          "comment": "Błąd. Prawidłowa odpowiedź to \"tak\".\nŹródło (pierwsze zdanie): https://edux.pjwstk.edu.pl/mat/205/lec/Wyklad-MAS-nr-08.html#link4",
+          "date": "30-06-2018 00:12:55"
+        },
+        {
+          "author": "~anon@185.15.*.*",
+          "comment": "Mykhi prosimy o poprawę na 'tak' :)",
+          "date": "01-07-2018 15:14:45"
+        },
+        {
+          "author": "mykhi",
+          "comment": "poprawione :)",
+          "date": "01-07-2018 21:04:17"
+        }
+      ],
+      "answers": [
+        {
+          "answer": "tak",
+          "correct": true
+        },
+        {
+          "answer": "nie",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Dobry programista nie musi używać komentarzy",
+      "id": 2979,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "tak",
+          "correct": false
+        },
+        {
+          "answer": "nie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Dziedziczenie dynamiczne występuje bezpośrednio w języku Java",
+      "id": 2980,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "tak",
+          "correct": false
+        },
+        {
+          "answer": "nie",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "<table width=\"64\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><colgroup><col width=\"64\"></colgroup>\n<tbody>\n<tr>\n<td width=\"64\" height=\"20\">\n<table width=\"1067\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\"><colgroup><col width=\"1067\"></colgroup>\n<tbody>\n<tr>\n<td width=\"1067\" height=\"20\">Asocjacji to grupa powiązań o tej samej semantyce i strukturze.</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</tbody>\n</table>",
+      "id": 3239,
+      "comments": null,
+      "answers": [
+        {
+          "answer": "TAK",
+          "correct": true
+        },
+        {
+          "answer": "NIE",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

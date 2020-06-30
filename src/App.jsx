@@ -7,6 +7,7 @@ import {
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -54,13 +55,18 @@ const App = () => {
           </Switch>
         </Router>
         <Footer>
-          <DarkModeButton
-            darkModeEnabled={darkModeEnabled}
-            onClick={() => setDarkModeEnabled(!darkModeEnabled)}
-          >
-            {/* eslint-disable no-irregular-whitespace */}
-            Zmień motyw
-          </DarkModeButton>
+          <>
+            <DarkModeButton
+              darkModeEnabled={darkModeEnabled}
+              onClick={() => setDarkModeEnabled(!darkModeEnabled)}
+            >
+              {/* eslint-disable no-irregular-whitespace */}
+              Zmień motyw
+            </DarkModeButton>
+            <Link href="https://github.com/bibixx/zdaj-se-pjatk">
+              GitHub
+            </Link>
+          </>
         </Footer>
       </Container>
     </ThemeProvider>
