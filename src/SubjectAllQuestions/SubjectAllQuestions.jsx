@@ -88,7 +88,7 @@ const SubjectAllQuestions = () => {
             Brak pytań
           </Typography>
         )}
-        {data.map(({
+        {data.slice(0, 2).map(({
           question, answers, comments, id,
         }) => (
           <Paper variant="outlined" key={`${id}`}>
@@ -114,8 +114,11 @@ const SubjectAllQuestions = () => {
                         id={labelId}
                         primary={(
                           <Box fontWeight="fontWeightBold">
-                            {/* eslint-disable-next-line react/no-danger */}
-                            <span dangerouslySetInnerHTML={{ __html: answer }} />
+                            <span
+                              className={styles.question}
+                              // eslint-disable-next-line react/no-danger
+                              dangerouslySetInnerHTML={{ __html: answer }}
+                            />
                           </Box>
                         )}
                       />
