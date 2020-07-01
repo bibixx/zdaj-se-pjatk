@@ -88,7 +88,7 @@ const SubjectAllQuestions = () => {
             Brak pytań
           </Typography>
         )}
-        {data.slice(0, 2).map(({
+        {data.map(({
           question, answers, comments, id,
         }) => (
           <Paper variant="outlined" key={`${id}`}>
