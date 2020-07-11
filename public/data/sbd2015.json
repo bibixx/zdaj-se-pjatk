@@ -2158,7 +2158,18 @@
     {
       "question": "<p><span>&nbsp; &nbsp;Dane są trzy tabele Klienci ( Id_Klienta, Imie , Nazwisko ), Produkty (Id_Produktu , Nazwa , Cena ) oraz Zakupy (Id_Klienta , Id_Produktu , Ilosc ) . Wskaż poprawne zapytania SQL znajdujące nazwy i ceny produktów , które zostały zakupione przez przynajmniej jednego klienta .</span></p>",
       "id": 2476,
-      "comments": null,
+      "comments": [
+        {
+          "author": "~anon@62.233.*.*",
+          "comment": "dlaczego pierwsze nie ?",
+          "date": "16-02-2020 15:37:07"
+        },
+        {
+          "author": "~JSZ@46.186.*.*",
+          "comment": "Bo da Ci też produkty ktore nie byly kupowane",
+          "date": "10-07-2020 22:23:55"
+        }
+      ],
       "answers": [
         {
           "answer": "<span lang=\"EN-US\">SELECT DISTINCT Nazwa , Cena FROM Zakupy RIGHT OUTER JOIN Produkty ON Produkty.Id_Produktu = Zakupy.Id_Produktu;</span>",
@@ -5458,6 +5469,16 @@
           "author": "~anon@148.81.*.*",
           "comment": "czyli B) źle ",
           "date": "01-07-2017 18:12:30"
+        },
+        {
+          "author": "~g678@89.76.*.*",
+          "comment": "@mykhi popraw b",
+          "date": "08-07-2020 22:49:43"
+        },
+        {
+          "author": "~anon@2a02:a311:64:bc00:899e:f298:33:9d3f",
+          "comment": "Create może być i nawet dość często jest wykorzystywane w procedurach m.in. Tabele tymczasowe.\n\nwięc DDL jest okej",
+          "date": "10-07-2020 18:41:47"
         }
       ],
       "answers": [
@@ -5467,7 +5488,7 @@
         },
         {
           "answer": "W procedurze mogą być wykonywane polecenia DDL",
-          "correct": true
+          "correct": false
         },
         {
           "answer": "W procedurze mogą być wykonywane polecenia DML",

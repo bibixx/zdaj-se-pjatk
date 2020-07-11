@@ -68,7 +68,7 @@ const App = () => {
                 GitHub
               </Link>
             </div>
-            <Box textAlign="center">Stan na 30.06.2020</Box>
+            <Box textAlign="center">Stan na 11.07.2020</Box>
           </>
         </Footer>
       </Container>
