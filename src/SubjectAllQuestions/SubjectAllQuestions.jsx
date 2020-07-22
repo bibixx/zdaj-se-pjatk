@@ -17,6 +17,7 @@ import Header from '../Header';
 import Comments from '../Comments';
 
 import styles from './SubjectAllQuestions.module.scss';
+import customFetch from '../utils/fetch';
 
 const useStyles = makeStyles({
   root: {
@@ -53,7 +54,7 @@ const SubjectAllQuestions = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetch(`/data/${subjectId}.json`).then((res) => res.json());
+        const data = await customFetch(`${subjectId}.json`);
 
         setSubject(data);
         setLoading(false);

@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 import ContentWrapper from '../ContentWrapper';
 import Header from '../Header';
+import customFetch from '../utils/fetch';
 
 const IndexPage = () => {
   const [pages, setPages] = useState(null);
@@ -17,7 +18,7 @@ const IndexPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetch('/data/index.json').then((res) => res.json());
+        const data = await customFetch('index.json');
 
         setPages(data);
         setLoading(false);
