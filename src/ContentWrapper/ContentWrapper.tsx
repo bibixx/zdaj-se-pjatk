@@ -1,8 +1,12 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+interface RootProps {
+  loading?: boolean;
+}
+
+const useStyles = makeStyles<Theme, RootProps>({
   root: ({ loading = false }) => ({
     padding: '1.5rem',
     display: 'grid',
@@ -12,7 +16,11 @@ const useStyles = makeStyles({
   }),
 });
 
-const ContentWrapper = ({ children, loading }) => {
+interface ContentWrapperProps {
+  loading?: boolean;
+}
+
+const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, loading = false }) => {
   const classes = useStyles({ loading });
 
   return (

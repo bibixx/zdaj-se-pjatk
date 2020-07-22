@@ -1,5 +1,8 @@
 {
-  "extends": ["airbnb", "airbnb/hooks"],
+  "extends": ["airbnb-typescript", "airbnb/hooks"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "env": {
     "browser": true
   },

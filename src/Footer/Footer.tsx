@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
 
-const Footer = ({ children }) => (
+const Footer: React.FC = ({ children }) => (
   <Box py="1rem" component="footer">{children}</Box>
 );
 

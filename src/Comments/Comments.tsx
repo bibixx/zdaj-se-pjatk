@@ -6,6 +6,7 @@ import { Divider, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import { Comment } from '../types/comments';
 
 const useStyles = makeStyles({
   icon: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-const getCommentsAmount = (n) => {
+const getCommentsAmount = (n: number) => {
   switch (n) {
     case 1: {
       return `${n} komentarz`;
@@ -32,10 +33,14 @@ const getCommentsAmount = (n) => {
   }
 };
 
-const Comments = ({ comments }) => {
+interface CommentsProps {
+  comments: Comment[]|null;
+}
+
+const Comments: React.FC<CommentsProps> = ({ comments }) => {
   const [commentsVisible, setCommentsVisible] = useState(false);
 
-  const data = Array.isArray(comments) ? comments : [];
+  const data = comments !== null ? comments : [];
   const classes = useStyles();
 
   const disabled = data.length === 0;
@@ -46,7 +51,7 @@ const Comments = ({ comments }) => {
       <ListItem
         role={undefined}
         dense
-        button={!disabled}
+        button={!disabled ? undefined : false}
         onClick={() => setCommentsVisible(!commentsVisible)}
       >
         <ListItemText>{getCommentsAmount(data.length)}</ListItemText>
@@ -71,7 +76,7 @@ const Comments = ({ comments }) => {
                       .replace('~', '')
                       .replace(/@[\d.*]+$/, '')}
                     {' '}
-|
+                    |
                     {' '}
                     {date}
 

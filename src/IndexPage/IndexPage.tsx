@@ -10,21 +10,23 @@ import { Link } from 'react-router-dom';
 import ContentWrapper from '../ContentWrapper';
 import Header from '../Header';
 import customFetch from '../utils/fetch';
+import { Pages } from '../types/pages';
+import validatePages from '../utils/validatePages';
 
 const IndexPage = () => {
-  const [pages, setPages] = useState(null);
+  const [pages, setPages] = useState<Pages>({ pages: [] });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await customFetch('index.json');
+        const data = await customFetch('index.json', validatePages);
 
         setPages(data);
         setLoading(false);
       } catch (error) {
         // eslint-disable-next-line no-console
-        console.errors(error);
+        console.error(error);
       }
     };
 

@@ -18,6 +18,8 @@ import Comments from '../Comments';
 
 import styles from './SubjectAllQuestions.module.scss';
 import customFetch from '../utils/fetch';
+import validateSubject from '../utils/validateSubject';
+import { Subject } from '../types/subject';
 
 const useStyles = makeStyles({
   root: {
@@ -48,26 +50,26 @@ const useStyles = makeStyles({
 const SubjectAllQuestions = () => {
   const classes = useStyles();
   const { subjectId } = useParams();
-  const [subject, setSubject] = useState(null);
+  const [subject, setSubject] = useState<Subject|null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await customFetch(`${subjectId}.json`);
+        const data = await customFetch(`${subjectId}.json`, validateSubject);
 
         setSubject(data);
         setLoading(false);
       } catch (error) {
         // eslint-disable-next-line no-console
-        console.errors(error);
+        console.error(error);
       }
     };
 
     fetchData();
   }, [subjectId]);
 
-  if (loading) {
+  if (loading || subject === null) {
     return (
       <ContentWrapper loading>
         <Box display="flex" justifyContent="center">
