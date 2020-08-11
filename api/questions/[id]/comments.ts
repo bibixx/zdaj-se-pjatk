@@ -1,4 +1,27 @@
 import { NowRequest, NowResponse } from '@vercel/node';
+import low from 'lowdb';
+import FileSync from 'lowdb/adapters/FileSync';
+
+interface Comment {
+  author: string,
+  comment: string,
+  date: string,
+}
+
+interface Question {
+  question: string,
+  id: number,
+  comments: Comment[]
+}
+
+interface Database {
+  title: string;
+  id: string;
+  data: Question[];
+}
+
+const adapter = new FileSync<Database>('../../public/dataskj.json');
+const db = low(adapter);
 
 const isString = (s: unknown): s is string => typeof s === 'string';
 
@@ -50,4 +73,15 @@ export default (req: NowRequest, res: NowResponse): void => {
   res.json({
     ok: true,
   });
+
+  const newComment: Comment = { author, comment: contents, date: new Date(Date.now()).toString() };
+  const questionIndex = db
+    .get('data')
+    .findIndex((question) => question.id === id)
+    .value();
+
+  db
+    .get(['data', questionIndex, 'comments'])
+    .push(newComment)
+    .write();
 };
