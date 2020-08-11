@@ -20,7 +20,7 @@ interface Database {
   data: Question[];
 }
 
-const adapter = new FileSync<Database>('../../public/dataskj.json');
+const adapter = new FileSync<Database>('public/data/skj.json');
 const db = low(adapter);
 
 const isString = (s: unknown): s is string => typeof s === 'string';
@@ -70,18 +70,24 @@ export default (req: NowRequest, res: NowResponse): void => {
     });
     return;
   }
-  res.json({
-    ok: true,
-  });
-
   const newComment: Comment = { author, comment: contents, date: new Date(Date.now()).toString() };
   const questionIndex = db
     .get('data')
     .findIndex((question) => question.id === id)
     .value();
-
+  if (questionIndex === -1) {
+    res.json({
+      ok: false,
+      error: 'No such question in this subject',
+    });
+    return;
+  }
   db
     .get(['data', questionIndex, 'comments'])
     .push(newComment)
     .write();
+
+  res.json({
+    ok: true,
+  });
 };
