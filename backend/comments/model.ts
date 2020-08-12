@@ -1,16 +1,3 @@
-import { NowRequest, NowResponse } from '@vercel/node';
-import validateComment from '../../backend/comments/controller';
-// import low from 'lowdb';
-// import FileSync from 'lowdb/adapters/FileSync';
-
-export default (req: NowRequest, res: NowResponse) => {
-  const result = validateComment(req, res);
-  res.json({
-    ok: result.ok,
-    error: '',
-  });
-};
-
 // const adapter = new FileSync<Database>('public/data/skj.json');
 // const db = low(adapter);
 
