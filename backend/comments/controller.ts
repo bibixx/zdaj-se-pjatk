@@ -1,6 +1,6 @@
 import { NowRequest } from '@vercel/node';
 
-export default (req: NowRequest): {ok: boolean, message: string} => {
+const commentController = (req: NowRequest): {ok: boolean, message: string} => {
   if (req.body === undefined) {
     return { ok: false, message: 'No request body' };
   }
@@ -24,3 +24,4 @@ export default (req: NowRequest): {ok: boolean, message: string} => {
   }
   return { ok: true, message: '' };
 };
+export default commentController;
