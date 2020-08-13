@@ -5,7 +5,7 @@ import { Database } from '../types/database';
 import { Comment } from '../types/comment';
 import writeComment from './model';
 
-const adapter = new FileSync<Database>('public/dat/skj.json');
+const adapter = new FileSync<Database>('public/data/skj.json');
 const db = low(adapter);
 const addNewComment = (res: NowResponse, author: string, comment: string, id: number) => {
   const newComment: Comment = { author, comment, date: new Date(Date.now()).toString() };
