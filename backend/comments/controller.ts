@@ -1,4 +1,5 @@
-import { NowRequest } from '@vercel/node';
+import { NowRequest, NowResponse } from '@vercel/node';
+import addNewComment from './service';
 
 const commentController = (req: NowRequest, res: NowResponse): void => {
   if (req.body === undefined) {
@@ -28,6 +29,6 @@ const commentController = (req: NowRequest, res: NowResponse): void => {
     res.json({ ok: false, error: 'Id is NaN' });
     return;
   }
-  res.json({ ok: true });
+  addNewComment(res, author, contents, id);
 };
 export default commentController;

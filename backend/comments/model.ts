@@ -1,19 +1,19 @@
-// const adapter = new FileSync<Database>('public/data/skj.json');
-// const db = low(adapter);
+import { NowResponse } from '@vercel/node';
+import low from 'lowdb';
+import FileSync from 'lowdb/adapters/FileSync';
+import { Database } from '../types/database';
+import { Comment } from '../types/comment';
 
-// const newComment: Comment = { author, comment: contents, date: new Date(Date.now()).toString() };
-// const questionIndex = db
-//   .get('data')
-//   .findIndex((question) => question.id === id)
-//   .value();
-// if (questionIndex === -1) {
-//   res.json({
-//     ok: false,
-//     error: 'No such question in this subject',
-//   });
-//   return;
-// }
-// db
-//   .get(['data', questionIndex, 'comments'])
-//   .push(newComment)
-//   .write();
+const adapter = new FileSync<Database>('public/data/skj.json');
+const db = low(adapter);
+
+const writeComment = (comment: Comment, questionIndex: number, res: NowResponse) => {
+  db
+    .get(['data', questionIndex, 'comments'])
+    .push(comment)
+    .write();
+  res.json({
+    ok: true,
+  });
+};
+export default writeComment;
