@@ -4,11 +4,7 @@ import commentController from '../../../backend/comments/controller';
 // import FileSync from 'lowdb/adapters/FileSync';
 
 export default (req: NowRequest, res: NowResponse) => {
-  const result = commentController(req);
-  res.json({
-    ok: result.ok,
-    error: '',
-  });
+  commentController(req, res);
 };
 
 // const adapter = new FileSync<Database>('public/data/skj.json');
