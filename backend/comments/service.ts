@@ -1,6 +1,6 @@
-import { NowResponse } from '@vercel/node';
 import low from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
+import { NowResponse } from '@vercel/node';
 import { Database } from '../types/database';
 import { Comment } from '../types/comment';
 import writeComment from './model';
