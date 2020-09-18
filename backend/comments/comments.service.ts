@@ -3,7 +3,7 @@ import FileSync from 'lowdb/adapters/FileSync';
 import { NowResponse } from '@vercel/node';
 import { Database } from '../types/database';
 import { Comment } from '../types/comment';
-import writeComment from './model';
+import writeComment from './comments.model';
 
 const adapter = new FileSync<Database>('public/data/skj.json');
 const db = low(adapter);

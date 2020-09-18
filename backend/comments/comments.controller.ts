@@ -1,5 +1,5 @@
 import { NowRequest, NowResponse } from '@vercel/node';
-import addNewComment from './service';
+import addNewComment from './comments.service';
 
 const commentController = (req: NowRequest, res: NowResponse): void => {
   if (req.body === undefined) {
@@ -16,15 +16,15 @@ const commentController = (req: NowRequest, res: NowResponse): void => {
     res.json({ ok: false, error: 'Author is not a string' });
     return;
   }
-  if (req.query?.id === undefined) {
+  if (req.query?.questionid === undefined) {
     res.json({ ok: false, error: 'Id is not provided' });
     return;
   }
-  if (Array.isArray(req.query.id)) {
+  if (Array.isArray(req.query.questionid)) {
     res.json({ ok: false, error: 'Id is not a single value' });
     return;
   }
-  const id = Number.parseInt(req.query.id, 10);
+  const id = Number.parseInt(req.query.questionid, 10);
   if (Number.isNaN(id)) {
     res.json({ ok: false, error: 'Id is NaN' });
     return;
