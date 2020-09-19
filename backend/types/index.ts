@@ -1,5 +1,5 @@
 import { Record } from './record';
 
-export interface Database {
+export interface Index {
   pages: Record[],
 }

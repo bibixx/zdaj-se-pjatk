@@ -1,7 +1,7 @@
 import low from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
 import { NowRequest, NowResponse } from '@vercel/node';
-import { Database } from '../types/index';
+import { Index } from '../types/index';
 import addNewSubject from './subject.service';
 
 const subjectController = (req: NowRequest, res: NowResponse) => {
@@ -19,7 +19,7 @@ const subjectController = (req: NowRequest, res: NowResponse) => {
     res.json({ ok: false, error: 'Id is not a string' });
     return;
   }
-  const adapter = new FileSync<Database>('public/data/index.json');
+  const adapter = new FileSync<Index>('public/data/index.json');
   const db = low(adapter);
   const subjectIndex = db
     .get('pages')
