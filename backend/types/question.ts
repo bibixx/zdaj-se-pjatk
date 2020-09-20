@@ -1,9 +1,9 @@
 import { Comment } from './comment';
-import { Answear } from './answear';
+import { Answer } from './answer';
 
 export interface Question {
   question: string,
   id: number | string,
   comments: Comment[],
-  answears: Answear[]
+  answers: Answer[]
 }

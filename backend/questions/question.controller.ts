@@ -1,5 +1,5 @@
 import { NowRequest, NowResponse } from '@vercel/node';
-import { Answear } from '../types/answear';
+import { Answer } from '../types/answer';
 import addNewQuestion from './question.service';
 
 const questionController = (req: NowRequest, res: NowResponse): void => {
@@ -8,21 +8,21 @@ const questionController = (req: NowRequest, res: NowResponse): void => {
     return;
   }
   const isString = (s: unknown): s is string => typeof s === 'string';
-  const isAnswearValid = (a: Answear) => a.answear === undefined
+  const isAnswerValid = (a: Answer) => a.answer === undefined
   || a.correct === undefined
-  || !isString(a.answear);
-  const { question, answears } = req.body;
+  || !isString(a.answer);
+  const { question, answers } = req.body;
   if (question === undefined || !isString(question)) {
     res.json({ ok: false, error: 'Question is not a string' });
     return;
   }
-  if (answears === undefined || !Array.isArray(answears)) {
+  if (answers === undefined || !Array.isArray(answers)) {
     res.json({ ok: false, error: 'Answers is not an array' });
     return;
   }
-  if (answears.some((a) => isAnswearValid(a))) {
+  if (answers.some((a) => isAnswerValid(a))) {
     res.json({ ok: false, error: 'Some of the answers are not valid' });
   }
-  addNewQuestion(res, question, answears);
+  addNewQuestion(res, question, answers);
 };
 export default questionController;
