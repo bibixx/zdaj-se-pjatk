@@ -1,9 +1,5 @@
 import React, { useMemo, useState, useEffect } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
@@ -33,10 +29,7 @@ const App = () => {
     setDarkModeEnabled(prefersDarkMode);
   }, [prefersDarkMode]);
 
-  const theme = useMemo(
-    () => getTheme(darkModeEnabled),
-    [darkModeEnabled],
-  );
+  const theme = useMemo(() => getTheme(darkModeEnabled), [darkModeEnabled]);
 
   const classes = useStyles();
 
@@ -55,8 +48,16 @@ const App = () => {
           </Switch>
         </Router>
         <Footer>
-          <>
-            <div>
+          <Box
+            display="grid"
+            gridTemplateColumns="repeat(3, 1fr)"
+            alignItems="center"
+          >
+            <Link href="https://github.com/bibixx/zdaj-se-pjatk">GitHub</Link>
+            <Box justifySelf="center" textAlign="center">
+              Stan na 11.07.2020
+            </Box>
+            <Box justifySelf="flex-end">
               <DarkModeButton
                 darkModeEnabled={darkModeEnabled}
                 onClick={() => setDarkModeEnabled(!darkModeEnabled)}
@@ -64,12 +65,8 @@ const App = () => {
                 {/* eslint-disable no-irregular-whitespace */}
                 Zmień motyw
               </DarkModeButton>
-              <Link href="https://github.com/bibixx/zdaj-se-pjatk">
-                GitHub
-              </Link>
-            </div>
-            <Box textAlign="center">Stan na 11.07.2020</Box>
-          </>
+            </Box>
+          </Box>
         </Footer>
       </Container>
     </ThemeProvider>
