@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import {
-  CircularProgress, Divider, Box, Paper,
-} from '@material-ui/core';
+import { CircularProgress, Divider, Box, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 import ContentWrapper from '../ContentWrapper';
@@ -13,7 +11,7 @@ import customFetch from '../utils/fetch';
 import { Pages } from '../types/pages';
 import validatePages from '../utils/validatePages';
 
-const IndexPage = () => {
+const IndexPage = (): JSX.Element => {
   const [pages, setPages] = useState<Pages>({ pages: [] });
   const [loading, setLoading] = useState(true);
 

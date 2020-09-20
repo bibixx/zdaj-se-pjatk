@@ -34,7 +34,7 @@ const getCommentsAmount = (n: number) => {
 };
 
 interface CommentsProps {
-  comments: Comment[]|null;
+  comments: Comment[] | null;
 }
 
 const Comments: React.FC<CommentsProps> = ({ comments }) => {
@@ -57,7 +57,8 @@ const Comments: React.FC<CommentsProps> = ({ comments }) => {
         <ListItemText>{getCommentsAmount(data.length)}</ListItemText>
         <ListItemIcon>
           <div className={classes.icon}>
-            {!disabled && (commentsVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />)}
+            {!disabled &&
+              (commentsVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />)}
           </div>
         </ListItemIcon>
       </ListItem>
@@ -66,20 +67,10 @@ const Comments: React.FC<CommentsProps> = ({ comments }) => {
           <Divider />
           {data.map(({ author, comment, date }) => (
             <React.Fragment key={comment}>
-              <ListItem
-                role={undefined}
-                dense
-              >
+              <ListItem role={undefined} dense>
                 <ListItemText>
                   <Typography color="textSecondary" variant="body2">
-                    {author
-                      .replace('~', '')
-                      .replace(/@[\d.*]+$/, '')}
-                    {' '}
-                    |
-                    {' '}
-                    {date}
-
+                    {author.replace('~', '').replace(/@[\d.*]+$/, '')} | {date}
                   </Typography>
                   <Typography variant="body2">{comment}</Typography>
                 </ListItemText>

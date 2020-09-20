@@ -20,11 +20,16 @@ interface ContentWrapperProps {
   loading?: boolean;
 }
 
-const ContentWrapper: React.FC<ContentWrapperProps> = ({ children, loading = false }) => {
+const ContentWrapper: React.FC<ContentWrapperProps> = ({
+  children,
+  loading = false,
+}) => {
   const classes = useStyles({ loading });
 
   return (
-    <Paper classes={{ root: classes.root }} elevation={0}>{children}</Paper>
+    <Paper classes={{ root: classes.root }} elevation={0}>
+      {children}
+    </Paper>
   );
 };
 
