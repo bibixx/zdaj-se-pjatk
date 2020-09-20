@@ -10,6 +10,7 @@ import Header from '../Header';
 import customFetch from '../utils/fetch';
 import { Pages } from '../types/pages';
 import validatePages from '../utils/validatePages';
+import { DATA_ROOT_URL } from '../utils/constants';
 
 const IndexPage = (): JSX.Element => {
   const [pages, setPages] = useState<Pages>({ pages: [] });
@@ -18,7 +19,10 @@ const IndexPage = (): JSX.Element => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await customFetch('index.json', validatePages);
+        const data = await customFetch(
+          `${DATA_ROOT_URL}/index.json`,
+          validatePages
+        );
 
         setPages(data);
         setLoading(false);

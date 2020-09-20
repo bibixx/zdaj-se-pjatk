@@ -5,17 +5,21 @@ const defaultChecker: Checker<unknown> = (
   test: unknown
 ): asserts test is unknown => {};
 
+interface CustomRequestInit extends Omit<RequestInit, 'body'> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  body: any;
+}
+
 const customFetch = async <T = unknown>(
   url: string,
   checkData: Checker<T> = defaultChecker,
-  init?: RequestInit
+  init?: CustomRequestInit
 ): Promise<T> => {
-  const rootUrl = process.env.REACT_APP_DATA_PATH || '/';
+  const initWithStringifiedBody = init?.body
+    ? { ...init, body: JSON.stringify(init.body) }
+    : init;
 
-  const rootDeslashed = rootUrl.replace(/\/$/, '');
-  const urlDeslashed = url.replace(/^\//, '');
-
-  const response = await fetch(`${rootDeslashed}/${urlDeslashed}`, init);
+  const response = await fetch(url, initWithStringifiedBody);
 
   if (response.ok) {
     const data = await response.json();
