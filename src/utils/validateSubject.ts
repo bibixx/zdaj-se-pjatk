@@ -46,7 +46,7 @@ function validateQuestion(element: any): element is Question {
     return false;
   }
 
-  if (typeof element.id !== 'number') {
+  if (typeof element.id !== 'number' && typeof element.id !== 'string') {
     return false;
   }
 
