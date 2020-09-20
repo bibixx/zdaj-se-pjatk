@@ -1,103 +1,53 @@
+import { JsonDecoder } from 'ts.data.json';
 import { Subject, Answer, Comment, Question } from '../types/subject';
 
-/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
-function validateAnswer(element: any): element is Answer {
-  if (!element) {
-    return false;
+const commentDecoder = JsonDecoder.object<Comment>(
+  {
+    author: JsonDecoder.string,
+    comment: JsonDecoder.string,
+    date: JsonDecoder.string,
+  },
+  'Comment'
+);
+
+const answerDecoder = JsonDecoder.object<Answer>(
+  {
+    answer: JsonDecoder.string,
+    correct: JsonDecoder.boolean,
+  },
+  'Answer'
+);
+
+const questionDecoder = JsonDecoder.object<Question>(
+  {
+    question: JsonDecoder.string,
+    id: JsonDecoder.oneOf<string | number>(
+      [JsonDecoder.string, JsonDecoder.number],
+      'string | number'
+    ),
+    comments: JsonDecoder.nullable(
+      JsonDecoder.array<Comment>(commentDecoder, 'Comment[]')
+    ),
+    answers: JsonDecoder.array<Answer>(answerDecoder, 'Answer[]'),
+  },
+  'Question'
+);
+
+const subjectDecoder = JsonDecoder.object<Subject>(
+  {
+    title: JsonDecoder.string,
+    id: JsonDecoder.string,
+    data: JsonDecoder.array<Question>(questionDecoder, 'Question[]'),
+  },
+  'Subject'
+);
+
+function validateSubject(element: unknown): asserts element is Subject {
+  const res = subjectDecoder.decode(element);
+
+  if (!res.isOk()) {
+    throw new Error(res.error);
   }
-
-  if (typeof element.answer !== 'string') {
-    return false;
-  }
-
-  if (typeof element.correct !== 'boolean') {
-    return false;
-  }
-
-  return true;
-}
-
-function validateComment(element: any): element is Comment {
-  if (!element) {
-    return false;
-  }
-
-  if (typeof element.author !== 'string') {
-    return false;
-  }
-
-  if (typeof element.comment !== 'string') {
-    return false;
-  }
-
-  if (typeof element.date !== 'string') {
-    return false;
-  }
-
-  return true;
-}
-
-function validateQuestion(element: any): element is Question {
-  if (!element) {
-    return false;
-  }
-
-  if (typeof element.question !== 'string') {
-    return false;
-  }
-
-  if (typeof element.id !== 'number' && typeof element.id !== 'string') {
-    return false;
-  }
-
-  if (!element.comments && element.comments !== null) {
-    return false;
-  }
-
-  if (element.comments !== null && !Array.isArray(element.comments)) {
-    return false;
-  }
-
-  if (
-    element.comments !== null &&
-    !(element.comments as Array<any>).every(validateComment)
-  ) {
-    return false;
-  }
-
-  if (!Array.isArray(element.answers)) {
-    return false;
-  }
-
-  if (!(element.answers as Array<any>).every(validateAnswer)) {
-    return false;
-  }
-
-  return true;
-}
-
-function validateSubject(element: any): element is Subject {
-  if (!element) {
-    return false;
-  }
-
-  if (typeof element.title !== 'string') {
-    return false;
-  }
-
-  if (typeof element.id !== 'string') {
-    return false;
-  }
-
-  if (!Array.isArray(element.data)) {
-    return false;
-  }
-
-  if (!(element.data as Array<any>).every(validateQuestion)) {
-    return false;
-  }
-
-  return true;
 }
 
 export default validateSubject;

@@ -1,28 +1,28 @@
+import { JsonDecoder } from 'ts.data.json';
+import { Page } from '../types/page';
 import { Pages } from '../types/pages';
 
-/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
-function validatePages(element: any): element is Pages {
-  if (!element?.pages) {
-    return false;
-  }
+const pageDecoder = JsonDecoder.object<Page>(
+  {
+    title: JsonDecoder.string,
+    id: JsonDecoder.string,
+  },
+  'Page'
+);
 
-  if (!Array.isArray(element.pages)) {
-    return false;
-  }
+const pagesDecoder = JsonDecoder.object<Pages>(
+  {
+    pages: JsonDecoder.array<Page>(pageDecoder, 'Page[]'),
+  },
+  'Pages'
+);
 
-  if (!(element.pages as Array<any>).every(Boolean)) {
-    return false;
-  }
+function validatePages(element: unknown): asserts element is Pages {
+  const res = pagesDecoder.decode(element);
 
-  if (
-    !(element.pages as Array<any>).every(
-      ({ title, id }) => typeof title === 'string' && typeof id === 'string'
-    )
-  ) {
-    return false;
+  if (!res.isOk()) {
+    throw new Error(res.error);
   }
-
-  return true;
 }
 
 export default validatePages;
