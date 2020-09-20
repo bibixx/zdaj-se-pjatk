@@ -1,21 +1,30 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import { Divider, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Button, Divider, TextField, Typography } from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import { Comment } from '../types/comments';
+import customFetch from '../utils/fetch';
+import { API_ROOT_URL } from '../utils/constants';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme: Theme) => ({
   icon: {
     display: 'flex',
     alignItems: 'center',
     height: '2.625rem',
     marginLeft: '0.5rem',
   },
-});
+  input: {
+    marginBottom: theme.spacing(2),
+  },
+  form: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+  },
+}));
 
 const getCommentsAmount = (n: number) => {
   switch (n) {
@@ -35,15 +44,45 @@ const getCommentsAmount = (n: number) => {
 
 interface CommentsProps {
   comments: Comment[] | null;
+  fetchData: () => Promise<void>;
 }
 
-const Comments: React.FC<CommentsProps> = ({ comments }) => {
+const Comments: React.FC<CommentsProps> = ({ comments, fetchData }) => {
   const [commentsVisible, setCommentsVisible] = useState(false);
+  const [commentValue, setCommentValue] = useState('');
+
+  const handleChange = useCallback((event: any) => {
+    setCommentValue(event.target.value);
+  }, []);
+
+  const onSubmit = useCallback(
+    async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+
+      await customFetch(
+        `${API_ROOT_URL}/subjects/test/questions/1/comments`,
+        () => true,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: {
+            author: 'bibixx',
+            contents: commentValue,
+          },
+        }
+      );
+
+      setCommentValue('');
+
+      fetchData();
+    },
+    [fetchData, setCommentValue, commentValue]
+  );
 
   const data = comments !== null ? comments : [];
   const classes = useStyles();
-
-  const disabled = data.length === 0;
 
   return (
     <>
@@ -51,14 +90,13 @@ const Comments: React.FC<CommentsProps> = ({ comments }) => {
       <ListItem
         role={undefined}
         dense
-        button={!disabled ? undefined : false}
+        button
         onClick={() => setCommentsVisible(!commentsVisible)}
       >
         <ListItemText>{getCommentsAmount(data.length)}</ListItemText>
         <ListItemIcon>
           <div className={classes.icon}>
-            {!disabled &&
-              (commentsVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />)}
+            {commentsVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />}
           </div>
         </ListItemIcon>
       </ListItem>
@@ -77,6 +115,24 @@ const Comments: React.FC<CommentsProps> = ({ comments }) => {
               </ListItem>
             </React.Fragment>
           ))}
+          <ListItem role={undefined} dense>
+            <ListItemText>
+              <form noValidate onSubmit={onSubmit} className={classes.form}>
+                <TextField
+                  error={false}
+                  label="Nowy komentarz"
+                  fullWidth
+                  multiline
+                  value={commentValue}
+                  onChange={handleChange}
+                  className={classes.input}
+                />
+                <Button variant="contained" color="primary" type="submit">
+                  Dodaj komentarz
+                </Button>
+              </form>
+            </ListItemText>
+          </ListItem>
         </>
       )}
     </>

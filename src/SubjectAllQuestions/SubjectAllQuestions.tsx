@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 
 import List from '@material-ui/core/List';
@@ -18,6 +18,7 @@ import styles from './SubjectAllQuestions.module.scss';
 import customFetch from '../utils/fetch';
 import validateSubject from '../utils/validateSubject';
 import { Subject } from '../types/subject';
+import { DATA_ROOT_URL } from '../utils/constants';
 
 const useStyles = makeStyles({
   root: {
@@ -51,21 +52,24 @@ const SubjectAllQuestions = (): JSX.Element => {
   const [subject, setSubject] = useState<Subject | null>(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await customFetch(`${subjectId}.json`, validateSubject);
+  const fetchData = useCallback(async () => {
+    try {
+      const data = await customFetch(
+        `${DATA_ROOT_URL}/${subjectId}.json`,
+        validateSubject
+      );
 
-        setSubject(data);
-        setLoading(false);
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.error(error);
-      }
-    };
-
-    fetchData();
+      setSubject(data);
+      setLoading(false);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(error);
+    }
   }, [subjectId]);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
   if (loading || subject === null) {
     return (
@@ -140,7 +144,7 @@ const SubjectAllQuestions = (): JSX.Element => {
                   </React.Fragment>
                 );
               })}
-              <Comments comments={comments} />
+              <Comments comments={comments} fetchData={fetchData} />
             </List>
           </Paper>
         ))}
