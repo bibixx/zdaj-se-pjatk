@@ -1,10 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
-type Checker<T> = (element: any) => asserts element is T;
+type Checker<T> = (element: unknown) => asserts element is T;
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, func-names
-const defaultChecker: Checker<any> = function (test: any): test is unknown {
-  return true;
-};
+const defaultChecker: Checker<unknown> = (
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  test: unknown
+): asserts test is unknown => {};
 
 const customFetch = async <T = unknown>(
   url: string,
