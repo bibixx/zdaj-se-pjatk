@@ -43,14 +43,22 @@ const getCommentsAmount = (n: number) => {
 };
 
 interface CommentsProps {
+  subjectId: string;
+  questionId: number | string;
   comments: Comment[] | null;
   fetchData: () => Promise<void>;
 }
 
-const Comments: React.FC<CommentsProps> = ({ comments, fetchData }) => {
+const Comments: React.FC<CommentsProps> = ({
+  subjectId,
+  questionId,
+  comments,
+  fetchData,
+}) => {
   const [commentsVisible, setCommentsVisible] = useState(false);
   const [commentValue, setCommentValue] = useState('');
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleChange = useCallback((event: any) => {
     setCommentValue(event.target.value);
   }, []);
@@ -60,7 +68,7 @@ const Comments: React.FC<CommentsProps> = ({ comments, fetchData }) => {
       e.preventDefault();
 
       await customFetch(
-        `${API_ROOT_URL}/subjects/test/questions/1/comments`,
+        `${API_ROOT_URL}/subjects/${subjectId}/questions/${questionId}/comments`,
         () => true,
         {
           method: 'POST',
@@ -78,7 +86,7 @@ const Comments: React.FC<CommentsProps> = ({ comments, fetchData }) => {
 
       fetchData();
     },
-    [fetchData, setCommentValue, commentValue]
+    [fetchData, setCommentValue, commentValue, questionId, subjectId]
   );
 
   const data = comments !== null ? comments : [];

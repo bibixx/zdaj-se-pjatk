@@ -144,7 +144,12 @@ const SubjectAllQuestions = (): JSX.Element => {
                   </React.Fragment>
                 );
               })}
-              <Comments comments={comments} fetchData={fetchData} />
+              <Comments
+                comments={comments}
+                fetchData={fetchData}
+                subjectId={subjectId}
+                questionId={id}
+              />
             </List>
           </Paper>
         ))}
