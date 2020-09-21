@@ -7,11 +7,8 @@ import { Question } from '../types/question';
 const adapter = new FileSync<Database>('public/data/skj.json');
 const db = low(adapter);
 
-const writeQuestion = (question: Question, res: NowResponse) => {
-  db
-    .get(['data'])
-    .push(question)
-    .write();
+const writeQuestion = (question: Question, res: NowResponse): void => {
+  db.get(['data']).push(question).write();
   res.json({
     ok: true,
     id: question.id,

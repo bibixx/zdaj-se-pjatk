@@ -8,9 +8,8 @@ const questionController = (req: NowRequest, res: NowResponse): void => {
     return;
   }
   const isString = (s: unknown): s is string => typeof s === 'string';
-  const isAnswerValid = (a: Answer) => a.answer === undefined
-  || a.correct === undefined
-  || !isString(a.answer);
+  const isAnswerValid = (a: Answer) =>
+    a.answer === undefined || a.correct === undefined || !isString(a.answer);
   const { question, answers } = req.body;
   if (question === undefined || !isString(question)) {
     res.json({ ok: false, error: 'Question is not a string' });

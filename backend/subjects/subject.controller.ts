@@ -4,7 +4,7 @@ import { NowRequest, NowResponse } from '@vercel/node';
 import { Index } from '../types/index';
 import addNewSubject from './subject.service';
 
-const subjectController = (req: NowRequest, res: NowResponse) => {
+const subjectController = (req: NowRequest, res: NowResponse): void => {
   if (req.body === undefined) {
     res.json({ ok: false, error: 'No request body' });
     return;

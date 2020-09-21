@@ -1,5 +1,5 @@
 export interface Comment {
-  author: string,
-  comment: string,
-  date: string,
+  author: string;
+  comment: string;
+  date: string;
 }
