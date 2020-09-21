@@ -5,11 +5,18 @@ import { Answer } from '../types/answer';
 import { Comment } from '../types/comment';
 import writeQuestion from './question.model';
 
-const addNewQuestion = (res: NowResponse, question: string, answers: Answer[]) => {
+const addNewQuestion = (
+  res: NowResponse,
+  question: string,
+  answers: Answer[]
+): void => {
   const id = uuidv4();
   const comments: Comment[] = [];
   const newQuestion: Question = {
-    question, id, comments, answers,
+    question,
+    id,
+    comments,
+    answers,
   };
   writeQuestion(newQuestion, res);
 };

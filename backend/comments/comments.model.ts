@@ -7,11 +7,12 @@ import { Comment } from '../types/comment';
 const adapter = new FileSync<Database>('public/data/skj.json');
 const db = low(adapter);
 
-const writeComment = (comment: Comment, questionIndex: number, res: NowResponse) => {
-  db
-    .get(['data', questionIndex, 'comments'])
-    .push(comment)
-    .write();
+const writeComment = (
+  comment: Comment,
+  questionIndex: number,
+  res: NowResponse
+): void => {
+  db.get(['data', questionIndex, 'comments']).push(comment).write();
   res.json({
     ok: true,
   });

@@ -7,8 +7,17 @@ import writeComment from './comments.model';
 
 const adapter = new FileSync<Database>('public/data/skj.json');
 const db = low(adapter);
-const addNewComment = (res: NowResponse, author: string, comment: string, id: number) => {
-  const newComment: Comment = { author, comment, date: new Date(Date.now()).toString() };
+const addNewComment = (
+  res: NowResponse,
+  author: string,
+  comment: string,
+  id: number
+): void => {
+  const newComment: Comment = {
+    author,
+    comment,
+    date: new Date(Date.now()).toString(),
+  };
   const questionIndex = db
     .get('data')
     .findIndex((question) => question.id === id)
