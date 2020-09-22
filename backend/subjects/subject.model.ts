@@ -1,15 +1,13 @@
 import { promises as fs } from 'fs';
 import low from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
-import { NowResponse } from '@vercel/node';
 import { Database } from '../types/database';
 import { Subject } from '../types/subject';
 import { Index } from '../types/index';
 import { Record } from '../types/record';
 
-const writeSubject = async (
+export const writeSubject = async (
   newSubject: Subject,
-  res: NowResponse,
   id: string
 ): Promise<void> => {
   const dbName = `public/data/${id}.json`;
@@ -25,10 +23,17 @@ const writeSubject = async (
   const record: Record = { title: newSubject.title, id: newSubject.id };
   const adapter2 = new FileSync<Index>('public/data/index.json');
   const db2 = low(adapter2);
-  db2.get(['pages']).push(record).write();
-  res.json({
-    ok: true,
-    id: newSubject.id,
-  });
+  await db2.get(['pages']).push(record).write();
 };
-export default writeSubject;
+export const checkIfSubjectExists = async (
+  id: string,
+  title: string
+): Promise<boolean> => {
+  const adapter = new FileSync<Index>('public/data/index.json');
+  const db = low(adapter);
+  const subjectIndex = db
+    .get('pages')
+    .findIndex((s) => s.id === id || s.title === title)
+    .value();
+  return subjectIndex !== -1;
+};
