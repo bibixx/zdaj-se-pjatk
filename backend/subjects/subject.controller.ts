@@ -3,8 +3,12 @@ import FileSync from 'lowdb/adapters/FileSync';
 import { NowRequest, NowResponse } from '@vercel/node';
 import { Index } from '../types/index';
 import addNewSubject from './subject.service';
+import respond from '../util/respond';
 
-const subjectController = (req: NowRequest, res: NowResponse): void => {
+const subjectController = async (
+  req: NowRequest,
+  res: NowResponse
+): Promise<void> => {
   if (req.body === undefined) {
     res.json({ ok: false, error: 'No request body' });
     return;
@@ -19,18 +23,11 @@ const subjectController = (req: NowRequest, res: NowResponse): void => {
     res.json({ ok: false, error: 'Id is not a string' });
     return;
   }
-  const adapter = new FileSync<Index>('public/data/index.json');
-  const db = low(adapter);
-  const subjectIndex = db
-    .get('pages')
-    .findIndex((s) => s.id === id || s.title === title)
-    .value();
-  if (subjectIndex !== -1) {
-    res.json({
-      ok: false,
-      error: 'Such subject already exists',
-    });
+  try {
+    await addNewSubject(title, id);
+    respond(res, { id }, 200);
+  } catch (error) {
+    respond(res, { message: error.message }, 400);
   }
-  addNewSubject(res, title, id);
 };
 export default subjectController;
