@@ -1,7 +1,4 @@
-import low from 'lowdb';
-import FileSync from 'lowdb/adapters/FileSync';
 import { NowRequest, NowResponse } from '@vercel/node';
-import { Index } from '../types/index';
 import addNewSubject from './subject.service';
 import respond from '../util/respond';
 
