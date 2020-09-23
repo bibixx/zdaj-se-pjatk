@@ -5,6 +5,7 @@ import { Subject } from '../types/subject';
 import { Index } from '../types/index';
 import getDb from '../util/getDb';
 import { Record } from '../types/record';
+import { Database } from '../types/database';
 
 export const writeToIndex = async (record: Record): Promise<void> => {
   const db = getDb('index');
@@ -16,14 +17,14 @@ export const writeSubject = async (
   id: string
 ): Promise<void> => {
   const dbName = `public/data/${id}.json`;
-  await fs.writeFile(
-    dbName,
-    `{
-  "title": "${newSubject.title}",
-  "id": "${newSubject.id}",
-  "data": []
-}`
-  );
+  await fs.writeFile(dbName, '');
+  const db = getDb(id);
+  const database: Database = {
+    title: newSubject.title,
+    id: newSubject.id,
+    data: [],
+  };
+  await db.defaults(database).write();
   const record: Record = { title: newSubject.title, id: newSubject.id };
   await writeToIndex(record);
 };
