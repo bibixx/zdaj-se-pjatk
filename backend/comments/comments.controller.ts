@@ -1,34 +1,47 @@
 import { NowRequest, NowResponse } from '@vercel/node';
+import respond from '../util/respond';
 import addNewComment from './comments.service';
 
-const commentController = (req: NowRequest, res: NowResponse): void => {
+const commentController = async (
+  req: NowRequest,
+  res: NowResponse
+): Promise<void> => {
   if (req.body === undefined) {
-    res.json({ ok: false, error: 'No request body' });
+    respond(res, { error: 'No request body' }, 400);
     return;
   }
   const isString = (s: unknown): s is string => typeof s === 'string';
   const { contents, author } = req.body;
   if (contents === undefined || !isString(contents)) {
-    res.json({ ok: false, error: 'Content is not a string' });
+    respond(res, { error: 'Content is not a string' }, 400);
     return;
   }
   if (author === undefined || !isString(author)) {
-    res.json({ ok: false, error: 'Author is not a string' });
+    respond(res, { error: 'Author is not a string' }, 400);
     return;
   }
-  if (req.query?.questionid === undefined) {
-    res.json({ ok: false, error: 'Id is not provided' });
+  const questionId = req.query?.questionid;
+  if (questionId === undefined) {
+    respond(res, { error: 'Id is not provided' }, 400);
     return;
   }
-  if (Array.isArray(req.query.questionid)) {
-    res.json({ ok: false, error: 'Id is not a single value' });
+  if (Array.isArray(questionId)) {
+    respond(res, { error: 'Id is not a single value' }, 400);
     return;
   }
-  const id = Number.parseInt(req.query.questionid, 10);
-  if (Number.isNaN(id)) {
-    res.json({ ok: false, error: 'Id is NaN' });
+  const subject = req.query?.subjectid;
+  if (subject === undefined) {
+    respond(res, { error: 'Subject id is not provided' }, 400);
     return;
   }
-  addNewComment(res, author, contents, id);
+  if (Array.isArray(subject)) {
+    respond(res, { error: 'Subject id is not a single value' }, 400);
+    return;
+  }
+  try {
+    await addNewComment(subject, author, contents, questionId);
+  } catch (error) {
+    respond(res, { error: error.message }, 400);
+  }
 };
 export default commentController;

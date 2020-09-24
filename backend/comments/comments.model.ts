@@ -1,20 +1,29 @@
-import low from 'lowdb';
-import FileSync from 'lowdb/adapters/FileSync';
 import { NowResponse } from '@vercel/node';
-import { Database } from '../types/database';
 import { Comment } from '../types/comment';
+import getDb from '../util/getDb';
 
-const adapter = new FileSync<Database>('public/data/skj.json');
-const db = low(adapter);
-
-const writeComment = (
+export const writeComment = async (
   comment: Comment,
-  questionIndex: number,
-  res: NowResponse
-): void => {
-  db.get(['data', questionIndex, 'comments']).push(comment).write();
-  res.json({
-    ok: true,
-  });
+  subjectId: string,
+  questionId: number | string
+): Promise<void> => {
+  const dbName = subjectId;
+  const db = getDb(dbName);
+  const questionIndex = await db
+    .get('data')
+    .findIndex((q) => q.id === questionId)
+    .value();
+  await db.get(['data', questionIndex, 'comments']).push(comment).write();
 };
-export default writeComment;
+export const questionExists = async (
+  subjectId: string,
+  questionId: number | string
+): Promise<boolean> => {
+  const dbName = subjectId;
+  const db = getDb(dbName);
+  const questionIndex = await db
+    .get('data')
+    .findIndex((q) => q.id === questionId)
+    .value();
+  return questionIndex !== -1;
+};
