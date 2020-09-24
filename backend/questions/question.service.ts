@@ -5,6 +5,7 @@ import { Comment } from '../types/comment';
 import writeQuestion from './question.model';
 
 const addNewQuestion = async (
+  subject: string,
   question: string,
   answers: Answer[]
 ): Promise<string> => {
@@ -16,7 +17,7 @@ const addNewQuestion = async (
     comments,
     answers,
   };
-  await writeQuestion(newQuestion);
+  await writeQuestion(subject, newQuestion);
   return id;
 };
 export default addNewQuestion;
