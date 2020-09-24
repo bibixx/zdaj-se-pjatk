@@ -1,5 +1,6 @@
 import { NowRequest, NowResponse } from '@vercel/node';
 import commentController from '../../../../../../backend/comments/comments.controller';
+import respond from '../../../../../../backend/util/respond';
 
 export default (req: NowRequest, res: NowResponse): void => {
   if (req.method === 'POST') {
@@ -7,5 +8,5 @@ export default (req: NowRequest, res: NowResponse): void => {
     return;
   }
 
-  res.status(404).json({ ok: false });
+  respond(res, {}, 404);
 };
