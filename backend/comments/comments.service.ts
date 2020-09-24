@@ -1,34 +1,21 @@
-import low from 'lowdb';
-import FileSync from 'lowdb/adapters/FileSync';
-import { NowResponse } from '@vercel/node';
-import { Database } from '../types/database';
 import { Comment } from '../types/comment';
-import writeComment from './comments.model';
+import { questionExists, writeComment } from './comments.model';
 
-const adapter = new FileSync<Database>('public/data/skj.json');
-const db = low(adapter);
-const addNewComment = (
-  res: NowResponse,
+const addNewComment = async (
+  subjectId: string,
   author: string,
   comment: string,
-  id: number
-): void => {
+  questionId: number | string
+): Promise<void> => {
   const newComment: Comment = {
     author,
     comment,
     date: new Date(Date.now()).toString(),
   };
-  const questionIndex = db
-    .get('data')
-    .findIndex((question) => question.id === id)
-    .value();
-  if (questionIndex === -1) {
-    res.json({
-      ok: false,
-      error: 'No such question in this subject',
-    });
+  if (await questionExists(subjectId, questionId)) {
+    await writeComment(newComment, subjectId, questionId);
     return;
   }
-  writeComment(newComment, questionIndex, res);
+  throw new Error('This question does not exist');
 };
 export default addNewComment;
