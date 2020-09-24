@@ -40,6 +40,7 @@ const commentController = async (
   }
   try {
     await addNewComment(subject, author, contents, questionId);
+    respond(res, {}, 200);
   } catch (error) {
     respond(res, { error: error.message }, 400);
   }

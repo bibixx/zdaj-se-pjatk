@@ -8,18 +8,20 @@ export const writeComment = async (
 ): Promise<void> => {
   const dbName = subjectId;
   const db = getDb(dbName);
+  if (db.get(['data', questionIndex, 'comments']).value() === null) {
+    db.get(['data', questionIndex]).set('comments', []).write();
+  }
   await db.get(['data', questionIndex, 'comments']).push(comment).write();
 };
 export const checkIfQuestionExists = async (
   subjectId: string,
-  questionId: number | string
+  questionId: string
 ): Promise<number> => {
   const dbName = subjectId;
   const db = getDb(dbName);
-  const questionIndex = await db
+  const questionIndex = db
     .get('data')
-    .findIndex((q) => q.id.toString() === questionId.toString())
+    .findIndex((q) => q.id.toString() === questionId)
     .value();
-  console.log(questionIndex);
   return questionIndex;
 };
