@@ -1,4 +1,5 @@
 import { NowRequest, NowResponse } from '@vercel/node';
+import isString from '../util/isString';
 import respond from '../util/respond';
 import addNewComment from './comments.service';
 
@@ -10,7 +11,6 @@ const commentController = async (
     respond(res, { error: 'No request body' }, 400);
     return;
   }
-  const isString = (s: unknown): s is string => typeof s === 'string';
   const { contents, author } = req.body;
   if (contents === undefined || !isString(contents)) {
     respond(res, { error: 'Content is not a string' }, 400);

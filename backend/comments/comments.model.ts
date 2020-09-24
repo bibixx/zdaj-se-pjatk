@@ -1,29 +1,25 @@
-import { NowResponse } from '@vercel/node';
 import { Comment } from '../types/comment';
 import getDb from '../util/getDb';
 
 export const writeComment = async (
   comment: Comment,
   subjectId: string,
-  questionId: number | string
+  questionIndex: number
 ): Promise<void> => {
   const dbName = subjectId;
   const db = getDb(dbName);
-  const questionIndex = await db
-    .get('data')
-    .findIndex((q) => q.id === questionId)
-    .value();
   await db.get(['data', questionIndex, 'comments']).push(comment).write();
 };
-export const questionExists = async (
+export const checkIfQuestionExists = async (
   subjectId: string,
   questionId: number | string
-): Promise<boolean> => {
+): Promise<number> => {
   const dbName = subjectId;
   const db = getDb(dbName);
   const questionIndex = await db
     .get('data')
-    .findIndex((q) => q.id === questionId)
+    .findIndex((q) => q.id.toString() === questionId.toString())
     .value();
-  return questionIndex !== -1;
+  console.log(questionIndex);
+  return questionIndex;
 };
