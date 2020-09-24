@@ -1,12 +1,12 @@
-import low from 'lowdb';
-import FileSync from 'lowdb/adapters/FileSync';
-import { Database } from '../types/database';
 import { Question } from '../types/question';
+import getDb from '../util/getDb';
 
-const adapter = new FileSync<Database>('public/data/skj.json');
-const db = low(adapter);
-
-const writeQuestion = async (question: Question): Promise<void> => {
+const writeQuestion = async (
+  subject: string,
+  question: Question
+): Promise<void> => {
+  const dbName = subject;
+  const db = getDb(dbName);
   await db.get(['data']).push(question).write();
 };
 export default writeQuestion;
