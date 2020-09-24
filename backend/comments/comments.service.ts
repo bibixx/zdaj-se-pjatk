@@ -5,7 +5,7 @@ const addNewComment = async (
   subjectId: string,
   author: string,
   comment: string,
-  questionId: number | string
+  questionId: string
 ): Promise<void> => {
   const newComment: Comment = {
     author,
