@@ -1,10 +1,14 @@
 import { NowRequest, NowResponse } from '@vercel/node';
 import { Answer } from '../types/answer';
 import addNewQuestion from './question.service';
+import respond from '../util/respond';
 
-const questionController = (req: NowRequest, res: NowResponse): void => {
+const questionController = async (
+  req: NowRequest,
+  res: NowResponse
+): Promise<void> => {
   if (req.body === undefined) {
-    res.json({ ok: false, error: 'No request body' });
+    respond(res, { error: 'No request body' }, 400);
     return;
   }
   const isString = (s: unknown): s is string => typeof s === 'string';
@@ -12,16 +16,17 @@ const questionController = (req: NowRequest, res: NowResponse): void => {
     a.answer === undefined || a.correct === undefined || !isString(a.answer);
   const { question, answers } = req.body;
   if (question === undefined || !isString(question)) {
-    res.json({ ok: false, error: 'Question is not a string' });
+    respond(res, { error: 'Question is not a string' }, 400);
     return;
   }
   if (answers === undefined || !Array.isArray(answers)) {
-    res.json({ ok: false, error: 'Answers is not an array' });
+    respond(res, { error: 'Answers is not an array' }, 400);
     return;
   }
   if (answers.some((a) => isAnswerValid(a))) {
-    res.json({ ok: false, error: 'Some of the answers are not valid' });
+    respond(res, { error: 'Some of the answers are not valid' }, 400);
   }
-  addNewQuestion(res, question, answers);
+  const id = await addNewQuestion(question, answers);
+  respond(res, { id }, 200);
 };
 export default questionController;
