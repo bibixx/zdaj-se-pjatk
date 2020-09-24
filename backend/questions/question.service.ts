@@ -1,15 +1,13 @@
-import { NowResponse } from '@vercel/node';
 import { v4 as uuidv4 } from 'uuid';
 import { Question } from '../types/question';
 import { Answer } from '../types/answer';
 import { Comment } from '../types/comment';
 import writeQuestion from './question.model';
 
-const addNewQuestion = (
-  res: NowResponse,
+const addNewQuestion = async (
   question: string,
   answers: Answer[]
-): void => {
+): Promise<string> => {
   const id = uuidv4();
   const comments: Comment[] = [];
   const newQuestion: Question = {
@@ -18,6 +16,7 @@ const addNewQuestion = (
     comments,
     answers,
   };
-  writeQuestion(newQuestion, res);
+  await writeQuestion(newQuestion);
+  return id;
 };
 export default addNewQuestion;
