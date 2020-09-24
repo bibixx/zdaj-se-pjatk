@@ -7,17 +7,17 @@ const subjectController = async (
   res: NowResponse
 ): Promise<void> => {
   if (req.body === undefined) {
-    res.json({ ok: false, error: 'No request body' });
+    respond(res, { error: 'No request body' }, 400);
     return;
   }
   const isString = (s: unknown): s is string => typeof s === 'string';
   const { title, id } = req.body;
   if (title === undefined || !isString(title)) {
-    res.json({ ok: false, error: 'Title is not a string' });
+    respond(res, { error: 'Title is not a string' }, 400);
     return;
   }
   if (id === undefined || !isString(id)) {
-    res.json({ ok: false, error: 'Id is not a string' });
+    respond(res, { error: 'Id is not a string' }, 400);
     return;
   }
   try {
