@@ -1,4 +1,4 @@
-import { Question } from './question';
+import { Question } from '../../shared/types/question';
 
 export interface Database {
   title: string;

@@ -1,4 +1,4 @@
-import { Comment } from '../types/comment';
+import { Comment } from '../../shared/types/comment';
 import { checkIfQuestionExists, writeComment } from './comments.model';
 
 const addNewComment = async (

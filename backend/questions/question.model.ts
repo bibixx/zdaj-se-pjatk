@@ -1,4 +1,4 @@
-import { Question } from '../types/question';
+import { Question } from '../../shared/types/question';
 import getDb from '../util/getDb';
 
 const writeQuestion = async (

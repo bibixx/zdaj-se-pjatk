@@ -22,6 +22,7 @@
   "include": [
     "src",
     "api",
-    "backend"
+    "backend", 
+    "shared",
   ]
 }
