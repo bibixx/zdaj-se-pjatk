@@ -1,5 +1,5 @@
 import { NowRequest, NowResponse } from '@vercel/node';
-import { Answer } from '../types/answer';
+import { Answer } from '../../shared/types/answer';
 import addNewQuestion from './question.service';
 import respond from '../util/respond';
 
