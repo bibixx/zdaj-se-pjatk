@@ -1,6 +1,6 @@
-import { NowRequest } from '@vercel/node';
 import { JsonDecoder } from 'ts.data.json';
 import { CommentReqDTO } from '../../shared/types/comment.requestDTO';
+import { CommentQueryParams } from '../../shared/types/comment.queryParams';
 
 const bodyDecoder = JsonDecoder.object<CommentReqDTO>(
   {
@@ -9,10 +9,10 @@ const bodyDecoder = JsonDecoder.object<CommentReqDTO>(
   },
   'CommentReqDTO'
 );
-const queryDecoder = JsonDecoder.object(
+const queryDecoder = JsonDecoder.object<CommentQueryParams>(
   {
-    subjectid: JsonDecoder.string,
-    questionid: JsonDecoder.string,
+    subjectId: JsonDecoder.string,
+    questionId: JsonDecoder.string,
   },
   'Query'
 );
@@ -21,12 +21,10 @@ export const isCommentReqDTO = (body: unknown): body is CommentReqDTO => {
   const res = bodyDecoder.decode(body);
   return res.isOk();
 };
-export const isQueryOk = (req: NowRequest): boolean => {
-  const subjectId = req.query?.subjectid;
-  const questionId = req.query?.questionid;
-  const res = queryDecoder.decode({
-    subjectId,
-    questionId,
-  });
+
+export const isCommentQueryOk = (
+  query: unknown
+): query is CommentQueryParams => {
+  const res = queryDecoder.decode(query);
   return res.isOk();
 };
