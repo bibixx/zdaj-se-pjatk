@@ -7,12 +7,11 @@ const subjectController = async (
   req: NowRequest,
   res: NowResponse
 ): Promise<void> => {
-  const { body } = req.body;
-  const { id } = body;
+  const { body } = req?.body;
   try {
     isSubjectReqDTO(body);
     await addNewSubject(body.title, body.id);
-    respond(res, { id }, 200);
+    respond(res, body.id, 200);
   } catch (error) {
     respond(res, { message: error.message }, 400);
   }
