@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import low from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
+import path from 'path';
 import { Subject } from '../../shared/types/subject';
 import { Index } from '../types/index';
 import getDb from '../util/getDb';
@@ -16,7 +17,9 @@ export const writeSubject = async (
   newSubject: Subject,
   id: string
 ): Promise<void> => {
-  const dbName = `public/data/${id}.json`;
+  const rootDirectory = 'public/data/';
+  const fileName = `${id}.json`;
+  const dbName = path.join(rootDirectory, fileName);
   await fs.writeFile(dbName, '');
   const db = getDb(id);
   const database: Database = {

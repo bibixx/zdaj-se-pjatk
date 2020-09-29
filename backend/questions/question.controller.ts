@@ -9,15 +9,14 @@ const questionController = async (
 ): Promise<void> => {
   const { body } = req;
   const subjectId = req.query?.subjectid;
-  if (!isQuestionReqDTO(body)) {
-    respond(res, { error: 'Incorrect body' }, 400);
-    return;
+
+  try {
+    isQuestionReqDTO(body);
+    isQuestionQueryOk(subjectId);
+    const id = await addNewQuestion(subjectId, body.question, body.answers);
+    respond(res, { id }, 200);
+  } catch (error) {
+    respond(res, { error: error.message }, 400);
   }
-  if (!isQuestionQueryOk(subjectId)) {
-    respond(res, { error: 'No such question' }, 400);
-    return;
-  }
-  const id = await addNewQuestion(subjectId, body.question, body.answers);
-  respond(res, { id }, 200);
 };
 export default questionController;

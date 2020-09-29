@@ -17,14 +17,18 @@ const queryDecoder = JsonDecoder.object<CommentQueryParams>(
   'Query'
 );
 
-export const isCommentReqDTO = (body: unknown): body is CommentReqDTO => {
+export function isCommentReqDTO(body: unknown): asserts body is CommentReqDTO {
   const res = bodyDecoder.decode(body);
-  return res.isOk();
-};
+  if (!res.isOk()) {
+    throw new Error(res.error);
+  }
+}
 
-export const isCommentQueryOk = (
+export function isCommentQueryOk(
   query: unknown
-): query is CommentQueryParams => {
+): asserts query is CommentQueryParams {
   const res = queryDecoder.decode(query);
-  return res.isOk();
-};
+  if (!res.isOk()) {
+    throw new Error(res.error);
+  }
+}

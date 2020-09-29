@@ -12,16 +12,10 @@ const commentController = async (
     subjectId: req.query?.subjectid,
     questionId: req.query?.questionid,
   };
-  if (!isCommentReqDTO(body)) {
-    respond(res, 'Incorrect body', 400);
-    return;
-  }
-  if (!isCommentQueryOk(queryParams)) {
-    respond(res, 'Incorrect questionId or subjectId');
-    return;
-  }
 
   try {
+    isCommentReqDTO(body);
+    isCommentQueryOk(queryParams);
     await addNewComment(
       queryParams.subjectId,
       body.author,

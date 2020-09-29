@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import { Question } from '../../shared/types/question';
 import { Answer } from '../../shared/types/answer';
 import { Comment } from '../../shared/types/comment';
@@ -9,15 +8,13 @@ const addNewQuestion = async (
   question: string,
   answers: Answer[]
 ): Promise<string> => {
-  const id = uuidv4();
   const comments: Comment[] = [];
-  const newQuestion: Question = {
+  const newQuestion: Omit<Question, 'id'> = {
     question,
-    id,
     comments,
     answers,
   };
-  await writeQuestion(subject, newQuestion);
+  const id = await writeQuestion(subject, newQuestion);
   return id;
 };
 export default addNewQuestion;

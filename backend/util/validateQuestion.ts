@@ -17,12 +17,20 @@ const bodyDecoder = JsonDecoder.object<QuestionReqDTO>(
   'QuestionReqDTO'
 );
 
-export const isQuestionReqDTO = (body: unknown): body is QuestionReqDTO => {
+export function isQuestionReqDTO(
+  body: unknown
+): asserts body is QuestionReqDTO {
   const res = bodyDecoder.decode(body);
-  return res.isOk();
-};
+  if (!res.isOk()) {
+    throw new Error(res.error);
+  }
+}
 
-export const isQuestionQueryOk = (subjectId: unknown): subjectId is string => {
+export function isQuestionQueryOk(
+  subjectId: unknown
+): asserts subjectId is string {
   const res = JsonDecoder.string.decode(subjectId);
-  return res.isOk();
-};
+  if (!res.isOk()) {
+    throw new Error(res.error);
+  }
+}
