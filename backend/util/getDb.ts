@@ -8,13 +8,13 @@ import { Database } from '../types/database';
 const getDb = <T extends string, U = T extends 'index' ? Index : Database>(
   id: T
 ): low.LowdbSync<U> => {
-  const rootDirectory = 'public/data/';
+  const rootDirectory = path.resolve('public/data/');
   const fileName = `${id}.json`;
   const dbName = path.join(rootDirectory, fileName);
   if (!fs.existsSync(dbName)) {
     throw new Error('Subject does not exist');
   }
-  if (fileName.indexOf(rootDirectory) !== 0) {
+  if (!dbName.startsWith(rootDirectory)) {
     throw new Error('Not valid directory');
   }
   const adapter = new FileSync<U>(dbName);

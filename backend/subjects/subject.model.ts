@@ -17,10 +17,10 @@ export const writeSubject = async (
   newSubject: Subject,
   id: string
 ): Promise<void> => {
-  const rootDirectory = 'public/data/';
+  const rootDirectory = path.resolve('public/data/');
   const fileName = `${id}.json`;
   const dbName = path.join(rootDirectory, fileName);
-  if (fileName.indexOf(rootDirectory) !== 0) {
+  if (!dbName.startsWith(rootDirectory)) {
     throw new Error('Not valid directory');
   }
   await fs.writeFile(dbName, '');

@@ -7,7 +7,7 @@ const commentController = async (
   req: NowRequest,
   res: NowResponse
 ): Promise<void> => {
-  const { body } = req.body;
+  const { body } = req;
   const queryParams = {
     subjectId: req.query?.subjectid,
     questionId: req.query?.questionid,
