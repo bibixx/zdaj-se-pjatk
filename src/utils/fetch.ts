@@ -1,10 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
-type Checker<T> = (element: any) => element is T;
+type Checker<T> = (element: unknown) => asserts element is T;
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, func-names
-const defaultChecker: Checker<any> = function (test: any): test is unknown {
-  return true;
-};
+const defaultChecker: Checker<unknown> = (
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  test: unknown
+): asserts test is unknown => {};
 
 const customFetch = async <T = unknown>(
   url: string,
@@ -21,11 +20,9 @@ const customFetch = async <T = unknown>(
   if (response.ok) {
     const data = await response.json();
 
-    if (checkData(data)) {
-      return data;
-    }
+    checkData(data);
 
-    throw new Error("Data doesn't match the type");
+    return data;
   }
 
   throw new Error(response.statusText);

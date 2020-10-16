@@ -11,7 +11,7 @@ export interface Comment {
 
 export interface Question {
   question: string;
-  id: number;
+  id: number | string;
   comments: Comment[] | null;
   answers: Answer[];
 }
