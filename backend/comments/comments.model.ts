@@ -9,11 +9,11 @@ export const writeComment = async (
   const dbName = subjectId;
   const db = getDb(dbName);
   if (db.get(['data', questionIndex, 'comments']).value() === null) {
-    db.get(['data', questionIndex]).set('comments', []).write();
+    await db.get(['data', questionIndex]).set('comments', []).write();
   }
   await db.get(['data', questionIndex, 'comments']).push(comment).write();
 };
-export const checkIfQuestionExists = async (
+export const getQuestionIndex = async (
   subjectId: string,
   questionId: string
 ): Promise<number> => {
@@ -21,7 +21,7 @@ export const checkIfQuestionExists = async (
   const db = getDb(dbName);
   const questionIndex = db
     .get('data')
-    .findIndex((q) => q.id.toString() === questionId)
+    .findIndex(({ id }) => id === questionId)
     .value();
   return questionIndex;
 };

@@ -1,5 +1,6 @@
+import { format } from 'date-fns';
 import { Comment } from '../../shared/types/comment';
-import { checkIfQuestionExists, writeComment } from './comments.model';
+import { getQuestionIndex, writeComment } from './comments.model';
 
 const addNewComment = async (
   subjectId: string,
@@ -10,13 +11,12 @@ const addNewComment = async (
   const newComment: Comment = {
     author,
     comment,
-    date: new Date(Date.now()).toString(),
+    date: format(new Date(Date.now()), 'DD-MM-YYYY HH:MM:SS'),
   };
-  const questionIndex = await checkIfQuestionExists(subjectId, questionId);
-  if (questionIndex !== -1) {
-    await writeComment(newComment, subjectId, questionIndex);
-    return;
+  const questionIndex = await getQuestionIndex(subjectId, questionId);
+  if (questionIndex === -1) {
+    throw new Error('This question does not exist');
   }
-  throw new Error('This question does not exist');
+  await writeComment(newComment, subjectId, questionIndex);
 };
 export default addNewComment;

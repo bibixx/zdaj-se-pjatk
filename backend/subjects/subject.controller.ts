@@ -1,28 +1,18 @@
 import { NowRequest, NowResponse } from '@vercel/node';
 import addNewSubject from './subject.service';
 import respond from '../util/respond';
+import isSubjectReqDTO from '../util/validateSubject';
+import type { SubjectResDTO } from '../../shared/types/subject.responseDTO';
 
 const subjectController = async (
   req: NowRequest,
   res: NowResponse
 ): Promise<void> => {
-  if (req.body === undefined) {
-    respond(res, { error: 'No request body' }, 400);
-    return;
-  }
-  const isString = (s: unknown): s is string => typeof s === 'string';
-  const { title, id } = req.body;
-  if (title === undefined || !isString(title)) {
-    respond(res, { error: 'Title is not a string' }, 400);
-    return;
-  }
-  if (id === undefined || !isString(id)) {
-    respond(res, { error: 'Id is not a string' }, 400);
-    return;
-  }
+  const { body } = req;
   try {
-    await addNewSubject(title, id);
-    respond(res, { id }, 200);
+    isSubjectReqDTO(body);
+    await addNewSubject(body.title, body.id);
+    respond<Omit<SubjectResDTO, 'ok'>>(res, { id: body.id }, 200);
   } catch (error) {
     respond(res, { message: error.message }, 400);
   }

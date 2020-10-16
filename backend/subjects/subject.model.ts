@@ -1,9 +1,10 @@
-import { promises as fs } from 'fs';
 import low from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
+import path from 'path';
+import { promises as fs } from 'fs';
+import getDb from '../util/getDb';
 import { Subject } from '../../shared/types/subject';
 import { Index } from '../types/index';
-import getDb from '../util/getDb';
 import { Record } from '../types/record';
 import { Database } from '../types/database';
 
@@ -16,7 +17,12 @@ export const writeSubject = async (
   newSubject: Subject,
   id: string
 ): Promise<void> => {
-  const dbName = `public/data/${id}.json`;
+  const rootDirectory = path.resolve('public/data/');
+  const fileName = `${id}.json`;
+  const dbName = path.join(rootDirectory, fileName);
+  if (!dbName.startsWith(rootDirectory)) {
+    throw new Error('Not valid directory');
+  }
   await fs.writeFile(dbName, '');
   const db = getDb(id);
   const database: Database = {
