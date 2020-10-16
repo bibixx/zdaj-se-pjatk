@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import low from 'lowdb';
 import FileSync from 'lowdb/adapters/FileSync';
-import { Subject } from '../types/subject';
+import { Subject } from '../../shared/types/subject';
 import { Index } from '../types/index';
 import getDb from '../util/getDb';
 import { Record } from '../types/record';

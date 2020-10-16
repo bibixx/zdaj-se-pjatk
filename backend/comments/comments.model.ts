@@ -1,4 +1,4 @@
-import { Comment } from '../types/comment';
+import { Comment } from '../../shared/types/comment';
 import getDb from '../util/getDb';
 
 export const writeComment = async (
