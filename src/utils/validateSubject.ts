@@ -1,7 +1,6 @@
-import {
-  Subject, Answer, Comment, Question,
-} from '../types/subject';
+import { Subject, Answer, Comment, Question } from '../types/subject';
 
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/explicit-module-boundary-types */
 function validateAnswer(element: any): element is Answer {
   if (!element) {
     return false;
@@ -60,8 +59,8 @@ function validateQuestion(element: any): element is Question {
   }
 
   if (
-    element.comments !== null
-      && !(element.comments as Array<any>).every(validateComment)
+    element.comments !== null &&
+    !(element.comments as Array<any>).every(validateComment)
   ) {
     return false;
   }

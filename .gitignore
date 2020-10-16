@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+package-lock.json
 
 # testing
 /coverage
@@ -25,3 +26,5 @@ public/data
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.vercel

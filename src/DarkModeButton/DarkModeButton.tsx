@@ -9,13 +9,12 @@ interface DarkModeButtonProps {
   onClick: () => void;
 }
 
-const DarkModeButton: React.FC<DarkModeButtonProps> = ({ darkModeEnabled, onClick }) => (
+const DarkModeButton: React.FC<DarkModeButtonProps> = ({
+  darkModeEnabled,
+  onClick,
+}) => (
   <IconButton onClick={onClick}>
-    {
-      darkModeEnabled
-        ? <Brightness7Icon />
-        : <Brightness4Icon />
-    }
+    {darkModeEnabled ? <Brightness7Icon /> : <Brightness4Icon />}
   </IconButton>
 );
 
