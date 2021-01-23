@@ -13,8 +13,12 @@ import customFetch from '../utils/fetch';
 import { Pages } from '../types/pages';
 import validatePages from '../utils/validatePages';
 
-const IndexPage = () => {
-  const [pages, setPages] = useState<Pages>({ pages: [] });
+interface IndexProps {
+  setUpdatedAt: (updatedAt: number) => void
+}
+
+const IndexPage = ({ setUpdatedAt }: IndexProps) => {
+  const [pages, setPages] = useState<Pages|null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,6 +28,7 @@ const IndexPage = () => {
 
         setPages(data);
         setLoading(false);
+        setUpdatedAt(data.updatedAt);
       } catch (error) {
         // eslint-disable-next-line no-console
         console.error(error);
@@ -31,7 +36,7 @@ const IndexPage = () => {
     };
 
     fetchData();
-  }, []);
+  }, [setUpdatedAt]);
 
   if (loading) {
     return (
@@ -49,7 +54,7 @@ const IndexPage = () => {
       <ContentWrapper>
         <Paper variant="outlined">
           <List disablePadding>
-            {pages.pages.map(({ title, id }, i) => (
+            {pages?.pages.map(({ title, id }, i) => (
               <React.Fragment key={id}>
                 {i > 0 && <Divider />}
                 <ListItem

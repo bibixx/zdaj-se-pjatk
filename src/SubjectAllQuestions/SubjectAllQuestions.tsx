@@ -47,9 +47,13 @@ const useStyles = makeStyles({
   },
 });
 
-const SubjectAllQuestions = () => {
+interface SubjectAllQuestionsProps {
+  setUpdatedAt: (updatedAt: number) => void
+}
+
+const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
   const classes = useStyles();
-  const { subjectId } = useParams();
+  const { subjectId } = useParams<{ subjectId: string }>();
   const [subject, setSubject] = useState<Subject|null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -60,6 +64,7 @@ const SubjectAllQuestions = () => {
 
         setSubject(data);
         setLoading(false);
+        setUpdatedAt(data.updatedAt);
       } catch (error) {
         // eslint-disable-next-line no-console
         console.error(error);
@@ -67,7 +72,7 @@ const SubjectAllQuestions = () => {
     };
 
     fetchData();
-  }, [subjectId]);
+  }, [setUpdatedAt, subjectId]);
 
   if (loading || subject === null) {
     return (

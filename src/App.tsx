@@ -17,6 +17,7 @@ import IndexPage from './IndexPage';
 import getTheme from './theme';
 import Footer from './Footer';
 import DarkModeButton from './DarkModeButton';
+import formatDate from './utils/formatDate';
 
 const useStyles = makeStyles({
   root: {
@@ -26,6 +27,7 @@ const useStyles = makeStyles({
 });
 
 const App = () => {
+  const [updatedAt, setUpdatedAt] = useState(0);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [darkModeEnabled, setDarkModeEnabled] = useState(prefersDarkMode);
 
@@ -47,29 +49,35 @@ const App = () => {
         <Router>
           <Switch>
             <Route path="/" exact>
-              <IndexPage />
+              <IndexPage setUpdatedAt={setUpdatedAt} />
             </Route>
             <Route path="/:subjectId">
-              <SubjectAllQuestions />
+              <SubjectAllQuestions setUpdatedAt={setUpdatedAt} />
             </Route>
           </Switch>
         </Router>
         <Footer>
-          <>
-            <div>
+          <Box
+            display="grid"
+            gridTemplateColumns="repeat(3, 1fr)"
+            alignItems="center"
+          >
+            <Link href="https://github.com/bibixx/zdaj-se-pjatk">GitHub</Link>
+            <Box textAlign="center">
+              Stan na
+              {' '}
+              {formatDate(new Date(updatedAt))}
+            </Box>
+            <Box justifySelf="flex-end">
               <DarkModeButton
                 darkModeEnabled={darkModeEnabled}
                 onClick={() => setDarkModeEnabled(!darkModeEnabled)}
               >
                 {/* eslint-disable no-irregular-whitespace */}
-                Zmień motyw
+                Zmień motyw
               </DarkModeButton>
-              <Link href="https://github.com/bibixx/zdaj-se-pjatk">
-                GitHub
-              </Link>
-            </div>
-            <Box textAlign="center">Stan na 11.07.2020</Box>
-          </>
+            </Box>
+          </Box>
         </Footer>
       </Container>
     </ThemeProvider>

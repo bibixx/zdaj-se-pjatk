@@ -98,6 +98,10 @@ function validateSubject(element: any): element is Subject {
     return false;
   }
 
+  if (typeof element.updatedAt !== 'number') {
+    return false;
+  }
+
   return true;
 }
 

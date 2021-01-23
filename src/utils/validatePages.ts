@@ -20,6 +20,10 @@ function validatePages(element: any): element is Pages {
     return false;
   }
 
+  if (typeof element.updatedAt !== 'number') {
+    return false;
+  }
+
   return true;
 }
 
