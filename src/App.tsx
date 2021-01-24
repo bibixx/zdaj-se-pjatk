@@ -71,9 +71,8 @@ const App = () => {
             <Box justifySelf="flex-end">
               <DarkModeButton
                 darkModeEnabled={darkModeEnabled}
-                onClick={() => setDarkModeEnabled(!darkModeEnabled)}
+                onClick={(isEnabled: boolean) => setDarkModeEnabled(isEnabled)}
               >
-                {/* eslint-disable no-irregular-whitespace */}
                 Zmień motyw
               </DarkModeButton>
             </Box>

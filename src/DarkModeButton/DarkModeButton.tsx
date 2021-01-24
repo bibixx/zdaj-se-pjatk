@@ -2,11 +2,11 @@ import React from 'react';
 
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
-import { Box, Switch } from '@material-ui/core';
+import { Box, IconButton, Switch } from '@material-ui/core';
 
 interface DarkModeButtonProps {
   darkModeEnabled: boolean;
-  onClick: () => void;
+  onClick: (isEnabled: boolean) => void;
 }
 
 const DarkModeButton: React.FC<DarkModeButtonProps> = ({
@@ -14,14 +14,18 @@ const DarkModeButton: React.FC<DarkModeButtonProps> = ({
   onClick,
 }) => (
   <Box display="flex" alignItems="center">
-    <Brightness7Icon />
+    <IconButton size="small" onClick={() => onClick(false)}>
+      <Brightness7Icon />
+    </IconButton>
     <Switch
       checked={darkModeEnabled}
-      onChange={onClick}
+      onChange={() => onClick(!darkModeEnabled)}
       name="checkedB"
       color="primary"
     />
-    <Brightness4Icon />
+    <IconButton size="small" onClick={() => onClick(true)}>
+      <Brightness4Icon />
+    </IconButton>
   </Box>
 );
 
