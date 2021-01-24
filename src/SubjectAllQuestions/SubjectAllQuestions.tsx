@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -79,7 +79,7 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
     },
   );
 
-  if (loading) {
+  if (loading || subject === null) {
     return (
       <ContentWrapper loading>
         <Box display="flex" justifyContent="center">
@@ -87,10 +87,6 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
         </Box>
       </ContentWrapper>
     );
-  }
-
-  if (subject === null) {
-    return <Redirect to="/" />;
   }
 
   const { data } = subject;
