@@ -13,6 +13,9 @@ const useStyles = makeStyles<Theme, RootProps>({
     gridTemplateColumns: '1fr',
     gridGap: '1.5rem',
     marginTop: loading ? '64px' : 0,
+    '& > *': {
+      minWidth: 0,
+    },
   }),
 });
 

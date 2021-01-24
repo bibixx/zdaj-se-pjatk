@@ -16,7 +16,6 @@ import ContentWrapper from '../ContentWrapper';
 import Header from '../Header';
 import Comments from '../Comments';
 
-import styles from './SubjectAllQuestions.module.scss';
 import customFetch from '../utils/fetch';
 import validateSubject from '../utils/validateSubject';
 import { Subject } from '../types/subject';
@@ -44,6 +43,20 @@ const useStyles = makeStyles({
     alignItems: 'center',
     height: '2.625rem',
     marginLeft: '0.5rem',
+  },
+  question: {
+    wordBreak: 'break-word',
+    '& p': {
+      '&:first-child': {
+        marginTop: 0,
+      },
+      '&:last-child': {
+        marginBottom: 0,
+      },
+    },
+    '& img': {
+      background: '#fff',
+    },
   },
 });
 
@@ -101,7 +114,7 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
         }) => (
           <Paper variant="outlined" key={`${id}`}>
             <header className={classes.questionHeader}>
-              <Typography variant="h5" component="h2" className={styles.question}>
+              <Typography variant="h5" component="h2" className={classes.question}>
                 {/* eslint-disable-next-line react/no-danger */}
                 <span dangerouslySetInnerHTML={{ __html: question.trim().replace(/ - \(\d+\)/, '') }} />
               </Typography>
@@ -123,7 +136,7 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
                         primary={(
                           <Box fontWeight="fontWeightBold">
                             <span
-                              className={styles.question}
+                              className={classes.question}
                               // eslint-disable-next-line react/no-danger
                               dangerouslySetInnerHTML={{ __html: answer }}
                             />
