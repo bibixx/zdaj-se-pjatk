@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { Redirect, useParams } from 'react-router-dom';
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -16,9 +16,8 @@ import ContentWrapper from '../ContentWrapper';
 import Header from '../Header';
 import Comments from '../Comments';
 
-import customFetch from '../utils/fetch';
 import validateSubject from '../utils/validateSubject';
-import { Subject } from '../types/subject';
+import useFetch from '../useFetch';
 
 const useStyles = makeStyles({
   root: {
@@ -67,27 +66,20 @@ interface SubjectAllQuestionsProps {
 const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
   const classes = useStyles();
   const { subjectId } = useParams<{ subjectId: string }>();
-  const [subject, setSubject] = useState<Subject|null>(null);
-  const [loading, setLoading] = useState(true);
+  const {
+    data: subject,
+    loading,
+  } = useFetch(
+    `${subjectId}.json`,
+    validateSubject,
+    {
+      onComplete: (data) => setUpdatedAt(data.updatedAt),
+      // eslint-disable-next-line no-console
+      onError: console.error,
+    },
+  );
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await customFetch(`${subjectId}.json`, validateSubject);
-
-        setSubject(data);
-        setLoading(false);
-        setUpdatedAt(data.updatedAt);
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, [setUpdatedAt, subjectId]);
-
-  if (loading || subject === null) {
+  if (loading) {
     return (
       <ContentWrapper loading>
         <Box display="flex" justifyContent="center">
@@ -95,6 +87,10 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
         </Box>
       </ContentWrapper>
     );
+  }
+
+  if (subject === null) {
+    return <Redirect to="/" />;
   }
 
   const { data } = subject;

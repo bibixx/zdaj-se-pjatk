@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -9,34 +9,26 @@ import { Link } from 'react-router-dom';
 
 import ContentWrapper from '../ContentWrapper';
 import Header from '../Header';
-import customFetch from '../utils/fetch';
-import { Pages } from '../types/pages';
 import validatePages from '../utils/validatePages';
+import useFetch from '../useFetch';
 
 interface IndexProps {
   setUpdatedAt: (updatedAt: number) => void
 }
 
 const IndexPage = ({ setUpdatedAt }: IndexProps) => {
-  const [pages, setPages] = useState<Pages|null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await customFetch('index.json', validatePages);
-
-        setPages(data);
-        setLoading(false);
-        setUpdatedAt(data.updatedAt);
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, [setUpdatedAt]);
+  const {
+    data: pages,
+    loading,
+  } = useFetch(
+    'index.json',
+    validatePages,
+    {
+      onComplete: (data) => setUpdatedAt(data.updatedAt),
+      // eslint-disable-next-line no-console
+      onError: console.error,
+    },
+  );
 
   if (loading) {
     return (
