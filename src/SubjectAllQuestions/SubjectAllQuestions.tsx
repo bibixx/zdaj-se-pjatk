@@ -67,6 +67,7 @@ interface SubjectAllQuestionsProps {
 const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
   const classes = useStyles();
   const { subjectId } = useParams<{ subjectId: string }>();
+
   const {
     data: subject,
     loading,
