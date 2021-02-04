@@ -1,9 +1,11 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route,
 } from 'react-router-dom';
+import PiwikReactRouter from 'piwik-react-router';
+import { createBrowserHistory } from 'history';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
@@ -27,6 +29,11 @@ const useStyles = makeStyles({
   },
 });
 
+const piwik = PiwikReactRouter({
+  url: 'analytics.legiec.info',
+  siteId: 3,
+});
+
 const App = () => {
   const [updatedAt, setUpdatedAt] = useState(0);
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -47,7 +54,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container classes={{ root: classes.root }} fixed>
-        <Router>
+        <Router history={piwik.connectToHistory(createBrowserHistory())}>
           <Switch>
             <Route path="/" exact>
               <IndexPage setUpdatedAt={setUpdatedAt} />
