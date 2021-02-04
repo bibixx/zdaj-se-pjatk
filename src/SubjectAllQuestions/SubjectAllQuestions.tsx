@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 
 import List from '@material-ui/core/List';
@@ -81,11 +82,21 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
 
   if (loading || subject === null) {
     return (
-      <ContentWrapper loading>
-        <Box display="flex" justifyContent="center">
-          <CircularProgress />
-        </Box>
-      </ContentWrapper>
+      <>
+        <Helmet>
+          <title>
+            {subjectId}
+            {' '}
+            |
+            Generatory 3.0
+          </title>
+        </Helmet>
+        <ContentWrapper loading>
+          <Box display="flex" justifyContent="center">
+            <CircularProgress />
+          </Box>
+        </ContentWrapper>
+      </>
     );
   }
 
@@ -94,6 +105,14 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          {header}
+          {' '}
+          |
+          Generatory 3.0
+        </title>
+      </Helmet>
       <Header backButton>{header}</Header>
       <ContentWrapper>
         {data.length === 0 && (

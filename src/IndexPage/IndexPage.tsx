@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -16,6 +17,14 @@ interface IndexProps {
   setUpdatedAt: (updatedAt: number) => void
 }
 
+const helmetHead = (
+  <Helmet>
+    <title>
+      Generatory 3.0
+    </title>
+  </Helmet>
+);
+
 const IndexPage = ({ setUpdatedAt }: IndexProps) => {
   const {
     data: pages,
@@ -32,16 +41,20 @@ const IndexPage = ({ setUpdatedAt }: IndexProps) => {
 
   if (loading) {
     return (
-      <ContentWrapper loading>
-        <Box display="flex" justifyContent="center">
-          <CircularProgress />
-        </Box>
-      </ContentWrapper>
+      <>
+        {helmetHead}
+        <ContentWrapper loading>
+          <Box display="flex" justifyContent="center">
+            <CircularProgress />
+          </Box>
+        </ContentWrapper>
+      </>
     );
   }
 
   return (
     <>
+      {helmetHead}
       <Header>Generatory 3.0</Header>
       <ContentWrapper>
         <Paper variant="outlined">

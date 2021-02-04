@@ -8,6 +8,7 @@ import {
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
 import { makeStyles, Box } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -62,11 +63,20 @@ const App = () => {
             gridTemplateColumns="repeat(3, 1fr)"
             alignItems="center"
           >
-            <Link href="https://github.com/bibixx/zdaj-se-pjatk">GitHub</Link>
+            <Link href="https://github.com/bibixx/zdaj-se-pjatk" target="_blank" rel="noreferrer">
+              GitHub
+            </Link>
             <Box textAlign="center">
-              Stan na
-              {' '}
-              {formatDate(new Date(updatedAt))}
+              <Typography variant="body2">
+                Mirror
+                {' '}
+                <Link href="https://pja.mykhi.org/generatory2.0" target="_blank" rel="noreferrer">
+                  pja.mykhi.org/generatory2.0
+                </Link>
+              </Typography>
+              <Typography variant="caption">
+                {`(Stan na ${formatDate(new Date(updatedAt))})`}
+              </Typography>
             </Box>
             <Box justifySelf="flex-end">
               <DarkModeButton
