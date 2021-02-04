@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import PiwikReactRouter from 'react-piwik';
+import PiwikReactRouter from 'piwik-react-router';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
@@ -29,9 +29,10 @@ const useStyles = makeStyles({
   },
 });
 
-const piwik = new PiwikReactRouter({
+const piwik = PiwikReactRouter({
   url: 'analytics.legiec.info',
   siteId: 3,
+  updateDocumentTitle: false,
 });
 
 const App = () => {
