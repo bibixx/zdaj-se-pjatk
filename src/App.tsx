@@ -4,12 +4,11 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { SnackbarProvider } from 'notistack';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles, Box } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
@@ -17,14 +16,13 @@ import SubjectAllQuestions from './SubjectAllQuestions/SubjectAllQuestions';
 import IndexPage from './IndexPage/IndexPage';
 import Footer from './Footer/Footer';
 import CookieNotice from './CookieNotice/CookieNotice';
-import DarkModeButton from './DarkModeButton/DarkModeButton';
 import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
-import formatDate from './utils/formatDate';
 import useAnalytics from './hooks/useAnalytics/useAnalytics';
 import AnalyticsContext from './AnalyticsContext/AnalyticsContext';
 
 import getTheme from './theme';
 import history from './history';
+import { DonatePage } from './DonatePage/DonatePage';
 
 const useStyles = makeStyles({
   root: {
@@ -51,59 +49,35 @@ const App = () => {
   const classes = useStyles();
 
   return (
-    <AnalyticsContext.Provider value={piwik}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Container classes={{ root: classes.root }} fixed>
-          <Router history={piwik.connectToHistory(history)}>
-            <CookieNotice
-              onBannerClose={onBannerClose}
-              shouldShowCookieBanner={shouldShowCookieBanner}
-            />
-            <Switch>
-              <Route path="/" exact>
-                <IndexPage setUpdatedAt={setUpdatedAt} />
-              </Route>
-              <Route path="/polityka-prywatnosci" exact component={PrivacyPolicy} />
-              <Route path="/:subjectId">
-                <SubjectAllQuestions setUpdatedAt={setUpdatedAt} />
-              </Route>
-            </Switch>
-          </Router>
-          <Footer>
-            <Box
-              display="grid"
-              gridTemplateColumns="repeat(3, 1fr)"
-              alignItems="center"
-            >
-              <Link href="https://github.com/bibixx/zdaj-se-pjatk" target="_blank" rel="noreferrer">
-                GitHub
-              </Link>
-              <Box textAlign="center">
-                <Typography variant="body2">
-                  Mirror
-                  {' '}
-                  <Link href="https://pja.mykhi.org/generatory2.0" target="_blank" rel="noreferrer">
-                    pja.mykhi.org/generatory2.0
-                  </Link>
-                </Typography>
-                <Typography variant="caption">
-                  {`(Stan na ${formatDate(new Date(updatedAt))})`}
-                </Typography>
-              </Box>
-              <Box justifySelf="flex-end">
-                <DarkModeButton
-                  darkModeEnabled={darkModeEnabled}
-                  onClick={(isEnabled: boolean) => setDarkModeEnabled(isEnabled)}
-                >
-                  Zmień motyw
-                </DarkModeButton>
-              </Box>
-            </Box>
-          </Footer>
-        </Container>
-      </ThemeProvider>
-    </AnalyticsContext.Provider>
+    <ThemeProvider theme={theme}>
+      <SnackbarProvider maxSnack={1}>
+        <AnalyticsContext.Provider value={piwik}>
+          <CssBaseline />
+          <Container classes={{ root: classes.root }} fixed>
+            <Router history={piwik.connectToHistory(history)}>
+              <CookieNotice
+                onBannerClose={onBannerClose}
+                shouldShowCookieBanner={shouldShowCookieBanner}
+              />
+              <Switch>
+                <Route path="/" exact>
+                  <IndexPage setUpdatedAt={setUpdatedAt} />
+                </Route>
+                <Route path="/polityka-prywatnosci" exact component={PrivacyPolicy} />
+                <Route path="/:subjectId">
+                  <SubjectAllQuestions setUpdatedAt={setUpdatedAt} />
+                </Route>
+              </Switch>
+              <Footer
+                updatedAt={updatedAt}
+                darkModeEnabled={darkModeEnabled}
+                setDarkModeEnabled={setDarkModeEnabled}
+              />
+            </Router>
+          </Container>
+        </AnalyticsContext.Provider>
+      </SnackbarProvider>
+    </ThemeProvider>
   );
 };
 

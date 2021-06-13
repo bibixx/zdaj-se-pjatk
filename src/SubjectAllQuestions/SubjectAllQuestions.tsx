@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
@@ -19,6 +20,7 @@ import Comments from '../Comments';
 
 import validateSubject from '../utils/validateSubject';
 import useFetch from '../hooks/useFetch';
+import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
 
 const useStyles = makeStyles({
   root: {
@@ -67,6 +69,7 @@ interface SubjectAllQuestionsProps {
 const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
   const classes = useStyles();
   const { subjectId } = useParams<{ subjectId: string }>();
+  const errorHandler = useErrorHandler();
 
   const {
     data: subject,
@@ -76,8 +79,7 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
     validateSubject,
     {
       onComplete: (data) => setUpdatedAt(data.updatedAt),
-      // eslint-disable-next-line no-console
-      onError: console.error,
+      onError: errorHandler,
     },
   );
 
@@ -127,7 +129,6 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
           <Paper variant="outlined" key={`${id}`}>
             <header className={classes.questionHeader}>
               <Typography variant="h5" component="h2" className={classes.question}>
-                {/* eslint-disable-next-line react/no-danger */}
                 <span dangerouslySetInnerHTML={{ __html: question.trim().replace(/ - \(\d+\)/, '') }} />
               </Typography>
             </header>
@@ -149,7 +150,6 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
                           <Box fontWeight="fontWeightBold">
                             <span
                               className={classes.question}
-                              // eslint-disable-next-line react/no-danger
                               dangerouslySetInnerHTML={{ __html: answer }}
                             />
                           </Box>

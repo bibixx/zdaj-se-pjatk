@@ -1,5 +1,4 @@
-/* eslint-disable max-len */
-/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable max-len, react/jsx-one-expression-per-line */
 import { makeStyles } from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 import Header from '../Header';

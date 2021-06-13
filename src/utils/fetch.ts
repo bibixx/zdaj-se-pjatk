@@ -1,9 +1,6 @@
 type Checker<T> = (element: any) => element is T;
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, func-names
-const defaultChecker: Checker<any> = function (test: any): test is unknown {
-  return true;
-};
+const defaultChecker: Checker<any> = (test: any): test is unknown => true;
 
 const customFetch = async <T = unknown>(
   url: string,
