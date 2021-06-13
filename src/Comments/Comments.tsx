@@ -34,7 +34,7 @@ const getCommentsAmount = (n: number) => {
 };
 
 interface CommentsProps {
-  comments: Comment[]|null;
+  comments: Comment[] | null;
 }
 
 const Comments: React.FC<CommentsProps> = ({ comments }) => {
