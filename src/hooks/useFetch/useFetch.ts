@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import customFetch from '../utils/fetch';
+import customFetch from '../../utils/fetch';
 
 interface Options<T> {
   init?: RequestInit,

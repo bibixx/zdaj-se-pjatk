@@ -11,7 +11,8 @@ import { Link } from 'react-router-dom';
 import ContentWrapper from '../ContentWrapper';
 import Header from '../Header';
 import validatePages from '../utils/validatePages';
-import useFetch from '../useFetch';
+import useFetch from '../hooks/useFetch';
+import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
 
 interface IndexProps {
   setUpdatedAt: (updatedAt: number) => void
@@ -26,6 +27,8 @@ const helmetHead = (
 );
 
 const IndexPage = ({ setUpdatedAt }: IndexProps) => {
+  const errorHandler = useErrorHandler();
+
   const {
     data: pages,
     loading,
@@ -34,8 +37,7 @@ const IndexPage = ({ setUpdatedAt }: IndexProps) => {
     validatePages,
     {
       onComplete: (data) => setUpdatedAt(data.updatedAt),
-      // eslint-disable-next-line no-console
-      onError: console.error,
+      onError: errorHandler,
     },
   );
 

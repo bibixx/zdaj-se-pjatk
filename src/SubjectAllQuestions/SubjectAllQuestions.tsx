@@ -18,7 +18,7 @@ import Header from '../Header';
 import Comments from '../Comments';
 
 import validateSubject from '../utils/validateSubject';
-import useFetch from '../useFetch';
+import useFetch from '../hooks/useFetch';
 
 const useStyles = makeStyles({
   root: {
