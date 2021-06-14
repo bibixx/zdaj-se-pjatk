@@ -17,7 +17,6 @@ export const CookieNotice = ({
     message={(
       <>
         Ta strona używa plików cookie w celu prowadzenia danych statystycznych.
-        <br />
         Możesz przeczytać o nich więcej w
         {' '}
         <UILink component={RouterLink} to="/polityka-cookies">Polityce Cookies</UILink>
@@ -26,8 +25,8 @@ export const CookieNotice = ({
       )}
     action={(
       <>
-        <Button color="primary" onClick={() => onBannerClose(true)}>Zgadzam się</Button>
-        <Button color="primary" onClick={() => onBannerClose(false)}>Nie zgadzam się</Button>
+        <Button color="primary" onClick={() => onBannerClose(true)}>Pozwól na wszystkie cookies</Button>
+        <Button color="primary" onClick={() => onBannerClose(false)}>Pozwól tylko na Niezbędne cookies</Button>
       </>
       )}
   />
