@@ -24,6 +24,7 @@ import { RelCanonical } from './RelCanonical/RelCanonical';
 import getTheme from './theme';
 import history from './history';
 import { DonatePage } from './DonatePage/DonatePage';
+import { BugsDataChange } from './BugsDataChange/BugsDataChange';
 
 const useStyles = makeStyles({
   root: {
@@ -67,6 +68,7 @@ const App = () => {
                 </Route>
                 <Route path="/donate" exact component={DonatePage} />
                 <Route path="/polityka-cookies" exact component={CookiePolicy} />
+                <Route path="/bledy-zmiany-w-danych" exact component={BugsDataChange} />
                 <Route path="/:subjectId">
                   <SubjectAllQuestions setUpdatedAt={setUpdatedAt} />
                 </Route>

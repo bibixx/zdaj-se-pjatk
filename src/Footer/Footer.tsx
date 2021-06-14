@@ -64,6 +64,7 @@ const Footer = ({
         GitHub
       </Link>
       <Link component={RouterLink} to="/polityka-cookies">Polityka Cookies</Link>
+      <Link component={RouterLink} to="/bledy-zmiany-w-danych">Błędy / Zmiany w pytaniach</Link>
     </Box>
   </Box>
 );
