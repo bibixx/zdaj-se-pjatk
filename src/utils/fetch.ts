@@ -2,7 +2,7 @@ type Checker<T> = (element: any) => element is T;
 
 const defaultChecker: Checker<any> = (test: any): test is unknown => true;
 
-const customFetch = async <T = unknown>(
+export const customFetch = async <T = unknown>(
   url: string,
   checkData: Checker<T> = defaultChecker,
   init?: RequestInit,
@@ -26,5 +26,3 @@ const customFetch = async <T = unknown>(
 
   throw new Error(response.statusText);
 };
-
-export default customFetch;

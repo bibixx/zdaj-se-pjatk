@@ -1,6 +1,6 @@
 import { Pages } from '../types/pages';
 
-function validatePages(element: any): element is Pages {
+export function validatePages(element: any): element is Pages {
   if (!element?.pages) {
     return false;
   }
@@ -26,5 +26,3 @@ function validatePages(element: any): element is Pages {
 
   return true;
 }
-
-export default validatePages;

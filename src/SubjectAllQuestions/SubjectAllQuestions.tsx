@@ -14,12 +14,12 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import ContentWrapper from '../ContentWrapper';
-import Header from '../Header';
-import Comments from '../Comments';
+import { ContentWrapper } from '../ContentWrapper/ContentWrapper';
+import { Header } from '../Header/Header';
+import { Comments } from '../Comments/Comments';
 
-import validateSubject from '../utils/validateSubject';
-import useFetch from '../hooks/useFetch';
+import { validateSubject } from '../utils/validateSubject';
+import { useFetch } from '../hooks/useFetch/useFetch';
 import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
 
 const useStyles = makeStyles({
@@ -66,7 +66,7 @@ interface SubjectAllQuestionsProps {
   setUpdatedAt: (updatedAt: number) => void
 }
 
-const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
+export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
   const classes = useStyles();
   const { subjectId } = useParams<{ subjectId: string }>();
   const errorHandler = useErrorHandler();
@@ -176,5 +176,3 @@ const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
     </>
   );
 };
-
-export default SubjectAllQuestions;

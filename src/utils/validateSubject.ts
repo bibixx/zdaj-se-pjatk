@@ -77,7 +77,7 @@ function validateQuestion(element: any): element is Question {
   return true;
 }
 
-function validateSubject(element: any): element is Subject {
+export function validateSubject(element: any): element is Subject {
   if (!element) {
     return false;
   }
@@ -104,5 +104,3 @@ function validateSubject(element: any): element is Subject {
 
   return true;
 }
-
-export default validateSubject;

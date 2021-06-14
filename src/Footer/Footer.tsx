@@ -3,8 +3,8 @@ import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import { Link as RouterLink } from 'react-router-dom';
 
-import formatDate from '../utils/formatDate';
-import DarkModeButton from '../DarkModeButton/DarkModeButton';
+import { formatDate } from '../utils/formatDate';
+import { DarkModeButton } from '../DarkModeButton/DarkModeButton';
 
 interface Props {
   updatedAt: number | undefined;
@@ -12,7 +12,7 @@ interface Props {
   setDarkModeEnabled: (darkModeEnabled: boolean) => void
 }
 
-const Footer = ({
+export const Footer = ({
   updatedAt,
   darkModeEnabled,
   setDarkModeEnabled,
@@ -49,9 +49,7 @@ const Footer = ({
         <DarkModeButton
           darkModeEnabled={darkModeEnabled}
           onClick={(isEnabled) => setDarkModeEnabled(isEnabled)}
-        >
-          Zmień motyw
-        </DarkModeButton>
+        />
       </Box>
     </Box>
     <Box
@@ -68,5 +66,3 @@ const Footer = ({
     </Box>
   </Box>
 );
-
-export default Footer;

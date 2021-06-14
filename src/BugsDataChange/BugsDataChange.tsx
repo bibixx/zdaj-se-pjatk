@@ -1,6 +1,6 @@
 import Link from '@material-ui/core/Link/Link';
 import Typography from '@material-ui/core/Typography/Typography';
-import Header from '../Header';
+import { Header } from '../Header/Header';
 import { TextPageWrapper } from '../TextPageWrapper/TextPageWrapper';
 
 export const BugsDataChange = () => (

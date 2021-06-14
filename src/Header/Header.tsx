@@ -16,11 +16,11 @@ const useStyles = makeStyles({
   },
 });
 
-interface HeaderProps {
+interface Props {
   backButton?: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({ children, backButton = false }) => {
+export const Header: React.FC<Props> = ({ children, backButton = false }) => {
   const classes = useStyles();
 
   return (
@@ -34,5 +34,3 @@ const Header: React.FC<HeaderProps> = ({ children, backButton = false }) => {
     </Typography>
   );
 };
-
-export default Header;

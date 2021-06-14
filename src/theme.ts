@@ -2,7 +2,7 @@ import { createMuiTheme, Theme } from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
 import lightBlue from '@material-ui/core/colors/lightBlue';
 
-const getTheme = (prefersDarkMode: boolean): Theme => createMuiTheme({
+export const getTheme = (prefersDarkMode: boolean): Theme => createMuiTheme({
   palette: {
     type: prefersDarkMode ? 'dark' : 'light',
     ...(!prefersDarkMode
@@ -16,5 +16,3 @@ const getTheme = (prefersDarkMode: boolean): Theme => createMuiTheme({
     secondary: lightBlue,
   },
 });
-
-export default getTheme;

@@ -1,6 +1,6 @@
 /* eslint-disable max-len, react/jsx-one-expression-per-line */
 import Link from '@material-ui/core/Link';
-import Header from '../Header';
+import { Header } from '../Header/Header';
 import { TextPageWrapper } from '../TextPageWrapper/TextPageWrapper';
 
 export const CookiePolicy = () => (

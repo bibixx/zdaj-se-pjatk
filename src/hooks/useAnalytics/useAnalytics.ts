@@ -7,7 +7,7 @@ const BANNER_CLOSED_KEY = 'banner-closed';
 
 const getBooleanCookie = (key: string) => Cookies.get(key) === 'true';
 
-const useAnalytics = () => {
+export const useAnalytics = () => {
   const [areCookiesAccepted, setAreCookiesAccepted] = useState(getBooleanCookie(CONSENT_KEY));
   const [
     shouldShowCookieBanner, setShouldShowCookieBanner,
@@ -31,5 +31,3 @@ const useAnalytics = () => {
 
   return { piwik, shouldShowCookieBanner, onBannerClose };
 };
-
-export default useAnalytics;

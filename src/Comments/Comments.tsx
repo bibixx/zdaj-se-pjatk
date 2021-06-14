@@ -33,11 +33,11 @@ const getCommentsAmount = (n: number) => {
   }
 };
 
-interface CommentsProps {
+interface Props {
   comments: Comment[] | null;
 }
 
-const Comments: React.FC<CommentsProps> = ({ comments }) => {
+export const Comments = ({ comments }: Props) => {
   const [commentsVisible, setCommentsVisible] = useState(false);
 
   const data = comments !== null ? comments : [];
@@ -91,5 +91,3 @@ const Comments: React.FC<CommentsProps> = ({ comments }) => {
     </>
   );
 };
-
-export default Comments;

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import customFetch from '../../utils/fetch';
+import { customFetch } from '../../utils/fetch';
 
 interface Options<T> {
   init?: RequestInit,
@@ -7,7 +7,7 @@ interface Options<T> {
   onError?: (error: Error) => void;
 }
 
-const useFetch = <T>(
+export const useFetch = <T>(
   url: string,
   checkData: (element: any) => element is T,
   options: Options<T> = {},
@@ -44,5 +44,3 @@ const useFetch = <T>(
     refetch: fetchData,
   };
 };
-
-export default useFetch;

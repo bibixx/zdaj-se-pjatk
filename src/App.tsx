@@ -12,17 +12,17 @@ import { makeStyles } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-import SubjectAllQuestions from './SubjectAllQuestions/SubjectAllQuestions';
-import IndexPage from './IndexPage/IndexPage';
-import Footer from './Footer/Footer';
-import CookieNotice from './CookieNotice/CookieNotice';
+import { SubjectAllQuestions } from './SubjectAllQuestions/SubjectAllQuestions';
+import { IndexPage } from './IndexPage/IndexPage';
+import { Footer } from './Footer/Footer';
+import { CookieNotice } from './CookieNotice/CookieNotice';
 import { CookiePolicy } from './CookiePolicy/CookiePolicy';
-import useAnalytics from './hooks/useAnalytics/useAnalytics';
-import AnalyticsContext from './AnalyticsContext/AnalyticsContext';
+import { useAnalytics } from './hooks/useAnalytics/useAnalytics';
+import { AnalyticsContext } from './AnalyticsContext/AnalyticsContext';
 import { RelCanonical } from './RelCanonical/RelCanonical';
 
-import getTheme from './theme';
-import history from './history';
+import { getTheme } from './theme';
+import { history } from './history';
 import { DonatePage } from './DonatePage/DonatePage';
 import { BugsDataChange } from './BugsDataChange/BugsDataChange';
 
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
   },
 });
 
-const App = () => {
+export const App = () => {
   const { piwik, shouldShowCookieBanner, onBannerClose } = useAnalytics();
   const [updatedAt, setUpdatedAt] = useState<number | undefined>();
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -85,5 +85,3 @@ const App = () => {
     </ThemeProvider>
   );
 };
-
-export default App;

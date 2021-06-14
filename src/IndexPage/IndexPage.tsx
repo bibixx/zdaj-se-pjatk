@@ -8,10 +8,10 @@ import {
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-import ContentWrapper from '../ContentWrapper';
-import Header from '../Header';
-import validatePages from '../utils/validatePages';
-import useFetch from '../hooks/useFetch';
+import { ContentWrapper } from '../ContentWrapper/ContentWrapper';
+import { Header } from '../Header/Header';
+import { validatePages } from '../utils/validatePages';
+import { useFetch } from '../hooks/useFetch/useFetch';
 import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
 
 interface IndexProps {
@@ -26,7 +26,7 @@ const helmetHead = (
   </Helmet>
 );
 
-const IndexPage = ({ setUpdatedAt }: IndexProps) => {
+export const IndexPage = ({ setUpdatedAt }: IndexProps) => {
   const errorHandler = useErrorHandler();
 
   const {
@@ -81,5 +81,3 @@ const IndexPage = ({ setUpdatedAt }: IndexProps) => {
     </>
   );
 };
-
-export default IndexPage;

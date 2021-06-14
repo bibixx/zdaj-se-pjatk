@@ -8,7 +8,7 @@ interface Props {
   shouldShowCookieBanner: boolean
 }
 
-const CookieNotice = ({
+export const CookieNotice = ({
   onBannerClose,
   shouldShowCookieBanner,
 }: Props) => (
@@ -32,5 +32,3 @@ const CookieNotice = ({
       )}
   />
 );
-
-export default CookieNotice;
