@@ -7,7 +7,7 @@ import formatDate from '../utils/formatDate';
 import DarkModeButton from '../DarkModeButton/DarkModeButton';
 
 interface Props {
-  updatedAt: number;
+  updatedAt: number | undefined;
   darkModeEnabled: boolean;
   setDarkModeEnabled: (darkModeEnabled: boolean) => void
 }
@@ -24,7 +24,7 @@ const Footer = ({
       alignItems="center"
     >
       <Box textAlign={['center', 'left']} mb={['0.25rem', '0']}>
-        <Link href="https://ko-fi.com/bibixx" target="_blank" rel="noreferrer">
+        <Link component={RouterLink} to="/donate">
           <strong>Donate</strong>
         </Link>
       </Box>
@@ -36,9 +36,14 @@ const Footer = ({
             pja.mykhi.org/generatory2.0
           </Link>
         </Typography>
+        {updatedAt !== undefined && (
         <Typography variant="caption">
-          {`(Stan na ${formatDate(new Date(updatedAt))})`}
+          (Stan na
+          {' '}
+          {formatDate(new Date(updatedAt))}
+          )
         </Typography>
+        )}
       </Box>
       <Box justifySelf={['center', 'flex-end']}>
         <DarkModeButton
@@ -58,7 +63,7 @@ const Footer = ({
       <Link href="https://github.com/bibixx/zdaj-se-pjatk" target="_blank" rel="noreferrer">
         GitHub
       </Link>
-      <Link component={RouterLink} to="/polityka-prywatnosci">Polityka cookies</Link>
+      <Link component={RouterLink} to="/polityka-cookies">Polityka Cookies</Link>
     </Box>
   </Box>
 );

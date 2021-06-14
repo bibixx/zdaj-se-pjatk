@@ -16,9 +16,10 @@ import SubjectAllQuestions from './SubjectAllQuestions/SubjectAllQuestions';
 import IndexPage from './IndexPage/IndexPage';
 import Footer from './Footer/Footer';
 import CookieNotice from './CookieNotice/CookieNotice';
-import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
+import { CookiePolicy } from './CookiePolicy/CookiePolicy';
 import useAnalytics from './hooks/useAnalytics/useAnalytics';
 import AnalyticsContext from './AnalyticsContext/AnalyticsContext';
+import { RelCanonical } from './RelCanonical/RelCanonical';
 
 import getTheme from './theme';
 import history from './history';
@@ -33,7 +34,7 @@ const useStyles = makeStyles({
 
 const App = () => {
   const { piwik, shouldShowCookieBanner, onBannerClose } = useAnalytics();
-  const [updatedAt, setUpdatedAt] = useState(0);
+  const [updatedAt, setUpdatedAt] = useState<number | undefined>();
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [darkModeEnabled, setDarkModeEnabled] = useState(prefersDarkMode);
 
@@ -55,6 +56,7 @@ const App = () => {
           <CssBaseline />
           <Container classes={{ root: classes.root }} fixed>
             <Router history={piwik.connectToHistory(history)}>
+              <RelCanonical />
               <CookieNotice
                 onBannerClose={onBannerClose}
                 shouldShowCookieBanner={shouldShowCookieBanner}
@@ -63,7 +65,8 @@ const App = () => {
                 <Route path="/" exact>
                   <IndexPage setUpdatedAt={setUpdatedAt} />
                 </Route>
-                <Route path="/polityka-prywatnosci" exact component={PrivacyPolicy} />
+                <Route path="/donate" exact component={DonatePage} />
+                <Route path="/polityka-cookies" exact component={CookiePolicy} />
                 <Route path="/:subjectId">
                   <SubjectAllQuestions setUpdatedAt={setUpdatedAt} />
                 </Route>

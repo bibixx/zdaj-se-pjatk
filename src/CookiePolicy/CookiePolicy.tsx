@@ -1,37 +1,20 @@
 /* eslint-disable max-len, react/jsx-one-expression-per-line */
-import { makeStyles } from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 import Header from '../Header';
+import { useStyles } from './CookiePolicy.style';
 
-const useStyles = makeStyles({
-  wrapper: {
-    '& h2': {
-      marginBottom: '0.25rem',
-      '& + h3': {
-        marginTop: 0,
-      },
-    },
-    '& h3': {
-      marginBottom: 0,
-      '& + p': {
-        marginTop: 0,
-      },
-    },
-  },
-});
-
-const PrivacyPolicy = () => {
+export const CookiePolicy = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.wrapper}>
-      <Header backButton>POLITYKA COOKIES</Header>
+      <Header backButton>Polityka Cookies</Header>
       <p>Poniższa Polityka Cookies określa zasady zapisywania i uzyskiwania dostępu do danych na Urządzeniach Użytkowników korzystających z Serwisu do celów świadczenia usług drogą elektroniczną przez Administratora Serwisu.</p>
 
       <section>
-        <h2 id="definicje">§1 DEFINICJE</h2>
+        <h2 id="definicje">§1 Definicje</h2>
         <h3>Serwis</h3>
-        <p>Serwis internetowy działający pod adresem <Link href="https://pjatk.zdaj.se">https://pjatk.zdaj.se</Link></p>
+        <p>Serwis internetowy działający pod adresem <Link href="https://pjatk.zdaj.se">https://pjatk.zdaj.se</Link> oraz <Link href="https://pjatk.zdaj.se">https://zdaj-se.vercel.app</Link></p>
 
         <h3>Serwis zewnętrzny</h3>
         <p>Serwis internetowe partnerów, usługodawców lub usługobiorców Administratora</p>
@@ -50,25 +33,25 @@ const PrivacyPolicy = () => {
       </section>
 
       <section>
-        <h2 id="rodzaje-cookies">§2 JAKICH PLIKÓW COOKIES UŻYWAMY</h2>
+        <h2 id="rodzaje-cookies">§2 Jakich plików cookies używamy</h2>
         <h3>Cookies wewnętrzne</h3>
-        <p>pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez system teleinformatyczny Serwisu</p>
+        <p>Pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez system teleinformatyczny Serwisu</p>
 
         <h3>Cookies trwałe</h3>
-        <p>pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez Serwis do momentu ich ręcznego usunięcia. Pliki nie są usuwane automatycznie po zakończeniu sesji Urządzenia chyba że konfiguracja Urządzenia Użytkownika jest ustawiona na tryb usuwanie plików Cookie po zakończeniu sesji Urządzenia.</p>
+        <p>Pliki zamieszczane i odczytywane z Urządzenia Użytkownika przez Serwis do momentu ich ręcznego usunięcia. Pliki nie są usuwane automatycznie po zakończeniu sesji Urządzenia chyba że konfiguracja Urządzenia Użytkownika jest ustawiona na tryb usuwanie plików Cookie po zakończeniu sesji Urządzenia.</p>
 
         <h3>Niezbędne pliki cookies</h3>
-        <p>Niezbędne pliki cookies obejmują ściśle niezbędne pliki cookies, których używamy do funkcjonowania Portalu oraz funkcjonalne pliki cookie, które pomagają w działaniu i projektowaniu Portalu. Ulepszają one funkcjonalność Portalu, a także umożliwiają jej personalizację.</p>
-        <p>Funkcjonalne pliki cookie pomagają nam zapamiętać wybrane przez Ciebie ustawienia strony, czy też pomagają przy innych funkcjach podczas przeglądania i korzystania z Portalu. Pliki te pomagają nam zapamiętać Twoje preferencje i ułatwiają funkcjonowanie Portalu, kiedy odwiedzasz ją ponownie.</p>
-        <p>Możesz dostosować ustawienia przeglądarki w taki sposób by blokowała ona działanie tego rodzaju plików cookies. Pamiętaj, że jeżeli zdecydujesz się na takie rozwiązanie, to niektóre części Portalu mogą nie działać.</p>
+        <p>Niezbędne pliki cookies obejmują ściśle niezbędne pliki cookies, których używamy do funkcjonowania Serwisu oraz funkcjonalne pliki cookie, które pomagają w działaniu i projektowaniu Serwisu. Ulepszają one funkcjonalność Serwisu, a także umożliwiają jej personalizację.</p>
+        <p>Funkcjonalne pliki cookie pomagają nam zapamiętać wybrane przez Ciebie ustawienia strony, czy też pomagają przy innych funkcjach podczas przeglądania i korzystania z Serwisu. Pliki te pomagają nam zapamiętać Twoje preferencje i ułatwiają funkcjonowanie Serwisu, kiedy odwiedzasz ją ponownie.</p>
+        <p>Możesz dostosować ustawienia przeglądarki w taki sposób by blokowała ona działanie tego rodzaju plików cookies. Pamiętaj, że jeżeli zdecydujesz się na takie rozwiązanie, to niektóre części Serwisu mogą nie działać.</p>
 
         <h3>Analityczne pliki cookies</h3>
-        <p>Analityczne pliki cookies pomagają badać statystyki dotyczące ruchu na Portalu oraz sprawdzać źródła tego ruchu. Ponadto, umożliwiają uzyskać informację, które zakładki strony są najbardziej popularne, a także jak użytkownicy poruszają się po Portalu. Pliki te mają na celu poprawić komfort korzystania z Portalu. Dodatkowo, dzięki analitycznym plikom cookies mamy możliwość wykrywać różnego rodzaju nadużycia np. sztuczny ruch internetowy (boty).</p>
+        <p>Analityczne pliki cookies pomagają badać statystyki dotyczące ruchu na Serwisu oraz sprawdzać źródła tego ruchu. Ponadto, umożliwiają uzyskać informację, które zakładki strony są najbardziej popularne, a także jak użytkownicy poruszają się po Serwisu. Pliki te mają na celu poprawić komfort korzystania z Serwisu. Dodatkowo, dzięki analitycznym plikom cookies mamy możliwość wykrywać różnego rodzaju nadużycia np. sztuczny ruch internetowy (boty).</p>
         <p>Na działanie analitycznych plików cookies niezbędna jest Twoja zgoda. Możesz dostosować ustawienia przeglądarki w taki sposób by blokowała ona działanie tego rodzaju plików cookies. Aby uzyskać więcej informacji na temat zarządzania swoimi plikami cookies (wyrażenia i wycofania zgody), przeczytaj pkt 5 niniejszej polityki.</p>
       </section>
 
       <section>
-        <h2 id="bezpieczeństwo">§3 BEZPIECZEŃSTWO</h2>
+        <h2 id="bezpieczeństwo">§3 Bezpieczeństwo</h2>
         <h3>Mechanizmy składowania i odczytu</h3>
         <p>Mechanizmy składowania i odczytu Cookies nie pozwalają na pobierania jakichkolwiek danych osobowych ani żadnych informacji poufnych z Urządzenia Użytkownika. Przeniesienie na Urządzenie Użytkownika wirusów, koni trojańskich oraz innych robaków jest praktycznie niemożliwe.</p>
 
@@ -80,7 +63,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <section>
-        <h2 id="cele-do-których-wykorzystywane-są-pliki-cookie">§4 CELE DO KTÓRYCH WYKORZYSTYWANE SĄ PLIKI COOKIE</h2>
+        <h2 id="cele-do-których-wykorzystywane-są-pliki-cookie">§4 Cele do których wykorzystywane są pliki cookie</h2>
         <h3>Usprawnienie i ułatwienie dostępu do Serwisu</h3>
         <p>Administrator może przechowywać w plikach Cookie informacje o preferencjach i ustawieniach użytkownika dotyczących Serwisu aby usprawnić, polepszyć i przyśpieszyć świadczenie usług w ramach Serwisu.</p>
 
@@ -89,7 +72,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <section>
-        <h2 id="możliwości-określania-warunków-przechowywania-i-uzyskiwania-dostępu-na-urządzeniach-użytkownika-przez-serwis">§5 MOŻLIWOŚCI OKREŚLANIA WARUNKÓW PRZECHOWYWANIA I UZYSKIWANIA DOSTĘPU NA URZĄDZENIACH UŻYTKOWNIKA PRZEZ SERWIS</h2>
+        <h2 id="możliwości-określania-warunków-przechowywania-i-uzyskiwania-dostępu-na-urządzeniach-użytkownika-przez-serwis">§5 Możliwości określania warunków przechowywania i uzyskiwania dostępu na urządzeniach użytkownika przez serwis</h2>
         <p>
           Użytkownik może w dowolnym momencie, samodzielnie zmienić ustawienia dotyczące zapisywania, usuwania oraz dostępu do danych zapisanych plików Cookies
         </p>
@@ -102,7 +85,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <section>
-        <h2 id="wyłączenie-odpowiedzialności">§6 WYŁĄCZENIE ODPOWIEDZIALNOŚCI</h2>
+        <h2 id="wyłączenie-odpowiedzialności">§6 Wyłączenie odpowiedzialności</h2>
         <p>
           Administrator stosuje wszelkie możliwe środki w celu zapewnienia bezpieczeństwa danych umieszczanych w plikach Cookie. Należy jednak zwrócić uwagę, że zapewnienie bezpieczeństwa tych danych zależy od obu stron, w tym działalności Użytkownika oraz satnu zabezpieczeń urządzenia z którego korzysta.
         </p>
@@ -118,7 +101,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <section>
-        <h2 id="wymagania-serwisu">§7 WYMAGANIA SERWISU</h2>
+        <h2 id="wymagania-serwisu">§7 Wymagania serwisu</h2>
         <p>
           Ograniczenie zapisu i dostępu do plików Cookie na Urządzeniu Użytkownika może spowodować nieprawidłowe działanie niektórych funkcji Serwisu.
         </p>
@@ -128,7 +111,7 @@ const PrivacyPolicy = () => {
       </section>
 
       <section>
-        <h2 id="zmiany-w-polityce-cookie">§8 ZMIANY W POLITYCE COOKIE</h2>
+        <h2 id="zmiany-w-polityce-cookie">§8 Zmiany w polityce cookie</h2>
         <p>
           Administrator zastrzega sobie prawo do dowolnej zmiany niniejszej Polityki Cookie bez konieczności informowania o tym użytkowników.
         </p>
@@ -142,5 +125,3 @@ const PrivacyPolicy = () => {
     </div>
   );
 };
-
-export default PrivacyPolicy;

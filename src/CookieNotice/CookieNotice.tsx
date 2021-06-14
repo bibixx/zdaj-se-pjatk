@@ -20,7 +20,7 @@ const CookieNotice = ({
         <br />
         Możesz przeczytać o nich więcej w
         {' '}
-        <UILink component={RouterLink} to="/polityka-prywatnosci">polityce cookies</UILink>
+        <UILink component={RouterLink} to="/polityka-cookies">Polityce Cookies</UILink>
         .
       </>
       )}
