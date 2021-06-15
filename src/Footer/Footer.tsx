@@ -9,7 +9,7 @@ import { DarkModeButton } from '../DarkModeButton/DarkModeButton';
 interface Props {
   updatedAt: number | undefined;
   darkModeEnabled: boolean;
-  setDarkModeEnabled: (darkModeEnabled: boolean) => void
+  setDarkModeEnabled: (darkModeEnabled: boolean) => void;
 }
 
 export const Footer = ({
@@ -30,19 +30,19 @@ export const Footer = ({
       </Box>
       <Box textAlign="center">
         <Typography variant="body2">
-          Mirror
-          {' '}
-          <Link href="https://pja.mykhi.org/generatory2.0" target="_blank" rel="noreferrer">
+          Mirror{' '}
+          <Link
+            href="https://pja.mykhi.org/generatory2.0"
+            target="_blank"
+            rel="noreferrer"
+          >
             pja.mykhi.org/generatory2.0
           </Link>
         </Typography>
         {updatedAt !== undefined && (
-        <Typography variant="caption">
-          (Stan na
-          {' '}
-          {formatDate(new Date(updatedAt))}
-          )
-        </Typography>
+          <Typography variant="caption">
+            (Stan na {formatDate(new Date(updatedAt))})
+          </Typography>
         )}
       </Box>
       <Box justifySelf={['center', 'flex-end']}>
@@ -58,11 +58,19 @@ export const Footer = ({
       mt="0.5rem"
       style={{ gap: '1rem' }}
     >
-      <Link href="https://github.com/bibixx/zdaj-se-pjatk" target="_blank" rel="noreferrer">
+      <Link
+        href="https://github.com/bibixx/zdaj-se-pjatk"
+        target="_blank"
+        rel="noreferrer"
+      >
         GitHub
       </Link>
-      <Link component={RouterLink} to="/polityka-cookies">Polityka Cookies</Link>
-      <Link component={RouterLink} to="/bledy-zmiany-w-danych">Błędy / Zmiany w pytaniach</Link>
+      <Link component={RouterLink} to="/polityka-cookies">
+        Polityka Cookies
+      </Link>
+      <Link component={RouterLink} to="/bledy-zmiany-w-danych">
+        Błędy / Zmiany w pytaniach
+      </Link>
     </Box>
   </Box>
 );

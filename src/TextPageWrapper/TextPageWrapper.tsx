@@ -20,7 +20,5 @@ export const useStyles = makeStyles({
 export const TextPageWrapper: React.FC = ({ children }) => {
   const classes = useStyles();
 
-  return (
-    <div className={classes.wrapper}>{children}</div>
-  );
+  return <div className={classes.wrapper}>{children}</div>;
 };

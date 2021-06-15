@@ -8,7 +8,7 @@ interface Options<
   TContext = any,
   TOut = any,
 > {
-  init?: RequestInit,
+  init?: RequestInit;
   onComplete?: (data: Asserts<T>) => void;
   onError?: (error: Error) => void;
 }
@@ -19,10 +19,10 @@ export const useFetch = <
   TContext = any,
   TOut = any,
 >(
-    url: string,
-    checkData: T,
-    options: Options<T, Type, TContext, TOut> = {},
-  ) => {
+  url: string,
+  checkData: T,
+  options: Options<T, Type, TContext, TOut> = {},
+) => {
   const { init, onComplete, onError } = options;
 
   const [data, setData] = useState<Asserts<T> | null>(null);

@@ -9,10 +9,7 @@ interface Props {
   onClick: (isEnabled: boolean) => void;
 }
 
-export const DarkModeButton = ({
-  darkModeEnabled,
-  onClick,
-}: Props) => (
+export const DarkModeButton = ({ darkModeEnabled, onClick }: Props) => (
   <Box display="flex" alignItems="center">
     <IconButton size="small" onClick={() => onClick(false)}>
       <Brightness7Icon />

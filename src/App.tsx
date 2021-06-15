@@ -1,9 +1,5 @@
 import { useMemo, useState, useEffect } from 'react';
-import {
-  Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
 import { SnackbarProvider } from 'notistack';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -43,10 +39,7 @@ export const App = () => {
     setDarkModeEnabled(prefersDarkMode);
   }, [prefersDarkMode]);
 
-  const theme = useMemo(
-    () => getTheme(darkModeEnabled),
-    [darkModeEnabled],
-  );
+  const theme = useMemo(() => getTheme(darkModeEnabled), [darkModeEnabled]);
 
   const classes = useStyles();
 
@@ -67,8 +60,16 @@ export const App = () => {
                   <IndexPage setUpdatedAt={setUpdatedAt} />
                 </Route>
                 <Route path="/donate" exact component={DonatePage} />
-                <Route path="/polityka-cookies" exact component={CookiePolicy} />
-                <Route path="/bledy-zmiany-w-danych" exact component={BugsDataChange} />
+                <Route
+                  path="/polityka-cookies"
+                  exact
+                  component={CookiePolicy}
+                />
+                <Route
+                  path="/bledy-zmiany-w-danych"
+                  exact
+                  component={BugsDataChange}
+                />
                 <Route path="/:subjectId">
                   <SubjectAllQuestions setUpdatedAt={setUpdatedAt} />
                 </Route>

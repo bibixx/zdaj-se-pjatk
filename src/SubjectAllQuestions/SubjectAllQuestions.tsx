@@ -9,9 +9,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import Paper from '@material-ui/core/Paper';
-import {
-  Typography, Divider, CircularProgress, Box,
-} from '@material-ui/core';
+import { Typography, Divider, CircularProgress, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { ContentWrapper } from '../ContentWrapper/ContentWrapper';
@@ -63,18 +61,17 @@ const useStyles = makeStyles({
 });
 
 interface SubjectAllQuestionsProps {
-  setUpdatedAt: (updatedAt: number | undefined) => void
+  setUpdatedAt: (updatedAt: number | undefined) => void;
 }
 
-export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
+export const SubjectAllQuestions = ({
+  setUpdatedAt,
+}: SubjectAllQuestionsProps) => {
   const classes = useStyles();
   const { subjectId } = useParams<{ subjectId: string }>();
   const errorHandler = useErrorHandler();
 
-  const {
-    data: subject,
-    loading,
-  } = useFetch(
+  const { data: subject, loading } = useFetch(
     `${subjectId}.json`,
     subjectSchema,
     {
@@ -87,12 +84,7 @@ export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) 
     return (
       <>
         <Helmet>
-          <title>
-            {subjectId}
-            {' '}
-            |
-            Generatory 3.0
-          </title>
+          <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
         <ContentWrapper loading>
           <Box display="flex" justifyContent="center">
@@ -109,12 +101,7 @@ export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) 
   return (
     <>
       <Helmet>
-        <title>
-          {header}
-          {' '}
-          |
-          Generatory 3.0
-        </title>
+        <title>{header} | Generatory 3.0</title>
       </Helmet>
       <Header backButton>{header}</Header>
       <ContentWrapper>
@@ -123,13 +110,19 @@ export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) 
             Brak pytań
           </Typography>
         )}
-        {data.map(({
-          question, answers, comments, id,
-        }) => (
+        {data.map(({ question, answers, comments, id }) => (
           <Paper variant="outlined" key={`${id}`}>
             <header className={classes.questionHeader}>
-              <Typography variant="h5" component="h2" className={classes.question}>
-                <span dangerouslySetInnerHTML={{ __html: question.trim().replace(/ - \(\d+\)/, '') }} />
+              <Typography
+                variant="h5"
+                component="h2"
+                className={classes.question}
+              >
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: question.trim().replace(/ - \(\d+\)/, ''),
+                  }}
+                />
               </Typography>
             </header>
             <List disablePadding>
@@ -137,23 +130,20 @@ export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) 
                 const labelId = `checkbox-list-label-${answer}`;
 
                 return (
-                // eslint-disable-next-line react/no-array-index-key
+                  // eslint-disable-next-line react/no-array-index-key
                   <React.Fragment key={`${answer}-${i}`}>
                     <Divider />
-                    <ListItem
-                      role={undefined}
-                      dense
-                    >
+                    <ListItem role={undefined} dense>
                       <ListItemText
                         id={labelId}
-                        primary={(
+                        primary={
                           <Box fontWeight="fontWeightBold">
                             <span
                               className={classes.question}
                               dangerouslySetInnerHTML={{ __html: answer }}
                             />
                           </Box>
-                        )}
+                        }
                       />
                       <ListItemIcon>
                         <Checkbox

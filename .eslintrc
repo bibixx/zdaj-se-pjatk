@@ -1,5 +1,12 @@
 {
-  "extends": ["airbnb-typescript", "airbnb/hooks"],
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -7,6 +14,7 @@
     "browser": true
   },
   "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
     "import/prefer-default-export": 0

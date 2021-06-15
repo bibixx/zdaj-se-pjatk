@@ -57,7 +57,8 @@ export const Comments = ({ comments }: Props) => {
         <ListItemText>{getCommentsAmount(data.length)}</ListItemText>
         <ListItemIcon>
           <div className={classes.icon}>
-            {!disabled && (commentsVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />)}
+            {!disabled &&
+              (commentsVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />)}
           </div>
         </ListItemIcon>
       </ListItem>
@@ -66,20 +67,10 @@ export const Comments = ({ comments }: Props) => {
           <Divider />
           {data.map(({ author, comment, date }) => (
             <React.Fragment key={comment}>
-              <ListItem
-                role={undefined}
-                dense
-              >
+              <ListItem role={undefined} dense>
                 <ListItemText>
                   <Typography color="textSecondary" variant="body2">
-                    {author
-                      .replace('~', '')
-                      .replace(/@[\d.*]+$/, '')}
-                    {' '}
-                    |
-                    {' '}
-                    {date}
-
+                    {author.replace('~', '').replace(/@[\d.*]+$/, '')} | {date}
                   </Typography>
                   <Typography variant="body2">{comment}</Typography>
                 </ListItemText>

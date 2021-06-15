@@ -8,17 +8,14 @@ export const useErrorHandler = () => {
   const { enqueueSnackbar } = useSnackbar();
 
   const errorHandler = (error: Error) => {
-    enqueueSnackbar(
-      'Wystąpił błąd. Spóbuj ponownie później.',
-      {
-        variant: 'error',
-        anchorOrigin: {
-          vertical: 'top',
-          horizontal: 'center',
-        },
-        TransitionComponent: Grow as any,
+    enqueueSnackbar('Wystąpił błąd. Spóbuj ponownie później.', {
+      variant: 'error',
+      anchorOrigin: {
+        vertical: 'top',
+        horizontal: 'center',
       },
-    );
+      TransitionComponent: Grow as any,
+    });
     piwik?.trackError(error);
     // eslint-disable-next-line no-console
     console.error(error);

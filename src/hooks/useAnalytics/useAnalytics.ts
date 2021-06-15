@@ -8,10 +8,12 @@ const BANNER_CLOSED_KEY = 'banner-closed';
 const getBooleanCookie = (key: string) => Cookies.get(key) === 'true';
 
 export const useAnalytics = () => {
-  const [areCookiesAccepted, setAreCookiesAccepted] = useState(getBooleanCookie(CONSENT_KEY));
-  const [
-    shouldShowCookieBanner, setShouldShowCookieBanner,
-  ] = useState(getBooleanCookie(BANNER_CLOSED_KEY));
+  const [areCookiesAccepted, setAreCookiesAccepted] = useState(
+    getBooleanCookie(CONSENT_KEY),
+  );
+  const [shouldShowCookieBanner, setShouldShowCookieBanner] = useState(
+    getBooleanCookie(BANNER_CLOSED_KEY),
+  );
 
   const onBannerClose = (cookiesAccepted: boolean) => {
     Cookies.set(CONSENT_KEY, cookiesAccepted);
@@ -21,13 +23,17 @@ export const useAnalytics = () => {
     setShouldShowCookieBanner(true);
   };
 
-  const piwik = useMemo(() => PiwikReactRouter({
-    url: 'analytics.legiec.info',
-    siteId: 3,
-    updateDocumentTitle: false,
-    trackErrors: true,
-    injectScript: areCookiesAccepted,
-  }), [areCookiesAccepted]);
+  const piwik = useMemo(
+    () =>
+      PiwikReactRouter({
+        url: 'analytics.legiec.info',
+        siteId: 3,
+        updateDocumentTitle: false,
+        trackErrors: true,
+        injectScript: areCookiesAccepted,
+      }),
+    [areCookiesAccepted],
+  );
 
   return { piwik, shouldShowCookieBanner, onBannerClose };
 };
