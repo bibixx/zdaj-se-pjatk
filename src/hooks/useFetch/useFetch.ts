@@ -1,26 +1,41 @@
 import { useCallback, useEffect, useState } from 'react';
+import { AnySchema, Asserts } from 'yup';
 import { customFetch } from '../../utils/fetch';
 
-interface Options<T> {
+interface Options<
+  T extends AnySchema<Type, TContext, TOut>,
+  Type = any,
+  TContext = any,
+  TOut = any,
+> {
   init?: RequestInit,
-  onComplete?: (data: T) => void;
+  onComplete?: (data: Asserts<T>) => void;
   onError?: (error: Error) => void;
 }
 
-export const useFetch = <T>(
-  url: string,
-  checkData: (element: any) => element is T,
-  options: Options<T> = {},
-) => {
+export const useFetch = <
+  T extends AnySchema<Type, TContext, TOut>,
+  Type = any,
+  TContext = any,
+  TOut = any,
+>(
+    url: string,
+    checkData: T,
+    options: Options<T, Type, TContext, TOut> = {},
+  ) => {
   const { init, onComplete, onError } = options;
 
-  const [data, setData] = useState<T | null>(null);
+  const [data, setData] = useState<Asserts<T> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
   const fetchData = useCallback(async () => {
     try {
       const fetchedData = await customFetch(url, checkData, init);
+
+      if (!fetchData) {
+        return;
+      }
 
       setLoading(false);
       setData(fetchedData);

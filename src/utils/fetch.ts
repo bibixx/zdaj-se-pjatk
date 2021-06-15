@@ -1,12 +1,15 @@
-type Checker<T> = (element: any) => element is T;
+import { AnySchema, Asserts } from 'yup';
 
-const defaultChecker: Checker<any> = (test: any): test is unknown => true;
-
-export const customFetch = async <T = unknown>(
+export const customFetch = async <
+  T extends AnySchema<Type, TContext, TOut>,
+  Type = any,
+  TContext = any,
+  TOut = any,
+>(
   url: string,
-  checkData: Checker<T> = defaultChecker,
+  checkData: T,
   init?: RequestInit,
-): Promise<T> => {
+): Promise<Asserts<T>> => {
   const rootUrl = process.env.REACT_APP_DATA_PATH || '/';
 
   const rootDeslashed = rootUrl.replace(/\/$/, '');
@@ -17,11 +20,7 @@ export const customFetch = async <T = unknown>(
   if (response.ok) {
     const data = await response.json();
 
-    if (checkData(data)) {
-      return data;
-    }
-
-    throw new Error('Data doesn\'t match the type');
+    return checkData.validate(data);
   }
 
   throw new Error(response.statusText);

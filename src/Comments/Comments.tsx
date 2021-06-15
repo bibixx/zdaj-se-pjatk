@@ -6,7 +6,7 @@ import { Divider, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import { Comment } from '../types/comments';
+import { Comment } from '../validators/subjects';
 
 const useStyles = makeStyles({
   icon: {
@@ -34,7 +34,7 @@ const getCommentsAmount = (n: number) => {
 };
 
 interface Props {
-  comments: Comment[] | null;
+  comments: Comment[];
 }
 
 export const Comments = ({ comments }: Props) => {

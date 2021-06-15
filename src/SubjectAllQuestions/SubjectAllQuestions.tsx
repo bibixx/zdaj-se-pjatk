@@ -18,9 +18,9 @@ import { ContentWrapper } from '../ContentWrapper/ContentWrapper';
 import { Header } from '../Header/Header';
 import { Comments } from '../Comments/Comments';
 
-import { validateSubject } from '../utils/validateSubject';
 import { useFetch } from '../hooks/useFetch/useFetch';
 import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
+import { subjectSchema } from '../validators/subjects';
 
 const useStyles = makeStyles({
   root: {
@@ -63,7 +63,7 @@ const useStyles = makeStyles({
 });
 
 interface SubjectAllQuestionsProps {
-  setUpdatedAt: (updatedAt: number) => void
+  setUpdatedAt: (updatedAt: number | undefined) => void
 }
 
 export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) => {
@@ -76,7 +76,7 @@ export const SubjectAllQuestions = ({ setUpdatedAt }: SubjectAllQuestionsProps) 
     loading,
   } = useFetch(
     `${subjectId}.json`,
-    validateSubject,
+    subjectSchema,
     {
       onComplete: (data) => setUpdatedAt(data.updatedAt),
       onError: errorHandler,

@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom';
 
 import { ContentWrapper } from '../ContentWrapper/ContentWrapper';
 import { Header } from '../Header/Header';
-import { validatePages } from '../utils/validatePages';
+import { pagesSchema } from '../validators/pages';
 import { useFetch } from '../hooks/useFetch/useFetch';
 import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
 
 interface IndexProps {
-  setUpdatedAt: (updatedAt: number) => void
+  setUpdatedAt: (updatedAt: number | undefined) => void
 }
 
 const helmetHead = (
@@ -34,7 +34,7 @@ export const IndexPage = ({ setUpdatedAt }: IndexProps) => {
     loading,
   } = useFetch(
     'index.json',
-    validatePages,
+    pagesSchema,
     {
       onComplete: (data) => setUpdatedAt(data.updatedAt),
       onError: errorHandler,
