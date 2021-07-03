@@ -17,8 +17,8 @@ export const DonatePage = () => (
         </li>
         <li>
           Baza danych –{' '}
-          <Link href="https://github.com/bibixx/zdaj-se-pjatk-data">
-            GitHub raw content
+          <Link href="https://bibixx.github.io/zdaj-se-pjatk-data/index.json">
+            pliki JSON na GitHub Pages
           </Link>
         </li>
         <li>

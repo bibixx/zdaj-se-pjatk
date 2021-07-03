@@ -56,7 +56,9 @@ export const Footer = ({
       display="flex"
       justifyContent="center"
       mt="0.5rem"
+      flexDirection={{ xs: 'column', sm: 'row' }}
       style={{ gap: '1rem' }}
+      textAlign="center"
     >
       <Link
         href="https://github.com/bibixx/zdaj-se-pjatk"
