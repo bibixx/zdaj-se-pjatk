@@ -10,7 +10,7 @@ interface Options<
 > {
   init?: RequestInit;
   onComplete?: (data: Asserts<T>) => void;
-  onError?: (error: Error) => void;
+  onError?: (error: Error | null) => void;
 }
 
 export const useFetch = <
@@ -42,8 +42,14 @@ export const useFetch = <
       onComplete?.(fetchedData);
     } catch (e) {
       setLoading(false);
-      setError(e);
-      onError?.(e);
+
+      if (e instanceof Error) {
+        setError(e);
+        onError?.(e);
+      } else {
+        setError(null);
+        onError?.(null);
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url, init]);

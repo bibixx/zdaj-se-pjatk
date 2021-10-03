@@ -5,7 +5,7 @@ declare module 'piwik-react-router' {
     connectToHistory(
       history: import('history').BrowserHistory,
     ): import('history').History;
-    trackError(error: Error, eventName?: string): void;
+    trackError(error: Error | null, eventName?: string): void;
     push(...args: any[]): void;
   }
 

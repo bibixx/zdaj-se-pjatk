@@ -7,7 +7,7 @@ export const useErrorHandler = () => {
   const piwik = useContext(AnalyticsContext);
   const { enqueueSnackbar } = useSnackbar();
 
-  const errorHandler = (error: Error) => {
+  const errorHandler = (error: Error | null) => {
     enqueueSnackbar('Wystąpił błąd. Spóbuj ponownie później.', {
       variant: 'error',
       anchorOrigin: {

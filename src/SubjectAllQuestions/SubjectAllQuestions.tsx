@@ -19,6 +19,7 @@ import { Comments } from '../Comments/Comments';
 import { useFetch } from '../hooks/useFetch/useFetch';
 import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
 import { subjectSchema } from '../validators/subjects';
+import { getDataWithOverrides } from './SubjectAllQuestions.utils';
 
 const useStyles = makeStyles({
   root: {
@@ -71,7 +72,7 @@ export const SubjectAllQuestions = ({
   const { subjectId } = useParams<{ subjectId: string }>();
   const errorHandler = useErrorHandler();
 
-  const { data: subject, loading } = useFetch(
+  const { data: subject, loading: subjectLoading } = useFetch(
     `${subjectId}.json`,
     subjectSchema,
     {
@@ -79,6 +80,16 @@ export const SubjectAllQuestions = ({
       onError: errorHandler,
     },
   );
+
+  const { data: overrides, loading: overridesLoading } = useFetch(
+    `overrides/${subjectId}.json`,
+    subjectSchema,
+    {
+      onComplete: (data) => setUpdatedAt(data.updatedAt),
+    },
+  );
+
+  const loading = subjectLoading || overridesLoading;
 
   if (loading || subject === null) {
     return (
@@ -95,7 +106,8 @@ export const SubjectAllQuestions = ({
     );
   }
 
-  const { data } = subject;
+  const { data } = getDataWithOverrides(subject, overrides);
+
   const header = subject.title;
 
   return (
