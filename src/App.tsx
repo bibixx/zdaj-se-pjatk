@@ -8,19 +8,21 @@ import { makeStyles } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-import { SubjectAllQuestions } from './SubjectAllQuestions/SubjectAllQuestions';
-import { IndexPage } from './IndexPage/IndexPage';
+import { IndexPage } from 'views/IndexPage/IndexPage';
+import { CookiePolicy } from 'views/CookiePolicy/CookiePolicy';
+import { DonatePage } from 'views/DonatePage/DonatePage';
+import { BugsDataChange } from 'views/BugsDataChange/BugsDataChange';
+import { SubjectAllQuestions } from 'views/SubjectAllQuestions/SubjectAllQuestions';
+
+import { useAnalytics } from 'hooks/useAnalytics/useAnalytics';
+
 import { Footer } from './Footer/Footer';
 import { CookieNotice } from './CookieNotice/CookieNotice';
-import { CookiePolicy } from './CookiePolicy/CookiePolicy';
-import { useAnalytics } from './hooks/useAnalytics/useAnalytics';
 import { AnalyticsContext } from './AnalyticsContext/AnalyticsContext';
 import { RelCanonical } from './RelCanonical/RelCanonical';
 
 import { getTheme } from './theme';
-import { history } from './history';
-import { DonatePage } from './DonatePage/DonatePage';
-import { BugsDataChange } from './BugsDataChange/BugsDataChange';
+import { history } from './customHistory';
 
 const useStyles = makeStyles({
   root: {

@@ -6,11 +6,12 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { CircularProgress, Divider, Box, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-import { ContentWrapper } from '../ContentWrapper/ContentWrapper';
-import { Header } from '../Header/Header';
-import { pagesSchema } from '../validators/pages';
-import { useFetch } from '../hooks/useFetch/useFetch';
-import { useErrorHandler } from '../hooks/useErrorHandler/useErrorHandler';
+import { useFetch } from 'hooks/useFetch/useFetch';
+import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
+
+import { ContentWrapper } from '../../ContentWrapper/ContentWrapper';
+import { Header } from '../../Header/Header';
+import { pagesSchema } from '../../validators/pages';
 
 interface IndexProps {
   setUpdatedAt: (updatedAt: number | undefined) => void;

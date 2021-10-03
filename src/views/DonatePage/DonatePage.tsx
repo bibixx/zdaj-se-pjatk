@@ -3,7 +3,7 @@ import React from 'react';
 import Link from '@material-ui/core/Link';
 import { Box, Typography } from '@material-ui/core';
 import { donationOptions } from './DonatePage.utils';
-import { Header } from '../Header/Header';
+import { Header } from '../../Header/Header';
 
 export const DonatePage = () => (
   <>
