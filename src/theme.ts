@@ -16,4 +16,17 @@ export const getTheme = (prefersDarkMode: boolean): Theme =>
       primary: cyan,
       secondary: lightBlue,
     },
+    overrides: {
+      MuiTooltip: {
+        tooltip: prefersDarkMode
+          ? {
+              backgroundColor: '#f1f2f5',
+              color: 'rgba(0, 0, 0, 0.87)',
+            }
+          : {
+              backgroundColor: '#303030',
+              color: '#fff',
+            },
+      },
+    },
   });

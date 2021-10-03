@@ -11,6 +11,7 @@ import { MultilineText } from 'components/MultilineText/MultilineText';
 import { Comment } from 'validators/subjects';
 
 import { getSortedComments, getCommentsAmount } from './Comments.utils';
+import { CommentHeader } from './CommentHeader/CommentHeader';
 
 const useStyles = makeStyles({
   icon: {
@@ -18,6 +19,9 @@ const useStyles = makeStyles({
     alignItems: 'center',
     height: '2.625rem',
     marginLeft: '0.5rem',
+  },
+  commentsExpandButtonClickable: {
+    cursor: 'pointer',
   },
 });
 
@@ -41,6 +45,7 @@ export const Comments = ({ comments }: Props) => {
         dense
         button={!disabled ? undefined : false}
         onClick={() => setCommentsVisible(!commentsVisible)}
+        className={!disabled ? classes.commentsExpandButtonClickable : ''}
       >
         <ListItemText>{getCommentsAmount(data.length)}</ListItemText>
         <ListItemIcon>
@@ -53,13 +58,15 @@ export const Comments = ({ comments }: Props) => {
       {commentsVisible && (
         <>
           <Divider />
-          {data.map(({ author, comment, date }) => (
+          {data.map(({ author, comment, date, overwritten }) => (
             <React.Fragment key={comment}>
               <ListItem role={undefined} dense>
                 <ListItemText>
-                  <Typography color="textSecondary" variant="body2">
-                    {author.replace('~', '').replace(/@[\d.*]+$/, '')} | {date}
-                  </Typography>
+                  <CommentHeader
+                    author={author}
+                    date={date}
+                    overwritten={overwritten ?? false}
+                  />
                   <Typography variant="body2">
                     <MultilineText>{comment}</MultilineText>
                   </Typography>
