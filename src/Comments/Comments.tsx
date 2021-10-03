@@ -7,6 +7,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import { Comment } from '../validators/subjects';
+import { MultilineText } from '../MultilineText/MultilineText';
+import { getSortedComments, getCommentsAmount } from './Comments.utils';
 
 const useStyles = makeStyles({
   icon: {
@@ -17,22 +19,6 @@ const useStyles = makeStyles({
   },
 });
 
-const getCommentsAmount = (n: number) => {
-  switch (n) {
-    case 1: {
-      return `${n} komentarz`;
-    }
-    case 2:
-    case 3:
-    case 4: {
-      return `${n} komentarze`;
-    }
-    default: {
-      return `${n} komentarzy`;
-    }
-  }
-};
-
 interface Props {
   comments: Comment[];
 }
@@ -40,7 +26,7 @@ interface Props {
 export const Comments = ({ comments }: Props) => {
   const [commentsVisible, setCommentsVisible] = useState(false);
 
-  const data = comments !== null ? comments : [];
+  const data = comments !== null ? getSortedComments(comments) : [];
   const classes = useStyles();
 
   const disabled = data.length === 0;
@@ -72,7 +58,9 @@ export const Comments = ({ comments }: Props) => {
                   <Typography color="textSecondary" variant="body2">
                     {author.replace('~', '').replace(/@[\d.*]+$/, '')} | {date}
                   </Typography>
-                  <Typography variant="body2">{comment}</Typography>
+                  <Typography variant="body2">
+                    <MultilineText>{comment}</MultilineText>
+                  </Typography>
                 </ListItemText>
               </ListItem>
             </React.Fragment>
