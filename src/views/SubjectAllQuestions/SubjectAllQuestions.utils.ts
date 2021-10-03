@@ -1,5 +1,5 @@
 import { Asserts } from 'yup';
-import { subjectSchema } from '../../validators/subjects';
+import { subjectSchema } from 'validators/subjects';
 
 type Subject = Asserts<typeof subjectSchema>;
 type Questions = Subject['data'];

@@ -1,7 +1,7 @@
 import { useSnackbar } from 'notistack';
 import { useContext } from 'react';
 import Grow from '@material-ui/core/Grow';
-import { AnalyticsContext } from '../../AnalyticsContext/AnalyticsContext';
+import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 
 export const useErrorHandler = () => {
   const piwik = useContext(AnalyticsContext);

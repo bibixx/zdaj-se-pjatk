@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
 import { Box, IconButton, Switch } from '@material-ui/core';

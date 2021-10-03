@@ -9,9 +9,10 @@ import { Link } from 'react-router-dom';
 import { useFetch } from 'hooks/useFetch/useFetch';
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 
-import { ContentWrapper } from '../../ContentWrapper/ContentWrapper';
-import { Header } from '../../Header/Header';
-import { pagesSchema } from '../../validators/pages';
+import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
+import { Header } from 'components/Header/Header';
+
+import { pagesSchema } from 'validators/pages';
 
 interface IndexProps {
   setUpdatedAt: (updatedAt: number | undefined) => void;

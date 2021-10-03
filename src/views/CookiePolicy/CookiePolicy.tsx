@@ -1,7 +1,7 @@
 /* eslint-disable max-len, react/jsx-one-expression-per-line */
 import Link from '@material-ui/core/Link';
-import { Header } from '../../Header/Header';
-import { TextPageWrapper } from '../../TextPageWrapper/TextPageWrapper';
+import { Header } from 'components/Header/Header';
+import { TextPageWrapper } from 'components/TextPageWrapper/TextPageWrapper';
 
 export const CookiePolicy = () => (
   <TextPageWrapper>

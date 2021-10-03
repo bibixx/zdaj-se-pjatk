@@ -16,10 +16,10 @@ import { SubjectAllQuestions } from 'views/SubjectAllQuestions/SubjectAllQuestio
 
 import { useAnalytics } from 'hooks/useAnalytics/useAnalytics';
 
-import { Footer } from './Footer/Footer';
-import { CookieNotice } from './CookieNotice/CookieNotice';
-import { AnalyticsContext } from './AnalyticsContext/AnalyticsContext';
-import { RelCanonical } from './RelCanonical/RelCanonical';
+import { Footer } from 'components/Footer/Footer';
+import { CookieNotice } from 'components/CookieNotice/CookieNotice';
+import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
+import { RelCanonical } from 'components/RelCanonical/RelCanonical';
 
 import { getTheme } from './theme';
 import { history } from './customHistory';

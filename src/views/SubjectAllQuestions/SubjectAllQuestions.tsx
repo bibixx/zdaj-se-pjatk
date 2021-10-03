@@ -12,13 +12,14 @@ import Paper from '@material-ui/core/Paper';
 import { Typography, Divider, CircularProgress, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import { ContentWrapper } from 'ContentWrapper/ContentWrapper';
-import { Header } from '../../Header/Header';
-import { Comments } from '../../Comments/Comments';
+import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
+import { Header } from 'components/Header/Header';
+import { Comments } from 'components/Comments/Comments';
 
-import { useFetch } from '../../hooks/useFetch/useFetch';
-import { useErrorHandler } from '../../hooks/useErrorHandler/useErrorHandler';
-import { subjectSchema } from '../../validators/subjects';
+import { useFetch } from 'hooks/useFetch/useFetch';
+import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
+import { subjectSchema } from 'validators/subjects';
+
 import { getDataWithOverrides } from './SubjectAllQuestions.utils';
 
 const useStyles = makeStyles({

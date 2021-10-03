@@ -6,8 +6,10 @@ import { Divider, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import { Comment } from '../validators/subjects';
-import { MultilineText } from '../MultilineText/MultilineText';
+
+import { MultilineText } from 'components/MultilineText/MultilineText';
+import { Comment } from 'validators/subjects';
+
 import { getSortedComments, getCommentsAmount } from './Comments.utils';
 
 const useStyles = makeStyles({
