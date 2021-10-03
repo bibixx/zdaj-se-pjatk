@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { transformNull } from '../utils/transformNull';
+import { transformNull } from 'utils/transformNull';
 
 const answerSchema = yup.object().shape({
   answer: yup.string().ensure(),

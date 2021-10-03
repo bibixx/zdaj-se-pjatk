@@ -3,8 +3,8 @@ import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import { Link as RouterLink } from 'react-router-dom';
 
-import { formatDate } from '../utils/formatDate';
-import { DarkModeButton } from '../DarkModeButton/DarkModeButton';
+import { formatDate } from 'utils/formatDate';
+import { DarkModeButton } from 'components/DarkModeButton/DarkModeButton';
 
 interface Props {
   updatedAt: number | undefined;

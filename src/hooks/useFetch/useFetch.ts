@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { AnySchema, Asserts } from 'yup';
-import { customFetch } from '../../utils/fetch';
+import { customFetch } from 'utils/fetch';
 
 interface Options<
   T extends AnySchema<Type, TContext, TOut>,

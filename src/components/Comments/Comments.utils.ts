@@ -1,4 +1,4 @@
-import { Question } from '../validators/subjects';
+import { Question } from 'validators/subjects';
 
 const parseDate = (dateTime: string) => {
   const [date, time] = dateTime.split(' ');
