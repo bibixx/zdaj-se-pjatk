@@ -4,6 +4,8 @@ import { subjectSchema } from 'validators/subjects';
 type Subject = Asserts<typeof subjectSchema>;
 type Questions = Subject['data'];
 type Question = Questions[number];
+type Comments = Question['comments'];
+type Comment = Question['comments'][number];
 type Id = Question['id'];
 
 type Tuple = [Id, Question];
@@ -19,13 +21,24 @@ const mapQuestionOverridesToMap = (questionOverrides: Questions) => {
 const getCommentsWithOverrides = (
   question: Question,
   override: Question,
-): Question['comments'] => {
+): Comments => {
   if (question.comments === null && override.comments === null) {
     return [];
   }
 
-  return [...question.comments, ...override.comments];
+  const overwrittenComments = override.comments.map(
+    (comment) =>
+      ({
+        ...comment,
+        overwritten: true,
+      } as Comment),
+  );
+
+  return [...question.comments, ...overwrittenComments];
 };
+
+const areCommentsEmpty = (comments: Comments) =>
+  comments === null || comments.length === 0;
 
 export const getDataWithOverrides = (
   subject: Subject,
@@ -51,10 +64,13 @@ export const getDataWithOverrides = (
       return question;
     }
 
+    const comments = getCommentsWithOverrides(question, questionOverride);
+
     return {
       ...question,
       ...questionOverride,
-      comments: getCommentsWithOverrides(question, questionOverride),
+      comments,
+      overwritten: !areCommentsEmpty(questionOverride.comments),
     } as Question;
   });
 

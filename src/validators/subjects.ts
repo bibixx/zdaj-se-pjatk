@@ -10,6 +10,11 @@ const commentSchema = yup.object().shape({
   author: yup.string().ensure(),
   comment: yup.string().ensure(),
   date: yup.string().ensure(),
+  overwritten: yup
+    .boolean()
+    .nullable()
+    .transform(transformNull)
+    .default(() => false),
 });
 
 const questionSchema = yup.object().shape({
@@ -21,6 +26,7 @@ const questionSchema = yup.object().shape({
     .default(() => Math.round(Math.random() * 1000)),
   comments: yup.array().of(commentSchema).nullable(true).ensure(),
   answers: yup.array().of(answerSchema).required(),
+  overwritten: yup.boolean().nullable(),
 });
 
 export const subjectSchema = yup.object().shape({
