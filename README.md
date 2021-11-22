@@ -9,7 +9,7 @@ Zdaj.se will **always be** a free of charge service. This is possible thanks to 
 * Domain name – I am paying for zdaj.se domain from my own pocket (39.99 PLN/year), but whole platform is also available under https://zdaj-se.vercel.app, which will be always available free of charge
 
 ## 🐛 Bugs & Errors
-I you have found any bugs, feel free to report it using [Issues tab](https://github.com/bibixx/zdaj-se-pjatk/issues) or by contacting me using email [zdaj@zdaj.se](mailto:zdaj@zdaj.se).
+If you have found any bugs, feel free to report them using [Issues tab](https://github.com/bibixx/zdaj-se-pjatk/issues) or by contacting me using email [zdaj@zdaj.se](mailto:zdaj@zdaj.se).
 
 ## ✏️ Changing or adding new questions
 If you want to add new question or edit already existing one, go to [https://github.com/bibixx/zdaj-se-pjatk-data/tree/master/overrides](https://github.com/bibixx/zdaj-se-pjatk-data/tree/master/overrides), and edit or create a file with the subject's id (the one that is visible in the url) and then create a Pull Request to merge it to the main branch.
@@ -17,7 +17,7 @@ If you want to add new question or edit already existing one, go to [https://git
 Should you have any problems of questions, feel free to contact me using [zdaj@zdaj.se](mailto:zdaj@zdaj.se.).
 
 ## 🍻 Wanna help?
-Although if you want to help me with creating and maintaining this service you could use one of the methods that are available here: [https://pjatk.zdaj.se/donate](https://pjatk.zdaj.se/donate).
+If you want to help me with creating and maintaining this service you could use one of the methods that are available here: [https://pjatk.zdaj.se/donate](https://pjatk.zdaj.se/donate).
 
 ## 👨🏻‍💻 Development
 How to run this app can be found in the [DEVELOPMENT.md file](./DEVELOPMENT.md)
