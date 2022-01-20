@@ -18,6 +18,17 @@ const mapQuestionOverridesToMap = (questionOverrides: Questions) => {
   return Object.fromEntries(entries) as { [key: number]: Question };
 };
 
+const getNewQuestions = (
+  oldQuestions: Questions,
+  questionOverrides: Questions,
+) => {
+  const oldQuestionsIds = oldQuestions.map(({ id }) => id);
+
+  return questionOverrides
+    .filter(({ id }) => !oldQuestionsIds.includes(id))
+    .map((question) => ({ ...question, added: true }));
+};
+
 const getCommentsWithOverrides = (
   question: Question,
   override: Question,
@@ -74,9 +85,11 @@ export const getDataWithOverrides = (
     } as Question;
   });
 
+  const newQuestions = getNewQuestions(data, questionOverrides);
+
   return {
     ...subject,
     ...overrides,
-    data,
+    data: [...data, ...newQuestions],
   } as Subject;
 };

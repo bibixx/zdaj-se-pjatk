@@ -12,6 +12,7 @@ import { useFetch } from 'hooks/useFetch/useFetch';
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { subjectSchema } from 'validators/subjects';
 
+import { useEffect, useState } from 'react';
 import { getDataWithOverrides } from './SubjectAllQuestions.utils';
 import { Question } from './Question/Question';
 
@@ -23,13 +24,32 @@ export const SubjectAllQuestions = ({
   setUpdatedAt,
 }: SubjectAllQuestionsProps) => {
   const { subjectId } = useParams<{ subjectId: string }>();
+  const [localUpdatedAt, setLocalUpdatedAt] = useState<{
+    data: number | undefined;
+    override: number | undefined;
+  }>({ data: undefined, override: undefined });
+
+  useEffect(() => {
+    if (
+      localUpdatedAt.data === undefined &&
+      localUpdatedAt.override === undefined
+    ) {
+      return;
+    }
+
+    setUpdatedAt(
+      Math.max(localUpdatedAt.data ?? 0, localUpdatedAt.override ?? 0),
+    );
+  }, [localUpdatedAt, setUpdatedAt]);
+
   const errorHandler = useErrorHandler();
 
   const { data: subject, loading: subjectLoading } = useFetch(
     `${subjectId}.json`,
     subjectSchema,
     {
-      onComplete: (data) => setUpdatedAt(data.updatedAt),
+      onComplete: (data) =>
+        setLocalUpdatedAt((v) => ({ ...v, data: data.updatedAt })),
       onError: errorHandler,
     },
   );
@@ -38,7 +58,8 @@ export const SubjectAllQuestions = ({
     `overrides/${subjectId}.json`,
     subjectSchema,
     {
-      onComplete: (data) => setUpdatedAt(data.updatedAt),
+      onComplete: (data) =>
+        setLocalUpdatedAt((v) => ({ ...v, override: data.updatedAt })),
     },
   );
 

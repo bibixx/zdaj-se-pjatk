@@ -27,6 +27,7 @@ const questionSchema = yup.object().shape({
   comments: yup.array().of(commentSchema).nullable(true).ensure(),
   answers: yup.array().of(answerSchema).required(),
   overwritten: yup.boolean().nullable(),
+  added: yup.boolean().nullable(),
 });
 
 export const subjectSchema = yup.object().shape({

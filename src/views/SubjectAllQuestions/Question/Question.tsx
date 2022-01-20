@@ -44,7 +44,7 @@ const useStyles = makeStyles({
 });
 
 export const Question = ({
-  question: { question, answers, comments, overwritten },
+  question: { question, answers, comments, overwritten, added },
 }: Props) => {
   const classes = useStyles();
 
@@ -52,7 +52,7 @@ export const Question = ({
     <Paper variant="outlined">
       <header className={classes.questionHeader}>
         <Typography
-          variant="h5"
+          variant="h6"
           component="h2"
           className={classes.questionTextWrapper}
         >
@@ -61,6 +61,15 @@ export const Question = ({
             <Tooltip
               title="Zedytowane przez zdaj.se"
               aria-label="Zedytowane przez zdaj.se"
+              placement="bottom"
+            >
+              <AddedByZdajSeIcon className={classes.icon} />
+            </Tooltip>
+          )}
+          {added && (
+            <Tooltip
+              title="Dodane przez zdaj.se"
+              aria-label="Dodane przez zdaj.se"
               placement="bottom"
             >
               <AddedByZdajSeIcon className={classes.icon} />
