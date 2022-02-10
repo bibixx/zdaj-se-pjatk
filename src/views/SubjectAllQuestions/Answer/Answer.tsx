@@ -13,7 +13,7 @@ interface Props {
   answer: Subject['data'][number]['answers'][number];
 }
 
-export const Answer = ({ answer: { answer, correct } }: Props) => {
+export const Answer = ({ answer: { answer, correct, isMarkdown } }: Props) => {
   const labelId = `checkbox-list-label-${answer}`;
 
   return (
@@ -24,8 +24,8 @@ export const Answer = ({ answer: { answer, correct } }: Props) => {
         <ListItemText
           id={labelId}
           primary={
-            <Box fontWeight="fontWeightBold">
-              <UserContent>{answer}</UserContent>
+            <Box>
+              <UserContent isMarkdown={isMarkdown}>{answer}</UserContent>
             </Box>
           }
         />

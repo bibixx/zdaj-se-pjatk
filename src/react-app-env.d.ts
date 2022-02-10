@@ -19,3 +19,10 @@ declare module 'piwik-react-router' {
 
   export default function PiwikReactRouter(opts: Opts): Piwik;
 }
+
+interface Window {
+  MathJax: {
+    typesetPromise: () => Promise<undefined>;
+    typeset: () => void;
+  };
+}

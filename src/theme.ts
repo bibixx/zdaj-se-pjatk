@@ -1,9 +1,9 @@
-import { createMuiTheme, Theme } from '@material-ui/core/styles';
+import { createTheme, Theme } from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
 import lightBlue from '@material-ui/core/colors/lightBlue';
 
 export const getTheme = (prefersDarkMode: boolean): Theme =>
-  createMuiTheme({
+  createTheme({
     palette: {
       type: prefersDarkMode ? 'dark' : 'light',
       ...(!prefersDarkMode

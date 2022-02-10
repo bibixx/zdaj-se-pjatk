@@ -21,8 +21,8 @@ export const BugsDataChange = () => (
       <Link href="https://github.com/bibixx/zdaj-se-pjatk-data">
         https://github.com/bibixx/zdaj-se-pjatk-data
       </Link>
-      , zedytuj plik JSON z odpowiednim id przedmiotu, a następnie stwórz Pull
-      Requesta.
+      , zedytuj plik JSON z odpowiednim id przedmiotu w folderze overrides, a
+      następnie stwórz Pull Requesta.
     </Typography>
     <Typography variant="body1">
       W razie problemów lub pytań skontaktuj się ze mną mailowo na adres{' '}

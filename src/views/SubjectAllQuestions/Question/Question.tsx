@@ -33,8 +33,9 @@ const useStyles = makeStyles({
   },
   questionTextWrapper: {
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
+    fontWeight: 'bold',
   },
   icon: {
     width: '1.5rem',
@@ -44,7 +45,7 @@ const useStyles = makeStyles({
 });
 
 export const Question = ({
-  question: { question, answers, comments, overwritten, added },
+  question: { question, answers, comments, overwritten, added, isMarkdown },
 }: Props) => {
   const classes = useStyles();
 
@@ -52,11 +53,13 @@ export const Question = ({
     <Paper variant="outlined">
       <header className={classes.questionHeader}>
         <Typography
-          variant="h6"
+          variant="body1"
           component="h2"
           className={classes.questionTextWrapper}
         >
-          <UserContent>{question.trim().replace(/ - \(\d+\)/, '')}</UserContent>
+          <UserContent isMarkdown={isMarkdown}>
+            {question.trim().replace(/ - \(\d+\)/, '')}
+          </UserContent>
           {overwritten && (
             <Tooltip
               title="Zedytowane przez zdaj.se"

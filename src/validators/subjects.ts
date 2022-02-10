@@ -16,6 +16,7 @@ const commentSchema = yup.object().shape({
     .nullable()
     .transform(transformNull)
     .default(() => false),
+  isMarkdown: yup.boolean().default(false),
 });
 
 const questionSchemaEmptyIdCounter = getCounter();
@@ -26,6 +27,7 @@ const questionSchema = yup.object().shape({
     .string()
     .transform(transformNull)
     .default(() => `empty-${questionSchemaEmptyIdCounter()}`),
+  isMarkdown: yup.boolean().default(false),
   comments: yup.array().of(commentSchema).nullable(true).ensure(),
   answers: yup.array().of(answerSchema).required(),
   overwritten: yup.boolean().nullable(),
