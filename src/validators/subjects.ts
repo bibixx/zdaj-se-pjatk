@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { transformNull } from 'utils/transformNull';
+import { getCounter } from 'utils/getCounter';
 
 const answerSchema = yup.object().shape({
   answer: yup.string().ensure(),
@@ -17,13 +18,14 @@ const commentSchema = yup.object().shape({
     .default(() => false),
 });
 
+const questionSchemaEmptyIdCounter = getCounter();
+
 const questionSchema = yup.object().shape({
   question: yup.string().ensure(),
   id: yup
-    .number()
-    .nullable()
+    .string()
     .transform(transformNull)
-    .default(() => Math.round(Math.random() * 1000)),
+    .default(() => `empty-${questionSchemaEmptyIdCounter()}`),
   comments: yup.array().of(commentSchema).nullable(true).ensure(),
   answers: yup.array().of(answerSchema).required(),
   overwritten: yup.boolean().nullable(),

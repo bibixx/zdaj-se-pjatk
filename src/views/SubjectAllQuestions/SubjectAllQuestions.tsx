@@ -1,5 +1,3 @@
-/* eslint-disable react/no-danger */
-
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 

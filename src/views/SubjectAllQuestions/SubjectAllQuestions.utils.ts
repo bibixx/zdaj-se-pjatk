@@ -15,7 +15,7 @@ const mapQuestionOverridesToMap = (questionOverrides: Questions) => {
     .map<Tuple>((question) => [question.id, question])
     .filter(([id]) => Boolean(id));
 
-  return Object.fromEntries(entries) as { [key: number]: Question };
+  return Object.fromEntries(entries) as { [key: Id]: Question };
 };
 
 const getNewQuestions = (
