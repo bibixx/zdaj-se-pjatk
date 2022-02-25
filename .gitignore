@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/build
+dist
+dist-ssr
 
 # Data
 public/data

@@ -10,7 +10,7 @@ export const customFetch = async <
   checkData: T,
   init?: RequestInit,
 ): Promise<Asserts<T>> => {
-  const rootUrl = process.env.REACT_APP_DATA_PATH || '/';
+  const rootUrl = String(import.meta.env.VITE_DATA_PATH) || '/';
 
   const rootDeslashed = rootUrl.replace(/\/$/, '');
   const urlDeslashed = url.replace(/^\//, '');
