@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import './index.css';
+import './processShim';
 
 import { App } from './App';
 

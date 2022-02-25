@@ -51,7 +51,7 @@ export const App = () => {
         <AnalyticsContext.Provider value={piwik}>
           <CssBaseline />
           <Container classes={{ root: classes.root }} fixed>
-            <Router history={piwik.connectToHistory(history)}>
+            <Router history={piwik ? piwik.connectToHistory(history) : history}>
               <RelCanonical />
               <CookieNotice
                 onBannerClose={onBannerClose}

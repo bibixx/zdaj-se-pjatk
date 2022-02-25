@@ -25,13 +25,15 @@ export const useAnalytics = () => {
 
   const piwik = useMemo(
     () =>
-      PiwikReactRouter({
-        url: 'analytics.legiec.info',
-        siteId: 3,
-        updateDocumentTitle: false,
-        trackErrors: true,
-        injectScript: areCookiesAccepted,
-      }),
+      areCookiesAccepted
+        ? PiwikReactRouter({
+            url: 'analytics.legiec.info',
+            siteId: 3,
+            updateDocumentTitle: false,
+            trackErrors: true,
+            injectScript: areCookiesAccepted,
+          })
+        : null,
     [areCookiesAccepted],
   );
 
