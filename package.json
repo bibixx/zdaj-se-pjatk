@@ -8,7 +8,7 @@
     "cookies-js": "^1.2.3",
     "eslint-config-airbnb-typescript": "12.3.1",
     "history": "^4.10.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "notistack": "^1.0.9",
     "piwik-react-router": "^0.12.1",
     "prettier": "^2.3.1",
