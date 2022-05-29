@@ -11,6 +11,7 @@ import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { subjectSchema } from 'validators/subjects';
 
 import { useEffect, useState } from 'react';
+import { CommentsNote } from 'components/CommentsNote/CommentsNote';
 import { getDataWithOverrides } from './SubjectAllQuestions.utils';
 import { Question } from './Question/Question';
 
@@ -87,6 +88,7 @@ export const SubjectAllQuestions = ({
       </Helmet>
       <Header backButton>{header}</Header>
       <ContentWrapper>
+        <CommentsNote />
         {data.length === 0 && (
           <Typography variant="h5" component="h2" align="center">
             Brak pytań

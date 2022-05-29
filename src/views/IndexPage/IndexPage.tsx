@@ -13,6 +13,7 @@ import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
 
 import { pagesSchema } from 'validators/pages';
+import { CommentsNote } from 'components/CommentsNote/CommentsNote';
 
 interface IndexProps {
   setUpdatedAt: (updatedAt: number | undefined) => void;
@@ -50,6 +51,7 @@ export const IndexPage = ({ setUpdatedAt }: IndexProps) => {
       {helmetHead}
       <Header>Generatory 3.0</Header>
       <ContentWrapper>
+        <CommentsNote />
         <Paper variant="outlined">
           <List disablePadding>
             {pages?.pages.map(({ title, id }, i) => (
