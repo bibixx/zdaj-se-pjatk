@@ -37,7 +37,7 @@ export const IndexPage = ({ setUpdatedAt }: IndexProps) => {
     return (
       <>
         {helmetHead}
-        <ContentWrapper loading>
+        <ContentWrapper noHeader>
           <Box display="flex" justifyContent="center">
             <CircularProgress />
           </Box>

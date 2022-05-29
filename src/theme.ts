@@ -1,7 +1,6 @@
 import { createTheme, Theme } from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
 import lightBlue from '@material-ui/core/colors/lightBlue';
-import { blue } from '@material-ui/core/colors';
 
 export const getTheme = (prefersDarkMode: boolean): Theme =>
   createTheme({

@@ -3,16 +3,16 @@ import Paper from '@material-ui/core/Paper';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
 interface RootProps {
-  loading?: boolean;
+  noHeader?: boolean;
 }
 
 const useStyles = makeStyles<Theme, RootProps>({
-  root: ({ loading = false }) => ({
+  root: ({ noHeader = false }) => ({
     padding: '1.5rem',
     display: 'grid',
     gridTemplateColumns: '1fr',
     gridGap: '1.5rem',
-    marginTop: loading ? '64px' : 0,
+    marginTop: noHeader ? '64px' : 0,
     '& > *': {
       minWidth: 0,
     },
@@ -20,14 +20,14 @@ const useStyles = makeStyles<Theme, RootProps>({
 });
 
 interface ContentWrapperProps {
-  loading?: boolean;
+  noHeader?: boolean;
 }
 
 export const ContentWrapper: React.FC<ContentWrapperProps> = ({
   children,
-  loading = false,
+  noHeader = false,
 }) => {
-  const classes = useStyles({ loading });
+  const classes = useStyles({ noHeader });
 
   return (
     <Paper classes={{ root: classes.root }} elevation={0}>

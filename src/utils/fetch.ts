@@ -1,5 +1,11 @@
 import { AnySchema, Asserts } from 'yup';
 
+export class FetchError extends Error {
+  constructor(message: string, public status: number) {
+    super(message);
+  }
+}
+
 export const customFetch = async <
   T extends AnySchema<Type, TContext, TOut>,
   Type = any,
@@ -23,5 +29,5 @@ export const customFetch = async <
     return checkData.validate(data);
   }
 
-  throw new Error(response.statusText);
+  throw new FetchError(response.statusText, response.status);
 };
