@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { Question as QuestionType } from 'validators/subjects';
@@ -13,9 +13,11 @@ import {
   countTrue,
   formatForPercentage,
   getAlertSeverity,
+  getDefaultUserAnswers,
   getObjectValue,
   getRandomQuestions,
   parseSearch,
+  scrollToTop,
 } from './Exam.utils';
 
 export const Exam = () => {
@@ -31,29 +33,24 @@ export const Exam = () => {
   const [completed, setCompleted] = useState(false);
   const [userAnswers, setUserAnswers] = useState<Record<string, boolean[]>>({});
 
-  useEffect(() => {
+  const onReset = useCallback(() => {
     if (subjectData.state !== 'done') {
       return;
     }
 
-    setQuestions(getRandomQuestions(subjectData.data.data, questionsCount));
+    const newQuestions = getRandomQuestions(
+      subjectData.data.data,
+      questionsCount,
+    );
+    setQuestions(newQuestions);
+    setUserAnswers(getDefaultUserAnswers(newQuestions));
+    setCompleted(false);
+    scrollToTop();
   }, [questionsCount, subjectData]);
 
-  const scrollToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  };
-
-  const onReset = () => {
-    if (subjectData.state !== 'done') {
-      return;
-    }
-
-    setQuestions(getRandomQuestions(subjectData.data.data, questionsCount));
-    setCompleted(false);
-    setUserAnswers({});
-    scrollToTop();
-  };
+  useEffect(() => {
+    onReset();
+  }, [onReset]);
 
   const onSubmit = () => {
     setCompleted(true);
@@ -108,7 +105,7 @@ export const Exam = () => {
   }, [completed, questions, userAnswers]);
 
   const correctQuestions = countTrue(Object.values(questionsOutcomes));
-  const percentage = correctQuestions / questionsCount;
+  const percentage = correctQuestions / questions.length;
 
   if (subjectData.state === 'error' && subjectData.is404) {
     return (
@@ -171,6 +168,7 @@ export const Exam = () => {
             showUserSelect
             disableUserSelect={completed}
             showCorrect={completed}
+            userAnswer={userAnswers[question.id]}
             onAnswerPick={onAnswerPick}
             wasUserSelectCorrect={questionsOutcomes[question.id]}
           />

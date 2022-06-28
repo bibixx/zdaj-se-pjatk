@@ -54,3 +54,14 @@ export const getAlertSeverity = (
 
   return percentage * 100 >= successThreshold ? 'success' : 'error';
 };
+
+export const getDefaultUserAnswers = (questions: Question[]) => {
+  return Object.fromEntries(
+    questions.map(({ id, answers }) => [id, answers.map(() => false)] as const),
+  );
+};
+
+export const scrollToTop = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};

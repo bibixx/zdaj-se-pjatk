@@ -12,6 +12,7 @@ import { useStyles } from './Answer.styles';
 
 interface Props {
   answer: Subject['data'][number]['answers'][number];
+  userAnswer?: boolean;
   showCorrect: boolean;
   showUserSelect: boolean;
   disableUserSelect: boolean;
@@ -21,6 +22,7 @@ interface Props {
 
 export const Answer = ({
   answer: { answer, correct, isMarkdown },
+  userAnswer,
   showCorrect,
   showUserSelect,
   disableUserSelect,
@@ -58,6 +60,7 @@ export const Answer = ({
                     }
                   : undefined
               }
+              checked={userAnswer}
               color="primary"
             />
           )}

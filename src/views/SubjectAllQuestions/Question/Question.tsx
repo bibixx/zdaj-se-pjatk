@@ -14,6 +14,7 @@ interface Props {
   showUserSelect?: boolean;
   disableUserSelect?: boolean;
   wasUserSelectCorrect?: boolean;
+  userAnswer?: boolean[];
   onAnswerPick?: (
     questionId: string,
     answerIndex: number,
@@ -61,6 +62,7 @@ export const Question = ({
     added,
     isMarkdown,
   },
+  userAnswer,
   showCorrect = false,
   showUserSelect = false,
   disableUserSelect = false,
@@ -109,6 +111,7 @@ export const Question = ({
               key={`${answer.answer}-${i}`}
               showCorrect={showCorrect}
               showUserSelect={showUserSelect}
+              userAnswer={userAnswer?.[i]}
               disableUserSelect={disableUserSelect}
               wasUserSelectCorrect={wasUserSelectCorrect}
               onChange={(value) => onAnswerPick?.(questionId, i, value)}
