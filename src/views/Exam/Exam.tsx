@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { Question as QuestionType } from 'validators/subjects';
@@ -8,6 +8,7 @@ import { Box, Button, CircularProgress, Typography } from '@material-ui/core';
 import { Header } from 'components/Header/Header';
 import { Helmet } from 'react-helmet';
 import { Alert } from '@material-ui/lab';
+import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 import { useStyles } from './Exam.styles';
 import {
   countTrue,
@@ -21,6 +22,7 @@ import {
 } from './Exam.utils';
 
 export const Exam = () => {
+  const piwik = useContext(AnalyticsContext);
   const classes = useStyles();
   const location = useLocation();
   const { questionsCount = 10, successThreshold } = parseSearch(
@@ -106,6 +108,12 @@ export const Exam = () => {
 
   const correctQuestions = countTrue(Object.values(questionsOutcomes));
   const percentage = correctQuestions / questions.length;
+
+  useEffect(() => {
+    if (completed) {
+      piwik?.push(['trackEvent', 'Exam', 'Submit exam', 'Result', percentage]);
+    }
+  }, [completed, percentage, piwik]);
 
   if (subjectData.state === 'error' && subjectData.is404) {
     return (
