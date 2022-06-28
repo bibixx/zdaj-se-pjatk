@@ -164,7 +164,7 @@ export const Exam = () => {
             }}
           >
             <Typography variant="h6" component="h2">
-              Twój wynik: {correctQuestions} / {questionsCount} (
+              Twój wynik: {correctQuestions} / {questions.length} (
               {formatForPercentage(percentage)}%)
             </Typography>
           </Alert>
