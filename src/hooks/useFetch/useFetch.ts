@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { AnySchema, Asserts } from 'yup';
-import { customFetch } from 'utils/fetch';
+import { customFetch, FetchError } from 'utils/fetch';
 
 interface Options<
   T extends AnySchema<Type, TContext, TOut>,
@@ -63,5 +63,6 @@ export const useFetch = <
     loading,
     error,
     refetch: fetchData,
+    is404: error instanceof FetchError && error.status === 404,
   };
 };

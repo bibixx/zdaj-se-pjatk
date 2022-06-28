@@ -18,15 +18,25 @@ const useStyles = makeStyles({
 
 interface Props {
   backButton?: boolean;
+  backUrl?: string;
 }
 
-export const Header: React.FC<Props> = ({ children, backButton = false }) => {
+export const Header: React.FC<Props> = ({
+  children,
+  backButton = false,
+  backUrl = '/',
+}) => {
   const classes = useStyles();
 
   return (
     <Typography variant="h5" component="h1" className={classes.text}>
       {backButton && (
-        <IconButton aria-label="wróć" color="default" component={Link} to="/">
+        <IconButton
+          aria-label="wróć"
+          color="default"
+          component={Link}
+          to={backUrl}
+        >
           <ArrowBack />
         </IconButton>
       )}

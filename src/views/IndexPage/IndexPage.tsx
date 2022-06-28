@@ -7,17 +7,13 @@ import { CircularProgress, Divider, Box, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 import { useFetch } from 'hooks/useFetch/useFetch';
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
+import { useUpdatedAt } from 'hooks/useUpdatedAt/useUpdatedAt';
 
 import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
 
 import { pagesSchema } from 'validators/pages';
-import { CommentsNote } from 'components/CommentsNote/CommentsNote';
-
-interface IndexProps {
-  setUpdatedAt: (updatedAt: number | undefined) => void;
-}
+import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 
 const helmetHead = (
   <Helmet>
@@ -25,9 +21,9 @@ const helmetHead = (
   </Helmet>
 );
 
-export const IndexPage = ({ setUpdatedAt }: IndexProps) => {
+export const IndexPage = () => {
   const errorHandler = useErrorHandler();
-
+  const { setUpdatedAt } = useUpdatedAt();
   const { data: pages, loading } = useFetch('index.json', pagesSchema, {
     onComplete: (data) => setUpdatedAt(data.updatedAt),
     onError: errorHandler,
@@ -51,7 +47,6 @@ export const IndexPage = ({ setUpdatedAt }: IndexProps) => {
       {helmetHead}
       <Header>Generatory 3.0</Header>
       <ContentWrapper>
-        <CommentsNote />
         <Paper variant="outlined">
           <List disablePadding>
             {pages?.pages.map(({ title, id }, i) => (

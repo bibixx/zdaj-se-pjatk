@@ -1,81 +1,25 @@
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 
 import { Typography, CircularProgress, Box, Button } from '@material-ui/core';
 
 import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
 
-import { useFetch } from 'hooks/useFetch/useFetch';
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
-import { subjectSchema } from 'validators/subjects';
-
-import { useEffect, useState } from 'react';
-import { CommentsNote } from 'components/CommentsNote/CommentsNote';
-import { FetchError } from 'utils/fetch';
-import { getDataWithOverrides } from './SubjectAllQuestions.utils';
+import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { Question } from './Question/Question';
-import { useStyles } from './SubjectAllQuestions.styles';
+import { CreateExamModal } from './CreateExamModal/CreateExamModal';
 
-interface SubjectAllQuestionsProps {
-  setUpdatedAt: (updatedAt: number | undefined) => void;
-}
-
-export const SubjectAllQuestions = ({
-  setUpdatedAt,
-}: SubjectAllQuestionsProps) => {
+export const SubjectAllQuestions = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
-  const [localUpdatedAt, setLocalUpdatedAt] = useState<{
-    data: number | undefined;
-    override: number | undefined;
-  }>({ data: undefined, override: undefined });
-  const [is404, setIs404] = useState(false);
-  const classes = useStyles();
-
-  useEffect(() => {
-    if (
-      localUpdatedAt.data === undefined &&
-      localUpdatedAt.override === undefined
-    ) {
-      return;
-    }
-
-    setUpdatedAt(
-      Math.max(localUpdatedAt.data ?? 0, localUpdatedAt.override ?? 0),
-    );
-  }, [localUpdatedAt, setUpdatedAt]);
-
-  const errorHandler = useErrorHandler();
-
-  const { data: subject, loading: subjectLoading } = useFetch(
-    `${subjectId}.json`,
-    subjectSchema,
-    {
-      onComplete: (data) =>
-        setLocalUpdatedAt((v) => ({ ...v, data: data.updatedAt })),
-      onError: (error) => {
-        if (error instanceof FetchError && error.status === 404) {
-          setIs404(true);
-          return;
-        }
-
-        errorHandler(error);
-      },
-    },
+  const subjectData = useSubjectData(subjectId);
+  const location = useLocation<{ testSettings: boolean } | undefined>();
+  const [isExamModalOpen, setIsExamModalOpen] = useState(
+    location.state?.testSettings ?? false,
   );
 
-  const { data: overrides, loading: overridesLoading } = useFetch(
-    `overrides/${subjectId}.json`,
-    subjectSchema,
-    {
-      onComplete: (data) =>
-        setLocalUpdatedAt((v) => ({ ...v, override: data.updatedAt })),
-    },
-  );
-
-  const loading = subjectLoading || overridesLoading;
-
-  if (is404) {
+  if (subjectData.state === 'error' && subjectData.is404) {
     return (
       <>
         <Helmet>
@@ -85,17 +29,17 @@ export const SubjectAllQuestions = ({
           <Typography variant="h4" component="h1" align="center">
             Przedmiot nie został znaleziony
           </Typography>
-          <div className={classes.buttonWrapper}>
+          <Box display="flex" width="100%" justifyContent="center">
             <Button component={Link} to="/" variant="contained" color="primary">
               Wróć do Strony Głównej
             </Button>
-          </div>
+          </Box>
         </ContentWrapper>
       </>
     );
   }
 
-  if (loading || subject === null) {
+  if (subjectData.state === 'loading' || subjectData.state === 'error') {
     return (
       <>
         <Helmet>
@@ -110,7 +54,7 @@ export const SubjectAllQuestions = ({
     );
   }
 
-  const { data, title: header } = getDataWithOverrides(subject, overrides);
+  const { data, title: header } = subjectData.data;
 
   return (
     <>
@@ -119,16 +63,32 @@ export const SubjectAllQuestions = ({
       </Helmet>
       <Header backButton>{header}</Header>
       <ContentWrapper>
-        <CommentsNote />
+        <Box display="flex" justifyContent="center">
+          <Button
+            variant="contained"
+            onClick={() => {
+              setIsExamModalOpen(true);
+            }}
+          >
+            Wygeneruj test
+          </Button>
+        </Box>
         {data.length === 0 && (
           <Typography variant="h5" component="h2" align="center">
             Brak pytań
           </Typography>
         )}
         {data.map((question) => (
-          <Question question={question} key={question.id} />
+          <Question question={question} key={question.id} showCorrect />
         ))}
       </ContentWrapper>
+      <CreateExamModal
+        isOpen={isExamModalOpen}
+        onClose={() => {
+          setIsExamModalOpen(false);
+        }}
+        subjectId={subjectId}
+      />
     </>
   );
 };

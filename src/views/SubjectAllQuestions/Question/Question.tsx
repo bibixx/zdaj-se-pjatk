@@ -4,13 +4,21 @@ import Paper from '@material-ui/core/Paper';
 
 import { Subject } from 'validators/subjects';
 
-import { Comments } from 'components/Comments/Comments';
 import { UserContent } from 'components/UserContent/UserContent';
 import { AddedByZdajSeIcon } from 'components/AddedByZdajSeIcon/AddedByZdajSeIcon';
 import { Answer } from '../Answer/Answer';
 
 interface Props {
   question: Subject['data'][number];
+  showCorrect?: boolean;
+  showUserSelect?: boolean;
+  disableUserSelect?: boolean;
+  wasUserSelectCorrect?: boolean;
+  onAnswerPick?: (
+    questionId: string,
+    answerIndex: number,
+    answerValue: boolean,
+  ) => void;
 }
 
 const useStyles = makeStyles({
@@ -45,7 +53,19 @@ const useStyles = makeStyles({
 });
 
 export const Question = ({
-  question: { question, answers, comments, overwritten, added, isMarkdown },
+  question: {
+    id: questionId,
+    question,
+    answers,
+    overwritten,
+    added,
+    isMarkdown,
+  },
+  showCorrect = false,
+  showUserSelect = false,
+  disableUserSelect = false,
+  wasUserSelectCorrect = false,
+  onAnswerPick,
 }: Props) => {
   const classes = useStyles();
 
@@ -83,11 +103,18 @@ export const Question = ({
       <List disablePadding>
         {answers.map((answer, i) => {
           return (
-            // eslint-disable-next-line react/no-array-index-key
-            <Answer answer={answer} key={`${answer.answer}-${i}`} />
+            <Answer
+              answer={answer}
+              // eslint-disable-next-line react/no-array-index-key
+              key={`${answer.answer}-${i}`}
+              showCorrect={showCorrect}
+              showUserSelect={showUserSelect}
+              disableUserSelect={disableUserSelect}
+              wasUserSelectCorrect={wasUserSelectCorrect}
+              onChange={(value) => onAnswerPick?.(questionId, i, value)}
+            />
           );
         })}
-        <Comments comments={comments} />
       </List>
     </Paper>
   );

@@ -8,16 +8,29 @@ import { Divider, Box } from '@material-ui/core';
 
 import { UserContent } from 'components/UserContent/UserContent';
 import { Subject } from 'validators/subjects';
+import { useStyles } from './Answer.styles';
 
 interface Props {
   answer: Subject['data'][number]['answers'][number];
+  showCorrect: boolean;
+  showUserSelect: boolean;
+  disableUserSelect: boolean;
+  wasUserSelectCorrect: boolean;
+  onChange?: (value: boolean) => void;
 }
 
-export const Answer = ({ answer: { answer, correct, isMarkdown } }: Props) => {
+export const Answer = ({
+  answer: { answer, correct, isMarkdown },
+  showCorrect,
+  showUserSelect,
+  disableUserSelect,
+  wasUserSelectCorrect,
+  onChange,
+}: Props) => {
   const labelId = `checkbox-list-label-${answer}`;
+  const classes = useStyles();
 
   return (
-    // eslint-disable-next-line react/no-array-index-key
     <>
       <Divider />
       <ListItem role={undefined} dense>
@@ -30,13 +43,33 @@ export const Answer = ({ answer: { answer, correct, isMarkdown } }: Props) => {
           }
         />
         <ListItemIcon>
-          <Checkbox
-            tabIndex={-1}
-            disableRipple
-            inputProps={{ 'aria-labelledby': labelId }}
-            checked={correct}
-            disabled
-          />
+          {showUserSelect && (
+            <Checkbox
+              disableRipple
+              inputProps={{ 'aria-labelledby': labelId }}
+              disabled={disableUserSelect}
+              onChange={(v) => onChange?.(v.target.checked)}
+              classes={
+                disableUserSelect
+                  ? {
+                      root: wasUserSelectCorrect
+                        ? classes.greenCheckboxRoot
+                        : classes.redCheckboxRoot,
+                    }
+                  : undefined
+              }
+              color="primary"
+            />
+          )}
+          {showCorrect && (
+            <Checkbox
+              tabIndex={-1}
+              disableRipple
+              inputProps={{ 'aria-labelledby': labelId }}
+              checked={correct}
+              disabled
+            />
+          )}
         </ListItemIcon>
       </ListItem>
     </>

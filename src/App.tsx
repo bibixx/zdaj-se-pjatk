@@ -13,6 +13,7 @@ import { CookiePolicy } from 'views/CookiePolicy/CookiePolicy';
 import { DonatePage } from 'views/DonatePage/DonatePage';
 import { BugsDataChange } from 'views/BugsDataChange/BugsDataChange';
 import { SubjectAllQuestions } from 'views/SubjectAllQuestions/SubjectAllQuestions';
+import { Exam } from 'views/Exam/Exam';
 
 import { useAnalytics } from 'hooks/useAnalytics/useAnalytics';
 
@@ -20,6 +21,7 @@ import { Footer } from 'components/Footer/Footer';
 import { CookieNotice } from 'components/CookieNotice/CookieNotice';
 import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 import { RelCanonical } from 'components/RelCanonical/RelCanonical';
+import { UpdatedAtContext } from 'hooks/useUpdatedAt/useUpdatedAt';
 
 import { getTheme } from './theme';
 import { history } from './customHistory';
@@ -46,45 +48,50 @@ export const App = () => {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={theme}>
-      <SnackbarProvider maxSnack={1}>
-        <AnalyticsContext.Provider value={piwik}>
-          <CssBaseline />
-          <Container classes={{ root: classes.root }} fixed>
-            <Router history={piwik ? piwik.connectToHistory(history) : history}>
-              <RelCanonical />
-              <CookieNotice
-                onBannerClose={onBannerClose}
-                shouldShowCookieBanner={shouldShowCookieBanner}
-              />
-              <Switch>
-                <Route path="/" exact>
-                  <IndexPage setUpdatedAt={setUpdatedAt} />
-                </Route>
-                <Route path="/donate" exact component={DonatePage} />
-                <Route
-                  path="/polityka-cookies"
-                  exact
-                  component={CookiePolicy}
+    <UpdatedAtContext.Provider value={{ updatedAt, setUpdatedAt }}>
+      <ThemeProvider theme={theme}>
+        <SnackbarProvider maxSnack={1}>
+          <AnalyticsContext.Provider value={piwik}>
+            <CssBaseline />
+            <Container classes={{ root: classes.root }} fixed>
+              <Router
+                history={piwik ? piwik.connectToHistory(history) : history}
+              >
+                <RelCanonical />
+                <CookieNotice
+                  onBannerClose={onBannerClose}
+                  shouldShowCookieBanner={shouldShowCookieBanner}
                 />
-                <Route
-                  path="/bledy-zmiany-w-danych"
-                  exact
-                  component={BugsDataChange}
+                <Switch>
+                  <Route path="/" exact component={IndexPage} />
+                  <Route path="/donate" exact component={DonatePage} />
+                  <Route
+                    path="/polityka-cookies"
+                    exact
+                    component={CookiePolicy}
+                  />
+                  <Route
+                    path="/bledy-zmiany-w-danych"
+                    exact
+                    component={BugsDataChange}
+                  />
+                  <Route path="/:subjectId/exam" component={Exam} />
+                  <Route
+                    path="/:subjectId"
+                    exact
+                    component={SubjectAllQuestions}
+                  />
+                </Switch>
+                <Footer
+                  updatedAt={updatedAt}
+                  darkModeEnabled={darkModeEnabled}
+                  setDarkModeEnabled={setDarkModeEnabled}
                 />
-                <Route path="/:subjectId">
-                  <SubjectAllQuestions setUpdatedAt={setUpdatedAt} />
-                </Route>
-              </Switch>
-              <Footer
-                updatedAt={updatedAt}
-                darkModeEnabled={darkModeEnabled}
-                setDarkModeEnabled={setDarkModeEnabled}
-              />
-            </Router>
-          </Container>
-        </AnalyticsContext.Provider>
-      </SnackbarProvider>
-    </ThemeProvider>
+              </Router>
+            </Container>
+          </AnalyticsContext.Provider>
+        </SnackbarProvider>
+      </ThemeProvider>
+    </UpdatedAtContext.Provider>
   );
 };
