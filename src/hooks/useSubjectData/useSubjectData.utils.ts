@@ -48,9 +48,6 @@ const getCommentsWithOverrides = (
   return [...question.comments, ...overwrittenComments];
 };
 
-const areCommentsEmpty = (comments: Comments) =>
-  comments === null || comments.length === 0;
-
 export const getDataWithOverrides = (
   subject: Subject,
   overrides: Subject | null,
@@ -81,7 +78,7 @@ export const getDataWithOverrides = (
       ...question,
       ...questionOverride,
       comments,
-      overwritten: !areCommentsEmpty(questionOverride.comments),
+      overwritten: true,
     } as Question;
   });
 
