@@ -1,5 +1,3 @@
-/* eslint-disable react/no-danger */
-
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -8,6 +6,7 @@ import { Divider, Box } from '@material-ui/core';
 
 import { UserContent } from 'components/UserContent/UserContent';
 import { Subject } from 'validators/subjects';
+import { Fragment } from 'react';
 import { useStyles } from './Answer.styles';
 
 interface Props {
@@ -32,6 +31,8 @@ export const Answer = ({
   const labelId = `checkbox-list-label-${answer}`;
   const classes = useStyles();
 
+  const IconWrapper = showUserSelect && showCorrect ? ListItemIcon : Fragment;
+
   return (
     <>
       <Divider />
@@ -44,7 +45,7 @@ export const Answer = ({
             </Box>
           }
         />
-        <ListItemIcon>
+        <IconWrapper>
           {showUserSelect && (
             <Checkbox
               disableRipple
@@ -73,7 +74,7 @@ export const Answer = ({
               disabled
             />
           )}
-        </ListItemIcon>
+        </IconWrapper>
       </ListItem>
     </>
   );

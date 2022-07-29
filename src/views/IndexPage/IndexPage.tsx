@@ -6,14 +6,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { CircularProgress, Divider, Box, Paper } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-import { useFetch } from 'hooks/useFetch/useFetch';
-import { useUpdatedAt } from 'hooks/useUpdatedAt/useUpdatedAt';
-
 import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
 
-import { pagesSchema } from 'validators/pages';
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
+import { useIndexData } from 'hooks/useIndexData/useIndexData';
 
 const helmetHead = (
   <Helmet>
@@ -22,14 +18,9 @@ const helmetHead = (
 );
 
 export const IndexPage = () => {
-  const errorHandler = useErrorHandler();
-  const { setUpdatedAt } = useUpdatedAt();
-  const { data: pages, loading } = useFetch('index.json', pagesSchema, {
-    onComplete: (data) => setUpdatedAt(data.updatedAt),
-    onError: errorHandler,
-  });
+  const state = useIndexData();
 
-  if (loading) {
+  if (state.state === 'loading') {
     return (
       <>
         {helmetHead}
@@ -49,7 +40,7 @@ export const IndexPage = () => {
       <ContentWrapper>
         <Paper variant="outlined">
           <List disablePadding>
-            {pages?.pages.map(({ title, id }, i) => (
+            {state.data.pages.map(({ title, id }, i) => (
               <React.Fragment key={id}>
                 {i > 0 && <Divider />}
                 <ListItem
@@ -59,7 +50,13 @@ export const IndexPage = () => {
                   component={Link}
                   to={`/${id}`}
                 >
-                  <ListItemText primary={title} />
+                  <ListItemText
+                    primary={
+                      <>
+                        {title} <strong>({id.toUpperCase()})</strong>
+                      </>
+                    }
+                  />
                 </ListItem>
               </React.Fragment>
             ))}

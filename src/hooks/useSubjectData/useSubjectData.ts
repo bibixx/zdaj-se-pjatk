@@ -1,11 +1,15 @@
 import { useCallback, useEffect, useMemo } from 'react';
-import { Asserts } from 'yup';
 
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { useFetch } from 'hooks/useFetch/useFetch';
 import { useUpdatedAt } from 'hooks/useUpdatedAt/useUpdatedAt';
 import { FetchError } from 'utils/fetch';
-import { Subject, subjectSchema } from 'validators/subjects';
+import {
+  OverrideSubject,
+  overrideSubjectSchema,
+  Subject,
+  subjectSchema,
+} from 'validators/subjects';
 import { getDataWithOverrides } from './useSubjectData.utils';
 
 interface UseSubjectDataError {
@@ -44,8 +48,7 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
 
   const fetchOptions = useMemo(
     () => ({
-      onComplete: (data: Asserts<typeof subjectSchema>) =>
-        onLoad(data.updatedAt),
+      onComplete: (data: Subject | OverrideSubject) => onLoad(data.updatedAt),
       onError: (error: Error | null) => {
         if (error instanceof FetchError && error.status === 404) {
           return;
@@ -66,7 +69,7 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
 
   const { data: overrides, loading: overridesLoading } = useFetch(
     `overrides/${subjectId}.json`,
-    subjectSchema,
+    overrideSubjectSchema,
     fetchOptions,
   );
 

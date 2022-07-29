@@ -1,16 +1,16 @@
-import { Asserts } from 'yup';
-import { subjectSchema } from 'validators/subjects';
+import {
+  Question,
+  Comment,
+  Subject,
+  OverrideSubject,
+  OverrideQuestion,
+} from 'validators/subjects';
 
-type Subject = Asserts<typeof subjectSchema>;
-type Questions = Subject['data'];
-type Question = Questions[number];
-type Comments = Question['comments'];
-type Comment = Question['comments'][number];
 type Id = Question['id'];
 
-type Tuple = [Id, Question];
+type Tuple = [Id, OverrideQuestion];
 
-const mapQuestionOverridesToMap = (questionOverrides: Questions) => {
+const mapQuestionOverridesToMap = (questionOverrides: OverrideQuestion[]) => {
   const entries = questionOverrides
     .map<Tuple>((question) => [question.id, question])
     .filter(([id]) => Boolean(id));
@@ -19,38 +19,35 @@ const mapQuestionOverridesToMap = (questionOverrides: Questions) => {
 };
 
 const getNewQuestions = (
-  oldQuestions: Questions,
-  questionOverrides: Questions,
+  oldQuestions: Question[],
+  questionOverrides: OverrideQuestion[],
 ) => {
   const oldQuestionsIds = oldQuestions.map(({ id }) => id);
 
   return questionOverrides
     .filter(({ id }) => !oldQuestionsIds.includes(id))
-    .map((question) => ({ ...question, added: true }));
+    .map((question) => ({ ...question, id: question.id ?? null, added: true }));
 };
 
 const getCommentsWithOverrides = (
   question: Question,
-  override: Question,
-): Comments => {
+  override: OverrideQuestion,
+): Comment[] => {
   if (question.comments === null && override.comments === null) {
     return [];
   }
 
-  const overwrittenComments = override.comments.map(
-    (comment) =>
-      ({
-        ...comment,
-        overwritten: true,
-      } as Comment),
-  );
+  const overwrittenComments = override.comments.map((comment) => ({
+    ...comment,
+    overwritten: true,
+  }));
 
   return [...question.comments, ...overwrittenComments];
 };
 
 export const getDataWithOverrides = (
   subject: Subject,
-  overrides: Subject | null,
+  overrides: OverrideSubject | null,
 ): Subject => {
   if (overrides === null) {
     return subject;
@@ -77,9 +74,10 @@ export const getDataWithOverrides = (
     return {
       ...question,
       ...questionOverride,
+      id: question.id,
       comments,
       overwritten: true,
-    } as Question;
+    };
   });
 
   const newQuestions = getNewQuestions(data, questionOverrides);
@@ -87,6 +85,8 @@ export const getDataWithOverrides = (
   return {
     ...subject,
     ...overrides,
+    id: subject.id,
+    title: overrides.title ?? subject.title,
     data: [...data, ...newQuestions],
-  } as Subject;
+  };
 };
