@@ -5,6 +5,7 @@ import { getCounter } from 'utils/getCounter';
 const answerSchema = yup.object({}).shape({
   answer: yup.string().ensure(),
   correct: yup.boolean().required(),
+  isMarkdown: yup.boolean().default(false),
 });
 
 const commentSchema = yup.object({}).shape({
