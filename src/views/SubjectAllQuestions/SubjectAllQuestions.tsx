@@ -54,7 +54,8 @@ export const SubjectAllQuestions = () => {
     );
   }
 
-  const { data, title: header } = subjectData.data;
+  const { data, title } = subjectData.data;
+  const header = `${title} (${subjectId.toUpperCase()})`;
 
   return (
     <>
