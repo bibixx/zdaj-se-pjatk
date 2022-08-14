@@ -16,8 +16,15 @@ export const useAnalytics = () => {
   );
 
   const onBannerClose = (cookiesAccepted: boolean) => {
-    Cookies.set(CONSENT_KEY, cookiesAccepted);
-    Cookies.set(BANNER_CLOSED_KEY, true);
+    const expiryDate = new Date();
+    expiryDate.setFullYear(expiryDate.getFullYear() + 2);
+
+    Cookies.set(CONSENT_KEY, cookiesAccepted, {
+      expires: expiryDate,
+    });
+    Cookies.set(BANNER_CLOSED_KEY, true, {
+      expires: expiryDate,
+    });
 
     setAreCookiesAccepted(cookiesAccepted);
     setShouldShowCookieBanner(true);
