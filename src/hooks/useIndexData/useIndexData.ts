@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { useFetch } from 'hooks/useFetch/useFetch';
@@ -20,13 +20,18 @@ type UseSubjectData = UseSubjectDataLoading | UseSubjectDataDone;
 
 export const useIndexData = (): UseSubjectData => {
   const errorHandler = useErrorHandler();
-  const { setUpdatedAt } = useUpdatedAt();
+  const { setUpdatedAt, updatedAt } = useUpdatedAt();
+  const updatedAtRef = useRef(updatedAt);
+  useEffect(() => {
+    updatedAtRef.current = updatedAt;
+  }, [updatedAt]);
 
   const { data: pages, loading: pagesLoading } = useFetch(
     'index.json',
     pagesSchema,
     {
-      onComplete: (data) => setUpdatedAt(data.updatedAt),
+      onComplete: (data) =>
+        setUpdatedAt(Math.max(data.updatedAt, updatedAtRef.current ?? 0)),
       onError: errorHandler,
     },
   );
@@ -35,7 +40,8 @@ export const useIndexData = (): UseSubjectData => {
     `overrides/index.json`,
     pagesSchema,
     {
-      onComplete: (data: Pages) => setUpdatedAt(data.updatedAt),
+      onComplete: (data: Pages) =>
+        setUpdatedAt(Math.max(data.updatedAt, updatedAtRef.current ?? 0)),
       onError: (error) => {
         if (error instanceof FetchError && error.status === 404) {
           return;
