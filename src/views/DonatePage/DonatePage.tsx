@@ -23,7 +23,7 @@ export const DonatePage = () => (
           </Link>
         </li>
         <li>
-          Domena – domenę zdaj.se opłacam z własnej kieszeni (39,99 zł/rok),{' '}
+          Domena – domenę zdaj.se opłacam z własnej kieszeni (61,99 zł/rok),{' '}
           jednak cała platforma dostępna jest też pod adresem{' '}
           <Link href="https://zdaj-se.vercel.app">
             https://zdaj-se.vercel.app

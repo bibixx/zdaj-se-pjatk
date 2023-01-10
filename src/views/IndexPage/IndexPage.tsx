@@ -3,8 +3,15 @@ import { Helmet } from 'react-helmet';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { CircularProgress, Divider, Box, Paper } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import {
+  CircularProgress,
+  Divider,
+  Box,
+  Paper,
+  Link,
+  Typography,
+} from '@material-ui/core';
+import { Link as RouterLink } from 'react-router-dom';
 
 import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
@@ -36,7 +43,17 @@ export const IndexPage = () => {
   return (
     <>
       {helmetHead}
-      <Header>Generatory 3.0</Header>
+      <Header>
+        Generatory 3.0
+        <div style={{ flex: 1 }} />
+        <Typography variant="subtitle1">
+          <Box textAlign={['center', 'left']}>
+            <Link component={RouterLink} to="/donate">
+              Donate
+            </Link>
+          </Box>
+        </Typography>
+      </Header>
       <ContentWrapper>
         <Paper variant="outlined">
           <List disablePadding>
@@ -47,7 +64,7 @@ export const IndexPage = () => {
                   role={undefined}
                   dense
                   button
-                  component={Link}
+                  component={RouterLink}
                   to={`/${id}`}
                 >
                   <ListItemText
