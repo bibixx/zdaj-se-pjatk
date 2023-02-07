@@ -23,6 +23,8 @@ import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 import { RelCanonical } from 'components/RelCanonical/RelCanonical';
 import { UpdatedAtContext } from 'hooks/useUpdatedAt/useUpdatedAt';
 
+import { EditQuestionModal } from 'components/EditQuestionModal/EditQuestionModal';
+import { EditQuestionModalProvider } from 'components/EditQuestionModal/EditQuestionModal.context';
 import { getTheme } from './theme';
 import { history } from './customHistory';
 
@@ -50,47 +52,50 @@ export const App = () => {
   return (
     <UpdatedAtContext.Provider value={{ updatedAt, setUpdatedAt }}>
       <ThemeProvider theme={theme}>
-        <SnackbarProvider maxSnack={1}>
-          <AnalyticsContext.Provider value={piwik}>
-            <CssBaseline />
-            <Container classes={{ root: classes.root }} fixed>
-              <Router
-                history={piwik ? piwik.connectToHistory(history) : history}
-              >
-                <RelCanonical />
-                <CookieNotice
-                  onBannerClose={onBannerClose}
-                  shouldShowCookieBanner={shouldShowCookieBanner}
-                />
-                <Switch>
-                  <Route path="/" exact component={IndexPage} />
-                  <Route path="/donate" exact component={DonatePage} />
-                  <Route
-                    path="/polityka-cookies"
-                    exact
-                    component={CookiePolicy}
+        <EditQuestionModalProvider>
+          <SnackbarProvider maxSnack={1}>
+            <AnalyticsContext.Provider value={piwik}>
+              <CssBaseline />
+              <Container classes={{ root: classes.root }} fixed>
+                <Router
+                  history={piwik ? piwik.connectToHistory(history) : history}
+                >
+                  <RelCanonical />
+                  <CookieNotice
+                    onBannerClose={onBannerClose}
+                    shouldShowCookieBanner={shouldShowCookieBanner}
                   />
-                  <Route
-                    path="/bledy-zmiany-w-danych"
-                    exact
-                    component={BugsDataChange}
+                  <Switch>
+                    <Route path="/" exact component={IndexPage} />
+                    <Route path="/donate" exact component={DonatePage} />
+                    <Route
+                      path="/polityka-cookies"
+                      exact
+                      component={CookiePolicy}
+                    />
+                    <Route
+                      path="/bledy-zmiany-w-danych"
+                      exact
+                      component={BugsDataChange}
+                    />
+                    <Route path="/:subjectId/exam" component={Exam} />
+                    <Route
+                      path="/:subjectId"
+                      exact
+                      component={SubjectAllQuestions}
+                    />
+                  </Switch>
+                  <Footer
+                    updatedAt={updatedAt}
+                    darkModeEnabled={darkModeEnabled}
+                    setDarkModeEnabled={setDarkModeEnabled}
                   />
-                  <Route path="/:subjectId/exam" component={Exam} />
-                  <Route
-                    path="/:subjectId"
-                    exact
-                    component={SubjectAllQuestions}
-                  />
-                </Switch>
-                <Footer
-                  updatedAt={updatedAt}
-                  darkModeEnabled={darkModeEnabled}
-                  setDarkModeEnabled={setDarkModeEnabled}
-                />
-              </Router>
-            </Container>
-          </AnalyticsContext.Provider>
-        </SnackbarProvider>
+                </Router>
+              </Container>
+              <EditQuestionModal />
+            </AnalyticsContext.Provider>
+          </SnackbarProvider>
+        </EditQuestionModalProvider>
       </ThemeProvider>
     </UpdatedAtContext.Provider>
   );

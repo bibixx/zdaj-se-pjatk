@@ -80,7 +80,12 @@ export const SubjectAllQuestions = () => {
           </Typography>
         )}
         {data.map((question) => (
-          <Question question={question} key={question.id} showCorrect />
+          <Question
+            question={question}
+            key={question.id}
+            showCorrect
+            subjectId={subjectId}
+          />
         ))}
       </ContentWrapper>
       <CreateExamModal

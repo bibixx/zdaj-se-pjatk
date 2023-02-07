@@ -8,4 +8,5 @@ export const modalStyles = {
   boxShadow: 24,
   p: 4,
   outline: 0,
+  borderRadius: 4,
 };

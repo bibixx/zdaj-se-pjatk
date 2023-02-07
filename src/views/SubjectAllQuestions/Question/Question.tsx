@@ -1,19 +1,23 @@
-import { Typography, Tooltip, makeStyles } from '@material-ui/core';
+import { Typography, Tooltip, makeStyles, IconButton } from '@material-ui/core';
 import List from '@material-ui/core/List';
 import Paper from '@material-ui/core/Paper';
+import EditIcon from '@material-ui/icons/Edit';
 
 import { Subject } from 'validators/subjects';
 
 import { UserContent } from 'components/UserContent/UserContent';
 import { AddedByZdajSeIcon } from 'components/AddedByZdajSeIcon/AddedByZdajSeIcon';
+import { useEditQuestionModalContext } from 'components/EditQuestionModal/EditQuestionModal.context';
 import { Answer } from '../Answer/Answer';
 
 interface Props {
   question: Subject['data'][number];
+  subjectId: string;
   showCorrect?: boolean;
   showUserSelect?: boolean;
   disableUserSelect?: boolean;
   wasUserSelectCorrect?: boolean;
+  hideEdit?: boolean;
   userAnswer?: boolean[];
   onAnswerPick?: (
     questionId: string,
@@ -62,14 +66,17 @@ export const Question = ({
     added,
     isMarkdown,
   },
+  subjectId,
   userAnswer,
   showCorrect = false,
   showUserSelect = false,
   disableUserSelect = false,
   wasUserSelectCorrect = false,
+  hideEdit = false,
   onAnswerPick,
 }: Props) => {
   const classes = useStyles();
+  const { openModal } = useEditQuestionModalContext();
 
   return (
     <Paper variant="outlined">
@@ -82,24 +89,50 @@ export const Question = ({
           <UserContent isMarkdown={isMarkdown}>
             {question.trim().replace(/ - \(\d+\)/, '')}
           </UserContent>
-          {overwritten && (
-            <Tooltip
-              title="Zedytowane przez zdaj.se"
-              aria-label="Zedytowane przez zdaj.se"
-              placement="bottom"
-            >
-              <AddedByZdajSeIcon className={classes.icon} />
-            </Tooltip>
-          )}
-          {added && (
-            <Tooltip
-              title="Dodane przez zdaj.se"
-              aria-label="Dodane przez zdaj.se"
-              placement="bottom"
-            >
-              <AddedByZdajSeIcon className={classes.icon} />
-            </Tooltip>
-          )}
+          <div style={{ display: 'flex', gap: 12 }}>
+            {overwritten && (
+              <Tooltip
+                title="Zedytowane przez zdaj.se"
+                aria-label="Zedytowane przez zdaj.se"
+                placement="bottom"
+              >
+                <AddedByZdajSeIcon className={classes.icon} />
+              </Tooltip>
+            )}
+            {added && (
+              <Tooltip
+                title="Dodane przez zdaj.se"
+                aria-label="Dodane przez zdaj.se"
+                placement="bottom"
+              >
+                <AddedByZdajSeIcon className={classes.icon} />
+              </Tooltip>
+            )}
+            {!hideEdit && !added && (
+              <Tooltip title="Edytuj pytanie" placement="bottom">
+                <div
+                  style={{
+                    position: 'relative',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: 24,
+                    height: 24,
+                  }}
+                >
+                  <IconButton
+                    color="default"
+                    aria-label="Edytuj pytanie"
+                    component="label"
+                    onClick={() => openModal({ questionId, subjectId })}
+                    style={{ position: 'absolute' }}
+                  >
+                    <EditIcon fontSize="small" />
+                  </IconButton>
+                </div>
+              </Tooltip>
+            )}
+          </div>
         </Typography>
       </header>
       <List disablePadding>

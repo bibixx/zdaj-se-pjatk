@@ -171,6 +171,7 @@ export const Exam = () => {
         )}
         {questions.map((question) => (
           <Question
+            subjectId={subjectId}
             question={question}
             key={question.id}
             showUserSelect
@@ -179,6 +180,7 @@ export const Exam = () => {
             userAnswer={userAnswers[question.id]}
             onAnswerPick={onAnswerPick}
             wasUserSelectCorrect={questionsOutcomes[question.id]}
+            hideEdit={!completed}
           />
         ))}
         {!completed ? (
