@@ -34,7 +34,7 @@ export const useEditQuestionModalResultsStyles = makeStyles({
   outputWrapper: {
     position: 'relative',
     '& pre': {
-      overflow: 'hidden',
+      overflow: 'auto',
       background: '#272c34',
       color: '#fff',
       borderRadius: 4,
