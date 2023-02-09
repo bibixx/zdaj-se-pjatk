@@ -12,8 +12,14 @@ import { Question } from './Question/Question';
 import { CreateExamModal } from './CreateExamModal/CreateExamModal';
 
 const formatQuestionsCountText = (count: number) => {
-  if (count === 1) return 'pytanie';
-  if (count >= 2 && count <= 4) return 'pytania';
+  if (count === 1) {
+    return 'pytanie';
+  }
+
+  if (count >= 2 && count <= 4) {
+    return 'pytania';
+  }
+
   return 'pytań';
 };
 
