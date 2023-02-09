@@ -14,7 +14,7 @@ If you have found any bugs, feel free to report them using [Issues tab](https://
 ## ✏️ Changing or adding new questions
 If you want to add new question or edit already existing one, go to [https://github.com/bibixx/zdaj-se-pjatk-data/tree/master/overrides](https://github.com/bibixx/zdaj-se-pjatk-data/tree/master/overrides), and edit or create a file with the subject's id (the one that is visible in the url) and then create a Pull Request to merge it to the main branch.
 
-Should you have any problems of questions, feel free to contact me using [zdaj@zdaj.se](mailto:zdaj@zdaj.se.).
+Should you have any problems or questions, feel free to contact me using [zdaj@zdaj.se](mailto:zdaj@zdaj.se.).
 
 ## 🍻 Wanna help?
 If you want to help me with creating and maintaining this service you could use one of the methods that are available here: [https://pjatk.zdaj.se/donate](https://pjatk.zdaj.se/donate).
