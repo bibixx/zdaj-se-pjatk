@@ -11,6 +11,18 @@ import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { Question } from './Question/Question';
 import { CreateExamModal } from './CreateExamModal/CreateExamModal';
 
+const formatQuestionsCountText = (count: number) => {
+  if (count === 1) {
+    return 'pytanie';
+  }
+
+  if (count >= 2 && count <= 4) {
+    return 'pytania';
+  }
+
+  return 'pytań';
+};
+
 export const SubjectAllQuestions = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
@@ -62,7 +74,9 @@ export const SubjectAllQuestions = () => {
       <Helmet>
         <title>{header} | Generatory 3.0</title>
       </Helmet>
-      <Header backButton>{header}</Header>
+      <Header backButton>
+        {header} - {data.length} {formatQuestionsCountText(data.length)}
+      </Header>
       <ContentWrapper>
         <Box display="flex" justifyContent="center">
           <Button
