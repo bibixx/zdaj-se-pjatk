@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core';
+import { ReactNode } from 'react';
 
 export const useStyles = makeStyles({
   wrapper: {
@@ -17,7 +18,10 @@ export const useStyles = makeStyles({
   },
 });
 
-export const TextPageWrapper: React.FC = ({ children }) => {
+interface TextPageWrapperProps {
+  children: ReactNode;
+}
+export const TextPageWrapper = ({ children }: TextPageWrapperProps) => {
   const classes = useStyles();
 
   return <div className={classes.wrapper}>{children}</div>;

@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, IconButton } from '@material-ui/core';
@@ -16,16 +16,17 @@ const useStyles = makeStyles({
   },
 });
 
-interface Props {
+interface HeaderProps {
   backButton?: boolean;
   backUrl?: string;
+  children: ReactNode;
 }
 
-export const Header: React.FC<Props> = ({
+export const Header = ({
   children,
   backButton = false,
   backUrl = '/',
-}) => {
+}: HeaderProps) => {
   const classes = useStyles();
 
   return (

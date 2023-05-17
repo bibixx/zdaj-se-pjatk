@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 
@@ -21,12 +21,13 @@ const useStyles = makeStyles<Theme, RootProps>({
 
 interface ContentWrapperProps {
   noHeader?: boolean;
+  children: ReactNode;
 }
 
-export const ContentWrapper: React.FC<ContentWrapperProps> = ({
+export const ContentWrapper = ({
   children,
   noHeader = false,
-}) => {
+}: ContentWrapperProps) => {
   const classes = useStyles({ noHeader });
 
   return (
