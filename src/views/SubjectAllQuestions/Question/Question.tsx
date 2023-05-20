@@ -1,7 +1,15 @@
-import { Typography, Tooltip, makeStyles, IconButton } from '@material-ui/core';
+import {
+  Typography,
+  Tooltip,
+  makeStyles,
+  IconButton,
+  Checkbox,
+} from '@material-ui/core';
+import { green } from '@material-ui/core/colors';
 import List from '@material-ui/core/List';
 import Paper from '@material-ui/core/Paper';
 import EditIcon from '@material-ui/icons/Edit';
+import SchoolIcon from '@material-ui/icons/School';
 
 import { Subject } from 'validators/subjects';
 
@@ -24,6 +32,10 @@ interface Props {
     answerIndex: number,
     answerValue: boolean,
   ) => void;
+  learntButton?: {
+    onClick: (checked: boolean) => void;
+    checked: boolean;
+  };
 }
 
 const useStyles = makeStyles({
@@ -55,6 +67,21 @@ const useStyles = makeStyles({
     height: '1.5rem',
     marginLeft: '0.5rem',
   },
+  learntWrapper: {
+    gap: '0.375rem',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '0.125rem',
+    margin: '-0.125rem 0 -0.125rem 0.5rem',
+    cursor: 'pointer',
+  },
+  learntCheckbox: {
+    padding: 0,
+    '&.MuiCheckbox-root': {
+      color: green[800],
+    },
+  },
 });
 
 export const Question = ({
@@ -74,6 +101,7 @@ export const Question = ({
   wasUserSelectCorrect = false,
   hideEdit = false,
   onAnswerPick,
+  learntButton,
 }: Props) => {
   const classes = useStyles();
   const { openModal } = useEditQuestionModalContext();
@@ -107,6 +135,19 @@ export const Question = ({
               >
                 <AddedByZdajSeIcon className={classes.icon} />
               </Tooltip>
+            )}
+            {learntButton && (
+              <Paper
+                onClick={() => learntButton.onClick(!learntButton.checked)}
+                variant="outlined"
+                className={classes.learntWrapper}
+              >
+                <SchoolIcon fontSize="small" />
+                <Checkbox
+                  checked={learntButton.checked}
+                  className={classes.learntCheckbox}
+                />
+              </Paper>
             )}
             {!hideEdit && !added && (
               <Tooltip title="Edytuj pytanie" placement="bottom">
