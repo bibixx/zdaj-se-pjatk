@@ -1,3 +1,6 @@
+import { makeStyles } from '@material-ui/core';
+import { green } from '@material-ui/core/colors';
+
 export const modalStyles = {
   position: 'absolute' as 'absolute',
   top: '50%',
@@ -10,3 +13,17 @@ export const modalStyles = {
   outline: 0,
   borderRadius: 4,
 };
+
+export const useStyles = makeStyles({
+  learntQuestionsWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.375rem',
+  },
+  learntQuestionsCheckbox: {
+    margin: '-0.25rem 0 0 -0.25rem',
+    '&.MuiCheckbox-root': {
+      color: green[700],
+    },
+  },
+});

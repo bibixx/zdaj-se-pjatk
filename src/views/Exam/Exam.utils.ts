@@ -1,5 +1,5 @@
 import shuffle from 'shuffle-array';
-import { Question } from 'validators/subjects';
+import { LearntQuestions, Question } from 'validators/subjects';
 
 export function getObjectValue<T>(
   object: Record<string, T>,
@@ -11,13 +11,26 @@ export function getObjectValue<T>(
 export const getRandomQuestions = (
   questions: Question[],
   questionsCount: number,
+  learntQuestions?: LearntQuestions,
 ) => {
-  return shuffle(questions, { copy: true }).slice(0, questionsCount);
+  return shuffle(
+    learntQuestions?.length
+      ? questions.filter(({ id }) => !learntQuestions.includes(id))
+      : questions,
+    { copy: true },
+  ).slice(0, questionsCount);
+};
+
+export const examSearchParamsKeys = {
+  questionCount: 'n',
+  successThreshold: 'success',
+  filterOutLearnt: 'no-learnt',
 };
 
 interface QueryParams {
   questionsCount: number | undefined;
   successThreshold: number | undefined;
+  filterOutLearnt: boolean;
 }
 
 export const parseSearch = (search: string): QueryParams => {
@@ -26,16 +39,21 @@ export const parseSearch = (search: string): QueryParams => {
   const parseIntWithUndefined = (s: string) =>
     Number.parseInt(s, 10) || undefined;
 
-  const rawN = queryParams.get('n');
-  const rawSuccess = queryParams.get('success');
+  const rawN = queryParams.get(examSearchParamsKeys.questionCount);
+  const rawSuccess = queryParams.get(examSearchParamsKeys.successThreshold);
+  const rawFilterOutLearnt = queryParams.get(
+    examSearchParamsKeys.filterOutLearnt,
+  );
   const questionsCount = rawN ? parseIntWithUndefined(rawN) : undefined;
   const successThreshold = rawSuccess
     ? parseIntWithUndefined(rawSuccess)
     : undefined;
+  const filterOutLearnt = rawFilterOutLearnt === 'true';
 
   return {
     questionsCount,
     successThreshold,
+    filterOutLearnt,
   };
 };
 

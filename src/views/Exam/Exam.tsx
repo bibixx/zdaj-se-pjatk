@@ -26,9 +26,11 @@ export const Exam = () => {
   const piwik = useContext(AnalyticsContext);
   const classes = useStyles();
   const location = useLocation();
-  const { questionsCount = 10, successThreshold } = parseSearch(
-    location.search,
-  );
+  const {
+    questionsCount = 10,
+    successThreshold,
+    filterOutLearnt,
+  } = parseSearch(location.search);
 
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
@@ -38,19 +40,20 @@ export const Exam = () => {
   const [userAnswers, setUserAnswers] = useState<Record<string, boolean[]>>({});
 
   const onReset = useCallback(() => {
-    if (subjectData.state !== 'done') {
+    if (subjectData.state !== 'done' || learntQuestions.state !== 'done') {
       return;
     }
 
     const newQuestions = getRandomQuestions(
       subjectData.data.data,
       questionsCount,
+      filterOutLearnt ? learntQuestions.data.questions : undefined,
     );
     setQuestions(newQuestions);
     setUserAnswers(getDefaultUserAnswers(newQuestions));
     setCompleted(false);
     scrollToTop();
-  }, [questionsCount, subjectData]);
+  }, [questionsCount, subjectData, learntQuestions, filterOutLearnt]);
 
   useEffect(() => {
     onReset();

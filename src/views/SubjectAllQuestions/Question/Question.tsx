@@ -79,7 +79,7 @@ const useStyles = makeStyles({
   learntCheckbox: {
     padding: 0,
     '&.MuiCheckbox-root': {
-      color: green[800],
+      color: green[700],
     },
   },
 });
