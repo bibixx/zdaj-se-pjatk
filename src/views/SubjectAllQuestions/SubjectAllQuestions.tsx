@@ -8,6 +8,7 @@ import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
 
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
+import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { Question } from './Question/Question';
 import { CreateExamModal } from './CreateExamModal/CreateExamModal';
 
@@ -26,6 +27,7 @@ const formatQuestionsCountText = (count: number) => {
 export const SubjectAllQuestions = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
+  const learntQuestions = useLearntQuestions(subjectData);
   const location = useLocation<{ testSettings: boolean } | undefined>();
   const [isExamModalOpen, setIsExamModalOpen] = useState(
     location.state?.testSettings ?? false,
@@ -95,6 +97,20 @@ export const SubjectAllQuestions = () => {
         )}
         {data.map((question) => (
           <Question
+            learntButton={
+              learntQuestions.state === 'done'
+                ? {
+                    onClick: (checked: boolean) =>
+                      learntQuestions.data.setQuestion(
+                        question.id,
+                        checked ? 'add' : 'remove',
+                      ),
+                    checked:
+                      learntQuestions.data.questions?.includes(question.id) ??
+                      false,
+                  }
+                : undefined
+            }
             question={question}
             key={question.id}
             showCorrect

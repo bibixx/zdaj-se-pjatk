@@ -64,6 +64,8 @@ export const overrideSubjectSchema = yup
   .object({})
   .shape(overrideSubjectSchemaShape);
 
+export const learntQuestionSchema = yup.array().of(yup.string().required());
+
 export type Answer = yup.Asserts<typeof answerSchema>;
 export type Comment = yup.Asserts<typeof commentSchema>;
 export type Question = yup.Asserts<typeof questionSchema>;
@@ -71,3 +73,5 @@ export type Subject = yup.Asserts<typeof subjectSchema>;
 
 export type OverrideQuestion = yup.Asserts<typeof overrideQuestionSchema>;
 export type OverrideSubject = yup.Asserts<typeof overrideSubjectSchema>;
+
+export type LearntQuestions = yup.Asserts<typeof learntQuestionSchema>;

@@ -9,6 +9,7 @@ import { Header } from 'components/Header/Header';
 import { Helmet } from 'react-helmet';
 import { Alert } from '@material-ui/lab';
 import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
+import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { useStyles } from './Exam.styles';
 import {
   countTrue,
@@ -31,6 +32,7 @@ export const Exam = () => {
 
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
+  const learntQuestions = useLearntQuestions(subjectData);
   const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [completed, setCompleted] = useState(false);
   const [userAnswers, setUserAnswers] = useState<Record<string, boolean[]>>({});
@@ -171,6 +173,20 @@ export const Exam = () => {
         )}
         {questions.map((question) => (
           <Question
+            learntButton={
+              completed && learntQuestions.state === 'done'
+                ? {
+                    onClick: (checked: boolean) =>
+                      learntQuestions.data.setQuestion(
+                        question.id,
+                        checked ? 'add' : 'remove',
+                      ),
+                    checked:
+                      learntQuestions.data.questions?.includes(question.id) ??
+                      false,
+                  }
+                : undefined
+            }
             subjectId={subjectId}
             question={question}
             key={question.id}

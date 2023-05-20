@@ -26,7 +26,7 @@ interface UseSubjectDataDone {
   data: Subject;
 }
 
-type UseSubjectData =
+export type UseSubjectData =
   | UseSubjectDataError
   | UseSubjectDataLoading
   | UseSubjectDataDone;
