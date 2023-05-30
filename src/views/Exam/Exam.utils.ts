@@ -1,5 +1,6 @@
+import { LearntQuestionsSet } from 'hooks/useLearntQuestions/useLearntQuestions';
 import shuffle from 'shuffle-array';
-import { LearntQuestions, Question } from 'validators/subjects';
+import { Question } from 'validators/subjects';
 
 export function getObjectValue<T>(
   object: Record<string, T>,
@@ -11,11 +12,11 @@ export function getObjectValue<T>(
 export const getRandomQuestions = (
   questions: Question[],
   questionsCount: number,
-  learntQuestions?: LearntQuestions,
+  learntQuestions?: LearntQuestionsSet,
 ) => {
   return shuffle(
-    learntQuestions !== undefined && learntQuestions.length > 0
-      ? questions.filter(({ id }) => !learntQuestions.includes(id))
+    learntQuestions !== undefined && learntQuestions.size > 0
+      ? questions.filter(({ id }) => !learntQuestions.has(id))
       : questions,
     { copy: true },
   ).slice(0, questionsCount);

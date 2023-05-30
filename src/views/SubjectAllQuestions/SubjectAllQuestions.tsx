@@ -27,7 +27,7 @@ const formatQuestionsCountText = (count: number) => {
 export const SubjectAllQuestions = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
-  const learntQuestions = useLearntQuestions(subjectData);
+  const learntQuestions = useLearntQuestions(subjectId);
   const location = useLocation<{ testSettings: boolean } | undefined>();
   const [isExamModalOpen, setIsExamModalOpen] = useState(
     location.state?.testSettings ?? false,
@@ -97,20 +97,14 @@ export const SubjectAllQuestions = () => {
         )}
         {data.map((question) => (
           <Question
-            learntButtonData={
-              learntQuestions.state === 'done'
-                ? {
-                    onClick: (checked: boolean) =>
-                      learntQuestions.data.setQuestion(
-                        question.id,
-                        checked ? 'add' : 'remove',
-                      ),
-                    checked:
-                      learntQuestions.data.questions?.includes(question.id) ??
-                      false,
-                  }
-                : undefined
-            }
+            learntButtonData={{
+              onClick: (checked: boolean) =>
+                learntQuestions.setQuestion(
+                  question.id,
+                  checked ? 'add' : 'remove',
+                ),
+              checked: learntQuestions.questions.has(question.id),
+            }}
             question={question}
             key={question.id}
             showCorrect

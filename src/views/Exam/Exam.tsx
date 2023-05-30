@@ -34,20 +34,20 @@ export const Exam = () => {
 
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
-  const learntQuestions = useLearntQuestions(subjectData);
+  const learntQuestions = useLearntQuestions(subjectId);
   const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [completed, setCompleted] = useState(false);
   const [userAnswers, setUserAnswers] = useState<Record<string, boolean[]>>({});
 
   const onReset = useCallback(() => {
-    if (subjectData.state !== 'done' || learntQuestions.state !== 'done') {
+    if (subjectData.state !== 'done') {
       return;
     }
 
     const newQuestions = getRandomQuestions(
       subjectData.data.data,
       questionsCount,
-      filterOutLearnt ? learntQuestions.data.questions : undefined,
+      filterOutLearnt ? learntQuestions.questions : undefined,
     );
     setQuestions(newQuestions);
     setUserAnswers(getDefaultUserAnswers(newQuestions));
@@ -177,16 +177,14 @@ export const Exam = () => {
         {questions.map((question) => (
           <Question
             learntButtonData={
-              completed && learntQuestions.state === 'done'
+              completed
                 ? {
                     onClick: (checked: boolean) =>
-                      learntQuestions.data.setQuestion(
+                      learntQuestions.setQuestion(
                         question.id,
                         checked ? 'add' : 'remove',
                       ),
-                    checked:
-                      learntQuestions.data.questions?.includes(question.id) ??
-                      false,
+                    checked: learntQuestions.questions.has(question.id),
                   }
                 : undefined
             }

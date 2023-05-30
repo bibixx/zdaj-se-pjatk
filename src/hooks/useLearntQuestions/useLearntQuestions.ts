@@ -1,6 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { LearntQuestions } from 'validators/subjects';
-import { UseSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import {
   addLearntQuestionToLocalStorage,
   getLearntQuestionsFromLocalStorage,
@@ -9,60 +8,25 @@ import {
   removeLearntQuestionFromLocalStorage,
 } from './useLearntQuestions.utils';
 
-interface UseLearntQuestionsError {
-  state: 'error';
+export type LearntQuestionsSet = Set<string>;
+
+interface UseLearntQuestions {
+  questions: LearntQuestionsSet;
+  setQuestion: (questionId: QuestionId, action: 'add' | 'remove') => void;
 }
 
-interface UseLearntQuestionsLoading {
-  state: 'loading';
-}
+export const useLearntQuestions = (subjectId: string): UseLearntQuestions => {
+  const learntQuestionsKey = useMemo(
+    () => getLearntQuestionsLocalStorageKey(subjectId),
+    [subjectId],
+  );
 
-interface UseLearntQuestionsDone {
-  state: 'done';
-  data: {
-    questions: LearntQuestions;
-    setQuestion: (questionId: QuestionId, action: 'add' | 'remove') => void;
-  };
-}
-
-type UseLearntQuestions =
-  | UseLearntQuestionsError
-  | UseLearntQuestionsLoading
-  | UseLearntQuestionsDone;
-
-export const useLearntQuestions = (
-  subjectData: UseSubjectData,
-): UseLearntQuestions => {
-  const [learntQuestions, setLearntQuestions] = useState<LearntQuestions>();
-
-  useEffect(() => {
-    if (subjectData.state === 'done') {
-      const learntQuestionsKey = getLearntQuestionsLocalStorageKey(
-        subjectData.data.id,
-      );
-      setLearntQuestions(
-        getLearntQuestionsFromLocalStorage(learntQuestionsKey),
-      );
-    }
-  }, [subjectData]);
+  const [learntQuestions, setLearntQuestions] = useState<LearntQuestions>(
+    getLearntQuestionsFromLocalStorage(learntQuestionsKey),
+  );
 
   return useMemo(() => {
-    if (subjectData.state === 'error') {
-      return {
-        state: 'error',
-      };
-    }
-
-    if (subjectData.state === 'loading') {
-      return {
-        state: 'loading',
-      };
-    }
-
     const addQuestion = (questionId: QuestionId) => {
-      const learntQuestionsKey = getLearntQuestionsLocalStorageKey(
-        subjectData.data.id,
-      );
       addLearntQuestionToLocalStorage(learntQuestionsKey, questionId);
       setLearntQuestions(
         getLearntQuestionsFromLocalStorage(learntQuestionsKey),
@@ -70,9 +34,6 @@ export const useLearntQuestions = (
     };
 
     const removeQuestion = (questionId: QuestionId) => {
-      const learntQuestionsKey = getLearntQuestionsLocalStorageKey(
-        subjectData.data.id,
-      );
       removeLearntQuestionFromLocalStorage(learntQuestionsKey, questionId);
       setLearntQuestions(
         getLearntQuestionsFromLocalStorage(learntQuestionsKey),
@@ -80,14 +41,9 @@ export const useLearntQuestions = (
     };
 
     return {
-      state: 'done',
-      data: {
-        questions: learntQuestions,
-        setQuestion: (questionId: QuestionId, action: 'add' | 'remove') =>
-          action === 'add'
-            ? addQuestion(questionId)
-            : removeQuestion(questionId),
-      },
+      questions: new Set(learntQuestions ?? []),
+      setQuestion: (questionId: QuestionId, action: 'add' | 'remove') =>
+        action === 'add' ? addQuestion(questionId) : removeQuestion(questionId),
     };
-  }, [learntQuestions, subjectData]);
+  }, [learntQuestions, learntQuestionsKey]);
 };
