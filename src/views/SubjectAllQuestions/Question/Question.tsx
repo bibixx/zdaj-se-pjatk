@@ -77,6 +77,7 @@ const useStyles = makeStyles({
     padding: '0 0 0 0.375rem',
     '&.MuiCheckbox-root': {
       color: green[700],
+      background: 'transparent !important',
     },
   },
 });
