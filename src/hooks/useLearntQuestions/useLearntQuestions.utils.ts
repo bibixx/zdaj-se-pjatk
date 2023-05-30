@@ -23,7 +23,11 @@ export const getLearntQuestionsFromLocalStorage = (
     return [];
   }
 
-  return learntQuestionSchema.validateSync(JSON.parse(questions));
+  try {
+    return learntQuestionSchema.validateSync(JSON.parse(questions));
+  } catch {
+    return [];
+  }
 };
 
 export const addLearntQuestionToLocalStorage = (
