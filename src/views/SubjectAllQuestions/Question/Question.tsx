@@ -4,6 +4,7 @@ import {
   makeStyles,
   IconButton,
   Checkbox,
+  Button,
 } from '@material-ui/core';
 import { green } from '@material-ui/core/colors';
 import List from '@material-ui/core/List';
@@ -68,16 +69,12 @@ const useStyles = makeStyles({
     marginLeft: '0.5rem',
   },
   learntWrapper: {
-    gap: '0.375rem',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: '0.125rem',
+    padding: '0',
     margin: '-0.125rem 0 -0.125rem 0.5rem',
-    cursor: 'pointer',
+    width: 'min-content',
   },
   learntCheckbox: {
-    padding: 0,
+    padding: '0 0 0 0.375rem',
     '&.MuiCheckbox-root': {
       color: green[700],
     },
@@ -137,19 +134,23 @@ export const Question = ({
               </Tooltip>
             )}
             {learntButtonData && (
-              <Paper
-                onClick={() =>
-                  learntButtonData.onClick(!learntButtonData.checked)
-                }
-                variant="outlined"
-                className={classes.learntWrapper}
-              >
-                <SchoolIcon fontSize="small" />
-                <Checkbox
-                  checked={learntButtonData.checked}
-                  className={classes.learntCheckbox}
-                />
-              </Paper>
+              <Tooltip title="Oznacz jako nauczone" placement="bottom">
+                <Button
+                  fullWidth
+                  component="label"
+                  variant="outlined"
+                  className={classes.learntWrapper}
+                >
+                  <SchoolIcon fontSize="small" />
+                  <Checkbox
+                    disableRipple
+                    aria-label="Oznacz jako nauczone"
+                    checked={learntButtonData.checked}
+                    onChange={(e) => learntButtonData.onClick(e.target.checked)}
+                    className={classes.learntCheckbox}
+                  />
+                </Button>
+              </Tooltip>
             )}
             {!hideEdit && !added && (
               <Tooltip title="Edytuj pytanie" placement="bottom">
