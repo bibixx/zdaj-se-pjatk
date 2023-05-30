@@ -116,7 +116,9 @@ export const CreateExamModal = ({
                 onChange={(e) => setFilterLearnt(e.target.checked)}
                 className={classes.learntQuestionsCheckbox}
               />
-              Pomiń nauczone pytania
+              <div className={classes.learntQuestionsLabel}>
+                Pomiń pytania, na które już znasz odpowiedź
+              </div>
               <SchoolIcon />
             </div>
           </Box>

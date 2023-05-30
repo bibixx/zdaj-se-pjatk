@@ -176,7 +176,7 @@ export const Exam = () => {
         )}
         {questions.map((question) => (
           <Question
-            learntButton={
+            learntButtonData={
               completed && learntQuestions.state === 'done'
                 ? {
                     onClick: (checked: boolean) =>

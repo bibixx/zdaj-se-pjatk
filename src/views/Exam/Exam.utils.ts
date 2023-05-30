@@ -14,7 +14,7 @@ export const getRandomQuestions = (
   learntQuestions?: LearntQuestions,
 ) => {
   return shuffle(
-    learntQuestions?.length
+    learntQuestions !== undefined && learntQuestions.length > 0
       ? questions.filter(({ id }) => !learntQuestions.includes(id))
       : questions,
     { copy: true },

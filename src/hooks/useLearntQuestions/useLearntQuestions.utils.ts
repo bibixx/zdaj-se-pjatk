@@ -1,4 +1,9 @@
-import { Question, Subject, LearntQuestions } from 'validators/subjects';
+import {
+  Question,
+  Subject,
+  LearntQuestions,
+  learntQuestionSchema,
+} from 'validators/subjects';
 
 type SubjectId = Subject['id'];
 export type QuestionId = Question['id'];
@@ -18,7 +23,7 @@ export const getLearntQuestionsFromLocalStorage = (
     return [];
   }
 
-  return JSON.parse(questions);
+  return learntQuestionSchema.validateSync(JSON.parse(questions));
 };
 
 export const addLearntQuestionToLocalStorage = (

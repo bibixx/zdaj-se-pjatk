@@ -6,7 +6,7 @@ export const modalStyles = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 440,
   bgcolor: 'background.paper',
   boxShadow: 24,
   p: 4,
@@ -19,11 +19,14 @@ export const useStyles = makeStyles({
     display: 'flex',
     alignItems: 'center',
     gap: '0.375rem',
+    marginLeft: '-0.375rem',
   },
   learntQuestionsCheckbox: {
-    margin: '-0.25rem 0 0 -0.25rem',
     '&.MuiCheckbox-root': {
       color: green[700],
     },
+  },
+  learntQuestionsLabel: {
+    marginTop: '0.125rem',
   },
 });

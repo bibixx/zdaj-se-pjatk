@@ -32,7 +32,7 @@ interface Props {
     answerIndex: number,
     answerValue: boolean,
   ) => void;
-  learntButton?: {
+  learntButtonData?: {
     onClick: (checked: boolean) => void;
     checked: boolean;
   };
@@ -101,7 +101,7 @@ export const Question = ({
   wasUserSelectCorrect = false,
   hideEdit = false,
   onAnswerPick,
-  learntButton,
+  learntButtonData,
 }: Props) => {
   const classes = useStyles();
   const { openModal } = useEditQuestionModalContext();
@@ -136,15 +136,17 @@ export const Question = ({
                 <AddedByZdajSeIcon className={classes.icon} />
               </Tooltip>
             )}
-            {learntButton && (
+            {learntButtonData && (
               <Paper
-                onClick={() => learntButton.onClick(!learntButton.checked)}
+                onClick={() =>
+                  learntButtonData.onClick(!learntButtonData.checked)
+                }
                 variant="outlined"
                 className={classes.learntWrapper}
               >
                 <SchoolIcon fontSize="small" />
                 <Checkbox
-                  checked={learntButton.checked}
+                  checked={learntButtonData.checked}
                   className={classes.learntCheckbox}
                 />
               </Paper>

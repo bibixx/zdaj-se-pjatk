@@ -97,7 +97,7 @@ export const SubjectAllQuestions = () => {
         )}
         {data.map((question) => (
           <Question
-            learntButton={
+            learntButtonData={
               learntQuestions.state === 'done'
                 ? {
                     onClick: (checked: boolean) =>
