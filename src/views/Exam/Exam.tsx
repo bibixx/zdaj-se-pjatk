@@ -112,7 +112,8 @@ export const Exam = () => {
   }, [completed, questions, userAnswers]);
 
   const correctQuestions = countTrue(Object.values(questionsOutcomes));
-  const percentage = correctQuestions / questions.length;
+  const percentage =
+    questions.length === 0 ? 0 : correctQuestions / questions.length;
 
   useEffect(() => {
     if (completed) {
