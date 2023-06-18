@@ -5,12 +5,16 @@ import { useFetch } from 'hooks/useFetch/useFetch';
 import { useUpdatedAt } from 'hooks/useUpdatedAt/useUpdatedAt';
 import { FetchError } from 'utils/fetch';
 import {
-  OverrideSubject,
+  NullableIdQuestionOverrideSubject,
+  NullableIdQuestionSubject,
   overrideSubjectSchema,
   Subject,
   subjectSchema,
 } from 'validators/subjects';
-import { getDataWithOverrides } from './useSubjectData.utils';
+import {
+  generateMissingQuestionIdsForSubject,
+  getDataWithOverrides,
+} from './useSubjectData.utils';
 
 interface UseSubjectDataError {
   state: 'error';
@@ -26,7 +30,7 @@ interface UseSubjectDataDone {
   data: Subject;
 }
 
-type UseSubjectData =
+export type UseSubjectData =
   | UseSubjectDataError
   | UseSubjectDataLoading
   | UseSubjectDataDone;
@@ -48,7 +52,9 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
 
   const fetchOptions = useMemo(
     () => ({
-      onComplete: (data: Subject | OverrideSubject) => onLoad(data.updatedAt),
+      onComplete: (
+        data: NullableIdQuestionSubject | NullableIdQuestionOverrideSubject,
+      ) => onLoad(data.updatedAt),
       onError: (error: Error | null) => {
         if (error instanceof FetchError && error.status === 404) {
           return;
@@ -94,7 +100,10 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
 
     return {
       state: 'done',
-      data: getDataWithOverrides(subject, overrides),
+      data: getDataWithOverrides(
+        generateMissingQuestionIdsForSubject(subject),
+        overrides ? generateMissingQuestionIdsForSubject(overrides) : null,
+      ),
     };
   }, [error, is404, loading, overrides, subject]);
 };

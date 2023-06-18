@@ -5,10 +5,13 @@ import {
   Button,
   TextField,
   InputAdornment,
+  Checkbox,
 } from '@material-ui/core';
 import { FormEvent, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { modalStyles } from './CreateExamModal.styles';
+import { examSearchParamsKeys } from 'views/Exam/Exam.utils';
+import SchoolIcon from '@material-ui/icons/School';
+import { modalStyles, useStyles } from './CreateExamModal.styles';
 
 interface CreateExamModalProps {
   isOpen: boolean;
@@ -23,7 +26,10 @@ export const CreateExamModal = ({
 }: CreateExamModalProps) => {
   const [numberOfQuestions, setNumberOfQuestions] = useState('10');
   const [percentage, setPercentage] = useState('');
+  const [filterLearnt, setFilterLearnt] = useState(true);
   const history = useHistory();
+
+  const classes = useStyles();
 
   const parsedNumberOfQuestions = Number.parseInt(numberOfQuestions, 10);
   const parsedPercentage = Number.parseInt(percentage, 10);
@@ -37,11 +43,19 @@ export const CreateExamModal = ({
       return;
     }
 
-    query.set('n', String(parsedNumberOfQuestions));
+    query.set(
+      examSearchParamsKeys.questionCount,
+      String(parsedNumberOfQuestions),
+    );
 
     if (!Number.isNaN(parsedPercentage)) {
-      query.set('success', String(parsedPercentage));
+      query.set(
+        examSearchParamsKeys.successThreshold,
+        String(parsedPercentage),
+      );
     }
+
+    query.set(examSearchParamsKeys.filterOutLearnt, String(filterLearnt));
 
     history.push(`/${subjectId}/exam?${query.toString()}`);
   };
@@ -96,6 +110,17 @@ export const CreateExamModal = ({
               }}
               value={percentage}
             />
+            <div className={classes.learntQuestionsWrapper}>
+              <Checkbox
+                checked={filterLearnt}
+                onChange={(e) => setFilterLearnt(e.target.checked)}
+                className={classes.learntQuestionsCheckbox}
+              />
+              <div className={classes.learntQuestionsLabel}>
+                Pomiń pytania, na które już znasz odpowiedź
+              </div>
+              <SchoolIcon />
+            </div>
           </Box>
           <Box display="flex" style={{ gap: '8px' }}>
             <Button

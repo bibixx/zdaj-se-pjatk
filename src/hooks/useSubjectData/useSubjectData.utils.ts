@@ -4,7 +4,12 @@ import {
   Subject,
   OverrideSubject,
   OverrideQuestion,
+  NullableIdQuestionSubject,
+  NullableIdQuestionOverrideSubject,
+  NullableIdQuestion,
+  NullableIdOverrideQuestion,
 } from 'validators/subjects';
+import md5 from 'md5';
 
 type Id = Question['id'];
 
@@ -59,7 +64,7 @@ export const getDataWithOverrides = (
   const overridesMap = mapQuestionOverridesToMap(questionOverrides);
 
   const data = questions.map<Question>((question) => {
-    if (question.id === null) {
+    if (question.id === undefined) {
       return question;
     }
 
@@ -90,3 +95,33 @@ export const getDataWithOverrides = (
     data: [...data, ...newQuestions],
   };
 };
+
+const generateHashIdFromQuestion = (
+  question: NullableIdQuestion | NullableIdOverrideQuestion,
+) => {
+  return md5(
+    `${question.question}${question.answers.map((a) => a.answer).join()}`,
+  );
+};
+
+export function generateMissingQuestionIdsForSubject(
+  subject: NullableIdQuestionSubject,
+): Subject;
+export function generateMissingQuestionIdsForSubject(
+  subject: NullableIdQuestionOverrideSubject,
+): OverrideSubject;
+export function generateMissingQuestionIdsForSubject(
+  subject: NullableIdQuestionSubject | NullableIdQuestionOverrideSubject,
+): Subject | OverrideSubject {
+  const { data } = subject;
+
+  const dataWithIds = data.map((question) => ({
+    ...question,
+    id: generateHashIdFromQuestion(question),
+  }));
+
+  return {
+    ...subject,
+    data: dataWithIds,
+  };
+}

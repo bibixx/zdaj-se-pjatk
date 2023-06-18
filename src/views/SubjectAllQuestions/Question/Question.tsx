@@ -1,7 +1,16 @@
-import { Typography, Tooltip, makeStyles, IconButton } from '@material-ui/core';
+import {
+  Typography,
+  Tooltip,
+  makeStyles,
+  IconButton,
+  Checkbox,
+  Button,
+} from '@material-ui/core';
+import { green } from '@material-ui/core/colors';
 import List from '@material-ui/core/List';
 import Paper from '@material-ui/core/Paper';
 import EditIcon from '@material-ui/icons/Edit';
+import SchoolIcon from '@material-ui/icons/School';
 
 import { Subject } from 'validators/subjects';
 
@@ -24,6 +33,10 @@ interface Props {
     answerIndex: number,
     answerValue: boolean,
   ) => void;
+  learntButtonData?: {
+    onClick: (checked: boolean) => void;
+    checked: boolean;
+  };
 }
 
 const useStyles = makeStyles({
@@ -55,6 +68,18 @@ const useStyles = makeStyles({
     height: '1.5rem',
     marginLeft: '0.5rem',
   },
+  learntWrapper: {
+    padding: '0',
+    margin: '-0.125rem 0 -0.125rem 0.5rem',
+    width: 'min-content',
+  },
+  learntCheckbox: {
+    padding: '0 0 0 0.375rem',
+    '&.MuiCheckbox-root': {
+      color: green[700],
+      background: 'transparent !important',
+    },
+  },
 });
 
 export const Question = ({
@@ -74,6 +99,7 @@ export const Question = ({
   wasUserSelectCorrect = false,
   hideEdit = false,
   onAnswerPick,
+  learntButtonData,
 }: Props) => {
   const classes = useStyles();
   const { openModal } = useEditQuestionModalContext();
@@ -106,6 +132,25 @@ export const Question = ({
                 placement="bottom"
               >
                 <AddedByZdajSeIcon className={classes.icon} />
+              </Tooltip>
+            )}
+            {learntButtonData && (
+              <Tooltip title="Oznacz jako nauczone" placement="bottom">
+                <Button
+                  fullWidth
+                  component="label"
+                  variant="outlined"
+                  className={classes.learntWrapper}
+                >
+                  <SchoolIcon fontSize="small" />
+                  <Checkbox
+                    disableRipple
+                    aria-label="Oznacz jako nauczone"
+                    checked={learntButtonData.checked}
+                    onChange={(e) => learntButtonData.onClick(e.target.checked)}
+                    className={classes.learntCheckbox}
+                  />
+                </Button>
               </Tooltip>
             )}
             {!hideEdit && !added && (

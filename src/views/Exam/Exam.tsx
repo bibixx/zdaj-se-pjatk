@@ -9,6 +9,7 @@ import { Header } from 'components/Header/Header';
 import { Helmet } from 'react-helmet';
 import { Alert } from '@material-ui/lab';
 import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
+import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { useStyles } from './Exam.styles';
 import {
   countTrue,
@@ -25,12 +26,15 @@ export const Exam = () => {
   const piwik = useContext(AnalyticsContext);
   const classes = useStyles();
   const location = useLocation();
-  const { questionsCount = 10, successThreshold } = parseSearch(
-    location.search,
-  );
+  const {
+    questionsCount = 10,
+    successThreshold,
+    filterOutLearnt,
+  } = parseSearch(location.search);
 
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
+  const learntQuestions = useLearntQuestions(subjectId);
   const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [completed, setCompleted] = useState(false);
   const [userAnswers, setUserAnswers] = useState<Record<string, boolean[]>>({});
@@ -43,12 +47,13 @@ export const Exam = () => {
     const newQuestions = getRandomQuestions(
       subjectData.data.data,
       questionsCount,
+      filterOutLearnt ? learntQuestions.questions : undefined,
     );
     setQuestions(newQuestions);
     setUserAnswers(getDefaultUserAnswers(newQuestions));
     setCompleted(false);
     scrollToTop();
-  }, [questionsCount, subjectData]);
+  }, [questionsCount, subjectData, learntQuestions, filterOutLearnt]);
 
   useEffect(() => {
     onReset();
@@ -107,7 +112,8 @@ export const Exam = () => {
   }, [completed, questions, userAnswers]);
 
   const correctQuestions = countTrue(Object.values(questionsOutcomes));
-  const percentage = correctQuestions / questions.length;
+  const percentage =
+    questions.length === 0 ? 0 : correctQuestions / questions.length;
 
   useEffect(() => {
     if (completed) {
@@ -171,6 +177,18 @@ export const Exam = () => {
         )}
         {questions.map((question) => (
           <Question
+            learntButtonData={
+              completed
+                ? {
+                    onClick: (checked: boolean) =>
+                      learntQuestions.setQuestion(
+                        question.id,
+                        checked ? 'add' : 'remove',
+                      ),
+                    checked: learntQuestions.questions.has(question.id),
+                  }
+                : undefined
+            }
             subjectId={subjectId}
             question={question}
             key={question.id}
