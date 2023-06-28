@@ -57,7 +57,8 @@ export const Exam = () => {
 
   useEffect(() => {
     onReset();
-  }, [onReset]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questionsCount, subjectData, filterOutLearnt]);
 
   const onSubmit = () => {
     setCompleted(true);
