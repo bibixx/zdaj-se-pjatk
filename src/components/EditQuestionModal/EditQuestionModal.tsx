@@ -312,7 +312,15 @@ const EditResult = ({
           Naciśnij przycisk <em>Create pull request</em>
           <img src={createPRSrc} alt="" />
         </li>
-        <li>Wypełnij tytuł, oraz opis Pull Requestu</li>
+        <li>
+          Wypełnij tytuł, oraz opis Pull Requesta
+          <p>
+            <Typography variant="h6" component="div" align="center">
+              🚨 Pull Request bez podania źródła zostanie zamknięty bez dalszych
+              pytań 🚨
+            </Typography>
+          </p>
+        </li>
         <li>
           Naciśnij przycisk <em>Create pull request</em>
           <img src={createPR2Src} alt="" />
