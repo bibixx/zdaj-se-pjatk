@@ -15,7 +15,7 @@ import { BugsDataChange } from 'views/BugsDataChange/BugsDataChange';
 import { SubjectAllQuestions } from 'views/SubjectAllQuestions/SubjectAllQuestions';
 import { Exam } from 'views/Exam/Exam';
 
-import { useAnalytics } from 'hooks/useAnalytics/useAnalytics';
+import { piwik, useAnalytics } from 'hooks/useAnalytics/useAnalytics';
 
 import { Footer } from 'components/Footer/Footer';
 import { CookieNotice } from 'components/CookieNotice/CookieNotice';
@@ -36,7 +36,7 @@ const useStyles = makeStyles({
 });
 
 export const App = () => {
-  const { piwik, shouldShowCookieBanner, onBannerClose } = useAnalytics();
+  const { shouldShowCookieBanner, onBannerClose } = useAnalytics();
   const [updatedAt, setUpdatedAt] = useState<number | undefined>();
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
   const [darkModeEnabled, setDarkModeEnabled] = useState(prefersDarkMode);

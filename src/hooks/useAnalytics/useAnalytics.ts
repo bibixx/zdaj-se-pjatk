@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import PiwikReactRouter from 'piwik-react-router';
 import Cookies from 'cookies-js';
 
@@ -7,6 +7,16 @@ const BANNER_CLOSED_KEY = 'banner-closed';
 
 const getBooleanCookie = (key: string) => Cookies.get(key) === 'true';
 
+export const piwik = PiwikReactRouter({
+  url: 'analytics.legiec.info',
+  siteId: 3,
+  updateDocumentTitle: false,
+  trackErrors: true,
+  injectScript: true,
+});
+piwik.push(['requireConsent']);
+piwik.push(['requireCookieConsent']);
+
 export const useAnalytics = () => {
   const [areCookiesAccepted, setAreCookiesAccepted] = useState(
     getBooleanCookie(CONSENT_KEY),
@@ -14,6 +24,13 @@ export const useAnalytics = () => {
   const [shouldShowCookieBanner, setShouldShowCookieBanner] = useState(
     getBooleanCookie(BANNER_CLOSED_KEY),
   );
+
+  useEffect(() => {
+    if (areCookiesAccepted) {
+      piwik.push(['setConsentGiven']);
+      piwik.push(['setCookieConsentGiven']);
+    }
+  }, [areCookiesAccepted]);
 
   const onBannerClose = (cookiesAccepted: boolean) => {
     const expiryDate = new Date();
@@ -30,19 +47,5 @@ export const useAnalytics = () => {
     setShouldShowCookieBanner(true);
   };
 
-  const piwik = useMemo(
-    () =>
-      areCookiesAccepted
-        ? PiwikReactRouter({
-            url: 'analytics.legiec.info',
-            siteId: 3,
-            updateDocumentTitle: false,
-            trackErrors: true,
-            injectScript: areCookiesAccepted,
-          })
-        : null,
-    [areCookiesAccepted],
-  );
-
-  return { piwik, shouldShowCookieBanner, onBannerClose };
+  return { shouldShowCookieBanner, onBannerClose };
 };
