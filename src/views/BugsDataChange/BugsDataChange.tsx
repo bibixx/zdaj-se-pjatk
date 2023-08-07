@@ -1,10 +1,9 @@
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
-import { TextPageWrapper } from 'components/TextPageWrapper/TextPageWrapper';
 import { TypographyH2 } from 'components/ui/typography';
 
 export const BugsDataChange = () => (
-  <TextPageWrapper>
+  <div>
     <Header>
       <BreadCrumbs
         crumbs={[
@@ -51,5 +50,5 @@ export const BugsDataChange = () => (
         .
       </p>
     </main>
-  </TextPageWrapper>
+  </div>
 );

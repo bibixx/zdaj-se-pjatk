@@ -15,9 +15,6 @@ module.exports = {
         "2xl": "1400px",
       },
     },
-    fontFamily: {
-      sans: ['Satoshi', 'sans-serif'],
-    },
     fontWeight: {
       thin: '200',
       extralight: '300',
@@ -29,6 +26,9 @@ module.exports = {
       extrabold: '900',
     },
     extend: {
+      fontFamily: {
+        sans: ['Satoshi', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

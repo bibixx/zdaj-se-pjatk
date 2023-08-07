@@ -22,10 +22,11 @@ import { EditQuestionModalProvider } from 'components/EditQuestionModal/EditQues
 import { ThemeProvider } from 'components/ThemeProvider/ThemeProvider';
 import { AnimalEmojiProvider } from 'components/AnimalEmoji/AnimalEmoji';
 import { TooltipProvider } from 'components/ui/tooltip';
+import { Toaster } from 'components/ui/toaster';
 import { history } from './customHistory';
 
 export const App = () => {
-  const { shouldShowCookieBanner, onBannerClose } = useAnalytics();
+  const { areCookiesAccepted, onBannerClose } = useAnalytics();
   const [updatedAt, setUpdatedAt] = useState<number | undefined>();
 
   return (
@@ -43,7 +44,7 @@ export const App = () => {
                       <RelCanonical />
                       <CookieNotice
                         onBannerClose={onBannerClose}
-                        shouldShowCookieBanner={shouldShowCookieBanner}
+                        areCookiesAccepted={areCookiesAccepted}
                       />
                       <Switch>
                         <Route path="/" exact component={IndexPage} />
@@ -67,6 +68,7 @@ export const App = () => {
                       </Switch>
                       <Footer updatedAt={updatedAt} />
                     </AnimalEmojiProvider>
+                    <Toaster />
                   </Router>
                 </div>
                 <EditQuestionModal />

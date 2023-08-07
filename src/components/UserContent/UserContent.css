@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .user-content {
+    @apply overflow-auto break-words;
+  }
+
+  .user-content code {
+    @apply relative rounded bg-muted px-1 py-1 font-mono text-sm font-semibold;
+  }
+
+  .user-content pre {
+    @apply relative rounded bg-muted px-2 py-1 font-mono text-sm font-semibold;
+  }
+
+  .user-content pre code {
+    @apply px-0 py-0;
+  }
+
+  .user-content img {
+    @apply bg-white/100;
+  }
+}

@@ -1,27 +1,24 @@
-import { useSnackbar } from 'notistack';
 import { useCallback, useContext } from 'react';
-import Grow from '@material-ui/core/Grow';
 import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
+import { useToast } from 'components/ui/use-toast';
 
 export const useErrorHandler = () => {
   const piwik = useContext(AnalyticsContext);
-  const { enqueueSnackbar } = useSnackbar();
+  const { toast } = useToast();
 
   const errorHandler = useCallback(
     (error: Error | null) => {
-      enqueueSnackbar('Wystąpił błąd. Spróbuj ponownie później.', {
-        variant: 'error',
-        anchorOrigin: {
-          vertical: 'top',
-          horizontal: 'center',
-        },
-        TransitionComponent: Grow as any,
+      toast({
+        variant: 'destructive',
+        title: 'Ups, coś poszło nie tak',
+        description: 'Wystąpił błąd. Spróbuj ponownie później.',
       });
+
       piwik?.trackError(error);
       // eslint-disable-next-line no-console
       console.error(error);
     },
-    [enqueueSnackbar, piwik],
+    [piwik, toast],
   );
 
   return errorHandler;

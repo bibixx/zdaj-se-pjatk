@@ -1,81 +1,50 @@
-import React, { useState } from 'react';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import { Divider, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-
 import { MultilineText } from 'components/MultilineText/MultilineText';
 import { Comment } from 'validators/subjects';
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from 'components/ui/accordion';
 import { getSortedComments, getCommentsAmount } from './Comments.utils';
 import { CommentHeader } from './CommentHeader/CommentHeader';
 
-const useStyles = makeStyles({
-  icon: {
-    display: 'flex',
-    alignItems: 'center',
-    height: '2.625rem',
-    marginLeft: '0.5rem',
-  },
-  commentsExpandButtonClickable: {
-    cursor: 'pointer',
-  },
-});
-
-interface Props {
+interface CommentsProps {
   comments: Comment[];
 }
 
-export const Comments = ({ comments }: Props) => {
-  const [commentsVisible, setCommentsVisible] = useState(false);
-
+export const Comments = ({ comments }: CommentsProps) => {
   const data = comments !== null ? getSortedComments(comments) : [];
-  const classes = useStyles();
-
-  const disabled = data.length === 0;
 
   return (
-    <>
-      <Divider />
-      <ListItem
-        role={undefined}
-        dense
-        button={!disabled ? undefined : false}
-        onClick={() => setCommentsVisible(!commentsVisible)}
-        className={!disabled ? classes.commentsExpandButtonClickable : ''}
+    <Accordion type="single" collapsible>
+      <AccordionItem
+        value="comments"
+        className="rounded-b-lg border-none overflow-hidden"
       >
-        <ListItemText>{getCommentsAmount(data.length)}</ListItemText>
-        <ListItemIcon>
-          <div className={classes.icon}>
-            {!disabled &&
-              (commentsVisible ? <ExpandLessIcon /> : <ExpandMoreIcon />)}
-          </div>
-        </ListItemIcon>
-      </ListItem>
-      {commentsVisible && (
-        <>
-          <Divider />
+        {/* TODO: Border radius */}
+        <AccordionTrigger className="px-4 py-1 hover:bg-accent hover:text-accent-foreground">
+          <span className="text-xs font-normal text-muted-foreground">
+            {getCommentsAmount(data.length)}
+          </span>
+        </AccordionTrigger>
+        <AccordionContent className="pb-0">
           {data.map(({ author, comment, date, overwritten }) => (
-            <React.Fragment key={comment}>
-              <ListItem role={undefined} dense>
-                <ListItemText>
-                  <CommentHeader
-                    author={author}
-                    date={date}
-                    overwritten={overwritten ?? false}
-                  />
-                  <Typography variant="body2">
-                    <MultilineText>{comment}</MultilineText>
-                  </Typography>
-                </ListItemText>
-              </ListItem>
-            </React.Fragment>
+            <div
+              key={`${comment}-${author}-${date}`}
+              className="px-4 py-2 first:pt-1"
+            >
+              <CommentHeader
+                author={author}
+                date={date}
+                overwritten={overwritten ?? false}
+              />
+              <MultilineText>{comment}</MultilineText>
+            </div>
           ))}
-        </>
-      )}
-    </>
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
   );
 };

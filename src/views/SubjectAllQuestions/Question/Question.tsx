@@ -8,6 +8,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 import { BadgeInfo, GraduationCap, Pencil } from 'lucide-react';
 import { Checkbox } from 'components/ui/checkbox';
 import { Fragment, memo } from 'react';
+import { Comments } from 'components/Comments/Comments';
 import { Answer } from '../Answer/Answer';
 
 type IsLearntProps =
@@ -44,6 +45,7 @@ export const Question = memo(
       overwritten,
       added,
       isMarkdown,
+      comments,
     },
     subjectId,
     userAnswer,
@@ -165,6 +167,12 @@ export const Question = memo(
             );
           })}
         </div>
+        {comments.length > 0 && (
+          <>
+            <div className="w-full border-b-2" />
+            <Comments comments={comments} />
+          </>
+        )}
       </Card>
     );
   },
