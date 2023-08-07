@@ -21,6 +21,7 @@
     "react/require-default-props": 0,
     "curly": ["error", "all"],
     "react/jsx-props-no-spreading": 0,
-    "no-plusplus": 0
+    "no-plusplus": 0,
+    "@typescript-eslint/no-use-before-define": 0
   }
 }

@@ -52,6 +52,7 @@ export const IndexPage = () => {
           <Button asChild size="icon" variant="outline">
             <RouterLink to="/donate" className="text-xl">
               <AnimalEmoji />
+              <span className="sr-only">Wspomóż</span>
             </RouterLink>
           </Button>
         </Header>

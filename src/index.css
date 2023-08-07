@@ -72,11 +72,12 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
-}
 
-.MuiPaper-root {
-  background: rgba(255, 255, 255, 0.1) !important;
+  .link {
+    @apply text-blue-500 hover:underline dark:text-blue-400;
+  }
 }

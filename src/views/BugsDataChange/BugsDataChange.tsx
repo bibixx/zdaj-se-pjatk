@@ -1,8 +1,7 @@
-import Link from '@material-ui/core/Link/Link';
-import Typography from '@material-ui/core/Typography/Typography';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
 import { TextPageWrapper } from 'components/TextPageWrapper/TextPageWrapper';
+import { TypographyH2 } from 'components/ui/typography';
 
 export const BugsDataChange = () => (
   <TextPageWrapper>
@@ -19,27 +18,38 @@ export const BugsDataChange = () => (
         ]}
       />
     </Header>
-    <h2>Błędy</h2>
-    <Typography variant="body1">
-      Jeśli znalazłeś/znalazłaś jakiś błąd, zgłoś go za pomocą{' '}
-      <Link href="https://github.com/bibixx/zdaj-se-pjatk/issues/new">
-        Issue na GitHubie
-      </Link>{' '}
-      lub skontaktuj się ze mną mailowo na adres{' '}
-      <Link href="mailto:zdaj@zdaj.se">zdaj@zdaj.se</Link>.
-    </Typography>
-    <h2>Zmiana lub dodanie pytań</h2>
-    <Typography variant="body1">
-      Jeśli chcesz dodać nowe pytania do bazy wejdź na{' '}
-      <Link href="https://github.com/bibixx/zdaj-se-pjatk-data">
-        https://github.com/bibixx/zdaj-se-pjatk-data
-      </Link>
-      , zedytuj plik JSON z odpowiednim id przedmiotu w folderze overrides, a
-      następnie stwórz Pull Requesta.
-    </Typography>
-    <Typography variant="body1">
-      W razie problemów lub pytań skontaktuj się ze mną mailowo na adres{' '}
-      <Link href="mailto:zdaj@zdaj.se">zdaj@zdaj.se</Link>.
-    </Typography>
+    <main className="px-2">
+      <TypographyH2 className="mt-0">Błędy</TypographyH2>
+      <p>
+        Jeśli znalazłeś/znalazłaś jakiś błąd, zgłoś go za pomocą{' '}
+        <a
+          href="https://github.com/bibixx/zdaj-se-pjatk/issues/new"
+          className="link"
+        >
+          Issue na GitHubie
+        </a>{' '}
+        lub skontaktuj się ze mną mailowo na adres{' '}
+        <a href="mailto:zdaj@zdaj.se" className="link">
+          zdaj@zdaj.se
+        </a>
+        .
+      </p>
+      <TypographyH2>Zmiana lub dodanie pytań</TypographyH2>
+      <p>
+        Jeśli chcesz dodać nowe pytania do bazy wejdź na{' '}
+        <a href="https://github.com/bibixx/zdaj-se-pjatk-data" className="link">
+          https://github.com/bibixx/zdaj-se-pjatk-data
+        </a>
+        , zedytuj plik JSON z odpowiednim id przedmiotu w folderze overrides, a
+        następnie stwórz Pull Requesta.
+      </p>
+      <p>
+        W razie problemów lub pytań skontaktuj się ze mną mailowo na adres{' '}
+        <a href="mailto:zdaj@zdaj.se" className="link">
+          zdaj@zdaj.se
+        </a>
+        .
+      </p>
+    </main>
   </TextPageWrapper>
 );

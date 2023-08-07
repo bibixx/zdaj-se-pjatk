@@ -1,0 +1,15 @@
+@tailwind components;
+
+@layer components {
+  .cookie-policy h3 + p {
+    @apply mt-0;
+  }
+
+  .cookie-policy p {
+    @apply my-3;
+  }
+
+  .cookie-policy a {
+    @apply text-blue-500 hover:underline dark:text-blue-400;
+  }
+}
