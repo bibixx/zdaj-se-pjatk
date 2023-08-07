@@ -1,0 +1,28 @@
+@tailwind components;
+
+@layer components {
+  .edit-question-modal {
+    @apply overflow-auto break-words;
+  }
+
+  .edit-question-modal a {
+    @apply text-blue-500 hover:underline dark:text-blue-400;
+  }
+
+  .edit-question-modal ol {
+    @apply list-decimal list-inside;
+  }
+
+  .edit-question-modal ol li {
+    @apply my-2;
+  }
+
+  .edit-question-modal ol li img {
+    @apply mt-1;
+    @apply rounded-sm shadow-sm;
+  }
+
+  .edit-question-modal pre {
+    @apply max-h-[300px] overflow-auto rounded-sm shadow-sm bg-muted font-mono text-sm font-semibold py-2 px-4 mt-1;
+  }
+}

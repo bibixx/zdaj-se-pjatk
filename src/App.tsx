@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Router, Switch, Route } from 'react-router-dom';
-import { SnackbarProvider } from 'notistack';
 
 import { IndexPage } from 'views/IndexPage/IndexPage';
 import { CookiePolicy } from 'views/CookiePolicy/CookiePolicy';
@@ -33,48 +32,46 @@ export const App = () => {
     <UpdatedAtContext.Provider value={{ updatedAt, setUpdatedAt }}>
       <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
         <EditQuestionModalProvider>
-          <SnackbarProvider maxSnack={1}>
-            <TooltipProvider delayDuration={400}>
-              <AnalyticsContext.Provider value={piwik}>
-                <div className="max-w-3xl mx-auto font-normal">
-                  <Router
-                    history={piwik ? piwik.connectToHistory(history) : history}
-                  >
-                    <AnimalEmojiProvider>
-                      <RelCanonical />
-                      <CookieNotice
-                        onBannerClose={onBannerClose}
-                        areCookiesAccepted={areCookiesAccepted}
+          <TooltipProvider delayDuration={400}>
+            <AnalyticsContext.Provider value={piwik}>
+              <div className="max-w-3xl mx-auto font-normal">
+                <Router
+                  history={piwik ? piwik.connectToHistory(history) : history}
+                >
+                  <AnimalEmojiProvider>
+                    <RelCanonical />
+                    <CookieNotice
+                      onBannerClose={onBannerClose}
+                      areCookiesAccepted={areCookiesAccepted}
+                    />
+                    <Switch>
+                      <Route path="/" exact component={IndexPage} />
+                      <Route path="/donate" exact component={DonatePage} />
+                      <Route
+                        path="/polityka-cookies"
+                        exact
+                        component={CookiePolicy}
                       />
-                      <Switch>
-                        <Route path="/" exact component={IndexPage} />
-                        <Route path="/donate" exact component={DonatePage} />
-                        <Route
-                          path="/polityka-cookies"
-                          exact
-                          component={CookiePolicy}
-                        />
-                        <Route
-                          path="/bledy-zmiany-w-danych"
-                          exact
-                          component={BugsDataChange}
-                        />
-                        <Route path="/:subjectId/exam" component={Exam} />
-                        <Route
-                          path="/:subjectId"
-                          exact
-                          component={SubjectAllQuestions}
-                        />
-                      </Switch>
-                      <Footer updatedAt={updatedAt} />
-                    </AnimalEmojiProvider>
-                    <Toaster />
-                  </Router>
-                </div>
-                <EditQuestionModal />
-              </AnalyticsContext.Provider>
-            </TooltipProvider>
-          </SnackbarProvider>
+                      <Route
+                        path="/bledy-zmiany-w-danych"
+                        exact
+                        component={BugsDataChange}
+                      />
+                      <Route path="/:subjectId/exam" component={Exam} />
+                      <Route
+                        path="/:subjectId"
+                        exact
+                        component={SubjectAllQuestions}
+                      />
+                    </Switch>
+                    <Footer updatedAt={updatedAt} />
+                  </AnimalEmojiProvider>
+                  <Toaster />
+                </Router>
+              </div>
+              <EditQuestionModal />
+            </AnalyticsContext.Provider>
+          </TooltipProvider>
         </EditQuestionModalProvider>
       </ThemeProvider>
     </UpdatedAtContext.Provider>
