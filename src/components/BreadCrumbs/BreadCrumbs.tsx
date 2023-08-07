@@ -12,7 +12,7 @@ interface BreadCrumbsProps {
 export const BreadCrumbs = ({ crumbs }: BreadCrumbsProps) => {
   const lastCrumb = crumbs[crumbs.length - 1];
   return (
-    <div className="flex items-center">
+    <div className="flex items-center max-w-full">
       {crumbs.slice(0, crumbs.length - 1).map((crumb, i) => {
         const key =
           typeof crumb.content === 'string'
@@ -39,7 +39,9 @@ export const BreadCrumbs = ({ crumbs }: BreadCrumbsProps) => {
           </Fragment>
         );
       })}
-      <h1 className="text-xl font-semibold select-none">{lastCrumb.content}</h1>
+      <h1 className="text-xl font-semibold select-none overflow-hidden">
+        {lastCrumb.content}
+      </h1>
     </div>
   );
 };
