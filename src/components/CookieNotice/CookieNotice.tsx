@@ -19,6 +19,7 @@ export const CookieNotice = ({ onBannerClose, areCookiesAccepted }: Props) => {
       setTimeout(() => {
         const { dismiss } = toast({
           title: '🍪 Cookies',
+          htmlId: 'cookieConsentBanner',
           className: 'md:max-w-none w-auto',
           description: (
             <div className="mr-6">

@@ -14,6 +14,7 @@ type ToasterToast = ToastProps & {
   action?: ToastActionElement;
   hideClose?: boolean;
   duration?: number;
+  htmlId?: string;
 };
 
 const actionTypes = {
