@@ -86,8 +86,8 @@ export const DonatePage = () => (
       </div>
 
       <p className="text-md text-center text-muted-foreground">
-        Jako że pomagam.pl nie pozwala śledzić ile wpłacacie, przekaż maila z
-        potwierdzeniem na&nbsp;
+        Jako że pomagam.pl nie pozwala śledzić ile zostało wpłacone przez
+        zdaj.se, przekaż maila z potwierdzeniem na&nbsp;
         <a href="donate@zdaj.se" className="link">
           donate@zdaj.se
         </a>{' '}
@@ -124,10 +124,11 @@ const DonationCard = ({ page }: DonationCardProps) => {
           )}
         >
           <img
-            className={cn('transition-all', {
+            className={cn('transition-all select-none', {
               'blur-md': explicit,
               'blur-none': explicitShown,
             })}
+            draggable="false"
             src={`/donate/${image}`}
             alt=""
           />

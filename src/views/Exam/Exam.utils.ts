@@ -1,4 +1,5 @@
 import { LearntQuestionsSet } from 'hooks/useLearntQuestions/useLearntQuestions';
+import { AlertCircle, CheckCircle, Info } from 'lucide-react';
 import shuffle from 'shuffle-array';
 import { Question } from 'validators/subjects';
 
@@ -63,17 +64,6 @@ export const countTrue = (values: boolean[]) => values.filter(Boolean).length;
 export const formatForPercentage = (n: number) =>
   (n * 100).toFixed(2).replace('.', ',');
 
-export const getAlertSeverity = (
-  percentage: number,
-  successThreshold: number | undefined,
-) => {
-  if (successThreshold === undefined) {
-    return 'info';
-  }
-
-  return percentage * 100 >= successThreshold ? 'success' : 'error';
-};
-
 export const getDefaultUserAnswers = (questions: Question[]) => {
   return Object.fromEntries(
     questions.map(({ id, answers }) => [id, answers.map(() => false)] as const),
@@ -83,4 +73,28 @@ export const getDefaultUserAnswers = (questions: Question[]) => {
 export const scrollToTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+};
+
+export const getAlertClasses = (
+  percentage: number,
+  successThreshold: number | undefined,
+) => {
+  if (successThreshold === undefined) {
+    return 'border-blue-200 bg-blue-100 text-blue-900';
+  }
+
+  return percentage * 100 >= successThreshold
+    ? 'border-green-200 bg-green-100 text-green-900'
+    : 'border-red-200 bg-red-100 text-red-900';
+};
+
+export const getAlertIcon = (
+  percentage: number,
+  successThreshold: number | undefined,
+) => {
+  if (successThreshold === undefined) {
+    return Info;
+  }
+
+  return percentage * 100 >= successThreshold ? CheckCircle : AlertCircle;
 };

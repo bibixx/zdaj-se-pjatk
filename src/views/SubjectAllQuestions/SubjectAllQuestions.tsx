@@ -1,25 +1,17 @@
 import { useCallback, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useLocation, useParams } from 'react-router-dom';
-
-import {
-  Typography,
-  CircularProgress,
-  Box,
-  Button as MUIButton,
-} from '@material-ui/core';
-
-import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
-
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { polishPlural } from 'utils/polishPlural';
 import { Button } from 'components/ui/button';
+import { Skeleton } from 'components/ui/skeleton';
 import { ClipboardList } from 'lucide-react';
 import { Question } from './Question/Question';
 import { CreateExamModal } from './CreateExamModal/CreateExamModal';
+import { QuestionSkeleton } from './Question/QuestionSkeleton';
 
 const formatQuestionsCountText = (count: number) =>
   polishPlural('pytanie', 'pytania', 'pytań', count);
@@ -46,21 +38,16 @@ export const SubjectAllQuestions = () => {
         <Helmet>
           <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
-        <ContentWrapper noHeader>
-          <Typography variant="h4" component="h1" align="center">
-            Przedmiot nie został znaleziony
-          </Typography>
-          <Box display="flex" width="100%" justifyContent="center">
-            <MUIButton
-              component={Link}
-              to="/"
-              variant="contained"
-              color="primary"
-            >
-              Wróć do Strony Głównej
-            </MUIButton>
-          </Box>
-        </ContentWrapper>
+        <div className="h-96 flex flex-col justify-center gap-4">
+          <h1 className="text-3xl font-semibold tracking-tight transition-colors text-center">
+            Ups, wybrany przedmiot nie został znaleziony 🙈
+          </h1>
+          <div className="flex w-full justify-center">
+            <Button asChild variant="outline">
+              <Link to="/">Wróć do strony głównej</Link>
+            </Button>
+          </div>
+        </div>
       </>
     );
   }
@@ -71,17 +58,66 @@ export const SubjectAllQuestions = () => {
         <Helmet>
           <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
-        <ContentWrapper noHeader>
-          <Box display="flex" justifyContent="center">
-            <CircularProgress />
-          </Box>
-        </ContentWrapper>
+        <Header>
+          <BreadCrumbs
+            crumbs={[
+              {
+                content: 'Generatory 3.0',
+                to: '/',
+              },
+              {
+                content: <Skeleton className="h-6 w-[400px]" />,
+                id: 'subjectId',
+              },
+            ]}
+          />
+        </Header>
+        <div className="flex justify-center mb-4">
+          <div className="relative">
+            <Button
+              variant="default"
+              size="lg"
+              tabIndex={-1}
+              disabled
+              className="invisible"
+            >
+              <ClipboardList className="mr-3 h-5 w-5" />
+              Wygeneruj test
+            </Button>
+            <Skeleton className="w-full h-full absolute top-0 left-0" />
+          </div>
+        </div>
+        <div className="flex flex-col gap-4">
+          <QuestionSkeleton />
+          <QuestionSkeleton />
+          <QuestionSkeleton />
+        </div>
       </>
     );
   }
 
   const { data, title } = subjectData.data;
   const header = `${title} (${subjectId.toUpperCase()})`;
+
+  if (data.length === 0) {
+    return (
+      <>
+        <Helmet>
+          <title>{header} | Generatory 3.0</title>
+        </Helmet>
+        <div className="h-96 flex flex-col justify-center gap-4">
+          <h1 className="text-3xl font-semibold tracking-tight transition-colors text-center">
+            Ups, wybrany przedmiot nie ma żadnych pytań 🙈
+          </h1>
+          <div className="flex w-full justify-center">
+            <Button asChild variant="outline">
+              <Link to="/">Wróć do strony głównej</Link>
+            </Button>
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -130,11 +166,6 @@ export const SubjectAllQuestions = () => {
             Wygeneruj test
           </Button>
         </div>
-        {data.length === 0 && (
-          <Typography variant="h5" component="h2" align="center">
-            Brak pytań
-          </Typography>
-        )}
         <div className="flex flex-col gap-4">
           {data.map((question) => (
             <Question

@@ -1,8 +1,5 @@
 import { Helmet } from 'react-helmet';
-import { CircularProgress, Box } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
-
-import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
 import { Header } from 'components/Header/Header';
 
 import { useIndexData } from 'hooks/useIndexData/useIndexData';
@@ -16,6 +13,7 @@ import {
 } from 'components/ui/table';
 import { Button } from 'components/ui/button';
 import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
+import { IndexPageSkeletonRows } from './IndexPageSkeleton';
 
 const helmetHead = (
   <Helmet>
@@ -26,15 +24,42 @@ const helmetHead = (
 export const IndexPage = () => {
   const state = useIndexData();
 
+  const header = (
+    <div className="px-2">
+      <Header>
+        <h1 className="text-2xl font-bold select-none">
+          <span className="text-blue-500 dark:text-inherit">G</span>
+          eneratory 3.0
+        </h1>
+        <div className="flex-1" />
+        <Button asChild size="icon" variant="outline">
+          <RouterLink to="/donate" className="text-xl">
+            <AnimalEmoji />
+            <span className="sr-only">Wspomóż</span>
+          </RouterLink>
+        </Button>
+      </Header>
+    </div>
+  );
+
   if (state.state === 'loading') {
     return (
       <>
         {helmetHead}
-        <ContentWrapper noHeader>
-          <Box display="flex" justifyContent="center">
-            <CircularProgress />
-          </Box>
-        </ContentWrapper>
+        {header}
+        <Table>
+          <TableHeader>
+            <TableRow hasHover={false}>
+              <TableHead className="max-md:px-4">Przedmiot</TableHead>
+              <TableHead className="text-right max-md:hidden w-24">
+                Ilość pytań
+              </TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <IndexPageSkeletonRows />
+          </TableBody>
+        </Table>
       </>
     );
   }
@@ -42,26 +67,12 @@ export const IndexPage = () => {
   return (
     <>
       {helmetHead}
-      <div className="px-2">
-        <Header>
-          <h1 className="text-2xl font-bold select-none">
-            <span className="text-sky-500 dark:text-inherit">G</span>eneratory
-            3.0
-          </h1>
-          <div className="flex-1" />
-          <Button asChild size="icon" variant="outline">
-            <RouterLink to="/donate" className="text-xl">
-              <AnimalEmoji />
-              <span className="sr-only">Wspomóż</span>
-            </RouterLink>
-          </Button>
-        </Header>
-      </div>
+      {header}
       <Table>
         <TableHeader>
           <TableRow hasHover={false}>
             <TableHead className="max-md:px-4">Przedmiot</TableHead>
-            <TableHead className="text-right max-md:hidden">
+            <TableHead className="text-right max-md:hidden w-24">
               Ilość pytań
             </TableHead>
           </TableRow>

@@ -1,17 +1,17 @@
-import {
-  Modal,
-  Box,
-  Typography,
-  Button,
-  TextField,
-  InputAdornment,
-  Checkbox,
-} from '@material-ui/core';
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { examSearchParamsKeys } from 'views/Exam/Exam.utils';
-import SchoolIcon from '@material-ui/icons/School';
-import { modalStyles, useStyles } from './CreateExamModal.styles';
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from 'components/ui/dialog';
+import { Label } from 'components/ui/label';
+import { Input } from 'components/ui/input';
+import { Button } from 'components/ui/button';
+import { Checkbox } from 'components/ui/checkbox';
 
 interface CreateExamModalProps {
   isOpen: boolean;
@@ -29,7 +29,12 @@ export const CreateExamModal = ({
   const [filterLearnt, setFilterLearnt] = useState(true);
   const history = useHistory();
 
-  const classes = useStyles();
+  useEffect(() => {
+    if (isOpen) {
+      setNumberOfQuestions('10');
+      setPercentage('');
+    }
+  }, [isOpen]);
 
   const parsedNumberOfQuestions = Number.parseInt(numberOfQuestions, 10);
   const parsedPercentage = Number.parseInt(percentage, 10);
@@ -66,77 +71,83 @@ export const CreateExamModal = ({
   };
 
   return (
-    <Modal open={isOpen} onClose={onCancel}>
-      <Box sx={modalStyles}>
+    <Dialog
+      open={isOpen}
+      onOpenChange={(state) => {
+        if (!state) {
+          onCancel();
+        }
+      }}
+    >
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Parametry testu</DialogTitle>
+        </DialogHeader>
         <form onSubmit={onSubmit}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Parametry testu
-          </Typography>
-          <Box
-            marginY={2}
-            display="flex"
-            flexDirection="column"
-            style={{ gap: '16px' }}
-          >
-            <TextField
-              id="outlined-basic"
-              label="Ilość pytań"
-              variant="outlined"
-              fullWidth
-              type="number"
-              inputProps={{
-                min: 1,
-                step: 1,
-              }}
-              autoFocus
-              onChange={(e) => setNumberOfQuestions(e.target.value)}
-              value={numberOfQuestions}
-            />
-            <TextField
-              id="outlined-basic"
-              label="Procent do zdania (opcjonalne)"
-              variant="outlined"
-              fullWidth
-              type="number"
-              inputProps={{
-                min: 0,
-                max: 100,
-                step: 1,
-              }}
-              onChange={(e) => setPercentage(e.target.value)}
-              // eslint-disable-next-line react/jsx-no-duplicate-props
-              InputProps={{
-                endAdornment: <InputAdornment position="end">%</InputAdornment>,
-              }}
-              value={percentage}
-            />
-            <div className={classes.learntQuestionsWrapper}>
-              <Checkbox
-                checked={filterLearnt}
-                onChange={(e) => setFilterLearnt(e.target.checked)}
-                className={classes.learntQuestionsCheckbox}
+          <div className="grid gap-4 py-4">
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="number-of-questions" className="text-right">
+                Ilość pytań*
+              </Label>
+              <Input
+                id="number-of-questions"
+                value={numberOfQuestions}
+                className="col-span-3"
+                onChange={(e) => setNumberOfQuestions(e.target.value)}
+                type="number"
+                min={1}
+                step={1}
               />
-              <div className={classes.learntQuestionsLabel}>
-                Pomiń pytania, na które już znasz odpowiedź
-              </div>
-              <SchoolIcon />
             </div>
-          </Box>
-          <Box display="flex" style={{ gap: '8px' }}>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="percentage" className="text-right">
+                Procent do zdania
+              </Label>
+              <Input
+                id="percentage"
+                className="col-span-3"
+                onChange={(e) => setPercentage(e.target.value)}
+                value={percentage}
+                type="number"
+                min={0}
+                max={100}
+                step={1}
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <div />
+              <div className="flex items-center space-x-2 col-span-3">
+                <Checkbox
+                  id="filterLearnt"
+                  checked={filterLearnt}
+                  onCheckedChange={(state) => {
+                    if (state === 'indeterminate') {
+                      return;
+                    }
+
+                    setFilterLearnt(state);
+                  }}
+                />
+                <Label htmlFor="filterLearnt">
+                  Pomiń pytania, na które już znasz odpowiedź
+                </Label>
+              </div>
+            </div>
+          </div>
+          <DialogFooter>
+            <Button type="button" variant="outline" onClick={onCancel}>
+              Anuluj
+            </Button>
             <Button
-              variant="contained"
-              color="primary"
+              variant="blue"
               type="submit"
               disabled={Number.isNaN(parsedNumberOfQuestions)}
             >
               Wygeneruj
             </Button>
-            <Button variant="outlined" onClick={onCancel}>
-              Anuluj
-            </Button>
-          </Box>
+          </DialogFooter>
         </form>
-      </Box>
-    </Modal>
+      </DialogContent>
+    </Dialog>
   );
 };

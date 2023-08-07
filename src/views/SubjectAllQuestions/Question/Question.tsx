@@ -56,6 +56,7 @@ export const Question = memo(
     ...props
   }: QuestionProps) => {
     const { openModal } = useEditQuestionModalContext();
+    const showEdit = !hideEdit && !added;
 
     return (
       <Card>
@@ -93,52 +94,54 @@ export const Question = memo(
                   </TooltipTrigger>
                 </Tooltip>
               )}
-              <div className="flex items-center">
-                {overwritten && (
-                  <Tooltip>
-                    <TooltipContent>Zedytowane przez zdaj.se</TooltipContent>
-                    <TooltipTrigger className="cursor-default">
-                      <div className="inline-flex items-center justify-center h-8 w-8">
-                        <BadgeInfo
-                          width="1.25rem"
-                          height="1.25rem"
-                          absoluteStrokeWidth
-                          aria-label="Zedytowane przez zdaj.se"
-                        />
-                      </div>
-                    </TooltipTrigger>
-                  </Tooltip>
-                )}
-                {added && (
-                  <Tooltip>
-                    <TooltipContent>Dodane przez zdaj.se</TooltipContent>
-                    <TooltipTrigger className="cursor-default">
-                      <div className="inline-flex items-center justify-center h-8 w-8">
-                        <BadgeInfo
-                          width="1.25rem"
-                          height="1.25rem"
-                          absoluteStrokeWidth
-                          aria-label="Dodane przez zdaj.se"
-                        />
-                      </div>
-                    </TooltipTrigger>
-                  </Tooltip>
-                )}
-                {!hideEdit && !added && (
-                  <Tooltip>
-                    <TooltipContent>Edytuj</TooltipContent>
-                    <TooltipTrigger>
-                      <Button
-                        variant="ghost"
-                        size="icon-sm"
-                        onClick={() => openModal({ questionId, subjectId })}
-                      >
-                        <Pencil className="h-4 w-4" />
-                      </Button>
-                    </TooltipTrigger>
-                  </Tooltip>
-                )}
-              </div>
+              {(overwritten || added || showEdit) && (
+                <div className="flex items-center">
+                  {overwritten && (
+                    <Tooltip>
+                      <TooltipContent>Zedytowane przez zdaj.se</TooltipContent>
+                      <TooltipTrigger className="cursor-default">
+                        <div className="inline-flex items-center justify-center h-8 w-8">
+                          <BadgeInfo
+                            width="1.25rem"
+                            height="1.25rem"
+                            absoluteStrokeWidth
+                            aria-label="Zedytowane przez zdaj.se"
+                          />
+                        </div>
+                      </TooltipTrigger>
+                    </Tooltip>
+                  )}
+                  {added && (
+                    <Tooltip>
+                      <TooltipContent>Dodane przez zdaj.se</TooltipContent>
+                      <TooltipTrigger className="cursor-default">
+                        <div className="inline-flex items-center justify-center h-8 w-8">
+                          <BadgeInfo
+                            width="1.25rem"
+                            height="1.25rem"
+                            absoluteStrokeWidth
+                            aria-label="Dodane przez zdaj.se"
+                          />
+                        </div>
+                      </TooltipTrigger>
+                    </Tooltip>
+                  )}
+                  {showEdit && (
+                    <Tooltip>
+                      <TooltipContent>Edytuj</TooltipContent>
+                      <TooltipTrigger>
+                        <Button
+                          variant="ghost"
+                          size="icon-sm"
+                          onClick={() => openModal({ questionId, subjectId })}
+                        >
+                          <Pencil className="h-4 w-4" />
+                        </Button>
+                      </TooltipTrigger>
+                    </Tooltip>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </header>

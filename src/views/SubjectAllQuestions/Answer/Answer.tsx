@@ -32,21 +32,16 @@ export const Answer = ({
       </div>
       <div className="flex ml-2">
         {showUserSelect && (
+          // TODO: Nested button
           <Button
             size="icon-sm"
             variant="ghost"
             disabled={disableUserSelect}
             className="disabled:opacity-100"
+            onClick={() => onChange?.(!userAnswer)}
           >
             <Checkbox
               aria-labelledby={labelId}
-              onCheckedChange={(newChecked) => {
-                if (newChecked === 'indeterminate') {
-                  return;
-                }
-
-                onChange?.(newChecked);
-              }}
               className={getUserSelectClassNames(
                 disableUserSelect,
                 wasUserSelectCorrect,

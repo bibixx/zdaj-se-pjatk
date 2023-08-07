@@ -3,19 +3,22 @@ import { Link, useLocation, useParams } from 'react-router-dom';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { Question as QuestionType } from 'validators/subjects';
 import { Question } from 'views/SubjectAllQuestions/Question/Question';
-import { ContentWrapper } from 'components/ContentWrapper/ContentWrapper';
-import { Box, Button, CircularProgress, Typography } from '@material-ui/core';
 import { Header } from 'components/Header/Header';
 import { Helmet } from 'react-helmet';
-import { Alert } from '@material-ui/lab';
 import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
-import { useStyles } from './Exam.styles';
+import { cn } from 'utils';
+import { Button } from 'components/ui/button';
+import { Cog } from 'lucide-react';
+import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
+import { Skeleton } from 'components/ui/skeleton';
+import { QuestionSkeleton } from 'views/SubjectAllQuestions/Question/QuestionSkeleton';
 import {
   countTrue,
   formatForPercentage,
-  getAlertSeverity,
+  getAlertClasses,
+  getAlertIcon,
   getDefaultUserAnswers,
   getObjectValue,
   getRandomQuestions,
@@ -25,7 +28,6 @@ import {
 
 export const Exam = () => {
   const piwik = useContext(AnalyticsContext);
-  const classes = useStyles();
   const location = useLocation();
   const {
     questionsCount = 10,
@@ -35,7 +37,14 @@ export const Exam = () => {
 
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
-  const learntQuestions = useLearntQuestions(subjectId);
+  const { setQuestion, questions: learntQuestions } =
+    useLearntQuestions(subjectId);
+  const onLearntChange = useCallback(
+    (questionId: string, checked: boolean) =>
+      setQuestion(questionId, checked ? 'add' : 'remove'),
+    [setQuestion],
+  );
+
   const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [completed, setCompleted] = useState(false);
   const [userAnswers, setUserAnswers] = useState<Record<string, boolean[]>>({});
@@ -48,7 +57,7 @@ export const Exam = () => {
     const newQuestions = getRandomQuestions(
       subjectData.data.data,
       questionsCount,
-      filterOutLearnt ? learntQuestions.questions : undefined,
+      filterOutLearnt ? learntQuestions : undefined,
     );
     setQuestions(newQuestions);
     setUserAnswers(getDefaultUserAnswers(newQuestions));
@@ -129,16 +138,16 @@ export const Exam = () => {
         <Helmet>
           <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
-        <ContentWrapper noHeader>
-          <Typography variant="h4" component="h1" align="center">
-            Przedmiot nie został znaleziony
-          </Typography>
-          <Box display="flex" width="100%" justifyContent="center">
-            <Button component={Link} to="/" variant="contained" color="primary">
-              Wróć do Strony Głównej
+        <div className="h-96 flex flex-col justify-center gap-4">
+          <h1 className="text-3xl font-semibold tracking-tight transition-colors text-center">
+            Ups, wybrany przedmiot nie został znaleziony 🙈
+          </h1>
+          <div className="flex w-full justify-center">
+            <Button asChild variant="outline">
+              <Link to="/">Wróć do strony głównej</Link>
             </Button>
-          </Box>
-        </ContentWrapper>
+          </div>
+        </div>
       </>
     );
   }
@@ -149,15 +158,34 @@ export const Exam = () => {
         <Helmet>
           <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
-        <ContentWrapper noHeader>
-          <Box display="flex" justifyContent="center">
-            <CircularProgress />
-          </Box>
-        </ContentWrapper>
+        <Header>
+          <BreadCrumbs
+            crumbs={[
+              {
+                content: 'Generatory 3.0',
+                to: '/',
+              },
+              {
+                content: <Skeleton className="h-5 w-[250px]" />,
+                id: 'subjectId',
+                to: `/${subjectId}`,
+              },
+              {
+                content: 'Test',
+              },
+            ]}
+          />
+        </Header>
+        <div className="flex flex-col gap-4">
+          <QuestionSkeleton />
+          <QuestionSkeleton />
+          <QuestionSkeleton />
+        </div>
       </>
     );
   }
 
+  const AlertIcon = getAlertIcon(percentage, successThreshold);
   return (
     <>
       <Header>
@@ -177,34 +205,25 @@ export const Exam = () => {
           ]}
         />
       </Header>
-      <ContentWrapper>
+      <div className="flex flex-col gap-4">
         {completed && (
-          <Alert
-            severity={getAlertSeverity(percentage, successThreshold)}
-            classes={{
-              icon: classes.icon,
-            }}
+          <div
+            className={cn(
+              'w-full rounded-lg border px-4 py-4 flex gap-3 items-center',
+              getAlertClasses(percentage, successThreshold),
+            )}
           >
-            <Typography variant="h6" component="h2">
+            <AlertIcon className="h-5 w-5" />
+            <div className="text-xl font-medium leading-none tracking-tight">
               Twój wynik: {correctQuestions} / {questions.length} (
               {formatForPercentage(percentage)}%)
-            </Typography>
-          </Alert>
+            </div>
+          </div>
         )}
         {questions.map((question) => (
           <Question
-            learntButtonData={
-              completed
-                ? {
-                    onClick: (checked: boolean) =>
-                      learntQuestions.setQuestion(
-                        question.id,
-                        checked ? 'add' : 'remove',
-                      ),
-                    checked: learntQuestions.questions.has(question.id),
-                  }
-                : undefined
-            }
+            onLearntChange={onLearntChange}
+            isLearnt={learntQuestions.has(question.id)}
             subjectId={subjectId}
             question={question}
             key={question.id}
@@ -218,33 +237,35 @@ export const Exam = () => {
           />
         ))}
         {!completed ? (
-          <Button variant="contained" color="primary" onClick={onSubmit}>
-            Sprawdź
-          </Button>
+          <div className="flex justify-center">
+            <Button variant="blue" onClick={onSubmit} className="min-w-[256px]">
+              Sprawdź
+            </Button>
+          </div>
         ) : (
-          <Box display="flex" width="100%" style={{ gap: '16px' }}>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={onReset}
-              style={{ flex: '2' }}
-            >
+          <div className="flex justify-center gap-2">
+            <Button variant="blue" onClick={onReset}>
               Wygeneruj nowy test
             </Button>
-            <Button
-              variant="outlined"
-              component={Link}
-              style={{ flex: '1' }}
-              to={{
-                pathname: `/${subjectId}`,
-                state: { testSettings: true },
-              }}
-            >
-              Zmień parametry testu
-            </Button>
-          </Box>
+            <Tooltip>
+              <TooltipContent>Zmień parametry testu</TooltipContent>
+              <TooltipTrigger asChild>
+                <Button variant="outline" size="icon" onClick={onReset} asChild>
+                  <Link
+                    to={{
+                      pathname: `/${subjectId}`,
+                      state: { testSettings: true },
+                    }}
+                  >
+                    <Cog className="w-4 h-4" />
+                    <span className="sr-only">Zmień parametry testu</span>
+                  </Link>
+                </Button>
+              </TooltipTrigger>
+            </Tooltip>
+          </div>
         )}
-      </ContentWrapper>
+      </div>
     </>
   );
 };
