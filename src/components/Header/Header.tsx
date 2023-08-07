@@ -1,20 +1,7 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import ArrowBack from '@material-ui/icons/ArrowBack';
-
-const useStyles = makeStyles({
-  button: {
-    textTransform: 'none',
-  },
-  text: {
-    display: 'flex',
-    alignItems: 'center',
-    fontWeight: 'bold',
-    margin: '1rem 0',
-  },
-});
 
 interface HeaderProps {
   backButton?: boolean;
@@ -27,10 +14,8 @@ export const Header = ({
   backButton = false,
   backUrl = '/',
 }: HeaderProps) => {
-  const classes = useStyles();
-
   return (
-    <Typography variant="h5" component="h1" className={classes.text}>
+    <div className="flex items-center my-4">
       {backButton && (
         <IconButton
           aria-label="wróć"
@@ -42,6 +27,6 @@ export const Header = ({
         </IconButton>
       )}
       {children}
-    </Typography>
+    </div>
   );
 };

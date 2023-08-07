@@ -4,11 +4,24 @@ import Link from '@material-ui/core/Link';
 import { Box, Typography } from '@material-ui/core';
 import { Header } from 'components/Header/Header';
 
+import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { donationOptions } from './DonatePage.utils';
 
 export const DonatePage = () => (
   <>
-    <Header backButton>Donate</Header>
+    <Header>
+      <BreadCrumbs
+        crumbs={[
+          {
+            content: 'Generatory 3.0',
+            to: '/',
+          },
+          {
+            content: 'Donate',
+          },
+        ]}
+      />
+    </Header>
     <Typography variant="body1">
       Zdaj.se <strong>zawsze</strong> będzie serwisem darmowym dzięki
       zastosowanym darmowym technologiom i serwisom:

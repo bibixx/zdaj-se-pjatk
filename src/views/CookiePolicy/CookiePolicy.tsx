@@ -1,11 +1,23 @@
-/* eslint-disable max-len, react/jsx-one-expression-per-line */
 import Link from '@material-ui/core/Link';
+import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
 import { TextPageWrapper } from 'components/TextPageWrapper/TextPageWrapper';
 
 export const CookiePolicy = () => (
   <TextPageWrapper>
-    <Header backButton>Polityka Cookies</Header>
+    <Header>
+      <BreadCrumbs
+        crumbs={[
+          {
+            content: 'Generatory 3.0',
+            to: '/',
+          },
+          {
+            content: 'Polityka Cookies',
+          },
+        ]}
+      />
+    </Header>
     <p>
       Poniższa Polityka Cookies określa zasady zapisywania i uzyskiwania dostępu
       do danych na Urządzeniach Użytkowników korzystających z Serwisu do celów

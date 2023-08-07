@@ -1,12 +1,6 @@
-import { useMemo, useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Router, Switch, Route } from 'react-router-dom';
 import { SnackbarProvider } from 'notistack';
-
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import { IndexPage } from 'views/IndexPage/IndexPage';
 import { CookiePolicy } from 'views/CookiePolicy/CookiePolicy';
@@ -25,73 +19,54 @@ import { UpdatedAtContext } from 'hooks/useUpdatedAt/useUpdatedAt';
 
 import { EditQuestionModal } from 'components/EditQuestionModal/EditQuestionModal';
 import { EditQuestionModalProvider } from 'components/EditQuestionModal/EditQuestionModal.context';
-import { getTheme } from './theme';
+import { ThemeProvider } from 'components/ThemeProvider/ThemeProvider';
+import { AnimalEmojiProvider } from 'components/AnimalEmoji/AnimalEmoji';
 import { history } from './customHistory';
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: '50rem',
-    margin: '0 auto 1rem',
-  },
-});
 
 export const App = () => {
   const { shouldShowCookieBanner, onBannerClose } = useAnalytics();
   const [updatedAt, setUpdatedAt] = useState<number | undefined>();
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
-  const [darkModeEnabled, setDarkModeEnabled] = useState(prefersDarkMode);
-
-  useEffect(() => {
-    setDarkModeEnabled(prefersDarkMode);
-  }, [prefersDarkMode]);
-
-  const theme = useMemo(() => getTheme(darkModeEnabled), [darkModeEnabled]);
-
-  const classes = useStyles();
 
   return (
     <UpdatedAtContext.Provider value={{ updatedAt, setUpdatedAt }}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
         <EditQuestionModalProvider>
           <SnackbarProvider maxSnack={1}>
             <AnalyticsContext.Provider value={piwik}>
-              <CssBaseline />
-              <Container classes={{ root: classes.root }} fixed>
+              <div className="max-w-3xl mx-auto font-normal">
                 <Router
                   history={piwik ? piwik.connectToHistory(history) : history}
                 >
-                  <RelCanonical />
-                  <CookieNotice
-                    onBannerClose={onBannerClose}
-                    shouldShowCookieBanner={shouldShowCookieBanner}
-                  />
-                  <Switch>
-                    <Route path="/" exact component={IndexPage} />
-                    <Route path="/donate" exact component={DonatePage} />
-                    <Route
-                      path="/polityka-cookies"
-                      exact
-                      component={CookiePolicy}
+                  <AnimalEmojiProvider>
+                    <RelCanonical />
+                    <CookieNotice
+                      onBannerClose={onBannerClose}
+                      shouldShowCookieBanner={shouldShowCookieBanner}
                     />
-                    <Route
-                      path="/bledy-zmiany-w-danych"
-                      exact
-                      component={BugsDataChange}
-                    />
-                    <Route path="/:subjectId/exam" component={Exam} />
-                    <Route
-                      path="/:subjectId"
-                      exact
-                      component={SubjectAllQuestions}
-                    />
-                  </Switch>
-                  <Footer
-                    updatedAt={updatedAt}
-                    darkModeEnabled={darkModeEnabled}
-                    setDarkModeEnabled={setDarkModeEnabled}
-                  />
+                    <Switch>
+                      <Route path="/" exact component={IndexPage} />
+                      <Route path="/donate" exact component={DonatePage} />
+                      <Route
+                        path="/polityka-cookies"
+                        exact
+                        component={CookiePolicy}
+                      />
+                      <Route
+                        path="/bledy-zmiany-w-danych"
+                        exact
+                        component={BugsDataChange}
+                      />
+                      <Route path="/:subjectId/exam" component={Exam} />
+                      <Route
+                        path="/:subjectId"
+                        exact
+                        component={SubjectAllQuestions}
+                      />
+                    </Switch>
+                    <Footer updatedAt={updatedAt} />
+                  </AnimalEmojiProvider>
                 </Router>
-              </Container>
+              </div>
               <EditQuestionModal />
             </AnalyticsContext.Provider>
           </SnackbarProvider>

@@ -17,7 +17,9 @@ const alias = fs
 export default defineConfig({
   plugins: [react()],
   base: '/',
-  resolve: { alias },
+  resolve: {
+    alias
+  },
   define: {
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   }

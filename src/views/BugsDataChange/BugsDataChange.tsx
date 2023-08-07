@@ -1,11 +1,24 @@
 import Link from '@material-ui/core/Link/Link';
 import Typography from '@material-ui/core/Typography/Typography';
+import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
 import { TextPageWrapper } from 'components/TextPageWrapper/TextPageWrapper';
 
 export const BugsDataChange = () => (
   <TextPageWrapper>
-    <Header backButton>Błędy / Zmiany w danych</Header>
+    <Header>
+      <BreadCrumbs
+        crumbs={[
+          {
+            content: 'Generatory 3.0',
+            to: '/',
+          },
+          {
+            content: 'Błędy / Zmiany w danych',
+          },
+        ]}
+      />
+    </Header>
     <h2>Błędy</h2>
     <Typography variant="body1">
       Jeśli znalazłeś/znalazłaś jakiś błąd, zgłoś go za pomocą{' '}

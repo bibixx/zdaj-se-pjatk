@@ -19,6 +19,7 @@ function getNewPages(pages: Pages, overrides: Pages | null): Page[] {
       return {
         ...page,
         ...overridePagesMap[page.id],
+        questionsCount: page.questionsCount,
       };
     }),
   ];
