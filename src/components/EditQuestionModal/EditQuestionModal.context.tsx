@@ -1,11 +1,4 @@
-import {
-  createContext,
-  ReactNode,
-  useCallback,
-  useContext,
-  useMemo,
-  useState,
-} from 'react';
+import { createContext, ReactNode, useCallback, useContext, useMemo, useState } from 'react';
 
 interface EditQuestionModalContextData {
   subjectId: string;
@@ -18,8 +11,7 @@ interface EditQuestionModalContextState {
   data: EditQuestionModalContextData | null;
 }
 
-const EditQuestionModalContext =
-  createContext<EditQuestionModalContextState | null>(null);
+const EditQuestionModalContext = createContext<EditQuestionModalContextState | null>(null);
 
 export const useEditQuestionModalContext = () => {
   const context = useContext(EditQuestionModalContext);
@@ -34,9 +26,7 @@ export const useEditQuestionModalContext = () => {
 interface EditQuestionModalProviderProps {
   children: ReactNode;
 }
-export const EditQuestionModalProvider = ({
-  children,
-}: EditQuestionModalProviderProps) => {
+export const EditQuestionModalProvider = ({ children }: EditQuestionModalProviderProps) => {
   const [data, setData] = useState<EditQuestionModalContextData | null>(null);
   const openModal = useCallback((newData: EditQuestionModalContextData) => {
     setData(newData);
@@ -54,9 +44,5 @@ export const EditQuestionModalProvider = ({
     [closeModal, data, openModal],
   );
 
-  return (
-    <EditQuestionModalContext.Provider value={value}>
-      {children}
-    </EditQuestionModalContext.Provider>
-  );
+  return <EditQuestionModalContext.Provider value={value}>{children}</EditQuestionModalContext.Provider>;
 };

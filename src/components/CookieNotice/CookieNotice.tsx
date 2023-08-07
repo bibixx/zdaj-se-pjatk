@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useToast } from 'components/ui/use-toast';
 import { useEffect, useRef } from 'react';
+
+import { useToast } from 'components/ui/use-toast';
 import { Button } from 'components/ui/button';
 
 interface Props {
@@ -23,8 +24,7 @@ export const CookieNotice = ({ onBannerClose, areCookiesAccepted }: Props) => {
           className: 'md:max-w-none w-auto',
           description: (
             <div className="mr-6">
-              Używamy plików cookie w celu prowadzenia danych statystycznych.
-              Możesz przeczytać o nich więcej w{' '}
+              Używamy plików cookie w celu prowadzenia danych statystycznych. Możesz przeczytać o nich więcej w{' '}
               <Link className="link" to="/polityka-cookies">
                 Polityce Cookies
               </Link>

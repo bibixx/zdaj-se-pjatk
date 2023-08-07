@@ -1,11 +1,6 @@
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+
 import { ANIMAL_EMOJIS } from './AnimalEmoji.constants';
 
 const getRandomEmoji = () => {
@@ -25,11 +20,7 @@ export const AnimalEmojiProvider = ({ children }: AnimalEmojiProviderProps) => {
     setEmoji(getRandomEmoji());
   }, [location]);
 
-  return (
-    <AnimalEmojiContext.Provider value={emoji}>
-      {children}
-    </AnimalEmojiContext.Provider>
-  );
+  return <AnimalEmojiContext.Provider value={emoji}>{children}</AnimalEmojiContext.Provider>;
 };
 
 export const AnimalEmoji = () => {

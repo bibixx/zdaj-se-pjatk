@@ -4,9 +4,7 @@ function getNewPages(pages: Pages, overrides: Pages | null): Page[] {
   const overwrittenIds: Page['id'][] = [];
 
   const overridePages = overrides?.pages ?? [];
-  const overridePagesMap = Object.fromEntries(
-    overridePages.map((page) => [page.id, page]),
-  );
+  const overridePagesMap = Object.fromEntries(overridePages.map((page) => [page.id, page]));
 
   const overwrittenPages = [
     ...pages.pages.map((page) => {
@@ -24,17 +22,12 @@ function getNewPages(pages: Pages, overrides: Pages | null): Page[] {
     }),
   ];
 
-  return [
-    ...overwrittenPages,
-    ...overridePages.filter(({ id }) => !overwrittenIds.includes(id)),
-  ];
+  return [...overwrittenPages, ...overridePages.filter(({ id }) => !overwrittenIds.includes(id))];
 }
 
 export const getDataWithOverrides = (pages: Pages, overrides: Pages | null) => {
   const updatedAt =
-    overrides?.updatedAt === undefined
-      ? pages.updatedAt
-      : Math.max(pages.updatedAt, overrides.updatedAt);
+    overrides?.updatedAt === undefined ? pages.updatedAt : Math.max(pages.updatedAt, overrides.updatedAt);
 
   return {
     pages: getNewPages(pages, overrides),

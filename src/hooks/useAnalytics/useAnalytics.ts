@@ -24,9 +24,7 @@ piwik.push(['requireConsent']);
 piwik.push(['requireCookieConsent']);
 
 export const useAnalytics = () => {
-  const [areCookiesAccepted, setAreCookiesAccepted] = useState(
-    getBooleanCookie(CONSENT_KEY),
-  );
+  const [areCookiesAccepted, setAreCookiesAccepted] = useState(getBooleanCookie(CONSENT_KEY));
 
   useEffect(() => {
     if (areCookiesAccepted) {

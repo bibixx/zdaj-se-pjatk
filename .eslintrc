@@ -1,12 +1,28 @@
 {
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
   "extends": [
-    "airbnb-typescript",
-    "airbnb/hooks",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
     "prettier"
   ],
+  "plugins": [
+    "react", "react-hooks", "@typescript-eslint", "jsx-a11y", "prettier", "import"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -14,14 +30,46 @@
     "browser": true
   },
   "rules": {
-    "prettier/prettier": ["error", { "singleQuote": true }],
-    "react/prop-types": 0,
-    "react/react-in-jsx-scope": 0,
-    "import/prefer-default-export": 0,
-    "react/require-default-props": 0,
     "curly": ["error", "all"],
-    "react/jsx-props-no-spreading": 0,
-    "no-plusplus": 0,
-    "@typescript-eslint/no-use-before-define": 0
+    "prettier/prettier": "error",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "components/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "hooks/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "utils/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "validators/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "views/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "newlines-between": "always",
+        "distinctGroup": false,
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"]
+      }
+    ],
+    "no-restricted-globals": ["error", "chrome"],
+    "react-hooks/exhaustive-deps": ["warn"]
   }
 }

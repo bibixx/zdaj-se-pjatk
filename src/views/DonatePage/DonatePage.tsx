@@ -1,18 +1,14 @@
 import { useState } from 'react';
-import { Header } from 'components/Header/Header';
+import { Eye, EyeOff } from 'lucide-react';
 
+import { cn } from 'utils';
+import { Header } from 'components/Header/Header';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Card, CardDescription, CardHeader } from 'components/ui/card';
-import { cn } from 'utils';
 import { Button } from 'components/ui/button';
-import { Eye, EyeOff } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
-import {
-  TOTAL_DONATED,
-  DONATION_PAGES,
-  DonationPage,
-  DONATION_GOAL,
-} from './DonatePage.utils';
+
+import { TOTAL_DONATED, DONATION_PAGES, DonationPage, DONATION_GOAL } from './DonatePage.utils';
 
 export const DonatePage = () => (
   <>
@@ -31,18 +27,13 @@ export const DonatePage = () => (
     </Header>
     <main className="px-2">
       <p>
-        Zdaj.se <strong className="font-medium">zawsze</strong> będzie serwisem
-        darmowym dzięki zastosowanym darmowym technologiom i serwisom:
+        Zdaj.se <strong className="font-medium">zawsze</strong> będzie serwisem darmowym dzięki zastosowanym darmowym
+        technologiom i serwisom:
       </p>
       <ul className="mb-4 mt-1 ml-6 list-disc [&>li]:mt-1">
         <li>
           Hosting:{' '}
-          <a
-            target="_blank"
-            className="link"
-            href="https://vercel.com/"
-            rel="noreferrer"
-          >
+          <a target="_blank" className="link" href="https://vercel.com/" rel="noreferrer">
             vercel.com
           </a>
         </li>
@@ -58,8 +49,8 @@ export const DonatePage = () => (
           </a>
         </li>
         <li>
-          Domena: domenę zdaj.se opłacam z własnej kieszeni (61,99 zł/rok),
-          jednak cała platforma dostępna jest też pod adresem{' '}
+          Domena: domenę zdaj.se opłacam z własnej kieszeni (61,99 zł/rok), jednak cała platforma dostępna jest też pod
+          adresem{' '}
           <a className="link" href="https://zdaj-se.vercel.app">
             https://zdaj-se.vercel.app
           </a>
@@ -67,8 +58,7 @@ export const DonatePage = () => (
         </li>
       </ul>
       <p>
-        Natomiast jeśli jednak chcesz wesprzeć to co robię, możesz wpłacić
-        dowolną kwotę na jedną z poniższych zbiórek.
+        Natomiast jeśli jednak chcesz wesprzeć to co robię, możesz wpłacić dowolną kwotę na jedną z poniższych zbiórek.
       </p>
 
       <h2 className="text-2xl font-semibold mt-2 text-center ">
@@ -86,8 +76,8 @@ export const DonatePage = () => (
       </div>
 
       <p className="text-md text-center text-muted-foreground">
-        Jako że pomagam.pl nie pozwala śledzić ile zostało wpłacone przez
-        zdaj.se, przekaż maila z potwierdzeniem na&nbsp;
+        Jako że pomagam.pl nie pozwala śledzić ile zostało wpłacone przez zdaj.se, przekaż maila z potwierdzeniem
+        na&nbsp;
         <a href="donate@zdaj.se" className="link">
           donate@zdaj.se
         </a>{' '}
@@ -114,14 +104,10 @@ const DonationCard = ({ page }: DonationCardProps) => {
     >
       <Card className="overflow-hidden">
         <div
-          className={cn(
-            'relative select-none border-b after:transition-opacity aspect-video overflow-hidden',
-            {
-              'after:top-0 after:bg-white/20 after:w-full after:h-full after:absolute':
-                explicit,
-              'after:opacity-0': explicitShown,
-            },
-          )}
+          className={cn('relative select-none border-b after:transition-opacity aspect-video overflow-hidden', {
+            'after:top-0 after:bg-white/20 after:w-full after:h-full after:absolute': explicit,
+            'after:opacity-0': explicitShown,
+          })}
         >
           <img
             className={cn('transition-all select-none', {
@@ -146,11 +132,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
                       setExplicitShown(!explicitShown);
                     }}
                   >
-                    {explicitShown ? (
-                      <EyeOff className="h-4 w-4" />
-                    ) : (
-                      <Eye className="h-4 w-4" />
-                    )}
+                    {explicitShown ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                   </Button>
                 </TooltipTrigger>
               </Tooltip>
@@ -158,9 +140,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
           )}
         </div>
         <CardHeader>
-          <h3 className="text-lg font-semibold leading-none tracking-tight">
-            {text}
-          </h3>
+          <h3 className="text-lg font-semibold leading-none tracking-tight">{text}</h3>
           <CardDescription>Cel: {formatGoal(goal)}</CardDescription>
         </CardHeader>
       </Card>
@@ -169,6 +149,4 @@ const DonationCard = ({ page }: DonationCardProps) => {
 };
 
 const formatGoal = (goal: number) =>
-  new Intl.NumberFormat('pl-PL', { style: 'currency', currency: 'PLN' }).format(
-    goal,
-  );
+  new Intl.NumberFormat('pl-PL', { style: 'currency', currency: 'PLN' }).format(goal);

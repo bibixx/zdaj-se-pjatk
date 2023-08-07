@@ -1,16 +1,14 @@
 import { Slot } from '@radix-ui/react-slot';
-import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 import { ReactNode, useEffect, useRef, useState } from 'react';
+
+import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 
 interface TooltipIfTooWideProps {
   children?: ReactNode;
   tooltip?: ReactNode;
 }
 
-export const TooltipIfTooWide = ({
-  children,
-  tooltip,
-}: TooltipIfTooWideProps) => {
+export const TooltipIfTooWide = ({ children, tooltip }: TooltipIfTooWideProps) => {
   const outerRef = useRef<HTMLElement | null>(null);
   const [showTooltip, setShowTooltip] = useState(false);
 
@@ -25,9 +23,7 @@ export const TooltipIfTooWide = ({
         return;
       }
 
-      setShowTooltip(
-        outerRef.current.offsetWidth < outerRef.current.scrollWidth,
-      );
+      setShowTooltip(outerRef.current.offsetWidth < outerRef.current.scrollWidth);
     });
 
     resizeObserver.observe(outerRef.current);

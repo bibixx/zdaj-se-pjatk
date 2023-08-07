@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+
 import { transformNull } from 'utils/transformNull';
 
 const answerSchema = yup.object({}).shape({
@@ -38,9 +39,7 @@ const overrideQuestionSchemaShape = {
   ...questionSchemaShape,
   answers: yup.array().of(answerSchema).ensure(),
 };
-const nullableIdOverrideQuestionSchema = yup
-  .object({})
-  .shape(overrideQuestionSchemaShape);
+const nullableIdOverrideQuestionSchema = yup.object({}).shape(overrideQuestionSchemaShape);
 const overrideQuestionSchema = yup.object({}).shape({
   ...overrideQuestionSchemaShape,
   id: yup.string().transform(transformNull).ensure(),
@@ -52,9 +51,7 @@ const subjectSchemaShape = {
   data: yup.array().of(nullableIdQuestionSchema).required(),
   updatedAt: yup.number().required(),
 };
-export const nullableQuestionIdSubjectSchema = yup
-  .object({})
-  .shape(subjectSchemaShape);
+export const nullableQuestionIdSubjectSchema = yup.object({}).shape(subjectSchemaShape);
 export const subjectSchema = yup.object({}).shape({
   ...subjectSchemaShape,
   data: yup.array().of(questionSchema).required(),
@@ -66,9 +63,7 @@ const overrideSubjectSchemaShape = {
   title: yup.string(),
   data: yup.array().of(nullableIdOverrideQuestionSchema).required(),
 };
-export const nullableQuestionIdOverrideSubjectSchema = yup
-  .object({})
-  .shape(overrideSubjectSchemaShape);
+export const nullableQuestionIdOverrideSubjectSchema = yup.object({}).shape(overrideSubjectSchemaShape);
 export const overrideSubjectSchema = yup.object({}).shape({
   ...overrideSubjectSchemaShape,
   data: yup.array().of(overrideQuestionSchema).required(),
@@ -77,16 +72,10 @@ export const overrideSubjectSchema = yup.object({}).shape({
 export const learntQuestionSchema = yup.array().of(yup.string().required());
 
 export type NullableIdQuestion = yup.Asserts<typeof nullableIdQuestionSchema>;
-export type NullableIdQuestionSubject = yup.Asserts<
-  typeof nullableQuestionIdSubjectSchema
->;
+export type NullableIdQuestionSubject = yup.Asserts<typeof nullableQuestionIdSubjectSchema>;
 
-export type NullableIdOverrideQuestion = yup.Asserts<
-  typeof nullableIdOverrideQuestionSchema
->;
-export type NullableIdQuestionOverrideSubject = yup.Asserts<
-  typeof nullableQuestionIdOverrideSubjectSchema
->;
+export type NullableIdOverrideQuestion = yup.Asserts<typeof nullableIdOverrideQuestionSchema>;
+export type NullableIdQuestionOverrideSubject = yup.Asserts<typeof nullableQuestionIdOverrideSubjectSchema>;
 
 export type Answer = yup.Asserts<typeof answerSchema>;
 export type Comment = yup.Asserts<typeof commentSchema>;

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
-import fs from 'fs';
+import * as path from 'path';
+import * as fs from 'fs';
 
 const srcPath = path.join(__dirname, 'src');
 

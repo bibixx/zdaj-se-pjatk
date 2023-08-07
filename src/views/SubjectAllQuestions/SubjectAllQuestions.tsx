@@ -1,35 +1,32 @@
 import { useCallback, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useLocation, useParams } from 'react-router-dom';
+import { ClipboardList } from 'lucide-react';
+
 import { Header } from 'components/Header/Header';
-import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
-import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
-import { polishPlural } from 'utils/polishPlural';
 import { Button } from 'components/ui/button';
 import { Skeleton } from 'components/ui/skeleton';
-import { ClipboardList } from 'lucide-react';
 import { TooltipIfTooWide } from 'components/TooltipIfTooWide/TooltipIfTooWide';
-import { Question } from './Question/Question';
-import { CreateExamModal } from './CreateExamModal/CreateExamModal';
-import { QuestionSkeleton } from './Question/QuestionSkeleton';
+import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
+import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
+import { polishPlural } from 'utils/polishPlural';
 
-const formatQuestionsCountText = (count: number) =>
-  polishPlural('pytanie', 'pytania', 'pytań', count);
+import { QuestionSkeleton } from './Question/QuestionSkeleton';
+import { CreateExamModal } from './CreateExamModal/CreateExamModal';
+import { Question } from './Question/Question';
+
+const formatQuestionsCountText = (count: number) => polishPlural('pytanie', 'pytania', 'pytań', count);
 
 export const SubjectAllQuestions = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
-  const { setQuestion, questions: learntQuestions } =
-    useLearntQuestions(subjectId);
+  const { setQuestion, questions: learntQuestions } = useLearntQuestions(subjectId);
   const location = useLocation<{ testSettings: boolean } | undefined>();
-  const [isExamModalOpen, setIsExamModalOpen] = useState(
-    location.state?.testSettings ?? false,
-  );
+  const [isExamModalOpen, setIsExamModalOpen] = useState(location.state?.testSettings ?? false);
 
   const onLearntChange = useCallback(
-    (questionId: string, checked: boolean) =>
-      setQuestion(questionId, checked ? 'add' : 'remove'),
+    (questionId: string, checked: boolean) => setQuestion(questionId, checked ? 'add' : 'remove'),
     [setQuestion],
   );
 
@@ -75,13 +72,7 @@ export const SubjectAllQuestions = () => {
         </Header>
         <div className="flex justify-center mb-4">
           <div className="relative">
-            <Button
-              variant="default"
-              size="lg"
-              tabIndex={-1}
-              disabled
-              className="invisible"
-            >
+            <Button variant="default" size="lg" tabIndex={-1} disabled className="invisible">
               <ClipboardList className="mr-3 h-5 w-5" />
               Wygeneruj test
             </Button>
@@ -129,9 +120,7 @@ export const SubjectAllQuestions = () => {
         <BreadCrumbs
           crumbs={[
             {
-              content: (
-                <span className="whitespace-nowrap">Generatory 3.0</span>
-              ),
+              content: <span className="whitespace-nowrap">Generatory 3.0</span>,
               id: 'root',
               to: '/',
             },
@@ -140,19 +129,14 @@ export const SubjectAllQuestions = () => {
               content: (
                 <div className="flex whitespace-nowrap items-baseline">
                   {subjectId.toUpperCase()}
-                  <span className="text-muted-foreground font-normal">
-                    &nbsp;&bull;&nbsp;
-                  </span>
-                  <TooltipIfTooWide
-                    tooltip={<span className="font-normal">{title}</span>}
-                  >
+                  <span className="text-muted-foreground font-normal">&nbsp;&bull;&nbsp;</span>
+                  <TooltipIfTooWide tooltip={<span className="font-normal">{title}</span>}>
                     <span className="text-muted-foreground font-normal flex-1 overflow-hidden text-ellipsis">
                       {title}
                     </span>
                   </TooltipIfTooWide>
                   <span className="text-base text-muted-foreground">
-                    &nbsp;({data.length} {formatQuestionsCountText(data.length)}
-                    )
+                    &nbsp;({data.length} {formatQuestionsCountText(data.length)})
                   </span>
                 </div>
               ),

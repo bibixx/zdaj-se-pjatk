@@ -1,7 +1,8 @@
 import { UserContent } from 'components/UserContent/UserContent';
-import { Subject } from 'validators/subjects';
 import { Checkbox } from 'components/ui/checkbox';
 import { Button } from 'components/ui/button';
+import { Subject } from 'validators/subjects';
+
 import { getUserSelectClassNames } from './Answer.utils';
 
 interface Props {
@@ -42,10 +43,7 @@ export const Answer = ({
           >
             <Checkbox
               aria-labelledby={labelId}
-              className={getUserSelectClassNames(
-                disableUserSelect,
-                wasUserSelectCorrect,
-              )}
+              className={getUserSelectClassNames(disableUserSelect, wasUserSelectCorrect)}
               checked={userAnswer}
               color="primary"
             />
@@ -53,11 +51,7 @@ export const Answer = ({
         )}
         {showCorrect && (
           <Button size="icon-sm" variant="ghost" disabled>
-            <Checkbox
-              tabIndex={-1}
-              aria-labelledby={labelId}
-              checked={correct}
-            />
+            <Checkbox tabIndex={-1} aria-labelledby={labelId} checked={correct} />
           </Button>
         )}
       </div>

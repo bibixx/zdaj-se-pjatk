@@ -11,10 +11,8 @@ import {
   Subject,
   subjectSchema,
 } from 'validators/subjects';
-import {
-  generateMissingQuestionIdsForSubject,
-  getDataWithOverrides,
-} from './useSubjectData.utils';
+
+import { generateMissingQuestionIdsForSubject, getDataWithOverrides } from './useSubjectData.utils';
 
 interface UseSubjectDataError {
   state: 'error';
@@ -30,10 +28,7 @@ interface UseSubjectDataDone {
   data: Subject;
 }
 
-export type UseSubjectData =
-  | UseSubjectDataError
-  | UseSubjectDataLoading
-  | UseSubjectDataDone;
+export type UseSubjectData = UseSubjectDataError | UseSubjectDataLoading | UseSubjectDataDone;
 
 export const useSubjectData = (subjectId: string): UseSubjectData => {
   const { updatedAt, setUpdatedAt } = useUpdatedAt();
@@ -52,9 +47,7 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
 
   const fetchOptions = useMemo(
     () => ({
-      onComplete: (
-        data: NullableIdQuestionSubject | NullableIdQuestionOverrideSubject,
-      ) => onLoad(data.updatedAt),
+      onComplete: (data: NullableIdQuestionSubject | NullableIdQuestionOverrideSubject) => onLoad(data.updatedAt),
       onError: (error: Error | null) => {
         if (error instanceof FetchError && error.status === 404) {
           return;
@@ -79,10 +72,7 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
     fetchOptions,
   );
 
-  const loading = useMemo(
-    () => subjectLoading || overridesLoading,
-    [overridesLoading, subjectLoading],
-  );
+  const loading = useMemo(() => subjectLoading || overridesLoading, [overridesLoading, subjectLoading]);
 
   return useMemo(() => {
     if (is404 || error !== null) {

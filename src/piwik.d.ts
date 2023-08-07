@@ -1,10 +1,8 @@
 declare module 'piwik-react-router' {
   interface Piwik {
-    connectToHistory(
-      history: import('history').BrowserHistory,
-    ): import('history').History;
+    connectToHistory(history: import('history').BrowserHistory): import('history').History;
     trackError(error: Error | null, eventName?: string): void;
-    push(...args: any[]): void;
+    push(...args: unknown[]): void;
   }
 
   type Opts = {

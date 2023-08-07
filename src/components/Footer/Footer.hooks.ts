@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom';
-
 import { useRef } from 'react';
 
 export const DONATE_PATH = '/donate';

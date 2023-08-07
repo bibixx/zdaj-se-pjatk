@@ -1,3 +1,5 @@
+import md5 from 'md5';
+
 import {
   Question,
   Comment,
@@ -9,24 +11,18 @@ import {
   NullableIdQuestion,
   NullableIdOverrideQuestion,
 } from 'validators/subjects';
-import md5 from 'md5';
 
 type Id = Question['id'];
 
 type Tuple = [Id, OverrideQuestion];
 
 const mapQuestionOverridesToMap = (questionOverrides: OverrideQuestion[]) => {
-  const entries = questionOverrides
-    .map<Tuple>((question) => [question.id, question])
-    .filter(([id]) => Boolean(id));
+  const entries = questionOverrides.map<Tuple>((question) => [question.id, question]).filter(([id]) => Boolean(id));
 
   return Object.fromEntries(entries) as { [key: Id]: Question };
 };
 
-const getNewQuestions = (
-  oldQuestions: Question[],
-  questionOverrides: OverrideQuestion[],
-) => {
+const getNewQuestions = (oldQuestions: Question[], questionOverrides: OverrideQuestion[]) => {
   const oldQuestionsIds = oldQuestions.map(({ id }) => id);
 
   return questionOverrides
@@ -34,10 +30,7 @@ const getNewQuestions = (
     .map((question) => ({ ...question, id: question.id ?? null, added: true }));
 };
 
-const getCommentsWithOverrides = (
-  question: Question,
-  override: OverrideQuestion,
-): Comment[] => {
+const getCommentsWithOverrides = (question: Question, override: OverrideQuestion): Comment[] => {
   if (question.comments === null && override.comments === null) {
     return [];
   }
@@ -50,10 +43,7 @@ const getCommentsWithOverrides = (
   return [...question.comments, ...overwrittenComments];
 };
 
-export const getDataWithOverrides = (
-  subject: Subject,
-  overrides: OverrideSubject | null,
-): Subject => {
+export const getDataWithOverrides = (subject: Subject, overrides: OverrideSubject | null): Subject => {
   if (overrides === null) {
     return subject;
   }
@@ -96,20 +86,12 @@ export const getDataWithOverrides = (
   };
 };
 
-const generateHashIdFromQuestion = (
-  question: NullableIdQuestion | NullableIdOverrideQuestion,
-) => {
-  return md5(
-    `${question.question}${question.answers.map((a) => a.answer).join()}`,
-  );
+const generateHashIdFromQuestion = (question: NullableIdQuestion | NullableIdOverrideQuestion) => {
+  return md5(`${question.question}${question.answers.map((a) => a.answer).join()}`);
 };
 
-export function generateMissingQuestionIdsForSubject(
-  subject: NullableIdQuestionSubject,
-): Subject;
-export function generateMissingQuestionIdsForSubject(
-  subject: NullableIdQuestionOverrideSubject,
-): OverrideSubject;
+export function generateMissingQuestionIdsForSubject(subject: NullableIdQuestionSubject): Subject;
+export function generateMissingQuestionIdsForSubject(subject: NullableIdQuestionOverrideSubject): OverrideSubject;
 export function generateMissingQuestionIdsForSubject(
   subject: NullableIdQuestionSubject | NullableIdQuestionOverrideSubject,
 ): Subject | OverrideSubject {

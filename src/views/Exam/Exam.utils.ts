@@ -1,12 +1,10 @@
-import { LearntQuestionsSet } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { AlertCircle, CheckCircle, Info } from 'lucide-react';
 import shuffle from 'shuffle-array';
+
+import { LearntQuestionsSet } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { Question } from 'validators/subjects';
 
-export function getObjectValue<T>(
-  object: Record<string, T>,
-  key: string,
-): T | undefined {
+export function getObjectValue<T>(object: Record<string, T>, key: string): T | undefined {
   return object[key];
 }
 
@@ -38,18 +36,13 @@ interface QueryParams {
 export const parseSearch = (search: string): QueryParams => {
   const queryParams = new URLSearchParams(search);
 
-  const parseIntWithUndefined = (s: string) =>
-    Number.parseInt(s, 10) || undefined;
+  const parseIntWithUndefined = (s: string) => Number.parseInt(s, 10) || undefined;
 
   const rawN = queryParams.get(examSearchParamsKeys.questionCount);
   const rawSuccess = queryParams.get(examSearchParamsKeys.successThreshold);
-  const rawFilterOutLearnt = queryParams.get(
-    examSearchParamsKeys.filterOutLearnt,
-  );
+  const rawFilterOutLearnt = queryParams.get(examSearchParamsKeys.filterOutLearnt);
   const questionsCount = rawN ? parseIntWithUndefined(rawN) : undefined;
-  const successThreshold = rawSuccess
-    ? parseIntWithUndefined(rawSuccess)
-    : undefined;
+  const successThreshold = rawSuccess ? parseIntWithUndefined(rawSuccess) : undefined;
   const filterOutLearnt = rawFilterOutLearnt === 'true';
 
   return {
@@ -61,13 +54,10 @@ export const parseSearch = (search: string): QueryParams => {
 
 export const countTrue = (values: boolean[]) => values.filter(Boolean).length;
 
-export const formatForPercentage = (n: number) =>
-  (n * 100).toFixed(2).replace('.', ',');
+export const formatForPercentage = (n: number) => (n * 100).toFixed(2).replace('.', ',');
 
 export const getDefaultUserAnswers = (questions: Question[]) => {
-  return Object.fromEntries(
-    questions.map(({ id, answers }) => [id, answers.map(() => false)] as const),
-  );
+  return Object.fromEntries(questions.map(({ id, answers }) => [id, answers.map(() => false)] as const));
 };
 
 export const scrollToTop = () => {
@@ -75,10 +65,7 @@ export const scrollToTop = () => {
   document.documentElement.scrollTop = 0;
 };
 
-export const getAlertClasses = (
-  percentage: number,
-  successThreshold: number | undefined,
-) => {
+export const getAlertClasses = (percentage: number, successThreshold: number | undefined) => {
   if (successThreshold === undefined) {
     return 'border-blue-200 bg-blue-100 text-blue-900';
   }
@@ -88,10 +75,7 @@ export const getAlertClasses = (
     : 'border-red-200 bg-red-100 text-red-900';
 };
 
-export const getAlertIcon = (
-  percentage: number,
-  successThreshold: number | undefined,
-) => {
+export const getAlertIcon = (percentage: number, successThreshold: number | undefined) => {
   if (successThreshold === undefined) {
     return Info;
   }

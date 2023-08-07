@@ -1,5 +1,7 @@
 import { useCallback, useMemo, useState } from 'react';
+
 import { LearntQuestions } from 'validators/subjects';
+
 import {
   addLearntQuestionToLocalStorage,
   getLearntQuestionsFromLocalStorage,
@@ -16,10 +18,7 @@ interface UseLearntQuestions {
 }
 
 export const useLearntQuestions = (subjectId: string): UseLearntQuestions => {
-  const learntQuestionsKey = useMemo(
-    () => getLearntQuestionsLocalStorageKey(subjectId),
-    [subjectId],
-  );
+  const learntQuestionsKey = useMemo(() => getLearntQuestionsLocalStorageKey(subjectId), [subjectId]);
 
   const [learntQuestions, setLearntQuestions] = useState<LearntQuestions>(
     getLearntQuestionsFromLocalStorage(learntQuestionsKey),
@@ -28,9 +27,7 @@ export const useLearntQuestions = (subjectId: string): UseLearntQuestions => {
   const addQuestion = useCallback(
     (questionId: QuestionId) => {
       addLearntQuestionToLocalStorage(learntQuestionsKey, questionId);
-      setLearntQuestions(
-        getLearntQuestionsFromLocalStorage(learntQuestionsKey),
-      );
+      setLearntQuestions(getLearntQuestionsFromLocalStorage(learntQuestionsKey));
     },
     [learntQuestionsKey],
   );
@@ -38,9 +35,7 @@ export const useLearntQuestions = (subjectId: string): UseLearntQuestions => {
   const removeQuestion = useCallback(
     (questionId: QuestionId) => {
       removeLearntQuestionFromLocalStorage(learntQuestionsKey, questionId);
-      setLearntQuestions(
-        getLearntQuestionsFromLocalStorage(learntQuestionsKey),
-      );
+      setLearntQuestions(getLearntQuestionsFromLocalStorage(learntQuestionsKey));
     },
     [learntQuestionsKey],
   );
@@ -51,10 +46,7 @@ export const useLearntQuestions = (subjectId: string): UseLearntQuestions => {
     [addQuestion, removeQuestion],
   );
 
-  const questions = useMemo(
-    () => new Set(learntQuestions ?? []),
-    [learntQuestions],
-  );
+  const questions = useMemo(() => new Set(learntQuestions ?? []), [learntQuestions]);
 
   return {
     questions,

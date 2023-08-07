@@ -21,10 +21,7 @@ export const BugsDataChange = () => (
       <TypographyH2 className="mt-0">Błędy</TypographyH2>
       <p>
         Jeśli znalazłeś/znalazłaś jakiś błąd, zgłoś go za pomocą{' '}
-        <a
-          href="https://github.com/bibixx/zdaj-se-pjatk/issues/new"
-          className="link"
-        >
+        <a href="https://github.com/bibixx/zdaj-se-pjatk/issues/new" className="link">
           Issue na GitHubie
         </a>{' '}
         lub skontaktuj się ze mną mailowo na adres{' '}
@@ -39,8 +36,7 @@ export const BugsDataChange = () => (
         <a href="https://github.com/bibixx/zdaj-se-pjatk-data" className="link">
           https://github.com/bibixx/zdaj-se-pjatk-data
         </a>
-        , zedytuj plik JSON z odpowiednim id przedmiotu w folderze overrides, a
-        następnie stwórz Pull Requesta.
+        , zedytuj plik JSON z odpowiednim id przedmiotu w folderze overrides, a następnie stwórz Pull Requesta.
       </p>
       <p>
         W razie problemów lub pytań skontaktuj się ze mną mailowo na adres{' '}

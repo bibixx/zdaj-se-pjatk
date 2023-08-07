@@ -1,13 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
 import { AnySchema, Asserts } from 'yup';
+
 import { customFetch, FetchError } from 'utils/fetch';
 
-interface Options<
-  T extends AnySchema<Type, TContext, TOut>,
-  Type = any,
-  TContext = any,
-  TOut = any,
-> {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+interface Options<T extends AnySchema<Type, TContext, TOut>, Type = any, TContext = any, TOut = any> {
   init?: RequestInit;
   onComplete?: (data: Asserts<T>) => void;
   onError?: (error: Error | null) => void;
@@ -18,6 +15,7 @@ export const useFetch = <
   Type = any,
   TContext = any,
   TOut = any,
+  /* eslint-enable @typescript-eslint/no-explicit-any */
 >(
   url: string,
   checkData: T,

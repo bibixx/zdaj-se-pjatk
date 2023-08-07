@@ -8,11 +8,7 @@ export function polishPlural(
     return singularNominativ;
   }
 
-  if (
-    value % 10 >= 2 &&
-    value % 10 <= 4 &&
-    (value % 100 < 10 || value % 100 >= 20)
-  ) {
+  if (value % 10 >= 2 && value % 10 <= 4 && (value % 100 < 10 || value % 100 >= 20)) {
     return pluralNominativ;
   }
 

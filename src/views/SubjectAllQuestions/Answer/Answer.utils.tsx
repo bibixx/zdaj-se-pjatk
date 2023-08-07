@@ -1,7 +1,4 @@
-export const getUserSelectClassNames = (
-  disableUserSelect: boolean,
-  wasUserSelectCorrect: boolean,
-) => {
+export const getUserSelectClassNames = (disableUserSelect: boolean, wasUserSelectCorrect: boolean) => {
   if (!disableUserSelect) {
     return undefined;
   }

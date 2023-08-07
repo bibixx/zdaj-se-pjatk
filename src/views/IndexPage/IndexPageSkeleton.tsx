@@ -1,18 +1,13 @@
-import { Skeleton } from 'components/ui/skeleton';
-import { TableCell, TableRow } from 'components/ui/table';
 import { useMemo } from 'react';
 
-const getWidth = (baseWidth: number, variance: number) =>
-  baseWidth + (2 * variance * Math.random() - variance);
+import { Skeleton } from 'components/ui/skeleton';
+import { TableCell, TableRow } from 'components/ui/table';
+
+const getWidth = (baseWidth: number, variance: number) => baseWidth + (2 * variance * Math.random() - variance);
 
 export const IndexPageSkeletonRows = () => {
   const rowsWidths = useMemo(
-    () =>
-      Array.from({ length: 20 }).map(() => [
-        getWidth(6, 1),
-        getWidth(65, 20),
-        getWidth(40, 4),
-      ]),
+    () => Array.from({ length: 20 }).map(() => [getWidth(6, 1), getWidth(65, 20), getWidth(40, 4)]),
     [],
   );
 

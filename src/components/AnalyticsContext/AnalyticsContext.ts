@@ -1,4 +1,4 @@
 import { Piwik } from 'piwik-react-router';
-import React from 'react';
+import { createContext } from 'react';
 
-export const AnalyticsContext = React.createContext<Piwik | null>(null);
+export const AnalyticsContext = createContext<Piwik | null>(null);

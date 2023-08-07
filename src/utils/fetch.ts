@@ -1,16 +1,21 @@
 import { AnySchema, Asserts } from 'yup';
 
 export class FetchError extends Error {
-  constructor(message: string, public status: number) {
+  constructor(
+    message: string,
+    public status: number,
+  ) {
     super(message);
   }
 }
 
 export const customFetch = async <
   T extends AnySchema<Type, TContext, TOut>,
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   Type = any,
   TContext = any,
   TOut = any,
+  /* eslint-enable @typescript-eslint/no-explicit-any */
 >(
   url: string,
   checkData: T,

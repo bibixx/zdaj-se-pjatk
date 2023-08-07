@@ -1,17 +1,12 @@
 import { FormEvent, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { examSearchParamsKeys } from 'views/Exam/Exam.utils';
-import {
-  Dialog,
-  DialogContent,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from 'components/ui/dialog';
+
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from 'components/ui/dialog';
 import { Label } from 'components/ui/label';
 import { Input } from 'components/ui/input';
 import { Button } from 'components/ui/button';
 import { Checkbox } from 'components/ui/checkbox';
+import { examSearchParamsKeys } from 'views/Exam/Exam.utils';
 
 interface CreateExamModalProps {
   isOpen: boolean;
@@ -19,11 +14,7 @@ interface CreateExamModalProps {
   onClose: () => void;
 }
 
-export const CreateExamModal = ({
-  isOpen,
-  subjectId,
-  onClose,
-}: CreateExamModalProps) => {
+export const CreateExamModal = ({ isOpen, subjectId, onClose }: CreateExamModalProps) => {
   const [numberOfQuestions, setNumberOfQuestions] = useState('10');
   const [percentage, setPercentage] = useState('');
   const [filterLearnt, setFilterLearnt] = useState(true);
@@ -48,16 +39,10 @@ export const CreateExamModal = ({
       return;
     }
 
-    query.set(
-      examSearchParamsKeys.questionCount,
-      String(parsedNumberOfQuestions),
-    );
+    query.set(examSearchParamsKeys.questionCount, String(parsedNumberOfQuestions));
 
     if (!Number.isNaN(parsedPercentage)) {
-      query.set(
-        examSearchParamsKeys.successThreshold,
-        String(parsedPercentage),
-      );
+      query.set(examSearchParamsKeys.successThreshold, String(parsedPercentage));
     }
 
     query.set(examSearchParamsKeys.filterOutLearnt, String(filterLearnt));
@@ -128,9 +113,7 @@ export const CreateExamModal = ({
                     setFilterLearnt(state);
                   }}
                 />
-                <Label htmlFor="filterLearnt">
-                  Pomiń pytania, na które już znasz odpowiedź
-                </Label>
+                <Label htmlFor="filterLearnt">Pomiń pytania, na które już znasz odpowiedź</Label>
               </div>
             </div>
           </div>
@@ -138,11 +121,7 @@ export const CreateExamModal = ({
             <Button type="button" variant="outline" onClick={onCancel}>
               Anuluj
             </Button>
-            <Button
-              variant="blue"
-              type="submit"
-              disabled={Number.isNaN(parsedNumberOfQuestions)}
-            >
+            <Button variant="blue" type="submit" disabled={Number.isNaN(parsedNumberOfQuestions)}>
               Wygeneruj
             </Button>
           </DialogFooter>

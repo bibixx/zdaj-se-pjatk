@@ -1,14 +1,16 @@
 import { shallowEqual } from 'shallow-equal';
-import { Subject } from 'validators/subjects';
+import { BadgeInfo, GraduationCap, Pencil } from 'lucide-react';
+import { Fragment, memo } from 'react';
+
 import { UserContent } from 'components/UserContent/UserContent';
 import { useEditQuestionModalContext } from 'components/EditQuestionModal/EditQuestionModal.context';
 import { Card } from 'components/ui/card';
 import { Button } from 'components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
-import { BadgeInfo, GraduationCap, Pencil } from 'lucide-react';
 import { Checkbox } from 'components/ui/checkbox';
-import { Fragment, memo } from 'react';
 import { Comments } from 'components/Comments/Comments';
+import { Subject } from 'validators/subjects';
+
 import { Answer } from '../Answer/Answer';
 
 type IsLearntProps =
@@ -29,24 +31,12 @@ type QuestionProps = {
   wasUserSelectCorrect?: boolean;
   hideEdit?: boolean;
   userAnswer?: boolean[];
-  onAnswerPick?: (
-    questionId: string,
-    answerIndex: number,
-    answerValue: boolean,
-  ) => void;
+  onAnswerPick?: (questionId: string, answerIndex: number, answerValue: boolean) => void;
 } & IsLearntProps;
 
 export const Question = memo(
   ({
-    question: {
-      id: questionId,
-      question,
-      answers,
-      overwritten,
-      added,
-      isMarkdown,
-      comments,
-    },
+    question: { id: questionId, question, answers, overwritten, added, isMarkdown, comments },
     subjectId,
     userAnswer,
     showCorrect = false,
@@ -65,9 +55,7 @@ export const Question = memo(
         <header className="p-4">
           <div className="flex justify-between items-start">
             <div className="font-semibold">
-              <UserContent isMarkdown={isMarkdown}>
-                {question.trim().replace(/ - \(\d+\)/, '')}
-              </UserContent>
+              <UserContent isMarkdown={isMarkdown}>{question.trim().replace(/ - \(\d+\)/, '')}</UserContent>
             </div>
             <div className="flex gap-2 ml-2 -my-1">
               {/* TODO Nested buttons */}
@@ -79,19 +67,10 @@ export const Question = memo(
                       variant="outline"
                       size="sm"
                       className="px-2 gap-2"
-                      onClick={() =>
-                        props.onLearntChange(questionId, !props.isLearnt)
-                      }
+                      onClick={() => props.onLearntChange(questionId, !props.isLearnt)}
                     >
-                      <GraduationCap
-                        width="1.25rem"
-                        height="1.25rem"
-                        absoluteStrokeWidth
-                      />
-                      <Checkbox
-                        aria-label="Oznacz jako nauczone"
-                        checked={props.isLearnt}
-                      />
+                      <GraduationCap width="1.25rem" height="1.25rem" absoluteStrokeWidth />
+                      <Checkbox aria-label="Oznacz jako nauczone" checked={props.isLearnt} />
                     </Button>
                   </TooltipTrigger>
                 </Tooltip>
@@ -132,11 +111,7 @@ export const Question = memo(
                     <Tooltip>
                       <TooltipContent>Edytuj</TooltipContent>
                       <TooltipTrigger>
-                        <Button
-                          variant="ghost"
-                          size="icon-sm"
-                          onClick={() => openModal({ questionId, subjectId })}
-                        >
+                        <Button variant="ghost" size="icon-sm" onClick={() => openModal({ questionId, subjectId })}>
                           <Pencil className="h-4 w-4" />
                         </Button>
                       </TooltipTrigger>
@@ -151,7 +126,6 @@ export const Question = memo(
         <div>
           {answers.map((answer, i) => {
             return (
-              // eslint-disable-next-line react/no-array-index-key
               <Fragment key={`${answer.answer}-${i}`}>
                 {i > 0 && <div className="w-full border-b" />}
                 <Answer

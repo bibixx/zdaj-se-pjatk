@@ -1,19 +1,21 @@
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import { Cog } from 'lucide-react';
+
+import { cn } from 'utils';
+import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
+import { Button } from 'components/ui/button';
+import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
+import { Header } from 'components/Header/Header';
+import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
+import { Skeleton } from 'components/ui/skeleton';
+import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { Question as QuestionType } from 'validators/subjects';
 import { Question } from 'views/SubjectAllQuestions/Question/Question';
-import { Header } from 'components/Header/Header';
-import { Helmet } from 'react-helmet';
-import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
-import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
-import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
-import { cn } from 'utils';
-import { Button } from 'components/ui/button';
-import { Cog } from 'lucide-react';
-import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
-import { Skeleton } from 'components/ui/skeleton';
 import { QuestionSkeleton } from 'views/SubjectAllQuestions/Question/QuestionSkeleton';
+
 import {
   countTrue,
   formatForPercentage,
@@ -29,19 +31,13 @@ import {
 export const Exam = () => {
   const piwik = useContext(AnalyticsContext);
   const location = useLocation();
-  const {
-    questionsCount = 10,
-    successThreshold,
-    filterOutLearnt,
-  } = parseSearch(location.search);
+  const { questionsCount = 10, successThreshold, filterOutLearnt } = parseSearch(location.search);
 
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
-  const { setQuestion, questions: learntQuestions } =
-    useLearntQuestions(subjectId);
+  const { setQuestion, questions: learntQuestions } = useLearntQuestions(subjectId);
   const onLearntChange = useCallback(
-    (questionId: string, checked: boolean) =>
-      setQuestion(questionId, checked ? 'add' : 'remove'),
+    (questionId: string, checked: boolean) => setQuestion(questionId, checked ? 'add' : 'remove'),
     [setQuestion],
   );
 
@@ -75,27 +71,19 @@ export const Exam = () => {
     scrollToTop();
   };
 
-  const onAnswerPick = (
-    questionId: string,
-    answerIndex: number,
-    answerValue: boolean,
-  ) => {
+  const onAnswerPick = (questionId: string, answerIndex: number, answerValue: boolean) => {
     const previousAnswer = getObjectValue(userAnswers, questionId);
 
     if (previousAnswer === undefined) {
       const question = questions.find(({ id }) => questionId === id);
       const answers = question?.answers ?? [];
-      const booleanAnswers = answers.map((_, i) =>
-        i === answerIndex ? answerValue : false,
-      );
+      const booleanAnswers = answers.map((_, i) => (i === answerIndex ? answerValue : false));
 
       setUserAnswers({ ...userAnswers, [questionId]: booleanAnswers });
       return;
     }
 
-    const newBooleanAnswers = previousAnswer.map((oldValue, i) =>
-      i === answerIndex ? answerValue : oldValue,
-    );
+    const newBooleanAnswers = previousAnswer.map((oldValue, i) => (i === answerIndex ? answerValue : oldValue));
 
     setUserAnswers({ ...userAnswers, [questionId]: newBooleanAnswers });
   };
@@ -106,25 +94,20 @@ export const Exam = () => {
     }
 
     return Object.fromEntries(
-      Object.entries(userAnswers).map(
-        ([questionId, currentQuestionUserAnswers]) => {
-          const question = questions.find(({ id }) => questionId === id);
-          const answers = question?.answers ?? [];
-          const answersValues = answers.map(({ correct }) => correct);
+      Object.entries(userAnswers).map(([questionId, currentQuestionUserAnswers]) => {
+        const question = questions.find(({ id }) => questionId === id);
+        const answers = question?.answers ?? [];
+        const answersValues = answers.map(({ correct }) => correct);
 
-          const areAllCorrect = answersValues.every(
-            (value, i) => value === (currentQuestionUserAnswers[i] ?? false),
-          );
+        const areAllCorrect = answersValues.every((value, i) => value === (currentQuestionUserAnswers[i] ?? false));
 
-          return [questionId, areAllCorrect] as const;
-        },
-      ),
+        return [questionId, areAllCorrect] as const;
+      }),
     );
   }, [completed, questions, userAnswers]);
 
   const correctQuestions = countTrue(Object.values(questionsOutcomes));
-  const percentage =
-    questions.length === 0 ? 0 : correctQuestions / questions.length;
+  const percentage = questions.length === 0 ? 0 : correctQuestions / questions.length;
 
   useEffect(() => {
     if (completed) {
@@ -215,8 +198,7 @@ export const Exam = () => {
           >
             <AlertIcon className="h-5 w-5" />
             <div className="text-xl font-medium leading-none tracking-tight">
-              Twój wynik: {correctQuestions} / {questions.length} (
-              {formatForPercentage(percentage)}%)
+              Twój wynik: {correctQuestions} / {questions.length} ({formatForPercentage(percentage)}%)
             </div>
           </div>
         )}

@@ -1,12 +1,12 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
+type ThemeType = 'system' | 'dark' | 'light';
 type ThemeProviderProps = {
   children: React.ReactNode;
-  defaultTheme?: string;
+  defaultTheme?: ThemeType;
   storageKey?: string;
 };
 
-type ThemeType = 'system' | 'dark' | 'light';
 type ThemeProviderState = {
   theme: ThemeType;
   setTheme: (theme: ThemeType) => void;
@@ -19,15 +19,27 @@ const initialState: ThemeProviderState = {
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
+const getThemeFromStorage = (storageKey: string, defaultTheme: ThemeType): ThemeType => {
+  const item = localStorage.getItem(storageKey);
+
+  if (item == null) {
+    return defaultTheme;
+  }
+
+  if (item === 'system' || item === 'dark' || item === 'light') {
+    return item;
+  }
+
+  return defaultTheme;
+};
+
 export function ThemeProvider({
   children,
   defaultTheme = 'system',
   storageKey = 'ui-theme',
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<ThemeType>(
-    () => localStorage.getItem(storageKey) || defaultTheme,
-  );
+  const [theme, setTheme] = useState<ThemeType>(getThemeFromStorage(storageKey, defaultTheme));
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -35,10 +47,7 @@ export function ThemeProvider({
     root.classList.remove('light', 'dark');
 
     if (theme === 'system') {
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)')
-        .matches
-        ? 'dark'
-        : 'light';
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
       root.classList.add(systemTheme);
       return;

@@ -1,27 +1,20 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable @typescript-eslint/no-use-before-define */
-// import { Box, Link, CircularProgress } from '@material-ui/core';
-import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
-import { useFetch } from 'hooks/useFetch/useFetch';
 import * as yup from 'yup';
 import { useEffect } from 'react';
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from 'components/ui/dialog';
+import { Copy, Loader2, Save } from 'lucide-react';
+
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from 'components/ui/dialog';
 import { Textarea } from 'components/ui/textarea';
 import { Checkbox } from 'components/ui/checkbox';
 import { Button } from 'components/ui/button';
 import { useToast } from 'components/ui/use-toast';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
-import { Copy, Loader2, Save } from 'lucide-react';
+import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
+import { useFetch } from 'hooks/useFetch/useFetch';
+import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
+
 import { useEditQuestionModalContext } from './EditQuestionModal.context';
 import { useForm, useSaveOverride } from './EditQuestionModal.hooks';
 import { copyTextToClipboard } from './EditQuestionModal.utils';
-
 import createPR2Src from './images/create-pr-2.png';
 import createPRSrc from './images/create-pr.png';
 import forkSrc from './images/fork.png';
@@ -47,11 +40,7 @@ export const EditQuestionModal = () => {
     >
       {data && (
         <DialogContent className="overflow-auto max-h-[800px] lg:max-w-[900px] md:max-w-[700px] md:w-full">
-          <ModalContents
-            questionId={data.questionId}
-            subjectId={data.subjectId}
-            closeModal={closeModal}
-          />
+          <ModalContents questionId={data.questionId} subjectId={data.subjectId} closeModal={closeModal} />
         </DialogContent>
       )}
     </Dialog>
@@ -63,29 +52,18 @@ interface ModalContentsProps {
   subjectId: string;
   closeModal: () => void;
 }
-function ModalContents({
-  questionId,
-  subjectId,
-  closeModal,
-}: ModalContentsProps) {
-  const { data: anyOverrides, loading: overridesLoading } = useFetch(
-    `overrides/${subjectId}.json`,
-    yup.object({}),
-  );
+function ModalContents({ questionId, subjectId, closeModal }: ModalContentsProps) {
+  const { data: anyOverrides, loading: overridesLoading } = useFetch(`overrides/${subjectId}.json`, yup.object({}));
   const overrides = anyOverrides as OutputOverrideSubject | undefined;
 
   const subjectData = useSubjectData(subjectId);
-  const question =
-    subjectData.state === 'done'
-      ? subjectData.data.data.find((q) => q.id === questionId)
-      : undefined;
+  const question = subjectData.state === 'done' ? subjectData.data.data.find((q) => q.id === questionId) : undefined;
 
-  const { onSave, overridesSubmitted, overridesString, onGoBack } =
-    useSaveOverride({
-      questionId,
-      subjectId,
-      overrides: overrides ?? null,
-    });
+  const { onSave, overridesSubmitted, overridesString, onGoBack } = useSaveOverride({
+    questionId,
+    subjectId,
+    overrides: overrides ?? null,
+  });
   const {
     formState,
     onAnswerCorrectChange,
@@ -102,12 +80,7 @@ function ModalContents({
     }
   }, [errorHandler, question, subjectData.state]);
 
-  if (
-    subjectData.state !== 'done' ||
-    question === undefined ||
-    formState == null ||
-    overridesLoading
-  ) {
+  if (subjectData.state !== 'done' || question === undefined || formState == null || overridesLoading) {
     return (
       <div className="flex h-[400px] w-full justify-center items-center">
         <Loader2 className="h-12 w-12 animate-spin text-blue-500" />
@@ -117,23 +90,13 @@ function ModalContents({
 
   if (overridesSubmitted === 'edit') {
     return (
-      <EditResult
-        subjectId={subjectId}
-        overridesString={overridesString}
-        onClose={closeModal}
-        onGoBack={onGoBack}
-      />
+      <EditResult subjectId={subjectId} overridesString={overridesString} onClose={closeModal} onGoBack={onGoBack} />
     );
   }
 
   if (overridesSubmitted === 'new') {
     return (
-      <NewResult
-        subjectId={subjectId}
-        overridesString={overridesString}
-        onClose={closeModal}
-        onGoBack={onGoBack}
-      />
+      <NewResult subjectId={subjectId} overridesString={overridesString} onClose={closeModal} onGoBack={onGoBack} />
     );
   }
 
@@ -172,10 +135,7 @@ function ModalContents({
                 onQuestionMarkdownChange(checked);
               }}
             />
-            <label
-              htmlFor="question-markdown"
-              className="text-sm font-medium leading-none cursor-pointer"
-            >
+            <label htmlFor="question-markdown" className="text-sm font-medium leading-none cursor-pointer">
               Formatowanie markdown
             </label>
           </div>
@@ -183,14 +143,8 @@ function ModalContents({
 
         <div className="flex flex-col gap-4 mt-2">
           {formState.answers.map((a, i) => (
-            <div
-              className="flex flex-col gap-2 p-4 pt-3 rounded-lg border"
-              // eslint-disable-next-line react/no-array-index-key
-              key={i}
-            >
-              <div className="text-xl font-semibold tracking-tight mb-1">
-                Odpowiedź nr. {i + 1}
-              </div>
+            <div className="flex flex-col gap-2 p-4 pt-3 rounded-lg border" key={i}>
+              <div className="text-xl font-semibold tracking-tight mb-1">Odpowiedź nr. {i + 1}</div>
               <label
                 className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 block"
                 htmlFor={`answer-${i}`}
@@ -216,10 +170,7 @@ function ModalContents({
                     onAnswerCorrectChange(checked, i);
                   }}
                 />
-                <label
-                  htmlFor={`answer-correct-${i}`}
-                  className="text-sm font-medium leading-none cursor-pointer"
-                >
+                <label htmlFor={`answer-correct-${i}`} className="text-sm font-medium leading-none cursor-pointer">
                   Odpowiedź poprawna
                 </label>
               </div>
@@ -236,10 +187,7 @@ function ModalContents({
                     onAnswerMarkdownChange(checked, i);
                   }}
                 />
-                <label
-                  htmlFor={`answer-markdown-${i}`}
-                  className="text-sm font-medium leading-none cursor-pointer"
-                >
+                <label htmlFor={`answer-markdown-${i}`} className="text-sm font-medium leading-none cursor-pointer">
                   Formatowanie markdown
                 </label>
               </div>
@@ -266,12 +214,7 @@ interface ResultProps {
   onClose: () => void;
   onGoBack: () => void;
 }
-const EditResult = ({
-  overridesString,
-  subjectId,
-  onClose,
-  onGoBack,
-}: ResultProps) => {
+const EditResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultProps) => {
   const { toast } = useToast();
 
   const onCopy = () => {
@@ -296,12 +239,7 @@ const EditResult = ({
             <Tooltip>
               <TooltipContent>Skopuj do schowka</TooltipContent>
               <TooltipTrigger asChild>
-                <Button
-                  variant="outline"
-                  size="icon-sm"
-                  onClick={onCopy}
-                  className="absolute top-2 right-2"
-                >
+                <Button variant="outline" size="icon-sm" onClick={onCopy} className="absolute top-2 right-2">
                   <Copy className="w-4 h-4" />
                 </Button>
               </TooltipTrigger>
@@ -318,11 +256,7 @@ const EditResult = ({
         <li>W razie potrzeby zaloguj się na swoje konto GitHub</li>
         <li>
           Stwórz fork repozytorium{' '}
-          <a
-            href="https://github.com/bibixx/zdaj-se-pjatk-data"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/bibixx/zdaj-se-pjatk-data" target="_blank" rel="noreferrer">
             bibixx/zdaj-se-pjatk-data
           </a>{' '}
           poprzez naciśnięcie przycisku <em>Fork this repository</em>.
@@ -343,18 +277,14 @@ const EditResult = ({
         <li>
           Wypełnij tytuł, oraz opis Pull Requesta
           <p className="text-lg font-semibold text-center mt-4 mb-4 border border-red-200 bg-red-100 text-red-900 py-3 rounded-md">
-            🚨 Pull Request bez podania źródła zostanie zamknięty bez
-            dopytywania 🚨
+            🚨 Pull Request bez podania źródła zostanie zamknięty bez dopytywania 🚨
           </p>
         </li>
         <li>
           Naciśnij przycisk <em>Create pull request</em>
           <img src={createPR2Src} alt="" />
         </li>
-        <li>
-          Udało się! Teraz poczekaj na review, a twoja zmiana wkrótce pojawi się
-          na zdaj.se
-        </li>
+        <li>Udało się! Teraz poczekaj na review, a twoja zmiana wkrótce pojawi się na zdaj.se</li>
       </ol>
       <div className="flex gap-2">
         <Button variant="blue" onClick={onClose}>
@@ -368,12 +298,7 @@ const EditResult = ({
   );
 };
 
-const NewResult = ({
-  overridesString,
-  subjectId,
-  onClose,
-  onGoBack,
-}: ResultProps) => {
+const NewResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultProps) => {
   const { toast } = useToast();
 
   const onCopy = () => {
@@ -398,12 +323,7 @@ const NewResult = ({
             <Tooltip>
               <TooltipContent>Skopuj do schowka</TooltipContent>
               <TooltipTrigger asChild>
-                <Button
-                  variant="outline"
-                  size="icon-sm"
-                  onClick={onCopy}
-                  className="absolute top-2 right-2"
-                >
+                <Button variant="outline" size="icon-sm" onClick={onCopy} className="absolute top-2 right-2">
                   <Copy className="w-4 h-4" />
                 </Button>
               </TooltipTrigger>
@@ -420,11 +340,7 @@ const NewResult = ({
         <li>W razie potrzeby zaloguj się na swoje konto GitHub</li>
         <li>
           Stwórz fork repozytorium{' '}
-          <a
-            href="https://github.com/bibixx/zdaj-se-pjatk-data"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/bibixx/zdaj-se-pjatk-data" target="_blank" rel="noreferrer">
             bibixx/zdaj-se-pjatk-data
           </a>{' '}
           poprzez naciśnięcie przycisku <em>Fork this repository</em>.
@@ -445,18 +361,14 @@ const NewResult = ({
         <li>
           Wypełnij tytuł, oraz opis Pull Requesta
           <p className="text-lg font-semibold text-center mt-4 mb-4 border border-red-200 bg-red-100 text-red-900 py-3 rounded-md">
-            🚨 Pull Request bez podania źródła zostanie zamknięty bez
-            dopytywania 🚨
+            🚨 Pull Request bez podania źródła zostanie zamknięty bez dopytywania 🚨
           </p>
         </li>
         <li>
           Naciśnij przycisk <em>Create pull request</em>
           <img src={createPR2Src} alt="" />
         </li>
-        <li>
-          Udało się! Teraz poczekaj na review, a twoja zmiana wkrótce pojawi się
-          na zdaj.se
-        </li>
+        <li>Udało się! Teraz poczekaj na review, a twoja zmiana wkrótce pojawi się na zdaj.se</li>
       </ol>
       <div className="flex gap-2">
         <Button variant="blue" onClick={onClose}>

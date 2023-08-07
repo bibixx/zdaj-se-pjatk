@@ -2,6 +2,7 @@
 
 import { useLayoutEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+
 import { typeset } from 'utils/typeset';
 
 import './UserContent.css';
@@ -20,10 +21,5 @@ export const UserContent = ({ children, isMarkdown = false }: Props) => {
     return <ReactMarkdown className="user-content">{children}</ReactMarkdown>;
   }
 
-  return (
-    <span
-      className="user-content"
-      dangerouslySetInnerHTML={{ __html: children }}
-    />
-  );
+  return <span className="user-content" dangerouslySetInnerHTML={{ __html: children }} />;
 };

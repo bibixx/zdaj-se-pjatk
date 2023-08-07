@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/heading-has-content */
 import { cn } from 'utils';
 
 interface TypographyProps extends React.HTMLAttributes<HTMLHeadingElement> {}
@@ -16,13 +15,5 @@ export function TypographyH2({ className, ...props }: TypographyProps) {
 }
 
 export function TypographyH3({ className, ...props }: TypographyProps) {
-  return (
-    <h3
-      className={cn(
-        'scroll-m-20 text-xl font-semibold tracking-tight',
-        className,
-      )}
-      {...props}
-    />
-  );
+  return <h3 className={cn('scroll-m-20 text-xl font-semibold tracking-tight', className)} {...props} />;
 }

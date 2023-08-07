@@ -1,6 +1,8 @@
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { useEffect, useState } from 'react';
+
+import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { Question } from 'validators/subjects';
+
 import { OutputOverrideSubject } from './EditQuestionModal.types';
 
 interface UseSaveArguments {
@@ -8,44 +10,33 @@ interface UseSaveArguments {
   questionId: string;
   subjectId: string;
 }
-export const useSaveOverride = ({
-  overrides,
-  questionId,
-  subjectId,
-}: UseSaveArguments) => {
+export const useSaveOverride = ({ overrides, questionId, subjectId }: UseSaveArguments) => {
   const errorHandler = useErrorHandler();
-  const [overridesSubmitted, setOverridesSubmitted] = useState<
-    'new' | 'edit' | null
-  >(null);
+  const [overridesSubmitted, setOverridesSubmitted] = useState<'new' | 'edit' | null>(null);
   const [overridesString, setOverridesString] = useState<string>('');
-  const onOverridesSave = (
-    formState: FormState,
-    notNullOverrides: OutputOverrideSubject,
-  ) => {
+  const onOverridesSave = (formState: FormState, notNullOverrides: OutputOverrideSubject) => {
     const numberedQuestionId = +questionId;
 
     let found = false;
-    const newData: OutputOverrideSubject['data'] = notNullOverrides.data.map(
-      (q) => {
-        if (q.id !== numberedQuestionId) {
-          return q;
-        }
+    const newData: OutputOverrideSubject['data'] = notNullOverrides.data.map((q) => {
+      if (q.id !== numberedQuestionId) {
+        return q;
+      }
 
-        found = true;
-        return {
-          ...q,
-          id: q?.id,
-          question: formState.question,
-          isMarkdown: formState.isMarkdown,
-          answers: q
-            ? q.answers?.map((a, i) => ({
-                ...a,
-                ...(formState.answers[i] ?? {}),
-              }))
-            : formState.answers,
-        };
-      },
-    );
+      found = true;
+      return {
+        ...q,
+        id: q?.id,
+        question: formState.question,
+        isMarkdown: formState.isMarkdown,
+        answers: q
+          ? q.answers?.map((a, i) => ({
+              ...a,
+              ...(formState.answers[i] ?? {}),
+            }))
+          : formState.answers,
+      };
+    });
 
     if (!found) {
       newData.push({
@@ -100,7 +91,7 @@ export const useSaveOverride = ({
         onNewSave(formState);
       }
     } catch (error) {
-      errorHandler(error as any);
+      errorHandler(error as Error);
     }
   };
 

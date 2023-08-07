@@ -1,18 +1,12 @@
 import { Helmet } from 'react-helmet';
 import { Link as RouterLink } from 'react-router-dom';
-import { Header } from 'components/Header/Header';
 
-import { useIndexData } from 'hooks/useIndexData/useIndexData';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from 'components/ui/table';
+import { Header } from 'components/Header/Header';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from 'components/ui/table';
 import { Button } from 'components/ui/button';
 import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
+import { useIndexData } from 'hooks/useIndexData/useIndexData';
+
 import { IndexPageSkeletonRows } from './IndexPageSkeleton';
 
 const helmetHead = (
@@ -51,9 +45,7 @@ export const IndexPage = () => {
           <TableHeader>
             <TableRow hasHover={false}>
               <TableHead className="max-md:px-4">Przedmiot</TableHead>
-              <TableHead className="text-right max-md:hidden w-24">
-                Ilość pytań
-              </TableHead>
+              <TableHead className="text-right max-md:hidden w-24">Ilość pytań</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -72,9 +64,7 @@ export const IndexPage = () => {
         <TableHeader>
           <TableRow hasHover={false}>
             <TableHead className="max-md:px-4">Przedmiot</TableHead>
-            <TableHead className="text-right max-md:hidden w-24">
-              Ilość pytań
-            </TableHead>
+            <TableHead className="text-right max-md:hidden w-24">Ilość pytań</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -88,10 +78,7 @@ export const IndexPage = () => {
                   <span className="text-muted-foreground"> &bull; </span>
                   <span className="text-muted-foreground">{title}</span>
                 </TableCell>
-                <TableCell
-                  to={url}
-                  className="text-right text-xs text-muted-foreground max-md:hidden"
-                >
+                <TableCell to={url} className="text-right text-xs text-muted-foreground max-md:hidden">
                   {questionsCount}
                 </TableCell>
               </TableRow>
