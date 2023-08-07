@@ -24,7 +24,7 @@ const questionSchemaShape = {
   question: yup.string().ensure(),
   id: yup.string().transform(transformNull),
   isMarkdown: yup.boolean().default(false),
-  comments: yup.array().of(commentSchema).nullable(true).ensure(),
+  comments: yup.array().of(commentSchema).nullable().ensure().required(),
   answers: yup.array().of(answerSchema).required(),
   overwritten: yup.boolean().nullable(),
   added: yup.boolean().nullable(),
@@ -37,7 +37,7 @@ const questionSchema = yup.object({}).shape({
 
 const overrideQuestionSchemaShape = {
   ...questionSchemaShape,
-  answers: yup.array().of(answerSchema).ensure(),
+  answers: yup.array().of(answerSchema).ensure().required(),
 };
 const nullableIdOverrideQuestionSchema = yup.object({}).shape(overrideQuestionSchemaShape);
 const overrideQuestionSchema = yup.object({}).shape({

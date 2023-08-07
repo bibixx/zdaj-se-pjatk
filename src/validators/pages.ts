@@ -7,7 +7,7 @@ export const pageSchema = yup.object({}).shape({
 });
 
 export const pagesSchema = yup.object({}).shape({
-  pages: yup.array().of(pageSchema).ensure(),
+  pages: yup.array().of(pageSchema).ensure().required(),
   updatedAt: yup.number().required(),
 });
 
