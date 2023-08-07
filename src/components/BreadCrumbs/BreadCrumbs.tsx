@@ -1,5 +1,6 @@
 import { Button } from 'components/ui/button';
 import { ChevronRight } from 'lucide-react';
+import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 type Crumb =
@@ -19,9 +20,9 @@ export const BreadCrumbs = ({ crumbs }: BreadCrumbsProps) => {
             : crumb.id ?? i;
 
         return (
-          <>
+          <Fragment key={key}>
             {crumb.to != null ? (
-              <Button asChild variant="ghost" className="px-2" key={key}>
+              <Button asChild variant="ghost" className="px-2">
                 <Link
                   to={crumb.to}
                   className="text-muted-foreground hover:text-foreground"
@@ -30,15 +31,12 @@ export const BreadCrumbs = ({ crumbs }: BreadCrumbsProps) => {
                 </Link>
               </Button>
             ) : (
-              <div
-                key={key}
-                className="text-muted-foreground p-2 font-medium text-sm select-none"
-              >
+              <div className="text-muted-foreground p-2 font-medium text-sm select-none">
                 {crumb.content}
               </div>
             )}
             <ChevronRight className="h-4 text-muted-foreground mr-2" />
-          </>
+          </Fragment>
         );
       })}
       <h1 className="text-xl font-semibold select-none">{lastCrumb.content}</h1>

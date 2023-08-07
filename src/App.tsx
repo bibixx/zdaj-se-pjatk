@@ -21,6 +21,7 @@ import { EditQuestionModal } from 'components/EditQuestionModal/EditQuestionModa
 import { EditQuestionModalProvider } from 'components/EditQuestionModal/EditQuestionModal.context';
 import { ThemeProvider } from 'components/ThemeProvider/ThemeProvider';
 import { AnimalEmojiProvider } from 'components/AnimalEmoji/AnimalEmoji';
+import { TooltipProvider } from 'components/ui/tooltip';
 import { history } from './customHistory';
 
 export const App = () => {
@@ -32,43 +33,45 @@ export const App = () => {
       <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
         <EditQuestionModalProvider>
           <SnackbarProvider maxSnack={1}>
-            <AnalyticsContext.Provider value={piwik}>
-              <div className="max-w-3xl mx-auto font-normal">
-                <Router
-                  history={piwik ? piwik.connectToHistory(history) : history}
-                >
-                  <AnimalEmojiProvider>
-                    <RelCanonical />
-                    <CookieNotice
-                      onBannerClose={onBannerClose}
-                      shouldShowCookieBanner={shouldShowCookieBanner}
-                    />
-                    <Switch>
-                      <Route path="/" exact component={IndexPage} />
-                      <Route path="/donate" exact component={DonatePage} />
-                      <Route
-                        path="/polityka-cookies"
-                        exact
-                        component={CookiePolicy}
+            <TooltipProvider delayDuration={400}>
+              <AnalyticsContext.Provider value={piwik}>
+                <div className="max-w-3xl mx-auto font-normal">
+                  <Router
+                    history={piwik ? piwik.connectToHistory(history) : history}
+                  >
+                    <AnimalEmojiProvider>
+                      <RelCanonical />
+                      <CookieNotice
+                        onBannerClose={onBannerClose}
+                        shouldShowCookieBanner={shouldShowCookieBanner}
                       />
-                      <Route
-                        path="/bledy-zmiany-w-danych"
-                        exact
-                        component={BugsDataChange}
-                      />
-                      <Route path="/:subjectId/exam" component={Exam} />
-                      <Route
-                        path="/:subjectId"
-                        exact
-                        component={SubjectAllQuestions}
-                      />
-                    </Switch>
-                    <Footer updatedAt={updatedAt} />
-                  </AnimalEmojiProvider>
-                </Router>
-              </div>
-              <EditQuestionModal />
-            </AnalyticsContext.Provider>
+                      <Switch>
+                        <Route path="/" exact component={IndexPage} />
+                        <Route path="/donate" exact component={DonatePage} />
+                        <Route
+                          path="/polityka-cookies"
+                          exact
+                          component={CookiePolicy}
+                        />
+                        <Route
+                          path="/bledy-zmiany-w-danych"
+                          exact
+                          component={BugsDataChange}
+                        />
+                        <Route path="/:subjectId/exam" component={Exam} />
+                        <Route
+                          path="/:subjectId"
+                          exact
+                          component={SubjectAllQuestions}
+                        />
+                      </Switch>
+                      <Footer updatedAt={updatedAt} />
+                    </AnimalEmojiProvider>
+                  </Router>
+                </div>
+                <EditQuestionModal />
+              </AnalyticsContext.Provider>
+            </TooltipProvider>
           </SnackbarProvider>
         </EditQuestionModalProvider>
       </ThemeProvider>

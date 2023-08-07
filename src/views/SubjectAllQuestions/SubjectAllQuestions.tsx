@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useLocation, useParams } from 'react-router-dom';
 
@@ -27,10 +27,17 @@ const formatQuestionsCountText = (count: number) =>
 export const SubjectAllQuestions = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
-  const learntQuestions = useLearntQuestions(subjectId);
+  const { setQuestion, questions: learntQuestions } =
+    useLearntQuestions(subjectId);
   const location = useLocation<{ testSettings: boolean } | undefined>();
   const [isExamModalOpen, setIsExamModalOpen] = useState(
     location.state?.testSettings ?? false,
+  );
+
+  const onLearntChange = useCallback(
+    (questionId: string, checked: boolean) =>
+      setQuestion(questionId, checked ? 'add' : 'remove'),
+    [setQuestion],
   );
 
   if (subjectData.state === 'error' && subjectData.is404) {
@@ -128,22 +135,18 @@ export const SubjectAllQuestions = () => {
             Brak pytań
           </Typography>
         )}
-        {data.map((question) => (
-          <Question
-            learntButtonData={{
-              onClick: (checked: boolean) =>
-                learntQuestions.setQuestion(
-                  question.id,
-                  checked ? 'add' : 'remove',
-                ),
-              checked: learntQuestions.questions.has(question.id),
-            }}
-            question={question}
-            key={question.id}
-            showCorrect
-            subjectId={subjectId}
-          />
-        ))}
+        <div className="flex flex-col gap-4">
+          {data.map((question) => (
+            <Question
+              question={question}
+              key={question.id}
+              showCorrect
+              subjectId={subjectId}
+              isLearnt={learntQuestions.has(question.id)}
+              onLearntChange={onLearntChange}
+            />
+          ))}
+        </div>
       </div>
       <CreateExamModal
         isOpen={isExamModalOpen}

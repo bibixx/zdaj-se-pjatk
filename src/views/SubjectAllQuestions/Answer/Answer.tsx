@@ -1,13 +1,8 @@
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Checkbox from '@material-ui/core/Checkbox';
-import { Divider, Box } from '@material-ui/core';
-
 import { UserContent } from 'components/UserContent/UserContent';
 import { Subject } from 'validators/subjects';
-import { Fragment } from 'react';
-import { useStyles } from './Answer.styles';
+import { Checkbox } from 'components/ui/checkbox';
+import { Button } from 'components/ui/button';
+import { getUserSelectClassNames } from './Answer.utils';
 
 interface Props {
   answer: Subject['data'][number]['answers'][number];
@@ -29,53 +24,48 @@ export const Answer = ({
   onChange,
 }: Props) => {
   const labelId = `checkbox-list-label-${answer}`;
-  const classes = useStyles();
-
-  const IconWrapper = showUserSelect && showCorrect ? ListItemIcon : Fragment;
 
   return (
-    <>
-      <Divider />
-      <ListItem role={undefined} dense>
-        <ListItemText
-          id={labelId}
-          primary={
-            <Box>
-              <UserContent isMarkdown={isMarkdown}>{answer}</UserContent>
-            </Box>
-          }
-        />
-        <IconWrapper>
-          {showUserSelect && (
+    <div className="px-4 py-1 flex items-center">
+      <div className="text-sm flex-1" id={labelId}>
+        <UserContent isMarkdown={isMarkdown}>{answer}</UserContent>
+      </div>
+      <div className="flex ml-2">
+        {showUserSelect && (
+          <Button
+            size="icon-sm"
+            variant="ghost"
+            disabled={disableUserSelect}
+            className="disabled:opacity-100"
+          >
             <Checkbox
-              disableRipple
-              inputProps={{ 'aria-labelledby': labelId }}
-              disabled={disableUserSelect}
-              onChange={(v) => onChange?.(v.target.checked)}
-              classes={
-                disableUserSelect
-                  ? {
-                      root: wasUserSelectCorrect
-                        ? classes.greenCheckboxRoot
-                        : classes.redCheckboxRoot,
-                    }
-                  : undefined
-              }
+              aria-labelledby={labelId}
+              onCheckedChange={(newChecked) => {
+                if (newChecked === 'indeterminate') {
+                  return;
+                }
+
+                onChange?.(newChecked);
+              }}
+              className={getUserSelectClassNames(
+                disableUserSelect,
+                wasUserSelectCorrect,
+              )}
               checked={userAnswer}
               color="primary"
             />
-          )}
-          {showCorrect && (
+          </Button>
+        )}
+        {showCorrect && (
+          <Button size="icon-sm" variant="ghost" disabled>
             <Checkbox
               tabIndex={-1}
-              disableRipple
-              inputProps={{ 'aria-labelledby': labelId }}
+              aria-labelledby={labelId}
               checked={correct}
-              disabled
             />
-          )}
-        </IconWrapper>
-      </ListItem>
-    </>
+          </Button>
+        )}
+      </div>
+    </div>
   );
 };
