@@ -10,7 +10,7 @@ export const BugsDataChange = withPageWrapper(() => (
         <BreadCrumbs
           crumbs={[
             {
-              content: <span className="whitespace-nowrap">Generatory 3.1</span>,
+              content: <span className="whitespace-nowrap">Generatory 3.0</span>,
               id: 'root',
               to: '/',
             },

@@ -12,7 +12,7 @@ import { IndexPageSkeletonRows } from './IndexPageSkeleton';
 
 const helmetHead = (
   <Helmet>
-    <title>Generatory 3.1</title>
+    <title>Generatory 3.0</title>
   </Helmet>
 );
 
@@ -24,7 +24,7 @@ export const IndexPage = withPageWrapper(() => {
       <Header>
         <h1 className="text-2xl font-bold select-none">
           <span className="text-blue-500 dark:text-inherit">G</span>
-          eneratory 3.1
+          eneratory 3.0
         </h1>
         <div className="flex-1" />
         <Button asChild size="icon" variant="outline">
