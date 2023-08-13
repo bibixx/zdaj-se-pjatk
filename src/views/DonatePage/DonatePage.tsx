@@ -19,7 +19,7 @@ export const DonatePage = () => (
           <BreadCrumbs
             crumbs={[
               {
-                content: <span className="whitespace-nowrap">Generatory 3.0</span>,
+                content: <span className="whitespace-nowrap">Generatory 3.1</span>,
                 id: 'root',
                 to: '/',
               },
