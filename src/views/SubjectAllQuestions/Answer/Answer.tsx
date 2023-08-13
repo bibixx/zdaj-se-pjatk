@@ -27,7 +27,7 @@ export const Answer = ({
   const labelId = `checkbox-list-label-${answer}`;
 
   return (
-    <div className="px-4 py-1 flex items-center">
+    <div className="pr-2 sm:pr-4 pl-4 py-1 flex items-center overflow-auto">
       <div className="text-sm flex-1" id={labelId}>
         <UserContent isMarkdown={isMarkdown}>{answer}</UserContent>
       </div>

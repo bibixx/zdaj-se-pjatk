@@ -8,6 +8,7 @@ import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Button } from 'components/ui/button';
 import { Skeleton } from 'components/ui/skeleton';
 import { TooltipIfTooWide } from 'components/TooltipIfTooWide/TooltipIfTooWide';
+import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { polishPlural } from 'utils/polishPlural';
@@ -18,7 +19,7 @@ import { Question } from './Question/Question';
 
 const formatQuestionsCountText = (count: number) => polishPlural('pytanie', 'pytania', 'pytań', count);
 
-export const SubjectAllQuestions = () => {
+export const SubjectAllQuestions = withPageWrapper(() => {
   const { subjectId } = useParams<{ subjectId: string }>();
   const subjectData = useSubjectData(subjectId);
   const { setQuestion, questions: learntQuestions } = useLearntQuestions(subjectId);
@@ -30,7 +31,28 @@ export const SubjectAllQuestions = () => {
     [setQuestion],
   );
 
-  if (subjectData.state === 'error' && subjectData.is404) {
+  // TODO: Proper error
+  if (subjectData.state === 'error') {
+    if (subjectData.is404) {
+      return (
+        <>
+          <Helmet>
+            <title>{subjectId} | Generatory 3.0</title>
+          </Helmet>
+          <div className="h-96 flex flex-col justify-center gap-4">
+            <h1 className="text-3xl font-semibold tracking-tight transition-colors text-center">
+              Ups, wybrany przedmiot nie został znaleziony 🙈
+            </h1>
+            <div className="flex w-full justify-center">
+              <Button asChild variant="outline">
+                <Link to="/">Wróć do strony głównej</Link>
+              </Button>
+            </div>
+          </div>
+        </>
+      );
+    }
+
     return (
       <>
         <Helmet>
@@ -50,26 +72,30 @@ export const SubjectAllQuestions = () => {
     );
   }
 
-  if (subjectData.state === 'loading' || subjectData.state === 'error') {
+  if (subjectData.state === 'loading') {
     return (
       <>
         <Helmet>
           <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
-        <Header>
-          <BreadCrumbs
-            crumbs={[
-              {
-                content: 'Generatory 3.0',
-                to: '/',
-              },
-              {
-                content: <Skeleton className="h-6 w-[400px]" />,
-                id: 'subjectId',
-              },
-            ]}
-          />
-        </Header>
+        <div className="pl-0 max-md:pl-2 pr-2 max-md:pr-4">
+          <Header>
+            <BreadCrumbs
+              crumbs={[
+                {
+                  content: <span className="whitespace-nowrap">Generatory 3.0</span>,
+                  id: 'root',
+                  to: '/',
+                },
+                {
+                  content: <Skeleton className="h-6 w-[400px]" />,
+                  id: 'subjectId',
+                  className: 'flex',
+                },
+              ]}
+            />
+          </Header>
+        </div>
         <div className="flex justify-center mb-4">
           <div className="relative">
             <Button variant="default" size="lg" tabIndex={-1} disabled className="invisible">
@@ -79,7 +105,7 @@ export const SubjectAllQuestions = () => {
             <Skeleton className="w-full h-full absolute top-0 left-0" />
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-2 sm:px-0">
           <QuestionSkeleton />
           <QuestionSkeleton />
           <QuestionSkeleton />
@@ -116,35 +142,37 @@ export const SubjectAllQuestions = () => {
       <Helmet>
         <title>{header} | Generatory 3.0</title>
       </Helmet>
-      <Header>
-        <BreadCrumbs
-          crumbs={[
-            {
-              content: <span className="whitespace-nowrap">Generatory 3.0</span>,
-              id: 'root',
-              to: '/',
-            },
-            {
-              id: 'main',
-              content: (
-                <div className="flex whitespace-nowrap items-baseline">
-                  {subjectId.toUpperCase()}
-                  <span className="text-muted-foreground font-normal">&nbsp;&bull;&nbsp;</span>
-                  <TooltipIfTooWide tooltip={<span className="font-normal">{title}</span>}>
-                    <span className="text-muted-foreground font-normal flex-1 overflow-hidden text-ellipsis">
-                      {title}
+      <div className="pl-0 max-md:pl-2 pr-2 max-md:pr-4">
+        <Header>
+          <BreadCrumbs
+            crumbs={[
+              {
+                content: <span className="whitespace-nowrap">Generatory 3.0</span>,
+                id: 'root',
+                to: '/',
+              },
+              {
+                id: 'main',
+                content: (
+                  <div className="flex whitespace-nowrap items-baseline">
+                    {subjectId.toUpperCase()}
+                    <span className="text-muted-foreground font-normal">&nbsp;&bull;&nbsp;</span>
+                    <TooltipIfTooWide tooltip={<span className="font-normal">{title}</span>}>
+                      <span className="text-muted-foreground font-normal flex-1 overflow-hidden text-ellipsis">
+                        {title}
+                      </span>
+                    </TooltipIfTooWide>
+                    <span className="text-base text-muted-foreground">
+                      &nbsp;({data.length} {formatQuestionsCountText(data.length)})
                     </span>
-                  </TooltipIfTooWide>
-                  <span className="text-base text-muted-foreground">
-                    &nbsp;({data.length} {formatQuestionsCountText(data.length)})
-                  </span>
-                </div>
-              ),
-            },
-          ]}
-        />
-      </Header>
-      <div>
+                  </div>
+                ),
+              },
+            ]}
+          />
+        </Header>
+      </div>
+      <div className="px-2 sm:px-0">
         <div className="flex justify-center mb-4">
           <Button
             variant="default"
@@ -180,4 +208,4 @@ export const SubjectAllQuestions = () => {
       />
     </>
   );
-};
+});

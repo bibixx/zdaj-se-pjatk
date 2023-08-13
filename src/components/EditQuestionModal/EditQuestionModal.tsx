@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { useEffect } from 'react';
+import { ReactNode } from 'react';
 import { Copy, Loader2, Save } from 'lucide-react';
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from 'components/ui/dialog';
@@ -8,11 +8,9 @@ import { Checkbox } from 'components/ui/checkbox';
 import { Button } from 'components/ui/button';
 import { useToast } from 'components/ui/use-toast';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { useFetch } from 'hooks/useFetch/useFetch';
-import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
+import { Question } from 'validators/subjects';
 
-import { useEditQuestionModalContext } from './EditQuestionModal.context';
 import { useForm, useSaveOverride } from './EditQuestionModal.hooks';
 import { copyTextToClipboard } from './EditQuestionModal.utils';
 import createPR2Src from './images/create-pr-2.png';
@@ -25,10 +23,13 @@ import { OutputOverrideSubject } from './EditQuestionModal.types';
 
 import './EditQuestionModal.css';
 
-export const EditQuestionModal = () => {
-  const { data, closeModal } = useEditQuestionModalContext();
-  const isOpen = data != null;
-
+interface EditQuestionModalProps {
+  subjectId: string;
+  question: Question;
+  isOpen: boolean;
+  closeModal: () => void;
+}
+export const EditQuestionModal = ({ closeModal, subjectId, question, isOpen }: EditQuestionModalProps) => {
   return (
     <Dialog
       open={isOpen}
@@ -38,29 +39,24 @@ export const EditQuestionModal = () => {
         }
       }}
     >
-      {data && (
-        <DialogContent className="overflow-auto max-h-[800px] lg:max-w-[900px] md:max-w-[700px] md:w-full">
-          <ModalContents questionId={data.questionId} subjectId={data.subjectId} closeModal={closeModal} />
-        </DialogContent>
-      )}
+      <DialogContent className="overflow-auto max-h-[800px] lg:max-w-[900px] md:max-w-[700px] md:w-full">
+        <ModalContents question={question} subjectId={subjectId} closeModal={closeModal} />
+      </DialogContent>
     </Dialog>
   );
 };
 
 interface ModalContentsProps {
-  questionId: string;
+  question: Question;
   subjectId: string;
   closeModal: () => void;
 }
-function ModalContents({ questionId, subjectId, closeModal }: ModalContentsProps) {
+function ModalContents({ question, subjectId, closeModal }: ModalContentsProps) {
   const { data: anyOverrides, loading: overridesLoading } = useFetch(`overrides/${subjectId}.json`, yup.object({}));
   const overrides = anyOverrides as OutputOverrideSubject | undefined;
 
-  const subjectData = useSubjectData(subjectId);
-  const question = subjectData.state === 'done' ? subjectData.data.data.find((q) => q.id === questionId) : undefined;
-
   const { onSave, overridesSubmitted, overridesString, onGoBack } = useSaveOverride({
-    questionId,
+    questionId: question.id,
     subjectId,
     overrides: overrides ?? null,
   });
@@ -73,14 +69,7 @@ function ModalContents({ questionId, subjectId, closeModal }: ModalContentsProps
     onQuestionMarkdownChange,
   } = useForm(question ?? null);
 
-  const errorHandler = useErrorHandler();
-  useEffect(() => {
-    if (subjectData.state === 'done' && question == null) {
-      errorHandler(new Error('Question for edit not found'));
-    }
-  }, [errorHandler, question, subjectData.state]);
-
-  if (subjectData.state !== 'done' || question === undefined || formState == null || overridesLoading) {
+  if (formState == null || overridesLoading) {
     return (
       <div className="flex h-[400px] w-full justify-center items-center">
         <Loader2 className="h-12 w-12 animate-spin text-blue-500" />
@@ -101,7 +90,7 @@ function ModalContents({ questionId, subjectId, closeModal }: ModalContentsProps
   }
 
   return (
-    <DialogHeader>
+    <DialogHeader className="text-left">
       <DialogTitle>Edytuj pytanie</DialogTitle>
       <form
         onSubmit={(e) => {
@@ -208,6 +197,15 @@ function ModalContents({ questionId, subjectId, closeModal }: ModalContentsProps
   );
 }
 
+interface AlertProps {
+  children: ReactNode;
+}
+const Alert = ({ children }: AlertProps) => (
+  <p className="text-md sm:text-lg font-semibold text-center mt-4 mb-4 border border-red-200 bg-red-100 text-red-900 py-3 px-1.5 rounded-md">
+    <span className="max-sm:hidden">🚨</span> {children} <span className="max-sm:hidden">🚨</span>
+  </p>
+);
+
 interface ResultProps {
   overridesString: string;
   subjectId: string;
@@ -230,7 +228,7 @@ const EditResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultPro
 
   const url = `https://github.com/bibixx/zdaj-se-pjatk-data/edit/master/overrides/${subjectId}.json`;
   return (
-    <DialogHeader className="edit-question-modal">
+    <DialogHeader className="edit-question-modal text-left">
       <DialogTitle>Jak przesłać poprawione pytanie?</DialogTitle>
       <ol>
         <li>
@@ -276,9 +274,7 @@ const EditResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultPro
         </li>
         <li>
           Wypełnij tytuł, oraz opis Pull Requesta
-          <p className="text-lg font-semibold text-center mt-4 mb-4 border border-red-200 bg-red-100 text-red-900 py-3 rounded-md">
-            🚨 Pull Request bez podania źródła zostanie zamknięty bez dopytywania 🚨
-          </p>
+          <Alert>Pull Request bez podania źródła zostanie od razu zamknięty</Alert>
         </li>
         <li>
           Naciśnij przycisk <em>Create pull request</em>
@@ -314,7 +310,7 @@ const NewResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultProp
 
   const url = `https://github.com/bibixx/zdaj-se-pjatk-data/new/master/overrides/${subjectId}.json?filename=${subjectId}.json`;
   return (
-    <DialogHeader className="edit-question-modal">
+    <DialogHeader className="edit-question-modal text-left">
       <DialogTitle>Jak przesłać poprawione pytanie?</DialogTitle>
       <ol>
         <li>
@@ -360,9 +356,7 @@ const NewResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultProp
         </li>
         <li>
           Wypełnij tytuł, oraz opis Pull Requesta
-          <p className="text-lg font-semibold text-center mt-4 mb-4 border border-red-200 bg-red-100 text-red-900 py-3 rounded-md">
-            🚨 Pull Request bez podania źródła zostanie zamknięty bez dopytywania 🚨
-          </p>
+          <Alert>Pull Request bez podania źródła zostanie od razu zamknięty</Alert>
         </li>
         <li>
           Naciśnij przycisk <em>Create pull request</em>

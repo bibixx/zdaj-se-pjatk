@@ -10,6 +10,7 @@ import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 import { Header } from 'components/Header/Header';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 import { Skeleton } from 'components/ui/skeleton';
+import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { Question as QuestionType } from 'validators/subjects';
@@ -28,7 +29,7 @@ import {
   scrollToTop,
 } from './Exam.utils';
 
-export const Exam = () => {
+export const Exam = withPageWrapper(() => {
   const piwik = useContext(AnalyticsContext);
   const location = useLocation();
   const { questionsCount = 10, successThreshold, filterOutLearnt } = parseSearch(location.search);
@@ -115,7 +116,28 @@ export const Exam = () => {
     }
   }, [completed, percentage, piwik]);
 
-  if (subjectData.state === 'error' && subjectData.is404) {
+  // TODO: Proper error
+  if (subjectData.state === 'error') {
+    if (subjectData.is404) {
+      return (
+        <>
+          <Helmet>
+            <title>{subjectId} | Generatory 3.0</title>
+          </Helmet>
+          <div className="h-96 flex flex-col justify-center gap-4">
+            <h1 className="text-3xl font-semibold tracking-tight transition-colors text-center">
+              Ups, wybrany przedmiot nie został znaleziony 🙈
+            </h1>
+            <div className="flex w-full justify-center">
+              <Button asChild variant="outline">
+                <Link to="/">Wróć do strony głównej</Link>
+              </Button>
+            </div>
+          </div>
+        </>
+      );
+    }
+
     return (
       <>
         <Helmet>
@@ -135,7 +157,7 @@ export const Exam = () => {
     );
   }
 
-  if (subjectData.state === 'loading' || subjectData.state === 'error') {
+  if (subjectData.state === 'loading') {
     return (
       <>
         <Helmet>
@@ -144,10 +166,6 @@ export const Exam = () => {
         <Header>
           <BreadCrumbs
             crumbs={[
-              {
-                content: 'Generatory 3.0',
-                to: '/',
-              },
               {
                 content: <Skeleton className="h-5 w-[250px]" />,
                 id: 'subjectId',
@@ -159,7 +177,7 @@ export const Exam = () => {
             ]}
           />
         </Header>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-2 sm:px-0">
           <QuestionSkeleton />
           <QuestionSkeleton />
           <QuestionSkeleton />
@@ -171,24 +189,31 @@ export const Exam = () => {
   const AlertIcon = getAlertIcon(percentage, successThreshold);
   return (
     <>
-      <Header>
-        <BreadCrumbs
-          crumbs={[
-            {
-              content: 'Generatory 3.0',
-              to: '/',
-            },
-            {
-              content: subjectData.data.title,
-              to: `/${subjectId}`,
-            },
-            {
-              content: 'Test',
-            },
-          ]}
-        />
-      </Header>
-      <div className="flex flex-col gap-4">
+      <div className="pl-0 max-md:pl-2 pr-2 max-md:pr-4">
+        <Header>
+          <BreadCrumbs
+            crumbs={[
+              // {
+              //   content: <span className="whitespace-nowrap">Generatory 3.0</span>,
+              //   id: 'root',
+              //   to: '/',
+              // },
+              {
+                content: <span className="whitespace-nowrap">{subjectData.data.title}</span>,
+                id: 'title',
+                to: `/${subjectId}`,
+                className: 'overflow-hidden text-ellipsis whitespace-nowrap',
+              },
+              {
+                content: <span className="whitespace-nowrap">Test</span>,
+                id: 'test',
+                className: 'overflow-hidden text-ellipsis whitespace-nowrap',
+              },
+            ]}
+          />
+        </Header>
+      </div>
+      <div className="flex flex-col gap-4 px-2 sm:px-0">
         {completed && (
           <div
             className={cn(
@@ -250,4 +275,4 @@ export const Exam = () => {
       </div>
     </>
   );
-};
+});

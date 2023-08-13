@@ -69,11 +69,14 @@ export const CreateExamModal = ({ isOpen, subjectId, onClose }: CreateExamModalP
           <DialogTitle>Parametry testu</DialogTitle>
         </DialogHeader>
         <form onSubmit={onSubmit}>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="number-of-questions" className="text-right">
-                Ilość pytań*
-              </Label>
+          <div className="flex flex-col gap-4 py-4">
+            <div className="flex flex-col gap-2">
+              <label
+                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 block"
+                htmlFor="number-of-questions"
+              >
+                Ilość pytań
+              </label>
               <Input
                 id="number-of-questions"
                 value={numberOfQuestions}
@@ -84,10 +87,13 @@ export const CreateExamModal = ({ isOpen, subjectId, onClose }: CreateExamModalP
                 step={1}
               />
             </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="percentage" className="text-right">
-                Procent do zdania
-              </Label>
+            <div className="flex flex-col gap-2">
+              <label
+                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 block"
+                htmlFor="percentage"
+              >
+                Procent do zdania (opcjonalne)
+              </label>
               <Input
                 id="percentage"
                 className="col-span-3"
@@ -99,25 +105,22 @@ export const CreateExamModal = ({ isOpen, subjectId, onClose }: CreateExamModalP
                 step={1}
               />
             </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <div />
-              <div className="flex items-center space-x-2 col-span-3">
-                <Checkbox
-                  id="filterLearnt"
-                  checked={filterLearnt}
-                  onCheckedChange={(state) => {
-                    if (state === 'indeterminate') {
-                      return;
-                    }
+            <div className="flex items-center space-x-2 col-span-3">
+              <Checkbox
+                id="filterLearnt"
+                checked={filterLearnt}
+                onCheckedChange={(state) => {
+                  if (state === 'indeterminate') {
+                    return;
+                  }
 
-                    setFilterLearnt(state);
-                  }}
-                />
-                <Label htmlFor="filterLearnt">Pomiń pytania, na które już znasz odpowiedź</Label>
-              </div>
+                  setFilterLearnt(state);
+                }}
+              />
+              <Label htmlFor="filterLearnt">Pomiń pytania, na które już znasz odpowiedź</Label>
             </div>
           </div>
-          <DialogFooter>
+          <DialogFooter className="mt-2 sm:mt-0">
             <Button type="button" variant="outline" onClick={onCancel}>
               Anuluj
             </Button>

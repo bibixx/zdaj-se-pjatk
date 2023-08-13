@@ -7,82 +7,84 @@ import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Card, CardDescription, CardHeader } from 'components/ui/card';
 import { Button } from 'components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
+import { PageWrapper } from 'components/PageWrapper/PageWrapper';
 
 import { TOTAL_DONATED, DONATION_PAGES, DonationPage, DONATION_GOAL } from './DonatePage.utils';
 
 export const DonatePage = () => (
   <>
-    <Header>
-      <BreadCrumbs
-        crumbs={[
-          {
-            content: 'Generatory 3.0',
-            to: '/',
-          },
-          {
-            content: 'Wspomóż',
-          },
-        ]}
-      />
-    </Header>
-    <main className="px-2">
-      <p>
-        Zdaj.se <strong className="font-medium">zawsze</strong> będzie serwisem darmowym dzięki zastosowanym darmowym
-        technologiom i serwisom:
-      </p>
-      <ul className="mb-4 mt-1 ml-6 list-disc [&>li]:mt-1">
-        <li>
-          Hosting:{' '}
-          <a target="_blank" className="link" href="https://vercel.com/" rel="noreferrer">
-            vercel.com
-          </a>
-        </li>
-        <li>
-          Baza danych:{' '}
-          <a
-            className="link"
-            target="_blank"
-            href="https://bibixx.github.io/zdaj-se-pjatk-data/index.json"
-            rel="noreferrer"
-          >
-            pliki JSON na GitHub Pages
-          </a>
-        </li>
-        <li>
-          Domena: domenę zdaj.se opłacam z własnej kieszeni (61,99 zł/rok), jednak cała platforma dostępna jest też pod
-          adresem{' '}
-          <a className="link" href="https://zdaj-se.vercel.app">
-            https://zdaj-se.vercel.app
-          </a>
-          , który dzięki Vercelowi jest utrzymywany za darmo
-        </li>
-      </ul>
-      <p>
-        Natomiast jeśli jednak chcesz wesprzeć to co robię, możesz wpłacić dowolną kwotę na jedną z poniższych zbiórek.
-      </p>
-
-      <h2 className="text-2xl font-semibold mt-2 text-center ">
-        <span className="tracking-tight">Razem zebraliśmy: </span>
-        <span className="text-blue-500 dark:text-blue-400">
-          {formatGoal(TOTAL_DONATED)}&nbsp;/&nbsp;
-          {formatGoal(DONATION_GOAL)}
-        </span>
-      </h2>
-
-      <div className="grid grid-cols-3 gap-3 my-4 -mx-40">
-        {DONATION_PAGES.map((page) => (
-          <DonationCard page={page} key={page.id} />
-        ))}
+    <PageWrapper>
+      <div className="pl-0 max-md:pl-2 pr-2 max-md:pr-4">
+        <Header>
+          <BreadCrumbs
+            crumbs={[
+              {
+                content: <span className="whitespace-nowrap">Generatory 3.0</span>,
+                id: 'root',
+                to: '/',
+              },
+              {
+                content: 'Wspomóż',
+              },
+            ]}
+          />
+        </Header>
       </div>
+    </PageWrapper>
+    <main className="px-4">
+      <PageWrapper>
+        <p>
+          Zdaj.se <strong className="font-medium">zawsze</strong> będzie serwisem darmowym dzięki zastosowanym darmowym
+          technologiom i serwisom:
+        </p>
+        <ul className="mb-4 mt-1 ml-6 list-disc [&>li]:mt-1">
+          <li>
+            Hosting:{' '}
+            <a target="_blank" className="link" href="https://vercel.com/" rel="noreferrer">
+              vercel.com
+            </a>
+          </li>
+          <li>
+            Baza danych:{' '}
+            <a
+              className="link"
+              target="_blank"
+              href="https://bibixx.github.io/zdaj-se-pjatk-data/index.json"
+              rel="noreferrer"
+            >
+              pliki JSON na GitHub Pages
+            </a>
+          </li>
+          <li>
+            Domena: domenę zdaj.se opłacam z własnej kieszeni (61,99 zł/rok), jednak cała platforma dostępna jest też
+            pod adresem{' '}
+            <a className="link" href="https://zdaj-se.vercel.app">
+              https://zdaj-se.vercel.app
+            </a>
+            , który dzięki Vercelowi jest utrzymywany za darmo
+          </li>
+        </ul>
+        <p>
+          Natomiast jeśli jednak chcesz wesprzeć to co robię, możesz wpłacić dowolną kwotę na jedną z poniższych
+          zbiórek.
+        </p>
 
-      <p className="text-md text-center text-muted-foreground">
-        Jako że pomagam.pl nie pozwala śledzić ile zostało wpłacone przez zdaj.se, przekaż maila z potwierdzeniem
-        na&nbsp;
-        <a href="donate@zdaj.se" className="link">
-          donate@zdaj.se
-        </a>{' '}
-        bym mógł policzyć twoje wsparcie!
-      </p>
+        <h2 className="text-2xl font-semibold mt-2 text-center">
+          <span className="tracking-tight">Razem zebraliśmy: </span>
+          <span className="text-blue-500 dark:text-blue-400">
+            {formatGoal(TOTAL_DONATED)}&nbsp;/&nbsp;
+            {formatGoal(DONATION_GOAL)}
+          </span>
+        </h2>
+      </PageWrapper>
+
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-wrap md:grid grid-cols-3 gap-3 my-2 sm:my-4">
+          {DONATION_PAGES.map((page) => (
+            <DonationCard page={page} key={page.id} />
+          ))}
+        </div>
+      </div>
     </main>
   </>
 );
@@ -99,7 +101,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
       href={url}
       target="_blank"
       rel="noreferrer"
-      className="hover:-translate-y-1 focus-visible:-translate-y-1 transition-transform group"
+      className="hover:-translate-y-1 focus-visible:-translate-y-1 transition-transform group w-full"
       onMouseLeave={() => setExplicitShown(false)}
     >
       <Card className="overflow-hidden">
@@ -119,7 +121,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
             alt=""
           />
           {explicit && (
-            <div className="absolute w-full h-full top-0 left-0 p-2 flex items-end justify-start z-10 transition-opacity opacity-0 group-hover:opacity-100">
+            <div className="absolute w-full h-full top-0 left-0 p-2 flex items-end justify-start z-10 transition-opacity sm:opacity-0 group-hover:opacity-100">
               <Tooltip delayDuration={50}>
                 <TooltipContent>Uwaga! Drastyczne treści 😿</TooltipContent>
                 <TooltipTrigger>

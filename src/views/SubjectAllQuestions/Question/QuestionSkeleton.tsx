@@ -28,7 +28,7 @@ interface SkeletonAnswerProps {
   width: number;
 }
 const SkeletonAnswer = ({ width }: SkeletonAnswerProps) => (
-  <div className="px-4 py-1 flex items-center justify-between">
+  <div className="pr-2 sm:pr-4 pl-4 py-1 flex items-center justify-between">
     <Skeleton className="h-4" style={{ width: `${width}%` }} />
     <div className="flex h-8 w-8 items-center justify-center">
       <Skeleton className="h-4 w-4 rounded-sm" />

@@ -85,7 +85,10 @@ module.exports = {
       },
       gridTemplateColumns: {
         'footer': 'auto 1fr auto',
-      }
+      },
+      spacing: {
+        'full-dialog': 'calc(100% - 2rem)',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

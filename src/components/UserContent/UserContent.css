@@ -2,15 +2,15 @@
 
 @layer components {
   .user-content {
-    @apply overflow-auto break-words;
+    @apply overflow-hidden break-words w-full block;
   }
 
   .user-content code {
-    @apply relative rounded bg-muted px-1 py-1 font-mono text-sm font-semibold;
+    @apply relative rounded bg-muted px-1 py-1 font-mono text-sm font-semibold overflow-auto;
   }
 
   .user-content pre {
-    @apply relative rounded bg-muted px-2 py-1 font-mono text-sm font-semibold;
+    @apply relative rounded bg-muted px-2 py-1 font-mono text-sm font-semibold overflow-auto;
   }
 
   .user-content pre code {

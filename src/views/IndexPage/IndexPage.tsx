@@ -5,6 +5,7 @@ import { Header } from 'components/Header/Header';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from 'components/ui/table';
 import { Button } from 'components/ui/button';
 import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
+import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useIndexData } from 'hooks/useIndexData/useIndexData';
 
 import { IndexPageSkeletonRows } from './IndexPageSkeleton';
@@ -15,11 +16,11 @@ const helmetHead = (
   </Helmet>
 );
 
-export const IndexPage = () => {
+export const IndexPage = withPageWrapper(() => {
   const state = useIndexData();
 
   const header = (
-    <div className="px-2">
+    <div className="px-2 max-md:px-4">
       <Header>
         <h1 className="text-2xl font-bold select-none">
           <span className="text-blue-500 dark:text-inherit">G</span>
@@ -44,7 +45,7 @@ export const IndexPage = () => {
         <Table>
           <TableHeader>
             <TableRow hasHover={false}>
-              <TableHead className="max-md:px-4">Przedmiot</TableHead>
+              <TableHead className="max-md:pl-4">Przedmiot</TableHead>
               <TableHead className="text-right max-md:hidden w-24">Ilość pytań</TableHead>
             </TableRow>
           </TableHeader>
@@ -63,7 +64,7 @@ export const IndexPage = () => {
       <Table>
         <TableHeader>
           <TableRow hasHover={false}>
-            <TableHead className="max-md:px-4">Przedmiot</TableHead>
+            <TableHead className="max-md:pl-4">Przedmiot</TableHead>
             <TableHead className="text-right max-md:hidden w-24">Ilość pytań</TableHead>
           </TableRow>
         </TableHeader>
@@ -73,7 +74,7 @@ export const IndexPage = () => {
 
             return (
               <TableRow key={id}>
-                <TableCell to={url} className="max-md:px-4">
+                <TableCell to={url} className="max-md:px-2">
                   <strong className="font-bold">{id.toUpperCase()}</strong>
                   <span className="text-muted-foreground"> &bull; </span>
                   <span className="text-muted-foreground">{title}</span>
@@ -88,4 +89,4 @@ export const IndexPage = () => {
       </Table>
     </>
   );
-};
+});

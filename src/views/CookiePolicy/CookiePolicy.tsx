@@ -2,23 +2,27 @@ import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
 import { TypographyH2, TypographyH3 } from 'components/ui/typography';
 import './CookiePolicy.css';
+import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 
-export const CookiePolicy = () => (
+export const CookiePolicy = withPageWrapper(() => (
   <div>
-    <Header>
-      <BreadCrumbs
-        crumbs={[
-          {
-            content: 'Generatory 3.0',
-            to: '/',
-          },
-          {
-            content: 'Polityka Cookies',
-          },
-        ]}
-      />
-    </Header>
-    <main className="cookie-policy px-2">
+    <div className="pl-0 max-md:pl-2 pr-2 max-md:pr-4">
+      <Header>
+        <BreadCrumbs
+          crumbs={[
+            {
+              content: <span className="whitespace-nowrap">Generatory 3.0</span>,
+              id: 'root',
+              to: '/',
+            },
+            {
+              content: 'Polityka Cookies',
+            },
+          ]}
+        />
+      </Header>
+    </div>
+    <main className="cookie-policy px-4 md:px-2">
       <p className="!mt-0">
         Poniższa Polityka Cookies określa zasady zapisywania i uzyskiwania dostępu do danych na Urządzeniach
         Użytkowników korzystających z Serwisu do celów świadczenia usług drogą elektroniczną przez Administratora
@@ -219,4 +223,4 @@ export const CookiePolicy = () => (
       </section>
     </main>
   </div>
-);
+));
