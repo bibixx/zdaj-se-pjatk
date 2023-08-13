@@ -80,4 +80,8 @@
   .link {
     @apply text-blue-500 hover:underline dark:text-blue-400;
   }
+
+  .text-wrap-balanced {
+    text-wrap: balance;
+  }
 }

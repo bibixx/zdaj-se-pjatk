@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { Eye, EyeOff } from 'lucide-react';
+import { BarChart3, Eye, EyeOff } from 'lucide-react';
 
 import { cn } from 'utils';
 import { Header } from 'components/Header/Header';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Card, CardDescription, CardHeader } from 'components/ui/card';
 import { Button } from 'components/ui/button';
-import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from 'components/ui/tooltip';
 import { PageWrapper } from 'components/PageWrapper/PageWrapper';
 
 import { TOTAL_DONATED, DONATION_PAGES, DonationPage, DONATION_GOAL } from './DonatePage.utils';
@@ -93,7 +93,7 @@ interface DonationCardProps {
   page: DonationPage;
 }
 const DonationCard = ({ page }: DonationCardProps) => {
-  const { text, image, explicit, goal, url } = page;
+  const { text, image, explicit, goal, url, stats } = page;
   const [explicitShown, setExplicitShown] = useState(false);
 
   return (
@@ -121,10 +121,12 @@ const DonationCard = ({ page }: DonationCardProps) => {
             alt=""
           />
           {explicit && (
-            <div className="absolute w-full h-full top-0 left-0 p-2 flex items-end justify-start z-10 transition-opacity sm:opacity-0 group-hover:opacity-100">
+            <div className="absolute w-full h-full top-0 left-0 p-2 flex items-end justify-start z-10 transition-opacity sm:opacity-0 group-hover:opacity-100 pointer-events-none">
               <Tooltip delayDuration={50}>
-                <TooltipContent>Uwaga! Drastyczne treści 😿</TooltipContent>
-                <TooltipTrigger>
+                <TooltipPortal>
+                  <TooltipContent>Uwaga! Drastyczne treści 😿</TooltipContent>
+                </TooltipPortal>
+                <TooltipTrigger asChild>
                   <Button
                     variant="outline"
                     size="icon"
@@ -133,6 +135,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
                       e.preventDefault();
                       setExplicitShown(!explicitShown);
                     }}
+                    className="pointer-events-auto"
                   >
                     {explicitShown ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                   </Button>
@@ -140,9 +143,25 @@ const DonationCard = ({ page }: DonationCardProps) => {
               </Tooltip>
             </div>
           )}
+          {stats && (
+            <div className="absolute w-full h-full top-0 left-0 p-2 flex items-end justify-end z-10 transition-opacity sm:opacity-0 group-hover:opacity-100 pointer-events-none">
+              <Tooltip delayDuration={50}>
+                <TooltipPortal>
+                  <TooltipContent>Nasze statystyki</TooltipContent>
+                </TooltipPortal>
+                <TooltipTrigger asChild>
+                  <Button variant="outline" size="icon" className="pointer-events-auto" asChild>
+                    <a href={stats} target="_blank" rel="noreferrer">
+                      <BarChart3 className="h-4 w-4" />
+                    </a>
+                  </Button>
+                </TooltipTrigger>
+              </Tooltip>
+            </div>
+          )}
         </div>
         <CardHeader>
-          <h3 className="text-lg font-semibold leading-none tracking-tight">{text}</h3>
+          <h3 className="text-lg font-semibold leading-none tracking-tight text-wrap-balanced">{text}</h3>
           <CardDescription>Cel: {formatGoal(goal)}</CardDescription>
         </CardHeader>
       </Card>
