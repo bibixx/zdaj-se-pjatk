@@ -34,9 +34,9 @@ export const CookieNotice = ({ onBannerClose, areCookiesAccepted }: Props) => {
           hideClose: true,
           duration: Infinity,
           action: (
-            <div className="flex gap-2">
+            <div className="flex gap-2 max-sm:flex-wrap max-sm:mt-2 max-sm:!ml-0">
               <Button
-                className="whitespace-nowrap"
+                className="whitespace-nowrap max-sm:w-full"
                 variant="blue"
                 onClick={() => {
                   onBannerClose(true);
@@ -46,7 +46,7 @@ export const CookieNotice = ({ onBannerClose, areCookiesAccepted }: Props) => {
                 Pozwól na wszystkie
               </Button>
               <Button
-                className="whitespace-nowrap"
+                className="whitespace-nowrap max-sm:w-full"
                 variant="outline"
                 onClick={() => {
                   onBannerClose(false);
