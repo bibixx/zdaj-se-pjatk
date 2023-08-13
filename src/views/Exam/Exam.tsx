@@ -1,7 +1,7 @@
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Cog } from 'lucide-react';
+import { Bug, Cog } from 'lucide-react';
 
 import { cn } from 'utils';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
@@ -116,7 +116,6 @@ export const Exam = withPageWrapper(() => {
     }
   }, [completed, percentage, piwik]);
 
-  // TODO: Proper error
   if (subjectData.state === 'error') {
     if (subjectData.is404) {
       return (
@@ -143,13 +142,19 @@ export const Exam = withPageWrapper(() => {
         <Helmet>
           <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
-        <div className="h-96 flex flex-col justify-center gap-4">
+        <div className="h-96 flex flex-col justify-center gap-4 px-4">
           <h1 className="text-3xl font-semibold tracking-tight transition-colors text-center">
-            Ups, wybrany przedmiot nie został znaleziony 🙈
+            Ups, wystąpił nieznany błąd 🙈
           </h1>
-          <div className="flex w-full justify-center">
+          <div className="flex flex-col gap-2 w-full items-center">
             <Button asChild variant="outline">
               <Link to="/">Wróć do strony głównej</Link>
+            </Button>
+            <Button asChild variant="destructive">
+              <a href="https://github.com/bibixx/zdaj-se-pjatk/issues/new" target="_blank" rel="noreferrer">
+                <Bug className="w-4 h-4 mr-2" />
+                Zgłoś błąd
+              </a>
             </Button>
           </div>
         </div>

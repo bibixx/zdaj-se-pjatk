@@ -33,7 +33,6 @@ export const Answer = ({
       </div>
       <div className="flex ml-2">
         {showUserSelect && (
-          // TODO: Nested button
           <Button
             size="icon-sm"
             variant="ghost"
@@ -46,12 +45,13 @@ export const Answer = ({
               className={getUserSelectClassNames(disableUserSelect, wasUserSelectCorrect)}
               checked={userAnswer}
               color="primary"
+              isStub
             />
           </Button>
         )}
         {showCorrect && (
           <Button size="icon-sm" variant="ghost" disabled>
-            <Checkbox tabIndex={-1} aria-labelledby={labelId} checked={correct} />
+            <Checkbox tabIndex={-1} aria-labelledby={labelId} checked={correct} isStub />
           </Button>
         )}
       </div>

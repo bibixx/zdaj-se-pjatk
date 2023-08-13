@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useLocation, useParams } from 'react-router-dom';
-import { ClipboardList } from 'lucide-react';
+import { Bug, ClipboardList } from 'lucide-react';
 
 import { Header } from 'components/Header/Header';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
@@ -31,7 +31,6 @@ export const SubjectAllQuestions = withPageWrapper(() => {
     [setQuestion],
   );
 
-  // TODO: Proper error
   if (subjectData.state === 'error') {
     if (subjectData.is404) {
       return (
@@ -58,13 +57,19 @@ export const SubjectAllQuestions = withPageWrapper(() => {
         <Helmet>
           <title>{subjectId} | Generatory 3.0</title>
         </Helmet>
-        <div className="h-96 flex flex-col justify-center gap-4">
+        <div className="h-96 flex flex-col justify-center gap-4 px-4">
           <h1 className="text-3xl font-semibold tracking-tight transition-colors text-center">
-            Ups, wybrany przedmiot nie został znaleziony 🙈
+            Ups, wystąpił nieznany błąd 🙈
           </h1>
-          <div className="flex w-full justify-center">
+          <div className="flex flex-col gap-2 w-full items-center">
             <Button asChild variant="outline">
               <Link to="/">Wróć do strony głównej</Link>
+            </Button>
+            <Button asChild variant="destructive">
+              <a href="https://github.com/bibixx/zdaj-se-pjatk/issues/new" target="_blank" rel="noreferrer">
+                <Bug className="w-4 h-4 mr-2" />
+                Zgłoś błąd
+              </a>
             </Button>
           </div>
         </div>

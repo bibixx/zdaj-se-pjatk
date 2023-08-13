@@ -60,11 +60,10 @@ export const Question = memo(
                 <UserContent isMarkdown={isMarkdown}>{questionContents.trim().replace(/ - \(\d+\)/, '')}</UserContent>
               </div>
               <div className="flex w-full sm:flex-row flex-row-reverse justify-start sm:w-auto gap-2 sm:ml-2 sm:-my-1">
-                {/* TODO Nested buttons */}
                 {props.isLearnt != null && (
                   <Tooltip>
                     <TooltipContent>Oznacz jako nauczone</TooltipContent>
-                    <TooltipTrigger title="Oznacz jako nauczone">
+                    <TooltipTrigger title="Oznacz jako nauczone" asChild>
                       <Button
                         variant="outline"
                         size="sm"
@@ -72,7 +71,7 @@ export const Question = memo(
                         onClick={() => props.onLearntChange(questionId, !props.isLearnt)}
                       >
                         <GraduationCap width="1.25rem" height="1.25rem" absoluteStrokeWidth />
-                        <Checkbox aria-label="Oznacz jako nauczone" checked={props.isLearnt} />
+                        <Checkbox aria-label="Oznacz jako nauczone" checked={props.isLearnt} isStub />
                       </Button>
                     </TooltipTrigger>
                   </Tooltip>
@@ -112,7 +111,7 @@ export const Question = memo(
                     {showEdit && (
                       <Tooltip>
                         <TooltipContent>Edytuj</TooltipContent>
-                        <TooltipTrigger>
+                        <TooltipTrigger asChild>
                           <Button variant="ghost" size="icon-sm" onClick={() => setIsModalOpen(true)}>
                             <Pencil className="h-4 w-4" />
                           </Button>
