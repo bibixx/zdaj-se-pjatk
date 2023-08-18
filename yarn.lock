@@ -2752,6 +2752,11 @@ lucide-react@^0.264.0:
   resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.264.0.tgz#7e853ca211cf89f7f6151cc36a709a144349a1b8"
   integrity sha512-BmQTimZDhAy2vH9aCeQa+TLrkWwWd8FP5GRMoK3hKEvO1eS/llGXe4RxrZGSTdOjhw1JuDLpvtS8VmNCKxhL5A==
 
+mathjax@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/mathjax/-/mathjax-3.2.2.tgz#c754d7b46a679d7f3fa03543d6b8bf124ddf9f6b"
+  integrity sha512-Bt+SSVU8eBG27zChVewOicYs7Xsdt40qm4+UpHyX7k0/O9NliPc+x77k1/FEsPsjKPZGJvtRZM1vO+geW0OhGw==
+
 md5@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/md5/-/md5-2.3.0.tgz#c3da9a6aae3a30b46b7b0c349b87b110dc3bda4f"

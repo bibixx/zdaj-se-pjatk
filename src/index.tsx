@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import './index.css';
+import './mathJax';
 import './processShim';
 
 import { App } from './App';

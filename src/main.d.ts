@@ -20,5 +20,10 @@ interface Window {
   MathJax: {
     typesetPromise: () => Promise<undefined>;
     typeset: () => void;
+    tex?: {
+      inlineMath?: [string, string][];
+    };
   };
 }
+
+declare module 'mathjax/es5/tex-mml-chtml.js';
