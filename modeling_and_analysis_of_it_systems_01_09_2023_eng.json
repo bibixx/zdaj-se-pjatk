@@ -1,0 +1,2978 @@
+{
+   "$schema":"schemas/subject.json",
+   "title":"Modeling and Analysis of IT Systems",
+   "id":"modeling_and_analysis_of_it_systems",
+   "data":[
+      {
+         "question":"Assosiations can be directly implemented in Java",
+         "id":3628,
+         "numberOfComments":0,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            
+         ]
+      },
+      {
+         "question":"Associations from the object model are implemented as tables in the relational mode",
+         "id":3629,
+         "numberOfComments":0,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            
+         ]
+      },
+      {
+         "question":"Directional associations are always more useful than bidirectional associations",
+         "id":3630,
+         "numberOfComments":0,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            
+         ]
+      },
+      {
+         "question":"An association is a group of connections within the same semantics and structure",
+         "id":3631,
+         "numberOfComments":0,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            
+         ]
+      },
+      {
+         "question":"A class is just a bigger object.",
+         "id":"3632",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The class describes the object, but it is not an object."
+         ]
+      },
+      {
+         "question":"Class instance is an object.",
+         "id":"3633",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "By definition, an instance of a class can be called an object."
+         ]
+      },
+      {
+         "question":"Classes in Java are presented directly.",
+         "id":"3634",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "In Java, we have a special class keyword that allows direct creation of classes."
+         ]
+      },
+      {
+         "question":"Class extent and object mean the same thing.",
+         "id":"3635",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Class extent is a collection of all objects."
+         ]
+      },
+      {
+         "question":"Class instance is an object.",
+         "id":"3636",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "By definition, an instance of a class can be called an object."
+         ]
+      },
+      {
+         "question":"Extent of a class may change over time.",
+         "id":"3637",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Of course, by adding / removing objects we change the extent."
+         ]
+      },
+      {
+         "question":"When implementing class extent within the same business class, the collection must be declared as static.",
+         "id":"3638",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Implementing class extent within the same business class, the collection must be declared as static because it must be shared by all objects."
+         ]
+      },
+      {
+         "question":"An example of a simple attribute is Address.",
+         "id":"3639",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Address is an example of a complex attribute."
+         ]
+      },
+      {
+         "question":"In Java, simple attributes are implemented with the simple keyword.",
+         "id":"3640",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "There is no simple keyword in Java."
+         ]
+      },
+      {
+         "question":"An example of a complex attribute is a double last name.",
+         "id":"3641",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Double surname is not a complex attribute because it is treated as a whole."
+         ]
+      },
+      {
+         "question":"A compound attribute can be implemented as a class object.",
+         "id":"3642",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One way to implement a complex attribute is to create a dedicated class to store it."
+         ]
+      },
+      {
+         "question":"The repetitive attribute can be implemented using ArrayList.",
+         "id":"3643",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Repeated attributes can be implemented using a collection, for example. ArrayList."
+         ]
+      },
+      {
+         "question":"Always use Java arrays to implement repetitive attributes.",
+         "id":"3644",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "When implementing repetitive attributes, we avoid using of ordinary arrays (due to their constant size)."
+         ]
+      },
+      {
+         "question":"The ArrayList collection may not have any elements, so it is suitable for implementing the optional attribute double.",
+         "id":"3645",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Simple attributes always have some value. For this reason, they are not suitable for implementing optional attributes (use the wrapper class, e.g. Double)."
+         ]
+      },
+      {
+         "question":"An optional and repetitive attribute may use ArrayList.",
+         "id":"3646",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The ArrayList collection may not have any elements, so it is suitable for implementation of the optional attribute."
+         ]
+      },
+      {
+         "question":"Regardless of the implementation of extent, the class attribute must be declared as static.",
+         "id":"3647",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The class attribute stored in an external class does not have to be declared as static."
+         ]
+      },
+      {
+         "question":"Implementation of an object attribute must use only simple types",
+         "id":"3648",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "An attribute of an object can be, for example, a complex one and in that case its implementation may use a dedicated class."
+         ]
+      },
+      {
+         "question":"Implementing a derived attribute may require calculating and storing its value.",
+         "id":"3649",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "A derived attribute can be implemented as a method. In some cases, to increase the performance, we may want to store the result as a real attribute (as in memory) cache)."
+         ]
+      },
+      {
+         "question":"Implementing a derived attribute always means creating both setters and getters methods.",
+         "id":"3650",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Implementing a derived attribute usually means that we need to create getXXX methods. In rare cases also setXXX."
+         ]
+      },
+      {
+         "question":"In order to create an object method in Java, you must use the keyword object.",
+         "id":"3651",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "In Java, there is no object keyword."
+         ]
+      },
+      {
+         "question":"The object method can only modify the attributes of the instance to which it was invoked.",
+         "id":"3652",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The object method has access only to the instance to which it was called."
+         ]
+      },
+      {
+         "question":"To create a class method in Java, use the class keyword.",
+         "id":"3653",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "In Java, class methods are created using the static keyword."
+         ]
+      },
+      {
+         "question":"Class method can be used even when there is no object of the class.",
+         "id":"3654",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The class method is called in favor of the class, so it can be used even if there is no object of the class."
+         ]
+      },
+      {
+         "question":"One way to achieve extent persistence is to save it to a file.",
+         "id":"3655",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Class extent can be persisted eg in a disk file."
+         ]
+      },
+      {
+         "question":"Business applications do not need extent persistence.",
+         "id":"3656",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The vast majority (all of them?) of business applications must ensure data persistency."
+         ]
+      },
+      {
+         "question":"The method storing a single object should, as a parameter, accept the file name.",
+         "id":"3657",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The method storing a single object should, as a parameter, accept a stream. This way, you can save a lot of data to one stream."
+         ]
+      },
+      {
+         "question":"The method storing all extents should accept the file name as a parameter.",
+         "id":"3658",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The method storing all extents should accept the file name as a parameter. This will allow them to be stored in a single file."
+         ]
+      },
+      {
+         "question":"The problem of extent persistence related to links is due to the poor performance of the Java platform.",
+         "id":"3659",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The problem of extent persistence, related to relationships, is caused by potential multiple retention of the same data."
+         ]
+      },
+      {
+         "question":"One of the ways to effectively maintain links between objects is to use references.",
+         "id":"3660",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "For effective persistence, variable references should be replaced with fixed identifiers."
+         ]
+      },
+      {
+         "question":"In order to improve performance, each extent should be serialized into a separate file.",
+         "id":"3661",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "In order to improve performance, each extent should be serialized into a separate file."
+         ]
+      },
+      {
+         "question":"In order to use serialization, you just need to implement the Serializable interface.",
+         "id":"3662",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "In order to use serialization, you just need to implement the Serializable interface."
+         ]
+      },
+      {
+         "question":"Our own implementation of extent management is due to the fact that native Java mechanisms have poor performance.",
+         "id":"3663",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Our own implementation of extent management is due to the fact that Java does not provide such functionality."
+         ]
+      },
+      {
+         "question":"By inheriting from ObjectPlus, business classes will receive extent management.",
+         "id":"3664",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Inheritance from the ObjectPlus, provides all functionality implemented here, including extent management."
+         ]
+      },
+      {
+         "question":"Many class extents can easily be stored in ArrayList.",
+         "id":"3665",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "You should use the map to store many extras. This will allow individual values \u200b\u200bto include collections with extents for specific classes."
+         ]
+      },
+      {
+         "question":"Hashtable is a mapping container.",
+         "id":"3666",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One of the maps provided by Java is Hashtable."
+         ]
+      },
+      {
+         "question":"Hashtable is one of several possible classes that can store a lot of extents in Java.",
+         "id":"3667",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Hashtable is one of the Map interface implementations that is convenient for storing multiple extents."
+         ]
+      },
+      {
+         "question":"Association is an instance of a link.",
+         "id":"3668",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Link is an instance of an association (the same as an object is an instance of a class)."
+         ]
+      },
+      {
+         "question":"Association describes a link.",
+         "id":"3669",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The association describes a link (similarly as a class describes an object)."
+         ]
+      },
+      {
+         "question":"The way in which associations and links are implemented varies depending on the defined cardinalities.",
+         "id":"3670",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "We store many bindings using the collection, and \"1\" with a single reference."
+         ]
+      },
+      {
+         "question":"Correctly defined cardinalities reduce the risk of making an error.",
+         "id":"3671",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One of the reasons for defining cardinalities is the ability to control them by implementing business rules."
+         ]
+      },
+      {
+         "question":"Implementing an association with IDs provides better performance than using references.",
+         "id":"3672",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Using identifiers reduces performance because we have to search an extent."
+         ]
+      },
+      {
+         "question":"Implementation of cardinalities * - * enforces use of two containers (eg. ArrayList).",
+         "id":"3673",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The cardinality * - * is implemented by two collections (one on each side)."
+         ]
+      },
+      {
+         "question":"One way to implement an association attribute is to add it to one of the classes.",
+         "id":"3674",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "In the case of * - *, it is impossible to store the required information in one of the classes."
+         ]
+      },
+      {
+         "question":"Introducing an intermediary class makes it difficult to access information stored in a combined class.",
+         "id":"3675",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Adding another structure between classes (the intermediate class) obviously impedes navigation and access to the associated object."
+         ]
+      },
+      {
+         "question":"The most efficient way to implement a qualified association is to replace ArrayList with Vector.",
+         "id":"3676",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Search performance can be improved using a map, not a simple collection e.g. Vector."
+         ]
+      },
+      {
+         "question":"One way to improve the performance of a qualified association is to replace ArrayList with Hashtable.",
+         "id":"3677",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Therefore, after using Hashtable, we can expect better performance."
+         ]
+      },
+      {
+         "question":"Return links make it easy to meet your business requirements.",
+         "id":"3678",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Reverse link allows you to navigate two ways (from a company to an employee and vice versa), so it certainly helps you meet your business requirements."
+         ]
+      },
+      {
+         "question":"Associations in the superclass are not inherited.",
+         "id":"3679",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "All invariants (including associations) are inherited by a subclass."
+         ]
+      },
+      {
+         "question":"The concrete class may contain both abstract and concrete methods.",
+         "id":"3680",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Specific classes may contain only specific classes."
+         ]
+      },
+      {
+         "question":"In the abstract class there can be both abstract and concrete methods",
+         "id":"3681",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "In the abstract class there can be both abstract and concrete methods."
+         ]
+      },
+      {
+         "question":"The method override may exist without the polymorphic method call.",
+         "id":"3682",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Theoretically, the overriding may exist without a polymorphic call, but its usefulness would be rather limited."
+         ]
+      },
+      {
+         "question":"Polymorphic calls to methods can exist without overriding methods.",
+         "id":"3683",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Conversely, the polymorphic call of the method can not exist without overriding (because there would be no alternative method to call)."
+         ]
+      },
+      {
+         "question":"In inheritance overalpping object can belong to several classes at once.",
+         "id":"3684",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "As defined, the overalpping inheritance can belong to several classes at once."
+         ]
+      },
+      {
+         "question":"Thanks to the use of composition instead of inheritance we have easy access to inherited invariants.",
+         "id":"3685",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Unfortunately, the introduction of compositions made it difficult to access invariants (because they are not 'automatically' inherited)."
+         ]
+      },
+      {
+         "question":"When replacing the overlapping inheritance with a composition, we need to implement it with inner classes.",
+         "id":"3686",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The composition can be implemented in any way - it does not always mean using inner classes."
+         ]
+      },
+      {
+         "question":"In Java, interfaces can directly serve to define object attributes, firstName.",
+         "id":"3687",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Interfaces can not contain attribute declarations (such as in classes)."
+         ]
+      },
+      {
+         "question":"The operation propagation causes the business code of the method to be in a single place.",
+         "id":"3688",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Thanks to the propagation of the operation, the business code is located in one method, and the rest of the code only calls it."
+         ]
+      },
+      {
+         "question":"Multi-aspect inheritance is the same as multi-inheritance.",
+         "id":"3689",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Multi-aspect inheritance is different from multi-inheritance."
+         ]
+      },
+      {
+         "question":"Multi-aspect inheritance occurs in all popular programming languages.",
+         "id":"3690",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Multi-aspect inheritance does not occur in any of the popular programming languages."
+         ]
+      },
+      {
+         "question":"The simplest way to implement multi-aspect inheritance is to flatten the hierarchy.",
+         "id":"3691",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Flattening of the hierarchy is the easiest way to implement any kind of inheritance (including multi-aspect)."
+         ]
+      },
+      {
+         "question":"Implementing multi-aspect inheritance one of the aspect should be implemented using a \"real\" inheritance of a given programming language.",
+         "id":"3692",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Wherever possible, we use 'real' inheritance to use its facilities."
+         ]
+      },
+      {
+         "question":"The simplest way to implement dynamic inheritance is to flatten the hierarchy.",
+         "id":"3693",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Flattening of hierarchy is the easiest way to implement any kind of inheritance (including dynamic)."
+         ]
+      },
+      {
+         "question":"Flattening of the hierarchy should be combined with the addition of the discriminator.",
+         "id":"3694",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Adding a discriminator is a necessary requirement when flattening the hierarchy (so we know the 'type' of an object)."
+         ]
+      },
+      {
+         "question":"Implementing a dynamic inheritance based on a composition should use the {or} constraint.",
+         "id":"3695",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "We should use the {xor} constraint (because {or} allows two connections at a time)."
+         ]
+      },
+      {
+         "question":"The most precise way to write constraints is the natural language.",
+         "id":"3696",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Unfortunately, natural language is one of the least restrictive ways of defining constraints"
+         ]
+      },
+      {
+         "question":"In practice, no constraints are used because everything can be expressed as a \"standard\" notation.",
+         "id":"3697",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Of course, usually you can not express all system requirements with standard notation."
+         ]
+      },
+      {
+         "question":"The constraints in Java use the special constraint keyword.",
+         "id":"3698",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "There is no constraint keyword in Java."
+         ]
+      },
+      {
+         "question":"The basic principle used to implement constraints is to create public attributes and private methods.",
+         "id":"3699",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The basic principle used to implement constraints is to create private attributes and public methods (not vice versa)"
+         ]
+      },
+      {
+         "question":"Declaring constants in constraints is a good practice.",
+         "id":"3700",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "By using the declared constants, we can easily change them in one place in the future."
+         ]
+      },
+      {
+         "question":"Implementing {unique} with the class attribute Set will improve performance at the expense of memory.",
+         "id":"3701",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The Set container will speed up the search, but of course it will take extra memory."
+         ]
+      },
+      {
+         "question":"Implementing {unique} using the extent reduces memory consumption at the expense of performance.",
+         "id":"3702",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The second approach will work (significantly) slower, but without consuming extra memory."
+         ]
+      },
+      {
+         "question":"The {subset} implementation requires a method to check for the existence of a given link.",
+         "id":"3703",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One of the basic activities that needs to be done is to check the existence of a particular link."
+         ]
+      },
+      {
+         "question":"The {subset} constraint holds the associations in a fixed order.",
+         "id":"3704",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Using {subset} does not affect the order of links."
+         ]
+      },
+      {
+         "question":"The {ordered} implementation requires a method to check for the existence of a given link.",
+         "id":"3705",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Implementation {ordered} does not require checking the existence of the specified link."
+         ]
+      },
+      {
+         "question":"By using {ordered}, we can store duplicate links.",
+         "id":"3706",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Constraint {ordered} does not affect the ability to store duplicates."
+         ]
+      },
+      {
+         "question":"Implementing {bag} requires a method that checks for the existence of a given link.",
+         "id":"3707",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The {bag} constraint allows you to store any object, so you do not need to check for the existence of any links."
+         ]
+      },
+      {
+         "question":"By using {bag} constraint we can store duplicate links.",
+         "id":"3708",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The {bag} constraint allows you to store any links (including duplicates)."
+         ]
+      },
+      {
+         "question":"Implementing {xor} requires a method to check the existence of a given link.",
+         "id":"3709",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The constraint {xor} ensures that there is only one link at the same time, so it needs to verify the existence of the given link."
+         ]
+      },
+      {
+         "question":"By using {xor} we can store duplicate links.",
+         "id":"3710",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The constraint {xor} does not specify the uniqueness of the related objects."
+         ]
+      },
+      {
+         "question":"Relational model is popular because of the richness of its structure.",
+         "id":"3711",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "There are not many constructs in the relational model."
+         ]
+      },
+      {
+         "question":"Relational databases for sure will be replaced by object-oriented.",
+         "id":"3712",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "At the moment it is difficult to judge which technology/concept will replace the relational solutions."
+         ]
+      },
+      {
+         "question":"Relational model uses the concept of object identity.",
+         "id":"3713",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The identity concept of an object exists in an object model, not a relational one."
+         ]
+      },
+      {
+         "question":"One of the basic relational model concepts is the primary key and the foreign key.",
+         "id":"3714",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Indeed, one of the basic relational model concepts is the primary key and the foreign key used to model the connection."
+         ]
+      },
+      {
+         "question":"Indexes increase the speed of all operations in the database.",
+         "id":"3715",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Indexes increase the speed of performing certain operations in a database (eg, search). On the other hand, they usually slow down updates."
+         ]
+      },
+      {
+         "question":"The explosion of popularity of web applications has contributed to the popularization of databases.",
+         "id":"3716",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Most web applications use databases."
+         ]
+      },
+      {
+         "question":"The impedance mismatch is due to the poor performance of databases",
+         "id":"3717",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Impedance mismatch is not related to performance."
+         ]
+      },
+      {
+         "question":"The impedance mismatch does not occur when you create a system entirely on the database side.",
+         "id":"3718",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Actually, when dealing with only one model, there is no impedance mismatch."
+         ]
+      },
+      {
+         "question":"Classes are mapped to relational tables.",
+         "id":"3719",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "In fact, classes are mapped to relational tebels."
+         ]
+      },
+      {
+         "question":"Simple attributes are directly mapped to columns in the table.",
+         "id":"3720",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Simple attributes are directly mapped to columns in the table."
+         ]
+      },
+      {
+         "question":"The primary key is a combination of several columns of text type that provides better performance than a single-column numeric key.",
+         "id":"3721",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "In most cases, the greatest performance is provided by a single (large) number key."
+         ]
+      },
+      {
+         "question":"The primary key is used to identify a specific tuple.",
+         "id":"3722",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "According to the assumptions of the relational model, the primary key is used to identify a particular tuple."
+         ]
+      },
+      {
+         "question":"Simple attributes are implemented in RM as columns in the table.",
+         "id":"3723",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Indeed, simple attributes are implemented in RM as columns in the table."
+         ]
+      },
+      {
+         "question":"Complex attributes can be implemented in RM as a separate table with a foreign key.",
+         "id":"3724",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One way to implement complex attributes is to use an external table with the foreign key."
+         ]
+      },
+      {
+         "question":"Optional attributes must be implemented as a separate table.",
+         "id":"3725",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The easiest way to include optional values is to allow NULL in the table column."
+         ]
+      },
+      {
+         "question":"The manadatory attributes are implemented as a column allowing NULL value.",
+         "id":"3726",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The required attributes are implemented as a column that does not allow null (and not vice versa)."
+         ]
+      },
+      {
+         "question":"One way to implement a repetitive attribute is to store its value in a text field.",
+         "id":"3727",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "This is a acceptable solution, but not very good."
+         ]
+      },
+      {
+         "question":"One way to implement repetitive attributes is to store values \u200b\u200bin a separate table.",
+         "id":"3728",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Thanks to this solution we have convenient access to individual values."
+         ]
+      },
+      {
+         "question":"The best way to implement a class attribute is to define it on the programming language side without worrying about data persistency.",
+         "id":"3729",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "This approach is incorrect because it does not ensure the sustainability of business data (the value can change)."
+         ]
+      },
+      {
+         "question":"The class attribute can be written to a dedicated table.",
+         "id":"3730",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "This is one possible solution."
+         ]
+      },
+      {
+         "question":"Derived attributes can be implemented as a special type of column in a regular table.",
+         "id":"3731",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Relational model does not give such an opportunity."
+         ]
+      },
+      {
+         "question":"The database view allows us to define, for example, the age of a person calculated on the basis of the date of birth.",
+         "id":"3732",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "This is the most feasible in modern BD."
+         ]
+      },
+      {
+         "question":"Every database makes it easy to define methods in tables.",
+         "id":"3733",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Defining methods in tables is not a standard feature of a relational model."
+         ]
+      },
+      {
+         "question":"Each database makes it easy to define class methods in tables.",
+         "id":"3734",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Defining class methods in tables is not a standard feature of a relational model."
+         ]
+      },
+      {
+         "question":"Associations of 1:1 cardinality can be realized with a foreign key.",
+         "id":"3735",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Associations of 1:1 cardinality can be created with a foreign key. On the other hand, for such values, you might want to consider merging two tables."
+         ]
+      },
+      {
+         "question":"Association 1:* can be realized with a foreign key.",
+         "id":"3736",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Association 1:* can be stored with a foreign key. Of course, with such numbers, it is not possible to merge two tables."
+         ]
+      },
+      {
+         "question":"Associations *:* can be accomplished using an intermediary table.",
+         "id":"3737",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The only way to accomplish card. * - * is to use an intermediary table."
+         ]
+      },
+      {
+         "question":"You can add two primary keys and 4 foreign keys to avoid entering the intermediate table.",
+         "id":"3738",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Of course, the only way to achieve an association with an attribute is to introduce an intermediary table."
+         ]
+      },
+      {
+         "question":"Introducing an intermediary table facilitates understanding of business rules.",
+         "id":"3739",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Unfortunately, the introduction of the 'obfuscate' intermediate table: we have an extra table on a diagram that looks identical to the other tables, making it difficult to analyze the model."
+         ]
+      },
+      {
+         "question":"A design that is close to a qualified association can be implemented by selecting the correct primary and the foreign keys.",
+         "id":"3740",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One way to 'simulate' a qualified association is to use a qualifier as a key."
+         ]
+      },
+      {
+         "question":"The primary purpose of using a qualified association is to speed up the search for connected objects.",
+         "id":"3741",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Indeed, the primary task of a qualified association is to speed up the search for connected objects."
+         ]
+      },
+      {
+         "question":"Implementation of aggregation and composition in RM is based on similar assumptions as for Java.",
+         "id":"3742",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "As in the case of Java, the implementation of aggregation consists in providing a link (association) and a composition on the completion of specific rules."
+         ]
+      },
+      {
+         "question":"It is worthwhile to use built-in DB mechanisms such as triggers.",
+         "id":"3743",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Triggers allow certain actions to be performed automatically by DB. They may, for example, be in line with the rules of composition."
+         ]
+      },
+      {
+         "question":"In the classical relational model there are all kinds of inheritance except overlapping.",
+         "id":"3744",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "In the classical relational model, inheritance does not occur."
+         ]
+      },
+      {
+         "question":"One way to implement inheritance in RM is to flatten the hierarchy.",
+         "id":"3745",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Flattening the heirarchy is one way to accomplish any kind of inheritance."
+         ]
+      },
+      {
+         "question":"API libraries were designed exclusively for working with DB.",
+         "id":"3746",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "API (Application Programming Interface) means any application programming interface, such as database, GUI, graphics."
+         ]
+      },
+      {
+         "question":"JDBC technology makes it easy to write portable (between different BDs) applications.",
+         "id":"3747",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One of the basic assumptions of JDBC is to provide a unified way of working with any DB."
+         ]
+      },
+      {
+         "question":"The main reason for using ORM tools is to improve the performance of BD access.",
+         "id":"3748",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The basic premise of ORM is to make it easier (transparent) to work with any data source."
+         ]
+      },
+      {
+         "question":"ORMs, to some extent, suppress the impedance mismatch.",
+         "id":"3749",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "ORMs do not completely eliminate impedance mismatches but significantly reduce them."
+         ]
+      },
+      {
+         "question":"The biggest advantage of LINQ is the efficiency of accessing databases.",
+         "id":"3750",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The main purpose of LINQ is not to improve performance, but to facilitate working with data sources (collections, DB, XML, JSON, etc.)."
+         ]
+      },
+      {
+         "question":"One version of LINQ allows you to work with native .NET collections.",
+         "id":"3751",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Indeed, there is LINQ2Objects, created for working with native .NET collections."
+         ]
+      },
+      {
+         "question":"The @OneToMany annotation is used to map the association.",
+         "id":"3752",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Indeed, the @OneToMany annotation is used to map the association."
+         ]
+      },
+      {
+         "question":"When working with Hibernate, you need to create and update the DB schema manually.",
+         "id":"3753",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Fortunately, Hibernate manages the database schema itself by creating the appropriate tables and connections."
+         ]
+      },
+      {
+         "question":"Transforming a directed association into a bidirectional one requires, among other things, adding dedicated constructs on the Java side.",
+         "id":"3754",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "In order to convert the association to bidirectional, we actually need to add the appropriate collection on the Java side."
+         ]
+      },
+      {
+         "question":"The data schema for the directed and bidirectional association is identical.",
+         "id":"3755",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Indeed, the data scheme for directed and bidirectional association is identical."
+         ]
+      },
+      {
+         "question":"Implementing multi-valued attributes with Hibernate is no different than the implementation of the association.",
+         "id":"3756",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The Hibernate library provides a special tag (element) to implement multi-valued attributes."
+         ]
+      },
+      {
+         "question":"The @ElementCollection annotation is used for the implementation of multi-valued attributes.",
+         "id":"3757",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The @ElementCollection annotation is used for the implementation of multi-valued attributes."
+         ]
+      },
+      {
+         "question":"The most important in the application is functionality, and the interface is a minor add-on.",
+         "id":"3758",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Of course, creating an application should pay attention to both the functionality and the interface to support it."
+         ]
+      },
+      {
+         "question":"It is very easy to measure the quality of the interface.",
+         "id":"3759",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Interface evaluation is dependent on many factors, including tastes, habits. Therefore, it is quite difficult to carry out."
+         ]
+      },
+      {
+         "question":"Usability of interfaces is an interdisciplinary issue.",
+         "id":"3760",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Interdisciplinary is a term that concerns several disciplines. Of course the GUI belongs to this category."
+         ]
+      },
+      {
+         "question":"One of the most important aspects of usability is the practical usefulness of the thing/service.",
+         "id":"3761",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Practical application is an important assessment factor."
+         ]
+      },
+      {
+         "question":"One of the basic elements facilitating shaping usability is frequent contacts with users.",
+         "id":"3762",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Contacts with your users let you know their GUI feedback and, accordingly, make corrections."
+         ]
+      },
+      {
+         "question":"Usability can be shaped in complete isolation from the users.",
+         "id":"3763",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "It is difficult to shape product usability (GUI) without knowing user feedback."
+         ]
+      },
+      {
+         "question":"You do not have to watch your users during the usability tests - just listen to their comments.",
+         "id":"3764",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "User comments may be misleading. Therefore, it is important to observe their behavior."
+         ]
+      },
+      {
+         "question":"It is worth doing usability tests for very large user groups.",
+         "id":"3765",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Large user groups repeatedly report the same errors. For this reason, it is better to conduct more frequent tests with smaller teams."
+         ]
+      },
+      {
+         "question":"The usability level presented by the application has no impact on user productivity.",
+         "id":"3766",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Of course, the usability of the interface has a huge impact on users."
+         ]
+      },
+      {
+         "question":"Before you start your own design work, you should test your competitor solutions.",
+         "id":"3767",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "By testing competitive solutions, we can avoid making mistakes."
+         ]
+      },
+      {
+         "question":"Instead of creating a consistent GUI design, it is better to include a comprehensive manual.",
+         "id":"3768",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Users do not like to read manuals. Therefore, let's try to design a GUI so that it is not needed."
+         ]
+      },
+      {
+         "question":"Modern monitors are large, so you do not have to worry about proper window space management.",
+         "id":"3769",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Precisely because of the varying screen sizes, scaling techniques should be considered."
+         ]
+      },
+      {
+         "question":"Checklists should be included with each interface project.",
+         "id":"3770",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Checklists allow you to avoid common mistakes and therefore should be used when designing."
+         ]
+      },
+      {
+         "question":"All platforms have identical interface requirements.",
+         "id":"3771",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Each platform has its own interface requirements. Their inclusion will make it easier for users to use applications."
+         ]
+      },
+      {
+         "question":"The interface design should include information about scaling controls.",
+         "id":"3772",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "According to the usability guidelines, a GUI project should take into account information about window scaling and its contents."
+         ]
+      },
+      {
+         "question":"The interface design may contain information about the type of controls.",
+         "id":"3773",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Of course, the designer should also include the types of controls for displaying different types of data."
+         ]
+      },
+      {
+         "question":"Manual GUI implementation is the fastest way to implement it.",
+         "id":"3774",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Manually implementing a GUI usually gives you the best results, but it's not the fastest way to accomplish it."
+         ]
+      },
+      {
+         "question":"Using graphical editors accelerates the GUI creation process.",
+         "id":"3775",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The graphical editor allows you to design and test the interface quickly."
+         ]
+      },
+      {
+         "question":"The only significant criterion for choosing a GUI library is its price.",
+         "id":"3776",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Of course there are many important criteria (eg performance, portability, price, capabilities) of library selection for GUI creation."
+         ]
+      },
+      {
+         "question":"The criterion of cross-platform is not always relevant.",
+         "id":"3777",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "If we do the system on one platform, the cross-platform criterion may be omitted."
+         ]
+      },
+      {
+         "question":"The Swing library is currently (still) the most popular desktop application development solution for Java.",
+         "id":"3778",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "In fact, Swing is currently the most popular desktop application development solution for Java. This is because it is integrated with the platform."
+         ]
+      },
+      {
+         "question":"The SWT library is always faster than Swing.",
+         "id":"3779",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "In some situations the SWT library is faster than the Swing ('drawing' component), but in others the slower ('converting' the data to a form acceptable by native controls)."
+         ]
+      },
+      {
+         "question":"The workload needed to create your own GUI library is comparable to that required for existing modification.",
+         "id":"3780",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Modifying an existing library is a lot simpler than creating your own from scratch."
+         ]
+      },
+      {
+         "question":"Creating your own GUI library requires first of all the ability to work at a high level of abstraction.",
+         "id":"3781",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Creating your own GUI library requires working on a fairly low level of abstraction (operating system events)."
+         ]
+      },
+      {
+         "question":"Adding String instead of objects to the control decreases the performance of the application and increases the required developer workload.",
+         "id":"3782",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Of course, adding String instead of objects to the control decreases application performance and increases the developer's workload. This is because the object needs to be converted to text and subsequently searched for in the extent."
+         ]
+      },
+      {
+         "question":"Using the dedicated listener for handling controls improves code readability.",
+         "id":"3783",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Dedicated listeners mean we have smaller pieces of code to manage and understand."
+         ]
+      },
+      {
+         "question":"The programmer, in all circumstances, should use only one distribution manager.",
+         "id":"3784",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Layout managers should be selected according to needs. Moreover, it often happens that in the same window, we use several different layouts."
+         ]
+      },
+      {
+         "question":"All the controls we refer to in the code should have the correct names given.",
+         "id":"3785",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Of course, in order for the program to be readable, references in the source code to controls should have meaningful names - often with a specific convention."
+         ]
+      },
+      {
+         "question":"Moving calculations to a separate thread can improve user interface performance.",
+         "id":"3786",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "The best way to solve this problem is to move the calculation to a separate thread."
+         ]
+      },
+      {
+         "question":"The SwingWorker class displays the default version of the progress bar.",
+         "id":"3787",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "The default implementation of the SwingWorker class does not contain any GUI elements."
+         ]
+      },
+      {
+         "question":"Using the SwingWorker class speeds up execution of calculations about 3 times.",
+         "id":"3788",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "Using the SwingWorker class is intended to improve GUI performance, rather than speeding up computation."
+         ]
+      },
+      {
+         "question":"The ProgressWorker class displays the progress bar.",
+         "id":"3789",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "One of the improvements to the ProgressWorker is to add a progress bar."
+         ]
+      },
+      {
+         "question":"The ProgressWorker class just like SwingWorker supports interrupting the operation.",
+         "id":"3790",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Both classes: ProgressWorker and SwingWorker have support for interrupting the operation."
+         ]
+      },
+      {
+         "question":"Declarative GUI creation is an absolute novelty and no commercial company provides such capabilities.",
+         "id":"3791",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":false
+            },
+            {
+               "answer":"No",
+               "correct":true
+            }
+         ],
+         "comments":[
+            "There are several commercial implementations of declarative GUIs, such as XAML."
+         ]
+      },
+      {
+         "question":"Semantic declarations make it possible to work on a higher level of abstraction than a component.",
+         "id":"3792",
+         "numberOfComments":1,
+         "answers":[
+            {
+               "answer":"Yes",
+               "correct":true
+            },
+            {
+               "answer":"No",
+               "correct":false
+            }
+         ],
+         "comments":[
+            "Semantic declarations use a data model, not GUI controls. For this reason, we can talk about a higher level of abstraction."
+         ]
+      }
+   ],
+   "updatedAt":1691363367006
+}
