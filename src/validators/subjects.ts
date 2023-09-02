@@ -23,6 +23,7 @@ const commentSchema = yup.object({}).shape({
 const questionSchemaShape = {
   question: yup.string().ensure(),
   id: yup.string().transform(transformNull),
+  contributors: yup.array().of(yup.string().required()).ensure().required(),
   isMarkdown: yup.boolean().default(false),
   comments: yup.array().of(commentSchema).nullable().ensure().required(),
   answers: yup.array().of(answerSchema).required(),

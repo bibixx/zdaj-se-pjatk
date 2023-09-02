@@ -9,6 +9,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 import { Checkbox } from 'components/ui/checkbox';
 import { Comments } from 'components/Comments/Comments';
 import { EditQuestionModal } from 'components/EditQuestionModal/EditQuestionModal';
+import { joinJSX } from 'utils/joinJSX';
 import { Subject } from 'validators/subjects';
 
 import { Answer } from '../Answer/Answer';
@@ -25,6 +26,7 @@ type IsLearntProps =
 type QuestionProps = {
   question: Subject['data'][number];
   subjectId: string;
+  hasHashLink?: boolean;
   showCorrect?: boolean;
   showUserSelect?: boolean;
   disableUserSelect?: boolean;
@@ -44,16 +46,36 @@ export const Question = memo(
     disableUserSelect = false,
     wasUserSelectCorrect = false,
     hideEdit = false,
+    hasHashLink = false,
     onAnswerPick,
     ...props
   }: QuestionProps) => {
-    const { id: questionId, question: questionContents, answers, overwritten, added, isMarkdown, comments } = question;
+    const {
+      id: questionId,
+      question: questionContents,
+      answers,
+      overwritten,
+      added,
+      isMarkdown,
+      comments,
+      contributors,
+    } = question;
     const [isModalOpen, setIsModalOpen] = useState(false);
     const showEdit = !hideEdit && !added;
+    const hashId = `question-${questionId}`;
+    const contributorsText = contributors.length > 0 ? <> przez {joinContributors(contributors)}</> : '';
 
     return (
       <>
-        <Card>
+        <Card className="relative group scroll-my-4" id={hashId}>
+          {hasHashLink && (
+            <a
+              href={`#${hashId}`}
+              className="absolute block max-lg:hidden left-0 px-3 pt-4 -translate-x-full opacity-0 group-hover:opacity-100 h-full text-muted-foreground hover:text-blue-500 hover:dark:text-blue-400 no-underline"
+            >
+              #
+            </a>
+          )}
           <header className="p-4">
             <div className="flex justify-between items-start flex-col-reverse sm:flex-row gap-2 sm:gap-0">
               <div className="font-semibold flex-1 overflow-hidden w-full">
@@ -80,29 +102,29 @@ export const Question = memo(
                   <div className="flex items-center">
                     {overwritten && (
                       <Tooltip>
-                        <TooltipContent>Zedytowane przez zdaj.se</TooltipContent>
+                        <TooltipContent>Zedytowane na zdaj.se{contributorsText}</TooltipContent>
                         <TooltipTrigger className="cursor-default">
                           <div className="inline-flex items-center justify-center h-8 w-8">
                             <BadgeInfo
                               width="1.25rem"
                               height="1.25rem"
                               absoluteStrokeWidth
-                              aria-label="Zedytowane przez zdaj.se"
+                              aria-label="Zedytowane na zdaj.se"
                             />
                           </div>
                         </TooltipTrigger>
                       </Tooltip>
                     )}
-                    {added && (
+                    {added && contributors != null && (
                       <Tooltip>
-                        <TooltipContent>Dodane przez zdaj.se</TooltipContent>
+                        <TooltipContent>Dodane na zdaj.se{contributorsText}</TooltipContent>
                         <TooltipTrigger className="cursor-default">
                           <div className="inline-flex items-center justify-center h-8 w-8">
                             <BadgeInfo
                               width="1.25rem"
                               height="1.25rem"
                               absoluteStrokeWidth
-                              aria-label="Dodane przez zdaj.se"
+                              aria-label="Dodane na zdaj.se"
                             />
                           </div>
                         </TooltipTrigger>
@@ -160,3 +182,26 @@ export const Question = memo(
   },
   shallowEqual,
 );
+
+interface ContributorWrapperProps {
+  children: React.ReactNode;
+}
+const ContributorWrapper = ({ children }: ContributorWrapperProps) => (
+  <strong className="text-blue-300 font-semibold dark:text-blue-400 dark:font-medium">{children}</strong>
+);
+const joinContributors = (contributors: string[]) => {
+  if (contributors.length === 1) {
+    return <ContributorWrapper>{contributors[0]}</ContributorWrapper>;
+  }
+
+  const allButLastContributors = contributors.slice(0, -1);
+  return (
+    <>
+      {joinJSX(
+        allButLastContributors.map((c) => <ContributorWrapper key={c}>{c}</ContributorWrapper>),
+        ', ',
+      )}{' '}
+      oraz <ContributorWrapper>{contributors[contributors.length - 1]}</ContributorWrapper>
+    </>
+  );
+};

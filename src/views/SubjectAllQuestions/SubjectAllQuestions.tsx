@@ -200,6 +200,7 @@ export const SubjectAllQuestions = withPageWrapper(() => {
               subjectId={subjectId}
               isLearnt={learntQuestions.has(question.id)}
               onLearntChange={onLearntChange}
+              hasHashLink
             />
           ))}
         </div>
