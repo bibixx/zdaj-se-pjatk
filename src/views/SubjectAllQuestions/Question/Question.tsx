@@ -71,9 +71,11 @@ export const Question = memo(
           {hasHashLink && (
             <a
               href={`#${hashId}`}
-              className="absolute block max-lg:hidden left-0 px-3 pt-4 -translate-x-full opacity-0 group-hover:opacity-100 h-full text-muted-foreground hover:text-blue-500 hover:dark:text-blue-400 no-underline"
+              className="group/link absolute block max-lg:hidden left-0 px-1.5 -translate-x-full opacity-0 group-hover:opacity-100 focus:opacity-100 h-full text-muted-foreground hover:text-blue-500 hover:dark:text-blue-400 focus:text-blue-500 focus:dark:text-blue-400 no-underline focus-visible:outline-none"
             >
-              #
+              <span className="flex py-1 mt-3 w-8 justify-center items-center text-center group-focus-visible/link:ring-1 group-focus-visible/link:ring-ring rounded-sm">
+                #
+              </span>
             </a>
           )}
           <header className="p-4">
