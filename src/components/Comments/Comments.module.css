@@ -1,0 +1,4 @@
+.triggerButtonRounded[data-state="closed"] {
+  border-bottom-left-radius: calc(var(--radius) - 1px);
+  border-bottom-right-radius: calc(var(--radius) - 1px);
+}

@@ -1,9 +1,11 @@
+import { cn } from 'utils';
 import { MultilineText } from 'components/MultilineText/MultilineText';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from 'components/ui/accordion';
 import { Comment } from 'validators/subjects';
 
 import { getSortedComments, getCommentsAmount } from './Comments.utils';
 import { CommentHeader } from './CommentHeader/CommentHeader';
+import styles from './Comments.module.css';
 
 interface CommentsProps {
   comments: Comment[];
@@ -14,9 +16,13 @@ export const Comments = ({ comments }: CommentsProps) => {
 
   return (
     <Accordion type="single" collapsible>
-      <AccordionItem value="comments" className="rounded-b-lg border-none overflow-hidden">
-        {/* TODO: Border radius */}
-        <AccordionTrigger className="px-4 py-1 hover:bg-accent hover:text-accent-foreground">
+      <AccordionItem value="comments" className="rounded-b-lg border-none">
+        <AccordionTrigger
+          className={cn(
+            'px-4 py-1 hover:bg-accent hover:text-accent-foreground transition-colors',
+            styles.triggerButtonRounded,
+          )}
+        >
           <span className="text-xs font-normal text-muted-foreground">{getCommentsAmount(data.length)}</span>
         </AccordionTrigger>
         <AccordionContent className="pb-0">
