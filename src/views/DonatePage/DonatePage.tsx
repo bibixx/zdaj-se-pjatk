@@ -9,7 +9,7 @@ import { Button } from 'components/ui/button';
 import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from 'components/ui/tooltip';
 import { PageWrapper } from 'components/PageWrapper/PageWrapper';
 
-import { TOTAL_DONATED, DONATION_PAGES, DonationPage, DONATION_GOAL } from './DonatePage.utils';
+import { TOTAL_DONATED, DONATION_PAGES, DonationPage, DONATION_GOAL, formatGoal } from './DonatePage.utils';
 
 export const DonatePage = () => (
   <>
@@ -93,7 +93,7 @@ interface DonationCardProps {
   page: DonationPage;
 }
 const DonationCard = ({ page }: DonationCardProps) => {
-  const { text, image, explicit, goal, url, stats } = page;
+  const { text, image, explicit, description, url, stats } = page;
   const [explicitShown, setExplicitShown] = useState(false);
 
   return (
@@ -112,7 +112,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
           })}
         >
           <img
-            className={cn('transition-all select-none', {
+            className={cn('transition-all select-none h-full object-cover', {
               'blur-md': explicit,
               'blur-none': explicitShown,
             })}
@@ -162,12 +162,9 @@ const DonationCard = ({ page }: DonationCardProps) => {
         </div>
         <CardHeader>
           <h3 className="text-lg font-semibold leading-none tracking-tight text-wrap-balanced">{text}</h3>
-          <CardDescription>Cel: {formatGoal(goal)}</CardDescription>
+          {description != null && <CardDescription>{description}</CardDescription>}
         </CardHeader>
       </Card>
     </a>
   );
 };
-
-const formatGoal = (goal: number) =>
-  new Intl.NumberFormat('pl-PL', { style: 'currency', currency: 'PLN' }).format(goal);

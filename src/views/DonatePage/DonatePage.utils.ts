@@ -1,3 +1,6 @@
+export const formatGoal = (goal: number) =>
+  new Intl.NumberFormat('pl-PL', { style: 'currency', currency: 'PLN' }).format(goal);
+
 export interface DonationPage {
   id: string;
   image: string;
@@ -5,17 +8,17 @@ export interface DonationPage {
   stats?: string;
   text: string;
   explicit?: boolean;
-  goal: number;
+  description?: string;
 }
 export const DONATION_PAGES: DonationPage[] = [
   {
-    id: 'jpwypz',
-    image: 'jpwypz.jpg',
-    url: 'https://zrzutka.pl/z/zdaj-se-jpwypz',
-    stats: 'https://zrzutka.pl/z/zdaj-se-jpwypz+',
-    text: 'Na wsparcie sforowych seniorów',
+    id: 'amnesty',
+    image: 'amnesty.jpg',
+    url: 'https://www.amnesty.org/en/donate',
+    text: 'Na rzecz wolności słowa',
+    description:
+      'Bez wolności słowa wszyscy jesteśmy zagrożeni. Pomóż nam rzucić wyzwanie potężnym i stanąć po stronie tych, którzy są uciskani.',
     explicit: false,
-    goal: 5_000,
   },
   {
     id: 'cv7kpe',
@@ -23,7 +26,7 @@ export const DONATION_PAGES: DonationPage[] = [
     url: 'https://zrzutka.pl/z/zdaj-se-cv7kpe',
     stats: 'https://zrzutka.pl/z/zdaj-se-cv7kpe+',
     text: 'Złamana łapka, rany po próbie zagryzienia',
-    goal: 12_000,
+    description: `Cel: ${formatGoal(12_000)}`,
     explicit: true,
   },
   {
@@ -32,7 +35,7 @@ export const DONATION_PAGES: DonationPage[] = [
     url: 'https://zrzutka.pl/z/zdaj-se-zca4wr',
     stats: 'https://zrzutka.pl/z/zdaj-se-zca4wr+',
     text: 'Kastracja i diagnostyka Kotów zabranych spod tirów',
-    goal: 3_500,
+    description: `Cel: ${formatGoal(3_500)}`,
   },
 ];
 export const TOTAL_DONATED = 146;
