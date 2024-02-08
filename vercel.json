@@ -11,7 +11,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self' * data:; script-src 'self' analytics.legiec.info; style-src *;"
+          "value": "default-src 'self' * data:; script-src 'self' analytics.legiec.info; style-src * 'unsafe-inline';"
         }
       ]
     },
