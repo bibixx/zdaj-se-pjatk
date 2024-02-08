@@ -52,7 +52,6 @@ export const getDataWithOverrides = (subject: Subject, overrides: OverrideSubjec
   const { data: questionOverrides } = overrides;
 
   const overridesMap = mapQuestionOverridesToMap(questionOverrides);
-  console.log(overridesMap, questionOverrides);
 
   const data = questions.map<Question>((question) => {
     if (question.id === undefined) {
@@ -77,7 +76,6 @@ export const getDataWithOverrides = (subject: Subject, overrides: OverrideSubjec
   });
 
   const newQuestions = getNewQuestions(data, questionOverrides);
-  console.log(newQuestions);
 
   return {
     ...subject,

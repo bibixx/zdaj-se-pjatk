@@ -1,5 +1,5 @@
 import { shallowEqual } from 'shallow-equal';
-import { BadgeInfo, GraduationCap, Pencil } from 'lucide-react';
+import { BadgeInfo, GraduationCap, Pencil, Sparkles } from 'lucide-react';
 import { Fragment, memo, useState } from 'react';
 
 import { UserContent } from 'components/UserContent/UserContent';
@@ -13,6 +13,7 @@ import { joinJSX } from 'utils/joinJSX';
 import { Subject } from 'validators/subjects';
 
 import { Answer } from '../Answer/Answer';
+import { IS_AI_ENABLED, QuestionAIChatDialog } from '../QuestionAIChat/QuestionAIChat';
 
 type IsLearntProps =
   | {
@@ -61,6 +62,7 @@ export const Question = memo(
       contributors,
     } = question;
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isAiModalOpen, setIsAiModalOpen] = useState(false);
     const showEdit = !hideEdit && !added;
     const hashId = `question-${questionId}`;
     const contributorsText = contributors.length > 0 ? <> przez {joinContributors(contributors)}</> : '';
@@ -84,6 +86,16 @@ export const Question = memo(
                 <UserContent isMarkdown={isMarkdown}>{questionContents.trim().replace(/ - \(\d+\)/, '')}</UserContent>
               </div>
               <div className="flex w-full sm:flex-row flex-row-reverse justify-start sm:w-auto gap-2 sm:ml-2 sm:-my-1">
+                {IS_AI_ENABLED && (
+                  <Tooltip>
+                    <TooltipContent>Sprawdź z AI</TooltipContent>
+                    <TooltipTrigger title="Zapytaj AI" asChild>
+                      <Button variant="outline" size="icon-sm" onClick={() => setIsAiModalOpen(true)}>
+                        <Sparkles width="1.25rem" height="1.25rem" absoluteStrokeWidth />
+                      </Button>
+                    </TooltipTrigger>
+                  </Tooltip>
+                )}
                 {props.isLearnt != null && (
                   <Tooltip>
                     <TooltipContent>Oznacz jako nauczone</TooltipContent>
@@ -179,6 +191,9 @@ export const Question = memo(
           isOpen={isModalOpen}
           closeModal={() => setIsModalOpen(false)}
         />
+        {IS_AI_ENABLED && (
+          <QuestionAIChatDialog isOpen={isAiModalOpen} closeModal={() => setIsAiModalOpen(false)} question={question} />
+        )}
       </>
     );
   },

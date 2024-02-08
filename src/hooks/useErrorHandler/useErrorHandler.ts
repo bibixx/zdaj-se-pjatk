@@ -8,14 +8,17 @@ export const useErrorHandler = () => {
   const { toast } = useToast();
 
   const errorHandler = useCallback(
-    (error: Error | null) => {
+    (error: unknown) => {
       toast({
         variant: 'destructive',
         title: 'Ups, coś poszło nie tak',
         description: 'Wystąpił błąd. Spróbuj ponownie później.',
       });
 
-      piwik?.trackError(error);
+      if (error === null || error instanceof Error) {
+        piwik?.trackError(error);
+      }
+
       // eslint-disable-next-line no-console
       console.error(error);
     },
