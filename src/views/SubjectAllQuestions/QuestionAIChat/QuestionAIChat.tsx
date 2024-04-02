@@ -131,7 +131,7 @@ const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
 
   return (
     <Card
-      className="relative shadow-none p-4 w-full bg-gradient-to-br from-purple-50/50 to-purple-200/50 min-h-[3.25rem]"
+      className="relative shadow-none p-4 w-full bg-gradient-to-br from-purple-50/50 to-purple-200/50 dark:from-purple-600/30 dark:to-purple-700/30 min-h-[3.25rem]"
       asChild
     >
       <form onSubmit={onSubmit}>
@@ -321,7 +321,7 @@ const QuestionAIResponse = ({
   }, [status]);
 
   const cardClassNames = cn(
-    'relative shadow-none pr-2 sm:pr-4 pl-4 py-1 w-full bg-gradient-to-br from-purple-50/50 to-purple-200/50 min-h-[12rem]',
+    'relative shadow-none pr-2 sm:pr-4 pl-4 py-1 w-full bg-gradient-to-br dark:from-purple-600/30 dark:to-purple-700/30 min-h-[12rem]',
   );
 
   const onCheckedChange = (model: typeof openAiModel) => (isChecked: boolean) => {
@@ -403,7 +403,7 @@ const QuestionAIResponse = ({
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onClick={clearOpenAiToken}
-          className="bg-red-50 text-red-800 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
+          className="bg-red-50 text-red-800 dark:bg-red-950 dark:text-red-200 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
         >
           <Trash className="mr-2 h-4 w-4" />
           Zmień klucz API OpenAI
@@ -422,12 +422,12 @@ const QuestionAIResponse = ({
           aiCorrectAnswers={aiCorrectAnswers}
         />
 
-        <div className="absolute top-0 left-0 rounded-lg overflow-hidden flex items-center justify-center w-full h-full backdrop-blur-sm bg-radial-gradient to-purple-50/50 from-purple-100">
+        <div className="absolute top-0 left-0 rounded-lg overflow-hidden flex items-center justify-center w-full h-full backdrop-blur-sm bg-radial-gradient to-purple-50/50 from-purple-100 dark:from-purple-800/50 dark:to-purple-950/30">
           <Button
             variant="default"
             size="lg"
             onClick={runAICompletion}
-            className="bg-gradient-to-tl from-purple-500 to-purple-600"
+            className="bg-gradient-to-tl text-white from-purple-500 to-purple-600 dark:from-purple-700 dark:to-purple-500"
           >
             <Sparkles width="1rem" height="1rem" className="mr-2" absoluteStrokeWidth />
             Sprawdź
