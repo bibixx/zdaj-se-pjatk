@@ -13,6 +13,7 @@ import { Skeleton } from 'components/ui/skeleton';
 import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
+import { useTrackEvent } from 'hooks/useTrackEvent/useTrackEvent';
 import { Question as QuestionType } from 'validators/subjects';
 import { Question } from 'views/SubjectAllQuestions/Question/Question';
 import { QuestionSkeleton } from 'views/SubjectAllQuestions/Question/QuestionSkeleton';
@@ -110,11 +111,12 @@ export const Exam = withPageWrapper(() => {
   const correctQuestions = countTrue(Object.values(questionsOutcomes));
   const percentage = questions.length === 0 ? 0 : correctQuestions / questions.length;
 
+  const trackEvent = useTrackEvent();
   useEffect(() => {
     if (completed) {
-      piwik?.push(['trackEvent', 'Exam', 'Submit exam', 'Result', percentage]);
+      trackEvent('Exam', 'Submit exam', 'Result', percentage);
     }
-  }, [completed, percentage, piwik]);
+  }, [completed, percentage, piwik, trackEvent]);
 
   if (subjectData.state === 'error') {
     if (subjectData.is404) {

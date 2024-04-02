@@ -25,6 +25,7 @@ import { Checkbox } from 'components/ui/checkbox';
 import { Label } from 'components/ui/label';
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { useLocalStorageState } from 'hooks/useLocalStorageState/useLocalStorageState';
+import { useTrackEvent } from 'hooks/useTrackEvent/useTrackEvent';
 import { Question } from 'validators/subjects';
 import { AiTeacherResponseSchema, CorrectAnswersIndexSchema, ExplanationSchema } from 'validators/ai';
 import { OpenAiModel, OpenAiToken } from 'validators/localStorage';
@@ -55,6 +56,13 @@ interface QuestionAIChatDialogProps {
   question: Question;
 }
 export const QuestionAIChatDialog = ({ isOpen, closeModal, question }: QuestionAIChatDialogProps) => {
+  const trackEvent = useTrackEvent();
+  useEffect(() => {
+    if (isOpen) {
+      trackEvent('GPTModal', 'Open');
+    }
+  }, [isOpen, trackEvent]);
+
   return (
     <Dialog
       open={isOpen}
@@ -105,6 +113,7 @@ interface OpenAiTokenInputProps {
   setOpenAiToken: (value: string, saveForLater: boolean) => void;
 }
 const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
+  const trackEvent = useTrackEvent();
   const [currentToken, setCurrentToken] = useState('');
   const [savedForLater, setSavedForLater] = useState(true);
   const onSubmit = useCallback(
@@ -114,9 +123,10 @@ const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
         return;
       }
 
+      trackEvent('GPTModal', 'SetToken', 'SavedForLater', savedForLater ? 1 : 0);
       setOpenAiToken(currentToken, savedForLater);
     },
-    [currentToken, savedForLater, setOpenAiToken],
+    [currentToken, savedForLater, setOpenAiToken, trackEvent],
   );
 
   return (
@@ -201,6 +211,7 @@ const QuestionAIResponse = ({
   openAiToken,
   clearOpenAiToken,
 }: QuestionAIResponseProps) => {
+  const trackEvent = useTrackEvent();
   const [openAiModel, setOpenAiModel, clearStateOpenAiModel] = useLocalStorageState(OpenAiModel);
   const [output, setOutput] = useState<Partial<AiTeacherResponseSchema>>({});
   const [status, setStatus] = useState<'idle' | 'working' | 'done' | 'cancelled'>('idle');
@@ -217,8 +228,11 @@ const QuestionAIResponse = ({
 
       if (status === 'working') {
         setStatus('cancelled');
+        trackEvent('GPTModal', 'CancelAICompletion');
         return;
       }
+
+      trackEvent('GPTModal', 'StartAICompletion');
 
       setStatus('working');
       setAICorrectAnswers(null);
@@ -277,7 +291,16 @@ const QuestionAIResponse = ({
 
       setStatus('idle');
     }
-  }, [errorHandler, openAiModel, openAiToken, question.answers, question.question, setAICorrectAnswers, status]);
+  }, [
+    errorHandler,
+    openAiModel,
+    openAiToken,
+    question.answers,
+    question.question,
+    setAICorrectAnswers,
+    status,
+    trackEvent,
+  ]);
 
   useEffect(function cleanupActiveStream() {
     return () => {
@@ -304,6 +327,7 @@ const QuestionAIResponse = ({
   const onCheckedChange = (model: typeof openAiModel) => (isChecked: boolean) => {
     if (isChecked) {
       setOpenAiModel(model);
+      trackEvent('GPTModal', 'ModelChangedTo-' + model);
     } else {
       clearStateOpenAiModel();
     }
