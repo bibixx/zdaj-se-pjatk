@@ -131,7 +131,7 @@ const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
               className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex items-center gap-1"
               htmlFor="openai-token"
             >
-              OpenAI API Token
+              Klucz API OpenAI
               <Tooltip>
                 <TooltipContent>Gdzie znajdę klucz API OpenAI?</TooltipContent>
                 <TooltipTrigger asChild>
@@ -171,7 +171,10 @@ const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
             Zapisz między sesjami
             <Tooltip disableHoverableContent>
               <TooltipContent className="max-w-xs text-center">
-                Token zostanie zapisany w localStorage i będzie dostępny w przyszłości.
+                Klucz zostanie zapisany w localStorage i będzie dostępny w przyszłości.
+                <br />
+                Nie jest on zapisywany na serwerze zdaj.se i jest wykorzystywany tylko do bezpośredniej komunikacji z
+                OpenAI.
               </TooltipContent>
               <TooltipTrigger className="ml-1">
                 <BadgeHelpIcon className="w-4 h-4" />
@@ -379,7 +382,7 @@ const QuestionAIResponse = ({
           className="bg-red-50 text-red-800 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
         >
           <Trash className="mr-2 h-4 w-4" />
-          Zmień Token OpenAI API
+          Zmień klucz API OpenAI
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
