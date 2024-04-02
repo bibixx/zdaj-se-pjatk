@@ -379,7 +379,7 @@ const QuestionAIResponse = ({
           className="bg-red-50 text-red-800 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
         >
           <Trash className="mr-2 h-4 w-4" />
-          Usuń OpenAI API Token
+          Zmień Token OpenAI API
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
