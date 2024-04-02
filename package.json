@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@instructor-ai/instructor": "^1.0.0",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-checkbox": "^1.0.4",
-    "@radix-ui/react-dialog": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-scroll-area": "^1.0.4",
     "@radix-ui/react-slot": "^1.0.2",
@@ -29,7 +31,8 @@
     "shuffle-array": "^1.0.1",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.6",
-    "yup": "^1.2.0"
+    "yup": "^1.2.0",
+    "zod": "^3.22.4"
   },
   "scripts": {
     "start": "vite --port 3000",

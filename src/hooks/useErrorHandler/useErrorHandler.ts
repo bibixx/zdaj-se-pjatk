@@ -8,11 +8,11 @@ export const useErrorHandler = () => {
   const { toast } = useToast();
 
   const errorHandler = useCallback(
-    (error: unknown) => {
+    (error: unknown, description = 'Wystąpił błąd. Spróbuj ponownie później.') => {
       toast({
         variant: 'destructive',
         title: 'Ups, coś poszło nie tak',
-        description: 'Wystąpił błąd. Spróbuj ponownie później.',
+        description,
       });
 
       if (error === null || error instanceof Error) {

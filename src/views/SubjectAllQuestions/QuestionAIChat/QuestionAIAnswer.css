@@ -2,7 +2,7 @@
 
 @layer components {
   .question-ai-answer {
-    @apply overflow-hidden break-words w-full block;
+    @apply overflow-hidden break-words w-full contents;
   }
 
   .question-ai-answer code {

@@ -1,72 +1,50 @@
-import { OpenAI } from 'openai';
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Stream } from 'openai/streaming';
-import { Loader2, RotateCcw, Sparkles } from 'lucide-react';
-import { ValidationError } from 'yup';
+import { BadgeDollarSign, BadgeHelpIcon, CogIcon, Loader2, RotateCcw, Sparkles, Trash, X } from 'lucide-react';
+import { APIError, APIUserAbortError } from 'openai/error';
+import { Link } from 'react-router-dom';
 
+import { cn } from 'utils';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from 'components/ui/dialog';
 import { Button } from 'components/ui/button';
 import { UserContent } from 'components/UserContent/UserContent';
 import { Card } from 'components/ui/card';
 import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from 'components/ui/tooltip';
+import { Input } from 'components/ui/input';
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from 'components/ui/dropdown-menu';
+import { DONATE_PATH, useDonateButton } from 'components/Footer/Footer.hooks';
+import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
-import { assertExistence } from 'utils/assertExistence';
-import { safeJSONParse } from 'utils/safeJSONParse';
+import { useLocalStorageState } from 'hooks/useLocalStorageState/useLocalStorageState';
 import { Question } from 'validators/subjects';
-import { aiSchema } from 'validators/ai';
+import { AiTeacherResponseSchema, CorrectAnswersIndexSchema, ExplanationSchema } from 'validators/ai';
+import { OpenAiModel, OpenAiToken } from 'validators/localStorage';
 
 import { Answer } from '../Answer/Answer';
 
-import { QuestionAIAnswer } from './QuestionAIAnswer';
-
-export const OPEN_AI_TOKEN = localStorage.getItem('openai-token');
-export const IS_AI_ENABLED = OPEN_AI_TOKEN != null;
+import { QuestionAIAnswer, QuestionAIAnswerExplanation } from './QuestionAIAnswer';
+import { getInstructorClient } from './QuestionAIChat.client';
 
 const PROMPT = `
 Remember if you do a good job, you will get a reward and a nice tip.
 
-Below you will get a question. Which of the answers (a, b, c, d...) are correct?
+Below you will get a question. Which of the answers are correct?
 Please describe all of the answers.
 For correct answers describe why they are correct.
 In case an answer is incorrect, also explain why.
 
-If you see code or SQL, wrap it in code block. Please make sure to use the correct language for the code block.
-Output the response using markdown. Make sure to use double new lines to separate paragraphs.
-
-Always use the same language for the output (explanation, headers, supporting text) as the question and answers given by the user!!
+Always use the same language for the output as the question and answers given by the user!
 If the question is in English, answer in English. If the question is in Polish, answer in Polish.
-For example the "Correct answers are **A** and **B**" should be written in Polish as "Poprawne odpowiedzi to **A** i **B**".
 
-Make sure to include the JSON at the beginning between SOJ and EOJ.
-
-At the beginning of the response you have to provide the indices (0-based) of the correct answers in a JSON object like this:
-{ "correctAnswersIndex": [0, 1] }
-The "correctAnswersIndex" array should only contain the number (not a, b, c, d...!) indexes of the correct answers (0-based). Eg. if the correct answers are A and B, the JSON should look like this: { "correctAnswers": [0, 1] } instead of { "correctAnswers": ["a", "b"] }.
-
-Replace the <JSON Object> with the correct JSON object.
-
-MOST IMPORTANT THING IN THE RESPONSE IS THE JSON OBJECT WITH THE CORRECT ANSWERS INDICES. THE REST OF THE RESPONSE IS NOT AS IMPORTANT. ALWAYS INCLUDE IT!!!
-
-For the entire output use the following structure:
-
-SOJ
-<JSON Object>
-EOJ
-
-Poprawne odpowiedzi to **A** i **B**
-
-## Poprawne odpowiedzi:
-
-a) _Odpowiedź A_ — Wyjaśnienie
-
-b) _Odpowiedź B_ — Wyjaśnienie
-
-
-## Niepoprawne odpowiedzi:
-
-c) _Odpowiedź C_ — Wyjaśnienie
-
-
+Don't include the question in the response. Just the answers and explanations.
+Don't start the explanation with "The correct answer is" or "The incorrect answer is".
     `;
 
 interface QuestionAIChatDialogProps {
@@ -101,109 +79,178 @@ interface QuestionAIChatProps {
   question: Question;
 }
 export const QuestionAIChat = ({ question }: QuestionAIChatProps) => {
-  const [output, setOutput] = useState('');
-  const [status, setStatus] = useState<'idle' | 'working' | 'done'>('idle');
   const [aiCorrectAnswers, setAICorrectAnswers] = useState<number[] | null>(null);
+  const [openAiToken, setOpenAiToken, clearOpenApiToken] = useLocalStorageState(OpenAiToken);
 
-  const currentStreamController = useRef<Stream<OpenAI.Chat.Completions.ChatCompletionChunk> | null>(null);
+  return (
+    <div className="flex flex-col min-w-0 gap-4">
+      <QuestionPreview question={question} aiCorrectAnswers={aiCorrectAnswers} />
+      {openAiToken != null && (
+        <QuestionAIResponse
+          question={question}
+          openAiToken={openAiToken}
+          clearOpenApiToken={clearOpenApiToken}
+          aiCorrectAnswers={aiCorrectAnswers}
+          setAICorrectAnswers={setAICorrectAnswers}
+        />
+      )}
+      {openAiToken == null && <OpenAiTokenInput setOpenAiToken={setOpenAiToken} />}
+    </div>
+  );
+};
+
+interface OpenAiTokenInputProps {
+  setOpenAiToken: (value: string) => void;
+}
+const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
+  const [currentToken, setCurrentToken] = useState('');
+  const onSubmit = useCallback(
+    (e: React.FormEvent) => {
+      e.preventDefault();
+      if (currentToken.trim() === '') {
+        return;
+      }
+      setOpenAiToken(currentToken);
+    },
+    [currentToken, setOpenAiToken],
+  );
+
+  return (
+    <Card
+      className="relative shadow-none p-4 w-full bg-gradient-to-br from-purple-50/50 to-purple-200/50 min-h-[3.25rem]"
+      asChild
+    >
+      <form onSubmit={onSubmit}>
+        <div className="flex w-full items-end gap-2">
+          <div className="flex flex-col gap-2 flex-1">
+            <label
+              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 flex items-center gap-1"
+              htmlFor="openai-token"
+            >
+              OpenAI API Token
+              <Tooltip>
+                <TooltipContent>Gdzie znajdę klucz API OpenAI?</TooltipContent>
+                <TooltipTrigger asChild>
+                  <a
+                    href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <BadgeHelpIcon className="w-4 h-4" />
+                  </a>
+                </TooltipTrigger>
+              </Tooltip>
+            </label>
+            <Input
+              id="openai-token"
+              value={currentToken}
+              onChange={(e) => setCurrentToken(e.target.value)}
+              className="col-span-3"
+              type="text"
+            />
+          </div>
+          <Button disabled={currentToken.trim() === ''}>Zapisz</Button>
+        </div>
+      </form>
+    </Card>
+  );
+};
+
+interface QuestionAIResponseProps {
+  question: Question;
+  openAiToken: string;
+  clearOpenApiToken: () => void;
+  aiCorrectAnswers: number[] | null;
+  setAICorrectAnswers: (value: number[] | null) => void;
+}
+const QuestionAIResponse = ({
+  question,
+  setAICorrectAnswers,
+  aiCorrectAnswers,
+  openAiToken,
+  clearOpenApiToken,
+}: QuestionAIResponseProps) => {
+  const [openAiModel, setOpenAiModel, clearStateOpenAiModel] = useLocalStorageState(OpenAiModel);
+  const [output, setOutput] = useState<Partial<AiTeacherResponseSchema>>({});
+  const [status, setStatus] = useState<'idle' | 'working' | 'done' | 'cancelled'>('idle');
+
+  const abortControllerRef = useRef<AbortController | null>(null);
 
   const errorHandler = useErrorHandler();
   const runAICompletion = useCallback(async () => {
     try {
-      assertExistence(OPEN_AI_TOKEN, 'OpenAI token is not set');
-
-      const openai = new OpenAI({
-        apiKey: OPEN_AI_TOKEN,
-        dangerouslyAllowBrowser: true,
-      });
-
-      currentStreamController.current?.controller.abort();
-      currentStreamController.current = null;
+      const abortController = new AbortController();
+      abortControllerRef.current?.abort();
+      abortControllerRef.current = abortController;
+      const client = getInstructorClient(openAiToken, abortControllerRef.current.signal, 'JSON');
 
       if (status === 'working') {
-        setStatus('done');
+        setStatus('cancelled');
         return;
       }
 
       setStatus('working');
       setAICorrectAnswers(null);
 
-      const answersString = question.answers
-        .map((answer, index) => getLetterBasedOnIndex(index) + answer.answer)
-        .join('\n');
-
+      const answersString = question.answers.map((answer) => answer.answer).join('\n');
       const promptQuestion = question.question + '\n' + answersString;
 
-      setOutput('');
-      const stream = await openai.chat.completions.create({
-        // /*
-        model: 'gpt-4-turbo-preview',
-        /*/
-        model: 'gpt-3.5-turbo-0125',
-        //*/
+      setOutput({});
+      const stream = await client.chat.completions.create({
+        model: openAiModel,
         messages: [
           { role: 'system', content: PROMPT },
           { role: 'user', content: promptQuestion },
         ],
+        response_model: {
+          schema: AiTeacherResponseSchema,
+          name: 'AiTeacherResponseSchema',
+        },
         temperature: 0.25,
         n: 1,
         stream: true,
       });
 
-      currentStreamController.current = stream;
+      let wasPreambleUpdated = false;
+      for await (const result of stream) {
+        if (!wasPreambleUpdated) {
+          const isPreambleDone =
+            result._meta?._completedPaths?.some((path) => path[0] === 'correctAnswersIndex') &&
+            result._meta._activePath?.[0] !== 'correctAnswersIndex';
 
-      let preamble = '';
-      let isPreambleFinished = false;
-      let fullOutput = '';
-
-      streamLoop: for await (const chunk of stream) {
-        for (const choice of chunk.choices) {
-          if (choice.finish_reason === 'stop') {
-            break streamLoop;
-          }
-
-          if (choice.finish_reason != null) {
-            continue;
-          }
-
-          let chunkContent = choice.delta.content;
-          if (chunkContent == null) {
-            continue;
-          }
-
-          fullOutput += chunkContent;
-
-          if (!isPreambleFinished) {
-            preamble += chunkContent;
-            if (preamble.includes('\nEOJ\n')) {
-              isPreambleFinished = true;
-              const preambleJSON = cleanupPreamble(preamble);
-              setAICorrectAnswers(preambleJSON);
+          if (isPreambleDone) {
+            const correctAnswersIndex = CorrectAnswersIndexSchema.safeParse(result.correctAnswersIndex);
+            if (correctAnswersIndex.success) {
+              setAICorrectAnswers(correctAnswersIndex.data);
             }
 
-            chunkContent = chunkContent.substring(chunkContent.lastIndexOf('EOJ'));
-          }
-
-          if (isPreambleFinished) {
-            setOutput((o) => o + chunkContent);
+            wasPreambleUpdated = true;
           }
         }
+
+        setOutput(result);
       }
 
-      if (!isPreambleFinished) {
-        setOutput(fullOutput);
+      if (!abortController.signal.aborted) {
+        setStatus('done');
       }
-
-      setStatus('done');
-      console.log(fullOutput);
     } catch (error) {
-      errorHandler(error);
+      if (error instanceof APIUserAbortError) {
+        setStatus('cancelled');
+        return;
+      } else if (error instanceof APIError) {
+        errorHandler(error, 'OpenAI: ' + error.message);
+      } else {
+        errorHandler(error);
+      }
+
+      setStatus('idle');
     }
-  }, [errorHandler, question.answers, question.question, status]);
+  }, [errorHandler, openAiModel, openAiToken, question.answers, question.question, setAICorrectAnswers, status]);
 
   useEffect(function cleanupActiveStream() {
     return () => {
-      currentStreamController.current?.controller.abort();
+      abortControllerRef.current?.abort();
     };
   }, []);
 
@@ -212,48 +259,169 @@ export const QuestionAIChat = ({ question }: QuestionAIChatProps) => {
       return 'Przerwij';
     }
 
-    if (status === 'done') {
+    if (status === 'done' || status === 'cancelled') {
       return 'Sprawdź ponownie';
     }
 
     return undefined;
   }, [status]);
 
-  return (
-    <div className="flex flex-col min-w-0 gap-4">
-      <QuestionPreview question={question} aiCorrectAnswers={aiCorrectAnswers} />
+  const cardClassNames = cn(
+    'relative shadow-none pr-2 sm:pr-4 pl-4 py-1 w-full bg-gradient-to-br from-purple-50/50 to-purple-200/50 min-h-[12rem]',
+  );
 
-      <Card className="relative shadow-none pr-2 sm:pr-4 pl-4 py-1 w-full bg-gradient-to-br from-green-50/50 to-green-200/50 min-h-[3.25rem]">
-        {status === 'idle' && (
-          <Button
-            variant="default"
-            size="sm"
-            onClick={runAICompletion}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          >
-            Sprawdź
-          </Button>
-        )}
+  const onCheckedChange = (model: typeof openAiModel) => (isChecked: boolean) => {
+    if (isChecked) {
+      setOpenAiModel(model);
+    } else {
+      clearStateOpenAiModel();
+    }
+  };
 
-        {status !== 'idle' && (
-          <Tooltip>
+  const optionsButton = (
+    <DropdownMenu>
+      <Tooltip>
+        <TooltipPortal>
+          <TooltipContent>Ustawienia OpenAI</TooltipContent>
+        </TooltipPortal>
+        <TooltipTrigger title="Ustawienia OpenAI" asChild>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="icon-sm">
+              <CogIcon width="1rem" height="1rem" absoluteStrokeWidth />
+            </Button>
+          </DropdownMenuTrigger>
+        </TooltipTrigger>
+      </Tooltip>
+      <DropdownMenuContent className="w-56" align="end" side="bottom">
+        <DropdownMenuLabel>Model GPT</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuCheckboxItem
+          checked={openAiModel === 'gpt-4-turbo-preview'}
+          onCheckedChange={onCheckedChange('gpt-4-turbo-preview')}
+        >
+          GPT 4 Turbo
+          <Tooltip disableHoverableContent>
             <TooltipPortal>
-              <TooltipContent>{tooltip}</TooltipContent>
+              <TooltipContent className="max-w-xs text-center">
+                Bardziej dokładny, lecz droższy. Dostępny w OpenAI API tylko dla płacących klientów. Kliknij by zobaczyć
+                ceny.
+              </TooltipContent>
             </TooltipPortal>
-            <TooltipTrigger title={tooltip} asChild>
-              <Button variant="outline" size="icon-sm" onClick={runAICompletion} className="absolute top-2 right-2">
-                {status === 'working' && (
-                  <Loader2 width="1rem" height="1rem" className="animate-spin" absoluteStrokeWidth />
-                )}
-                {status === 'done' && <RotateCcw width="1rem" height="1rem" absoluteStrokeWidth />}
-              </Button>
+            <TooltipTrigger asChild>
+              <a
+                href="https://openai.com/pricing#gpt-4-turbo"
+                target="_blank"
+                rel="noreferrer"
+                className="ml-2 inline-flex"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <BadgeDollarSign className="w-4 h-4" />
+                <BadgeDollarSign className="w-4 h-4 -ml-2 first:[&_path]:fill-white dark:first:[&_path]:fill-gray-950" />
+              </a>
             </TooltipTrigger>
           </Tooltip>
-        )}
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={openAiModel === 'gpt-3.5-turbo'}
+          onCheckedChange={onCheckedChange('gpt-3.5-turbo')}
+        >
+          GPT 3.5 Turbo
+          <Tooltip disableHoverableContent>
+            <TooltipPortal>
+              <TooltipContent className="max-w-xs text-center">
+                Mniej dokładny, ale tańszy. Kliknij by zobaczyć ceny.
+              </TooltipContent>
+            </TooltipPortal>
+            <TooltipTrigger asChild>
+              <a
+                href="https://openai.com/pricing#gpt-3-5-turbo"
+                target="_blank"
+                rel="noreferrer"
+                className="ml-2"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <BadgeDollarSign className="w-4 h-4" />
+              </a>
+            </TooltipTrigger>
+          </Tooltip>
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem
+          onClick={clearOpenApiToken}
+          className="bg-red-50 text-red-800 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
+        >
+          <Trash className="mr-2 h-4 w-4" />
+          Usuń OpenAI API Token
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
 
-        <QuestionAIAnswer content={output} />
+  if (status === 'idle' || (status === 'cancelled' && aiCorrectAnswers == null)) {
+    return (
+      <Card className={cn(cardClassNames)}>
+        <QuestionAIAnswer
+          lang="pl"
+          correctExplanations={[]}
+          incorrectExplanations={[]}
+          aiCorrectAnswers={aiCorrectAnswers}
+        />
+
+        <div className="absolute top-0 left-0 rounded-lg overflow-hidden flex items-center justify-center w-full h-full backdrop-blur-sm bg-radial-gradient to-purple-50/50 from-purple-100">
+          <Button
+            variant="default"
+            size="lg"
+            onClick={runAICompletion}
+            className="bg-gradient-to-tl from-purple-500 to-purple-600"
+          >
+            <Sparkles width="1rem" height="1rem" className="mr-2" absoluteStrokeWidth />
+            Sprawdź
+          </Button>
+          <div className="absolute top-2 right-2">{optionsButton}</div>
+        </div>
       </Card>
-    </div>
+    );
+  }
+
+  const correctExplanations = (output.correctExplanations ?? []).map((e) =>
+    mapExplanationToAIAnswerExplanation(e, question),
+  );
+  const incorrectExplanations = (output.incorrectExplanations ?? []).map((e) =>
+    mapExplanationToAIAnswerExplanation(e, question),
+  );
+
+  return (
+    <Card className={cardClassNames}>
+      <div className="flex gap-2 absolute top-2 right-2">
+        {status === 'done' && <DonateButton />}
+        <Tooltip>
+          <TooltipPortal>
+            <TooltipContent>{tooltip}</TooltipContent>
+          </TooltipPortal>
+          <TooltipTrigger title={tooltip} asChild>
+            <Button variant="outline" size="icon-sm" onClick={runAICompletion} className="group">
+              {status === 'working' && (
+                <>
+                  <Loader2 width="1rem" height="1rem" className="animate-spin group-hover:hidden" absoluteStrokeWidth />
+                  <X width="1rem" height="1rem" className="hidden group-hover:block" />
+                </>
+              )}
+              {(status === 'done' || status === 'cancelled') && (
+                <RotateCcw width="1rem" height="1rem" absoluteStrokeWidth />
+              )}
+            </Button>
+          </TooltipTrigger>
+        </Tooltip>
+        {status !== 'working' && optionsButton}
+      </div>
+
+      <QuestionAIAnswer
+        lang={output.questionLanguage ?? 'unknown'}
+        correctExplanations={correctExplanations}
+        incorrectExplanations={incorrectExplanations}
+        aiCorrectAnswers={aiCorrectAnswers}
+      />
+    </Card>
   );
 };
 
@@ -289,29 +457,37 @@ const QuestionPreview = ({ question, aiCorrectAnswers }: QuestionPreviewProps) =
   );
 };
 
-function getLetterBasedOnIndex(index: number) {
-  const letter = String.fromCharCode(97 + (index % 26));
-  const letterList = Math.floor(index / 26) > 0 ? String.fromCharCode(96 + Math.floor(index / 26)) + letter : letter;
+function mapExplanationToAIAnswerExplanation(
+  explanation: ExplanationSchema,
+  question: Question,
+): QuestionAIAnswerExplanation {
+  const answer = question.answers[explanation.answerIndex]?.answer;
 
-  return `${letterList}) `;
+  return {
+    index: explanation.answerIndex,
+    answer: answer ?? '',
+    explanation: explanation.explanation,
+  };
 }
 
-function cleanupPreamble(preamble: string) {
-  const preambleWithoutHeader = preamble.substring(preamble.indexOf('SOJ') + 3);
-  const preambleWithoutFooter = preambleWithoutHeader.substring(0, preambleWithoutHeader.lastIndexOf('EOJ'));
-  const preambleWithoutNewLines = preambleWithoutFooter.replace(/\n/g, '');
-  const parsedPreamble = safeJSONParse(preambleWithoutNewLines);
-  if (parsedPreamble == null) {
-    return [];
-  }
+const DonateButton = () => {
+  const { buttonProps, containerProps } = useDonateButton();
 
-  try {
-    return aiSchema.validateSync(parsedPreamble).correctAnswersIndex;
-  } catch (error) {
-    if (error instanceof ValidationError) {
-      return [];
-    }
-
-    throw error;
-  }
-}
+  return (
+    <Tooltip>
+      <TooltipPortal>
+        <TooltipContent>Wspomóż</TooltipContent>
+      </TooltipPortal>
+      <TooltipTrigger title="Wspomóż" asChild>
+        <div className="transition-transform" {...containerProps}>
+          <Button asChild size="icon-sm" variant="outline" {...buttonProps}>
+            <Link to={DONATE_PATH} className="text-xl">
+              <AnimalEmoji />
+              <span className="sr-only">Wspomóż</span>
+            </Link>
+          </Button>
+        </div>
+      </TooltipTrigger>
+    </Tooltip>
+  );
+};
