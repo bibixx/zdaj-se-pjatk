@@ -21,6 +21,8 @@ import {
 } from 'components/ui/dropdown-menu';
 import { DONATE_PATH, useDonateButton } from 'components/Footer/Footer.hooks';
 import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
+import { Checkbox } from 'components/ui/checkbox';
+import { Label } from 'components/ui/label';
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
 import { useLocalStorageState } from 'hooks/useLocalStorageState/useLocalStorageState';
 import { Question } from 'validators/subjects';
@@ -80,7 +82,7 @@ interface QuestionAIChatProps {
 }
 export const QuestionAIChat = ({ question }: QuestionAIChatProps) => {
   const [aiCorrectAnswers, setAICorrectAnswers] = useState<number[] | null>(null);
-  const [openAiToken, setOpenAiToken, clearOpenApiToken] = useLocalStorageState(OpenAiToken);
+  const [openAiToken, setOpenAiToken, clearOpenApiToken] = useOpenAiToken();
 
   return (
     <div className="flex flex-col min-w-0 gap-4">
@@ -100,19 +102,21 @@ export const QuestionAIChat = ({ question }: QuestionAIChatProps) => {
 };
 
 interface OpenAiTokenInputProps {
-  setOpenAiToken: (value: string) => void;
+  setOpenAiToken: (value: string, saveForLater: boolean) => void;
 }
 const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
   const [currentToken, setCurrentToken] = useState('');
+  const [savedForLater, setSavedForLater] = useState(true);
   const onSubmit = useCallback(
     (e: React.FormEvent) => {
       e.preventDefault();
       if (currentToken.trim() === '') {
         return;
       }
-      setOpenAiToken(currentToken);
+
+      setOpenAiToken(currentToken, savedForLater);
     },
-    [currentToken, setOpenAiToken],
+    [currentToken, savedForLater, setOpenAiToken],
   );
 
   return (
@@ -150,6 +154,30 @@ const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
             />
           </div>
           <Button disabled={currentToken.trim() === ''}>Zapisz</Button>
+        </div>
+        <div className="flex items-center space-x-2 col-span-3 mt-4">
+          <Checkbox
+            id="saveForLater"
+            checked={savedForLater}
+            onCheckedChange={(state) => {
+              if (state === 'indeterminate') {
+                return;
+              }
+
+              setSavedForLater(state);
+            }}
+          />
+          <Label htmlFor="saveForLater" className="flex items-center">
+            Zapisz między sesjami
+            <Tooltip disableHoverableContent>
+              <TooltipContent className="max-w-xs text-center">
+                Token zostanie zapisany w localStorage i będzie dostępny w przyszłości.
+              </TooltipContent>
+              <TooltipTrigger className="ml-1">
+                <BadgeHelpIcon className="w-4 h-4" />
+              </TooltipTrigger>
+            </Tooltip>
+          </Label>
         </div>
       </form>
     </Card>
@@ -490,4 +518,37 @@ const DonateButton = () => {
       </TooltipTrigger>
     </Tooltip>
   );
+};
+
+const useOpenAiToken = () => {
+  const [lsOpenAiToken, lsSetOpenAiToken, lsClearOpenApiToken] = useLocalStorageState(OpenAiToken);
+  const [savedForLater, setSavedForLater] = useState(lsOpenAiToken != null);
+  const [localOpenAiToken, localSetOpenAiToken] = useState<string | null>(null);
+
+  const openAiToken = useMemo(
+    () => (savedForLater ? lsOpenAiToken : localOpenAiToken),
+    [localOpenAiToken, lsOpenAiToken, savedForLater],
+  );
+  const setOpenAiToken = useCallback(
+    (value: string, newSavedForLater?: boolean) => {
+      if (newSavedForLater != null) {
+        setSavedForLater(newSavedForLater);
+      }
+      const resolvedSavedForLater = newSavedForLater ?? savedForLater;
+
+      if (resolvedSavedForLater) {
+        lsSetOpenAiToken(value);
+      } else {
+        localSetOpenAiToken(value);
+      }
+    },
+    [lsSetOpenAiToken, savedForLater],
+  );
+  const clearOpenApiToken = useCallback(() => {
+    setSavedForLater(false);
+    lsClearOpenApiToken();
+    localSetOpenAiToken(null);
+  }, [lsClearOpenApiToken]);
+
+  return [openAiToken, setOpenAiToken, clearOpenApiToken] as const;
 };
