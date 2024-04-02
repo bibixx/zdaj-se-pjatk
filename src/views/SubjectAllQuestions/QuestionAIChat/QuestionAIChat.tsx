@@ -82,7 +82,7 @@ interface QuestionAIChatProps {
 }
 export const QuestionAIChat = ({ question }: QuestionAIChatProps) => {
   const [aiCorrectAnswers, setAICorrectAnswers] = useState<number[] | null>(null);
-  const [openAiToken, setOpenAiToken, clearOpenApiToken] = useOpenAiToken();
+  const [openAiToken, setOpenAiToken, clearOpenAiToken] = useOpenAiToken();
 
   return (
     <div className="flex flex-col min-w-0 gap-4">
@@ -91,7 +91,7 @@ export const QuestionAIChat = ({ question }: QuestionAIChatProps) => {
         <QuestionAIResponse
           question={question}
           openAiToken={openAiToken}
-          clearOpenApiToken={clearOpenApiToken}
+          clearOpenAiToken={clearOpenAiToken}
           aiCorrectAnswers={aiCorrectAnswers}
           setAICorrectAnswers={setAICorrectAnswers}
         />
@@ -187,7 +187,7 @@ const OpenAiTokenInput = ({ setOpenAiToken }: OpenAiTokenInputProps) => {
 interface QuestionAIResponseProps {
   question: Question;
   openAiToken: string;
-  clearOpenApiToken: () => void;
+  clearOpenAiToken: () => void;
   aiCorrectAnswers: number[] | null;
   setAICorrectAnswers: (value: number[] | null) => void;
 }
@@ -196,7 +196,7 @@ const QuestionAIResponse = ({
   setAICorrectAnswers,
   aiCorrectAnswers,
   openAiToken,
-  clearOpenApiToken,
+  clearOpenAiToken,
 }: QuestionAIResponseProps) => {
   const [openAiModel, setOpenAiModel, clearStateOpenAiModel] = useLocalStorageState(OpenAiModel);
   const [output, setOutput] = useState<Partial<AiTeacherResponseSchema>>({});
@@ -375,7 +375,7 @@ const QuestionAIResponse = ({
         </DropdownMenuCheckboxItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem
-          onClick={clearOpenApiToken}
+          onClick={clearOpenAiToken}
           className="bg-red-50 text-red-800 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
         >
           <Trash className="mr-2 h-4 w-4" />
@@ -521,7 +521,7 @@ const DonateButton = () => {
 };
 
 const useOpenAiToken = () => {
-  const [lsOpenAiToken, lsSetOpenAiToken, lsClearOpenApiToken] = useLocalStorageState(OpenAiToken);
+  const [lsOpenAiToken, lsSetOpenAiToken, lsClearOpenAiToken] = useLocalStorageState(OpenAiToken);
   const [savedForLater, setSavedForLater] = useState(lsOpenAiToken != null);
   const [localOpenAiToken, localSetOpenAiToken] = useState<string | null>(null);
 
@@ -544,11 +544,11 @@ const useOpenAiToken = () => {
     },
     [lsSetOpenAiToken, savedForLater],
   );
-  const clearOpenApiToken = useCallback(() => {
+  const clearOpenAiToken = useCallback(() => {
     setSavedForLater(false);
-    lsClearOpenApiToken();
+    lsClearOpenAiToken();
     localSetOpenAiToken(null);
-  }, [lsClearOpenApiToken]);
+  }, [lsClearOpenAiToken]);
 
-  return [openAiToken, setOpenAiToken, clearOpenApiToken] as const;
+  return [openAiToken, setOpenAiToken, clearOpenAiToken] as const;
 };
