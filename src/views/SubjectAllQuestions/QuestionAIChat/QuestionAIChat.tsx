@@ -321,7 +321,7 @@ const QuestionAIResponse = ({
   }, [status]);
 
   const cardClassNames = cn(
-    'relative shadow-none pr-2 sm:pr-4 pl-4 py-1 w-full bg-gradient-to-br dark:from-purple-600/30 dark:to-purple-700/30 min-h-[12rem]',
+    'relative shadow-none pr-2 sm:pr-4 pl-4 py-1 w-full bg-gradient-to-br from-purple-50/50 to-purple-200/50 dark:from-purple-600/30 dark:to-purple-700/30 min-h-[12rem]',
   );
 
   const onCheckedChange = (model: typeof openAiModel) => (isChecked: boolean) => {
