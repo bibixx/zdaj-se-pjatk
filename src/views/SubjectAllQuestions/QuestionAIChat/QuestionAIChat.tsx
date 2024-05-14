@@ -348,13 +348,10 @@ const QuestionAIResponse = ({
         </TooltipTrigger>
       </Tooltip>
       <DropdownMenuContent className="w-56" align="end" side="bottom">
-        <DropdownMenuLabel>Model GPT</DropdownMenuLabel>
+        <DropdownMenuLabel>Model AI</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuCheckboxItem
-          checked={openAiModel === 'gpt-4-turbo-preview'}
-          onCheckedChange={onCheckedChange('gpt-4-turbo-preview')}
-        >
-          GPT 4 Turbo
+        <DropdownMenuCheckboxItem checked={openAiModel === 'gpt-4o'} onCheckedChange={onCheckedChange('gpt-4o')}>
+          GPT-4o
           <Tooltip disableHoverableContent>
             <TooltipPortal>
               <TooltipContent className="max-w-xs text-center">
@@ -364,7 +361,7 @@ const QuestionAIResponse = ({
             </TooltipPortal>
             <TooltipTrigger asChild>
               <a
-                href="https://openai.com/pricing#gpt-4-turbo"
+                href="https://openai.com/api/pricing/#:~:text=a%20new%20window)-,GPT%2D4o,-GPT%2D4o%20is"
                 target="_blank"
                 rel="noreferrer"
                 className="ml-2 inline-flex"
@@ -380,7 +377,7 @@ const QuestionAIResponse = ({
           checked={openAiModel === 'gpt-3.5-turbo'}
           onCheckedChange={onCheckedChange('gpt-3.5-turbo')}
         >
-          GPT 3.5 Turbo
+          GPT-3.5 Turbo
           <Tooltip disableHoverableContent>
             <TooltipPortal>
               <TooltipContent className="max-w-xs text-center">
@@ -389,7 +386,7 @@ const QuestionAIResponse = ({
             </TooltipPortal>
             <TooltipTrigger asChild>
               <a
-                href="https://openai.com/pricing#gpt-3-5-turbo"
+                href="https://openai.com/api/pricing/#:~:text=1M%20tokens-,GPT%2D3.5%20Turbo,-GPT%2D3.5%20Turbo"
                 target="_blank"
                 rel="noreferrer"
                 className="ml-2"

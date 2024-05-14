@@ -8,8 +8,15 @@ export const OpenAiToken = {
   defaultValue: null,
 } satisfies LocalStorageConfig;
 
+const MODEL_MAPPING = {
+  'gpt-4-turbo-preview': 'gpt-4o',
+} as Record<string, string>;
+
 export const OpenAiModel = {
   key: 'openai-model',
-  validator: z.union([z.literal('gpt-4-turbo-preview'), z.literal('gpt-3.5-turbo')]),
-  defaultValue: 'gpt-4-turbo-preview' as const,
+  validator: z
+    .string()
+    .transform((value) => MODEL_MAPPING[value] ?? value)
+    .pipe(z.union([z.literal('gpt-4o'), z.literal('gpt-3.5-turbo')])),
+  defaultValue: 'gpt-4o' as const,
 } satisfies LocalStorageConfig;
