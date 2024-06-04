@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BarChart3, Eye, EyeOff } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 import { cn } from 'utils';
 import { Header } from 'components/Header/Header';
@@ -13,6 +14,9 @@ import { TOTAL_DONATED, DONATION_PAGES, DonationPage, DONATION_GOAL, formatGoal 
 
 export const DonatePage = () => (
   <>
+    <Helmet>
+      <title>Wspomóż | Generatory 3.0</title>
+    </Helmet>
     <PageWrapper>
       <div className="pl-0 max-md:pl-2 pr-2 max-md:pr-4">
         <Header>

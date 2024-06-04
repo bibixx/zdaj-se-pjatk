@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet';
+
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
 import { TypographyH2, TypographyH3 } from 'components/ui/typography';
@@ -6,6 +8,9 @@ import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 
 export const CookiePolicy = withPageWrapper(() => (
   <div>
+    <Helmet>
+      <title>Polityka Cookies | Generatory 3.0</title>
+    </Helmet>
     <div className="pl-0 max-md:pl-2 pr-2 max-md:pr-4">
       <Header>
         <BreadCrumbs

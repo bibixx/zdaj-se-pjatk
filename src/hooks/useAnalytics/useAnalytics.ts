@@ -2,16 +2,9 @@ import { useEffect, useState } from 'react';
 import PiwikReactRouter from 'piwik-react-router';
 import Cookies from 'cookies-js';
 
+import { getBooleanCookie } from 'utils/cookies';
+
 const CONSENT_KEY = 'consent';
-
-const getBooleanCookie = (key: string) => {
-  const value = Cookies.get(key);
-  if (value == null) {
-    return undefined;
-  }
-
-  return Cookies.get(key) === 'true';
-};
 
 export const piwik = PiwikReactRouter({
   url: 'analytics.legiec.info',

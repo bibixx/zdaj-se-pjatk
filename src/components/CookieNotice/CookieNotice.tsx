@@ -1,7 +1,7 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
 
-import { useToast } from 'components/ui/use-toast';
+import { Toast, ToastDescription, ToastProvider, ToastTitle, ToastViewport } from 'components/ui/toast';
 import { Button } from 'components/ui/button';
 
 interface Props {
@@ -10,19 +10,15 @@ interface Props {
 }
 
 export const CookieNotice = ({ onBannerClose, areCookiesAccepted }: Props) => {
-  const { toast } = useToast();
-  const wasShownRef = useRef(false);
+  const [isOpen, setIsOpen] = useState(areCookiesAccepted);
+  const dismiss = () => setIsOpen(false);
 
-  useEffect(() => {
-    if (areCookiesAccepted == null && !wasShownRef.current) {
-      wasShownRef.current = true;
-
-      setTimeout(() => {
-        const { dismiss } = toast({
-          title: '🍪 Cookies',
-          htmlId: 'cookieConsentBanner',
-          className: 'md:max-w-none w-auto',
-          description: (
+  return (
+    <ToastProvider>
+      <Toast key="cookieConsentBanner" id="cookieConsentBanner" open={isOpen} className="md:max-w-none w-auto">
+        <div className="grid gap-1">
+          <ToastTitle>🍪 Cookies</ToastTitle>
+          <ToastDescription>
             <div className="mr-6">
               Używamy plików cookie w celu prowadzenia danych statystycznych. Możesz przeczytać o nich więcej w{' '}
               <Link className="link" to="/polityka-cookies">
@@ -30,37 +26,33 @@ export const CookieNotice = ({ onBannerClose, areCookiesAccepted }: Props) => {
               </Link>
               .
             </div>
-          ),
-          hideClose: true,
-          duration: Infinity,
-          action: (
-            <div className="flex gap-2 max-sm:flex-wrap max-sm:mt-2 max-sm:!ml-0">
-              <Button
-                className="whitespace-nowrap max-sm:w-full"
-                variant="blue"
-                onClick={() => {
-                  onBannerClose(true);
-                  dismiss();
-                }}
-              >
-                Pozwól na wszystkie
-              </Button>
-              <Button
-                className="whitespace-nowrap max-sm:w-full"
-                variant="outline"
-                onClick={() => {
-                  onBannerClose(false);
-                  dismiss();
-                }}
-              >
-                Pozwól tylko na niezbędne
-              </Button>
-            </div>
-          ),
-        });
-      }, 50);
-    }
-  }, [onBannerClose, areCookiesAccepted, toast]);
+          </ToastDescription>
+        </div>
+        <div className="flex gap-2 max-sm:flex-wrap max-sm:mt-2 max-sm:!ml-0">
+          <Button
+            className="whitespace-nowrap max-sm:w-full"
+            variant="blue"
+            onClick={() => {
+              onBannerClose(true);
+              dismiss();
+            }}
+          >
+            Pozwól na wszystkie
+          </Button>
+          <Button
+            className="whitespace-nowrap max-sm:w-full"
+            variant="outline"
+            onClick={() => {
+              onBannerClose(false);
+              dismiss();
+            }}
+          >
+            Pozwól tylko na niezbędne
+          </Button>
+        </div>
+      </Toast>
 
-  return null;
+      <ToastViewport />
+    </ToastProvider>
+  );
 };

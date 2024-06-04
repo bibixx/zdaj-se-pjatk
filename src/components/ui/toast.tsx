@@ -30,6 +30,8 @@ const toastVariants = cva(
         default: 'border bg-white dark:bg-gray-950',
         destructive:
           'destructive group border-red-500 bg-red-500 text-gray-50 dark:border-red-900 dark:bg-red-900 dark:text-red-50',
+        warning:
+          'group border-yellow-500 bg-yellow-500 text-gray-50 dark:border-yellow-900 dark:bg-yellow-900 dark:text-yellow-50',
         success:
           'group border-green-500 bg-green-500 text-gray-50 dark:border-green-900 dark:bg-green-900 dark:text-green-50',
       },
@@ -85,7 +87,7 @@ const ToastTitle = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Title>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Title>
 >(({ className, ...props }, ref) => (
-  <ToastPrimitives.Title ref={ref} className={cn('text-sm font-semibold [&+div]:text-xs', className)} {...props} />
+  <ToastPrimitives.Title ref={ref} className={cn('text-sm font-semibold', className)} {...props} />
 ));
 ToastTitle.displayName = ToastPrimitives.Title.displayName;
 
@@ -93,7 +95,7 @@ const ToastDescription = React.forwardRef<
   React.ElementRef<typeof ToastPrimitives.Description>,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Description>
 >(({ className, ...props }, ref) => (
-  <ToastPrimitives.Description ref={ref} className={cn('text-sm opacity-90', className)} {...props} />
+  <ToastPrimitives.Description ref={ref} className={cn('text-xs opacity-90', className)} {...props} />
 ));
 ToastDescription.displayName = ToastPrimitives.Description.displayName;
 

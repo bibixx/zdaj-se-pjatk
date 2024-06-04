@@ -1,4 +1,3 @@
-import { cn } from 'utils';
 import { Toast, ToastClose, ToastDescription, ToastProvider, ToastTitle, ToastViewport } from 'components/ui/toast';
 import { useToast } from 'components/ui/use-toast';
 
@@ -7,17 +6,11 @@ export function Toaster() {
 
   return (
     <ToastProvider>
-      {toasts.map(({ id, htmlId, title, description, action, hideClose, className, ...props }) => {
+      {toasts.map(({ id, htmlId, title, description, action, hideClose, ...props }) => {
+        console.log(props);
+
         return (
-          <Toast
-            key={id}
-            id={htmlId}
-            className={cn(
-              'data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-bottom-full data-[state=open]:sm:slide-in-from-top-full',
-              className,
-            )}
-            {...props}
-          >
+          <Toast key={id} id={htmlId} {...props}>
             <div className="grid gap-1">
               {title && <ToastTitle>{title}</ToastTitle>}
               {description && <ToastDescription>{description}</ToastDescription>}
@@ -27,7 +20,7 @@ export function Toaster() {
           </Toast>
         );
       })}
-      <ToastViewport className="sm:top-0" />
+      <ToastViewport />
     </ToastProvider>
   );
 }

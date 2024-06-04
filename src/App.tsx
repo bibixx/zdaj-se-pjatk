@@ -34,7 +34,6 @@ export const App = () => {
               <ScrollToTop>
                 <AnimalEmojiProvider>
                   <RelCanonical />
-                  <CookieNotice onBannerClose={onBannerClose} areCookiesAccepted={areCookiesAccepted} />
                   <Switch>
                     <Route path="/" exact component={IndexPage} />
                     <Route path="/polityka-cookies" exact component={CookiePolicy} />
@@ -46,6 +45,7 @@ export const App = () => {
                   <Footer updatedAt={updatedAt} />
                 </AnimalEmojiProvider>
                 <Toaster />
+                <CookieNotice onBannerClose={onBannerClose} areCookiesAccepted={areCookiesAccepted} />
               </ScrollToTop>
             </Router>
           </AnalyticsContext.Provider>
