@@ -11,7 +11,6 @@ import { TooltipIfTooWide } from 'components/TooltipIfTooWide/TooltipIfTooWide';
 import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
-import { useDonatePrompt } from 'hooks/useDonatePrompt/useDonatePrompt';
 import { polishPlural } from 'utils/polishPlural';
 
 import { QuestionSkeleton } from './Question/QuestionSkeleton';
@@ -31,8 +30,6 @@ export const SubjectAllQuestions = withPageWrapper(() => {
     (questionId: string, checked: boolean) => setQuestion(questionId, checked ? 'add' : 'remove'),
     [setQuestion],
   );
-
-  useDonatePrompt();
 
   if (subjectData.state === 'error') {
     if (subjectData.is404) {
