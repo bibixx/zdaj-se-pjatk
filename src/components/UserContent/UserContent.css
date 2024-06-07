@@ -19,5 +19,15 @@
 
   .user-content img {
     @apply bg-white/100;
+    @apply inline;
+  }
+
+  .user-content.user-content--invert-images img {
+    mix-blend-mode: multiply;
+  }
+
+  html.dark .user-content.user-content--invert-images img {
+    filter: invert(1);
+    mix-blend-mode: screen;
   }
 }

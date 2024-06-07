@@ -10,3 +10,7 @@ window.MathJax = {
 };
 
 import('mathjax/es5/tex-mml-chtml.js');
+
+if (import.meta.env.DEV) {
+  import('./mathjax.css');
+}

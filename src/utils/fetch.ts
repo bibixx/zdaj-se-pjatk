@@ -1,5 +1,8 @@
 import { AnySchema, Asserts } from 'yup';
 
+import { ROOT_URL } from '../constants/env';
+import { joinPath } from './joinPath';
+
 export class FetchError extends Error {
   constructor(
     message: string,
@@ -21,12 +24,7 @@ export const customFetch = async <
   checkData: T,
   init?: RequestInit,
 ): Promise<Asserts<T>> => {
-  const rootUrl = String(import.meta.env.VITE_DATA_PATH) || '/';
-
-  const rootDeslashed = rootUrl.replace(/\/$/, '');
-  const urlDeslashed = url.replace(/^\//, '');
-
-  const response = await fetch(`${rootDeslashed}/${urlDeslashed}`, init);
+  const response = await fetch(joinPath(ROOT_URL, url), init);
 
   if (response.ok) {
     const data = await response.json();
