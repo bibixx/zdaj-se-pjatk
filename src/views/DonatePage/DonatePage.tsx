@@ -56,7 +56,11 @@ export const DonatePage = () => (
               href="https://bibixx.github.io/zdaj-se-pjatk-data/index.json"
               rel="noreferrer"
             >
-              pliki JSON na GitHub Pages
+              pliki JSON trzymane na GitHubie
+            </a>{' '}
+            i serwowane przez{' '}
+            <a href="https://statically.io/" className="link" target="_blank" rel="noreferrer">
+              statically.io
             </a>
           </li>
           <li>

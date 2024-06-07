@@ -41,6 +41,7 @@ function aa(html: string) {
   for (const $img of $$imgs) {
     const url = new URL($img.src);
     url.host = rootUrl.host;
+    url.port = rootUrl.port;
     url.protocol = rootUrl.protocol;
     url.pathname = joinPath(rootUrl.pathname, url.pathname);
 
