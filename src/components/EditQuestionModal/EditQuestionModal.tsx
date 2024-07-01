@@ -1,4 +1,3 @@
-import * as yup from 'yup';
 import { ReactNode } from 'react';
 import { Copy, Loader2, Save } from 'lucide-react';
 
@@ -9,7 +8,7 @@ import { Button } from 'components/ui/button';
 import { useToast } from 'components/ui/use-toast';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 import { useFetch } from 'hooks/useFetch/useFetch';
-import { Question } from 'validators/subjects';
+import { Question, overrideSubjectSchema } from 'validators/subjects';
 
 import { useForm, useSaveOverride } from './EditQuestionModal.hooks';
 import { copyTextToClipboard } from './EditQuestionModal.utils';
@@ -19,7 +18,6 @@ import forkSrc from './images/fork.png';
 import overwriteContentSrc from './images/overwrite-content.png';
 import proposeChangeSrc from './images/propose-changes.png';
 import pasteContentSrc from './images/paste-content.png';
-import { OutputOverrideSubject } from './EditQuestionModal.types';
 
 import './EditQuestionModal.css';
 
@@ -52,11 +50,15 @@ interface ModalContentsProps {
   closeModal: () => void;
 }
 function ModalContents({ question, subjectId, closeModal }: ModalContentsProps) {
-  const { data: anyOverrides, loading: overridesLoading } = useFetch(`overrides/${subjectId}.json`, yup.object({}));
-  const overrides = anyOverrides as OutputOverrideSubject | undefined;
+  const { data: subjectOverrides, loading: overridesLoading } = useFetch(
+    `overrides/${subjectId}.json`,
+    overrideSubjectSchema,
+  );
+  const overrides = subjectOverrides?.data.find((q) => q.id === question.id);
 
+  const questionId = question.id;
   const { onSave, overridesSubmitted, overridesString, onGoBack } = useSaveOverride({
-    questionId: question.id,
+    questionId,
     subjectId,
     overrides: overrides ?? null,
   });
@@ -79,13 +81,25 @@ function ModalContents({ question, subjectId, closeModal }: ModalContentsProps) 
 
   if (overridesSubmitted === 'edit') {
     return (
-      <EditResult subjectId={subjectId} overridesString={overridesString} onClose={closeModal} onGoBack={onGoBack} />
+      <EditResult
+        subjectId={subjectId}
+        questionId={questionId}
+        overridesString={overridesString}
+        onClose={closeModal}
+        onGoBack={onGoBack}
+      />
     );
   }
 
   if (overridesSubmitted === 'new') {
     return (
-      <NewResult subjectId={subjectId} overridesString={overridesString} onClose={closeModal} onGoBack={onGoBack} />
+      <NewResult
+        subjectId={subjectId}
+        questionId={questionId}
+        overridesString={overridesString}
+        onClose={closeModal}
+        onGoBack={onGoBack}
+      />
     );
   }
 
@@ -209,10 +223,11 @@ const Alert = ({ children }: AlertProps) => (
 interface ResultProps {
   overridesString: string;
   subjectId: string;
+  questionId: string;
   onClose: () => void;
   onGoBack: () => void;
 }
-const EditResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultProps) => {
+const EditResult = ({ overridesString, subjectId, questionId, onClose, onGoBack }: ResultProps) => {
   const { toast } = useToast();
 
   const onCopy = () => {
@@ -226,7 +241,7 @@ const EditResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultPro
     copyTextToClipboard(overridesString);
   };
 
-  const url = `https://github.com/bibixx/zdaj-se-pjatk-data/edit/master/overrides/${subjectId}.json`;
+  const url = `https://github.com/bibixx/zdaj-se-pjatk-data/edit/master/overrides/patches/${subjectId}/${questionId}.patch.json`;
   return (
     <DialogHeader className="edit-question-modal text-left">
       <DialogTitle>Jak przesłać poprawione pytanie?</DialogTitle>
@@ -294,7 +309,7 @@ const EditResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultPro
   );
 };
 
-const NewResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultProps) => {
+const NewResult = ({ overridesString, subjectId, questionId, onClose, onGoBack }: ResultProps) => {
   const { toast } = useToast();
 
   const onCopy = () => {
@@ -308,7 +323,8 @@ const NewResult = ({ overridesString, subjectId, onClose, onGoBack }: ResultProp
     copyTextToClipboard(overridesString);
   };
 
-  const url = `https://github.com/bibixx/zdaj-se-pjatk-data/new/master/overrides/${subjectId}.json?filename=${subjectId}.json`;
+  const url = `https://github.com/bibixx/zdaj-se-pjatk-data/new/master/overrides/patches/${subjectId}?filename=${questionId}.patch.json`;
+
   return (
     <DialogHeader className="edit-question-modal text-left">
       <DialogTitle>Jak przesłać poprawione pytanie?</DialogTitle>

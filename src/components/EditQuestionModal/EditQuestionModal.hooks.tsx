@@ -1,86 +1,46 @@
 import { useEffect, useState } from 'react';
 
 import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
-import { Question } from 'validators/subjects';
+import { OverrideQuestion, Question } from 'validators/subjects';
 
-import { OutputOverrideSubject } from './EditQuestionModal.types';
+import { OutputOverrideSubjectQuestion } from './EditQuestionModal.types';
+
+function stringify(data: unknown) {
+  return JSON.stringify(data, null, 2) + '\n';
+}
 
 interface UseSaveArguments {
-  overrides: OutputOverrideSubject | null;
+  overrides: OverrideQuestion | null;
   questionId: string;
   subjectId: string;
 }
-export const useSaveOverride = ({ overrides, questionId, subjectId }: UseSaveArguments) => {
+export const useSaveOverride = ({ overrides, questionId }: UseSaveArguments) => {
   const errorHandler = useErrorHandler();
   const [overridesSubmitted, setOverridesSubmitted] = useState<'new' | 'edit' | null>(null);
   const [overridesString, setOverridesString] = useState<string>('');
-  const onOverridesSave = (formState: FormState, notNullOverrides: OutputOverrideSubject) => {
-    const numberedQuestionId = +questionId;
-
-    let found = false;
-    const newData: OutputOverrideSubject['data'] = notNullOverrides.data.map((q) => {
-      if (q.id !== numberedQuestionId) {
-        return q;
-      }
-
-      found = true;
-      return {
-        ...q,
-        id: q?.id,
-        question: formState.question,
-        isMarkdown: formState.isMarkdown,
-        answers: q
-          ? q.answers?.map((a, i) => ({
-              ...a,
-              ...(formState.answers[i] ?? {}),
-            }))
-          : formState.answers,
-      };
-    });
-
-    if (!found) {
-      newData.push({
-        question: formState.question,
-        isMarkdown: formState.isMarkdown,
-        answers: formState.answers,
-      });
-    }
-
-    const newOverrides: OutputOverrideSubject = {
-      $schema: notNullOverrides.$schema,
-      id: notNullOverrides.id,
-      title: notNullOverrides.title,
+  const onOverridesSave = (formState: FormState, notNullOverrides: OverrideQuestion) => {
+    const newData: OutputOverrideSubjectQuestion = {
+      ...notNullOverrides,
+      question: formState.question,
+      isMarkdown: formState.isMarkdown,
+      answers: formState.answers,
       updatedAt: Date.now(),
-      data: newData,
     };
 
     setOverridesSubmitted('edit');
-    setOverridesString(JSON.stringify(newOverrides, null, 2));
+    setOverridesString(stringify(newData));
   };
   const onNewSave = (formState: FormState) => {
-    const numberedQuestionId = +questionId;
-
-    const newOverrides: OutputOverrideSubject = {
-      $schema: '../schemas/subject-override.json',
-      id: subjectId,
+    const newData: OutputOverrideSubjectQuestion = {
+      id: questionId,
+      question: formState.question,
+      isMarkdown: formState.isMarkdown,
+      answers: formState.answers,
       updatedAt: Date.now(),
-      data: [
-        {
-          id: numberedQuestionId,
-          question: formState.question,
-          isMarkdown: formState.isMarkdown,
-          comments: [],
-          answers: formState.answers.map((a) => ({
-            answer: a.answer,
-            correct: a.correct,
-            isMarkdown: a.isMarkdown,
-          })),
-        },
-      ],
     };
 
     setOverridesSubmitted('new');
-    setOverridesString(JSON.stringify(newOverrides, null, 2));
+    setOverridesString(stringify(newData));
   };
 
   const onSave = (formState: FormState): void => {

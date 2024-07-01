@@ -1,32 +1,23 @@
-type Title = string;
-type Id = string;
 type Question = string;
-type Id1 = number;
+type Id1 = string;
 type NumberOfComments = number;
 type Answer = string;
 type Correct = boolean;
 type Answers = Items1[];
 type Comments = unknown[];
-type Data = OutputOverrideSubjectQuestion[];
 type UpdatedAt = number;
 type IsMarkdown = boolean;
-type Schema = string;
 
-export interface OutputOverrideSubject {
-  $schema: Schema;
-  title?: Title;
-  id?: Id;
-  data: Data;
-  updatedAt: UpdatedAt;
-}
 export interface OutputOverrideSubjectQuestion {
   question?: Question;
-  id?: Id1;
+  id: Id1;
   numberOfComments?: NumberOfComments;
   answers?: Answers;
   comments?: Comments;
   isMarkdown: IsMarkdown;
+  updatedAt: UpdatedAt;
 }
+
 interface Items1 {
   answer: Answer;
   correct: Correct;
