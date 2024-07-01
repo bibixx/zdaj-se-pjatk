@@ -5,7 +5,8 @@ type Answer = string;
 type Correct = boolean;
 type Answers = Items1[];
 type Comments = unknown[];
-type UpdatedAt = number;
+type CreatedAt = number;
+type $Schema = '../../../schemas/subject-patch.json';
 type IsMarkdown = boolean;
 
 export interface OutputOverrideSubjectQuestion {
@@ -15,7 +16,8 @@ export interface OutputOverrideSubjectQuestion {
   answers?: Answers;
   comments?: Comments;
   isMarkdown: IsMarkdown;
-  updatedAt: UpdatedAt;
+  createdAt: CreatedAt;
+  $schema: $Schema;
 }
 
 interface Items1 {

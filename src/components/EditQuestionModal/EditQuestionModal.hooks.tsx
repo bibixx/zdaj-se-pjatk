@@ -24,7 +24,8 @@ export const useSaveOverride = ({ overrides, questionId }: UseSaveArguments) => 
       question: formState.question,
       isMarkdown: formState.isMarkdown,
       answers: formState.answers,
-      updatedAt: Date.now(),
+      createdAt: Date.now(),
+      $schema: '../../../schemas/subject-patch.json',
     };
 
     setOverridesSubmitted('edit');
@@ -36,7 +37,8 @@ export const useSaveOverride = ({ overrides, questionId }: UseSaveArguments) => 
       question: formState.question,
       isMarkdown: formState.isMarkdown,
       answers: formState.answers,
-      updatedAt: Date.now(),
+      createdAt: Date.now(),
+      $schema: '../../../schemas/subject-patch.json',
     };
 
     setOverridesSubmitted('new');
