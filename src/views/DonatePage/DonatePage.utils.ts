@@ -21,22 +21,20 @@ export const DONATION_PAGES: DonationPage[] = [
     explicit: false,
   },
   {
-    id: 'na-ratunek-perelki',
-    image: 'na-ratunek-perelki.jpg',
-    url: 'https://zrzutka.pl/z/zdaj-se-na-ratunek-perelki',
-    stats: 'https://zrzutka.pl/z/zdaj-se-na-ratunek-perelki+',
-    text: 'Na Ratunek Perełki (Operacja i leczenie)',
-    description: `Cel: ${formatGoal(11_000)}`,
-    explicit: true,
+    id: 'paluch',
+    image: 'paluch.jpg',
+    url: 'https://napaluchu.waw.pl/elementor-2754/',
+    text: 'Schronisko Na Paluchu',
+    description:
+      'Schronisko zapewnia bezdomnym zwierzętom opiekę, leczenie i szansę na znalezienie nowego domu. To przystanek na ich trudnej drodze życia, gdzie otrzymują drugą szansę.',
   },
   {
-    id: 'zca4wr',
-    image: 'zca4wr.jpg',
-    url: 'https://zrzutka.pl/z/zdaj-se-zca4wr',
-    stats: 'https://zrzutka.pl/z/zdaj-se-zca4wr+',
-    text: 'Kastracja i diagnostyka Kotów zabranych spod tirów',
-    description: `Cel: ${formatGoal(3_500)}`,
+    id: 'malibracia',
+    image: 'malibracia.jpg',
+    url: 'https://www.malibracia.org.pl/wakacje/index.html#puzzle-section',
+    text: 'Ufunduj dzień wakacji samotnym seniorom',
+    description:
+      'Samotni seniorzy często pozostają zamknięci w domach z powodu chorób lub lęku. „Wakacje jednego dnia” organizują dla nich krótkie wycieczki z wolontariuszami, oferując im chwilę wytchnienia poza domem.',
+    explicit: false,
   },
 ];
-export const TOTAL_DONATED = 146;
-export const DONATION_GOAL = 1337;

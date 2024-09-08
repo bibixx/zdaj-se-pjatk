@@ -10,7 +10,7 @@ import { Button } from 'components/ui/button';
 import { Tooltip, TooltipContent, TooltipPortal, TooltipTrigger } from 'components/ui/tooltip';
 import { PageWrapper } from 'components/PageWrapper/PageWrapper';
 
-import { TOTAL_DONATED, DONATION_PAGES, DonationPage, DONATION_GOAL, formatGoal } from './DonatePage.utils';
+import { DONATION_PAGES, DonationPage } from './DonatePage.utils';
 
 export const DonatePage = () => (
   <>
@@ -76,14 +76,6 @@ export const DonatePage = () => (
           Natomiast jeśli jednak chcesz wesprzeć to co robię, możesz wpłacić dowolną kwotę na jedną z poniższych
           zbiórek.
         </p>
-
-        <h2 className="text-2xl font-semibold mt-2 text-center">
-          <span className="tracking-tight">Razem zebraliśmy: </span>
-          <span className="text-blue-500 dark:text-blue-400">
-            {formatGoal(TOTAL_DONATED)}&nbsp;/&nbsp;
-            {formatGoal(DONATION_GOAL)}
-          </span>
-        </h2>
       </PageWrapper>
 
       <div className="max-w-5xl mx-auto">
@@ -120,7 +112,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
           })}
         >
           <img
-            className={cn('transition-all select-none h-full object-cover', {
+            className={cn('transition-all select-none h-full w-full object-cover', {
               'blur-md': explicit,
               'blur-none': explicitShown,
             })}
@@ -170,7 +162,7 @@ const DonationCard = ({ page }: DonationCardProps) => {
         </div>
         <CardHeader>
           <h3 className="text-lg font-semibold leading-none tracking-tight text-wrap-balanced">{text}</h3>
-          {description != null && <CardDescription>{description}</CardDescription>}
+          {description != null && <CardDescription className="text-pretty">{description}</CardDescription>}
         </CardHeader>
       </Card>
     </a>
