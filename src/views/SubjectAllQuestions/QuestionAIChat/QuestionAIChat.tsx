@@ -361,7 +361,7 @@ const QuestionAIResponse = ({
             </TooltipPortal>
             <TooltipTrigger asChild>
               <a
-                href="https://openai.com/api/pricing/#:~:text=a%20new%20window)-,GPT%2D4o,-GPT%2D4o%20is"
+                href="https://openai.com/api/pricing/"
                 target="_blank"
                 rel="noreferrer"
                 className="ml-2 inline-flex"
@@ -374,10 +374,10 @@ const QuestionAIResponse = ({
           </Tooltip>
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
-          checked={openAiModel === 'gpt-3.5-turbo'}
-          onCheckedChange={onCheckedChange('gpt-3.5-turbo')}
+          checked={openAiModel === 'gpt-4o-mini'}
+          onCheckedChange={onCheckedChange('gpt-4o-mini')}
         >
-          GPT-3.5 Turbo
+          GPT-4o mini
           <Tooltip disableHoverableContent>
             <TooltipPortal>
               <TooltipContent className="max-w-xs text-center">
@@ -386,7 +386,7 @@ const QuestionAIResponse = ({
             </TooltipPortal>
             <TooltipTrigger asChild>
               <a
-                href="https://openai.com/api/pricing/#:~:text=1M%20tokens-,GPT%2D3.5%20Turbo,-GPT%2D3.5%20Turbo"
+                href="https://openai.com/api/pricing/"
                 target="_blank"
                 rel="noreferrer"
                 className="ml-2"
