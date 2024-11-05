@@ -23,4 +23,6 @@ If you want to help me with creating and maintaining this service you could use 
 How to run this app can be found in the [DEVELOPMENT.md file](./DEVELOPMENT.md)
 
 ## 👮🏻‍♂️ License
-This project has been licensed with [The Beerware License](https://tldrlegal.com/license/beerware-license). It's full text can be found in the [LICENSE.md file](./LICENSE.md)
+The code for zdaj.se (so this repository) is licensed with [The Beerware License](https://tldrlegal.com/license/beerware-license). It's full text can be found in the [LICENSE.md file](./LICENSE.md)
+
+However [the data source](https://github.com/bibixx/zdaj-se-pjatk-data) it is using is licensed under [CC BY-SA 4.0](https://github.com/bibixx/zdaj-se-pjatk-data/blob/master/LICENSE.md).
