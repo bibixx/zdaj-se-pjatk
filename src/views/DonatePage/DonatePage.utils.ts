@@ -32,9 +32,9 @@ export const DONATION_PAGES: DonationPage[] = [
     id: 'malibracia',
     image: 'malibracia.jpg',
     url: 'https://www.malibracia.org.pl/wakacje/index.html#puzzle-section',
-    text: 'Ufunduj dzień wakacji samotnym seniorom',
+    text: 'Ufunduj spotkanie świąteczne dla samotnego seniora',
     description:
-      'Samotni seniorzy często pozostają zamknięci w domach z powodu chorób lub lęku. „Wakacje jednego dnia” organizują dla nich krótkie wycieczki z wolontariuszami, oferując im chwilę wytchnienia poza domem.',
+      'Samotni seniorzy często spędzają Święta w ciszy i zapomnieniu. Inicjatywa organizuje świąteczne spotkania w 13 miastach oraz odwiedziny w domach, aby zapewnić im ciepło i towarzystwo. Dzięki wsparciu, możemy sprawić, że dla tych osób wydarzy się świąteczny cud.',
     explicit: false,
   },
 ];
