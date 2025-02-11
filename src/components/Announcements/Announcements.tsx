@@ -16,34 +16,34 @@ export const Announcements = () => {
   }, []);
 
   useEffect(() => {
-    ANNOUNCEMENTS.forEach((announcement, i) => {
+    ANNOUNCEMENTS.forEach((announcement) => {
       if (announcement.htmlId != null && closedAnnouncements.includes(announcement.htmlId)) {
         return;
       }
 
       let toastId: string | undefined = undefined;
 
-      setTimeout(() => {
-        const result = toast({
-          variant: 'default',
-          action:
-            announcement.htmlId != null ? (
-              <Button
-                size="xs"
-                className="mt-1"
-                variant="outlineBlue"
-                onClick={() => onRememberClosed(announcement.htmlId, toastId)}
-              >
-                Nie pokazuj więcej
-              </Button>
-            ) : undefined,
-          ...announcement,
-        });
+      const result = toast({
+        variant: 'default',
+        action:
+          announcement.htmlId != null ? (
+            <Button
+              size="xs"
+              className="mt-1"
+              variant="outlineBlue"
+              onClick={() => onRememberClosed(announcement.htmlId, toastId)}
+            >
+              Nie pokazuj więcej
+            </Button>
+          ) : undefined,
+        ...announcement,
+      });
 
-        toastId = result.id;
-      }, 100 * i);
+      toastId = result.id;
     });
-  }, [closedAnnouncements, onRememberClosed, toast]);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return null;
 };
