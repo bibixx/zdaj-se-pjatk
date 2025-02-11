@@ -2,10 +2,9 @@ import { Helmet } from 'react-helmet';
 
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
-import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { TypographyH2 } from 'components/ui/typography';
 
-export const BugsDataChange = withPageWrapper(() => (
+export const BugsDataChange = () => (
   <div>
     <Helmet>
       <title>Błędy / Zmiany w pytaniach | Generatory 3.0</title>
@@ -57,4 +56,4 @@ export const BugsDataChange = withPageWrapper(() => (
       </p>
     </main>
   </div>
-));
+);

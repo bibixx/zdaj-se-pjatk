@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, Location, useLocation, useParams } from 'react-router-dom';
 import { Bug, ClipboardList } from 'lucide-react';
 
 import { Header } from 'components/Header/Header';
@@ -8,10 +8,10 @@ import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Button } from 'components/ui/button';
 import { Skeleton } from 'components/ui/skeleton';
 import { TooltipIfTooWide } from 'components/TooltipIfTooWide/TooltipIfTooWide';
-import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { polishPlural } from 'utils/polishPlural';
+import { assertExistence } from 'utils/assertExistence';
 
 import { QuestionSkeleton } from './Question/QuestionSkeleton';
 import { CreateExamModal } from './CreateExamModal/CreateExamModal';
@@ -19,11 +19,13 @@ import { Question } from './Question/Question';
 
 const formatQuestionsCountText = (count: number) => polishPlural('pytanie', 'pytania', 'pytań', count);
 
-export const SubjectAllQuestions = withPageWrapper(() => {
+export const SubjectAllQuestions = () => {
   const { subjectId } = useParams<{ subjectId: string }>();
+  assertExistence(subjectId, 'subjectId is required');
+
   const subjectData = useSubjectData(subjectId);
   const { setQuestion, questions: learntQuestions } = useLearntQuestions(subjectId);
-  const location = useLocation<{ testSettings: boolean } | undefined>();
+  const location = useLocation() as Location<{ testSettings?: boolean }>;
   const [isExamModalOpen, setIsExamModalOpen] = useState(location.state?.testSettings ?? false);
 
   const onLearntChange = useCallback(
@@ -214,4 +216,4 @@ export const SubjectAllQuestions = withPageWrapper(() => {
       />
     </>
   );
-});
+};

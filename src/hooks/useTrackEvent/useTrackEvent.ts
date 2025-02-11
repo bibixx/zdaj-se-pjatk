@@ -1,15 +1,11 @@
-import { useCallback, useContext } from 'react';
+import { useCallback } from 'react';
 
-import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
+import { matomo } from 'utils/matomo/matomo';
 
 export const useTrackEvent = () => {
-  const piwik = useContext(AnalyticsContext);
-  const trackEvent = useCallback(
-    (category: string, action: string, name?: string, value?: number) => {
-      piwik?.push(['trackEvent', category, action, name, value]);
-    },
-    [piwik],
-  );
+  const trackEvent = useCallback((category: string, action: string, name?: string, value?: number) => {
+    matomo?.push(['trackEvent', category, action, name, value]);
+  }, []);
 
   return trackEvent;
 };

@@ -1,16 +1,8 @@
-import { useCallback, useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
-import { useFetch } from 'hooks/useFetch/useFetch';
-import { useUpdatedAt } from 'hooks/useUpdatedAt/useUpdatedAt';
+import { useFetch, UseFetchOptions } from 'hooks/useFetch/useFetch';
 import { FetchError } from 'utils/fetch';
-import {
-  NullableIdQuestionOverrideSubject,
-  NullableIdQuestionSubject,
-  overrideSubjectSchema,
-  Subject,
-  subjectSchema,
-} from 'validators/subjects';
+import { overrideSubjectSchema, Subject, subjectSchema } from 'validators/subjects';
 
 import { generateMissingQuestionIdsForSubject, getDataWithOverrides } from './useSubjectData.utils';
 
@@ -31,32 +23,17 @@ interface UseSubjectDataDone {
 export type UseSubjectData = UseSubjectDataError | UseSubjectDataLoading | UseSubjectDataDone;
 
 export const useSubjectData = (subjectId: string): UseSubjectData => {
-  const { updatedAt, setUpdatedAt } = useUpdatedAt();
-  const errorHandler = useErrorHandler();
-
-  useEffect(() => {
-    setUpdatedAt(undefined);
-  }, [setUpdatedAt]);
-
-  const onLoad = useCallback(
-    (newUpdatedAt: number) => {
-      setUpdatedAt(Math.max(newUpdatedAt, updatedAt ?? 0));
-    },
-    [setUpdatedAt, updatedAt],
-  );
-
   const fetchOptions = useMemo(
-    () => ({
-      onComplete: (data: NullableIdQuestionSubject | NullableIdQuestionOverrideSubject) => onLoad(data.updatedAt),
+    (): UseFetchOptions<typeof subjectSchema | typeof overrideSubjectSchema> => ({
       onError: (error: Error | null) => {
         if (error instanceof FetchError && error.status === 404) {
           return;
         }
 
-        errorHandler(error);
+        return error;
       },
     }),
-    [errorHandler, onLoad],
+    [],
   );
 
   const {

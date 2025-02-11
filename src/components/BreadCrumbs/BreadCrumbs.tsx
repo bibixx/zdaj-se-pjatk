@@ -1,13 +1,13 @@
 import { ChevronRight } from 'lucide-react';
-import { Fragment } from 'react';
+import { Fragment, MouseEventHandler } from 'react';
 import { Link } from 'react-router-dom';
 
 import { cn } from 'utils';
 import { Button } from 'components/ui/button';
 
 type Crumb =
-  | { content: string; to?: string; id?: string; className?: string }
-  | { content: Exclude<JSX.Element, string>; to?: string; id: string; className?: string };
+  | { content: string; to?: string; id?: string; className?: string; onClick?: MouseEventHandler }
+  | { content: Exclude<JSX.Element, string>; to?: string; id: string; className?: string; onClick?: MouseEventHandler };
 interface BreadCrumbsProps {
   crumbs: Crumb[];
 }
@@ -22,7 +22,11 @@ export const BreadCrumbs = ({ crumbs }: BreadCrumbsProps) => {
           <Fragment key={key}>
             {crumb.to != null ? (
               <Button asChild variant="ghost" className="px-2">
-                <Link to={crumb.to} className={cn('text-muted-foreground hover:text-foreground', crumb.className)}>
+                <Link
+                  to={crumb.to}
+                  onClick={crumb.onClick}
+                  className={cn('text-muted-foreground hover:text-foreground', crumb.className)}
+                >
                   {crumb.content}
                 </Link>
               </Button>
@@ -36,7 +40,7 @@ export const BreadCrumbs = ({ crumbs }: BreadCrumbsProps) => {
         );
       })}
 
-      <h1 className={cn('text-xl font-semibold select-none overflow-hidden', lastCrumb.className)}>
+      <h1 className={cn('text-xl font-semibold select-none overflow-hidden leading-9', lastCrumb.className)}>
         {lastCrumb.content}
       </h1>
     </div>

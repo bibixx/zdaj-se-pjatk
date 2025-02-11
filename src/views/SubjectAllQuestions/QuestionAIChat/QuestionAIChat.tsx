@@ -23,7 +23,7 @@ import { DONATE_PATH, useDonateButton } from 'components/Footer/Footer.hooks';
 import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
 import { Checkbox } from 'components/ui/checkbox';
 import { Label } from 'components/ui/label';
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
+import { useErrorReporter } from 'hooks/useErrorReporter/useErrorReporter';
 import { useLocalStorageState } from 'hooks/useLocalStorageState/useLocalStorageState';
 import { useTrackEvent } from 'hooks/useTrackEvent/useTrackEvent';
 import { Question } from 'validators/subjects';
@@ -218,7 +218,7 @@ const QuestionAIResponse = ({
 
   const abortControllerRef = useRef<AbortController | null>(null);
 
-  const errorHandler = useErrorHandler();
+  const reportError = useErrorReporter();
   const runAICompletion = useCallback(async () => {
     try {
       const abortController = new AbortController();
@@ -284,15 +284,15 @@ const QuestionAIResponse = ({
         setStatus('cancelled');
         return;
       } else if (error instanceof APIError) {
-        errorHandler(error, 'OpenAI: ' + error.message);
+        reportError(error, 'OpenAI: ' + error.message);
       } else {
-        errorHandler(error);
+        reportError(error);
       }
 
       setStatus('idle');
     }
   }, [
-    errorHandler,
+    reportError,
     openAiModel,
     openAiToken,
     question.answers,

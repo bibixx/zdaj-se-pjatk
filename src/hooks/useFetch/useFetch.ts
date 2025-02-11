@@ -1,13 +1,17 @@
 import { useCallback, useEffect, useState } from 'react';
 import { AnySchema, Asserts } from 'yup';
 
+import { useErrorReporter } from 'hooks/useErrorReporter/useErrorReporter';
 import { customFetch, FetchError } from 'utils/fetch';
+import { assertExistence } from 'utils/assertExistence';
+
+type OnErrorReturn = Error | null | void;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-interface Options<T extends AnySchema<Type, TContext, TOut>, Type = any, TContext = any, TOut = any> {
+export interface UseFetchOptions<T extends AnySchema<Type, TContext, TOut>, Type = any, TContext = any, TOut = any> {
   init?: RequestInit;
   onComplete?: (data: Asserts<T>) => void;
-  onError?: (error: Error | null) => void;
+  onError?: (error: Error) => OnErrorReturn | Promise<OnErrorReturn>;
 }
 
 export const useFetch = <
@@ -19,13 +23,30 @@ export const useFetch = <
 >(
   url: string,
   checkData: T,
-  options: Options<T, Type, TContext, TOut> = {},
+  options: UseFetchOptions<T, Type, TContext, TOut> = {},
 ) => {
+  const reportError = useErrorReporter();
   const { init, onComplete, onError } = options;
 
   const [data, setData] = useState<Asserts<T> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+
+  const handleError = useCallback(
+    async (error: Error) => {
+      try {
+        assertExistence(onError);
+        const result = await onError(error);
+
+        if (result != null) {
+          reportError(error);
+        }
+      } catch (newError) {
+        reportError(newError);
+      }
+    },
+    [onError, reportError],
+  );
 
   const fetchData = useCallback(async () => {
     try {
@@ -41,16 +62,17 @@ export const useFetch = <
     } catch (e) {
       setLoading(false);
 
-      if (e instanceof Error) {
-        setError(e);
-        onError?.(e);
+      const errorOrNull = e instanceof Error ? e : null;
+      setError(errorOrNull);
+
+      if (onError != null && errorOrNull != null) {
+        handleError(errorOrNull);
       } else {
-        setError(null);
-        onError?.(null);
+        reportError(errorOrNull);
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [url, init]);
+  }, [url, init, reportError]);
 
   useEffect(() => {
     fetchData();

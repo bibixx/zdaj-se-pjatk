@@ -5,7 +5,6 @@ import { Header } from 'components/Header/Header';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from 'components/ui/table';
 import { Button } from 'components/ui/button';
 import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
-import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useIndexData } from 'hooks/useIndexData/useIndexData';
 
 import { IndexPageSkeletonRows } from './IndexPageSkeleton';
@@ -16,7 +15,7 @@ const helmetHead = (
   </Helmet>
 );
 
-export const IndexPage = withPageWrapper(() => {
+export const IndexPage = () => {
   const state = useIndexData();
 
   const header = (
@@ -89,4 +88,4 @@ export const IndexPage = withPageWrapper(() => {
       </Table>
     </>
   );
-});
+};

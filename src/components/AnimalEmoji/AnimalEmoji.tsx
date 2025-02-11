@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
+import { createContext, ReactNode, useContext, useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { ANIMAL_EMOJIS } from './AnimalEmoji.constants';
@@ -16,7 +16,15 @@ export const AnimalEmojiProvider = ({ children }: AnimalEmojiProviderProps) => {
   const location = useLocation();
   const [emoji, setEmoji] = useState(getRandomEmoji());
 
+  const prevLocationRef = useRef(location);
   useEffect(() => {
+    const prevLocation = prevLocationRef.current;
+    prevLocationRef.current = location;
+
+    if (location === prevLocation) {
+      return;
+    }
+
     setEmoji(getRandomEmoji());
   }, [location]);
 

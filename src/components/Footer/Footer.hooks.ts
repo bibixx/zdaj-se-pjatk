@@ -13,7 +13,7 @@ export function useDonateButton() {
   };
 
   const onClick = () => {
-    if (DONATE_PATH === location.pathname) {
+    if (DONATE_PATH === location?.pathname) {
       jumpContainerRef.current?.classList.add('-translate-y-2');
     }
   };

@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { Bug, Cog } from 'lucide-react';
@@ -6,14 +6,13 @@ import { Bug, Cog } from 'lucide-react';
 import { cn } from 'utils';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Button } from 'components/ui/button';
-import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 import { Header } from 'components/Header/Header';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 import { Skeleton } from 'components/ui/skeleton';
-import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
 import { useLearntQuestions } from 'hooks/useLearntQuestions/useLearntQuestions';
 import { useSubjectData } from 'hooks/useSubjectData/useSubjectData';
 import { useTrackEvent } from 'hooks/useTrackEvent/useTrackEvent';
+import { assertExistence } from 'utils/assertExistence';
 import { Question as QuestionType } from 'validators/subjects';
 import { Question } from 'views/SubjectAllQuestions/Question/Question';
 import { QuestionSkeleton } from 'views/SubjectAllQuestions/Question/QuestionSkeleton';
@@ -30,13 +29,15 @@ import {
   scrollToTop,
 } from './Exam.utils';
 
-export const Exam = withPageWrapper(() => {
-  const piwik = useContext(AnalyticsContext);
+export const Exam = () => {
   const location = useLocation();
   const { questionsCount = 10, successThreshold, filterOutLearnt } = parseSearch(location.search);
 
   const { subjectId } = useParams<{ subjectId: string }>();
+  assertExistence(subjectId, 'subjectId is required');
+
   const subjectData = useSubjectData(subjectId);
+
   const { setQuestion, questions: learntQuestions } = useLearntQuestions(subjectId);
   const onLearntChange = useCallback(
     (questionId: string, checked: boolean) => setQuestion(questionId, checked ? 'add' : 'remove'),
@@ -116,7 +117,7 @@ export const Exam = withPageWrapper(() => {
     if (completed) {
       trackEvent('Exam', 'Submit exam', 'Result', percentage);
     }
-  }, [completed, percentage, piwik, trackEvent]);
+  }, [completed, percentage, trackEvent]);
 
   if (subjectData.state === 'error') {
     if (subjectData.is404) {
@@ -268,8 +269,8 @@ export const Exam = withPageWrapper(() => {
                   <Link
                     to={{
                       pathname: `/${subjectId}`,
-                      state: { testSettings: true },
                     }}
+                    state={{ testSettings: true }}
                   >
                     <Cog className="w-4 h-4" />
                     <span className="sr-only">Zmień parametry testu</span>
@@ -282,4 +283,4 @@ export const Exam = withPageWrapper(() => {
       </div>
     </>
   );
-});
+};

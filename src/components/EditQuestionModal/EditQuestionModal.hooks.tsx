@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useErrorHandler } from 'hooks/useErrorHandler/useErrorHandler';
+import { useErrorReporter } from 'hooks/useErrorReporter/useErrorReporter';
 import { OverrideQuestion, Question } from 'validators/subjects';
 
 import { OutputOverrideSubjectQuestion } from './EditQuestionModal.types';
@@ -15,7 +15,7 @@ interface UseSaveArguments {
   subjectId: string;
 }
 export const useSaveOverride = ({ overrides, questionId }: UseSaveArguments) => {
-  const errorHandler = useErrorHandler();
+  const reportError = useErrorReporter();
   const [overridesSubmitted, setOverridesSubmitted] = useState<'new' | 'edit' | null>(null);
   const [overridesString, setOverridesString] = useState<string>('');
   const onOverridesSave = (formState: FormState, notNullOverrides: OverrideQuestion) => {
@@ -53,7 +53,7 @@ export const useSaveOverride = ({ overrides, questionId }: UseSaveArguments) => 
         onNewSave(formState);
       }
     } catch (error) {
-      errorHandler(error as Error);
+      reportError(error as Error);
     }
   };
 

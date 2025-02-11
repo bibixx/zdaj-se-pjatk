@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from 'components/ui/dialog';
 import { Label } from 'components/ui/label';
@@ -18,7 +18,7 @@ export const CreateExamModal = ({ isOpen, subjectId, onClose }: CreateExamModalP
   const [numberOfQuestions, setNumberOfQuestions] = useState('10');
   const [percentage, setPercentage] = useState('');
   const [filterLearnt, setFilterLearnt] = useState(true);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (isOpen) {
@@ -47,11 +47,11 @@ export const CreateExamModal = ({ isOpen, subjectId, onClose }: CreateExamModalP
 
     query.set(examSearchParamsKeys.filterOutLearnt, String(filterLearnt));
 
-    history.push(`/${subjectId}/exam?${query.toString()}`);
+    navigate(`/${subjectId}/exam?${query.toString()}`);
   };
 
   const onCancel = () => {
-    history.replace(`/${subjectId}`);
+    navigate(`/${subjectId}`, { replace: true });
     onClose();
   };
 

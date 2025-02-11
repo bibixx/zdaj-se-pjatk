@@ -1,28 +1,18 @@
 import { useEffect, useState } from 'react';
-import PiwikReactRouter from 'piwik-react-router';
 import Cookies from 'cookies-js';
 
 import { getBooleanCookie } from 'utils/cookies';
+import { matomo } from 'utils/matomo/matomo';
 
 const CONSENT_KEY = 'consent';
-
-export const piwik = PiwikReactRouter({
-  url: 'analytics.legiec.info',
-  siteId: 3,
-  updateDocumentTitle: false,
-  trackErrors: true,
-  injectScript: true,
-});
-piwik.push(['requireConsent']);
-piwik.push(['requireCookieConsent']);
 
 export const useAnalytics = () => {
   const [areCookiesAccepted, setAreCookiesAccepted] = useState(getBooleanCookie(CONSENT_KEY));
 
   useEffect(() => {
     if (areCookiesAccepted) {
-      piwik.push(['setConsentGiven']);
-      piwik.push(['setCookieConsentGiven']);
+      matomo.push(['setConsentGiven']);
+      matomo.push(['setCookieConsentGiven']);
     }
   }, [areCookiesAccepted]);
 

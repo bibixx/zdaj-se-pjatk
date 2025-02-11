@@ -1,13 +1,12 @@
-import { useCallback, useContext } from 'react';
+import { useCallback } from 'react';
+import * as Sentry from '@sentry/react';
 
-import { AnalyticsContext } from 'components/AnalyticsContext/AnalyticsContext';
 import { useToast } from 'components/ui/use-toast';
 
-export const useErrorHandler = () => {
-  const piwik = useContext(AnalyticsContext);
+export const useErrorReporter = () => {
   const { toast } = useToast();
 
-  const errorHandler = useCallback(
+  const reportError = useCallback(
     (error: unknown, description = 'Wystąpił błąd. Spróbuj ponownie później.') => {
       toast({
         variant: 'destructive',
@@ -15,15 +14,13 @@ export const useErrorHandler = () => {
         description,
       });
 
-      if (error === null || error instanceof Error) {
-        piwik?.trackError(error);
-      }
+      Sentry.captureException(error);
 
       // eslint-disable-next-line no-console
       console.error(error);
     },
-    [piwik, toast],
+    [toast],
   );
 
-  return errorHandler;
+  return reportError;
 };
