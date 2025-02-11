@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
 import { TypographyH2, TypographyH3 } from 'components/ui/typography';
-import './CookiePolicy.css';
 import { withPageWrapper } from 'components/PageWrapper/PageWrapper';
+
+import styles from './CookiePolicy.module.css';
 
 export const CookiePolicy = withPageWrapper(() => (
   <div>
@@ -27,7 +28,7 @@ export const CookiePolicy = withPageWrapper(() => (
         />
       </Header>
     </div>
-    <main className="cookie-policy px-4 md:px-2">
+    <main className={styles.mainWrapper}>
       <p className="!mt-0">
         Poniższa Polityka Cookies określa zasady zapisywania i uzyskiwania dostępu do danych na Urządzeniach
         Użytkowników korzystających z Serwisu do celów świadczenia usług drogą elektroniczną przez Administratora
