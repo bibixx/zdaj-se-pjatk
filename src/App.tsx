@@ -10,6 +10,7 @@ import { TooltipProvider } from 'components/ui/tooltip';
 import { Toaster } from 'components/ui/toaster';
 import { ScrollToTop } from 'components/ScrollToTop/ScrollToTop';
 import { PageWrapper } from 'components/PageWrapper/PageWrapper';
+import { Announcements } from 'components/Announcements/Announcements';
 import { useAnalytics } from 'hooks/useAnalytics/useAnalytics';
 import { Debug } from 'utils/sentry/Debug';
 import { Routes } from 'utils/sentry/Route';
@@ -50,6 +51,7 @@ export const App = () => {
                   </Routes>
                 </AnimalEmojiProvider>
                 <Toaster />
+                <Announcements />
                 <CookieNotice onBannerClose={onBannerClose} areCookiesAccepted={areCookiesAccepted} />
               </ScrollToTop>
             </PathLoggerProvider>

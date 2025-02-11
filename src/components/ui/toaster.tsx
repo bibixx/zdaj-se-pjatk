@@ -4,6 +4,7 @@ import { useToast } from 'components/ui/use-toast';
 
 export function Toaster() {
   const { toasts } = useToast();
+  console.log(toasts);
 
   return (
     <ToastProvider>
@@ -13,7 +14,7 @@ export function Toaster() {
             key={id}
             id={htmlId}
             className={cn(
-              'data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-bottom-full data-[state=open]:sm:slide-in-from-top-full',
+              'data-[state=closed]:slide-out-to-right-full data-[state=open]:slide-in-from-bottom-full data-[state=open]:sm:slide-in-from-top-full mb-4',
               className,
             )}
             {...props}
@@ -21,8 +22,8 @@ export function Toaster() {
             <div className="grid gap-1">
               {title && <ToastTitle>{title}</ToastTitle>}
               {description && <ToastDescription>{description}</ToastDescription>}
+              {action && <div>{action}</div>}
             </div>
-            {action}
             {!hideClose && <ToastClose />}
           </Toast>
         );
