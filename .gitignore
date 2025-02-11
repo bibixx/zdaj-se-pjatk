@@ -29,3 +29,6 @@ yarn-error.log*
 
 # Deployment
 .vercel
+
+# Sentry Config File
+.env.sentry-build-plugin

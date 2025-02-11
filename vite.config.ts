@@ -1,3 +1,4 @@
+import { sentryVitePlugin } from '@sentry/vite-plugin';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
@@ -15,12 +16,21 @@ const alias = fs
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    sentryVitePlugin({
+      org: 'bibixx',
+      project: 'zdaj-se',
+    }),
+  ],
   base: '/',
   resolve: {
-    alias
+    alias,
   },
   define: {
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-  }
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+  },
+  build: {
+    sourcemap: true,
+  },
 });
