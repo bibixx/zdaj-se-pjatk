@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@instructor-ai/instructor": "^1.0.0",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -22,7 +21,7 @@
     "lucide-react": "^0.264.0",
     "mathjax": "^3.2.2",
     "md5": "^2.3.0",
-    "openai": "^4.58.1",
+    "openai": "^4.84.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -33,7 +32,8 @@
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "yup": "^1.2.0",
-    "zod": "^3.22.4"
+    "zod": "^3.24.2",
+    "zod-stream": "^3.0.0"
   },
   "scripts": {
     "start": "vite --port 3000",
