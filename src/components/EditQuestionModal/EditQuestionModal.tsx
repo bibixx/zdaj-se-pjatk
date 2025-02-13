@@ -8,6 +8,7 @@ import { Button } from 'components/ui/button';
 import { useToast } from 'components/ui/use-toast';
 import { Tooltip, TooltipContent, TooltipTrigger } from 'components/ui/tooltip';
 import { useFetch } from 'hooks/useFetch/useFetch';
+import { FetchError } from 'utils/fetch';
 import { Question, overrideSubjectSchema } from 'validators/subjects';
 
 import { useForm, useSaveOverride } from './EditQuestionModal.hooks';
@@ -53,6 +54,15 @@ function ModalContents({ question, subjectId, closeModal }: ModalContentsProps) 
   const { data: subjectOverrides, loading: overridesLoading } = useFetch(
     `overrides/${subjectId}.json`,
     overrideSubjectSchema,
+    {
+      onError: (error) => {
+        if (error instanceof FetchError && error.status === 404) {
+          return;
+        }
+
+        return error;
+      },
+    },
   );
   const overrides = subjectOverrides?.data.find((q) => q.id === question.id);
 
