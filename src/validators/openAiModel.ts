@@ -8,9 +8,11 @@ const OLD_ALLOWED_MODELS = ['gpt-4-turbo-preview', 'gpt-3.5-turbo'] as const;
 type OldAllowedModel = (typeof OLD_ALLOWED_MODELS)[number];
 
 // The models that are currently allowed
-export const ALLOWED_MODELS = ['gpt-4o', 'gpt-4o-mini'] satisfies readonly ChatModel[];
+export const ALLOWED_MODELS = ['gpt-4o', 'gpt-4o-mini', 'o3-mini', 'o1'] satisfies readonly ChatModel[];
 export type AllowedModel = (typeof ALLOWED_MODELS)[number];
 const DEFAULT_MODEL: AllowedModel = 'gpt-4o';
+
+export const REASONING_MODELS = ['o3-mini', 'o1'] satisfies readonly AllowedModel[];
 
 // A mapping of old model names to the new model names
 const MODEL_MAPPING = {
@@ -36,3 +38,10 @@ function buildLiteralUnionFromArray<Literals extends readonly z.Primitive[]>(lit
 
   return z.union(literalsArray);
 }
+
+export const MODEL_NAMES: Record<AllowedModel, string> = {
+  'gpt-4o': 'GPT-4o',
+  'gpt-4o-mini': 'GPT-4o mini',
+  o1: 'o1',
+  'o3-mini': 'o3-mini',
+};

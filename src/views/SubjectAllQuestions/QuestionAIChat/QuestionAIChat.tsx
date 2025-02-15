@@ -1,10 +1,11 @@
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { BadgeDollarSign, BadgeHelpIcon, CogIcon, Loader2, RotateCcw, Sparkles, Trash, X } from 'lucide-react';
+import { BadgeHelpIcon, CogIcon, Loader2, RotateCcw, Sparkles, Trash, X, Info } from 'lucide-react';
 import * as OpenAIError from 'openai/error';
 import { zodResponseFormat } from 'openai/helpers/zod';
 import { Link } from 'react-router-dom';
 import ZodStream, { OAIStream } from 'zod-stream';
 import { OpenAI } from 'openai';
+import { ChatCompletionStreamParams } from 'openai/lib/ChatCompletionStream';
 
 import { cn } from 'utils';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from 'components/ui/dialog';
@@ -21,6 +22,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuPortal,
 } from 'components/ui/dropdown-menu';
 import { DONATE_PATH, useDonateButton } from 'components/Footer/Footer.hooks';
 import { AnimalEmoji } from 'components/AnimalEmoji/AnimalEmoji';
@@ -30,10 +32,11 @@ import { useToast } from 'components/ui/use-toast';
 import { useErrorReporter } from 'hooks/useErrorReporter/useErrorReporter';
 import { useLocalStorageState } from 'hooks/useLocalStorageState/useLocalStorageState';
 import { useTrackEvent } from 'hooks/useTrackEvent/useTrackEvent';
+import { includesArray } from 'utils/includesArray';
 import { assertNever } from 'utils/assertNever';
 import { Question } from 'validators/subjects';
 import { AiTeacherResponseSchema, CorrectAnswersIndexSchema, ExplanationSchema } from 'validators/ai';
-import { ALLOWED_MODELS, AllowedModel, OpenAiModel } from 'validators/openAiModel';
+import { ALLOWED_MODELS, AllowedModel, MODEL_NAMES, OpenAiModel, REASONING_MODELS } from 'validators/openAiModel';
 import { OpenAiToken } from 'validators/openAiToken';
 
 import { Answer } from '../Answer/Answer';
@@ -253,6 +256,13 @@ const QuestionAIResponse = ({
 
       const stream = await new ZodStream().create({
         completionPromise: async () => {
+          const additionalParams: Partial<ChatCompletionStreamParams> = {};
+          if (includesArray(REASONING_MODELS, openAiModel)) {
+            additionalParams.reasoning_effort = 'high';
+          } else {
+            additionalParams.temperature = 0.25;
+          }
+
           return OAIStream({
             res: client.beta.chat.completions.stream(
               {
@@ -261,9 +271,9 @@ const QuestionAIResponse = ({
                   { role: 'system', content: PROMPT },
                   { role: 'user', content: promptQuestion },
                 ],
-                temperature: 0.25,
                 n: 1,
                 response_format: zodResponseFormat(AiTeacherResponseSchema, 'AiTeacherResponseSchema'),
+                ...additionalParams,
               },
               {
                 signal: abortController.signal,
@@ -411,21 +421,28 @@ const QuestionAIResponse = ({
           </DropdownMenuTrigger>
         </TooltipTrigger>
       </Tooltip>
-      <DropdownMenuContent className="w-56" align="end" side="bottom">
-        <DropdownMenuLabel>Model AI</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        {ALLOWED_MODELS.map((model) => (
-          <ModelElement key={model} openAiModel={model} selectedModel={openAiModel} onCheckedChange={onCheckedChange} />
-        ))}
-        <DropdownMenuSeparator />
-        <DropdownMenuItem
-          onClick={clearOpenAiToken}
-          className="bg-red-50 text-red-800 dark:bg-red-950 dark:text-red-200 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
-        >
-          <Trash className="mr-2 h-4 w-4" />
-          Zmień klucz API OpenAI
-        </DropdownMenuItem>
-      </DropdownMenuContent>
+      <DropdownMenuPortal>
+        <DropdownMenuContent className="w-56" align="end" side="bottom">
+          <DropdownMenuLabel>Model AI</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          {ALLOWED_MODELS.map((model) => (
+            <ModelElement
+              key={model}
+              openAiModel={model}
+              selectedModel={openAiModel}
+              onCheckedChange={onCheckedChange}
+            />
+          ))}
+          <DropdownMenuSeparator />
+          <DropdownMenuItem
+            onClick={clearOpenAiToken}
+            className="bg-red-50 text-red-800 dark:bg-red-950 dark:text-red-200 focus:bg-red-100 focus:text-red-900 data-[disabled]:opacity-50 dark:focus:bg-red-800 dark:focus:text-red-50"
+          >
+            <Trash className="mr-2 h-4 w-4" />
+            Zmień klucz API OpenAI
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenuPortal>
     </DropdownMenu>
   );
 
@@ -503,57 +520,82 @@ interface ModelElementProps {
   onCheckedChange: (model: AllowedModel) => (isChecked: boolean) => void;
 }
 function ModelElement({ openAiModel, selectedModel, onCheckedChange }: ModelElementProps) {
-  if (openAiModel === 'gpt-4o') {
+  if (openAiModel === 'o1' || openAiModel === 'o3-mini') {
     return (
-      <DropdownMenuCheckboxItem checked={selectedModel === openAiModel} onCheckedChange={onCheckedChange(openAiModel)}>
-        GPT-4o
-        <Tooltip disableHoverableContent>
-          <TooltipPortal>
-            <TooltipContent className="max-w-xs text-center">
-              Bardziej dokładny, lecz droższy. Dostępny w OpenAI API tylko dla płacących klientów. Kliknij by zobaczyć
-              ceny.
-            </TooltipContent>
-          </TooltipPortal>
-          <TooltipTrigger asChild>
-            <a
-              href="https://platform.openai.com/docs/pricing"
-              target="_blank"
-              rel="noreferrer"
-              className="ml-2 inline-flex"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <BadgeDollarSign className="w-4 h-4" />
-              <BadgeDollarSign className="w-4 h-4 -ml-2 first:[&_path]:fill-white dark:first:[&_path]:fill-gray-950" />
-            </a>
-          </TooltipTrigger>
-        </Tooltip>
-      </DropdownMenuCheckboxItem>
+      <>
+        {openAiModel === 'o3-mini' && <DropdownMenuSeparator />}
+        <ModelCheckboxItem
+          checked={selectedModel === openAiModel}
+          onCheckedChange={onCheckedChange(openAiModel)}
+          tooltipContent={
+            <>
+              Reasoning model (wolny).
+              <br />
+              <span className="font-mono">reasoning_effort = &apos;high&apos;</span>
+              <br />
+              Dostępny od{' '}
+              <a
+                href="https://platform.openai.com/docs/guides/rate-limits#usage-tiers"
+                className="underline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                „Tier 2” (min $100)
+              </a>
+            </>
+          }
+        >
+          {MODEL_NAMES[openAiModel]}
+        </ModelCheckboxItem>
+      </>
     );
   }
 
   if (openAiModel === 'gpt-4o-mini') {
     return (
-      <DropdownMenuCheckboxItem checked={selectedModel === openAiModel} onCheckedChange={onCheckedChange(openAiModel)}>
-        GPT-4o mini
-        <Tooltip disableHoverableContent>
-          <TooltipPortal>
-            <TooltipContent className="max-w-xs text-center">
-              Mniej dokładny, ale tańszy. Kliknij by zobaczyć ceny.
-            </TooltipContent>
-          </TooltipPortal>
-          <TooltipTrigger asChild>
+      <ModelCheckboxItem
+        checked={selectedModel === openAiModel}
+        onCheckedChange={onCheckedChange(openAiModel)}
+        tooltipContent={
+          <>
+            Dostępny w{' '}
             <a
-              href="https://openai.com/api/pricing/"
+              href="https://platform.openai.com/docs/guides/rate-limits#usage-tiers"
+              className="underline"
               target="_blank"
               rel="noreferrer"
-              className="ml-2"
-              onClick={(e) => e.stopPropagation()}
             >
-              <BadgeDollarSign className="w-4 h-4" />
+              „Free Tier”
             </a>
-          </TooltipTrigger>
-        </Tooltip>
-      </DropdownMenuCheckboxItem>
+          </>
+        }
+      >
+        {MODEL_NAMES[openAiModel]}
+      </ModelCheckboxItem>
+    );
+  }
+
+  if (openAiModel === 'gpt-4o') {
+    return (
+      <ModelCheckboxItem
+        checked={selectedModel === openAiModel}
+        onCheckedChange={onCheckedChange(openAiModel)}
+        tooltipContent={
+          <>
+            Dostępny od{' '}
+            <a
+              href="https://platform.openai.com/docs/guides/rate-limits#usage-tiers"
+              className="underline"
+              target="_blank"
+              rel="noreferrer"
+            >
+              „Tier 1” (min $5)
+            </a>
+          </>
+        }
+      >
+        {MODEL_NAMES[openAiModel]}
+      </ModelCheckboxItem>
     );
   }
 
@@ -659,3 +701,49 @@ const useOpenAiToken = () => {
 
   return [openAiToken, setOpenAiToken, clearOpenAiToken] as const;
 };
+
+type ModelCheckboxItemPropsNoTooltip = {
+  tooltipContent?: never;
+  disableHoverableContent?: never;
+};
+type ModelCheckboxItemPropsWithTooltip = {
+  tooltipContent: React.ReactNode;
+  disableHoverableContent?: boolean;
+};
+type ModelCheckboxItemPropsTooltip = ModelCheckboxItemPropsNoTooltip | ModelCheckboxItemPropsWithTooltip;
+type ModelCheckboxItemProps = {
+  checked: boolean;
+  onCheckedChange: (isChecked: boolean) => void;
+  children: React.ReactNode;
+} & ModelCheckboxItemPropsTooltip;
+
+function ModelCheckboxItem(props: ModelCheckboxItemProps) {
+  return (
+    <DropdownMenuCheckboxItem checked={props.checked} onCheckedChange={props.onCheckedChange}>
+      {props.children}
+      {props.tooltipContent && (
+        <Tooltip disableHoverableContent={props.disableHoverableContent}>
+          <TooltipPortal>
+            <TooltipContent
+              className={cn('max-w-xs text-left', { ['pointer-events-auto']: !props.disableHoverableContent })}
+              onClick={(e) => e.stopPropagation()}
+            >
+              {props.tooltipContent}
+            </TooltipContent>
+          </TooltipPortal>
+          <TooltipTrigger asChild>
+            <a
+              href="https://platform.openai.com/docs/pricing"
+              target="_blank"
+              rel="noreferrer"
+              className="ml-2 inline-flex"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Info className="w-4 h-4" />
+            </a>
+          </TooltipTrigger>
+        </Tooltip>
+      )}
+    </DropdownMenuCheckboxItem>
+  );
+}
