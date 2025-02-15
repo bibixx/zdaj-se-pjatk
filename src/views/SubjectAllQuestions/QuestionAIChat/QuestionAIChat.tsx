@@ -1,6 +1,6 @@
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { BadgeDollarSign, BadgeHelpIcon, CogIcon, Loader2, RotateCcw, Sparkles, Trash, X } from 'lucide-react';
-import { APIError, APIUserAbortError } from 'openai/error';
+import * as OpenAIError from 'openai/error';
 import { zodResponseFormat } from 'openai/helpers/zod';
 import { Link } from 'react-router-dom';
 import ZodStream, { OAIStream } from 'zod-stream';
@@ -300,43 +300,59 @@ const QuestionAIResponse = ({
         setStatus('done');
       }
     } catch (error) {
-      if (error instanceof APIUserAbortError) {
+      if (error instanceof OpenAIError.APIUserAbortError) {
         setStatus('cancelled');
         return;
-      } else if (error instanceof APIError) {
-        if (error.code === 'model_not_found') {
-          // console.log(error);
-
-          const description = (
-            <>
-              Model „{openAiModel}” nie istnieje lub nie masz do niego dostępu.
-              <br />
-              Sprawdź dostępność modeli na{' '}
-              <a
-                href="https://platform.openai.com/docs/guides/rate-limits?context=tier-free&tier=free#usage-tiers"
-                target="_blank"
-                rel="noreferrer"
-                className="underline"
-              >
-                stronie OpenAI w zakładce „Rate&nbsp;limits”
-              </a>
-              .
-            </>
-          );
-
-          toast({
-            variant: 'destructive',
-            title: 'Ups, coś poszło nie tak',
-            description,
-          });
-        } else {
-          reportError(error, 'OpenAI: ' + error.message);
-        }
-      } else {
-        reportError(error);
       }
 
       setStatus('idle');
+      if (!(error instanceof OpenAIError.APIError)) {
+        reportError(error);
+        return;
+      }
+
+      if (error.code === 'model_not_found') {
+        const description = (
+          <>
+            Model „{openAiModel}” nie istnieje lub nie masz do niego dostępu.
+            <br />
+            Sprawdź dostępność modeli na{' '}
+            <a
+              href="https://platform.openai.com/docs/guides/rate-limits?context=tier-free&tier=free#usage-tiers"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              stronie OpenAI w zakładce „Rate&nbsp;limits”
+            </a>
+            .
+          </>
+        );
+
+        toast({
+          variant: 'destructive',
+          title: 'Ups, coś poszło nie tak',
+          description,
+        });
+        return;
+      }
+
+      if (
+        error instanceof OpenAIError.AuthenticationError ||
+        error instanceof OpenAIError.PermissionDeniedError ||
+        error instanceof OpenAIError.RateLimitError
+      ) {
+        const description = 'OpenAI: ' + error.message;
+        toast({
+          variant: 'destructive',
+          title: 'Ups, coś poszło nie tak',
+          description,
+        });
+
+        return;
+      }
+
+      reportError(error, 'OpenAI: ' + error.message);
     }
   }, [
     openAiToken,
