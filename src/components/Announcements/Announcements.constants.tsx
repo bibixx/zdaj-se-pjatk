@@ -4,9 +4,22 @@ export const CLOSED_ANNOUNCEMENTS_KEY = 'closed-announcements';
 
 export const ANNOUNCEMENTS: Toast[] = [
   {
-    htmlId: 'mykhi-closing',
-    title: 'Mykhi zostanie zamknięte 20 lutego',
-    description: 'Aktywnie współpracujemy z mykhi aby przenieść wszystkie informacje na zdaj.se.',
+    htmlId: 'mykhi-closing-resolved',
+    title: 'Zamknięcie mykhi 20 lutego',
+    description: (
+      <span>
+        Wszystkie pliki dostępne są na{' '}
+        <a
+          href="https://github.com/bibixx/zdaj-se-pjatk-data/files"
+          target="_blank"
+          className="underline"
+          rel="noreferrer"
+        >
+          github.com/bibixx/zdaj-se-pjatk-data/files
+        </a>
+        . W ciągu najbliższych dni powinny się one też pojawić bezpośrednio na stronie zdaj.se.
+      </span>
+    ),
     variant: 'blue',
   },
 ];
