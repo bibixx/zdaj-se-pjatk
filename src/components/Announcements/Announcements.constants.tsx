@@ -9,13 +9,8 @@ export const ANNOUNCEMENTS: Toast[] = [
     description: (
       <span>
         Wszystkie pliki dostępne są na{' '}
-        <a
-          href="https://github.com/bibixx/zdaj-se-pjatk-data/files"
-          target="_blank"
-          className="underline"
-          rel="noreferrer"
-        >
-          github.com/bibixx/zdaj-se-pjatk-data/files
+        <a href="https://github.com/bibixx/zdaj-se-pjatk-files" target="_blank" className="underline" rel="noreferrer">
+          github.com/bibixx/zdaj-se-pjatk-files
         </a>
         . W ciągu najbliższych dni powinny się one też pojawić bezpośrednio na stronie zdaj.se.
       </span>

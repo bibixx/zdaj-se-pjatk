@@ -45,7 +45,7 @@ export const IndexPage = () => {
           <TableHeader>
             <TableRow hasHover={false}>
               <TableHead className="max-md:pl-4">Przedmiot</TableHead>
-              <TableHead className="text-right max-md:hidden w-24">Ilość pytań</TableHead>
+              <TableHead className="text-right max-md:hidden w-24">Liczba pytań</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -64,7 +64,7 @@ export const IndexPage = () => {
         <TableHeader>
           <TableRow hasHover={false}>
             <TableHead className="max-md:pl-4">Przedmiot</TableHead>
-            <TableHead className="text-right max-md:hidden w-24">Ilość pytań</TableHead>
+            <TableHead className="text-right max-md:hidden w-24">Liczba pytań</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

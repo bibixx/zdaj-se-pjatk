@@ -75,7 +75,7 @@ export const CreateExamModal = ({ isOpen, subjectId, onClose }: CreateExamModalP
                 className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 block"
                 htmlFor="number-of-questions"
               >
-                Ilość pytań
+                Liczba pytań
               </label>
               <Input
                 id="number-of-questions"
