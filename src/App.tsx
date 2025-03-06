@@ -22,6 +22,7 @@ import { DonatePage } from 'views/DonatePage/DonatePage';
 import { CookiePolicy } from 'views/CookiePolicy/CookiePolicy';
 import { IndexPage } from 'views/IndexPage/IndexPage';
 import { ErrorBoundary } from 'views/ErrorBoundary/ErrorBoundary';
+import { FilesPage } from 'views/SubjectAllQuestions/Files/FilesPage';
 
 export const App = () => {
   const { areCookiesAccepted, onBannerClose } = useAnalytics();
@@ -43,6 +44,7 @@ export const App = () => {
                         <Route index element={<IndexPage />} />
                         <Route path="/polityka-cookies" element={<CookiePolicy />} />
                         <Route path="/bledy-zmiany-w-danych" element={<BugsDataChange />} />
+                        <Route path="/files/*" element={<FilesPage />} />
                         <Route path="/:subjectId/exam" element={<Exam />} />
                         <Route path="/:subjectId" element={<SubjectAllQuestions />} />
                         <Route path="/debug" element={<Debug />} />

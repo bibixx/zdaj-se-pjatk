@@ -36,25 +36,25 @@ export const IndexPage = () => {
     </div>
   );
 
-  if (state.state === 'loading') {
-    return (
-      <>
-        {helmetHead}
-        {header}
-        <Table>
-          <TableHeader>
-            <TableRow hasHover={false}>
-              <TableHead className="max-md:pl-4">Przedmiot</TableHead>
-              <TableHead className="text-right max-md:hidden w-24">Liczba pytań</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <IndexPageSkeletonRows />
-          </TableBody>
-        </Table>
-      </>
-    );
-  }
+  // if (state.state === 'loading') {
+  //   return (
+  //     <>
+  //       {helmetHead}
+  //       {header}
+  //       <Table>
+  //         <TableHeader>
+  //           <TableRow hasHover={false}>
+  //             <TableHead className="max-md:pl-4">Przedmiot</TableHead>
+  //             <TableHead className="text-right max-md:hidden w-28">Liczba pytań</TableHead>
+  //           </TableRow>
+  //         </TableHeader>
+  //         <TableBody>
+  //           <IndexPageSkeletonRows />
+  //         </TableBody>
+  //       </Table>
+  //     </>
+  //   );
+  // }
 
   return (
     <>
@@ -64,26 +64,38 @@ export const IndexPage = () => {
         <TableHeader>
           <TableRow hasHover={false}>
             <TableHead className="max-md:pl-4">Przedmiot</TableHead>
-            <TableHead className="text-right max-md:hidden w-24">Liczba pytań</TableHead>
+            <TableHead className="text-right max-md:hidden w-28">Liczba pytań</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {state.data.pages.map(({ title, id, questionsCount }) => {
-            const url = `/${id}`;
+          <TableRow key="files">
+            <TableCell to="/files" className="max-md:px-2">
+              <strong className="font-bold">FILES</strong>
+              <span className="text-muted-foreground"> &bull; </span>
+              <span className="text-muted-foreground">Mirror plików z pja.mykhi.org</span>
+            </TableCell>
+            <TableCell to="/files" className="text-right text-xs text-muted-foreground max-md:hidden">
+              11650
+            </TableCell>
+          </TableRow>
+          {state.state === 'loading' && <IndexPageSkeletonRows />}
+          {state.state === 'done' &&
+            state.data.pages.map(({ title, id, questionsCount }) => {
+              const url = `/${id}`;
 
-            return (
-              <TableRow key={id}>
-                <TableCell to={url} className="max-md:px-2">
-                  <strong className="font-bold">{id.toUpperCase()}</strong>
-                  <span className="text-muted-foreground"> &bull; </span>
-                  <span className="text-muted-foreground">{title}</span>
-                </TableCell>
-                <TableCell to={url} className="text-right text-xs text-muted-foreground max-md:hidden">
-                  {questionsCount}
-                </TableCell>
-              </TableRow>
-            );
-          })}
+              return (
+                <TableRow key={id}>
+                  <TableCell to={url} className="max-md:px-2">
+                    <strong className="font-bold">{id.toUpperCase()}</strong>
+                    <span className="text-muted-foreground"> &bull; </span>
+                    <span className="text-muted-foreground">{title}</span>
+                  </TableCell>
+                  <TableCell to={url} className="text-right text-xs text-muted-foreground max-md:hidden">
+                    {questionsCount}
+                  </TableCell>
+                </TableRow>
+              );
+            })}
         </TableBody>
       </Table>
     </>

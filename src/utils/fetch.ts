@@ -1,4 +1,5 @@
 import { AnySchema, Asserts } from 'yup';
+import { ZodTypeAny, TypeOf } from 'zod';
 
 import { ROOT_URL } from '../constants/env';
 
@@ -49,6 +50,9 @@ export class FetchError extends Error {
   }
 }
 
+export type CustomRequestInit = RequestInit & {
+  rootUrl?: string;
+};
 export const customFetch = async <
   T extends AnySchema<Type, TContext, TOut>,
   /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -59,14 +63,32 @@ export const customFetch = async <
 >(
   url: string,
   checkData: T,
-  init?: RequestInit,
+  init?: CustomRequestInit,
 ): Promise<Asserts<T>> => {
-  const response = await fetch(joinPath(ROOT_URL, url), init);
+  const rootUrl = init?.rootUrl || ROOT_URL;
+  const response = await fetch(joinPath(rootUrl, url), init);
 
   if (response.ok) {
     const data = await response.json();
 
     return checkData.validate(data);
+  }
+
+  throw await FetchError.build(response, init);
+};
+
+export const customFetchZod = async <T extends ZodTypeAny>(
+  url: string,
+  checkData: T,
+  init?: CustomRequestInit,
+): Promise<TypeOf<T>> => {
+  const rootUrl = init?.rootUrl || ROOT_URL;
+  const response = await fetch(joinPath(rootUrl, url), init);
+
+  if (response.ok) {
+    const data = await response.json();
+
+    return checkData.parseAsync(data);
   }
 
   throw await FetchError.build(response, init);

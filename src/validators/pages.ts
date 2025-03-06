@@ -1,15 +1,15 @@
-import * as yup from 'yup';
+import { z } from 'zod';
 
-export const pageSchema = yup.object({}).shape({
-  title: yup.string().ensure(),
-  id: yup.string().ensure(),
-  questionsCount: yup.number().optional().default(0),
+export const pageSchema = z.object({
+  title: z.string(),
+  id: z.string(),
+  questionsCount: z.number().optional().default(0),
 });
 
-export const pagesSchema = yup.object({}).shape({
-  pages: yup.array().of(pageSchema).ensure().required(),
-  updatedAt: yup.number().required(),
+export const pagesSchema = z.object({
+  pages: z.array(pageSchema),
+  updatedAt: z.number(),
 });
 
-export type Page = yup.Asserts<typeof pageSchema>;
-export type Pages = yup.Asserts<typeof pagesSchema>;
+export type Page = z.infer<typeof pageSchema>;
+export type Pages = z.infer<typeof pagesSchema>;

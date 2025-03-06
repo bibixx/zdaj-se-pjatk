@@ -1,34 +1,24 @@
 import { useCallback, useEffect, useState } from 'react';
-import { AnySchema, Asserts } from 'yup';
+import { z } from 'zod';
 
 import { useErrorReporter } from 'hooks/useErrorReporter/useErrorReporter';
-import { customFetch, CustomRequestInit, FetchError } from 'utils/fetch';
+import { customFetchZod, CustomRequestInit, FetchError } from 'utils/fetch';
 import { assertExistence } from 'utils/assertExistence';
 
 type OnErrorReturn = Error | null | void;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-export interface UseFetchOptions<T extends AnySchema<Type, TContext, TOut>, Type = any, TContext = any, TOut = any> {
+export interface UseFetchOptionsZod<T extends z.ZodTypeAny> {
   init?: CustomRequestInit;
-  onComplete?: (data: Asserts<T>) => void;
+  onComplete?: (data: z.infer<T>) => void;
   onError?: (error: Error) => OnErrorReturn | Promise<OnErrorReturn>;
 }
 
-export const useFetch = <
-  T extends AnySchema,
-  Type = any,
-  TContext = any,
-  TOut = any,
-  /* eslint-enable @typescript-eslint/no-explicit-any */
->(
-  url: string,
-  checkData: T,
-  options: UseFetchOptions<T, Type, TContext, TOut> = {},
-) => {
+export const useFetchZod = <T extends z.ZodTypeAny>(url: string, checkData: T, options: UseFetchOptionsZod<T> = {}) => {
   const reportError = useErrorReporter();
   const { init, onComplete, onError } = options;
 
-  const [data, setData] = useState<Asserts<T> | null>(null);
+  const [data, setData] = useState<z.infer<T> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
@@ -50,7 +40,7 @@ export const useFetch = <
 
   const fetchData = useCallback(async () => {
     try {
-      const fetchedData = await customFetch(url, checkData, init);
+      const fetchedData = await customFetchZod(url, checkData, init);
 
       if (!fetchData) {
         return;

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { useFetch } from 'hooks/useFetch/useFetch';
+import { useFetchZod } from 'hooks/useFetch/useFetchZod';
 import { FetchError } from 'utils/fetch';
 import { Pages, pagesSchema } from 'validators/pages';
 
@@ -18,9 +18,9 @@ interface UseSubjectDataDone {
 type UseSubjectData = UseSubjectDataLoading | UseSubjectDataDone;
 
 export const useIndexData = (): UseSubjectData => {
-  const { data: pages, loading: pagesLoading } = useFetch('index.json', pagesSchema);
+  const { data: pages, loading: pagesLoading } = useFetchZod('index.json', pagesSchema);
 
-  const { data: overrides, loading: overridesLoading } = useFetch(`overrides/index.json`, pagesSchema, {
+  const { data: overrides, loading: overridesLoading } = useFetchZod(`overrides/index.json`, pagesSchema, {
     onError: (error) => {
       if (error instanceof FetchError && error.status === 404) {
         return;
