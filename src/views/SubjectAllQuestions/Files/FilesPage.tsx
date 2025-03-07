@@ -1,5 +1,5 @@
 import { Folder, File, Download, FolderUp } from 'lucide-react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import { FILES_PATH } from 'constants/env';
@@ -47,22 +47,22 @@ const FileRow = ({ name, path }: FileRowProps) => {
 
 const FolderUpRow = ({ to }: { to: string }) => (
   <TableRow className="cursor-pointer hover:bg-muted/50">
-    <TableCell>
-      <Link to={to} className="flex items-center gap-2 w-full">
+    <TableCell to={to}>
+      <div className="flex items-center gap-2 w-full">
         <FolderUp className="h-4 w-4 fill-blue-100/35" />
         ..
-      </Link>
+      </div>
     </TableCell>
   </TableRow>
 );
 
 const DirectoryRow = ({ name, to }: { name: string; to: string }) => (
   <TableRow className="cursor-pointer hover:bg-muted/50">
-    <TableCell>
-      <Link to={to} className="flex items-center gap-2 w-full">
+    <TableCell to={to}>
+      <div className="flex items-center gap-2 w-full">
         <Folder className="h-4 w-4 fill-blue-100/35" />
         {name}/
-      </Link>
+      </div>
     </TableCell>
   </TableRow>
 );
