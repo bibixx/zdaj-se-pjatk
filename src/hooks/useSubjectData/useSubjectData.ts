@@ -43,20 +43,26 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
     error,
   } = useFetch(`${subjectId}.json`, subjectSchema, fetchOptions);
 
-  const { data: overrides, loading: overridesLoading } = useFetch(
-    `overrides/${subjectId}.json`,
-    overrideSubjectSchema,
-    fetchOptions,
-  );
+  const {
+    data: overrides,
+    loading: overridesLoading,
+    error: overridesError,
+  } = useFetch(`overrides/${subjectId}.json`, overrideSubjectSchema, fetchOptions);
 
   const loading = useMemo(() => subjectLoading || overridesLoading, [overridesLoading, subjectLoading]);
 
   return useMemo(() => {
-    const isPotentially404 = !loading && subject === null;
-    if (is404 || error !== null || isPotentially404) {
+    if (overridesError !== null) {
       return {
         state: 'error',
-        is404: is404 || isPotentially404,
+        is404: false,
+      };
+    }
+
+    if (is404 || error !== null) {
+      return {
+        state: 'error',
+        is404,
       };
     }
 
@@ -73,5 +79,5 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
         overrides ? generateMissingQuestionIdsForSubject(overrides) : null,
       ),
     };
-  }, [error, is404, loading, overrides, subject]);
+  }, [error, is404, loading, overrides, overridesError, subject]);
 };

@@ -36,12 +36,12 @@ export const useFetchZod = <T extends z.ZodTypeAny>(url: string, checkData: T, o
 
   const fetchData = useCallback(async () => {
     try {
-      return customFetchZod(url, checkData, init);
+      return { type: 'done' as const, data: await customFetchZod(url, checkData, init) };
     } catch (e) {
       const errorOrNull = e instanceof Error ? e : null;
 
       if (errorOrNull instanceof FetchError && errorOrNull.status === 404) {
-        return null;
+        return { type: '404' as const };
       }
 
       throw e;
@@ -65,10 +65,10 @@ export const useFetchZod = <T extends z.ZodTypeAny>(url: string, checkData: T, o
   }, [handleError, onError, query.error, reportError]);
 
   return {
-    data: query.data ?? null,
+    data: query.data?.type === 'done' ? query.data.data : null,
     loading: query.isLoading,
     error: query.error,
     refetch: fetchData,
-    is404: query.error instanceof FetchError && query.error.status === 404,
+    is404: query.data?.type === '404' || (query.error instanceof FetchError && query.error.status === 404),
   };
 };
