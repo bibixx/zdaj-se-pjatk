@@ -24,7 +24,7 @@ export type UseSubjectData = UseSubjectDataError | UseSubjectDataLoading | UseSu
 
 export const useSubjectData = (subjectId: string): UseSubjectData => {
   const fetchOptions = useMemo(
-    (): UseFetchOptions<typeof subjectSchema | typeof overrideSubjectSchema> => ({
+    (): UseFetchOptions => ({
       onError: (error: Error | null) => {
         if (error instanceof FetchError && error.status === 404) {
           return;
@@ -52,10 +52,11 @@ export const useSubjectData = (subjectId: string): UseSubjectData => {
   const loading = useMemo(() => subjectLoading || overridesLoading, [overridesLoading, subjectLoading]);
 
   return useMemo(() => {
-    if (is404 || error !== null) {
+    const isPotentially404 = !loading && subject === null;
+    if (is404 || error !== null || isPotentially404) {
       return {
         state: 'error',
-        is404,
+        is404: is404 || isPotentially404,
       };
     }
 

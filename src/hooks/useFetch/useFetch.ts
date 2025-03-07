@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useState } from 'react';
-import { AnySchema, Asserts } from 'yup';
+import { useCallback, useEffect } from 'react';
+import { AnySchema } from 'yup';
+import { useQuery } from '@tanstack/react-query';
 
 import { useErrorReporter } from 'hooks/useErrorReporter/useErrorReporter';
 import { customFetch, CustomRequestInit, FetchError } from 'utils/fetch';
@@ -8,29 +9,14 @@ import { assertExistence } from 'utils/assertExistence';
 type OnErrorReturn = Error | null | void;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-export interface UseFetchOptions<T extends AnySchema<Type, TContext, TOut>, Type = any, TContext = any, TOut = any> {
+export interface UseFetchOptions {
   init?: CustomRequestInit;
-  onComplete?: (data: Asserts<T>) => void;
   onError?: (error: Error) => OnErrorReturn | Promise<OnErrorReturn>;
 }
 
-export const useFetch = <
-  T extends AnySchema,
-  Type = any,
-  TContext = any,
-  TOut = any,
-  /* eslint-enable @typescript-eslint/no-explicit-any */
->(
-  url: string,
-  checkData: T,
-  options: UseFetchOptions<T, Type, TContext, TOut> = {},
-) => {
+export const useFetch = <T extends AnySchema>(url: string, checkData: T, options: UseFetchOptions = {}) => {
   const reportError = useErrorReporter();
-  const { init, onComplete, onError } = options;
-
-  const [data, setData] = useState<Asserts<T> | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
+  const { init, onError } = options;
 
   const handleError = useCallback(
     async (error: Error) => {
@@ -50,39 +36,40 @@ export const useFetch = <
 
   const fetchData = useCallback(async () => {
     try {
-      const fetchedData = await customFetch(url, checkData, init);
-
-      if (!fetchData) {
-        return;
-      }
-
-      setLoading(false);
-      setData(fetchedData);
-      onComplete?.(fetchedData);
+      return await customFetch(url, checkData, init);
     } catch (e) {
-      setLoading(false);
-
       const errorOrNull = e instanceof Error ? e : null;
-      setError(errorOrNull);
 
-      if (onError != null && errorOrNull != null) {
-        handleError(errorOrNull);
-      } else {
-        reportError(errorOrNull);
+      // TODO Handle 404 + caching
+      if (errorOrNull instanceof FetchError && errorOrNull.status === 404) {
+        return null;
       }
+
+      throw e;
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [url, init, reportError]);
+  }, [url, init]);
 
+  const query = useQuery({ queryKey: [url], queryFn: fetchData, retry: false });
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    const e = query.error;
+    if (!e) {
+      return;
+    }
+
+    const errorOrNull = e instanceof Error ? e : null;
+    if (onError != null && errorOrNull != null) {
+      handleError(errorOrNull);
+    } else {
+      reportError(errorOrNull);
+    }
+  }, [handleError, onError, query.error, reportError]);
 
   return {
-    data,
-    loading,
-    error,
+    data: query.data ?? null,
+    loading: query.isLoading,
+    error: query.error,
     refetch: fetchData,
-    is404: error instanceof FetchError && error.status === 404,
+    is404: query.error instanceof FetchError && query.error.status === 404,
   };
 };
