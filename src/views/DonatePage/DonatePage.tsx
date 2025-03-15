@@ -45,8 +45,9 @@ export const DonatePage = () => (
           <li>
             Hosting:{' '}
             <a target="_blank" className="link" href="https://vercel.com/" rel="noreferrer">
-              vercel.com
+              Vercel
             </a>
+            .
           </li>
           <li>
             Baza danych:{' '}
@@ -62,6 +63,18 @@ export const DonatePage = () => (
             <a href="https://statically.io/" className="link" target="_blank" rel="noreferrer">
               statically.io
             </a>
+            .
+          </li>
+          <li>
+            Pliki:{' '}
+            <a href="https://github.com/bibixx/zdaj-se-pjatk-files" className="link" target="_blank" rel="noreferrer">
+              pliki trzymane na GitHubie
+            </a>{' '}
+            i serwowane przez{' '}
+            <a href="https://statically.io/" className="link" target="_blank" rel="noreferrer">
+              statically.io
+            </a>
+            .
           </li>
           <li>
             Domena: domenę zdaj.se opłacam z własnej kieszeni (61,99 zł/rok), jednak cała platforma dostępna jest też
@@ -69,7 +82,7 @@ export const DonatePage = () => (
             <a className="link" href="https://zdaj-se.vercel.app">
               https://zdaj-se.vercel.app
             </a>
-            , który dzięki Vercelowi jest utrzymywany za darmo
+            , który dzięki Vercelowi jest utrzymywany za darmo.
           </li>
         </ul>
         <p>
