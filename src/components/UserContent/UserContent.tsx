@@ -37,15 +37,11 @@ function aa(html: string) {
   $div.innerHTML = html;
 
   const $$imgs = $div.querySelectorAll('img[data-zdaj-se]') as NodeListOf<HTMLImageElement>;
-  const rootUrl = new URL(IMAGES_URL, window.location.origin);
   for (const $img of $$imgs) {
-    const url = new URL($img.src);
-    url.host = rootUrl.host;
-    url.port = rootUrl.port;
-    url.protocol = rootUrl.protocol;
-    url.pathname = joinPath(rootUrl.pathname, url.pathname);
+    const src = $img.src;
+    const fileName = src.split('/').pop() || '';
 
-    $img.src = url.toString();
+    $img.src = joinPath(IMAGES_URL, fileName);
   }
 
   return $div.innerHTML;
