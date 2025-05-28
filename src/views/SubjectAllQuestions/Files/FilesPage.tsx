@@ -2,7 +2,7 @@ import { Folder, File, Download, FolderUp } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import { FILES_PATH } from 'constants/env';
+import { FILES_RAW_PATH } from 'constants/env';
 import { Table, TableBody, TableHead, TableHeader, TableRow, TableCell } from 'components/ui/table';
 import { BreadCrumbs } from 'components/BreadCrumbs/BreadCrumbs';
 import { Header } from 'components/Header/Header';
@@ -18,7 +18,7 @@ interface FileRowProps {
 }
 
 const FileRow = ({ name, path }: FileRowProps) => {
-  const fileUrl = `${FILES_PATH}${[...path, name].join('/')}`;
+  const fileUrl = `${FILES_RAW_PATH}${[...path, name].join('/')}?raw=true`;
 
   return (
     <TableRow className="cursor-pointer hover:bg-muted/50 group">

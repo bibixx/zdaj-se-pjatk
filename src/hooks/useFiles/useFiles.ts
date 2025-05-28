@@ -1,13 +1,13 @@
 import { useMemo } from 'react';
 
-import { FILES_PATH } from 'constants/env';
+import { FILES_DATA_PATH } from 'constants/env';
 import { useFetchZod } from 'hooks/useFetch/useFetchZod';
 import { fileSystemSchema } from 'validators/filesList';
 
 export const useFiles = () => {
   const options = useMemo(
     () => ({
-      init: { rootUrl: FILES_PATH },
+      init: { rootUrl: FILES_DATA_PATH },
     }),
     [],
   );
