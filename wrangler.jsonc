@@ -1,5 +1,7 @@
 {
   "name": "zdaj-se-pjatk",
   "compatibility_date": "2025-11-30",
-  "main": "src/index.ts"
+  "assets": {
+    "directory": "./dist"
+  }
 }
