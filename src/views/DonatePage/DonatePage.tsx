@@ -44,8 +44,8 @@ export const DonatePage = () => (
         <ul className="mb-4 mt-1 ml-6 list-disc [&>li]:mt-1">
           <li>
             Hosting:{' '}
-            <a target="_blank" className="link" href="https://vercel.com/" rel="noreferrer">
-              Vercel
+            <a target="_blank" className="link" href="https://pages.dev/" rel="noreferrer">
+              Cloudflare Pages
             </a>
             .
           </li>
@@ -79,10 +79,10 @@ export const DonatePage = () => (
           <li>
             Domena: domenę zdaj.se opłacam z własnej kieszeni (61,99 zł/rok), jednak cała platforma dostępna jest też
             pod adresem{' '}
-            <a className="link" href="https://zdaj-se.vercel.app">
-              https://zdaj-se.vercel.app
+            <a className="link" href="https://zdaj-se-pjatk.bibixx.workers.dev">
+              https://zdaj-se-pjatk.bibixx.workers.dev
             </a>
-            , który dzięki Vercelowi jest utrzymywany za darmo.
+            , który dzięki Cloudflare jest utrzymywany za darmo.
           </li>
         </ul>
         <p>

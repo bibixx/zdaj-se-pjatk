@@ -7,7 +7,7 @@ init({
   // Tracing
   tracesSampleRate: 1.0, //  Capture 100% of the transactions
   // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
-  tracePropagationTargets: ['localhost', /^https:\/\/zdaj\.se/, /^https:\/\/zdaj-se\.vercel\.app/],
+  tracePropagationTargets: ['localhost', /^https:\/\/zdaj\.se/, /^https:\/\/zdaj-se-pjatk\.bibixx\.workers\.dev/],
   // Session Replay
   integrations: [
     reactRouterV7BrowserTracingIntegration({

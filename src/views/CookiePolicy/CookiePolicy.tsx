@@ -39,7 +39,7 @@ export const CookiePolicy = () => (
         <TypographyH3>Serwis</TypographyH3>
         <p>
           Serwis internetowy działający pod adresem <a href="https://pjatk.zdaj.se">https://pjatk.zdaj.se</a> oraz{' '}
-          <a href="https://pjatk.zdaj.se">https://zdaj-se.vercel.app</a>
+          <a href="https://zdaj-se-pjatk.bibixx.workers.dev">https://zdaj-se-pjatk.bibixx.workers.dev</a>
         </p>
 
         <TypographyH3>Serwis zewnętrzny</TypographyH3>
