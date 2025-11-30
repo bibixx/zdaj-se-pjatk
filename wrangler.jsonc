@@ -3,5 +3,12 @@
   "compatibility_date": "2025-11-30",
   "assets": {
     "directory": "./dist"
+  },
+  "vars": {
+    "VITE_DATA_PATH": "https://cdn.statically.io/gh/bibixx/zdaj-se-pjatk-data/gh-pages/",
+    "VITE_FILES_DATA_PATH": "https://cdn.statically.io/gh/bibixx/zdaj-se-pjatk-files/main/",
+    "VITE_FILES_RAW_PATH": "https://github.com/bibixx/zdaj-se-pjatk-files/blob/main/",
+    "VITE_IMAGES_PATH": "https://cdn.statically.io/gh/bibixx/zdaj-se-pjatk-data/gh-pages/images/",
+    "VITE_SENTRY_DSN": "https://7c273b16356b8051928751986b3f7b52@o516797.ingest.us.sentry.io/4508800853999616"
   }
 }
