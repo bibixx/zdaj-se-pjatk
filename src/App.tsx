@@ -30,7 +30,7 @@ export const App = () => {
   const { areCookiesAccepted, onBannerClose } = useAnalytics();
 
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
+    <ThemeProvider>
       <TooltipProvider delayDuration={400}>
         <QueryClientProvider client={queryClient}>
           <BrowserRouter>

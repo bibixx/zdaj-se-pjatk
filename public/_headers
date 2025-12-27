@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self' * data:; script-src 'self' analytics.legiec.info; style-src * 'unsafe-inline';
+  Content-Security-Policy: default-src 'self' * data:; script-src 'self' __HEAD_SCRIPT_HASH__ analytics.legiec.info; style-src * 'unsafe-inline';
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

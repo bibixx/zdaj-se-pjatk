@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
 import * as fs from 'fs';
+import { inlineHeadPlugin } from './vite-plugin-inline-head';
 
 const srcPath = path.join(__dirname, 'src');
 
@@ -17,6 +18,9 @@ const alias = fs
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    inlineHeadPlugin({
+      scriptPath: './src/head.ts',
+    }),
     react(),
     sentryVitePlugin({
       org: 'bibixx',
