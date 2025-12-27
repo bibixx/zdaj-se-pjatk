@@ -105,6 +105,9 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0(openai@4.84.0(ws@8.18.0)(zod@3.24.2))(zod@3.24.2)
     devDependencies:
+      '@posthog/cli':
+        specifier: ^0.5.20
+        version: 0.5.20
       '@posthog/rollup-plugin':
         specifier: ^1.1.6
         version: 1.1.6(rollup@3.27.2)
@@ -5834,7 +5837,7 @@ snapshots:
 
   has-tostringtag@1.0.2:
     dependencies:
-      has-symbols: 1.0.3
+      has-symbols: 1.1.0
 
   has@1.0.3:
     dependencies:
