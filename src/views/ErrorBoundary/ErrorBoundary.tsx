@@ -1,4 +1,4 @@
-import { FallbackRender } from '@sentry/react';
+import { PostHogErrorBoundaryFallbackProps } from 'posthog-js/react';
 import { useRef, useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
@@ -11,9 +11,13 @@ import { Button } from 'components/ui/button';
 
 import styles from './ErrorBoundary.module.css';
 
-export const ErrorBoundary: FallbackRender = ({ error, componentStack, resetError }) => {
+export const ErrorBoundary = ({ error, componentStack }: PostHogErrorBoundaryFallbackProps) => {
   const [isFullStackVisible, setIsFullStackVisible] = useState(false);
   const overflowRef = useRef<HTMLDivElement | null>(null);
+
+  const handleReset = () => {
+    window.location.href = '/';
+  };
 
   return (
     <PageWrapper className="h-[100dvh] flex flex-col align-center">
@@ -24,7 +28,7 @@ export const ErrorBoundary: FallbackRender = ({ error, componentStack, resetErro
               content: <span className="whitespace-nowrap">Generatory 3.0</span>,
               id: 'root',
               to: '/',
-              onClick: resetError,
+              onClick: handleReset,
             },
             {
               content: 'Ups... Coś poszło nie tak',

@@ -1,5 +1,5 @@
-import { Outlet, Route, BrowserRouter } from 'react-router-dom';
-import { ErrorBoundary as SentryErrorBoundary } from '@sentry/react';
+import { Outlet, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { PostHogErrorBoundary } from 'posthog-js/react';
 import { QueryClientProvider } from '@tanstack/react-query';
 
 import { Footer } from 'components/Footer/Footer';
@@ -13,10 +13,9 @@ import { ScrollToTop } from 'components/ScrollToTop/ScrollToTop';
 import { PageWrapper } from 'components/PageWrapper/PageWrapper';
 import { Announcements } from 'components/Announcements/Announcements';
 import { useAnalytics } from 'hooks/useAnalytics/useAnalytics';
-import { Debug } from 'utils/sentry/Debug';
-import { Routes } from 'utils/sentry/Route';
 import { PathLoggerProvider } from 'utils/matomo/usePathLogging';
 import { queryClient } from 'utils/queryClient';
+import { Debug } from 'views/Debug/Debug';
 import { Exam } from 'views/Exam/Exam';
 import { SubjectAllQuestions } from 'views/SubjectAllQuestions/SubjectAllQuestions';
 import { BugsDataChange } from 'views/BugsDataChange/BugsDataChange';
@@ -34,7 +33,7 @@ export const App = () => {
       <TooltipProvider delayDuration={400}>
         <QueryClientProvider client={queryClient}>
           <BrowserRouter>
-            <SentryErrorBoundary fallback={ErrorBoundary}>
+            <PostHogErrorBoundary fallback={ErrorBoundary}>
               <PathLoggerProvider>
                 <ScrollToTop>
                   <AnimalEmojiProvider>
@@ -60,7 +59,7 @@ export const App = () => {
                   <CookieNotice onBannerClose={onBannerClose} areCookiesAccepted={areCookiesAccepted} />
                 </ScrollToTop>
               </PathLoggerProvider>
-            </SentryErrorBoundary>
+            </PostHogErrorBoundary>
           </BrowserRouter>
         </QueryClientProvider>
       </TooltipProvider>
