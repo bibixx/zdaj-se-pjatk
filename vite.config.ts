@@ -1,4 +1,4 @@
-import { sentryVitePlugin } from '@sentry/vite-plugin';
+import posthogRollupPlugin from '@posthog/rollup-plugin';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
@@ -22,9 +22,13 @@ export default defineConfig({
       scriptPath: './src/head.ts',
     }),
     react(),
-    sentryVitePlugin({
-      org: 'bibixx',
-      project: 'zdaj-se',
+    posthogRollupPlugin({
+      personalApiKey: process.env.POSTHOG_PERSONAL_API_KEY!,
+      envId: process.env.VITE_PUBLIC_POSTHOG_KEY!,
+      host: process.env.VITE_PUBLIC_POSTHOG_HOST,
+      sourcemaps: {
+        deleteAfterUpload: true,
+      },
     }),
   ],
   base: '/',

@@ -1,4 +1,3 @@
-import './utils/sentry/main';
 import { createRoot } from 'react-dom/client';
 import { PostHogProvider } from 'posthog-js/react';
 

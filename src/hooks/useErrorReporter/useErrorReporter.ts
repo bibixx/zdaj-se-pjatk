@@ -1,10 +1,11 @@
 import { useCallback } from 'react';
-import * as Sentry from '@sentry/react';
+import { usePostHog } from 'posthog-js/react';
 
 import { useToast } from 'components/ui/use-toast';
 
 export const useErrorReporter = () => {
   const { toast } = useToast();
+  const posthog = usePostHog();
 
   const reportError = useCallback(
     (error: unknown, description = 'Wystąpił błąd. Spróbuj ponownie później.') => {
@@ -14,12 +15,12 @@ export const useErrorReporter = () => {
         description,
       });
 
-      Sentry.captureException(error);
+      posthog?.captureException(error instanceof Error ? error : new Error(String(error)));
 
       // eslint-disable-next-line no-console
       console.error(error);
     },
-    [toast],
+    [toast, posthog],
   );
 
   return reportError;
