@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const CookieNotice = ({ onBannerClose, areCookiesAccepted }: Props) => {
-  const [isOpen, setIsOpen] = useState(areCookiesAccepted);
+  const [isOpen, setIsOpen] = useState(areCookiesAccepted == null);
   const dismiss = () => setIsOpen(false);
 
   return (
