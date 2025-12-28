@@ -7,7 +7,7 @@
 Zdaj.se will **always be** a free of charge service. This is possible thanks to the following technologies and services used to build it:
 
 - Hosting – [Cloudflare Pages](https://pages.dev/).
-- Database & Files – JSON files ([bibixx/zdaj-se-pjatk-data](https://github.com/bibixx/zdaj-se-pjatk-data)) and files ([bibixx/zdaj-se-pjatk-files](https://github.com/bibixx/zdaj-se-pjatk-files)) stored on GitHub and served via [statically.io](https://statically.io/).
+- Database & Files – JSON files ([bibixx/zdaj-se-pjatk-data](https://github.com/bibixx/zdaj-se-pjatk-data)) and files ([bibixx/zdaj-se-pjatk-files](https://github.com/bibixx/zdaj-se-pjatk-files)) stored on GitHub and served via [Cloudflare Workers](https://workers.dev/).
 - Domain name – I am paying for zdaj.se domain from my own pocket (39.99 PLN/year), but whole platform is also available under https://zdaj-se-pjatk.bibixx.workers.dev, which will be always available free of charge.
 
 ## 🐛 Bugs & Errors

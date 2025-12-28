@@ -44,8 +44,8 @@ export const DonatePage = () => (
         <ul className="mb-4 mt-1 ml-6 list-disc [&>li]:mt-1">
           <li>
             Hosting:{' '}
-            <a target="_blank" className="link" href="https://pages.dev/" rel="noreferrer">
-              Cloudflare Pages
+            <a target="_blank" className="link" href="https://workers.dev/" rel="noreferrer">
+              Cloudflare Workers
             </a>
             .
           </li>
@@ -60,8 +60,8 @@ export const DonatePage = () => (
               pliki JSON trzymane na GitHubie
             </a>{' '}
             i serwowane przez{' '}
-            <a href="https://statically.io/" className="link" target="_blank" rel="noreferrer">
-              statically.io
+            <a target="_blank" className="link" href="https://workers.dev/" rel="noreferrer">
+              Cloudflare Workers
             </a>
             .
           </li>
@@ -71,8 +71,8 @@ export const DonatePage = () => (
               pliki trzymane na GitHubie
             </a>{' '}
             i serwowane przez{' '}
-            <a href="https://statically.io/" className="link" target="_blank" rel="noreferrer">
-              statically.io
+            <a target="_blank" className="link" href="https://workers.dev/" rel="noreferrer">
+              Cloudflare Workers
             </a>
             .
           </li>
@@ -117,7 +117,17 @@ const DonationCard = ({ page }: DonationCardProps) => {
       className="hover:-translate-y-1 focus-visible:-translate-y-1 transition-transform group w-full"
       onMouseLeave={() => setExplicitShown(false)}
     >
-      <Card className="overflow-hidden">
+      <Card className="overflow-hidden relative">
+        <div className="absolute -inset-10 opacity-20 dark:opacity-30 pointer-events-none">
+          <img
+            className={cn(
+              'transition-all select-none h-full w-full object-cover blur-3xl saturate-200 dark:saturate-150',
+            )}
+            draggable="false"
+            src={`/donate/${image}`}
+            alt=""
+          />
+        </div>
         <div
           className={cn('relative select-none border-b after:transition-opacity aspect-video overflow-hidden', {
             'after:top-0 after:bg-white/20 after:w-full after:h-full after:absolute': explicit,
@@ -175,7 +185,9 @@ const DonationCard = ({ page }: DonationCardProps) => {
         </div>
         <CardHeader>
           <h3 className="text-lg font-semibold leading-none tracking-tight text-wrap-balanced">{text}</h3>
-          {description != null && <CardDescription className="text-pretty">{description}</CardDescription>}
+          {description != null && (
+            <CardDescription className="text-pretty dark:text-foreground/90">{description}</CardDescription>
+          )}
         </CardHeader>
       </Card>
     </a>
