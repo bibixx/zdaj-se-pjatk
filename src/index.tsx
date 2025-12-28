@@ -18,6 +18,7 @@ root.render(
       defaults: '2025-05-24',
       capture_exceptions: true,
       debug: import.meta.env.MODE === 'development',
+      opt_out_capturing_by_default: true,
     }}
   >
     <App />
